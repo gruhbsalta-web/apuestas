@@ -181,7 +181,28 @@
       <button class="primary" id="btn-add-match">Agregar partido</button>
     </div>
 
-    <div id="matches-list"></div>
+    <div class="card">
+      <h3>Actualizar partidos desde Promiedos</h3>
+      <label for="in-promiedos-url">URL de Promiedos (página de fixture o torneo)</label>
+      <input type="text" id="in-promiedos-url" placeholder="https://www.promiedos.com.ar" value="https://www.promiedos.com.ar">
+      <div class="row2" style="margin-top:10px;">
+        <button class="primary" id="btn-fetch-promiedos">Buscar y agregar partidos</button>
+        <button id="btn-clear-fetch" class="capital-edit">Limpiar resultados</button>
+      </div>
+      <div class="bet-sub" style="margin-top:8px">Nota: la importación usa un parser heurístico y puede necesitar revisión manual. Si la página no permite CORS el proceso puede fallar; en ese caso exportá un backup y cargalo manualmente.</div>
+    </div>
+
+    <div id="matches-list">
+      <div class="card">
+        <h3>Partidos por categoría</h3>
+        <div id="matches-primera">
+          <h4 style="margin-top:0;margin-bottom:8px;color:var(--muted)">Primera División</h4>
+        </div>
+        <div id="matches-nacional" style="margin-top:12px">
+          <h4 style="margin-top:0;margin-bottom:8px;color:var(--muted)">Primera Nacional</h4>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- APUESTAS -->
@@ -316,6 +337,14 @@ const NACIONAL_ZONA_B = [
 
 const TIPO_LABEL = {goles:"Goles",tarjetas:"Tarjetas",corners:"Corners",tirosArco:"Tiros al arco",atajadas:"Atajadas"};
 
+// ---------- Precarga de partidos detectados en Promiedos (puedes editar horarios luego) ----------
+const PRELOADED_MATCHES = [
+  { id: 'pre_almagro_gyt', local: 'Almagro', visitante: 'Gimnasia y Tiro', fechaHora: '2026-08-05T15:00', finPrimerTiempo:false, finPartido:false, stats: emptyStats() },
+  { id: 'pre_quilmes_gjuj', local: 'Quilmes', visitante: 'Gimnasia de Jujuy', fechaHora: '2026-08-05T20:00', finPrimerTiempo:false, finPartido:false, stats: emptyStats() },
+  { id: 'pre_boca_est', local: 'Boca Juniors', visitante: 'Estudiantes (LP)', fechaHora: '2026-08-05T19:00', finPrimerTiempo:false, finPartido:false, stats: emptyStats() },
+  { id: 'pre_tigre_bel', local: 'Tigre', visitante: 'Belgrano', fechaHora: '2026-08-05T21:15', finPrimerTiempo:false, finPartido:false, stats: emptyStats() }
+];
+
 // ---------- Estado (persistido en localStorage) ----------
 const STORAGE_KEY = "futbolTrackerData_v1";
 let state = load();
@@ -329,7 +358,8 @@ function load(){
       return data;
     }
   }catch(e){}
-  return {matches:[], bets:[], capitalInicial:0};
+  // Si no hay datos en localStorage, inicializamos con precarga para facilitar pruebas
+  return {matches: PRELOADED_MATCHES.slice(), bets:[], capitalInicial:0};
 }
 function save(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
 function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
@@ -470,13 +500,17 @@ document.getElementById("btn-add-match").addEventListener("click", ()=>{
 
 // ---------- Render partidos (solo los que todavía no terminaron; los finalizados viven en Terminados) ----------
 function renderMatches(){
-  const wrap = document.getElementById("matches-list");
+  const primeraWrap = document.getElementById("matches-primera");
+  const nacionalWrap = document.getElementById("matches-nacional");
   const activos = state.matches.filter(m=>!m.finPartido);
   if(activos.length === 0){
-    wrap.innerHTML = '<div class="empty">Todavía no agregaste ningún partido.</div>';
+    primeraWrap.innerHTML = '<div class="empty">Todavía no agregaste ningún partido.</div>';
+    nacionalWrap.innerHTML = '';
     return;
   }
-  wrap.innerHTML = "";
+  primeraWrap.innerHTML = '';
+  nacionalWrap.innerHTML = '';
+
   activos.slice().reverse().forEach(m=>{
     const card = document.createElement("div");
     card.className = "card match-card";
@@ -507,17 +541,24 @@ function renderMatches(){
         <button class="btn-del" data-del-match2="${m.id}">Eliminar partido</button>
       </div>
     `;
-    wrap.appendChild(card);
+
+    // Decide categoría
+    const inPrimera = PRIMERA_DIVISION.includes(m.local) && PRIMERA_DIVISION.includes(m.visitante);
+    const inNacional = (NACIONAL_ZONA_A.includes(m.local) || NACIONAL_ZONA_B.includes(m.local)) && (NACIONAL_ZONA_A.includes(m.visitante) || NACIONAL_ZONA_B.includes(m.visitante));
+    if(inPrimera) primeraWrap.appendChild(card);
+    else if(inNacional) nacionalWrap.appendChild(card);
+    else primeraWrap.appendChild(card); // por defecto a Primera si no se detecta
   });
 
-  wrap.querySelectorAll("[data-fecha]").forEach(inp=>{
+  // Attach listeners (delegated selection)
+  document.querySelectorAll("[data-fecha]").forEach(inp=>{
     inp.addEventListener("change", ()=>{
       const m = state.matches.find(x=>x.id===inp.dataset.fecha);
       m.fechaHora = inp.value;
       save(); renderAll();
     });
   });
-  wrap.querySelectorAll("[data-fin1]").forEach(chk=>{
+  document.querySelectorAll("[data-fin1]").forEach(chk=>{
     chk.addEventListener("change", ()=>{
       const m = state.matches.find(x=>x.id===chk.dataset.fin1);
       m.finPrimerTiempo = chk.checked;
@@ -525,7 +566,7 @@ function renderMatches(){
       save(); renderAll();
     });
   });
-  wrap.querySelectorAll("[data-finp]").forEach(chk=>{
+  document.querySelectorAll("[data-finp]").forEach(chk=>{
     chk.addEventListener("change", ()=>{
       const m = state.matches.find(x=>x.id===chk.dataset.finp);
       m.finPartido = chk.checked;
@@ -534,14 +575,14 @@ function renderMatches(){
     });
   });
 
-  wrap.querySelectorAll("[data-del-match]").forEach(b=>{
+  document.querySelectorAll("[data-del-match]").forEach(b=>{
     b.addEventListener("click", ()=> deleteMatch(b.dataset.delMatch));
   });
-  wrap.querySelectorAll("[data-del-match2]").forEach(b=>{
+  document.querySelectorAll("[data-del-match2]").forEach(b=>{
     b.addEventListener("click", ()=> deleteMatch(b.dataset.delMatch2));
   });
 
-  wrap.querySelectorAll("[data-stat]").forEach(inp=>{
+  document.querySelectorAll("[data-stat]").forEach(inp=>{
     inp.addEventListener("change", ()=>{
       const [id, key, side] = inp.dataset.stat.split("|");
       const m = state.matches.find(x=>x.id===id);
@@ -918,11 +959,91 @@ if("serviceWorker" in navigator && (location.protocol === "https:" || location.h
   navigator.serviceWorker.register("sw.js").catch(()=>{});
 }
 
-// ---------- Init ----------
-renderAll();
+// ---------- Actualizar partidos desde Promiedos (parser heurístico) ----------
+async function fetchPromiedos(url){
+  if(!url) throw new Error('URL vacía');
+  // Intentamos usar un proxy texto que suele permitir CORS (r.jina.ai). Si falla, el fetch lanzará.
+  const proxy = 'https://r.jina.ai/http://';
+  const target = proxy + url.replace(/^https?:\/\//i, '');
+  const resp = await fetch(target);
+  if(!resp.ok) throw new Error('Error al recuperar la página');
+  const text = await resp.text();
+  return parsePromiedosHtml(text);
+}
 
-// refresca minuto de juego y probabilidad estimada cada 60s
-setInterval(renderAll, 60000);
+function parsePromiedosHtml(html){
+  // Heurística: buscamos apariciones de nombres de equipos y los emparejamos por proximidad.
+  const teams = PRIMERA_DIVISION.concat(NACIONAL_ZONA_A, NACIONAL_ZONA_B);
+  const occurrences = [];
+  const lower = html.toLowerCase();
+  teams.forEach(team => {
+    const t = team.toLowerCase();
+    let idx = 0;
+    while(true){
+      const pos = lower.indexOf(t, idx);
+      if(pos === -1) break;
+      occurrences.push({team, pos});
+      idx = pos + t.length;
+    }
+  });
+  occurrences.sort((a,b)=>a.pos-b.pos);
+  const pairs = [];
+  for(let i=0;i<occurrences.length-1;i++){
+    const a = occurrences[i], b = occurrences[i+1];
+    if(a.team !== b.team && (b.pos - a.pos) < 400){
+      pairs.push({local: a.team, visitante: b.team});
+      i++; // saltamos el siguiente
+    }
+  }
+  // Dedupe pairs
+  const seen = new Set();
+  const unique = pairs.filter(p=>{
+    const key = [p.local,p.visitante].join(' vs ');
+    if(seen.has(key)) return false; seen.add(key); return true;
+  });
+  return unique;
+}
+
+document.getElementById('btn-fetch-promiedos').addEventListener('click', async ()=>{
+  const url = document.getElementById('in-promiedos-url').value.trim();
+  if(!url){ alert('Pegá la URL de Promiedos a usar.'); return; }
+  try{
+    const found = await fetchPromiedos(url);
+    if(!found || found.length === 0){ alert('No se encontraron partidos con la heurística.'); return; }
+    if(!confirm(`Se encontraron ${found.length} partidos. ¿Agregar al tracker?`)) return;
+    found.forEach(p=>{
+      state.matches.push({id: uid(), local: p.local, visitante: p.visitante, fechaHora: null, finPrimerTiempo:false, finPartido:false, stats: emptyStats()});
+    });
+    save(); renderAll();
+    alert('Partidos importados. Revisa la solapa Partidos para ajustar horarios y confirmar.');
+  }catch(err){
+    alert('Error al importar: '+err.message+". Si la página no permite CORS prueba con otro proxy o trae la página como archivo.");
+  }
+});
+
+document.getElementById('btn-clear-fetch').addEventListener('click', ()=>{
+  document.getElementById('in-promiedos-url').value = 'https://www.promiedos.com.ar';
+});
+
+// ---------- Init ----------
+(async function initFromData(){
+  try{
+    const resp = await fetch('data/matches.json');
+    if(resp.ok){
+      const data = await resp.json();
+      // solo cargar si no hay datos previos en localStorage
+      if(!localStorage.getItem(STORAGE_KEY) && Array.isArray(data.matches)){
+        state.matches = data.matches;
+        state.bets = Array.isArray(data.bets) ? data.bets : [];
+        state.capitalInicial = typeof data.capitalInicial === 'number' ? data.capitalInicial : state.capitalInicial;
+        save();
+      }
+    }
+  }catch(e){ /* no-op si no existe o error de CORS */ }
+  renderAll();
+  // refresca minuto de juego y probabilidad estimada cada 60s
+  setInterval(renderAll, 60000);
+})();
 </script>
 </body>
 </html>
