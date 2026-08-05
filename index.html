@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Tracker de Apuestas - Fútbol Argentino</title>
+<meta name="theme-color" content="#0f1216">
+<meta name="description" content="Tracker de apuestas de fútbol argentino: partidos, probabilidad en vivo, capital y promedios por equipo.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Apuestas">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<style>
+  :root{
+    --bg:#0f1216;
+    --card:#171b21;
+    --card-border:#262c35;
+    --text:#f0f2f5;
+    --muted:#8a93a3;
+    --accent:#22c55e;
+    --accent-dark:#16a34a;
+    --red:#ef4444;
+    --amber:#eab308;
+    --blue:#3b82f6;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    padding-bottom:128px;
+  }
+  header{
+    position:sticky;top:0;z-index:10;
+    background:linear-gradient(180deg,#12161c 90%,rgba(18,22,28,0));
+    padding:16px 16px 8px;
+  }
+  h1{
+    font-size:19px;margin:0 0 12px;font-weight:700;
+    display:flex;align-items:center;gap:8px;
+  }
+  .tabs{
+    display:flex;gap:6px;background:var(--card);
+    border:1px solid var(--card-border);border-radius:12px;padding:4px;
+  }
+  .tab-btn{
+    flex:1;padding:10px 2px;border:none;background:transparent;color:var(--muted);
+    font-size:12px;font-weight:600;border-radius:9px;
+  }
+  .tab-btn.active{background:var(--accent);color:#06210f;}
+  main{padding:14px 16px;}
+  .view{display:none;}
+  .view.active{display:block;}
+  .card{
+    background:var(--card);border:1px solid var(--card-border);
+    border-radius:var(--radius);padding:14px;margin-bottom:12px;
+  }
+  .card h3{margin:0 0 10px;font-size:13.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.03em;}
+  label{display:block;font-size:12.5px;color:var(--muted);margin:10px 0 4px;}
+  select,input{
+    width:100%;padding:11px 10px;background:#0f1319;border:1px solid var(--card-border);
+    border-radius:10px;color:var(--text);font-size:15px;
+  }
+  select:focus,input:focus{outline:none;border-color:var(--accent);}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;}
+  button.primary{
+    width:100%;margin-top:14px;padding:13px;background:var(--accent);color:#06210f;
+    border:none;border-radius:10px;font-size:15px;font-weight:700;
+  }
+  button.primary:active{background:var(--accent-dark);}
+  .match-card{margin-bottom:12px;}
+  .match-title{font-size:15.5px;font-weight:700;display:flex;justify-content:space-between;align-items:center;}
+  .match-title small{color:var(--muted);font-weight:500;display:block;font-size:11.5px;margin-top:2px;}
+  .stat-grid{margin-top:10px;}
+  .stat-row{display:grid;grid-template-columns:1fr 60px 60px;gap:8px;align-items:center;margin-bottom:6px;}
+  .stat-row span{font-size:12.5px;color:var(--muted);}
+  .stat-row input{padding:8px 6px;text-align:center;font-size:14px;}
+  .btn-row{display:flex;gap:8px;margin-top:10px;}
+  .btn-row button{flex:1;padding:10px;border-radius:9px;font-size:13px;font-weight:600;border:none;}
+  .btn-save{background:var(--blue);color:#fff;}
+  .btn-del{background:#2a1a1c;color:var(--red);border:1px solid #3a2226 !important;}
+  .badge{
+    font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;
+  }
+  .badge.pendiente{background:#2a2712;color:var(--amber);}
+  .badge.G{background:#0f2a1a;color:var(--accent);}
+  .badge.P{background:#2a1416;color:var(--red);}
+  .badge.alta{background:#0f2a1a;color:var(--accent);}
+  .badge.media{background:#122336;color:var(--blue);}
+  .badge.mediabaja{background:#2a2712;color:var(--amber);}
+  .badge.baja{background:#2a1416;color:var(--red);}
+  .badge.neutral{background:#1c2128;color:var(--muted);}
+  .status-badge{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:20px;background:#1c2128;color:var(--muted);display:inline-block;margin-top:8px;}
+  .status-badge.live{background:#16281a;color:#a3e635;}
+  .status-badge.ht{background:#2a2712;color:var(--amber);}
+  .status-badge.finished{background:#161a1f;color:var(--muted);}
+  .checkbox-row{display:flex;gap:16px;margin-top:12px;align-items:center;flex-wrap:wrap;}
+  .checkbox-row label{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--text);margin:0;}
+  .checkbox-row input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent);}
+  .bet-sub{font-size:11.5px;color:var(--muted);margin-top:2px;}
+  .bet-card{position:relative;}
+  .bet-top{display:flex;justify-content:space-between;align-items:flex-start;}
+  .bet-teams{font-size:14.5px;font-weight:700;}
+  .bet-cond{font-size:12.5px;color:var(--muted);margin-top:3px;}
+  .bet-nums{display:flex;gap:16px;margin-top:10px;font-size:12.5px;color:var(--muted);}
+  .bet-nums b{color:var(--text);font-size:14px;display:block;}
+  .bet-ganancia{font-size:14px;font-weight:700;}
+  .bet-ganancia.pos{color:var(--accent);}
+  .bet-ganancia.neu{color:var(--muted);}
+  .del-x{position:absolute;top:10px;right:10px;background:none;border:none;color:var(--muted);font-size:16px;padding:4px 8px;}
+  .empty{color:var(--muted);font-size:13.5px;text-align:center;padding:24px 8px;}
+  .stats-mini{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:14px;}
+  .stats-mini .box{background:var(--card);border:1px solid var(--card-border);border-radius:12px;padding:10px 6px;text-align:center;}
+  .stats-mini .lbl{font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .stats-mini .val{font-size:15px;font-weight:700;margin-top:4px;}
+  .mini-bet{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-top:1px solid var(--card-border);font-size:12.5px;margin-top:4px;}
+  .mini-bet:first-of-type{border-top:1px solid var(--card-border);margin-top:10px;}
+  footer{
+    position:fixed;bottom:0;left:0;right:0;
+    background:#12161cee;backdrop-filter:blur(8px);
+    border-top:1px solid var(--card-border);
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  }
+  footer .lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  footer .val{font-size:14px;font-weight:700;margin-top:2px;}
+  .capital-row{
+    display:flex;justify-content:space-between;align-items:center;
+    padding-bottom:8px;margin-bottom:8px;border-bottom:1px solid var(--card-border);
+  }
+  .capital-val{font-size:21px !important;}
+  .capital-edit{background:none;border:1px solid var(--card-border);color:var(--muted);font-size:11.5px;padding:7px 12px;border-radius:9px;}
+  .stats-row-4{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;text-align:center;}
+  .cat-row{margin-bottom:16px;}
+  .cat-row:last-child{margin-bottom:0;}
+  .cat-label{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;font-weight:700;margin-bottom:6px;}
+  .cat-pct{color:var(--accent);font-size:13px;}
+  .cat-bar{display:flex;height:9px;border-radius:6px;overflow:hidden;background:#1c2128;}
+  .cat-bar-g{background:var(--accent);}
+  .cat-bar-p{background:var(--red);}
+  .cat-sub{font-size:11.5px;color:var(--muted);margin-top:5px;}
+  .team-stats-block{margin-top:14px;padding-top:14px;border-top:1px solid var(--card-border);}
+  .team-stats-heading{font-size:11.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.03em;margin-bottom:10px;}
+  .team-stats-name{font-size:13px;font-weight:700;margin-bottom:6px;}
+  .team-stats-n{color:var(--muted);font-weight:500;font-size:11px;}
+  .team-stats-row{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);padding:4px 0;border-top:1px solid var(--card-border);}
+  .team-stats-row:first-of-type{border-top:none;}
+  .team-stats-row b{color:var(--text);}
+  optgroup{color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚽ Tracker de Apuestas</h1>
+  <div class="tabs">
+    <button class="tab-btn active" data-view="partidos">Partidos</button>
+    <button class="tab-btn" data-view="apuestas">Apuestas</button>
+    <button class="tab-btn" data-view="terminados">Terminados</button>
+    <button class="tab-btn" data-view="resumen">Resumen</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- PARTIDOS -->
+  <section id="view-partidos" class="view active">
+    <div class="card">
+      <h3>Nuevo partido</h3>
+      <label for="sel-local">Local</label>
+      <select id="sel-local"></select>
+      <label for="sel-visitante">Visitante</label>
+      <select id="sel-visitante"></select>
+      <label for="in-fecha-hora">Fecha y hora de inicio</label>
+      <input type="datetime-local" id="in-fecha-hora">
+      <button class="primary" id="btn-add-match">Agregar partido</button>
+    </div>
+
+    <div id="matches-list"></div>
+  </section>
+
+  <!-- APUESTAS -->
+  <section id="view-apuestas" class="view">
+    <div class="card">
+      <h3>Nueva apuesta</h3>
+      <label for="sel-match">Partido</label>
+      <select id="sel-match"></select>
+
+      <div id="team-stats-panel"></div>
+
+      <div class="row2">
+        <div>
+          <label for="sel-tipo">Condición</label>
+          <select id="sel-tipo">
+            <option value="goles">Goles</option>
+            <option value="tarjetas">Tarjetas</option>
+            <option value="corners">Corners</option>
+            <option value="tirosArco">Tiros al arco</option>
+            <option value="atajadas">Atajadas</option>
+          </select>
+        </div>
+        <div>
+          <label for="sel-comp">&nbsp;</label>
+          <select id="sel-comp">
+            <option value="mas">Más de</option>
+            <option value="menos">Menos de</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row3">
+        <div>
+          <label for="in-linea">Línea</label>
+          <input type="text" id="in-linea" placeholder="9.5" inputmode="decimal">
+        </div>
+        <div>
+          <label for="in-monto">Monto $</label>
+          <input type="text" id="in-monto" placeholder="150" inputmode="decimal">
+        </div>
+        <div>
+          <label for="in-cuota">Cuota</label>
+          <input type="text" id="in-cuota" placeholder="2.35" inputmode="decimal">
+        </div>
+      </div>
+
+      <button class="primary" id="btn-add-bet">Agregar apuesta</button>
+    </div>
+
+    <div id="bets-list"></div>
+  </section>
+
+  <!-- TERMINADOS -->
+  <section id="view-terminados" class="view">
+    <div class="card">
+      <h3>Filtrar por día</h3>
+      <select id="sel-dia"></select>
+    </div>
+    <div id="terminados-stats"></div>
+    <div id="terminados-list"></div>
+  </section>
+
+  <!-- RESUMEN -->
+  <section id="view-resumen" class="view">
+    <div id="resumen-general"></div>
+    <div class="card">
+      <h3>Por categoría</h3>
+      <div id="resumen-categorias"></div>
+    </div>
+    <div class="card">
+      <h3>Backup</h3>
+      <div class="bet-sub" style="margin-bottom:12px">Descargá tus datos para pasarlos entre el celular y la PC (o guardar una copia). Al importar se reemplaza todo lo que tenés cargado.</div>
+      <div class="btn-row">
+        <button class="btn-save" id="btn-export">⬇ Exportar backup</button>
+        <button class="btn-del" id="btn-import-trigger">⬆ Importar backup</button>
+      </div>
+      <input type="file" id="in-import" accept="application/json" style="display:none">
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="capital-row">
+    <div>
+      <div class="lbl">Capital de la cuenta</div>
+      <div class="val capital-val" id="foot-capital">$0</div>
+    </div>
+    <button id="btn-edit-capital" class="capital-edit">✎ Editar</button>
+  </div>
+  <div class="stats-row-4">
+    <div>
+      <div class="lbl">Apostado</div>
+      <div class="val" id="foot-apostado">$0</div>
+    </div>
+    <div>
+      <div class="lbl">Ganado</div>
+      <div class="val" id="foot-ganancia" style="color:var(--accent)">$0</div>
+    </div>
+    <div>
+      <div class="lbl">Perdido</div>
+      <div class="val" id="foot-perdido" style="color:var(--red)">$0</div>
+    </div>
+    <div>
+      <div class="lbl">G-P-Pend</div>
+      <div class="val" id="foot-record">0-0-0</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---------- Datos: clubes Argentina 2026 ----------
+const PRIMERA_DIVISION = [
+  "Aldosivi","Argentinos Juniors","Atlético Tucumán","Banfield","Barracas Central",
+  "Belgrano","Boca Juniors","Central Córdoba (SdE)","Defensa y Justicia","Deportivo Riestra",
+  "Estudiantes (LP)","Estudiantes (Río Cuarto)","Gimnasia y Esgrima (LP)","Gimnasia y Esgrima (Mza)",
+  "Huracán","Independiente","Independiente Rivadavia","Instituto","Lanús","Newell's Old Boys",
+  "Platense","Racing Club","River Plate","Rosario Central","San Lorenzo","Sarmiento",
+  "Talleres","Tigre","Unión","Vélez Sarsfield"
+];
+const NACIONAL_ZONA_A = [
+  "Acassuso","All Boys","Almirante Brown","Central Norte","Chaco For Ever","Ciudad de Bolívar",
+  "Colón","Defensores de Belgrano","Deportivo Madryn","Deportivo Morón","Estudiantes (BA)",
+  "Ferro Carril Oeste","Godoy Cruz","Los Andes","Mitre (SdE)","Racing (Córdoba)","San Miguel","San Telmo"
+];
+const NACIONAL_ZONA_B = [
+  "Agropecuario","Almagro","Atlanta","Atlético de Rafaela","Chacarita Juniors","Colegiales",
+  "Deportivo Maipú","Ferrocarril Midland","Gimnasia y Esgrima (Jujuy)","Gimnasia y Tiro (Salta)",
+  "Güemes","Nueva Chicago","Patronato","Quilmes","San Martín (SJ)","San Martín (Tuc)",
+  "Temperley","Tristán Suárez"
+];
+
+const TIPO_LABEL = {goles:"Goles",tarjetas:"Tarjetas",corners:"Corners",tirosArco:"Tiros al arco",atajadas:"Atajadas"};
+
+// ---------- Estado (persistido en localStorage) ----------
+const STORAGE_KEY = "futbolTrackerData_v1";
+let state = load();
+
+function load(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(raw){
+      const data = JSON.parse(raw);
+      if(typeof data.capitalInicial !== "number") data.capitalInicial = 0;
+      return data;
+    }
+  }catch(e){}
+  return {matches:[], bets:[], capitalInicial:0};
+}
+function save(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
+function parseNum(str){ return parseFloat(String(str).trim().replace(",", ".")); }
+
+function nowLocalInputValue(){
+  const d = new Date();
+  d.setSeconds(0,0);
+  const local = new Date(d.getTime() - d.getTimezoneOffset()*60000);
+  return local.toISOString().slice(0,16);
+}
+
+// ---------- Control de tiempo del partido: minutos jugados y estado ----------
+function matchMinutesSince(m){
+  if(!m.fechaHora) return null;
+  const start = new Date(m.fechaHora).getTime();
+  if(isNaN(start)) return null;
+  const diff = (Date.now() - start) / 60000;
+  return diff < 0 ? 0 : diff;
+}
+
+// frac = fracción del partido jugada (0 a 1), usada para proyectar el total a los 90'
+function matchStatus(m){
+  if(m.finPartido) return {label:"Finalizado", cls:"finished", frac:1};
+  const mins = matchMinutesSince(m);
+  if(mins === null) return {label:"Sin horario", cls:"", frac:0};
+  if(mins === 0) return {label:"Programado", cls:"", frac:0};
+  if(m.finPrimerTiempo){
+    const min2 = mins - 45 - 15; // resta el entretiempo (15') al reloj real
+    if(min2 < 0) return {label:"Entretiempo", cls:"ht", frac:45/90};
+    const jugados = 45 + Math.min(min2, 45);
+    return {label:`2T ~${Math.round(Math.min(min2,45))}'`, cls:"live", frac:jugados/90};
+  }
+  const jugados = Math.min(mins, 45);
+  return {label:`1T ~${Math.round(jugados)}'`, cls:"live", frac:jugados/90};
+}
+
+// Estimación heurística para apuestas todavía abiertas (evalBet ya resolvió las que
+// están matemáticamente decididas): proyecta el acumulado actual a los 90' y lo compara con la línea
+function estimateProb(bet, m){
+  const st = matchStatus(m);
+  const s = m.stats[bet.tipo];
+  const acumulado = (s.l||0) + (s.v||0);
+  if(st.frac <= 0) return {label:"Programado", level:"neutral", acumulado};
+  const proyeccion = acumulado / st.frac;
+  const margen = bet.comparador === "mas" ? (proyeccion - bet.linea) : (bet.linea - proyeccion);
+  const rel = margen / Math.max(bet.linea, 1);
+  let level, label;
+  if(rel > 0.25){ level="alta"; label="Muy probable"; }
+  else if(rel > 0){ level="media"; label="Probable"; }
+  else if(rel > -0.25){ level="mediabaja"; label="Ajustada"; }
+  else { level="baja"; label="Poco probable"; }
+  return {label, level, proyeccion, acumulado};
+}
+
+function emptyStats(){
+  return {
+    goles:{l:0,v:0}, tarjetas:{l:0,v:0}, corners:{l:0,v:0},
+    tirosArco:{l:0,v:0}, atajadas:{l:0,v:0}
+  };
+}
+
+// ---------- Eliminar partido (usado desde Partidos y desde Terminados) ----------
+function deleteMatch(id){
+  const hasBets = state.bets.some(bet=>bet.matchId===id);
+  if(hasBets && !confirm("Este partido tiene apuestas asociadas. ¿Eliminar partido y sus apuestas?")) return;
+  state.matches = state.matches.filter(m=>m.id!==id);
+  state.bets = state.bets.filter(bet=>bet.matchId!==id);
+  save();
+  renderAll();
+}
+
+// ---------- Día del partido (para agrupar/filtrar en Terminados) ----------
+function matchDay(m){ return m.fechaHora ? m.fechaHora.slice(0,10) : null; }
+function formatDay(dayStr){
+  if(!dayStr) return "Sin fecha";
+  const [y,mo,d] = dayStr.split("-");
+  return `${d}/${mo}/${y}`;
+}
+let terminadosFiltroDia = "todos";
+
+// ---------- Poblar selects de clubes ----------
+function buildClubSelect(el){
+  el.innerHTML = "";
+  const groups = [
+    ["Primera División", PRIMERA_DIVISION],
+    ["Primera Nacional - Zona A", NACIONAL_ZONA_A],
+    ["Primera Nacional - Zona B", NACIONAL_ZONA_B]
+  ];
+  groups.forEach(([label, clubs])=>{
+    const og = document.createElement("optgroup");
+    og.label = label;
+    clubs.forEach(c=>{
+      const opt = document.createElement("option");
+      opt.value = c; opt.textContent = c;
+      og.appendChild(opt);
+    });
+    el.appendChild(og);
+  });
+}
+buildClubSelect(document.getElementById("sel-local"));
+buildClubSelect(document.getElementById("sel-visitante"));
+document.getElementById("sel-visitante").selectedIndex = 1;
+document.getElementById("in-fecha-hora").value = nowLocalInputValue();
+
+// ---------- Tabs ----------
+document.querySelectorAll(".tab-btn").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));
+    document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("view-"+btn.dataset.view).classList.add("active");
+    if(btn.dataset.view === "apuestas") renderMatchSelect();
+    if(btn.dataset.view === "terminados") renderTerminados();
+    if(btn.dataset.view === "resumen") renderResumen();
+  });
+});
+
+document.getElementById("sel-dia").addEventListener("change", (e)=>{
+  terminadosFiltroDia = e.target.value;
+  renderTerminados();
+});
+
+// ---------- Agregar partido ----------
+document.getElementById("btn-add-match").addEventListener("click", ()=>{
+  const local = document.getElementById("sel-local").value;
+  const visitante = document.getElementById("sel-visitante").value;
+  if(local === visitante){ alert("Local y visitante no pueden ser el mismo club."); return; }
+  const fechaHora = document.getElementById("in-fecha-hora").value || nowLocalInputValue();
+  state.matches.push({
+    id: uid(), local, visitante, fechaHora,
+    finPrimerTiempo:false, finPartido:false, stats: emptyStats()
+  });
+  save();
+  document.getElementById("in-fecha-hora").value = nowLocalInputValue();
+  renderAll();
+});
+
+// ---------- Render partidos (solo los que todavía no terminaron; los finalizados viven en Terminados) ----------
+function renderMatches(){
+  const wrap = document.getElementById("matches-list");
+  const activos = state.matches.filter(m=>!m.finPartido);
+  if(activos.length === 0){
+    wrap.innerHTML = '<div class="empty">Todavía no agregaste ningún partido.</div>';
+    return;
+  }
+  wrap.innerHTML = "";
+  activos.slice().reverse().forEach(m=>{
+    const card = document.createElement("div");
+    card.className = "card match-card";
+    const statKeys = Object.keys(TIPO_LABEL);
+    const st = matchStatus(m);
+    card.innerHTML = `
+      <button class="del-x" data-del-match="${m.id}">✕</button>
+      <div class="match-title">${m.local} vs ${m.visitante}</div>
+      <span class="status-badge ${st.cls}">${st.label}</span>
+
+      <label>Fecha y hora de inicio</label>
+      <input type="datetime-local" data-fecha="${m.id}" value="${m.fechaHora || ""}">
+      <div class="checkbox-row">
+        <label><input type="checkbox" data-fin1="${m.id}" ${m.finPrimerTiempo ? "checked" : ""}> Fin 1er tiempo</label>
+        <label><input type="checkbox" data-finp="${m.id}" ${m.finPartido ? "checked" : ""}> Fin del partido</label>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-row"><span></span><span style="text-align:center">Local</span><span style="text-align:center">Visit.</span></div>
+        ${statKeys.map(k=>`
+          <div class="stat-row">
+            <span>${TIPO_LABEL[k]}</span>
+            <input type="number" min="0" data-stat="${m.id}|${k}|l" value="${m.stats[k].l}">
+            <input type="number" min="0" data-stat="${m.id}|${k}|v" value="${m.stats[k].v}">
+          </div>`).join("")}
+      </div>
+      <div class="btn-row">
+        <button class="btn-del" data-del-match2="${m.id}">Eliminar partido</button>
+      </div>
+    `;
+    wrap.appendChild(card);
+  });
+
+  wrap.querySelectorAll("[data-fecha]").forEach(inp=>{
+    inp.addEventListener("change", ()=>{
+      const m = state.matches.find(x=>x.id===inp.dataset.fecha);
+      m.fechaHora = inp.value;
+      save(); renderAll();
+    });
+  });
+  wrap.querySelectorAll("[data-fin1]").forEach(chk=>{
+    chk.addEventListener("change", ()=>{
+      const m = state.matches.find(x=>x.id===chk.dataset.fin1);
+      m.finPrimerTiempo = chk.checked;
+      if(!chk.checked) m.finPartido = false;
+      save(); renderAll();
+    });
+  });
+  wrap.querySelectorAll("[data-finp]").forEach(chk=>{
+    chk.addEventListener("change", ()=>{
+      const m = state.matches.find(x=>x.id===chk.dataset.finp);
+      m.finPartido = chk.checked;
+      if(chk.checked) m.finPrimerTiempo = true;
+      save(); renderAll();
+    });
+  });
+
+  wrap.querySelectorAll("[data-del-match]").forEach(b=>{
+    b.addEventListener("click", ()=> deleteMatch(b.dataset.delMatch));
+  });
+  wrap.querySelectorAll("[data-del-match2]").forEach(b=>{
+    b.addEventListener("click", ()=> deleteMatch(b.dataset.delMatch2));
+  });
+
+  wrap.querySelectorAll("[data-stat]").forEach(inp=>{
+    inp.addEventListener("change", ()=>{
+      const [id, key, side] = inp.dataset.stat.split("|");
+      const m = state.matches.find(x=>x.id===id);
+      m.stats[key][side] = parseFloat(inp.value) || 0;
+      save(); renderAll();
+    });
+  });
+}
+
+// ---------- Poblar select de partidos (tab apuestas, solo partidos activos) ----------
+function renderMatchSelect(){
+  const sel = document.getElementById("sel-match");
+  sel.innerHTML = "";
+  const activos = state.matches.filter(m=>!m.finPartido);
+  if(activos.length === 0){
+    sel.innerHTML = '<option value="">Agregá un partido primero</option>';
+    return;
+  }
+  activos.forEach(m=>{
+    const opt = document.createElement("option");
+    opt.value = m.id;
+    opt.textContent = `${m.local} vs ${m.visitante}`;
+    sel.appendChild(opt);
+  });
+  renderTeamStatsPanel();
+}
+
+document.getElementById("sel-match").addEventListener("change", renderTeamStatsPanel);
+
+// ---------- Promedios históricos por equipo (para decidir apuestas antes de cargarlas) ----------
+// Promedia el TOTAL de cada categoría (local+visitante) en los partidos ya finalizados
+// donde jugó ese equipo, sin importar si lo hizo de local o de visitante.
+function teamAverages(teamName){
+  const partidos = state.matches.filter(m => m.finPartido && (m.local === teamName || m.visitante === teamName));
+  const n = partidos.length;
+  const prom = {};
+  Object.keys(TIPO_LABEL).forEach(k=>{
+    prom[k] = n ? partidos.reduce((acc,m)=> acc + (m.stats[k].l||0) + (m.stats[k].v||0), 0) / n : null;
+  });
+  return {n, prom};
+}
+
+function renderTeamStatsPanel(){
+  const panel = document.getElementById("team-stats-panel");
+  if(!panel) return;
+  const matchId = document.getElementById("sel-match").value;
+  const m = state.matches.find(x=>x.id===matchId);
+  if(!m){ panel.innerHTML = ""; return; }
+
+  function columna(nombre, st){
+    if(st.n === 0){
+      return `<div><div class="team-stats-name">${nombre}</div><div class="bet-sub">Sin partidos terminados registrados</div></div>`;
+    }
+    return `<div>
+      <div class="team-stats-name">${nombre} <span class="team-stats-n">(${st.n} PJ)</span></div>
+      ${Object.keys(TIPO_LABEL).map(k=>`<div class="team-stats-row"><span>${TIPO_LABEL[k]}</span><b>${st.prom[k].toFixed(1)}</b></div>`).join("")}
+    </div>`;
+  }
+
+  panel.innerHTML = `
+    <div class="team-stats-block">
+      <div class="team-stats-heading">Promedio por partido (histórico, terminados)</div>
+      <div class="row2">
+        ${columna(m.local, teamAverages(m.local))}
+        ${columna(m.visitante, teamAverages(m.visitante))}
+      </div>
+    </div>
+  `;
+}
+
+// ---------- Agregar apuesta ----------
+document.getElementById("btn-add-bet").addEventListener("click", ()=>{
+  const matchId = document.getElementById("sel-match").value;
+  if(!matchId){ alert("Agregá un partido primero."); return; }
+  const tipo = document.getElementById("sel-tipo").value;
+  const comparador = document.getElementById("sel-comp").value;
+  const linea = parseNum(document.getElementById("in-linea").value);
+  const monto = parseNum(document.getElementById("in-monto").value);
+  const cuota = parseNum(document.getElementById("in-cuota").value);
+  if(isNaN(linea) || isNaN(monto) || isNaN(cuota)){ alert("Completá línea, monto y cuota."); return; }
+
+  state.bets.push({id:uid(), matchId, tipo, comparador, linea, monto, cuota});
+  save();
+  document.getElementById("in-linea").value = "";
+  document.getElementById("in-monto").value = "";
+  document.getElementById("in-cuota").value = "";
+  renderAll();
+});
+
+// ---------- Calcular resultado de una apuesta ----------
+// Las estadísticas (goles, tarjetas, corners, etc.) sólo pueden crecer durante el partido:
+// una apuesta "más de X" queda ganada apenas se supera X, sin esperar el final.
+// Una apuesta "menos de X" queda perdida apenas se alcanza/supera X; si nunca lo alcanza,
+// recién se confirma ganada cuando el partido termina (podría superarse después).
+function evalBet(bet){
+  const m = state.matches.find(x=>x.id===bet.matchId);
+  if(!m) return {estado:"pendiente", total:0, ganancia:0};
+  const s = m.stats[bet.tipo];
+  const total = (s.l||0) + (s.v||0);
+
+  let decidido = null; // true = ganada, false = perdida, null = todavía puede cambiar
+  if(bet.comparador === "mas"){
+    if(total > bet.linea) decidido = true;
+    else if(m.finPartido) decidido = false;
+  } else {
+    if(total >= bet.linea) decidido = false;
+    else if(m.finPartido) decidido = true;
+  }
+
+  if(decidido === null) return {estado:"pendiente", total, ganancia:0, match:m};
+  const ganancia = decidido ? (bet.monto * bet.cuota - bet.monto) : 0;
+  return {estado: decidido ? "G" : "P", total, ganancia, match:m};
+}
+
+// ---------- Render apuestas (solo las de partidos activos; las de partidos terminados viven en Terminados) ----------
+function renderBets(){
+  const wrap = document.getElementById("bets-list");
+  const activas = state.bets.filter(bet=>{
+    const m = state.matches.find(x=>x.id===bet.matchId);
+    return !m || !m.finPartido;
+  });
+  if(activas.length === 0){
+    wrap.innerHTML = '<div class="empty">Todavía no agregaste ninguna apuesta.</div>';
+    return;
+  }
+  wrap.innerHTML = "";
+  activas.slice().reverse().forEach(bet=>{
+    const r = evalBet(bet);
+    const m = state.matches.find(x=>x.id===bet.matchId);
+    const condTxt = `${TIPO_LABEL[bet.tipo]}: ${bet.comparador==='mas'?'Más de':'Menos de'} ${bet.linea}`;
+
+    let badgeCls, badgeTxt, subTxt = "", totalLabel = "Total real", totalVal = r.total;
+    if(r.estado === "G"){ badgeCls="G"; badgeTxt="Ganada"; }
+    else if(r.estado === "P"){ badgeCls="P"; badgeTxt="Perdida"; }
+    else if(m){
+      const prob = estimateProb(bet, m);
+      badgeCls = prob.level; badgeTxt = prob.label;
+      totalLabel = "Acumulado"; totalVal = prob.acumulado;
+      if(prob.proyeccion !== undefined) subTxt = `Proyección a los 90': ${prob.proyeccion.toFixed(1)} (estimado)`;
+    } else { badgeCls="pendiente"; badgeTxt="Pendiente"; totalVal="-"; }
+
+    const card = document.createElement("div");
+    card.className = "card bet-card";
+    card.innerHTML = `
+      <button class="del-x" data-del-bet="${bet.id}">✕</button>
+      <div class="bet-top">
+        <div>
+          <div class="bet-teams">${m ? m.local+" vs "+m.visitante : "(partido eliminado)"}</div>
+          <div class="bet-cond">${condTxt}</div>
+        </div>
+        <span class="badge ${badgeCls}">${badgeTxt}</span>
+      </div>
+      <div class="bet-nums">
+        <div>Monto<b>$${bet.monto}</b></div>
+        <div>Cuota<b>${bet.cuota}</b></div>
+        <div>${totalLabel}<b>${totalVal}</b></div>
+        <div>Ganancia<b class="bet-ganancia ${r.ganancia>0?'pos':'neu'}">$${r.ganancia.toFixed(2)}</b></div>
+      </div>
+      ${subTxt ? `<div class="bet-sub">${subTxt}</div>` : ""}
+    `;
+    wrap.appendChild(card);
+  });
+
+  wrap.querySelectorAll("[data-del-bet]").forEach(b=>{
+    b.addEventListener("click", ()=>{
+      state.bets = state.bets.filter(x=>x.id!==b.dataset.delBet);
+      save(); renderAll();
+    });
+  });
+}
+
+// ---------- Render Terminados: partidos con "Fin del partido" tildado, filtrables por día ----------
+function renderTerminados(){
+  const finalizados = state.matches.filter(m=>m.finPartido);
+
+  const dias = Array.from(new Set(finalizados.map(matchDay))).sort((a,b)=> (b||"").localeCompare(a||""));
+  if(terminadosFiltroDia !== "todos" && !dias.includes(terminadosFiltroDia)) terminadosFiltroDia = "todos";
+  const selDia = document.getElementById("sel-dia");
+  selDia.innerHTML = '<option value="todos">Todos los días</option>' +
+    dias.map(d=>`<option value="${d}">${formatDay(d)}</option>`).join("");
+  selDia.value = terminadosFiltroDia;
+
+  const filtrados = finalizados.filter(m => terminadosFiltroDia === "todos" || matchDay(m) === terminadosFiltroDia);
+  const idsFiltrados = new Set(filtrados.map(m=>m.id));
+  const betsFiltrados = state.bets.filter(b=>idsFiltrados.has(b.matchId));
+
+  let apostado=0, ganancia=0, g=0, p=0;
+  betsFiltrados.forEach(bet=>{
+    const r = evalBet(bet);
+    apostado += bet.monto;
+    ganancia += r.ganancia;
+    if(r.estado==="G") g++; else if(r.estado==="P") p++;
+  });
+  document.getElementById("terminados-stats").innerHTML = `
+    <div class="stats-mini">
+      <div class="box"><div class="lbl">Apostado</div><div class="val">$${apostado.toFixed(0)}</div></div>
+      <div class="box"><div class="lbl">Ganancia</div><div class="val" style="color:var(--accent)">$${ganancia.toFixed(2)}</div></div>
+      <div class="box"><div class="lbl">Récord G-P</div><div class="val">${g}-${p}</div></div>
+    </div>`;
+
+  const listWrap = document.getElementById("terminados-list");
+  if(filtrados.length === 0){
+    listWrap.innerHTML = `<div class="empty">No hay partidos terminados${terminadosFiltroDia !== "todos" ? " ese día." : " todavía."}</div>`;
+    return;
+  }
+  listWrap.innerHTML = "";
+  filtrados.slice().reverse().forEach(m=>{
+    const betsDelPartido = state.bets.filter(b=>b.matchId===m.id);
+    const card = document.createElement("div");
+    card.className = "card match-card";
+    card.innerHTML = `
+      <button class="del-x" data-del-match-t="${m.id}">✕</button>
+      <div class="match-title">${m.local} vs ${m.visitante}</div>
+      <span class="status-badge finished">${formatDay(matchDay(m))}</span>
+      <div class="stat-grid">
+        <div class="stat-row"><span></span><span style="text-align:center">Local</span><span style="text-align:center">Visit.</span></div>
+        ${Object.keys(TIPO_LABEL).map(k=>`
+          <div class="stat-row">
+            <span>${TIPO_LABEL[k]}</span>
+            <span style="text-align:center">${m.stats[k].l}</span>
+            <span style="text-align:center">${m.stats[k].v}</span>
+          </div>`).join("")}
+      </div>
+      ${betsDelPartido.length === 0 ? '<div class="bet-sub">Sin apuestas cargadas</div>' : betsDelPartido.map(bet=>{
+        const r = evalBet(bet);
+        const condTxt = `${TIPO_LABEL[bet.tipo]}: ${bet.comparador==='mas'?'Más de':'Menos de'} ${bet.linea}`;
+        return `<div class="mini-bet">
+          <span>${condTxt} · $${bet.monto} @${bet.cuota}</span>
+          <span class="badge ${r.estado}">${r.estado==='G' ? `Ganada $${r.ganancia.toFixed(2)}` : "Perdida"}</span>
+        </div>`;
+      }).join("")}
+    `;
+    listWrap.appendChild(card);
+  });
+
+  listWrap.querySelectorAll("[data-del-match-t]").forEach(b=>{
+    b.addEventListener("click", ()=> deleteMatch(b.dataset.delMatchT));
+  });
+}
+
+// ---------- Resumen: efectividad general y por categoría ----------
+// Sólo cuenta apuestas ya decididas (G o P); las pendientes todavía no definen nada.
+function renderResumen(){
+  const decididas = state.bets.map(bet=>({bet, r:evalBet(bet)})).filter(x=>x.r.estado !== "pendiente");
+  const totalDecididas = decididas.length;
+  const totalGanadas = decididas.filter(x=>x.r.estado==="G").length;
+  const totalPerdidas = totalDecididas - totalGanadas;
+  const pctGlobal = totalDecididas ? (totalGanadas/totalDecididas*100) : 0;
+
+  document.getElementById("resumen-general").innerHTML = `
+    <div class="stats-mini">
+      <div class="box"><div class="lbl">Decididas</div><div class="val">${totalDecididas}</div></div>
+      <div class="box"><div class="lbl">Exitosas</div><div class="val" style="color:var(--accent)">${totalGanadas}</div></div>
+      <div class="box"><div class="lbl">Efectividad</div><div class="val">${totalDecididas ? pctGlobal.toFixed(0)+"%" : "-"}</div></div>
+    </div>`;
+
+  const porCategoria = {};
+  Object.keys(TIPO_LABEL).forEach(k=> porCategoria[k] = {g:0, p:0});
+  decididas.forEach(({bet, r})=>{
+    if(r.estado==="G") porCategoria[bet.tipo].g++; else porCategoria[bet.tipo].p++;
+  });
+
+  const catWrap = document.getElementById("resumen-categorias");
+  const filas = Object.keys(TIPO_LABEL).map(k=>{
+    const {g, p} = porCategoria[k];
+    const total = g + p;
+    if(total === 0){
+      return `<div class="cat-row">
+        <div class="cat-label">${TIPO_LABEL[k]}</div>
+        <div class="cat-sub">Sin apuestas decididas todavía</div>
+      </div>`;
+    }
+    const pct = (g/total*100);
+    return `<div class="cat-row">
+      <div class="cat-label">${TIPO_LABEL[k]} <span class="cat-pct">${pct.toFixed(0)}%</span></div>
+      <div class="cat-bar"><div class="cat-bar-g" style="width:${pct}%"></div><div class="cat-bar-p" style="width:${100-pct}%"></div></div>
+      <div class="cat-sub">${g} ganada${g===1?"":"s"} · ${p} perdida${p===1?"":"s"} · ${total} en total</div>
+    </div>`;
+  }).join("");
+  catWrap.innerHTML = filas || '<div class="empty">Todavía no hay apuestas decididas.</div>';
+}
+
+function renderAll(){
+  renderMatches();
+  renderMatchSelect();
+  renderBets();
+  renderTerminados();
+  renderResumen();
+  renderFooter();
+}
+
+// ---------- Footer totales y capital de la cuenta ----------
+// El capital se descuenta apenas se carga cada apuesta (el monto queda "jugado") y se
+// acredita el pago completo (monto*cuota) recién cuando esa apuesta queda Ganada.
+// Si queda Perdida no pasa nada más (el monto ya estaba descontado); si sigue Pendiente
+// el monto sigue descontado hasta que el partido la defina.
+function renderFooter(){
+  let apostado=0, ganancia=0, perdido=0, g=0, p=0, pend=0;
+  let capital = state.capitalInicial || 0;
+  state.bets.forEach(bet=>{
+    apostado += bet.monto;
+    capital -= bet.monto;
+    const r = evalBet(bet);
+    if(r.estado === "G"){ g++; ganancia += r.ganancia; capital += bet.monto * bet.cuota; }
+    else if(r.estado === "P"){ p++; perdido += bet.monto; }
+    else pend++;
+  });
+  const capitalEl = document.getElementById("foot-capital");
+  capitalEl.textContent = "$"+capital.toFixed(2);
+  capitalEl.style.color = capital < 0 ? "var(--red)" : "var(--text)";
+  document.getElementById("foot-apostado").textContent = "$"+apostado.toFixed(0);
+  document.getElementById("foot-ganancia").textContent = "$"+ganancia.toFixed(2);
+  document.getElementById("foot-perdido").textContent = "$"+perdido.toFixed(2);
+  document.getElementById("foot-record").textContent = `${g}-${p}-${pend}`;
+}
+
+document.getElementById("btn-edit-capital").addEventListener("click", ()=>{
+  const val = prompt("Capital inicial de la cuenta:", state.capitalInicial || 0);
+  if(val === null) return;
+  const num = parseNum(val);
+  if(isNaN(num)){ alert("Ingresá un número válido."); return; }
+  state.capitalInicial = num;
+  save();
+  renderFooter();
+});
+
+// ---------- Backup: exportar/importar todos los datos como JSON (para pasar entre celular y PC) ----------
+document.getElementById("btn-export").addEventListener("click", ()=>{
+  const blob = new Blob([JSON.stringify(state, null, 2)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "apuestas-backup.json";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+
+document.getElementById("btn-import-trigger").addEventListener("click", ()=>{
+  document.getElementById("in-import").click();
+});
+
+document.getElementById("in-import").addEventListener("change", (e)=>{
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ()=>{
+    try{
+      const data = JSON.parse(reader.result);
+      if(!Array.isArray(data.matches) || !Array.isArray(data.bets)) throw new Error("formato inválido");
+      if(!confirm("Esto va a reemplazar todos los partidos, apuestas y el capital actuales por los del backup. ¿Continuar?")){
+        e.target.value = "";
+        return;
+      }
+      state = {
+        matches: data.matches,
+        bets: data.bets,
+        capitalInicial: typeof data.capitalInicial === "number" ? data.capitalInicial : 0
+      };
+      save();
+      renderAll();
+      alert("Backup importado correctamente.");
+    }catch(err){
+      alert("El archivo no es un backup válido.");
+    }
+    e.target.value = "";
+  };
+  reader.readAsText(file);
+});
+
+// ---------- PWA: service worker para que funcione offline una vez instalada ----------
+if("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")){
+  navigator.serviceWorker.register("sw.js").catch(()=>{});
+}
+
+// ---------- Init ----------
+renderAll();
+
+// refresca minuto de juego y probabilidad estimada cada 60s
+setInterval(renderAll, 60000);
+</script>
+</body>
+</html>
