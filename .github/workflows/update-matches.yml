@@ -1,4 +1,4 @@
-name: Update matches from API-Sports
+name: Update matches from Promiedos
 
 on:
   schedule:
@@ -21,13 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Fetch matches
-        env:
-          API_SPORTS_KEY: ${{ secrets.API_SPORTS_KEY }}
         run: npm run fetch
       - name: Commit matches.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/matches.json || true
-          git commit -m "chore: update matches.json (api-sports)" || echo "no changes to commit"
+          git commit -m "chore: update matches.json (promiedos)" || echo "no changes to commit"
           git push

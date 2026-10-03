@@ -20,31 +20,16 @@ App móvil (PWA) para registrar partidos de Primera División y Primera Nacional
 
 ## Fuentes de datos
 
-- Actual: scraping de Promiedos (frágil, depende del HTML del sitio).
-- Recomendada para automatizar: API-Sports / API-Football, usando la clave gratuita del plan básico.
-- El script nuevo en [scripts/fetch_api_sports.js](scripts/fetch_api_sports.js) toma partidos y estado de fixtures de Argentina y los escribe en [data/matches.json](data/matches.json).
+- **Actual (automatizada)**: [scripts/fetch_promiedos.js](scripts/fetch_promiedos.js) consume la API interna (no documentada, sin key) que usa el sitio de Promiedos — `api.promiedos.com.ar` para el listado de partidos por liga, y el endpoint de datos de Next.js (`_next/data/<buildId>/game/.../....json`) para el detalle de cada partido. Corre gratis vía el cron de GitHub Actions ([.github/workflows/update-matches.yml](.github/workflows/update-matches.yml), diario 03:00 UTC) y escribe en [data/matches.json](data/matches.json):
+  - fecha y hora, estado del partido (programado/en curso/finalizado),
+  - goles del local y visitante,
+  - tiros al arco, corners, tarjetas amarillas+rojas sumadas (reales, no estimadas).
+  - **Atajadas de arquero no está disponible** en los datos públicos de Promiedos — esa categoría queda siempre en 0 y se completa a mano desde la pestaña Partidos, como cualquier otro dato que el usuario quiera corregir.
+  - Cada corrida hace upsert por id de partido sobre lo que ya había en `data/matches.json`, así los promedios históricos (`teamAverages`) se van acumulando entre corridas en vez de perderse cada vez.
+  - Alcance actual: Argentina (todas las divisiones y copas que lista el menú de Promiedos, salvo Liga Femenina), Inglaterra, España e Italia. Se puede ajustar en `COUNTRY_WHITELIST` dentro del script.
+  - Para correrlo a mano: `npm run fetch` (sin variables de entorno necesarias). `PROMIEDOS_LEAGUES=ebj,hc npm run fetch` corre solo esas ligas (por id de Promiedos) para probar rápido.
 
-### Uso con API-Sports
-
-1. Pedí una clave gratuita en API-Sports.
-2. En la terminal, define la variable de entorno:
-   ```powershell
-   $env:API_SPORTS_KEY="tu_clave"
-   ```
-3. Ejecuta:
-   ```powershell
-   npm run fetch:api-sports
-   ```
-
-El script carga los partidos de Argentina y escribe en [data/matches.json](data/matches.json) lo siguiente por partido:
-- fecha y hora del fixture,
-- goles del local y visitante,
-- tiros al arco (shots on goal),
-- corners,
-- tarjetas amarillas/rojas sumadas,
-- atajadas de arquero.
-
-> Esta opción es mejor para actualizar partidos, horarios y estado del fixture. No reemplaza automáticamente el flujo de apuestas ni las cuotas, que siguen siendo un problema aparte.
+- **Alternativa evaluada y descartada**: API-Sports / API-Football ([scripts/fetch_api_sports.js](scripts/fetch_api_sports.js), `npm run fetch:api-sports`). El plan free **no da acceso a la temporada en curso** ("Free plans do not have access to this season, try from 2022 to 2024"), así que no sirve para traer partidos actuales sin pagar un plan pago. El script queda en el repo por si en algún momento se paga un plan, pero no es el que usa el cron.
 
 ## Cómo levantarlo en VS Code
 

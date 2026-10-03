@@ -4,8 +4,7 @@
   "description": "Utility to fetch matches from Promiedos and write data/matches.json",
   "main": "scripts/fetch_promiedos.js",
   "scripts": {
-    "fetch": "node scripts/fetch_api_sports.js",
-    "fetch:promiedos-legacy": "node scripts/fetch_promiedos.js",
+    "fetch": "node scripts/fetch_promiedos.js",
     "fetch:playwright": "node scripts/fetch_promiedos_playwright.js",
     "fetch:api-sports": "node scripts/fetch_api_sports.js"
   },
