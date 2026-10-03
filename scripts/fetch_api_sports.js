@@ -196,6 +196,7 @@ async function resolveLeagueIds() {
   });
 
   const leagueIds = matches.map((entry) => entry?.league?.id).filter(Boolean);
+  console.log(`Ligas encontradas en API-Sports para Argentina: ${leagues.length}. Coinciden con el filtro: ${matches.map((entry) => `${entry?.league?.name} (id ${entry?.league?.id})`).join(', ') || 'ninguna'}`);
   if (!leagueIds.length) {
     throw new Error('No se encontraron ligas de Argentina en API-Sports.');
   }
@@ -213,7 +214,9 @@ async function fetchFixturesForSeason(leagueId, season) {
     timezone: 'America/Argentina/Buenos_Aires'
   });
 
-  return response?.response || [];
+  const fixtures = response?.response || [];
+  console.log(`Liga ${leagueId}, temporada ${season}, rango ${range.from}..${range.to}: ${fixtures.length} fixtures (${response?.errors && Object.keys(response.errors).length ? 'errors: ' + JSON.stringify(response.errors) : 'sin errores'})`);
+  return fixtures;
 }
 
 function sleep(ms) {
