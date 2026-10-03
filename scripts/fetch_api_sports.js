@@ -10,8 +10,9 @@ const fs = require('fs');
 const path = require('path');
 
 const API_KEY = process.env.API_SPORTS_KEY || process.argv[2];
-const SEASON = process.env.API_SPORTS_SEASON || '2024';
-const FALLBACK_SEASONS = ['2024'];
+const CURRENT_YEAR = new Date().getFullYear();
+const SEASON = process.env.API_SPORTS_SEASON || String(CURRENT_YEAR);
+const FALLBACK_SEASONS = [String(CURRENT_YEAR), String(CURRENT_YEAR - 1)];
 const REQUEST_DELAY_MS = Number(process.env.API_SPORTS_DELAY_MS || 1200);
 const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'matches.json');
 const LEAGUE_IDS = (process.env.API_SPORTS_LEAGUES || '').split(',').map((v) => v.trim()).filter(Boolean);
