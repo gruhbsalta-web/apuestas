@@ -1,0 +1,42 @@
+{
+  "matches": [
+    {
+      "id": "api_demo_1",
+      "local": "Boca Juniors",
+      "visitante": "River Plate",
+      "fechaHora": "2026-08-06T20:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": { "l": 0, "v": 0 },
+        "tarjetas": { "l": 2, "v": 1 },
+        "corners": { "l": 4, "v": 5 },
+        "tirosArco": { "l": 6, "v": 3 },
+        "atajadas": { "l": 2, "v": 4 }
+      },
+      "source": {
+        "provider": "demo"
+      }
+    },
+    {
+      "id": "api_demo_2",
+      "local": "Talleres",
+      "visitante": "Independiente",
+      "fechaHora": "2026-08-07T19:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": { "l": 0, "v": 1 },
+        "tarjetas": { "l": 3, "v": 2 },
+        "corners": { "l": 3, "v": 4 },
+        "tirosArco": { "l": 4, "v": 5 },
+        "atajadas": { "l": 3, "v": 2 }
+      },
+      "source": {
+        "provider": "demo"
+      }
+    }
+  ],
+  "bets": [],
+  "capitalInicial": 0
+}

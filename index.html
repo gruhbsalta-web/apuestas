@@ -189,7 +189,8 @@
         <button class="primary" id="btn-fetch-promiedos">Buscar y agregar partidos</button>
         <button id="btn-clear-fetch" class="capital-edit">Limpiar resultados</button>
       </div>
-      <div class="bet-sub" style="margin-top:8px">Nota: la importación usa un parser heurístico y puede necesitar revisión manual. Si la página no permite CORS el proceso puede fallar; en ese caso exportá un backup y cargalo manualmente.</div>
+      <button class="primary" id="btn-refresh-json" style="margin-top:10px;">Recargar desde data/matches.json</button>
+      <div class="bet-sub" style="margin-top:8px">Nota: la importación heurística de Promiedos puede necesitar revisión manual. Si ya corriste el fetch con API-Sports, este botón carga el JSON generado en la app sin perder tus apuestas.</div>
     </div>
 
     <div id="matches-list">
@@ -1023,6 +1024,21 @@ document.getElementById('btn-fetch-promiedos').addEventListener('click', async (
 
 document.getElementById('btn-clear-fetch').addEventListener('click', ()=>{
   document.getElementById('in-promiedos-url').value = 'https://www.promiedos.com.ar';
+});
+
+document.getElementById('btn-refresh-json').addEventListener('click', async ()=>{
+  try{
+    const resp = await fetch('data/matches.json');
+    if(!resp.ok) throw new Error('No se pudo leer data/matches.json');
+    const data = await resp.json();
+    if(!Array.isArray(data.matches)) throw new Error('El archivo no tiene partidos válidos');
+    state.matches = data.matches;
+    save();
+    renderAll();
+    alert('Partidos recargados desde data/matches.json');
+  }catch(err){
+    alert('Error al recargar: ' + err.message);
+  }
 });
 
 // ---------- Init ----------

@@ -18,6 +18,34 @@ App móvil (PWA) para registrar partidos de Primera División y Primera Nacional
 | `sw.js` | Service worker (cache-first con revalidación) para que funcione offline una vez instalada |
 | `icon.svg` | Ícono de la app (usado en manifest, favicon y apple-touch-icon) |
 
+## Fuentes de datos
+
+- Actual: scraping de Promiedos (frágil, depende del HTML del sitio).
+- Recomendada para automatizar: API-Sports / API-Football, usando la clave gratuita del plan básico.
+- El script nuevo en [scripts/fetch_api_sports.js](scripts/fetch_api_sports.js) toma partidos y estado de fixtures de Argentina y los escribe en [data/matches.json](data/matches.json).
+
+### Uso con API-Sports
+
+1. Pedí una clave gratuita en API-Sports.
+2. En la terminal, define la variable de entorno:
+   ```powershell
+   $env:API_SPORTS_KEY="tu_clave"
+   ```
+3. Ejecuta:
+   ```powershell
+   npm run fetch:api-sports
+   ```
+
+El script carga los partidos de Argentina y escribe en [data/matches.json](data/matches.json) lo siguiente por partido:
+- fecha y hora del fixture,
+- goles del local y visitante,
+- tiros al arco (shots on goal),
+- corners,
+- tarjetas amarillas/rojas sumadas,
+- atajadas de arquero.
+
+> Esta opción es mejor para actualizar partidos, horarios y estado del fixture. No reemplaza automáticamente el flujo de apuestas ni las cuotas, que siguen siendo un problema aparte.
+
 ## Cómo levantarlo en VS Code
 
 El service worker y el manifest **no funcionan bien si abrís `index.html` directo con doble click** (protocolo `file://`). Necesitás servirlo por `http://localhost`:
