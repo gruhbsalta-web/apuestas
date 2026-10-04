@@ -4,7 +4,7 @@
       "id": "promiedos_egddcig",
       "local": "Independiente",
       "visitante": "Instituto",
-      "fechaHora": "2026-10-02T19:15",
+      "fechaHora": "2026-10-02T15:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -41,7 +41,7 @@
       "id": "promiedos_egddchf",
       "local": "Independiente Rivadavia",
       "visitante": "Gimnasia La Plata",
-      "fechaHora": "2026-10-02T21:30",
+      "fechaHora": "2026-10-02T17:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -78,7 +78,7 @@
       "id": "promiedos_egddcif",
       "local": "Boca Juniors",
       "visitante": "Unión de Santa Fe",
-      "fechaHora": "2026-10-02T21:30",
+      "fechaHora": "2026-10-02T17:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -115,7 +115,7 @@
       "id": "promiedos_egddcie",
       "local": "Defensa y Justicia",
       "visitante": "San Lorenzo",
-      "fechaHora": "2026-10-03T14:45",
+      "fechaHora": "2026-10-03T10:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -152,7 +152,7 @@
       "id": "promiedos_egddchg",
       "local": "Atlético Tucumán",
       "visitante": "Barracas Central",
-      "fechaHora": "2026-10-03T17:00",
+      "fechaHora": "2026-10-03T13:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -189,7 +189,7 @@
       "id": "promiedos_egddcib",
       "local": "Newell's Old Boys",
       "visitante": "Lanús",
-      "fechaHora": "2026-10-03T17:00",
+      "fechaHora": "2026-10-03T13:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -226,7 +226,7 @@
       "id": "promiedos_egddchh",
       "local": "Huracán",
       "visitante": "Aldosivi",
-      "fechaHora": "2026-10-04T14:45",
+      "fechaHora": "2026-10-04T10:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -263,7 +263,7 @@
       "id": "promiedos_egddcih",
       "local": "Talleres de Córdoba",
       "visitante": "Belgrano",
-      "fechaHora": "2026-10-04T17:00",
+      "fechaHora": "2026-10-04T13:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -300,7 +300,7 @@
       "id": "promiedos_egddchd",
       "local": "Argentinos Juniors",
       "visitante": "Tigre",
-      "fechaHora": "2026-10-04T19:15",
+      "fechaHora": "2026-10-04T15:15",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -337,7 +337,7 @@
       "id": "promiedos_egddchj",
       "local": "Estudiantes RC",
       "visitante": "Racing Club",
-      "fechaHora": "2026-10-04T21:30",
+      "fechaHora": "2026-10-04T17:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -374,7 +374,7 @@
       "id": "promiedos_egddcid",
       "local": "Deportivo Riestra",
       "visitante": "Central Córdoba SdE",
-      "fechaHora": "2026-10-05T16:45",
+      "fechaHora": "2026-10-05T12:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -411,7 +411,7 @@
       "id": "promiedos_egddcia",
       "local": "Vélez Sarsfield",
       "visitante": "Platense",
-      "fechaHora": "2026-10-05T19:00",
+      "fechaHora": "2026-10-05T15:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -448,7 +448,7 @@
       "id": "promiedos_egddcic",
       "local": "Estudiantes de La Plata",
       "visitante": "Gimnasia de Mendoza",
-      "fechaHora": "2026-10-05T19:00",
+      "fechaHora": "2026-10-05T15:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -485,7 +485,7 @@
       "id": "promiedos_egddche",
       "local": "Banfield",
       "visitante": "Rosario Central",
-      "fechaHora": "2026-10-05T21:15",
+      "fechaHora": "2026-10-05T17:15",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -522,7 +522,7 @@
       "id": "promiedos_eifffhg",
       "local": "Ferro Carril Oeste",
       "visitante": "Deportivo Madryn",
-      "fechaHora": "2026-10-02T19:00",
+      "fechaHora": "2026-10-02T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -559,7 +559,7 @@
       "id": "promiedos_eifffge",
       "local": "Tristan Suárez",
       "visitante": "Quilmes",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -596,7 +596,7 @@
       "id": "promiedos_eifffgi",
       "local": "Temperley",
       "visitante": "Gimnasia de Jujuy",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -633,7 +633,7 @@
       "id": "promiedos_eifffha",
       "local": "Deportivo Morón",
       "visitante": "All Boys",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -670,7 +670,7 @@
       "id": "promiedos_eifffhb",
       "local": "Colón",
       "visitante": "Estudiantes",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -707,7 +707,7 @@
       "id": "promiedos_eifffhc",
       "local": "San Miguel",
       "visitante": "Mitre SdE",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -744,7 +744,7 @@
       "id": "promiedos_eifffhe",
       "local": "Acassuso",
       "visitante": "Ciudad De Bolivar",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -781,7 +781,7 @@
       "id": "promiedos_eifffgc",
       "local": "Agropecuario",
       "visitante": "Midland",
-      "fechaHora": "2026-10-04T15:00",
+      "fechaHora": "2026-10-04T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -818,7 +818,7 @@
       "id": "promiedos_eifffgd",
       "local": "Chacarita Juniors",
       "visitante": "Patronato",
-      "fechaHora": "2026-10-04T15:30",
+      "fechaHora": "2026-10-04T11:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -855,7 +855,7 @@
       "id": "promiedos_eifffhd",
       "local": "San Telmo",
       "visitante": "Almirante Brown",
-      "fechaHora": "2026-10-04T15:30",
+      "fechaHora": "2026-10-04T11:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -892,7 +892,7 @@
       "id": "promiedos_eifffhh",
       "local": "Central Norte",
       "visitante": "Racing de Córdoba",
-      "fechaHora": "2026-10-04T16:30",
+      "fechaHora": "2026-10-04T12:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -929,7 +929,7 @@
       "id": "promiedos_eifffgf",
       "local": "Güemes",
       "visitante": "Colegiales",
-      "fechaHora": "2026-10-04T17:00",
+      "fechaHora": "2026-10-04T13:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -966,7 +966,7 @@
       "id": "promiedos_eifffgg",
       "local": "San Martín San Juan",
       "visitante": "Almagro",
-      "fechaHora": "2026-10-04T17:00",
+      "fechaHora": "2026-10-04T13:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -1003,7 +1003,7 @@
       "id": "promiedos_eifffhf",
       "local": "Chaco For Ever",
       "visitante": "Defensores de Belgrano",
-      "fechaHora": "2026-10-04T17:00",
+      "fechaHora": "2026-10-04T13:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -1040,7 +1040,7 @@
       "id": "promiedos_eifffgb",
       "local": "Atlético Rafaela",
       "visitante": "Atlanta",
-      "fechaHora": "2026-10-04T17:30",
+      "fechaHora": "2026-10-04T13:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -1077,7 +1077,7 @@
       "id": "promiedos_eifffgj",
       "local": "Godoy Cruz",
       "visitante": "Los Andes",
-      "fechaHora": "2026-10-04T18:00",
+      "fechaHora": "2026-10-04T14:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -1114,7 +1114,7 @@
       "id": "promiedos_eifffga",
       "local": "San Martín Tucumán",
       "visitante": "Gimnasia y Tiro",
-      "fechaHora": "2026-10-04T18:30",
+      "fechaHora": "2026-10-04T14:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -1151,7 +1151,7 @@
       "id": "promiedos_eifffgh",
       "local": "Nueva Chicago",
       "visitante": "Deportivo Maipú",
-      "fechaHora": "2026-10-05T17:00",
+      "fechaHora": "2026-10-05T13:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -1188,7 +1188,7 @@
       "id": "promiedos_egeiifd",
       "local": "Estudiantes RC",
       "visitante": "San Martín Tucumán",
-      "fechaHora": "2026-04-07T16:00",
+      "fechaHora": "2026-04-07T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1225,7 +1225,7 @@
       "id": "promiedos_egeiife",
       "local": "Vélez Sarsfield",
       "visitante": "Deportivo Armenio",
-      "fechaHora": "2026-04-07T18:30",
+      "fechaHora": "2026-04-07T14:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1262,7 +1262,7 @@
       "id": "promiedos_egeiifa",
       "local": "Sarmiento Junín",
       "visitante": "Tristan Suárez",
-      "fechaHora": "2026-04-08T21:10",
+      "fechaHora": "2026-04-08T17:10",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1299,7 +1299,7 @@
       "id": "promiedos_egeiifb",
       "local": "Gimnasia La Plata",
       "visitante": "Camioneros",
-      "fechaHora": "2026-04-09T21:00",
+      "fechaHora": "2026-04-09T17:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1336,7 +1336,7 @@
       "id": "promiedos_egeiifc",
       "local": "Gimnasia de Mendoza",
       "visitante": "Gimnasia y Tiro",
-      "fechaHora": "2026-04-15T14:10",
+      "fechaHora": "2026-04-15T10:10",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1373,7 +1373,7 @@
       "id": "promiedos_ehaajai",
       "local": "Acassuso",
       "visitante": "Gimnasia La Plata",
-      "fechaHora": "2026-04-22T19:00",
+      "fechaHora": "2026-04-22T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1410,7 +1410,7 @@
       "id": "promiedos_eghjcii",
       "local": "Deportivo Morón",
       "visitante": "Midland",
-      "fechaHora": "2026-04-22T21:15",
+      "fechaHora": "2026-04-22T17:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1447,7 +1447,7 @@
       "id": "promiedos_ehacifi",
       "local": "Vélez Sarsfield",
       "visitante": "Gimnasia y Tiro",
-      "fechaHora": "2026-04-30T21:15",
+      "fechaHora": "2026-04-30T17:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1484,7 +1484,7 @@
       "id": "promiedos_ehaabih",
       "local": "Banfield",
       "visitante": "San Martín Tucumán",
-      "fechaHora": "2026-05-08T21:10",
+      "fechaHora": "2026-05-08T17:10",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1521,7 +1521,7 @@
       "id": "promiedos_eghjcij",
       "local": "Platense",
       "visitante": "San Martín San Juan",
-      "fechaHora": "2026-05-13T16:15",
+      "fechaHora": "2026-05-13T12:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1558,7 +1558,7 @@
       "id": "promiedos_ehbeghf",
       "local": "Talleres de Córdoba",
       "visitante": "Atlético Tucumán",
-      "fechaHora": "2026-05-20T17:00",
+      "fechaHora": "2026-05-20T13:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1595,7 +1595,7 @@
       "id": "promiedos_egjhhdh",
       "local": "Unión de Santa Fe",
       "visitante": "Independiente",
-      "fechaHora": "2026-05-22T20:00",
+      "fechaHora": "2026-05-22T16:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1632,7 +1632,7 @@
       "id": "promiedos_egjggch",
       "local": "Gimnasia de Jujuy",
       "visitante": "Belgrano",
-      "fechaHora": "2026-05-30T15:30",
+      "fechaHora": "2026-05-30T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1669,7 +1669,7 @@
       "id": "promiedos_egjifbc",
       "local": "Instituto",
       "visitante": "Lanús",
-      "fechaHora": "2026-05-30T18:00",
+      "fechaHora": "2026-05-30T14:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1706,7 +1706,7 @@
       "id": "promiedos_eghdchd",
       "local": "Estudiantes de La Plata",
       "visitante": "Rosario Central",
-      "fechaHora": "2026-05-31T15:30",
+      "fechaHora": "2026-05-31T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1743,7 +1743,7 @@
       "id": "promiedos_egjhhdi",
       "local": "Barracas Central",
       "visitante": "Huracán",
-      "fechaHora": "2026-06-02T21:10",
+      "fechaHora": "2026-06-02T17:10",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1780,7 +1780,7 @@
       "id": "promiedos_eghejii",
       "local": "Independiente Rivadavia",
       "visitante": "Tigre",
-      "fechaHora": "2026-07-12T16:15",
+      "fechaHora": "2026-07-12T12:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1817,7 +1817,7 @@
       "id": "promiedos_egjifbb",
       "local": "Racing Club",
       "visitante": "Defensa y Justicia",
-      "fechaHora": "2026-07-16T18:45",
+      "fechaHora": "2026-07-16T14:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1854,7 +1854,7 @@
       "id": "promiedos_ehaaghc",
       "local": "Sarmiento Junín",
       "visitante": "Boca Juniors",
-      "fechaHora": "2026-07-16T21:45",
+      "fechaHora": "2026-07-16T17:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1891,7 +1891,7 @@
       "id": "promiedos_egjbbcd",
       "local": "San Lorenzo",
       "visitante": "Deportivo Riestra",
-      "fechaHora": "2026-07-17T18:45",
+      "fechaHora": "2026-07-17T14:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1928,7 +1928,7 @@
       "id": "promiedos_eghejij",
       "local": "River Plate",
       "visitante": "Aldosivi",
-      "fechaHora": "2026-07-17T21:45",
+      "fechaHora": "2026-07-17T17:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1965,7 +1965,7 @@
       "id": "promiedos_ehcgfbc",
       "local": "Atlético Tucumán",
       "visitante": "Independiente",
-      "fechaHora": "2026-08-12T19:15",
+      "fechaHora": "2026-08-12T15:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2002,7 +2002,7 @@
       "id": "promiedos_ehhjbde",
       "local": "Deportivo Riestra",
       "visitante": "Gimnasia La Plata",
-      "fechaHora": "2026-08-18T17:00",
+      "fechaHora": "2026-08-18T13:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2039,7 +2039,7 @@
       "id": "promiedos_ehbchjj",
       "local": "Banfield",
       "visitante": "Midland",
-      "fechaHora": "2026-08-18T21:15",
+      "fechaHora": "2026-08-18T17:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2076,7 +2076,7 @@
       "id": "promiedos_ehhgjeb",
       "local": "Racing Club",
       "visitante": "Belgrano",
-      "fechaHora": "2026-08-19T19:15",
+      "fechaHora": "2026-08-19T15:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2113,7 +2113,7 @@
       "id": "promiedos_ehhjbdf",
       "local": "Aldosivi",
       "visitante": "Independiente Rivadavia",
-      "fechaHora": "2026-08-26T19:15",
+      "fechaHora": "2026-08-26T15:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2150,7 +2150,7 @@
       "id": "promiedos_ehcjjgd",
       "local": "Estudiantes de La Plata",
       "visitante": "Barracas Central",
-      "fechaHora": "2026-08-27T19:00",
+      "fechaHora": "2026-08-27T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2187,7 +2187,7 @@
       "id": "promiedos_ehcihfb",
       "local": "Platense",
       "visitante": "Instituto",
-      "fechaHora": "2026-08-27T21:15",
+      "fechaHora": "2026-08-27T17:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2224,7 +2224,7 @@
       "id": "promiedos_ehhgjea",
       "local": "Vélez Sarsfield",
       "visitante": "Boca Juniors",
-      "fechaHora": "2026-09-02T21:15",
+      "fechaHora": "2026-09-02T17:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2261,7 +2261,7 @@
       "id": "promiedos_eibjhac",
       "local": "Deportivo Riestra",
       "visitante": "Banfield",
-      "fechaHora": "2026-09-09T19:00",
+      "fechaHora": "2026-09-09T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2298,7 +2298,7 @@
       "id": "promiedos_eicgejh",
       "local": "Independiente Rivadavia",
       "visitante": "Atlético Tucumán",
-      "fechaHora": "2026-09-16T19:00",
+      "fechaHora": "2026-09-16T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2335,7 +2335,7 @@
       "id": "promiedos_eiefbdg",
       "local": "Racing Club",
       "visitante": "Boca Juniors",
-      "fechaHora": "2026-09-27T17:00",
+      "fechaHora": "2026-09-27T13:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2372,7 +2372,7 @@
       "id": "promiedos_eichiab",
       "local": "Platense",
       "visitante": "Estudiantes de La Plata",
-      "fechaHora": "2026-10-01T21:15",
+      "fechaHora": "2026-10-01T17:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2409,7 +2409,7 @@
       "id": "promiedos_eigjbai",
       "local": "Atlético Tucumán",
       "visitante": "Platense",
-      "fechaHora": "2026-10-28T19:00",
+      "fechaHora": "2026-10-28T15:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -2446,7 +2446,7 @@
       "id": "promiedos_eiggbcj",
       "local": "Banfield",
       "visitante": "Boca Juniors",
-      "fechaHora": "2026-11-14T19:00",
+      "fechaHora": "2026-11-14T14:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -2483,7 +2483,7 @@
       "id": "promiedos_egeaejg",
       "local": "Defensores Unidos",
       "visitante": "Argentino Quilmes",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2520,7 +2520,7 @@
       "id": "promiedos_egeaejj",
       "local": "Sportivo Dock Sud",
       "visitante": "Deportivo Armenio",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2557,7 +2557,7 @@
       "id": "promiedos_egeafaa",
       "local": "Camioneros",
       "visitante": "Deportivo Laferrere",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2594,7 +2594,7 @@
       "id": "promiedos_egeafac",
       "local": "San Martín Burzaco",
       "visitante": "Argentino Merlo",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2631,7 +2631,7 @@
       "id": "promiedos_egeafad",
       "local": "Villa San Carlos",
       "visitante": "Arsenal de Sarandí",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2668,7 +2668,7 @@
       "id": "promiedos_egeafae",
       "local": "Liniers",
       "visitante": "Excursionistas",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2705,7 +2705,7 @@
       "id": "promiedos_egeafaf",
       "local": "Real Pilar",
       "visitante": "Villa Dalmine",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -2742,7 +2742,7 @@
       "id": "promiedos_egeaejh",
       "local": "Comunicaciones",
       "visitante": "Flandria",
-      "fechaHora": "2026-10-04T15:00",
+      "fechaHora": "2026-10-04T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -2779,7 +2779,7 @@
       "id": "promiedos_egeafab",
       "local": "Sportivo Italiano",
       "visitante": "Talleres RE",
-      "fechaHora": "2026-10-04T15:00",
+      "fechaHora": "2026-10-04T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -2816,7 +2816,7 @@
       "id": "promiedos_egeafag",
       "local": "UAI Urquiza",
       "visitante": "Ituzaingó",
-      "fechaHora": "2026-10-05T15:00",
+      "fechaHora": "2026-10-05T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -2853,7 +2853,7 @@
       "id": "promiedos_egeaeji",
       "local": "Deportivo Merlo",
       "visitante": "Brown de Adrogué",
-      "fechaHora": "2026-10-05T19:00",
+      "fechaHora": "2026-10-05T15:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -3038,7 +3038,7 @@
       "id": "promiedos_ehjggbh",
       "local": "Círculo Deportivo",
       "visitante": "Germinal",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3075,7 +3075,7 @@
       "id": "promiedos_ehjggbi",
       "local": "Juventud Unida San Luis",
       "visitante": "San Martín de Mendoza",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3112,7 +3112,7 @@
       "id": "promiedos_ehjggbj",
       "local": "Costa Brava (Gral Pico)",
       "visitante": "Sol de Mayo",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3149,7 +3149,7 @@
       "id": "promiedos_ehjggca",
       "local": "Guillermo Brown",
       "visitante": "Fundación Amigos por el Deporte",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3186,7 +3186,7 @@
       "id": "promiedos_ehjggcb",
       "local": "Deportivo Rincón",
       "visitante": "Santamarina Tandil",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3223,7 +3223,7 @@
       "id": "promiedos_ehjggcg",
       "local": "Alvarado",
       "visitante": "Olimpo",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3260,7 +3260,7 @@
       "id": "promiedos_ehjggch",
       "local": "Huracán Las Heras",
       "visitante": "Atenas Río Cuarto",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3297,7 +3297,7 @@
       "id": "promiedos_ehjggcj",
       "local": "Villa Mitre",
       "visitante": "Kimberley Mar Del Plata",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3334,7 +3334,7 @@
       "id": "promiedos_ehjggda",
       "local": "Sarmiento De La Banda",
       "visitante": "Defensores Belgrano (VR)",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3371,7 +3371,7 @@
       "id": "promiedos_ehjhbgh",
       "local": "Sol De América",
       "visitante": "9 De Julio Rafaela",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3408,7 +3408,7 @@
       "id": "promiedos_ehjhbgi",
       "local": "Bartolomé Mitre (Posadas)",
       "visitante": "San Martín de Formosa",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3445,7 +3445,7 @@
       "id": "promiedos_ehjhbgj",
       "local": "Douglas Haig",
       "visitante": "CSCyD Gimnasia y Esgrima (Chivilcoy)",
-      "fechaHora": "2026-09-20T15:00",
+      "fechaHora": "2026-09-20T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3482,7 +3482,7 @@
       "id": "promiedos_eigbhah",
       "local": "Círculo Deportivo",
       "visitante": "Sol de Mayo",
-      "fechaHora": "2026-09-27T11:00",
+      "fechaHora": "2026-09-27T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3519,7 +3519,7 @@
       "id": "promiedos_eigafie",
       "local": "Olimpo",
       "visitante": "CSCyD Gimnasia y Esgrima (Chivilcoy)",
-      "fechaHora": "2026-09-27T15:30",
+      "fechaHora": "2026-09-27T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3556,7 +3556,7 @@
       "id": "promiedos_eigafif",
       "local": "Defensores Belgrano (VR)",
       "visitante": "Alvarado",
-      "fechaHora": "2026-09-27T15:30",
+      "fechaHora": "2026-09-27T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3593,7 +3593,7 @@
       "id": "promiedos_eigafhj",
       "local": "Sol De América",
       "visitante": "Cipolletti",
-      "fechaHora": "2026-09-27T19:00",
+      "fechaHora": "2026-09-27T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3630,7 +3630,7 @@
       "id": "promiedos_eigafig",
       "local": "Atenas Río Cuarto",
       "visitante": "San Martín de Formosa",
-      "fechaHora": "2026-09-27T19:30",
+      "fechaHora": "2026-09-27T15:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -3667,7 +3667,7 @@
       "id": "promiedos_eigafid",
       "local": "Cipolletti",
       "visitante": "Sol De América",
-      "fechaHora": "2026-10-04T11:00",
+      "fechaHora": "2026-10-04T07:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -3704,7 +3704,7 @@
       "id": "promiedos_eigafib",
       "local": "Alvarado",
       "visitante": "Defensores Belgrano (VR)",
-      "fechaHora": "2026-10-04T15:30",
+      "fechaHora": "2026-10-04T11:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -3741,7 +3741,7 @@
       "id": "promiedos_eigafic",
       "local": "San Martín de Formosa",
       "visitante": "Atenas Río Cuarto",
-      "fechaHora": "2026-10-04T16:00",
+      "fechaHora": "2026-10-04T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -3778,7 +3778,7 @@
       "id": "promiedos_eigafia",
       "local": "CSCyD Gimnasia y Esgrima (Chivilcoy)",
       "visitante": "Olimpo",
-      "fechaHora": "2026-10-04T17:00",
+      "fechaHora": "2026-10-04T13:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -3815,7 +3815,7 @@
       "id": "promiedos_eigagec",
       "local": "Sportivo Belgrano",
       "visitante": "Sarmiento De La Banda",
-      "fechaHora": "2026-10-11T14:00",
+      "fechaHora": "2026-10-11T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -3852,7 +3852,7 @@
       "id": "promiedos_eigaged",
       "local": "Juventud Antoniana",
       "visitante": "Huracán Las Heras",
-      "fechaHora": "2026-10-11T14:00",
+      "fechaHora": "2026-10-11T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -3889,7 +3889,7 @@
       "id": "promiedos_eigagee",
       "local": "Boca Unidos de Corrientes",
       "visitante": "Bartolomé Mitre (Posadas)",
-      "fechaHora": "2026-10-11T14:00",
+      "fechaHora": "2026-10-11T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -3926,7 +3926,7 @@
       "id": "promiedos_eigagef",
       "local": "Costa Brava (Gral Pico)",
       "visitante": "Villa Mitre",
-      "fechaHora": "2026-10-11T14:00",
+      "fechaHora": "2026-10-11T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -3963,7 +3963,7 @@
       "id": "promiedos_eigageg",
       "local": "San Martín de Mendoza",
       "visitante": "Argentino Monte Maíz",
-      "fechaHora": "2026-10-11T14:00",
+      "fechaHora": "2026-10-11T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4000,7 +4000,7 @@
       "id": "promiedos_eigageh",
       "local": "Gimnasia de Concepción",
       "visitante": "9 De Julio Rafaela",
-      "fechaHora": "2026-10-11T14:00",
+      "fechaHora": "2026-10-11T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4037,7 +4037,7 @@
       "id": "promiedos_eigagei",
       "local": "Deportivo Rincón",
       "visitante": "Kimberley Mar Del Plata",
-      "fechaHora": "2026-10-11T14:00",
+      "fechaHora": "2026-10-11T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4074,7 +4074,7 @@
       "id": "promiedos_eigagej",
       "local": "El Linqueño",
       "visitante": "Douglas Haig",
-      "fechaHora": "2026-10-11T14:00",
+      "fechaHora": "2026-10-11T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4111,7 +4111,7 @@
       "id": "promiedos_egdjeeb",
       "local": "Defensores Cambaceres",
       "visitante": "Victoriano Arenas",
-      "fechaHora": "2026-10-02T18:30",
+      "fechaHora": "2026-10-02T14:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4148,7 +4148,7 @@
       "id": "promiedos_egdjeec",
       "local": "Juventud Unida SM",
       "visitante": "Berazategui",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4185,7 +4185,7 @@
       "id": "promiedos_egdjedj",
       "local": "Puerto Nuevo",
       "visitante": "Justo José Urquiza",
-      "fechaHora": "2026-10-04T15:00",
+      "fechaHora": "2026-10-04T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4222,7 +4222,7 @@
       "id": "promiedos_egdjeed",
       "local": "Sacachispas",
       "visitante": "Estrella del Sur",
-      "fechaHora": "2026-10-04T15:00",
+      "fechaHora": "2026-10-04T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4259,7 +4259,7 @@
       "id": "promiedos_egdjeee",
       "local": "CA Lugano",
       "visitante": "Argentino Rosario",
-      "fechaHora": "2026-10-04T15:00",
+      "fechaHora": "2026-10-04T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4296,7 +4296,7 @@
       "id": "promiedos_egdjefa",
       "local": "Central Córdoba",
       "visitante": "Yupanqui",
-      "fechaHora": "2026-10-04T15:00",
+      "fechaHora": "2026-10-04T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4333,7 +4333,7 @@
       "id": "promiedos_egdjedi",
       "local": "Deportivo Paraguayo",
       "visitante": "Mercedes",
-      "fechaHora": "2026-10-05T15:00",
+      "fechaHora": "2026-10-05T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4370,7 +4370,7 @@
       "id": "promiedos_egdjeeh",
       "local": "El Porvenir",
       "visitante": "Cañuelas",
-      "fechaHora": "2026-10-05T15:00",
+      "fechaHora": "2026-10-05T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4407,7 +4407,7 @@
       "id": "promiedos_egdjeef",
       "local": "Club Luján",
       "visitante": "General Lamadrid",
-      "fechaHora": "2026-10-05T15:00",
+      "fechaHora": "2026-10-05T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4444,7 +4444,7 @@
       "id": "promiedos_egeadfb",
       "local": "Sportivo Barracas",
       "visitante": "Leones de Rosario FC",
-      "fechaHora": "2026-10-05T15:00",
+      "fechaHora": "2026-10-05T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4481,7 +4481,7 @@
       "id": "promiedos_egdjeeg",
       "local": "CA Fenix",
       "visitante": "CA Atlas",
-      "fechaHora": "2026-10-06T14:00",
+      "fechaHora": "2026-10-06T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4518,7 +4518,7 @@
       "id": "promiedos_egdjeei",
       "local": "Claypole",
       "visitante": "Deportivo Español",
-      "fechaHora": "2026-10-06T14:00",
+      "fechaHora": "2026-10-06T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4555,7 +4555,7 @@
       "id": "promiedos_egdjeej",
       "local": "Central Ballester",
       "visitante": "Muñiz",
-      "fechaHora": "2026-10-06T14:00",
+      "fechaHora": "2026-10-06T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4592,7 +4592,7 @@
       "id": "promiedos_egdjeea",
       "local": "Leandro N. Alem",
       "visitante": "Centro Español",
-      "fechaHora": "2026-10-06T15:00",
+      "fechaHora": "2026-10-06T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -4629,7 +4629,7 @@
       "id": "promiedos_ehdbifb",
       "local": "Barrancas Futbol Club",
       "visitante": "Buenos Aires City FC",
-      "fechaHora": "2026-07-04T10:00",
+      "fechaHora": "2026-07-04T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4666,7 +4666,7 @@
       "id": "promiedos_ehdbife",
       "local": "Las Mandarinas (Brandsen)",
       "visitante": "Uribelarrea FC",
-      "fechaHora": "2026-07-04T15:00",
+      "fechaHora": "2026-07-04T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4703,7 +4703,7 @@
       "id": "promiedos_ehdbiha",
       "local": "Club Deportivo Metalúrgico",
       "visitante": "Social Atlético Televisión",
-      "fechaHora": "2026-07-04T15:00",
+      "fechaHora": "2026-07-04T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4740,7 +4740,7 @@
       "id": "promiedos_ehdbifd",
       "local": "Everton de La Plata",
       "visitante": "Club Atlético Belgrano (Zarate)",
-      "fechaHora": "2026-07-05T15:00",
+      "fechaHora": "2026-07-05T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4777,7 +4777,7 @@
       "id": "promiedos_ehdbihc",
       "local": "Union Deportivo Provincial",
       "visitante": "Club Náutico Hacoaj",
-      "fechaHora": "2026-07-05T15:00",
+      "fechaHora": "2026-07-05T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4814,7 +4814,7 @@
       "id": "promiedos_ehdbihb",
       "local": "Estrella de Berisso",
       "visitante": "Juventud de Bernal",
-      "fechaHora": "2026-07-06T15:00",
+      "fechaHora": "2026-07-06T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4851,7 +4851,7 @@
       "id": "promiedos_ehdbihd",
       "local": "Defensores de Glew",
       "visitante": "Club Atlético Pilar",
-      "fechaHora": "2026-07-06T15:00",
+      "fechaHora": "2026-07-06T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4888,7 +4888,7 @@
       "id": "promiedos_ehdbifc",
       "local": "Fútbol Club Ezeiza",
       "visitante": "Academia Control Orientado",
-      "fechaHora": "2026-07-08T15:00",
+      "fechaHora": "2026-07-08T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4925,7 +4925,7 @@
       "id": "promiedos_ehdbigd",
       "local": "Club Náutico Hacoaj",
       "visitante": "Defensores de Glew",
-      "fechaHora": "2026-07-10T11:00",
+      "fechaHora": "2026-07-10T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4962,7 +4962,7 @@
       "id": "promiedos_ehdbied",
       "local": "Uribelarrea FC",
       "visitante": "Alumni (Los Hornos)",
-      "fechaHora": "2026-07-11T15:00",
+      "fechaHora": "2026-07-11T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -4999,7 +4999,7 @@
       "id": "promiedos_ehdbigf",
       "local": "Social Atlético Televisión",
       "visitante": "Estrella de Berisso",
-      "fechaHora": "2026-07-11T15:00",
+      "fechaHora": "2026-07-11T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5036,7 +5036,7 @@
       "id": "promiedos_ehdbigg",
       "local": "Club Atlético Pilar",
       "visitante": "Club Deportivo Metalúrgico",
-      "fechaHora": "2026-07-12T10:00",
+      "fechaHora": "2026-07-12T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5073,7 +5073,7 @@
       "id": "promiedos_ehdbiee",
       "local": "Club Atlético Belgrano (Zarate)",
       "visitante": "Las Mandarinas (Brandsen)",
-      "fechaHora": "2026-07-12T15:00",
+      "fechaHora": "2026-07-12T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5110,7 +5110,7 @@
       "id": "promiedos_ehdbief",
       "local": "Academia Control Orientado",
       "visitante": "Everton de La Plata",
-      "fechaHora": "2026-07-12T15:00",
+      "fechaHora": "2026-07-12T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5147,7 +5147,7 @@
       "id": "promiedos_ehdbige",
       "local": "Juventud de Bernal",
       "visitante": "Union Deportivo Provincial",
-      "fechaHora": "2026-07-14T13:00",
+      "fechaHora": "2026-07-14T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5184,7 +5184,7 @@
       "id": "promiedos_ehdbieg",
       "local": "Buenos Aires City FC",
       "visitante": "Fútbol Club Ezeiza",
-      "fechaHora": "2026-07-14T14:00",
+      "fechaHora": "2026-07-14T10:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5221,7 +5221,7 @@
       "id": "promiedos_ehdbidi",
       "local": "Club Atlético Belgrano (Zarate)",
       "visitante": "Alumni (Los Hornos)",
-      "fechaHora": "2026-07-17T15:00",
+      "fechaHora": "2026-07-17T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5258,7 +5258,7 @@
       "id": "promiedos_ehdbidh",
       "local": "Academia Control Orientado",
       "visitante": "Las Mandarinas (Brandsen)",
-      "fechaHora": "2026-07-18T15:00",
+      "fechaHora": "2026-07-18T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5295,7 +5295,7 @@
       "id": "promiedos_ehdbida",
       "local": "Everton de La Plata",
       "visitante": "Barrancas Futbol Club",
-      "fechaHora": "2026-07-25T10:00",
+      "fechaHora": "2026-07-25T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5332,7 +5332,7 @@
       "id": "promiedos_ehdbich",
       "local": "Uribelarrea FC",
       "visitante": "Club Atlético Belgrano (Zarate)",
-      "fechaHora": "2026-07-25T15:00",
+      "fechaHora": "2026-07-25T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5369,7 +5369,7 @@
       "id": "promiedos_ehdbifg",
       "local": "Social Atlético Televisión",
       "visitante": "Union Deportivo Provincial",
-      "fechaHora": "2026-07-25T15:30",
+      "fechaHora": "2026-07-25T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5406,7 +5406,7 @@
       "id": "promiedos_ehdbifi",
       "local": "Club Náutico Hacoaj",
       "visitante": "Club Atlético Pilar",
-      "fechaHora": "2026-07-25T15:30",
+      "fechaHora": "2026-07-25T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5443,7 +5443,7 @@
       "id": "promiedos_ehdbici",
       "local": "Alumni (Los Hornos)",
       "visitante": "Academia Control Orientado",
-      "fechaHora": "2026-07-26T14:00",
+      "fechaHora": "2026-07-26T10:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5480,7 +5480,7 @@
       "id": "promiedos_ehdbicj",
       "local": "Las Mandarinas (Brandsen)",
       "visitante": "Buenos Aires City FC",
-      "fechaHora": "2026-07-26T15:00",
+      "fechaHora": "2026-07-26T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5517,7 +5517,7 @@
       "id": "promiedos_ehdbiff",
       "local": "Club Deportivo Metalúrgico",
       "visitante": "Estrella de Berisso",
-      "fechaHora": "2026-07-26T15:00",
+      "fechaHora": "2026-07-26T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5554,7 +5554,7 @@
       "id": "promiedos_ehdbifh",
       "local": "Juventud de Bernal",
       "visitante": "Defensores de Glew",
-      "fechaHora": "2026-07-28T13:00",
+      "fechaHora": "2026-07-28T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5591,7 +5591,7 @@
       "id": "promiedos_ehdbidf",
       "local": "Barrancas Futbol Club",
       "visitante": "Fútbol Club Ezeiza",
-      "fechaHora": "2026-07-30T10:00",
+      "fechaHora": "2026-07-30T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5628,7 +5628,7 @@
       "id": "promiedos_ehdbidg",
       "local": "Buenos Aires City FC",
       "visitante": "Everton de La Plata",
-      "fechaHora": "2026-07-30T14:00",
+      "fechaHora": "2026-07-30T10:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5665,7 +5665,7 @@
       "id": "promiedos_ehdbicc",
       "local": "Academia Control Orientado",
       "visitante": "Uribelarrea FC",
-      "fechaHora": "2026-07-31T15:00",
+      "fechaHora": "2026-07-31T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5702,7 +5702,7 @@
       "id": "promiedos_ehdbieh",
       "local": "Club Náutico Hacoaj",
       "visitante": "Juventud de Bernal",
-      "fechaHora": "2026-08-01T15:00",
+      "fechaHora": "2026-08-01T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5739,7 +5739,7 @@
       "id": "promiedos_ehdbiei",
       "local": "Defensores de Glew",
       "visitante": "Social Atlético Televisión",
-      "fechaHora": "2026-08-02T15:00",
+      "fechaHora": "2026-08-02T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5776,7 +5776,7 @@
       "id": "promiedos_ehdbifa",
       "local": "Club Atlético Pilar",
       "visitante": "Estrella de Berisso",
-      "fechaHora": "2026-08-02T15:00",
+      "fechaHora": "2026-08-02T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5813,7 +5813,7 @@
       "id": "promiedos_ehdbica",
       "local": "Barrancas Futbol Club",
       "visitante": "Las Mandarinas (Brandsen)",
-      "fechaHora": "2026-08-03T10:00",
+      "fechaHora": "2026-08-03T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5850,7 +5850,7 @@
       "id": "promiedos_ehdbicb",
       "local": "Buenos Aires City FC",
       "visitante": "Alumni (Los Hornos)",
-      "fechaHora": "2026-08-03T14:00",
+      "fechaHora": "2026-08-03T10:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5887,7 +5887,7 @@
       "id": "promiedos_ehdbibj",
       "local": "Fútbol Club Ezeiza",
       "visitante": "Everton de La Plata",
-      "fechaHora": "2026-08-04T15:00",
+      "fechaHora": "2026-08-04T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5924,7 +5924,7 @@
       "id": "promiedos_ehdbiej",
       "local": "Union Deportivo Provincial",
       "visitante": "Club Deportivo Metalúrgico",
-      "fechaHora": "2026-08-05T15:00",
+      "fechaHora": "2026-08-05T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5961,7 +5961,7 @@
       "id": "promiedos_ehdbibc",
       "local": "Uribelarrea FC",
       "visitante": "Buenos Aires City FC",
-      "fechaHora": "2026-08-08T13:00",
+      "fechaHora": "2026-08-08T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -5998,7 +5998,7 @@
       "id": "promiedos_eiagdih",
       "local": "Club Deportivo Metalúrgico",
       "visitante": "Defensores de Glew",
-      "fechaHora": "2026-08-08T14:30",
+      "fechaHora": "2026-08-08T10:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6035,7 +6035,7 @@
       "id": "promiedos_eiagdjb",
       "local": "Club Atlético Belgrano (Zarate)",
       "visitante": "Academia Control Orientado",
-      "fechaHora": "2026-08-09T15:00",
+      "fechaHora": "2026-08-09T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6072,7 +6072,7 @@
       "id": "promiedos_eiagdjc",
       "local": "Alumni (Los Hornos)",
       "visitante": "Barrancas Futbol Club",
-      "fechaHora": "2026-08-09T15:00",
+      "fechaHora": "2026-08-09T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6109,7 +6109,7 @@
       "id": "promiedos_eiagdig",
       "local": "Social Atlético Televisión",
       "visitante": "Club Náutico Hacoaj",
-      "fechaHora": "2026-08-10T15:00",
+      "fechaHora": "2026-08-10T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6146,7 +6146,7 @@
       "id": "promiedos_eiagdjd",
       "local": "Estrella de Berisso",
       "visitante": "Union Deportivo Provincial",
-      "fechaHora": "2026-08-10T15:00",
+      "fechaHora": "2026-08-10T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6183,7 +6183,7 @@
       "id": "promiedos_eiagdjf",
       "local": "Juventud de Bernal",
       "visitante": "Club Atlético Pilar",
-      "fechaHora": "2026-08-11T14:40",
+      "fechaHora": "2026-08-11T10:40",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6220,7 +6220,7 @@
       "id": "promiedos_eiagdje",
       "local": "Everton de La Plata",
       "visitante": "Las Mandarinas (Brandsen)",
-      "fechaHora": "2026-08-11T15:00",
+      "fechaHora": "2026-08-11T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6257,7 +6257,7 @@
       "id": "promiedos_eiagdji",
       "local": "Barrancas Futbol Club",
       "visitante": "Uribelarrea FC",
-      "fechaHora": "2026-08-12T13:45",
+      "fechaHora": "2026-08-12T09:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6294,7 +6294,7 @@
       "id": "promiedos_eiagdjg",
       "local": "Buenos Aires City FC",
       "visitante": "Club Atlético Belgrano (Zarate)",
-      "fechaHora": "2026-08-12T14:00",
+      "fechaHora": "2026-08-12T10:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6331,7 +6331,7 @@
       "id": "promiedos_eiagdjh",
       "local": "Fútbol Club Ezeiza",
       "visitante": "Alumni (Los Hornos)",
-      "fechaHora": "2026-08-12T15:00",
+      "fechaHora": "2026-08-12T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6368,7 +6368,7 @@
       "id": "promiedos_ehdbidc",
       "local": "Club Náutico Hacoaj",
       "visitante": "Club Deportivo Metalúrgico",
-      "fechaHora": "2026-08-15T15:00",
+      "fechaHora": "2026-08-15T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6405,7 +6405,7 @@
       "id": "promiedos_eibbdjg",
       "local": "Academia Control Orientado",
       "visitante": "Buenos Aires City FC",
-      "fechaHora": "2026-08-16T10:00",
+      "fechaHora": "2026-08-16T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6442,7 +6442,7 @@
       "id": "promiedos_ehdbide",
       "local": "Club Atlético Pilar",
       "visitante": "Union Deportivo Provincial",
-      "fechaHora": "2026-08-16T15:00",
+      "fechaHora": "2026-08-16T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6479,7 +6479,7 @@
       "id": "promiedos_eibbdje",
       "local": "Alumni (Los Hornos)",
       "visitante": "Everton de La Plata",
-      "fechaHora": "2026-08-16T15:00",
+      "fechaHora": "2026-08-16T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6516,7 +6516,7 @@
       "id": "promiedos_eibbdjf",
       "local": "Club Atlético Belgrano (Zarate)",
       "visitante": "Barrancas Futbol Club",
-      "fechaHora": "2026-08-16T15:00",
+      "fechaHora": "2026-08-16T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6553,7 +6553,7 @@
       "id": "promiedos_ehdbidd",
       "local": "Defensores de Glew",
       "visitante": "Estrella de Berisso",
-      "fechaHora": "2026-08-17T15:00",
+      "fechaHora": "2026-08-17T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6590,7 +6590,7 @@
       "id": "promiedos_eibbdjh",
       "local": "Uribelarrea FC",
       "visitante": "Fútbol Club Ezeiza",
-      "fechaHora": "2026-08-18T13:00",
+      "fechaHora": "2026-08-18T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6627,7 +6627,7 @@
       "id": "promiedos_ehdbidb",
       "local": "Juventud de Bernal",
       "visitante": "Social Atlético Televisión",
-      "fechaHora": "2026-08-19T13:00",
+      "fechaHora": "2026-08-19T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6664,7 +6664,7 @@
       "id": "promiedos_eibfefi",
       "local": "Union Deportivo Provincial",
       "visitante": "Defensores de Glew",
-      "fechaHora": "2026-08-22T13:00",
+      "fechaHora": "2026-08-22T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6701,7 +6701,7 @@
       "id": "promiedos_eibfega",
       "local": "Club Deportivo Metalúrgico",
       "visitante": "Juventud de Bernal",
-      "fechaHora": "2026-08-22T15:00",
+      "fechaHora": "2026-08-22T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6738,7 +6738,7 @@
       "id": "promiedos_eibjfcc",
       "local": "Las Mandarinas (Brandsen)",
       "visitante": "Alumni (Los Hornos)",
-      "fechaHora": "2026-08-22T15:00",
+      "fechaHora": "2026-08-22T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6775,7 +6775,7 @@
       "id": "promiedos_eibjfcd",
       "local": "Barrancas Futbol Club",
       "visitante": "Academia Control Orientado",
-      "fechaHora": "2026-08-22T15:00",
+      "fechaHora": "2026-08-22T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6812,7 +6812,7 @@
       "id": "promiedos_eibjfce",
       "local": "Everton de La Plata",
       "visitante": "Uribelarrea FC",
-      "fechaHora": "2026-08-23T15:00",
+      "fechaHora": "2026-08-23T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6849,7 +6849,7 @@
       "id": "promiedos_eibfegh",
       "local": "Social Atlético Televisión",
       "visitante": "Club Atlético Pilar",
-      "fechaHora": "2026-08-24T11:00",
+      "fechaHora": "2026-08-24T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6886,7 +6886,7 @@
       "id": "promiedos_eibfegj",
       "local": "Estrella de Berisso",
       "visitante": "Club Náutico Hacoaj",
-      "fechaHora": "2026-08-24T15:00",
+      "fechaHora": "2026-08-24T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6923,7 +6923,7 @@
       "id": "promiedos_eibjfcf",
       "local": "Fútbol Club Ezeiza",
       "visitante": "Club Atlético Belgrano (Zarate)",
-      "fechaHora": "2026-08-24T15:00",
+      "fechaHora": "2026-08-24T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6960,7 +6960,7 @@
       "id": "promiedos_eiagdii",
       "local": "Las Mandarinas (Brandsen)",
       "visitante": "Fútbol Club Ezeiza",
-      "fechaHora": "2026-08-27T15:00",
+      "fechaHora": "2026-08-27T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -6997,7 +6997,7 @@
       "id": "promiedos_eiceaed",
       "local": "Buenos Aires City FC",
       "visitante": "Barrancas Futbol Club",
-      "fechaHora": "2026-08-28T14:00",
+      "fechaHora": "2026-08-28T10:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7034,7 +7034,7 @@
       "id": "promiedos_eicbhii",
       "local": "Social Atlético Televisión",
       "visitante": "Club Deportivo Metalúrgico",
-      "fechaHora": "2026-08-29T11:00",
+      "fechaHora": "2026-08-29T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7071,7 +7071,7 @@
       "id": "promiedos_eiceaee",
       "local": "Uribelarrea FC",
       "visitante": "Las Mandarinas (Brandsen)",
-      "fechaHora": "2026-08-29T15:00",
+      "fechaHora": "2026-08-29T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7108,7 +7108,7 @@
       "id": "promiedos_eicbhjc",
       "local": "Club Náutico Hacoaj",
       "visitante": "Union Deportivo Provincial",
-      "fechaHora": "2026-08-29T17:00",
+      "fechaHora": "2026-08-29T13:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7145,7 +7145,7 @@
       "id": "promiedos_eicbhij",
       "local": "Club Atlético Pilar",
       "visitante": "Defensores de Glew",
-      "fechaHora": "2026-08-30T10:00",
+      "fechaHora": "2026-08-30T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7182,7 +7182,7 @@
       "id": "promiedos_eiceaeg",
       "local": "Academia Control Orientado",
       "visitante": "Fútbol Club Ezeiza",
-      "fechaHora": "2026-08-30T15:00",
+      "fechaHora": "2026-08-30T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7219,7 +7219,7 @@
       "id": "promiedos_eiceaeh",
       "local": "Club Atlético Belgrano (Zarate)",
       "visitante": "Everton de La Plata",
-      "fechaHora": "2026-08-31T15:00",
+      "fechaHora": "2026-08-31T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7256,7 +7256,7 @@
       "id": "promiedos_eicbhjb",
       "local": "Juventud de Bernal",
       "visitante": "Estrella de Berisso",
-      "fechaHora": "2026-09-01T15:00",
+      "fechaHora": "2026-09-01T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7293,7 +7293,7 @@
       "id": "promiedos_eiciibj",
       "local": "Union Deportivo Provincial",
       "visitante": "Juventud de Bernal",
-      "fechaHora": "2026-09-05T14:00",
+      "fechaHora": "2026-09-05T10:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7330,7 +7330,7 @@
       "id": "promiedos_eiciibh",
       "local": "Club Deportivo Metalúrgico",
       "visitante": "Club Atlético Pilar",
-      "fechaHora": "2026-09-07T15:00",
+      "fechaHora": "2026-09-07T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7367,7 +7367,7 @@
       "id": "promiedos_eiciibi",
       "local": "Defensores de Glew",
       "visitante": "Club Náutico Hacoaj",
-      "fechaHora": "2026-09-07T15:00",
+      "fechaHora": "2026-09-07T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7404,7 +7404,7 @@
       "id": "promiedos_eiciica",
       "local": "Estrella de Berisso",
       "visitante": "Social Atlético Televisión",
-      "fechaHora": "2026-09-07T15:00",
+      "fechaHora": "2026-09-07T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7441,7 +7441,7 @@
       "id": "promiedos_eiedhfg",
       "local": "Fútbol Club Ezeiza",
       "visitante": "Buenos Aires City FC",
-      "fechaHora": "2026-09-07T15:00",
+      "fechaHora": "2026-09-07T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7478,7 +7478,7 @@
       "id": "promiedos_eiedhfh",
       "local": "Everton de La Plata",
       "visitante": "Academia Control Orientado",
-      "fechaHora": "2026-09-07T15:00",
+      "fechaHora": "2026-09-07T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7515,7 +7515,7 @@
       "id": "promiedos_eiedhfi",
       "local": "Las Mandarinas (Brandsen)",
       "visitante": "Club Atlético Belgrano (Zarate)",
-      "fechaHora": "2026-09-07T15:00",
+      "fechaHora": "2026-09-07T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7552,7 +7552,7 @@
       "id": "promiedos_eiedhfj",
       "local": "Alumni (Los Hornos)",
       "visitante": "Uribelarrea FC",
-      "fechaHora": "2026-09-07T15:00",
+      "fechaHora": "2026-09-07T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7589,7 +7589,7 @@
       "id": "promiedos_eiejfde",
       "local": "Barrancas Futbol Club",
       "visitante": "Social Atlético Televisión",
-      "fechaHora": "2026-09-12T10:00",
+      "fechaHora": "2026-09-12T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7626,7 +7626,7 @@
       "id": "promiedos_eiejffi",
       "local": "Buenos Aires City FC",
       "visitante": "Defensores de Glew",
-      "fechaHora": "2026-09-14T14:00",
+      "fechaHora": "2026-09-14T10:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7663,7 +7663,7 @@
       "id": "promiedos_eiejfga",
       "local": "Fútbol Club Ezeiza",
       "visitante": "Club Deportivo Metalúrgico",
-      "fechaHora": "2026-09-14T15:00",
+      "fechaHora": "2026-09-14T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7700,7 +7700,7 @@
       "id": "promiedos_eiejffj",
       "local": "Club Náutico Hacoaj",
       "visitante": "Uribelarrea FC",
-      "fechaHora": "2026-09-15T19:00",
+      "fechaHora": "2026-09-15T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7737,7 +7737,7 @@
       "id": "promiedos_eifhbbh",
       "local": "Club Deportivo Metalúrgico",
       "visitante": "Fútbol Club Ezeiza",
-      "fechaHora": "2026-09-18T15:00",
+      "fechaHora": "2026-09-18T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7774,7 +7774,7 @@
       "id": "promiedos_eiejfff",
       "local": "Social Atlético Televisión",
       "visitante": "Barrancas Futbol Club",
-      "fechaHora": "2026-09-19T15:00",
+      "fechaHora": "2026-09-19T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7811,7 +7811,7 @@
       "id": "promiedos_eifhbbi",
       "local": "Defensores de Glew",
       "visitante": "Buenos Aires City FC",
-      "fechaHora": "2026-09-19T15:00",
+      "fechaHora": "2026-09-19T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7848,7 +7848,7 @@
       "id": "promiedos_eifhbbj",
       "local": "Uribelarrea FC",
       "visitante": "Club Náutico Hacoaj",
-      "fechaHora": "2026-09-22T15:00",
+      "fechaHora": "2026-09-22T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7885,7 +7885,7 @@
       "id": "promiedos_eigcbff",
       "local": "Club Deportivo Metalúrgico",
       "visitante": "Social Atlético Televisión",
-      "fechaHora": "2026-09-29T15:00",
+      "fechaHora": "2026-09-29T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7922,7 +7922,7 @@
       "id": "promiedos_eigcbfg",
       "local": "Uribelarrea FC",
       "visitante": "Defensores de Glew",
-      "fechaHora": "2026-09-30T14:00",
+      "fechaHora": "2026-09-30T10:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7959,7 +7959,7 @@
       "id": "promiedos_eigffcj",
       "local": "Defensores de Glew",
       "visitante": "Uribelarrea FC",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -7996,7 +7996,7 @@
       "id": "promiedos_eigffde",
       "local": "Social Atlético Televisión",
       "visitante": "Club Deportivo Metalúrgico",
-      "fechaHora": "2026-10-05T13:00",
+      "fechaHora": "2026-10-05T09:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -8255,7 +8255,7 @@
       "id": "promiedos_eiefghg",
       "local": "Barracas Central (Reserva)",
       "visitante": "Gimnasia de Mendoza (Reserva)",
-      "fechaHora": "2026-10-01T15:00",
+      "fechaHora": "2026-10-01T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8292,7 +8292,7 @@
       "id": "promiedos_eiefghh",
       "local": "Colón (Reserva)",
       "visitante": "Deportivo Riestra (Reserva)",
-      "fechaHora": "2026-10-01T15:00",
+      "fechaHora": "2026-10-01T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8329,7 +8329,7 @@
       "id": "promiedos_eiefghi",
       "local": "Independiente (Reserva)",
       "visitante": "Boca Juniors (Reserva)",
-      "fechaHora": "2026-10-01T15:00",
+      "fechaHora": "2026-10-01T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8366,7 +8366,7 @@
       "id": "promiedos_eiefghj",
       "local": "San Martín SJ (Reserva)",
       "visitante": "Lanús (Reserva)",
-      "fechaHora": "2026-10-01T15:00",
+      "fechaHora": "2026-10-01T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8403,7 +8403,7 @@
       "id": "promiedos_eiefgia",
       "local": "Vélez Sarsfield (Reserva)",
       "visitante": "Argentinos Juniors (Reserva)",
-      "fechaHora": "2026-10-01T15:45",
+      "fechaHora": "2026-10-01T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8440,7 +8440,7 @@
       "id": "promiedos_eiefgic",
       "local": "Talleres (Reserva)",
       "visitante": "Godoy Cruz (Reserva)",
-      "fechaHora": "2026-10-01T17:00",
+      "fechaHora": "2026-10-01T13:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8477,7 +8477,7 @@
       "id": "promiedos_eiefgib",
       "local": "River Plate (Reserva)",
       "visitante": "Sarmiento (Reserva)",
-      "fechaHora": "2026-10-01T19:00",
+      "fechaHora": "2026-10-01T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8514,7 +8514,7 @@
       "id": "promiedos_eigegdd",
       "local": "Huracán (Reserva)",
       "visitante": "Atlético de Rafaela (Reserva)",
-      "fechaHora": "2026-10-06T15:00",
+      "fechaHora": "2026-10-06T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -8551,7 +8551,7 @@
       "id": "promiedos_eigegde",
       "local": "Gimnasia La Plata (Reserva)",
       "visitante": "Rosario Central (Reserva)",
-      "fechaHora": "2026-10-06T15:00",
+      "fechaHora": "2026-10-06T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -8588,7 +8588,7 @@
       "id": "promiedos_eigegdf",
       "local": "Defensa y Justicia (Reserva)",
       "visitante": "Quilmes AC (Reserva)",
-      "fechaHora": "2026-10-06T15:00",
+      "fechaHora": "2026-10-06T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -8625,7 +8625,7 @@
       "id": "promiedos_eigegdg",
       "local": "Unión Santa Fé (Reserva)",
       "visitante": "Banfield (Reserva)",
-      "fechaHora": "2026-10-06T15:00",
+      "fechaHora": "2026-10-06T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -8662,7 +8662,7 @@
       "id": "promiedos_eigegdh",
       "local": "Newell's Old Boys (Reserva)",
       "visitante": "Estudiantes de La Plata (Reserva)",
-      "fechaHora": "2026-10-06T15:00",
+      "fechaHora": "2026-10-06T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -8699,7 +8699,7 @@
       "id": "promiedos_eigegdi",
       "local": "Racing Club (Reserva)",
       "visitante": "River Plate (Reserva)",
-      "fechaHora": "2026-10-06T15:00",
+      "fechaHora": "2026-10-06T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -8736,7 +8736,7 @@
       "id": "promiedos_ecbcgbg",
       "local": "Argentinos Juniors (Reserva)",
       "visitante": "Independiente Rivadavia (Reserva)",
-      "fechaHora": "2024-10-03T15:00",
+      "fechaHora": "2024-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8773,7 +8773,7 @@
       "id": "promiedos_ecbcgca",
       "local": "Instituto (Reserva)",
       "visitante": "River Plate (Reserva)",
-      "fechaHora": "2024-10-03T15:00",
+      "fechaHora": "2024-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8810,7 +8810,7 @@
       "id": "promiedos_ecbcgcc",
       "local": "Sarmiento (Reserva)",
       "visitante": "Central Córdoba (Reserva)",
-      "fechaHora": "2024-10-03T15:00",
+      "fechaHora": "2024-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8847,7 +8847,7 @@
       "id": "promiedos_ecbcgce",
       "local": "Independiente (Reserva)",
       "visitante": "Lanús (Reserva)",
-      "fechaHora": "2024-10-03T19:00",
+      "fechaHora": "2024-10-03T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8884,7 +8884,7 @@
       "id": "promiedos_ecbcgcg",
       "local": "Atlético Tucumán (Reserva)",
       "visitante": "Barracas Central (Reserva)",
-      "fechaHora": "2024-10-03T19:00",
+      "fechaHora": "2024-10-03T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8921,7 +8921,7 @@
       "id": "promiedos_ecbcgag",
       "local": "Barracas Central (Reserva)",
       "visitante": "Gimnasia La Plata (Reserva)",
-      "fechaHora": "2024-10-09T15:00",
+      "fechaHora": "2024-10-09T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8958,7 +8958,7 @@
       "id": "promiedos_ecbcgah",
       "local": "Platense (Reserva)",
       "visitante": "Central Córdoba (Reserva)",
-      "fechaHora": "2024-10-09T15:00",
+      "fechaHora": "2024-10-09T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8995,7 +8995,7 @@
       "id": "promiedos_ecbcgbe",
       "local": "Godoy Cruz (Reserva)",
       "visitante": "Unión Santa Fé (Reserva)",
-      "fechaHora": "2024-10-09T16:00",
+      "fechaHora": "2024-10-09T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9032,7 +9032,7 @@
       "id": "promiedos_ecbcgae",
       "local": "Atlético Tucumán (Reserva)",
       "visitante": "Argentinos Juniors (Reserva)",
-      "fechaHora": "2024-10-09T19:00",
+      "fechaHora": "2024-10-09T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9069,7 +9069,7 @@
       "id": "promiedos_ecbcgbb",
       "local": "Talleres (Reserva)",
       "visitante": "Independiente (Reserva)",
-      "fechaHora": "2024-10-09T19:00",
+      "fechaHora": "2024-10-09T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9106,7 +9106,7 @@
       "id": "promiedos_ecbcgad",
       "local": "Newell's Old Boys (Reserva)",
       "visitante": "Tigre (Reserva)",
-      "fechaHora": "2024-10-10T15:00",
+      "fechaHora": "2024-10-10T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9143,7 +9143,7 @@
       "id": "promiedos_ecbcgaf",
       "local": "Independiente Rivadavia (Reserva)",
       "visitante": "Instituto (Reserva)",
-      "fechaHora": "2024-10-10T15:00",
+      "fechaHora": "2024-10-10T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9180,7 +9180,7 @@
       "id": "promiedos_ecbcgbc",
       "local": "Estudiantes de La Plata (Reserva)",
       "visitante": "Sarmiento (Reserva)",
-      "fechaHora": "2024-10-10T15:00",
+      "fechaHora": "2024-10-10T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9217,7 +9217,7 @@
       "id": "promiedos_ecbcgac",
       "local": "Defensa y Justicia (Reserva)",
       "visitante": "Boca Juniors (Reserva)",
-      "fechaHora": "2024-10-11T15:00",
+      "fechaHora": "2024-10-11T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9254,7 +9254,7 @@
       "id": "promiedos_ecbcgai",
       "local": "Lanús (Reserva)",
       "visitante": "Huracán (Reserva)",
-      "fechaHora": "2024-10-11T15:00",
+      "fechaHora": "2024-10-11T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9291,7 +9291,7 @@
       "id": "promiedos_ecbcgba",
       "local": "Vélez Sarsfield (Reserva)",
       "visitante": "Rosario Central (Reserva)",
-      "fechaHora": "2024-10-11T15:00",
+      "fechaHora": "2024-10-11T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9328,7 +9328,7 @@
       "id": "promiedos_ecbcgbd",
       "local": "San Lorenzo (Reserva)",
       "visitante": "Banfield (Reserva)",
-      "fechaHora": "2024-10-11T15:00",
+      "fechaHora": "2024-10-11T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9365,7 +9365,7 @@
       "id": "promiedos_ecbcgbf",
       "local": "Racing Club (Reserva)",
       "visitante": "Belgrano (Reserva)",
-      "fechaHora": "2024-10-11T15:00",
+      "fechaHora": "2024-10-11T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9402,7 +9402,7 @@
       "id": "promiedos_ecbcgaj",
       "local": "River Plate (Reserva)",
       "visitante": "Deportivo Riestra (Reserva)",
-      "fechaHora": "2024-10-11T19:00",
+      "fechaHora": "2024-10-11T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9439,7 +9439,7 @@
       "id": "promiedos_ecbceid",
       "local": "Sarmiento (Reserva)",
       "visitante": "Platense (Reserva)",
-      "fechaHora": "2024-10-15T16:00",
+      "fechaHora": "2024-10-15T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9476,7 +9476,7 @@
       "id": "promiedos_ecbcfjd",
       "local": "Instituto (Reserva)",
       "visitante": "Atlético Tucumán (Reserva)",
-      "fechaHora": "2024-10-15T16:00",
+      "fechaHora": "2024-10-15T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9513,7 +9513,7 @@
       "id": "promiedos_ecbcfji",
       "local": "Tigre (Reserva)",
       "visitante": "Estudiantes de La Plata (Reserva)",
-      "fechaHora": "2024-10-15T16:00",
+      "fechaHora": "2024-10-15T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9550,7 +9550,7 @@
       "id": "promiedos_ecbcgaa",
       "local": "Central Córdoba (Reserva)",
       "visitante": "Godoy Cruz (Reserva)",
-      "fechaHora": "2024-10-15T18:00",
+      "fechaHora": "2024-10-15T14:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9587,7 +9587,7 @@
       "id": "promiedos_ecbcfjb",
       "local": "Unión Santa Fé (Reserva)",
       "visitante": "Defensa y Justicia (Reserva)",
-      "fechaHora": "2024-10-16T16:00",
+      "fechaHora": "2024-10-16T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9624,7 +9624,7 @@
       "id": "promiedos_ecbcfje",
       "local": "Huracán (Reserva)",
       "visitante": "Talleres (Reserva)",
-      "fechaHora": "2024-10-16T16:00",
+      "fechaHora": "2024-10-16T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9661,7 +9661,7 @@
       "id": "promiedos_ecbcfjg",
       "local": "Deportivo Riestra (Reserva)",
       "visitante": "Independiente Rivadavia (Reserva)",
-      "fechaHora": "2024-10-16T16:00",
+      "fechaHora": "2024-10-16T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9698,7 +9698,7 @@
       "id": "promiedos_ecbcfja",
       "local": "Boca Juniors (Reserva)",
       "visitante": "Lanús (Reserva)",
-      "fechaHora": "2024-10-16T19:00",
+      "fechaHora": "2024-10-16T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9735,7 +9735,7 @@
       "id": "promiedos_ecbcfjj",
       "local": "Independiente (Reserva)",
       "visitante": "Newell's Old Boys (Reserva)",
-      "fechaHora": "2024-10-16T19:00",
+      "fechaHora": "2024-10-16T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9772,7 +9772,7 @@
       "id": "promiedos_ecbceic",
       "local": "Rosario Central (Reserva)",
       "visitante": "Racing Club (Reserva)",
-      "fechaHora": "2024-10-17T16:00",
+      "fechaHora": "2024-10-17T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9809,7 +9809,7 @@
       "id": "promiedos_ecbcfjc",
       "local": "Gimnasia La Plata (Reserva)",
       "visitante": "Vélez Sarsfield (Reserva)",
-      "fechaHora": "2024-10-17T16:00",
+      "fechaHora": "2024-10-17T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9846,7 +9846,7 @@
       "id": "promiedos_ecbcfjf",
       "local": "Banfield (Reserva)",
       "visitante": "River Plate (Reserva)",
-      "fechaHora": "2024-10-17T16:00",
+      "fechaHora": "2024-10-17T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9883,7 +9883,7 @@
       "id": "promiedos_ecbcfjh",
       "local": "Argentinos Juniors (Reserva)",
       "visitante": "Barracas Central (Reserva)",
-      "fechaHora": "2024-10-17T16:00",
+      "fechaHora": "2024-10-17T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9920,7 +9920,7 @@
       "id": "promiedos_ecbcgab",
       "local": "Belgrano (Reserva)",
       "visitante": "San Lorenzo (Reserva)",
-      "fechaHora": "2024-10-17T16:00",
+      "fechaHora": "2024-10-17T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9957,7 +9957,7 @@
       "id": "promiedos_ecbcfhh",
       "local": "Godoy Cruz (Reserva)",
       "visitante": "Platense (Reserva)",
-      "fechaHora": "2024-10-22T16:00",
+      "fechaHora": "2024-10-22T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -9994,7 +9994,7 @@
       "id": "promiedos_ecbcfhi",
       "local": "Lanús (Reserva)",
       "visitante": "Unión Santa Fé (Reserva)",
-      "fechaHora": "2024-10-22T16:00",
+      "fechaHora": "2024-10-22T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10031,7 +10031,7 @@
       "id": "promiedos_ecbcfib",
       "local": "Racing Club (Reserva)",
       "visitante": "Gimnasia La Plata (Reserva)",
-      "fechaHora": "2024-10-22T16:00",
+      "fechaHora": "2024-10-22T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10068,7 +10068,7 @@
       "id": "promiedos_ecbcfie",
       "local": "Tigre (Reserva)",
       "visitante": "Sarmiento (Reserva)",
-      "fechaHora": "2024-10-22T16:00",
+      "fechaHora": "2024-10-22T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10105,7 +10105,7 @@
       "id": "promiedos_ecbcfid",
       "local": "Talleres (Reserva)",
       "visitante": "Boca Juniors (Reserva)",
-      "fechaHora": "2024-10-22T19:00",
+      "fechaHora": "2024-10-22T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10142,7 +10142,7 @@
       "id": "promiedos_ecbcfhg",
       "local": "Defensa y Justicia (Reserva)",
       "visitante": "Central Córdoba (Reserva)",
-      "fechaHora": "2024-10-23T16:00",
+      "fechaHora": "2024-10-23T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10179,7 +10179,7 @@
       "id": "promiedos_ecbcfhj",
       "local": "Argentinos Juniors (Reserva)",
       "visitante": "Instituto (Reserva)",
-      "fechaHora": "2024-10-23T16:00",
+      "fechaHora": "2024-10-23T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10216,7 +10216,7 @@
       "id": "promiedos_ecbcfic",
       "local": "Newell's Old Boys (Reserva)",
       "visitante": "Huracán (Reserva)",
-      "fechaHora": "2024-10-23T16:00",
+      "fechaHora": "2024-10-23T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10253,7 +10253,7 @@
       "id": "promiedos_ecbcfij",
       "local": "San Lorenzo (Reserva)",
       "visitante": "Rosario Central (Reserva)",
-      "fechaHora": "2024-10-23T16:00",
+      "fechaHora": "2024-10-23T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10290,7 +10290,7 @@
       "id": "promiedos_ecbcfig",
       "local": "Barracas Central (Reserva)",
       "visitante": "Vélez Sarsfield (Reserva)",
-      "fechaHora": "2024-10-24T16:00",
+      "fechaHora": "2024-10-24T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10327,7 +10327,7 @@
       "id": "promiedos_ecbcfih",
       "local": "Estudiantes de La Plata (Reserva)",
       "visitante": "Independiente (Reserva)",
-      "fechaHora": "2024-10-24T16:00",
+      "fechaHora": "2024-10-24T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10364,7 +10364,7 @@
       "id": "promiedos_ecbcfii",
       "local": "Independiente Rivadavia (Reserva)",
       "visitante": "Banfield (Reserva)",
-      "fechaHora": "2024-10-24T16:00",
+      "fechaHora": "2024-10-24T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10401,7 +10401,7 @@
       "id": "promiedos_ecbcfia",
       "local": "Atlético Tucumán (Reserva)",
       "visitante": "Deportivo Riestra (Reserva)",
-      "fechaHora": "2024-10-24T19:00",
+      "fechaHora": "2024-10-24T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10438,7 +10438,7 @@
       "id": "promiedos_ecbcfif",
       "local": "River Plate (Reserva)",
       "visitante": "Belgrano (Reserva)",
-      "fechaHora": "2024-10-24T19:00",
+      "fechaHora": "2024-10-24T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10475,7 +10475,7 @@
       "id": "promiedos_ecbbhfj",
       "local": "Huracán (Reserva)",
       "visitante": "Estudiantes de La Plata (Reserva)",
-      "fechaHora": "2024-10-29T16:00",
+      "fechaHora": "2024-10-29T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10512,7 +10512,7 @@
       "id": "promiedos_ecbbhga",
       "local": "Independiente (Reserva)",
       "visitante": "Tigre (Reserva)",
-      "fechaHora": "2024-10-29T16:00",
+      "fechaHora": "2024-10-29T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10549,7 +10549,7 @@
       "id": "promiedos_ecbcfgh",
       "local": "Central Córdoba (Reserva)",
       "visitante": "Lanús (Reserva)",
-      "fechaHora": "2024-10-29T16:00",
+      "fechaHora": "2024-10-29T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10586,7 +10586,7 @@
       "id": "promiedos_ecbcfgi",
       "local": "Sarmiento (Reserva)",
       "visitante": "Godoy Cruz (Reserva)",
-      "fechaHora": "2024-10-29T16:00",
+      "fechaHora": "2024-10-29T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10623,7 +10623,7 @@
       "id": "promiedos_ecbcfhe",
       "local": "Unión Santa Fé (Reserva)",
       "visitante": "Talleres (Reserva)",
-      "fechaHora": "2024-10-29T16:00",
+      "fechaHora": "2024-10-29T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10660,7 +10660,7 @@
       "id": "promiedos_ecbcfhf",
       "local": "Platense (Reserva)",
       "visitante": "Defensa y Justicia (Reserva)",
-      "fechaHora": "2024-10-29T16:00",
+      "fechaHora": "2024-10-29T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10697,7 +10697,7 @@
       "id": "promiedos_ecbcfgf",
       "local": "Boca Juniors (Reserva)",
       "visitante": "Newell's Old Boys (Reserva)",
-      "fechaHora": "2024-10-29T19:00",
+      "fechaHora": "2024-10-29T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10734,7 +10734,7 @@
       "id": "promiedos_ecbceie",
       "local": "Banfield (Reserva)",
       "visitante": "Atlético Tucumán (Reserva)",
-      "fechaHora": "2024-10-31T16:00",
+      "fechaHora": "2024-10-31T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10771,7 +10771,7 @@
       "id": "promiedos_ecbcfgg",
       "local": "Vélez Sarsfield (Reserva)",
       "visitante": "Racing Club (Reserva)",
-      "fechaHora": "2024-10-31T16:00",
+      "fechaHora": "2024-10-31T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10808,7 +10808,7 @@
       "id": "promiedos_ecbcfgj",
       "local": "Gimnasia La Plata (Reserva)",
       "visitante": "San Lorenzo (Reserva)",
-      "fechaHora": "2024-10-31T16:00",
+      "fechaHora": "2024-10-31T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10845,7 +10845,7 @@
       "id": "promiedos_ecbcfhb",
       "local": "Belgrano (Reserva)",
       "visitante": "Independiente Rivadavia (Reserva)",
-      "fechaHora": "2024-10-31T16:00",
+      "fechaHora": "2024-10-31T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10882,7 +10882,7 @@
       "id": "promiedos_ecbcfhc",
       "local": "Deportivo Riestra (Reserva)",
       "visitante": "Argentinos Juniors (Reserva)",
-      "fechaHora": "2024-10-31T16:00",
+      "fechaHora": "2024-10-31T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10919,7 +10919,7 @@
       "id": "promiedos_ecbcfhd",
       "local": "Instituto (Reserva)",
       "visitante": "Barracas Central (Reserva)",
-      "fechaHora": "2024-10-31T16:00",
+      "fechaHora": "2024-10-31T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10956,7 +10956,7 @@
       "id": "promiedos_ecbcfha",
       "local": "Rosario Central (Reserva)",
       "visitante": "River Plate (Reserva)",
-      "fechaHora": "2024-11-01T16:00",
+      "fechaHora": "2024-11-01T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -10993,7 +10993,7 @@
       "id": "promiedos_ecjbfae",
       "local": "Newell's Old Boys (Reserva)",
       "visitante": "Belgrano (Reserva)",
-      "fechaHora": "2024-11-15T19:00",
+      "fechaHora": "2024-11-15T14:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11030,7 +11030,7 @@
       "id": "promiedos_ecjbfad",
       "local": "Boca Juniors (Reserva)",
       "visitante": "Racing Club (Reserva)",
-      "fechaHora": "2024-11-15T21:00",
+      "fechaHora": "2024-11-15T16:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11067,7 +11067,7 @@
       "id": "promiedos_ecjbfac",
       "local": "Gimnasia La Plata (Reserva)",
       "visitante": "Independiente (Reserva)",
-      "fechaHora": "2024-11-16T19:00",
+      "fechaHora": "2024-11-16T14:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11104,7 +11104,7 @@
       "id": "promiedos_ecjbfab",
       "local": "River Plate (Reserva)",
       "visitante": "Defensa y Justicia (Reserva)",
-      "fechaHora": "2024-11-16T21:00",
+      "fechaHora": "2024-11-16T16:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11141,7 +11141,7 @@
       "id": "promiedos_ecjbeji",
       "local": "Lanús (Reserva)",
       "visitante": "Rosario Central (Reserva)",
-      "fechaHora": "2024-11-17T17:00",
+      "fechaHora": "2024-11-17T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11178,7 +11178,7 @@
       "id": "promiedos_ecjbfaa",
       "local": "Vélez Sarsfield (Reserva)",
       "visitante": "Unión Santa Fé (Reserva)",
-      "fechaHora": "2024-11-17T17:00",
+      "fechaHora": "2024-11-17T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11215,7 +11215,7 @@
       "id": "promiedos_ecjbejh",
       "local": "Estudiantes de La Plata (Reserva)",
       "visitante": "Argentinos Juniors (Reserva)",
-      "fechaHora": "2024-11-17T21:00",
+      "fechaHora": "2024-11-17T16:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11252,7 +11252,7 @@
       "id": "promiedos_ecjbejj",
       "local": "San Lorenzo (Reserva)",
       "visitante": "Godoy Cruz (Reserva)",
-      "fechaHora": "2024-11-18T17:00",
+      "fechaHora": "2024-11-18T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11289,7 +11289,7 @@
       "id": "promiedos_ecjiifb",
       "local": "Newell's Old Boys (Reserva)",
       "visitante": "Independiente (Reserva)",
-      "fechaHora": "2024-11-27T18:00",
+      "fechaHora": "2024-11-27T13:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11326,7 +11326,7 @@
       "id": "promiedos_ecjiiej",
       "local": "Estudiantes de La Plata (Reserva)",
       "visitante": "Unión Santa Fé (Reserva)",
-      "fechaHora": "2024-11-27T20:00",
+      "fechaHora": "2024-11-27T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11363,7 +11363,7 @@
       "id": "promiedos_ecjiifa",
       "local": "San Lorenzo (Reserva)",
       "visitante": "Boca Juniors (Reserva)",
-      "fechaHora": "2024-11-28T17:00",
+      "fechaHora": "2024-11-28T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11400,7 +11400,7 @@
       "id": "promiedos_ecjiifc",
       "local": "River Plate (Reserva)",
       "visitante": "Rosario Central (Reserva)",
-      "fechaHora": "2024-11-28T20:00",
+      "fechaHora": "2024-11-28T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11437,7 +11437,7 @@
       "id": "promiedos_edadbbi",
       "local": "San Lorenzo (Reserva)",
       "visitante": "Unión Santa Fé (Reserva)",
-      "fechaHora": "2024-12-05T18:00",
+      "fechaHora": "2024-12-05T13:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11474,7 +11474,7 @@
       "id": "promiedos_edadbbj",
       "local": "River Plate (Reserva)",
       "visitante": "Newell's Old Boys (Reserva)",
-      "fechaHora": "2024-12-05T21:00",
+      "fechaHora": "2024-12-05T16:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11511,7 +11511,7 @@
       "id": "promiedos_edaibaa",
       "local": "River Plate (Reserva)",
       "visitante": "San Lorenzo (Reserva)",
-      "fechaHora": "2024-12-10T20:00",
+      "fechaHora": "2024-12-10T15:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11733,7 +11733,7 @@
       "id": "promiedos_ehecaff",
       "local": "Manchester City",
       "visitante": "Sunderland",
-      "fechaHora": "2026-09-20T10:00",
+      "fechaHora": "2026-09-20T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11770,7 +11770,7 @@
       "id": "promiedos_ehecafg",
       "local": "Leeds United",
       "visitante": "Crystal Palace",
-      "fechaHora": "2026-09-20T10:00",
+      "fechaHora": "2026-09-20T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11807,7 +11807,7 @@
       "id": "promiedos_ehecagb",
       "local": "Bournemouth",
       "visitante": "Liverpool",
-      "fechaHora": "2026-09-20T10:00",
+      "fechaHora": "2026-09-20T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11844,7 +11844,7 @@
       "id": "promiedos_ehecafh",
       "local": "Fulham",
       "visitante": "Manchester United",
-      "fechaHora": "2026-09-20T12:30",
+      "fechaHora": "2026-09-20T08:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -11881,7 +11881,7 @@
       "id": "promiedos_ehecafb",
       "local": "Arsenal",
       "visitante": "Leeds United",
-      "fechaHora": "2026-10-10T08:30",
+      "fechaHora": "2026-10-10T04:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -11918,7 +11918,7 @@
       "id": "promiedos_ehecaea",
       "local": "Sunderland",
       "visitante": "Brighton",
-      "fechaHora": "2026-10-10T11:00",
+      "fechaHora": "2026-10-10T07:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -11955,7 +11955,7 @@
       "id": "promiedos_ehecaee",
       "local": "Ipswich",
       "visitante": "Fulham",
-      "fechaHora": "2026-10-10T11:00",
+      "fechaHora": "2026-10-10T07:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -11992,7 +11992,7 @@
       "id": "promiedos_ehecaei",
       "local": "Chelsea",
       "visitante": "Bournemouth",
-      "fechaHora": "2026-10-10T11:00",
+      "fechaHora": "2026-10-10T07:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -12029,7 +12029,7 @@
       "id": "promiedos_ehecaej",
       "local": "Aston Villa",
       "visitante": "Brentford",
-      "fechaHora": "2026-10-10T11:00",
+      "fechaHora": "2026-10-10T07:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -12066,7 +12066,7 @@
       "id": "promiedos_ehecaeb",
       "local": "Manchester United",
       "visitante": "Tottenham",
-      "fechaHora": "2026-10-10T13:30",
+      "fechaHora": "2026-10-10T09:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -12103,7 +12103,7 @@
       "id": "promiedos_ehecaef",
       "local": "Hull City",
       "visitante": "Everton",
-      "fechaHora": "2026-10-11T10:00",
+      "fechaHora": "2026-10-11T06:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -12140,7 +12140,7 @@
       "id": "promiedos_ehecaeg",
       "local": "Crystal Palace",
       "visitante": "Nottingham Forest",
-      "fechaHora": "2026-10-11T10:00",
+      "fechaHora": "2026-10-11T06:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -12177,7 +12177,7 @@
       "id": "promiedos_ehecaec",
       "local": "Liverpool",
       "visitante": "Manchester City",
-      "fechaHora": "2026-10-11T12:30",
+      "fechaHora": "2026-10-11T08:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -12214,7 +12214,7 @@
       "id": "promiedos_ehecaeh",
       "local": "Coventry",
       "visitante": "Newcastle United",
-      "fechaHora": "2026-10-12T16:00",
+      "fechaHora": "2026-10-12T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -12251,7 +12251,7 @@
       "id": "promiedos_ehdgaff",
       "local": "Tranmere",
       "visitante": "Rochdale",
-      "fechaHora": "2026-08-01T11:00",
+      "fechaHora": "2026-08-01T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12288,7 +12288,7 @@
       "id": "promiedos_ehdgafg",
       "local": "York",
       "visitante": "Crawley Town",
-      "fechaHora": "2026-08-03T15:30",
+      "fechaHora": "2026-08-03T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12325,7 +12325,7 @@
       "id": "promiedos_ehegcff",
       "local": "Bristol City",
       "visitante": "Walsall",
-      "fechaHora": "2026-08-06T15:45",
+      "fechaHora": "2026-08-06T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12362,7 +12362,7 @@
       "id": "promiedos_ehegdac",
       "local": "Wolves",
       "visitante": "Port Vale",
-      "fechaHora": "2026-08-07T15:45",
+      "fechaHora": "2026-08-07T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12399,7 +12399,7 @@
       "id": "promiedos_ehegdah",
       "local": "Wycombe Wanderers",
       "visitante": "Stevenage",
-      "fechaHora": "2026-08-07T15:45",
+      "fechaHora": "2026-08-07T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12436,7 +12436,7 @@
       "id": "promiedos_ehegdbi",
       "local": "Middlesbrough",
       "visitante": "Wrexham",
-      "fechaHora": "2026-08-07T16:00",
+      "fechaHora": "2026-08-07T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12473,7 +12473,7 @@
       "id": "promiedos_ehegdbe",
       "local": "Cambridge United",
       "visitante": "Barnet",
-      "fechaHora": "2026-08-08T09:00",
+      "fechaHora": "2026-08-08T05:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12510,7 +12510,7 @@
       "id": "promiedos_ehegcjc",
       "local": "QPR",
       "visitante": "Millwall",
-      "fechaHora": "2026-08-08T10:00",
+      "fechaHora": "2026-08-08T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12547,7 +12547,7 @@
       "id": "promiedos_ehegcfe",
       "local": "Barnsley",
       "visitante": "Wigan",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12584,7 +12584,7 @@
       "id": "promiedos_ehegcga",
       "local": "Burton Albion",
       "visitante": "Blackburn Rovers",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12621,7 +12621,7 @@
       "id": "promiedos_ehegcjb",
       "local": "Grimsby",
       "visitante": "Blackpool",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12658,7 +12658,7 @@
       "id": "promiedos_ehegcjd",
       "local": "Cardiff",
       "visitante": "Swindon",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12695,7 +12695,7 @@
       "id": "promiedos_ehegcje",
       "local": "Preston",
       "visitante": "Huddersfield",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12732,7 +12732,7 @@
       "id": "promiedos_ehegcjf",
       "local": "Salford City",
       "visitante": "Shrewsbury",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12769,7 +12769,7 @@
       "id": "promiedos_ehegcjg",
       "local": "Leicester City",
       "visitante": "Northampton",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12806,7 +12806,7 @@
       "id": "promiedos_ehegcjh",
       "local": "Gillingham",
       "visitante": "Luton",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12843,7 +12843,7 @@
       "id": "promiedos_ehegcji",
       "local": "AFC Wimbledon",
       "visitante": "Newport County",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12880,7 +12880,7 @@
       "id": "promiedos_ehegcjj",
       "local": "Derby",
       "visitante": "Lincoln",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12917,7 +12917,7 @@
       "id": "promiedos_ehegdaa",
       "local": "West Ham United",
       "visitante": "Portsmouth",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12954,7 +12954,7 @@
       "id": "promiedos_ehegdab",
       "local": "Burnley",
       "visitante": "Notts County",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -12991,7 +12991,7 @@
       "id": "promiedos_ehegdad",
       "local": "Swansea",
       "visitante": "Birmingham",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13028,7 +13028,7 @@
       "id": "promiedos_ehegdae",
       "local": "Stoke City",
       "visitante": "Oldham",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13065,7 +13065,7 @@
       "id": "promiedos_ehegdaf",
       "local": "Bromley",
       "visitante": "Reading",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13102,7 +13102,7 @@
       "id": "promiedos_ehegdag",
       "local": "Crewe",
       "visitante": "Accrington",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13139,7 +13139,7 @@
       "id": "promiedos_ehegdai",
       "local": "Fleetwood Town",
       "visitante": "Chesterfield",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13176,7 +13176,7 @@
       "id": "promiedos_ehegdaj",
       "local": "Leyton Orient",
       "visitante": "Oxford United",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13213,7 +13213,7 @@
       "id": "promiedos_ehegdba",
       "local": "Sheffield Wed",
       "visitante": "Bolton",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13250,7 +13250,7 @@
       "id": "promiedos_ehegdbc",
       "local": "Stockport",
       "visitante": "Doncaster",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13287,7 +13287,7 @@
       "id": "promiedos_ehegdbd",
       "local": "Norwich",
       "visitante": "MK Dons",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13324,7 +13324,7 @@
       "id": "promiedos_ehegdbh",
       "local": "Bristol Rovers",
       "visitante": "Peterborough",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13361,7 +13361,7 @@
       "id": "promiedos_eiabiag",
       "local": "Bradford",
       "visitante": "Rochdale",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13398,7 +13398,7 @@
       "id": "promiedos_eiadcai",
       "local": "Watford FC",
       "visitante": "Crawley Town",
-      "fechaHora": "2026-08-08T11:00",
+      "fechaHora": "2026-08-08T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13435,7 +13435,7 @@
       "id": "promiedos_ehegcja",
       "local": "Cheltenham",
       "visitante": "Charlton",
-      "fechaHora": "2026-08-08T13:30",
+      "fechaHora": "2026-08-08T09:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13472,7 +13472,7 @@
       "id": "promiedos_ehegdbb",
       "local": "Colchester",
       "visitante": "Southampton",
-      "fechaHora": "2026-08-08T13:30",
+      "fechaHora": "2026-08-08T09:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13509,7 +13509,7 @@
       "id": "promiedos_ehegdbg",
       "local": "Rotherham",
       "visitante": "West Brom",
-      "fechaHora": "2026-08-08T13:30",
+      "fechaHora": "2026-08-08T09:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13546,7 +13546,7 @@
       "id": "promiedos_ehegdbf",
       "local": "Mansfield",
       "visitante": "Sheffield Utd",
-      "fechaHora": "2026-08-09T12:00",
+      "fechaHora": "2026-08-09T08:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13583,7 +13583,7 @@
       "id": "promiedos_ehegdbj",
       "local": "Plymouth",
       "visitante": "Exeter",
-      "fechaHora": "2026-08-10T16:00",
+      "fechaHora": "2026-08-10T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13620,7 +13620,7 @@
       "id": "promiedos_eiaicbc",
       "local": "Cardiff",
       "visitante": "Norwich",
-      "fechaHora": "2026-08-25T15:00",
+      "fechaHora": "2026-08-25T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13657,7 +13657,7 @@
       "id": "promiedos_eiaiccb",
       "local": "Doncaster",
       "visitante": "Middlesbrough",
-      "fechaHora": "2026-08-25T15:30",
+      "fechaHora": "2026-08-25T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13694,7 +13694,7 @@
       "id": "promiedos_eiaicag",
       "local": "Cambridge United",
       "visitante": "Millwall",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13731,7 +13731,7 @@
       "id": "promiedos_eiaicai",
       "local": "Southampton",
       "visitante": "West Ham United",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13768,7 +13768,7 @@
       "id": "promiedos_eiaicaj",
       "local": "Watford FC",
       "visitante": "Peterborough",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13805,7 +13805,7 @@
       "id": "promiedos_eiaicbb",
       "local": "Stevenage",
       "visitante": "Reading",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13842,7 +13842,7 @@
       "id": "promiedos_eiaicbd",
       "local": "Ipswich",
       "visitante": "Leicester City",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13879,7 +13879,7 @@
       "id": "promiedos_eiaicbe",
       "local": "Walsall",
       "visitante": "Leyton Orient",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13916,7 +13916,7 @@
       "id": "promiedos_eiaicbf",
       "local": "Fleetwood Town",
       "visitante": "Shrewsbury",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13953,7 +13953,7 @@
       "id": "promiedos_eiaicbg",
       "local": "Blackpool",
       "visitante": "Lincoln",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -13990,7 +13990,7 @@
       "id": "promiedos_eiaicbh",
       "local": "Sheffield Wed",
       "visitante": "Wolves",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14027,7 +14027,7 @@
       "id": "promiedos_eiaicca",
       "local": "Barnsley",
       "visitante": "Crewe",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14064,7 +14064,7 @@
       "id": "promiedos_eiaiccd",
       "local": "Blackburn Rovers",
       "visitante": "Sheffield Utd",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14101,7 +14101,7 @@
       "id": "promiedos_eiaiccf",
       "local": "Stoke City",
       "visitante": "Hull City",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14138,7 +14138,7 @@
       "id": "promiedos_eiaicci",
       "local": "Plymouth",
       "visitante": "Coventry",
-      "fechaHora": "2026-08-25T15:45",
+      "fechaHora": "2026-08-25T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14175,7 +14175,7 @@
       "id": "promiedos_eiaicba",
       "local": "Birmingham",
       "visitante": "Brentford",
-      "fechaHora": "2026-08-25T16:00",
+      "fechaHora": "2026-08-25T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14212,7 +14212,7 @@
       "id": "promiedos_eiaiccc",
       "local": "Nottingham Forest",
       "visitante": "Leeds United",
-      "fechaHora": "2026-08-25T16:00",
+      "fechaHora": "2026-08-25T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14249,7 +14249,7 @@
       "id": "promiedos_eiaicbj",
       "local": "Bradford",
       "visitante": "Burnley",
-      "fechaHora": "2026-08-26T15:45",
+      "fechaHora": "2026-08-26T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14286,7 +14286,7 @@
       "id": "promiedos_eiaicce",
       "local": "Newcastle United",
       "visitante": "West Brom",
-      "fechaHora": "2026-08-26T15:45",
+      "fechaHora": "2026-08-26T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14323,7 +14323,7 @@
       "id": "promiedos_eiaiccg",
       "local": "Tottenham",
       "visitante": "Charlton",
-      "fechaHora": "2026-08-26T15:45",
+      "fechaHora": "2026-08-26T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14360,7 +14360,7 @@
       "id": "promiedos_eiaicbi",
       "local": "Preston",
       "visitante": "Everton",
-      "fechaHora": "2026-08-26T16:00",
+      "fechaHora": "2026-08-26T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14397,7 +14397,7 @@
       "id": "promiedos_eiaicch",
       "local": "Chelsea",
       "visitante": "Luton",
-      "fechaHora": "2026-08-27T15:30",
+      "fechaHora": "2026-08-27T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14434,7 +14434,7 @@
       "id": "promiedos_eiaicah",
       "local": "Fulham",
       "visitante": "AFC Wimbledon",
-      "fechaHora": "2026-08-27T16:00",
+      "fechaHora": "2026-08-27T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14471,7 +14471,7 @@
       "id": "promiedos_eicgedd",
       "local": "Leyton Orient",
       "visitante": "Bradford",
-      "fechaHora": "2026-09-08T15:45",
+      "fechaHora": "2026-09-08T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14508,7 +14508,7 @@
       "id": "promiedos_eicgedg",
       "local": "Bournemouth",
       "visitante": "Lincoln",
-      "fechaHora": "2026-09-08T15:45",
+      "fechaHora": "2026-09-08T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14545,7 +14545,7 @@
       "id": "promiedos_eicgedj",
       "local": "Sunderland",
       "visitante": "Hull City",
-      "fechaHora": "2026-09-08T15:45",
+      "fechaHora": "2026-09-08T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14582,7 +14582,7 @@
       "id": "promiedos_eicgeeg",
       "local": "Crystal Palace",
       "visitante": "Middlesbrough",
-      "fechaHora": "2026-09-08T15:45",
+      "fechaHora": "2026-09-08T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14619,7 +14619,7 @@
       "id": "promiedos_eicgede",
       "local": "Millwall",
       "visitante": "Newcastle United",
-      "fechaHora": "2026-09-08T16:00",
+      "fechaHora": "2026-09-08T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14656,7 +14656,7 @@
       "id": "promiedos_eichcii",
       "local": "Chelsea",
       "visitante": "Leeds United",
-      "fechaHora": "2026-09-09T16:00",
+      "fechaHora": "2026-09-09T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14693,7 +14693,7 @@
       "id": "promiedos_eicgeee",
       "local": "Peterborough",
       "visitante": "Barnsley",
-      "fechaHora": "2026-09-15T15:30",
+      "fechaHora": "2026-09-15T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14730,7 +14730,7 @@
       "id": "promiedos_eichdfi",
       "local": "West Ham United",
       "visitante": "Fulham",
-      "fechaHora": "2026-09-15T15:45",
+      "fechaHora": "2026-09-15T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14767,7 +14767,7 @@
       "id": "promiedos_eicgedh",
       "local": "Liverpool",
       "visitante": "Tottenham",
-      "fechaHora": "2026-09-15T16:00",
+      "fechaHora": "2026-09-15T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14804,7 +14804,7 @@
       "id": "promiedos_eicgedi",
       "local": "Ipswich",
       "visitante": "Arsenal",
-      "fechaHora": "2026-09-15T16:00",
+      "fechaHora": "2026-09-15T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14841,7 +14841,7 @@
       "id": "promiedos_eicgeef",
       "local": "Reading",
       "visitante": "Brentford",
-      "fechaHora": "2026-09-15T16:00",
+      "fechaHora": "2026-09-15T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14878,7 +14878,7 @@
       "id": "promiedos_eicgedf",
       "local": "Fleetwood Town",
       "visitante": "Sheffield Utd",
-      "fechaHora": "2026-09-16T15:45",
+      "fechaHora": "2026-09-16T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14915,7 +14915,7 @@
       "id": "promiedos_eicgeed",
       "local": "Everton",
       "visitante": "Wolves",
-      "fechaHora": "2026-09-16T15:45",
+      "fechaHora": "2026-09-16T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14952,7 +14952,7 @@
       "id": "promiedos_eicgeea",
       "local": "Coventry",
       "visitante": "Aston Villa",
-      "fechaHora": "2026-09-16T16:00",
+      "fechaHora": "2026-09-16T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14989,7 +14989,7 @@
       "id": "promiedos_eicgeec",
       "local": "Manchester United",
       "visitante": "Brighton",
-      "fechaHora": "2026-09-16T16:00",
+      "fechaHora": "2026-09-16T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15026,7 +15026,7 @@
       "id": "promiedos_eicgeeb",
       "local": "Manchester City",
       "visitante": "Norwich",
-      "fechaHora": "2026-09-17T15:30",
+      "fechaHora": "2026-09-17T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15063,7 +15063,7 @@
       "id": "promiedos_eifhdbe",
       "local": "Bradford",
       "visitante": "Peterborough",
-      "fechaHora": "2026-10-27T16:45",
+      "fechaHora": "2026-10-27T12:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -15100,7 +15100,7 @@
       "id": "promiedos_eifhdaj",
       "local": "Fleetwood Town",
       "visitante": "Arsenal",
-      "fechaHora": "2026-10-27T17:00",
+      "fechaHora": "2026-10-27T13:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -15137,7 +15137,7 @@
       "id": "promiedos_eifidaf",
       "local": "Manchester City",
       "visitante": "Brighton",
-      "fechaHora": "2026-10-28T16:30",
+      "fechaHora": "2026-10-28T12:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -15174,7 +15174,7 @@
       "id": "promiedos_eifhdbc",
       "local": "Sunderland",
       "visitante": "Brentford",
-      "fechaHora": "2026-10-28T16:45",
+      "fechaHora": "2026-10-28T12:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -15211,7 +15211,7 @@
       "id": "promiedos_eifhdbf",
       "local": "Fulham",
       "visitante": "Crystal Palace",
-      "fechaHora": "2026-10-28T16:45",
+      "fechaHora": "2026-10-28T12:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -15248,7 +15248,7 @@
       "id": "promiedos_eifhdbg",
       "local": "Bournemouth",
       "visitante": "Aston Villa",
-      "fechaHora": "2026-10-28T16:45",
+      "fechaHora": "2026-10-28T12:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -15285,7 +15285,7 @@
       "id": "promiedos_eifhdbd",
       "local": "Liverpool",
       "visitante": "Chelsea",
-      "fechaHora": "2026-10-28T17:00",
+      "fechaHora": "2026-10-28T13:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -15322,7 +15322,7 @@
       "id": "promiedos_eifhdbb",
       "local": "Everton",
       "visitante": "Newcastle United",
-      "fechaHora": "2026-10-29T16:45",
+      "fechaHora": "2026-10-29T12:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -15359,7 +15359,7 @@
       "id": "promiedos_eigcafh",
       "local": "Brentwood Town",
       "visitante": "Dagenham and Redbridge",
-      "fechaHora": "2026-10-03T08:30",
+      "fechaHora": "2026-10-03T04:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15396,7 +15396,7 @@
       "id": "promiedos_eigbhai",
       "local": "Leatherhead",
       "visitante": "Hanworth Villa",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15433,7 +15433,7 @@
       "id": "promiedos_eigbhaj",
       "local": "Hanwell Town",
       "visitante": "Dover Athletic",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15470,7 +15470,7 @@
       "id": "promiedos_eigbhba",
       "local": "Tadley Calleva",
       "visitante": "Dartford",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15507,7 +15507,7 @@
       "id": "promiedos_eigbhbb",
       "local": "Ebbsfleet United",
       "visitante": "Sholing",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15544,7 +15544,7 @@
       "id": "promiedos_eigbhbc",
       "local": "Salisbury City",
       "visitante": "Dulwich Hamlet",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15581,7 +15581,7 @@
       "id": "promiedos_eigbhbd",
       "local": "Plymouth Parkway",
       "visitante": "Horsham",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15618,7 +15618,7 @@
       "id": "promiedos_eigbhbe",
       "local": "Weymouth",
       "visitante": "SE Dons",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15655,7 +15655,7 @@
       "id": "promiedos_eigbhbf",
       "local": "Tonbridge Angels",
       "visitante": "Torquay",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15692,7 +15692,7 @@
       "id": "promiedos_eigbhbg",
       "local": "Sheppey United",
       "visitante": "Chertsey Town",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15729,7 +15729,7 @@
       "id": "promiedos_eigbhbh",
       "local": "Redditch Utd",
       "visitante": "Berkhamsted",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15766,7 +15766,7 @@
       "id": "promiedos_eigbhbi",
       "local": "Leiston",
       "visitante": "Coventry United",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15803,7 +15803,7 @@
       "id": "promiedos_eigbhbj",
       "local": "Oxford City",
       "visitante": "Enfield Town",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15840,7 +15840,7 @@
       "id": "promiedos_eigbhca",
       "local": "Chesham United",
       "visitante": "Real Bedford",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15877,7 +15877,7 @@
       "id": "promiedos_eigbhcb",
       "local": "Brackley Town",
       "visitante": "Chelmsford City",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15914,7 +15914,7 @@
       "id": "promiedos_eigbhcc",
       "local": "Cambridge City",
       "visitante": "Alvechurch",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15951,7 +15951,7 @@
       "id": "promiedos_eigbhcd",
       "local": "Kettering",
       "visitante": "Worcester",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -15988,7 +15988,7 @@
       "id": "promiedos_eigbhce",
       "local": "Harborough Town",
       "visitante": "St Albans City",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16025,7 +16025,7 @@
       "id": "promiedos_eigbhcf",
       "local": "Bury Town",
       "visitante": "Spalding United",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16062,7 +16062,7 @@
       "id": "promiedos_eigbhcg",
       "local": "Mulbarton Wanderers",
       "visitante": "Gloucester",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16099,7 +16099,7 @@
       "id": "promiedos_eigbhch",
       "local": "Spennymoor Town",
       "visitante": "Chester",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16136,7 +16136,7 @@
       "id": "promiedos_eigbhci",
       "local": "Stafford Rangers",
       "visitante": "Halesowen Town",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16173,7 +16173,7 @@
       "id": "promiedos_eigbhcj",
       "local": "Barton Town",
       "visitante": "Chorley FC",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16210,7 +16210,7 @@
       "id": "promiedos_eigbhda",
       "local": "Bury",
       "visitante": "Bromsgrove Sporting",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16247,7 +16247,7 @@
       "id": "promiedos_eigbhdb",
       "local": "Buxton FC",
       "visitante": "South Shields",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16284,7 +16284,7 @@
       "id": "promiedos_eigbhdc",
       "local": "Morecambe",
       "visitante": "Darlington",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16321,7 +16321,7 @@
       "id": "promiedos_eigbhdd",
       "local": "Guiseley AFC",
       "visitante": "Bradford PA",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16358,7 +16358,7 @@
       "id": "promiedos_eigbhde",
       "local": "Trafford FC",
       "visitante": "Atherton Collieries",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16395,7 +16395,7 @@
       "id": "promiedos_eigbhdf",
       "local": "Marine",
       "visitante": "Warrington Town",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16432,7 +16432,7 @@
       "id": "promiedos_eigbhdg",
       "local": "Macclesfield",
       "visitante": "Scarborough Athletic",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16469,7 +16469,7 @@
       "id": "promiedos_eigcafb",
       "local": "Uxbridge",
       "visitante": "Hungerford Town",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16506,7 +16506,7 @@
       "id": "promiedos_eigcafc",
       "local": "Cray Wanderers",
       "visitante": "Chippenham",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16543,7 +16543,7 @@
       "id": "promiedos_eigcafd",
       "local": "Crowborough Athletic",
       "visitante": "Wimborne Town",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16580,7 +16580,7 @@
       "id": "promiedos_eigcafe",
       "local": "Truro City",
       "visitante": "Cirencester Town",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16617,7 +16617,7 @@
       "id": "promiedos_eigcaff",
       "local": "Dorking Wanderers",
       "visitante": "Chatham Town",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16654,7 +16654,7 @@
       "id": "promiedos_eigcafg",
       "local": "Rushden & D.",
       "visitante": "Braintree Town",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16691,7 +16691,7 @@
       "id": "promiedos_eigcafi",
       "local": "Bedford Town",
       "visitante": "Wingate & Finchley",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16728,7 +16728,7 @@
       "id": "promiedos_eigcafj",
       "local": "Worksop Town",
       "visitante": "FC United",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16765,7 +16765,7 @@
       "id": "promiedos_eigcaga",
       "local": "Gainsborough",
       "visitante": "Anstey Nomads",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16802,7 +16802,7 @@
       "id": "promiedos_eigciba",
       "local": "Thame United",
       "visitante": "Eastbourne Borough",
-      "fechaHora": "2026-10-03T11:00",
+      "fechaHora": "2026-10-03T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -16839,7 +16839,7 @@
       "id": "promiedos_eigjjdi",
       "local": "Halesowen Town",
       "visitante": "Stafford Rangers",
-      "fechaHora": "2026-10-06T14:00",
+      "fechaHora": "2026-10-06T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -16876,7 +16876,7 @@
       "id": "promiedos_eigjjea",
       "local": "Atherton Collieries",
       "visitante": "Trafford FC",
-      "fechaHora": "2026-10-06T14:00",
+      "fechaHora": "2026-10-06T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -16913,7 +16913,7 @@
       "id": "promiedos_eigjjeb",
       "local": "Scarborough Athletic",
       "visitante": "Macclesfield",
-      "fechaHora": "2026-10-06T14:00",
+      "fechaHora": "2026-10-06T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -16950,7 +16950,7 @@
       "id": "promiedos_eigjjec",
       "local": "Spalding United",
       "visitante": "Bury Town",
-      "fechaHora": "2026-10-06T14:00",
+      "fechaHora": "2026-10-06T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -16987,7 +16987,7 @@
       "id": "promiedos_eigjjdj",
       "local": "Wingate & Finchley",
       "visitante": "Bedford Town",
-      "fechaHora": "2026-10-06T15:45",
+      "fechaHora": "2026-10-06T11:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17172,7 +17172,7 @@
       "id": "promiedos_ehfaief",
       "local": "Getafe CF",
       "visitante": "Málaga CF",
-      "fechaHora": "2026-09-20T09:00",
+      "fechaHora": "2026-09-20T05:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -17209,7 +17209,7 @@
       "id": "promiedos_ehfaiej",
       "local": "Atlético de Madrid",
       "visitante": "Real Madrid",
-      "fechaHora": "2026-09-20T11:15",
+      "fechaHora": "2026-09-20T07:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -17246,7 +17246,7 @@
       "id": "promiedos_ehfaieb",
       "local": "Villarreal CF",
       "visitante": "Levante UD",
-      "fechaHora": "2026-09-20T13:30",
+      "fechaHora": "2026-09-20T09:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -17283,7 +17283,7 @@
       "id": "promiedos_ehfaieh",
       "local": "RC Deportivo",
       "visitante": "Real Betis",
-      "fechaHora": "2026-09-20T13:30",
+      "fechaHora": "2026-09-20T09:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -17320,7 +17320,7 @@
       "id": "promiedos_ehfaiec",
       "local": "Valencia CF",
       "visitante": "Real Sociedad",
-      "fechaHora": "2026-09-20T16:00",
+      "fechaHora": "2026-09-20T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -17357,7 +17357,7 @@
       "id": "promiedos_ehfaidf",
       "local": "Málaga CF",
       "visitante": "RCD Espanyol",
-      "fechaHora": "2026-10-09T16:00",
+      "fechaHora": "2026-10-09T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17394,7 +17394,7 @@
       "id": "promiedos_ehfaidd",
       "local": "Rayo Vallecano",
       "visitante": "Athletic Club",
-      "fechaHora": "2026-10-10T09:00",
+      "fechaHora": "2026-10-10T05:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17431,7 +17431,7 @@
       "id": "promiedos_ehfaiea",
       "local": "Alavés",
       "visitante": "Atlético de Madrid",
-      "fechaHora": "2026-10-10T11:15",
+      "fechaHora": "2026-10-10T07:15",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17468,7 +17468,7 @@
       "id": "promiedos_ehfaidh",
       "local": "FC Barcelona",
       "visitante": "Getafe CF",
-      "fechaHora": "2026-10-10T13:30",
+      "fechaHora": "2026-10-10T09:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17505,7 +17505,7 @@
       "id": "promiedos_ehfaidc",
       "local": "Real Madrid",
       "visitante": "Villarreal CF",
-      "fechaHora": "2026-10-10T16:00",
+      "fechaHora": "2026-10-10T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17542,7 +17542,7 @@
       "id": "promiedos_ehfaidi",
       "local": "Elche CF",
       "visitante": "Celta de Vigo",
-      "fechaHora": "2026-10-11T09:00",
+      "fechaHora": "2026-10-11T05:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17579,7 +17579,7 @@
       "id": "promiedos_ehfaidb",
       "local": "Real Sociedad",
       "visitante": "RC Deportivo",
-      "fechaHora": "2026-10-11T11:15",
+      "fechaHora": "2026-10-11T07:15",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17616,7 +17616,7 @@
       "id": "promiedos_ehfaidj",
       "local": "Real Betis",
       "visitante": "Osasuna",
-      "fechaHora": "2026-10-11T13:30",
+      "fechaHora": "2026-10-11T09:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17653,7 +17653,7 @@
       "id": "promiedos_ehfaide",
       "local": "Racing de Santander",
       "visitante": "Valencia CF",
-      "fechaHora": "2026-10-11T16:00",
+      "fechaHora": "2026-10-11T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17690,7 +17690,7 @@
       "id": "promiedos_ehfaidg",
       "local": "Levante UD",
       "visitante": "Sevilla FC",
-      "fechaHora": "2026-10-12T16:00",
+      "fechaHora": "2026-10-12T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17727,7 +17727,7 @@
       "id": "promiedos_ehfaici",
       "local": "RC Deportivo",
       "visitante": "Levante UD",
-      "fechaHora": "2026-10-16T16:00",
+      "fechaHora": "2026-10-16T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17949,7 +17949,7 @@
       "id": "promiedos_eifdjfd",
       "local": "Auriense",
       "visitante": "San José De Soria",
-      "fechaHora": "2026-09-27T07:00",
+      "fechaHora": "2026-09-27T03:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -17986,7 +17986,7 @@
       "id": "promiedos_eigfgie",
       "local": "Sporting Hortaleza",
       "visitante": "Güímar",
-      "fechaHora": "2026-09-27T07:00",
+      "fechaHora": "2026-09-27T03:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18023,7 +18023,7 @@
       "id": "promiedos_eifbhda",
       "local": "Cf San Rafael",
       "visitante": "AE Prat",
-      "fechaHora": "2026-09-27T11:00",
+      "fechaHora": "2026-09-27T07:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18060,7 +18060,7 @@
       "id": "promiedos_eifdjfe",
       "local": "Talayuela",
       "visitante": "Gimnástico De Alcázar",
-      "fechaHora": "2026-09-27T12:30",
+      "fechaHora": "2026-09-27T08:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18097,7 +18097,7 @@
       "id": "promiedos_eigfgid",
       "local": "Ud Maracena",
       "visitante": "Tavernes",
-      "fechaHora": "2026-09-27T13:00",
+      "fechaHora": "2026-09-27T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18134,7 +18134,7 @@
       "id": "promiedos_eifbcdi",
       "local": "Baztán",
       "visitante": "Atlético Calatayud",
-      "fechaHora": "2026-10-03T12:30",
+      "fechaHora": "2026-10-03T08:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18171,7 +18171,7 @@
       "id": "promiedos_eifbhch",
       "local": "Ceuta 6 De Junio",
       "visitante": "Ub Lebrijana",
-      "fechaHora": "2026-10-03T13:00",
+      "fechaHora": "2026-10-03T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18208,7 +18208,7 @@
       "id": "promiedos_eifbhci",
       "local": "Cd Tedeón",
       "visitante": "CD Anaitasuna",
-      "fechaHora": "2026-10-03T13:00",
+      "fechaHora": "2026-10-03T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18245,7 +18245,7 @@
       "id": "promiedos_eifdjfb",
       "local": "Atlético Melilla",
       "visitante": "Pinatar Cf",
-      "fechaHora": "2026-10-03T15:00",
+      "fechaHora": "2026-10-03T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18282,7 +18282,7 @@
       "id": "promiedos_eifbhcg",
       "local": "Güímar",
       "visitante": "Sporting Mahón",
-      "fechaHora": "2026-10-04T08:00",
+      "fechaHora": "2026-10-04T04:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -18319,7 +18319,7 @@
       "id": "promiedos_eifbhce",
       "local": "AE Prat",
       "visitante": "Cf San Rafael",
-      "fechaHora": "2026-10-04T11:00",
+      "fechaHora": "2026-10-04T07:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -18356,7 +18356,7 @@
       "id": "promiedos_eifbhcf",
       "local": "SD Noja",
       "visitante": "Ribadeo FC",
-      "fechaHora": "2026-10-04T11:00",
+      "fechaHora": "2026-10-04T07:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -18393,7 +18393,7 @@
       "id": "promiedos_eifdjfa",
       "local": "San José De Soria",
       "visitante": "Auriense",
-      "fechaHora": "2026-10-04T11:00",
+      "fechaHora": "2026-10-04T07:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -18430,7 +18430,7 @@
       "id": "promiedos_eifdjfc",
       "local": "Gimnástico De Alcázar",
       "visitante": "Talayuela",
-      "fechaHora": "2026-10-04T12:30",
+      "fechaHora": "2026-10-04T08:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -18467,7 +18467,7 @@
       "id": "promiedos_ehhdffj",
       "local": "FC Barcelona",
       "visitante": "Atlético de Madrid",
-      "fechaHora": "2027-02-02T16:00",
+      "fechaHora": "2027-02-02T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -18504,7 +18504,7 @@
       "id": "promiedos_ehhdffi",
       "local": "Real Sociedad",
       "visitante": "Real Madrid",
-      "fechaHora": "2027-02-03T16:00",
+      "fechaHora": "2027-02-03T11:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -18689,7 +18689,7 @@
       "id": "promiedos_ehdcgjj",
       "local": "Fiorentina",
       "visitante": "Napoli",
-      "fechaHora": "2026-09-20T07:30",
+      "fechaHora": "2026-09-20T03:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18726,7 +18726,7 @@
       "id": "promiedos_ehdcgje",
       "local": "Parma",
       "visitante": "Genoa",
-      "fechaHora": "2026-09-20T10:00",
+      "fechaHora": "2026-09-20T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18763,7 +18763,7 @@
       "id": "promiedos_ehdcgji",
       "local": "Frosinone",
       "visitante": "Como",
-      "fechaHora": "2026-09-20T10:00",
+      "fechaHora": "2026-09-20T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18800,7 +18800,7 @@
       "id": "promiedos_ehdcgjh",
       "local": "Juventus",
       "visitante": "Atalanta",
-      "fechaHora": "2026-09-20T13:00",
+      "fechaHora": "2026-09-20T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18837,7 +18837,7 @@
       "id": "promiedos_ehdcgjg",
       "local": "AC Milan",
       "visitante": "Lecce",
-      "fechaHora": "2026-09-20T15:45",
+      "fechaHora": "2026-09-20T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -18874,7 +18874,7 @@
       "id": "promiedos_ehdcgih",
       "local": "Genoa",
       "visitante": "Fiorentina",
-      "fechaHora": "2026-10-10T10:00",
+      "fechaHora": "2026-10-10T06:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -18911,7 +18911,7 @@
       "id": "promiedos_ehdcgig",
       "local": "Inter Milan",
       "visitante": "Parma",
-      "fechaHora": "2026-10-10T13:00",
+      "fechaHora": "2026-10-10T09:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -18948,7 +18948,7 @@
       "id": "promiedos_ehdcgid",
       "local": "Napoli",
       "visitante": "Frosinone",
-      "fechaHora": "2026-10-10T15:45",
+      "fechaHora": "2026-10-10T11:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -18985,7 +18985,7 @@
       "id": "promiedos_ehdcgii",
       "local": "Como",
       "visitante": "AS Roma",
-      "fechaHora": "2026-10-11T07:30",
+      "fechaHora": "2026-10-11T03:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -19022,7 +19022,7 @@
       "id": "promiedos_ehdcgie",
       "local": "Lecce",
       "visitante": "Bologna",
-      "fechaHora": "2026-10-11T10:00",
+      "fechaHora": "2026-10-11T06:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -19059,7 +19059,7 @@
       "id": "promiedos_ehdcgif",
       "local": "Lazio",
       "visitante": "Monza",
-      "fechaHora": "2026-10-11T10:00",
+      "fechaHora": "2026-10-11T06:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -19096,7 +19096,7 @@
       "id": "promiedos_ehdcgic",
       "local": "Sassuolo",
       "visitante": "AC Milan",
-      "fechaHora": "2026-10-11T13:00",
+      "fechaHora": "2026-10-11T09:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -19133,7 +19133,7 @@
       "id": "promiedos_ehdcgij",
       "local": "Cagliari",
       "visitante": "Juventus",
-      "fechaHora": "2026-10-11T15:45",
+      "fechaHora": "2026-10-11T11:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -19170,7 +19170,7 @@
       "id": "promiedos_ehdcgja",
       "local": "Atalanta",
       "visitante": "Venezia",
-      "fechaHora": "2026-10-12T13:30",
+      "fechaHora": "2026-10-12T09:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -19207,7 +19207,7 @@
       "id": "promiedos_ehdcgib",
       "local": "Torino",
       "visitante": "Udinese",
-      "fechaHora": "2026-10-12T15:45",
+      "fechaHora": "2026-10-12T11:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -19244,7 +19244,7 @@
       "id": "promiedos_ehdcghi",
       "local": "Frosinone",
       "visitante": "Sassuolo",
-      "fechaHora": "2026-10-16T15:45",
+      "fechaHora": "2026-10-16T11:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -19281,7 +19281,7 @@
       "id": "promiedos_ehehedj",
       "local": "Vicenza",
       "visitante": "Catania",
-      "fechaHora": "2026-08-08T15:00",
+      "fechaHora": "2026-08-08T11:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19318,7 +19318,7 @@
       "id": "promiedos_eheheea",
       "local": "Ascoli",
       "visitante": "Rossoblu Potenza",
-      "fechaHora": "2026-08-08T15:30",
+      "fechaHora": "2026-08-08T11:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19355,7 +19355,7 @@
       "id": "promiedos_ehehedi",
       "local": "Arezzo",
       "visitante": "Union Brescia",
-      "fechaHora": "2026-08-09T14:45",
+      "fechaHora": "2026-08-09T10:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19392,7 +19392,7 @@
       "id": "promiedos_ehehedh",
       "local": "Benevento",
       "visitante": "Ravenna",
-      "fechaHora": "2026-08-09T16:00",
+      "fechaHora": "2026-08-09T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19429,7 +19429,7 @@
       "id": "promiedos_eiahbce",
       "local": "Parma",
       "visitante": "Catania",
-      "fechaHora": "2026-08-14T13:00",
+      "fechaHora": "2026-08-14T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19466,7 +19466,7 @@
       "id": "promiedos_eiahhab",
       "local": "Cagliari",
       "visitante": "Arezzo",
-      "fechaHora": "2026-08-14T13:30",
+      "fechaHora": "2026-08-14T09:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19503,7 +19503,7 @@
       "id": "promiedos_ehehedg",
       "local": "Monza",
       "visitante": "Avellino",
-      "fechaHora": "2026-08-14T15:45",
+      "fechaHora": "2026-08-14T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19540,7 +19540,7 @@
       "id": "promiedos_eiahhbd",
       "local": "Fiorentina",
       "visitante": "Benevento",
-      "fechaHora": "2026-08-14T16:15",
+      "fechaHora": "2026-08-14T12:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19577,7 +19577,7 @@
       "id": "promiedos_ehehedf",
       "local": "Catanzaro",
       "visitante": "Sudtirol",
-      "fechaHora": "2026-08-15T13:00",
+      "fechaHora": "2026-08-15T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19614,7 +19614,7 @@
       "id": "promiedos_ehehede",
       "local": "Udinese",
       "visitante": "Padova",
-      "fechaHora": "2026-08-15T13:30",
+      "fechaHora": "2026-08-15T09:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19651,7 +19651,7 @@
       "id": "promiedos_ehehedd",
       "local": "Venezia",
       "visitante": "Modena",
-      "fechaHora": "2026-08-15T15:45",
+      "fechaHora": "2026-08-15T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19688,7 +19688,7 @@
       "id": "promiedos_ehehedc",
       "local": "Torino",
       "visitante": "Carrarese",
-      "fechaHora": "2026-08-15T16:15",
+      "fechaHora": "2026-08-15T12:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19725,7 +19725,7 @@
       "id": "promiedos_ehehedb",
       "local": "Frosinone",
       "visitante": "Juve Stabia",
-      "fechaHora": "2026-08-16T13:00",
+      "fechaHora": "2026-08-16T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19762,7 +19762,7 @@
       "id": "promiedos_eiahcdj",
       "local": "Genoa",
       "visitante": "Ascoli",
-      "fechaHora": "2026-08-16T13:30",
+      "fechaHora": "2026-08-16T09:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19799,7 +19799,7 @@
       "id": "promiedos_eheheda",
       "local": "Hellas Verona",
       "visitante": "Virtus Entella",
-      "fechaHora": "2026-08-16T15:45",
+      "fechaHora": "2026-08-16T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19836,7 +19836,7 @@
       "id": "promiedos_ehehecj",
       "local": "Lazio",
       "visitante": "Mantova",
-      "fechaHora": "2026-08-16T16:15",
+      "fechaHora": "2026-08-16T12:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19873,7 +19873,7 @@
       "id": "promiedos_eheheci",
       "local": "Pisa",
       "visitante": "Empoli",
-      "fechaHora": "2026-08-17T13:00",
+      "fechaHora": "2026-08-17T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19910,7 +19910,7 @@
       "id": "promiedos_ehehecg",
       "local": "Sassuolo",
       "visitante": "Cesena",
-      "fechaHora": "2026-08-17T13:30",
+      "fechaHora": "2026-08-17T09:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19947,7 +19947,7 @@
       "id": "promiedos_ehehecf",
       "local": "Cremonese",
       "visitante": "Sampdoria",
-      "fechaHora": "2026-08-17T15:45",
+      "fechaHora": "2026-08-17T11:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -19984,7 +19984,7 @@
       "id": "promiedos_ehehech",
       "local": "Palermo",
       "visitante": "Lecce",
-      "fechaHora": "2026-08-17T16:15",
+      "fechaHora": "2026-08-17T12:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -20021,7 +20021,7 @@
       "id": "promiedos_eibghgi",
       "local": "Parma",
       "visitante": "Cremonese",
-      "fechaHora": "2026-09-01T13:00",
+      "fechaHora": "2026-09-01T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -20058,7 +20058,7 @@
       "id": "promiedos_eibfdhc",
       "local": "Torino",
       "visitante": "Monza",
-      "fechaHora": "2026-09-01T16:00",
+      "fechaHora": "2026-09-01T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -20095,7 +20095,7 @@
       "id": "promiedos_eibghbb",
       "local": "Sassuolo",
       "visitante": "Frosinone",
-      "fechaHora": "2026-09-02T10:00",
+      "fechaHora": "2026-09-02T06:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -20132,7 +20132,7 @@
       "id": "promiedos_eibfdhb",
       "local": "Udinese",
       "visitante": "Venezia",
-      "fechaHora": "2026-09-02T13:00",
+      "fechaHora": "2026-09-02T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -20169,7 +20169,7 @@
       "id": "promiedos_eibghgj",
       "local": "Palermo",
       "visitante": "Mantova",
-      "fechaHora": "2026-09-03T13:00",
+      "fechaHora": "2026-09-03T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -20206,7 +20206,7 @@
       "id": "promiedos_eibfjfe",
       "local": "Cagliari",
       "visitante": "Hellas Verona",
-      "fechaHora": "2026-09-03T16:00",
+      "fechaHora": "2026-09-03T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -20243,7 +20243,7 @@
       "id": "promiedos_eibfjff",
       "local": "Genoa",
       "visitante": "Sudtirol",
-      "fechaHora": "2026-09-15T13:00",
+      "fechaHora": "2026-09-15T09:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -20280,7 +20280,7 @@
       "id": "promiedos_eibghbc",
       "local": "Fiorentina",
       "visitante": "Pisa",
-      "fechaHora": "2026-09-15T16:00",
+      "fechaHora": "2026-09-15T12:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -20317,7 +20317,7 @@
       "id": "promiedos_eifghbg",
       "local": "Inter Milan",
       "visitante": "Genoa",
-      "fechaHora": "2026-12-01T17:00",
+      "fechaHora": "2026-12-01T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -20354,7 +20354,7 @@
       "id": "promiedos_eiedhbi",
       "local": "Como",
       "visitante": "Cremonese",
-      "fechaHora": "2026-12-02T17:00",
+      "fechaHora": "2026-12-02T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -20391,7 +20391,7 @@
       "id": "promiedos_eieehde",
       "local": "Juventus",
       "visitante": "Sassuolo",
-      "fechaHora": "2026-12-03T17:00",
+      "fechaHora": "2026-12-03T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -20428,7 +20428,7 @@
       "id": "promiedos_eiefhcd",
       "local": "Bologna",
       "visitante": "Palermo",
-      "fechaHora": "2026-12-15T17:00",
+      "fechaHora": "2026-12-15T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -20465,7 +20465,7 @@
       "id": "promiedos_eifgicj",
       "local": "Napoli",
       "visitante": "Fiorentina",
-      "fechaHora": "2026-12-16T17:00",
+      "fechaHora": "2026-12-16T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -20502,7 +20502,7 @@
       "id": "promiedos_eigjgbg",
       "local": "Inter Milan",
       "visitante": "Lazio",
-      "fechaHora": "2026-12-22T17:00",
+      "fechaHora": "2026-12-22T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -20532,6 +20532,672 @@
         "leagueId": "cd",
         "leagueName": "Supercopa",
         "gameUrlName": "inter-milan-vs-lazio",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eigegdj",
+      "local": "Estudiantes RC (Reserva)",
+      "visitante": "Platense (Reserva)",
+      "fechaHora": "2026-10-07T11:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hhbc",
+        "leagueName": "Liga Profesional - Reserva",
+        "gameUrlName": "estudiantes-de-rio-cuarto-reserves-vs-platense-res.",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eigegea",
+      "local": "Aldosivi (Reserva)",
+      "visitante": "Tigre (Reserva)",
+      "fechaHora": "2026-10-07T11:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hhbc",
+        "leagueName": "Liga Profesional - Reserva",
+        "gameUrlName": "aldosivi-res.-vs-tigre-res.",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eigegeb",
+      "local": "Argentinos Juniors (Reserva)",
+      "visitante": "San Lorenzo (Reserva)",
+      "fechaHora": "2026-10-07T11:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hhbc",
+        "leagueName": "Liga Profesional - Reserva",
+        "gameUrlName": "argentinos-juniors-res.-vs-san-lorenzo-res.",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eigegec",
+      "local": "Deportivo Riestra (Reserva)",
+      "visitante": "Independiente Rivadavia (Reserva)",
+      "fechaHora": "2026-10-07T11:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hhbc",
+        "leagueName": "Liga Profesional - Reserva",
+        "gameUrlName": "riestra-res.-vs-independiente-rivadavia-res.",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eigeged",
+      "local": "Ferro Carril Oeste (Reserva)",
+      "visitante": "Independiente (Reserva)",
+      "fechaHora": "2026-10-07T11:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hhbc",
+        "leagueName": "Liga Profesional - Reserva",
+        "gameUrlName": "ferro-carril-oeste-res.-vs-independiente-res.",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eigegef",
+      "local": "Gimnasia de Mendoza (Reserva)",
+      "visitante": "Instituto (Reserva)",
+      "fechaHora": "2026-10-07T11:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hhbc",
+        "leagueName": "Liga Profesional - Reserva",
+        "gameUrlName": "ca-gimnasia-y-esgrima-de-mendoza-reserves-vs-instituto-res.",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehecadg",
+      "local": "Everton",
+      "visitante": "Chelsea",
+      "fechaHora": "2026-10-17T04:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "gameUrlName": "everton-vs-chelsea",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehecadf",
+      "local": "Fulham",
+      "visitante": "Hull City",
+      "fechaHora": "2026-10-17T07:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "gameUrlName": "fulham-vs-hull-city",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehecadi",
+      "local": "Brentford",
+      "visitante": "Liverpool",
+      "fechaHora": "2026-10-17T07:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "gameUrlName": "brentford-vs-liverpool",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehecaed",
+      "local": "Manchester City",
+      "visitante": "Ipswich",
+      "fechaHora": "2026-10-17T07:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "gameUrlName": "manchester-city-vs-ipswich",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehecafa",
+      "local": "Newcastle United",
+      "visitante": "Aston Villa",
+      "fechaHora": "2026-10-17T09:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "gameUrlName": "newcastle-united-vs-aston-villa",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehfaich",
+      "local": "RCD Espanyol",
+      "visitante": "Atlético de Madrid",
+      "fechaHora": "2026-10-17T05:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "gameUrlName": "espanyol-vs-atletico-madrid",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehfaicb",
+      "local": "Villarreal CF",
+      "visitante": "Elche CF",
+      "fechaHora": "2026-10-17T07:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "gameUrlName": "villarreal-vs-elche",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehfaida",
+      "local": "Real Betis",
+      "visitante": "FC Barcelona",
+      "fechaHora": "2026-10-17T09:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "gameUrlName": "real-betis-vs-fc-barcelona",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehfaicc",
+      "local": "Valencia CF",
+      "visitante": "Athletic Club",
+      "fechaHora": "2026-10-17T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "gameUrlName": "valencia-vs-athletic-bilbao",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehdcghb",
+      "local": "Venezia",
+      "visitante": "Napoli",
+      "fechaHora": "2026-10-17T06:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "gameUrlName": "venezia-vs-napoli",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehdcgia",
+      "local": "Bologna",
+      "visitante": "Inter Milan",
+      "fechaHora": "2026-10-17T09:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "gameUrlName": "bologna-vs-inter-milan",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehdcghd",
+      "local": "AS Roma",
+      "visitante": "Genoa",
+      "fechaHora": "2026-10-17T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "gameUrlName": "as-roma-vs-genoa",
         "statusShort": "Prog."
       }
     }
