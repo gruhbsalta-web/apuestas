@@ -16,16 +16,24 @@ const DELAY_MS = Number(process.env.PROMIEDOS_DELAY_MS || 300);
 const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'matches.json');
 const LEAGUE_OVERRIDE = (process.env.PROMIEDOS_LEAGUES || '').split(',').map((v) => v.trim()).filter(Boolean);
 // Paises/categorias del menu de Promiedos que queremos cubrir. El resto
-// (Internacional, Alemania, Portugal, Francia, Brasil, Uruguay, Paraguay,
-// Colombia, Chile, Mexico, EEUU, Selecciones) queda afuera a proposito.
-const COUNTRY_WHITELIST = ['Argentina', 'Inglaterra', 'España', 'Italia'];
-// Ligas puntuales que no queremos aunque su pais este en la whitelist:
-// reserva/amateur, no estan en las listas de equipos de la app (TEAMS en
-// index.html) y nadie va a apostar ahi.
+// (Alemania, Portugal, Francia, Brasil, Uruguay, Paraguay, Colombia, Chile,
+// Mexico, EEUU, Selecciones) queda afuera a proposito.
+const COUNTRY_WHITELIST = ['Argentina', 'Inglaterra', 'España', 'Italia', 'Internacional'];
+// Ligas puntuales que no queremos aunque su pais/categoria este en la
+// whitelist: reserva/amateur argentino (no estan en las listas de equipos
+// de la app) y las copas domesticas de Inglaterra/España/Italia (de las
+// ligas extranjeras solo interesa la liga top y las copas internacionales,
+// no las copas locales tipo FA Cup/Copa del Rey/Coppa Italia).
 const LEAGUE_ID_EXCLUDE = new Set([
-  'iage', // Promocional Amateur
-  'hhbc', // Liga Profesional - Reserva
-  'hgee' // Copa de la Liga - Reserva
+  'iage', // Promocional Amateur (AR)
+  'hhbc', // Liga Profesional - Reserva (AR)
+  'hgee', // Copa de la Liga - Reserva (AR)
+  'j', // Carabao Cup (ING)
+  'i', // FA Cup (ING)
+  'bd', // Copa del Rey (ESP)
+  'bf', // Supercopa (ESP)
+  'ca', // Coppa Italia (ITA)
+  'cd' // Supercopa (ITA)
 ]);
 const HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
