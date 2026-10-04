@@ -288,6 +288,17 @@
       </div>
       <input type="file" id="in-import" accept="application/json" style="display:none">
     </div>
+    <div class="card">
+      <h3>Importar apuestas abiertas</h3>
+      <div class="bet-sub" style="margin-bottom:12px">
+        Pegá una lista en formato CSV (una apuesta por línea) y se cargan todas juntas, sin pisar lo que ya tenés. El partido se busca por nombre de equipo entre los que ya cargaste en Partidos — si no lo encuentra, esa línea no se importa y te avisa cuál fue.<br>
+        <b>Columnas (en este orden, separadas por coma):</b> <code>local,visitante,tipo,comparador,linea,monto,cuota,alcance</code><br>
+        <b>tipo:</b> goles | tarjetas | corners | tirosArco | atajadas &middot; <b>comparador:</b> mas | menos &middot; <b>alcance</b> (opcional, default combinado): combinado | cualquiera | local | visitante<br>
+        Ejemplo: <code>San Martín Tucumán,Gimnasia y Tiro,corners,mas,4,150,2.35,visitante</code>
+      </div>
+      <textarea id="in-bets-csv" rows="5" style="width:100%;box-sizing:border-box;background:#0f1420;color:#e8ecf4;border:1px solid #2a3142;border-radius:8px;padding:10px;font-family:monospace;font-size:13px" placeholder="local,visitante,tipo,comparador,linea,monto,cuota,alcance"></textarea>
+      <button class="primary" id="btn-import-bets-csv" style="margin-top:10px">Importar apuestas</button>
+    </div>
   </section>
 
 </main>
@@ -996,6 +1007,91 @@ document.getElementById("in-import").addEventListener("change", (e)=>{
     e.target.value = "";
   };
   reader.readAsText(file);
+});
+
+// ---------- Importar apuestas abiertas desde CSV (ej. copiadas a mano de otra casa) ----------
+const TIPO_ALIASES = {
+  goles:"goles", gol:"goles",
+  tarjetas:"tarjetas", tarjeta:"tarjetas",
+  corners:"corners", corner:"corners", "córners":"corners", "córner":"corners",
+  tirosarco:"tirosArco", "tirosalarco":"tirosArco", "tiros al arco":"tirosArco",
+  atajadas:"atajadas", atajada:"atajadas"
+};
+function normTipo(raw){
+  const key = (raw||"").trim().toLowerCase();
+  return TIPO_ALIASES[key] || null;
+}
+function normComparador(raw){
+  const v = (raw||"").trim().toLowerCase();
+  if(v.startsWith("menos")) return "menos";
+  if(v.startsWith("mas") || v.startsWith("más")) return "mas";
+  return null;
+}
+function normAlcance(raw){
+  const v = (raw||"").trim().toLowerCase();
+  if(["cualquiera","local","visitante"].includes(v)) return v;
+  return "combinado";
+}
+function normTeamName(s){ return (s||"").trim().toLowerCase(); }
+
+// Busca el partido por nombre de equipo entre los ya cargados; acepta el orden
+// local/visitante invertido (distintas fuentes no siempre listan igual quién
+// juega de local) y en ese caso invierte el alcance local/visitante también.
+function findMatchForImport(localRaw, visitanteRaw){
+  const l = normTeamName(localRaw), v = normTeamName(visitanteRaw);
+  let m = state.matches.find(x=>normTeamName(x.local)===l && normTeamName(x.visitante)===v);
+  if(m) return {match:m, swapped:false};
+  m = state.matches.find(x=>normTeamName(x.local)===v && normTeamName(x.visitante)===l);
+  if(m) return {match:m, swapped:true};
+  return null;
+}
+
+function parseBetsCSV(text){
+  const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+  const bets = [];
+  const errores = [];
+  lines.forEach((line, idx)=>{
+    const cols = line.split(",").map(c=>c.trim());
+    if(cols.length < 7){ errores.push(`Línea ${idx+1}: faltan columnas ("${line}")`); return; }
+    const [localRaw, visitanteRaw, tipoRaw, compRaw, lineaRaw, montoRaw, cuotaRaw, alcanceRaw] = cols;
+
+    const found = findMatchForImport(localRaw, visitanteRaw);
+    if(!found){ errores.push(`Línea ${idx+1}: no encontré el partido "${localRaw} vs ${visitanteRaw}" entre los ya cargados`); return; }
+
+    const tipo = normTipo(tipoRaw);
+    if(!tipo){ errores.push(`Línea ${idx+1}: tipo inválido "${tipoRaw}"`); return; }
+    const comparador = normComparador(compRaw);
+    if(!comparador){ errores.push(`Línea ${idx+1}: comparador inválido "${compRaw}" (usá mas/menos)`); return; }
+    let alcance = normAlcance(alcanceRaw);
+    if(found.swapped && (alcance === "local" || alcance === "visitante")){
+      alcance = alcance === "local" ? "visitante" : "local";
+    }
+    const linea = parseNum(lineaRaw), monto = parseNum(montoRaw), cuota = parseNum(cuotaRaw);
+    if(isNaN(linea) || isNaN(monto) || isNaN(cuota)){ errores.push(`Línea ${idx+1}: línea/monto/cuota no numéricos`); return; }
+
+    bets.push({id:uid(), matchId:found.match.id, tipo, comparador, alcance, linea, monto, cuota});
+  });
+  return {bets, errores};
+}
+
+document.getElementById("btn-import-bets-csv").addEventListener("click", ()=>{
+  const textarea = document.getElementById("in-bets-csv");
+  const text = textarea.value;
+  if(!text.trim()){ alert("Pegá al menos una línea con el formato indicado."); return; }
+
+  const {bets, errores} = parseBetsCSV(text);
+  if(bets.length > 0){
+    state.bets.push(...bets);
+    save();
+    renderAll();
+    textarea.value = "";
+  }
+
+  if(errores.length > 0){
+    alert(`Se importaron ${bets.length} apuesta(s).\n\nNo se pudieron importar ${errores.length}:\n` + errores.join("\n"));
+  } else {
+    alert(`Se importaron ${bets.length} apuesta(s) correctamente.`);
+  }
 });
 
 // ---------- PWA: service worker para que funcione offline una vez instalada ----------
