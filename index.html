@@ -224,9 +224,10 @@
             <option value="corners">Corners</option>
             <option value="tirosArco">Tiros al arco</option>
             <option value="atajadas">Atajadas</option>
+            <option value="ganador">Ganador del partido</option>
           </select>
         </div>
-        <div>
+        <div id="wrap-comp">
           <label for="sel-comp">&nbsp;</label>
           <select id="sel-comp">
             <option value="mas">Más de</option>
@@ -235,14 +236,16 @@
         </div>
       </div>
 
-      <label for="sel-alcance">Se cuenta sobre</label>
-      <select id="sel-alcance">
-        <option value="combinado">El total del partido (local + visitante)</option>
-        <option value="cualquiera">Cualquiera de los 2 equipos</option>
-      </select>
+      <div id="wrap-alcance">
+        <label for="sel-alcance" id="lbl-alcance">Se cuenta sobre</label>
+        <select id="sel-alcance">
+          <option value="combinado">El total del partido (local + visitante)</option>
+          <option value="cualquiera">Cualquiera de los 2 equipos</option>
+        </select>
+      </div>
 
       <div class="row3">
-        <div>
+        <div id="wrap-linea">
           <label for="in-linea">Línea</label>
           <input type="text" id="in-linea" placeholder="9.5" inputmode="decimal">
         </div>
@@ -291,13 +294,15 @@
     <div class="card">
       <h3>Importar apuestas abiertas</h3>
       <div class="bet-sub" style="margin-bottom:12px">
-        Pegá una lista en formato CSV (una apuesta por línea) y se cargan todas juntas, sin pisar lo que ya tenés. El partido se busca por nombre de equipo entre los que ya cargaste en Partidos — si no lo encuentra, esa línea no se importa y te avisa cuál fue.<br>
-        <b>Columnas (en este orden, separadas por coma):</b> <code>local,visitante,tipo,comparador,linea,monto,cuota,alcance</code><br>
-        <b>tipo:</b> goles | tarjetas | corners | tirosArco | atajadas &middot; <b>comparador:</b> mas | menos &middot; <b>alcance</b> (opcional, default combinado): combinado | cualquiera | local | visitante<br>
-        Ejemplo: <code>San Martín Tucumán,Gimnasia y Tiro,corners,mas,4,150,2.35,visitante</code>
+        Pegá tal cual lo que copiás de "Mis apuestas" en BetWarrior (sencillas, una o varias) <b>o</b> una lista en el CSV propio de abajo — se detecta solo cuál de los dos pegaste. Nada se importa sin que lo confirmes: primero se arma una vista previa para que revises montos y cuotas antes de agregar nada.<br>
+        <b>CSV (en este orden, separadas por coma):</b> <code>local,visitante,tipo,comparador,linea,monto,cuota,alcance</code><br>
+        <b>tipo:</b> goles | tarjetas | corners | tirosArco | atajadas | ganador &middot; <b>comparador:</b> mas | menos (no aplica si tipo=ganador) &middot; <b>alcance</b>: combinado | cualquiera | local | visitante (si tipo=ganador: local | empate | visitante)<br>
+        Ejemplo CSV: <code>San Martín Tucumán,Gimnasia y Tiro,corners,mas,4,150,2.35,visitante</code><br>
+        El partido siempre se busca por nombre de equipo entre los que ya cargaste en Partidos — si no lo encuentra, esa apuesta queda listada como error en vez de importarse a medias.
       </div>
-      <textarea id="in-bets-csv" rows="5" style="width:100%;box-sizing:border-box;background:#0f1420;color:#e8ecf4;border:1px solid #2a3142;border-radius:8px;padding:10px;font-family:monospace;font-size:13px" placeholder="local,visitante,tipo,comparador,linea,monto,cuota,alcance"></textarea>
-      <button class="primary" id="btn-import-bets-csv" style="margin-top:10px">Importar apuestas</button>
+      <textarea id="in-bets-csv" rows="6" style="width:100%;box-sizing:border-box;background:#0f1420;color:#e8ecf4;border:1px solid #2a3142;border-radius:8px;padding:10px;font-family:monospace;font-size:13px" placeholder="Pegá acá el texto de BetWarrior o tu CSV"></textarea>
+      <button class="primary" id="btn-preview-bets" style="margin-top:10px">Previsualizar</button>
+      <div id="import-preview"></div>
     </div>
   </section>
 
@@ -427,6 +432,11 @@ function betTotal(bet, s){
 }
 
 function condTxtFor(bet, m){
+  if(bet.tipo === "ganador"){
+    if(bet.pick === "empate") return "Ganador: Empate";
+    const nombre = bet.pick === "local" ? (m ? m.local : "local") : (m ? m.visitante : "visitante");
+    return `Ganador: ${nombre}`;
+  }
   const base = `${TIPO_LABEL[bet.tipo]}: ${bet.comparador==='mas'?'Más de':'Menos de'} ${bet.linea}`;
   if(bet.alcance === "cualquiera") return `${base} (cualquiera de los 2 equipos)`;
   if(bet.alcance === "local") return `${base} (${m ? m.local : "local"})`;
@@ -648,6 +658,11 @@ function renderMatchSelect(){
 }
 
 document.getElementById("sel-match").addEventListener("change", renderTeamStatsPanel);
+document.getElementById("sel-tipo").addEventListener("change", ()=>{
+  const matchId = document.getElementById("sel-match").value;
+  const m = state.matches.find(x=>x.id===matchId);
+  updateBetForm(m);
+});
 
 // ---------- Promedios históricos por equipo (para decidir apuestas antes de cargarlas) ----------
 // Promedia el TOTAL de cada categoría (local+visitante) en los partidos ya finalizados
@@ -662,19 +677,37 @@ function teamAverages(teamName){
   return {n, prom};
 }
 
-// Repuebla el selector "Se cuenta sobre" con los nombres reales de los
-// equipos del partido elegido, para poder apostar a uno solo (sin importar
-// lo que haga el otro) ademas de las opciones combinado/cualquiera.
-function renderAlcanceSelect(m){
+// Ajusta el formulario de carga segun el tipo elegido: "ganador" es un
+// mercado distinto (no tiene comparador/linea, se elige quien gana) del
+// resto (over/under con comparador+linea+alcance). Repuebla "Se cuenta
+// sobre"/"Resultado" con los nombres reales de los equipos del partido.
+function updateBetForm(m){
+  const tipo = document.getElementById("sel-tipo").value;
+  const isGanador = tipo === "ganador";
+  document.getElementById("wrap-comp").hidden = isGanador;
+  document.getElementById("wrap-linea").hidden = isGanador;
+
+  const lbl = document.getElementById("lbl-alcance");
   const sel = document.getElementById("sel-alcance");
   if(!sel) return;
   const prev = sel.value;
-  sel.innerHTML = `
-    <option value="combinado">El total del partido (local + visitante)</option>
-    <option value="cualquiera">Cualquiera de los 2 equipos</option>
-    ${m ? `<option value="local">Solo ${m.local}</option>` : ""}
-    ${m ? `<option value="visitante">Solo ${m.visitante}</option>` : ""}
-  `;
+
+  if(isGanador){
+    lbl.textContent = "Resultado";
+    sel.innerHTML = `
+      <option value="local">Gana ${m ? m.local : "el local"}</option>
+      <option value="empate">Empate</option>
+      <option value="visitante">Gana ${m ? m.visitante : "el visitante"}</option>
+    `;
+  } else {
+    lbl.textContent = "Se cuenta sobre";
+    sel.innerHTML = `
+      <option value="combinado">El total del partido (local + visitante)</option>
+      <option value="cualquiera">Cualquiera de los 2 equipos</option>
+      ${m ? `<option value="local">Solo ${m.local}</option>` : ""}
+      ${m ? `<option value="visitante">Solo ${m.visitante}</option>` : ""}
+    `;
+  }
   if([...sel.options].some(o=>o.value===prev)) sel.value = prev;
 }
 
@@ -683,7 +716,7 @@ function renderTeamStatsPanel(){
   if(!panel) return;
   const matchId = document.getElementById("sel-match").value;
   const m = state.matches.find(x=>x.id===matchId);
-  renderAlcanceSelect(m);
+  updateBetForm(m);
   if(!m){ panel.innerHTML = ""; return; }
 
   function columna(nombre, st){
@@ -712,14 +745,20 @@ document.getElementById("btn-add-bet").addEventListener("click", ()=>{
   const matchId = document.getElementById("sel-match").value;
   if(!matchId){ alert("Agregá un partido primero."); return; }
   const tipo = document.getElementById("sel-tipo").value;
-  const comparador = document.getElementById("sel-comp").value;
-  const alcance = document.getElementById("sel-alcance").value;
-  const linea = parseNum(document.getElementById("in-linea").value);
   const monto = parseNum(document.getElementById("in-monto").value);
   const cuota = parseNum(document.getElementById("in-cuota").value);
-  if(isNaN(linea) || isNaN(monto) || isNaN(cuota)){ alert("Completá línea, monto y cuota."); return; }
 
-  state.bets.push({id:uid(), matchId, tipo, comparador, alcance, linea, monto, cuota});
+  if(tipo === "ganador"){
+    const pick = document.getElementById("sel-alcance").value;
+    if(isNaN(monto) || isNaN(cuota)){ alert("Completá monto y cuota."); return; }
+    state.bets.push({id:uid(), matchId, tipo, pick, monto, cuota});
+  } else {
+    const comparador = document.getElementById("sel-comp").value;
+    const alcance = document.getElementById("sel-alcance").value;
+    const linea = parseNum(document.getElementById("in-linea").value);
+    if(isNaN(linea) || isNaN(monto) || isNaN(cuota)){ alert("Completá línea, monto y cuota."); return; }
+    state.bets.push({id:uid(), matchId, tipo, comparador, alcance, linea, monto, cuota});
+  }
   save();
   document.getElementById("in-linea").value = "";
   document.getElementById("in-monto").value = "";
@@ -732,9 +771,23 @@ document.getElementById("btn-add-bet").addEventListener("click", ()=>{
 // una apuesta "más de X" queda ganada apenas se supera X, sin esperar el final.
 // Una apuesta "menos de X" queda perdida apenas se alcanza/supera X; si nunca lo alcanza,
 // recién se confirma ganada cuando el partido termina (podría superarse después).
+// El resultado del partido (a diferencia de las estadisticas) no es monotono
+// -- el equipo que va ganando puede empatarlo o perderlo despues -- asi que
+// a esta apuesta no se le puede aplicar la logica de "ya es matematicamente
+// inevitable": se resuelve recien cuando el partido termina.
+function evalGanadorBet(bet, m){
+  if(!m.finPartido) return {estado:"pendiente", total:"-", ganancia:0, match:m};
+  const {l, v} = m.stats.goles;
+  const actual = l > v ? "local" : v > l ? "visitante" : "empate";
+  const decidido = actual === bet.pick;
+  const ganancia = decidido ? (bet.monto * bet.cuota - bet.monto) : 0;
+  return {estado: decidido ? "G" : "P", total: actual, ganancia, match:m};
+}
+
 function evalBet(bet){
   const m = state.matches.find(x=>x.id===bet.matchId);
   if(!m) return {estado:"pendiente", total:0, ganancia:0};
+  if(bet.tipo === "ganador") return evalGanadorBet(bet, m);
   const s = m.stats[bet.tipo];
   const total = betTotal(bet, s);
 
@@ -772,7 +825,9 @@ function renderBets(){
     let badgeCls, badgeTxt, subTxt = "", totalLabel = "Total real", totalVal = r.total;
     if(r.estado === "G"){ badgeCls="G"; badgeTxt="Ganada"; }
     else if(r.estado === "P"){ badgeCls="P"; badgeTxt="Perdida"; }
-    else if(m){
+    else if(bet.tipo === "ganador"){
+      badgeCls = "neutral"; badgeTxt = "Pendiente"; totalLabel = "Resultado"; totalVal = "A definir";
+    } else if(m){
       const prob = estimateProb(bet, m);
       badgeCls = prob.level; badgeTxt = prob.label;
       totalLabel = "Acumulado"; totalVal = prob.acumulado;
@@ -894,25 +949,29 @@ function renderResumen(){
       <div class="box"><div class="lbl">Efectividad</div><div class="val">${totalDecididas ? pctGlobal.toFixed(0)+"%" : "-"}</div></div>
     </div>`;
 
+  // "ganador" no es una categoria de m.stats (TIPO_LABEL), es un mercado
+  // aparte -- se suma al desglose del Resumen con su propia etiqueta.
+  const categoriasResumen = [...Object.keys(TIPO_LABEL), "ganador"];
+  const labelResumen = k => k === "ganador" ? "Ganador del partido" : TIPO_LABEL[k];
   const porCategoria = {};
-  Object.keys(TIPO_LABEL).forEach(k=> porCategoria[k] = {g:0, p:0});
+  categoriasResumen.forEach(k=> porCategoria[k] = {g:0, p:0});
   decididas.forEach(({bet, r})=>{
     if(r.estado==="G") porCategoria[bet.tipo].g++; else porCategoria[bet.tipo].p++;
   });
 
   const catWrap = document.getElementById("resumen-categorias");
-  const filas = Object.keys(TIPO_LABEL).map(k=>{
+  const filas = categoriasResumen.map(k=>{
     const {g, p} = porCategoria[k];
     const total = g + p;
     if(total === 0){
       return `<div class="cat-row">
-        <div class="cat-label">${TIPO_LABEL[k]}</div>
+        <div class="cat-label">${labelResumen(k)}</div>
         <div class="cat-sub">Sin apuestas decididas todavía</div>
       </div>`;
     }
     const pct = (g/total*100);
     return `<div class="cat-row">
-      <div class="cat-label">${TIPO_LABEL[k]} <span class="cat-pct">${pct.toFixed(0)}%</span></div>
+      <div class="cat-label">${labelResumen(k)} <span class="cat-pct">${pct.toFixed(0)}%</span></div>
       <div class="cat-bar"><div class="cat-bar-g" style="width:${pct}%"></div><div class="cat-bar-p" style="width:${100-pct}%"></div></div>
       <div class="cat-sub">${g} ganada${g===1?"":"s"} · ${p} perdida${p===1?"":"s"} · ${total} en total</div>
     </div>`;
@@ -1009,13 +1068,14 @@ document.getElementById("in-import").addEventListener("change", (e)=>{
   reader.readAsText(file);
 });
 
-// ---------- Importar apuestas abiertas desde CSV (ej. copiadas a mano de otra casa) ----------
+// ---------- Importar apuestas abiertas (CSV propio o texto pegado de BetWarrior) ----------
 const TIPO_ALIASES = {
   goles:"goles", gol:"goles",
   tarjetas:"tarjetas", tarjeta:"tarjetas",
   corners:"corners", corner:"corners", "córners":"corners", "córner":"corners",
   tirosarco:"tirosArco", "tirosalarco":"tirosArco", "tiros al arco":"tirosArco",
-  atajadas:"atajadas", atajada:"atajadas"
+  atajadas:"atajadas", atajada:"atajadas",
+  ganador:"ganador"
 };
 function normTipo(raw){
   const key = (raw||"").trim().toLowerCase();
@@ -1029,7 +1089,7 @@ function normComparador(raw){
 }
 function normAlcance(raw){
   const v = (raw||"").trim().toLowerCase();
-  if(["cualquiera","local","visitante"].includes(v)) return v;
+  if(["cualquiera","local","visitante","empate"].includes(v)) return v;
   return "combinado";
 }
 function normTeamName(s){ return (s||"").trim().toLowerCase(); }
@@ -1046,6 +1106,29 @@ function findMatchForImport(localRaw, visitanteRaw){
   return null;
 }
 
+function buildBetFromFields(matchId, tipo, compRaw, lineaRaw, montoRaw, cuotaRaw, alcanceRaw, swapped, label){
+  const monto = parseNum(montoRaw), cuota = parseNum(cuotaRaw);
+  if(isNaN(monto) || isNaN(cuota)) return {error:`${label}: monto/cuota no numéricos`};
+
+  if(tipo === "ganador"){
+    let pick = normAlcance(alcanceRaw);
+    if(pick === "combinado" || pick === "cualquiera") return {error:`${label}: para "ganador" el alcance tiene que ser local/empate/visitante`};
+    if(swapped && pick !== "empate") pick = pick === "local" ? "visitante" : "local";
+    return {bet:{id:uid(), matchId, tipo, pick, monto, cuota}};
+  }
+
+  const comparador = normComparador(compRaw);
+  if(!comparador) return {error:`${label}: comparador inválido "${compRaw}" (usá mas/menos)`};
+  let alcance = normAlcance(alcanceRaw);
+  if(alcance === "empate") alcance = "combinado";
+  if(swapped && (alcance === "local" || alcance === "visitante")){
+    alcance = alcance === "local" ? "visitante" : "local";
+  }
+  const linea = parseNum(lineaRaw);
+  if(isNaN(linea)) return {error:`${label}: línea no numérica`};
+  return {bet:{id:uid(), matchId, tipo, comparador, alcance, linea, monto, cuota}};
+}
+
 function parseBetsCSV(text){
   const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
   const bets = [];
@@ -1057,40 +1140,167 @@ function parseBetsCSV(text){
 
     const found = findMatchForImport(localRaw, visitanteRaw);
     if(!found){ errores.push(`Línea ${idx+1}: no encontré el partido "${localRaw} vs ${visitanteRaw}" entre los ya cargados`); return; }
-
     const tipo = normTipo(tipoRaw);
     if(!tipo){ errores.push(`Línea ${idx+1}: tipo inválido "${tipoRaw}"`); return; }
-    const comparador = normComparador(compRaw);
-    if(!comparador){ errores.push(`Línea ${idx+1}: comparador inválido "${compRaw}" (usá mas/menos)`); return; }
-    let alcance = normAlcance(alcanceRaw);
-    if(found.swapped && (alcance === "local" || alcance === "visitante")){
-      alcance = alcance === "local" ? "visitante" : "local";
-    }
-    const linea = parseNum(lineaRaw), monto = parseNum(montoRaw), cuota = parseNum(cuotaRaw);
-    if(isNaN(linea) || isNaN(monto) || isNaN(cuota)){ errores.push(`Línea ${idx+1}: línea/monto/cuota no numéricos`); return; }
 
-    bets.push({id:uid(), matchId:found.match.id, tipo, comparador, alcance, linea, monto, cuota});
+    const r = buildBetFromFields(found.match.id, tipo, compRaw, lineaRaw, montoRaw, cuotaRaw, alcanceRaw, found.swapped, `Línea ${idx+1}`);
+    if(r.error) errores.push(r.error); else bets.push(r.bet);
   });
   return {bets, errores};
 }
 
-document.getElementById("btn-import-bets-csv").addEventListener("click", ()=>{
-  const textarea = document.getElementById("in-bets-csv");
-  const text = textarea.value;
-  if(!text.trim()){ alert("Pegá al menos una línea con el formato indicado."); return; }
+// ---------- Parser de texto libre pegado directo de "Mis apuestas" en BetWarrior ----------
+// No depende del orden exacto de las líneas (copiar/pegar de una pantalla web
+// no siempre conserva el layout visual, y difiere entre version mobile y
+// desktop): separa el texto en bloques por cada "Sencilla", y dentro de cada
+// bloque busca los datos por patrones de texto sueltos, no por posición fija.
+// La identificación del partido es por contención de substring: si el texto
+// del bloque menciona en algún lado los dos nombres de equipo de un partido
+// ya cargado, lo toma como ese partido (evita depender de en qué línea/orden
+// aparecen "Local - Visitante").
+function detectTipoFromLabel(label){
+  const l = (label||"").toLowerCase();
+  if(l.includes("esquina") || l.includes("corner")) return "corners";
+  if(l.includes("tarjeta")) return "tarjetas";
+  if(l.includes("gol")) return "goles";
+  if(l.includes("remate") || l.includes("tiro")) return "tirosArco";
+  if(l.includes("atajada")) return "atajadas";
+  return null;
+}
 
-  const {bets, errores} = parseBetsCSV(text);
-  if(bets.length > 0){
-    state.bets.push(...bets);
-    save();
-    renderAll();
-    textarea.value = "";
+function findMatchBySubstring(blockText){
+  const norm = s => (s||"").toLowerCase();
+  const b = norm(blockText);
+  const candidatos = state.matches.filter(m => b.includes(norm(m.local)) && b.includes(norm(m.visitante)));
+  if(candidatos.length === 1) return {match:candidatos[0], ambiguo:false};
+  if(candidatos.length > 1) return {match:null, ambiguo:true, opciones:candidatos};
+  return null;
+}
+
+function parseBetsFreeText(text){
+  const blocks = text.split(/(?=Sencilla\b)/i).map(b=>b.trim()).filter(b=>b.length>10);
+  const bets = [];
+  const errores = [];
+
+  blocks.forEach((block, idx)=>{
+    const label = `Apuesta ${idx+1}`;
+    const found = findMatchBySubstring(block);
+    if(!found){ errores.push(`${label}: no pude identificar el partido en este texto — cargalo primero en Partidos o usá el CSV.\n   "${block.slice(0,80).replace(/\n/g," ")}..."`); return; }
+    if(found.ambiguo){ errores.push(`${label}: el texto menciona equipos de ${found.opciones.length} partidos cargados a la vez, no pude elegir uno solo.`); return; }
+    const m = found.match;
+
+    const cuotaMatch = block.match(/@\s*([\d]+[.,]\d+)/) || block.match(/Cuotas[\s\S]{0,25}?([\d]+[.,]\d+)/i);
+    if(!cuotaMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no encontré la cuota.`); return; }
+    const cuota = parseNum(cuotaMatch[1]);
+
+    const montoMatch = block.match(/(?:Apuesta|Valor)[:\s]*[\s\S]{0,25}?(?:ARS)?\s*\$?\s*([\d]+[.,]\d{2})/i);
+    if(!montoMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no encontré el monto apostado.`); return; }
+    const monto = parseNum(montoMatch[1]);
+
+    // El mercado "Ganador"/"Resultado del partido" no se interpreta desde texto
+    // libre todavía (no hay una muestra real de cómo lo escribe BetWarrior y
+    // adivinar a qué equipo le apostaste es demasiado arriesgado con plata real
+    // de por medio) -- esas lineas quedan como error y se cargan a mano, o por
+    // CSV indicando el pick explícitamente.
+
+    const marketMatch = block.match(/Total de ([^\n:]+)/i);
+    if(!marketMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no reconocí el mercado. Si es una apuesta a "Ganador del partido", todavía no se puede importar como texto libre — cargala a mano o por CSV.`); return; }
+    const marketLabel = marketMatch[1].trim();
+    const tipo = detectTipoFromLabel(marketLabel);
+    if(!tipo){ errores.push(`${label} (${m.local} vs ${m.visitante}): mercado "${marketLabel}" no reconocido.`); return; }
+
+    const compMatch = block.match(/(Más de|Menos de)\s+([\d]+(?:[.,]\d+)?)/i);
+    if(!compMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no encontré "Más de"/"Menos de" con la línea.`); return; }
+    const comparador = /menos/i.test(compMatch[1]) ? "menos" : "mas";
+    const linea = parseNum(compMatch[2]);
+
+    let alcance = "combinado";
+    const favorMatch = marketLabel.match(/a favor de (.+)/i);
+    if(favorMatch){
+      const equipo = normTeamName(favorMatch[1]);
+      if(equipo === normTeamName(m.local)) alcance = "local";
+      else if(equipo === normTeamName(m.visitante)) alcance = "visitante";
+    }
+
+    bets.push({id:uid(), matchId:m.id, tipo, comparador, alcance, linea, monto, cuota});
+  });
+
+  return {bets, errores};
+}
+
+// ---------- Preview + confirmación (nunca se importa sin que el usuario lo revise) ----------
+let pendingImport = [];
+
+function describeBetForPreview(bet){
+  const m = state.matches.find(x=>x.id===bet.matchId);
+  return {
+    partido: m ? `${m.local} vs ${m.visitante}` : "(partido no encontrado)",
+    condicion: condTxtFor(bet, m),
+    monto: bet.monto,
+    cuota: bet.cuota
+  };
+}
+
+function renderImportPreview(bets, errores){
+  const wrap = document.getElementById("import-preview");
+  if(bets.length === 0 && errores.length === 0){ wrap.innerHTML = ""; return; }
+
+  const filas = bets.map((bet, i)=>{
+    const d = describeBetForPreview(bet);
+    return `<label class="mini-bet" style="display:flex;align-items:center;gap:8px;cursor:pointer">
+      <input type="checkbox" class="chk-preview" data-idx="${i}" checked>
+      <span style="flex:1">
+        <b>${d.partido}</b><br>
+        <span class="bet-sub">${d.condicion} · $${d.monto} @${d.cuota}</span>
+      </span>
+    </label>`;
+  }).join("");
+
+  const erroresHtml = errores.length === 0 ? "" : `
+    <div class="bet-sub" style="margin-top:10px;color:var(--red)">
+      ${errores.length} no se pudieron interpretar:<br>
+      ${errores.map(e=>e.replace(/\n/g,"<br>")).join("<br>")}
+    </div>`;
+
+  wrap.innerHTML = `
+    <div class="card" style="margin-top:12px">
+      <h3>Vista previa (${bets.length} apuesta${bets.length===1?"":"s"})</h3>
+      ${bets.length === 0 ? '<div class="bet-sub">Ninguna apuesta reconocida.</div>' : filas}
+      ${erroresHtml}
+      ${bets.length > 0 ? '<button class="primary" id="btn-confirm-import" style="margin-top:12px">Confirmar importación</button>' : ""}
+    </div>
+  `;
+
+  const confirmBtn = document.getElementById("btn-confirm-import");
+  if(confirmBtn){
+    confirmBtn.addEventListener("click", ()=>{
+      const checks = wrap.querySelectorAll(".chk-preview");
+      const elegidos = [...checks].filter(c=>c.checked).map(c=>pendingImport[Number(c.dataset.idx)]);
+      if(elegidos.length === 0){ alert("No marcaste ninguna apuesta para importar."); return; }
+      state.bets.push(...elegidos);
+      save();
+      renderAll();
+      pendingImport = [];
+      wrap.innerHTML = "";
+      document.getElementById("in-bets-csv").value = "";
+      alert(`Se importaron ${elegidos.length} apuesta(s).`);
+    });
   }
+}
 
-  if(errores.length > 0){
-    alert(`Se importaron ${bets.length} apuesta(s).\n\nNo se pudieron importar ${errores.length}:\n` + errores.join("\n"));
-  } else {
-    alert(`Se importaron ${bets.length} apuesta(s) correctamente.`);
+document.getElementById("btn-preview-bets").addEventListener("click", ()=>{
+  const text = document.getElementById("in-bets-csv").value;
+  if(!text.trim()){ alert("Pegá el texto de BetWarrior o tu CSV primero."); return; }
+
+  // Heurística de formato: si aparece "Total de" o "Sencilla" es texto pegado
+  // de BetWarrior; si no, se asume el CSV propio (local,visitante,tipo,...).
+  const esTextoLibre = /total de|sencilla/i.test(text);
+  const {bets, errores} = esTextoLibre ? parseBetsFreeText(text) : parseBetsCSV(text);
+
+  pendingImport = bets;
+  renderImportPreview(bets, errores);
+  if(bets.length === 0 && errores.length === 0){
+    alert("No encontré nada para importar en ese texto.");
   }
 });
 
