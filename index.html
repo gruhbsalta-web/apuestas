@@ -235,6 +235,12 @@
         </div>
       </div>
 
+      <label for="sel-alcance">Se cuenta sobre</label>
+      <select id="sel-alcance">
+        <option value="combinado">El total del partido (local + visitante)</option>
+        <option value="cualquiera">Cualquiera de los 2 equipos</option>
+      </select>
+
       <div class="row3">
         <div>
           <label for="in-linea">Línea</label>
@@ -398,12 +404,25 @@ function matchStatus(m){
   return {label:`1T ~${Math.round(jugados)}'`, cls:"live", frac:jugados/90};
 }
 
+// alcance "combinado" (default): suma local+visitante, como viene de antes.
+// alcance "cualquiera": el mayor de los dos, para apostar a que UN equipo
+// (no importa cual) cumple el objetivo, sin importar lo que haga el otro.
+function betTotal(bet, s){
+  if(bet.alcance === "cualquiera") return Math.max(s.l||0, s.v||0);
+  return (s.l||0) + (s.v||0);
+}
+
+function condTxtFor(bet){
+  const base = `${TIPO_LABEL[bet.tipo]}: ${bet.comparador==='mas'?'Más de':'Menos de'} ${bet.linea}`;
+  return bet.alcance === "cualquiera" ? `${base} (cualquiera de los 2 equipos)` : base;
+}
+
 // Estimación heurística para apuestas todavía abiertas (evalBet ya resolvió las que
 // están matemáticamente decididas): proyecta el acumulado actual a los 90' y lo compara con la línea
 function estimateProb(bet, m){
   const st = matchStatus(m);
   const s = m.stats[bet.tipo];
-  const acumulado = (s.l||0) + (s.v||0);
+  const acumulado = betTotal(bet, s);
   if(st.frac <= 0) return {label:"Programado", level:"neutral", acumulado};
   const proyeccion = acumulado / st.frac;
   const margen = bet.comparador === "mas" ? (proyeccion - bet.linea) : (bet.linea - proyeccion);
@@ -660,12 +679,13 @@ document.getElementById("btn-add-bet").addEventListener("click", ()=>{
   if(!matchId){ alert("Agregá un partido primero."); return; }
   const tipo = document.getElementById("sel-tipo").value;
   const comparador = document.getElementById("sel-comp").value;
+  const alcance = document.getElementById("sel-alcance").value;
   const linea = parseNum(document.getElementById("in-linea").value);
   const monto = parseNum(document.getElementById("in-monto").value);
   const cuota = parseNum(document.getElementById("in-cuota").value);
   if(isNaN(linea) || isNaN(monto) || isNaN(cuota)){ alert("Completá línea, monto y cuota."); return; }
 
-  state.bets.push({id:uid(), matchId, tipo, comparador, linea, monto, cuota});
+  state.bets.push({id:uid(), matchId, tipo, comparador, alcance, linea, monto, cuota});
   save();
   document.getElementById("in-linea").value = "";
   document.getElementById("in-monto").value = "";
@@ -682,7 +702,7 @@ function evalBet(bet){
   const m = state.matches.find(x=>x.id===bet.matchId);
   if(!m) return {estado:"pendiente", total:0, ganancia:0};
   const s = m.stats[bet.tipo];
-  const total = (s.l||0) + (s.v||0);
+  const total = betTotal(bet, s);
 
   let decidido = null; // true = ganada, false = perdida, null = todavía puede cambiar
   if(bet.comparador === "mas"){
@@ -713,7 +733,7 @@ function renderBets(){
   activas.slice().reverse().forEach(bet=>{
     const r = evalBet(bet);
     const m = state.matches.find(x=>x.id===bet.matchId);
-    const condTxt = `${TIPO_LABEL[bet.tipo]}: ${bet.comparador==='mas'?'Más de':'Menos de'} ${bet.linea}`;
+    const condTxt = condTxtFor(bet);
 
     let badgeCls, badgeTxt, subTxt = "", totalLabel = "Total real", totalVal = r.total;
     if(r.estado === "G"){ badgeCls="G"; badgeTxt="Ganada"; }
@@ -809,7 +829,7 @@ function renderTerminados(){
       </div>
       ${betsDelPartido.length === 0 ? '<div class="bet-sub">Sin apuestas cargadas</div>' : betsDelPartido.map(bet=>{
         const r = evalBet(bet);
-        const condTxt = `${TIPO_LABEL[bet.tipo]}: ${bet.comparador==='mas'?'Más de':'Menos de'} ${bet.linea}`;
+        const condTxt = condTxtFor(bet);
         return `<div class="mini-bet">
           <span>${condTxt} · $${bet.monto} @${bet.cuota}</span>
           <span class="badge ${r.estado}">${r.estado==='G' ? `Ganada $${r.ganancia.toFixed(2)}` : "Perdida"}</span>
