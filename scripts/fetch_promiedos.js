@@ -168,14 +168,21 @@ function todayInArgentina() {
   return parts;
 }
 
+const DAYS_AHEAD = Number(process.env.PROMIEDOS_DAYS_AHEAD || 2);
+
 // Las copas de eliminacion directa (Carabao Cup, FA Cup, Copa Argentina...)
 // devuelven en 'latest' la proxima ronda programada, que puede estar meses
 // adelante. Los partidos ya terminados se guardan siempre (sirven para los
-// promedios historicos); los programados solo se guardan si son de hoy.
+// promedios historicos); los programados solo se guardan si caen dentro de
+// los proximos DAYS_AHEAD dias (hoy inclusive), para seguir teniendo
+// partidos para cargar aunque ya se haya jugado todo lo de hoy.
 function isRelevantForToday(match, today) {
   if (match.finPartido || match.finPrimerTiempo) return true;
   if (!match.fechaHora) return false;
-  return match.fechaHora.slice(0, 10) === today;
+  const matchDate = new Date(`${match.fechaHora.slice(0, 10)}T00:00:00Z`);
+  const todayDate = new Date(`${today}T00:00:00Z`);
+  const diffDays = Math.round((matchDate - todayDate) / 86400000);
+  return diffDays >= 0 && diffDays <= DAYS_AHEAD;
 }
 
 async function fetchLeagueGames(league, today) {
