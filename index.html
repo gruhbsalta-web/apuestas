@@ -1197,14 +1197,26 @@ function parseBetsFreeText(text){
     if(!montoMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no encontré el monto apostado.`); return; }
     const monto = parseNum(montoMatch[1]);
 
-    // El mercado "Ganador"/"Resultado del partido" no se interpreta desde texto
-    // libre todavía (no hay una muestra real de cómo lo escribe BetWarrior y
-    // adivinar a qué equipo le apostaste es demasiado arriesgado con plata real
-    // de por medio) -- esas lineas quedan como error y se cargan a mano, o por
-    // CSV indicando el pick explícitamente.
+    // Mercado "Resultado Final" (asi lo llama BetWarrior): el equipo elegido
+    // aparece dos veces en el bloque -- una en el encabezado "quien juega" y
+    // otra, mas cerca de "Resultado Final", confirmando el pick. Se toma la
+    // ultima ocurrencia antes de esa etiqueta (la mas cercana), no la primera,
+    // para no confundirla con el encabezado.
+    const ganadorIdx = block.search(/Resultado Final|\b1X2\b|Ganador del Partido/i);
+    if(ganadorIdx !== -1){
+      const antes = block.slice(0, ganadorIdx).toLowerCase();
+      const idxLocal = antes.lastIndexOf(normTeamName(m.local));
+      const idxVisit = antes.lastIndexOf(normTeamName(m.visitante));
+      const idxEmpate = antes.lastIndexOf("empate");
+      const mejor = Math.max(idxLocal, idxVisit, idxEmpate);
+      if(mejor === -1){ errores.push(`${label} (${m.local} vs ${m.visitante}): es una apuesta a "Resultado Final" pero no pude identificar el pick — cargala a mano.`); return; }
+      const pick = mejor === idxEmpate ? "empate" : (mejor === idxLocal ? "local" : "visitante");
+      bets.push({id:uid(), matchId:m.id, tipo:"ganador", pick, monto, cuota});
+      return;
+    }
 
     const marketMatch = block.match(/Total de ([^\n:]+)/i);
-    if(!marketMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no reconocí el mercado. Si es una apuesta a "Ganador del partido", todavía no se puede importar como texto libre — cargala a mano o por CSV.`); return; }
+    if(!marketMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no reconocí el mercado.`); return; }
     const marketLabel = marketMatch[1].trim();
     const tipo = detectTipoFromLabel(marketLabel);
     if(!tipo){ errores.push(`${label} (${m.local} vs ${m.visitante}): mercado "${marketLabel}" no reconocido.`); return; }
