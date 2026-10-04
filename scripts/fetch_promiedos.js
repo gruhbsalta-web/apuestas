@@ -19,6 +19,14 @@ const LEAGUE_OVERRIDE = (process.env.PROMIEDOS_LEAGUES || '').split(',').map((v)
 // (Internacional, Alemania, Portugal, Francia, Brasil, Uruguay, Paraguay,
 // Colombia, Chile, Mexico, EEUU, Selecciones) queda afuera a proposito.
 const COUNTRY_WHITELIST = ['Argentina', 'Inglaterra', 'España', 'Italia'];
+// Ligas puntuales que no queremos aunque su pais este en la whitelist:
+// reserva/amateur, no estan en las listas de equipos de la app (TEAMS en
+// index.html) y nadie va a apostar ahi.
+const LEAGUE_ID_EXCLUDE = new Set([
+  'iage', // Promocional Amateur
+  'hhbc', // Liga Profesional - Reserva
+  'hgee' // Copa de la Liga - Reserva
+]);
 const HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
   'X-VER': '1.11.7.3'
@@ -112,6 +120,7 @@ async function resolveLeagues(buildId) {
       const leagueMatch = link.match(/\/league\/([^/]+)\/([^/]+)\/?$/);
       if (!leagueMatch) return;
       const [, urlName, id] = leagueMatch;
+      if (LEAGUE_ID_EXCLUDE.has(id)) return;
       if (!leagues.has(id)) {
         leagues.set(id, { id, url_name: decodeURIComponent(urlName), name, country: category.name });
       }
@@ -149,13 +158,35 @@ function normalizeMatch(game, league) {
   };
 }
 
-async function fetchLeagueGames(league) {
+function todayInArgentina() {
+  // formato "YYYY-MM-DD", para comparar directo contra fechaHora (que ya
+  // viene como "YYYY-MM-DDTHH:mm").
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Argentina/Buenos_Aires',
+    year: 'numeric', month: '2-digit', day: '2-digit'
+  }).format(new Date());
+  return parts;
+}
+
+// Las copas de eliminacion directa (Carabao Cup, FA Cup, Copa Argentina...)
+// devuelven en 'latest' la proxima ronda programada, que puede estar meses
+// adelante. Los partidos ya terminados se guardan siempre (sirven para los
+// promedios historicos); los programados solo se guardan si son de hoy.
+function isRelevantForToday(match, today) {
+  if (match.finPartido || match.finPrimerTiempo) return true;
+  if (!match.fechaHora) return false;
+  return match.fechaHora.slice(0, 10) === today;
+}
+
+async function fetchLeagueGames(league, today) {
   const url = `${API}/league/games/${league.id}/latest`;
   try {
     const data = await getJson(url);
     const games = Array.isArray(data?.games) ? data.games : [];
-    console.log(`Liga ${league.name || league.id} (${league.id}): ${games.length} partidos en 'latest'`);
-    return games.map((game) => normalizeMatch(game, league));
+    const matches = games.map((game) => normalizeMatch(game, league));
+    const relevant = matches.filter((m) => isRelevantForToday(m, today));
+    console.log(`Liga ${league.name || league.id} (${league.id}): ${games.length} partidos en 'latest', ${relevant.length} relevantes (terminados o de hoy)`);
+    return relevant;
   } catch (error) {
     console.warn(`No se pudo traer partidos de la liga ${league.id}:`, error.message || error);
     return [];
@@ -193,9 +224,12 @@ async function run() {
   const leagues = await resolveLeagues(buildId);
   console.log(`Ligas a recorrer: ${leagues.length}`);
 
+  const today = todayInArgentina();
+  console.log('Fecha de hoy (Argentina):', today);
+
   const allMatches = [];
   for (const league of leagues) {
-    const matches = await fetchLeagueGames(league);
+    const matches = await fetchLeagueGames(league, today);
     for (const match of matches) {
       await enrichWithDetail(match, buildId);
       allMatches.push(match);
@@ -208,7 +242,17 @@ async function run() {
     ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'))
     : { matches: [], bets: [], capitalInicial: 0 };
 
-  const byId = new Map((existing.matches || []).map((m) => [m.id, m]));
+  // Limpieza de corridas anteriores: partidos programados que quedaron
+  // guardados (ej. la proxima ronda de una copa, meses adelante) y hoy ya
+  // no son relevantes, mas partidos de ligas que ya no cubrimos. Los
+  // terminados de ligas vigentes se conservan siempre.
+  const keptExisting = (existing.matches || [])
+    .filter((m) => !LEAGUE_ID_EXCLUDE.has(m?.source?.leagueId))
+    .filter((m) => isRelevantForToday(m, today));
+  const dropped = (existing.matches || []).length - keptExisting.length;
+  if (dropped > 0) console.log(`Se limpiaron ${dropped} partidos programados viejos que ya no son de hoy.`);
+
+  const byId = new Map(keptExisting.map((m) => [m.id, m]));
   allMatches.forEach((m) => byId.set(m.id, m));
 
   const out = {
