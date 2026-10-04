@@ -153,6 +153,7 @@
   .team-stats-row b{color:var(--text);}
   optgroup{color:var(--muted);}
 </style>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@7.0.0/dist/tesseract.min.js"></script>
 </head>
 <body>
 
@@ -294,13 +295,16 @@
     <div class="card">
       <h3>Importar apuestas abiertas</h3>
       <div class="bet-sub" style="margin-bottom:12px">
-        Pegá tal cual lo que copiás de "Mis apuestas" en BetWarrior (sencillas, una o varias) <b>o</b> una lista en el CSV propio de abajo — se detecta solo cuál de los dos pegaste. Nada se importa sin que lo confirmes: primero se arma una vista previa para que revises montos y cuotas antes de agregar nada.<br>
+        Subí una o varias capturas de "Mis apuestas" (BetWarrior) y la app les lee el texto sola (OCR, corre en el teléfono, no se sube a ningún lado). También podés pegar texto a mano o un CSV propio abajo. Nada se importa sin que lo confirmes: primero se arma una vista previa para que revises montos y cuotas antes de agregar nada.<br>
         <b>CSV (en este orden, separadas por coma):</b> <code>local,visitante,tipo,comparador,linea,monto,cuota,alcance</code><br>
         <b>tipo:</b> goles | tarjetas | corners | tirosArco | atajadas | ganador &middot; <b>comparador:</b> mas | menos (no aplica si tipo=ganador) &middot; <b>alcance</b>: combinado | cualquiera | local | visitante (si tipo=ganador: local | empate | visitante)<br>
         Ejemplo CSV: <code>San Martín Tucumán,Gimnasia y Tiro,corners,mas,4,150,2.35,visitante</code><br>
         El partido siempre se busca por nombre de equipo entre los que ya cargaste en Partidos — si no lo encuentra, esa apuesta queda listada como error en vez de importarse a medias.
       </div>
-      <textarea id="in-bets-csv" rows="6" style="width:100%;box-sizing:border-box;background:#0f1420;color:#e8ecf4;border:1px solid #2a3142;border-radius:8px;padding:10px;font-family:monospace;font-size:13px" placeholder="Pegá acá el texto de BetWarrior o tu CSV"></textarea>
+      <input type="file" id="in-bets-images" accept="image/*" multiple style="display:none">
+      <button class="btn-save" id="btn-ocr-images" style="width:100%;margin-bottom:10px">📷 Subir captura(s) de apuestas</button>
+      <div id="ocr-status" class="bet-sub"></div>
+      <textarea id="in-bets-csv" rows="6" style="width:100%;box-sizing:border-box;background:#0f1420;color:#e8ecf4;border:1px solid #2a3142;border-radius:8px;padding:10px;font-family:monospace;font-size:13px" placeholder="Pegá acá el texto de BetWarrior o tu CSV (o subí capturas arriba)"></textarea>
       <button class="primary" id="btn-preview-bets" style="margin-top:10px">Previsualizar</button>
       <div id="import-preview"></div>
     </div>
@@ -1215,16 +1219,22 @@ function parseBetsFreeText(text){
       return;
     }
 
-    const marketMatch = block.match(/Total de ([^\n:]+)/i);
-    if(!marketMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no reconocí el mercado.`); return; }
-    const marketLabel = marketMatch[1].trim();
-    const tipo = detectTipoFromLabel(marketLabel);
-    if(!tipo){ errores.push(`${label} (${m.local} vs ${m.visitante}): mercado "${marketLabel}" no reconocido.`); return; }
-
     const compMatch = block.match(/(Más de|Menos de)\s+([\d]+(?:[.,]\d+)?)/i);
     if(!compMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no encontré "Más de"/"Menos de" con la línea.`); return; }
     const comparador = /menos/i.test(compMatch[1]) ? "menos" : "mas";
     const linea = parseNum(compMatch[2]);
+
+    const marketMatch = block.match(/Total de ([^\n:]+)/i);
+    if(!marketMatch){
+      // El OCR a veces pierde justo esta linea (gris, letra chica). En vez de
+      // descartar la apuesta entera, queda "a revisar": en la vista previa se
+      // completa a mano el tipo/alcance antes de poder confirmarla.
+      bets.push({id:uid(), matchId:m.id, comparador, linea, monto, cuota, necesitaTipo:true});
+      return;
+    }
+    const marketLabel = marketMatch[1].trim();
+    const tipo = detectTipoFromLabel(marketLabel);
+    if(!tipo){ errores.push(`${label} (${m.local} vs ${m.visitante}): mercado "${marketLabel}" no reconocido.`); return; }
 
     let alcance = "combinado";
     const favorMatch = marketLabel.match(/a favor de (.+)/i);
@@ -1253,11 +1263,36 @@ function describeBetForPreview(bet){
   };
 }
 
+const TIPO_OPCIONES = [["goles","Goles"],["tarjetas","Tarjetas"],["corners","Corners"],["tirosArco","Tiros al arco"],["atajadas","Atajadas"]];
+
+function renderPartialRow(bet, i, m){
+  return `<div class="mini-bet" style="display:flex;align-items:center;gap:8px">
+    <input type="checkbox" class="chk-preview" data-idx="${i}" checked>
+    <span style="flex:1">
+      <b>${m ? `${m.local} vs ${m.visitante}` : "(partido no encontrado)"}</b>
+      <span class="bet-sub" style="color:var(--amber)"> — no reconocí el tipo de apuesta, elegilo:</span><br>
+      <select class="sel-partial-tipo" data-idx="${i}" style="margin-top:4px">
+        <option value="">-- Tipo --</option>
+        ${TIPO_OPCIONES.map(([v,l])=>`<option value="${v}">${l}</option>`).join("")}
+      </select>
+      <select class="sel-partial-alcance" data-idx="${i}">
+        <option value="combinado">Total del partido</option>
+        <option value="cualquiera">Cualquiera de los 2</option>
+        ${m ? `<option value="local">Solo ${m.local}</option>` : ""}
+        ${m ? `<option value="visitante">Solo ${m.visitante}</option>` : ""}
+      </select><br>
+      <span class="bet-sub">${bet.comparador==='mas'?'Más de':'Menos de'} ${bet.linea} · $${bet.monto} @${bet.cuota}</span>
+    </span>
+  </div>`;
+}
+
 function renderImportPreview(bets, errores){
   const wrap = document.getElementById("import-preview");
   if(bets.length === 0 && errores.length === 0){ wrap.innerHTML = ""; return; }
 
   const filas = bets.map((bet, i)=>{
+    const m = state.matches.find(x=>x.id===bet.matchId);
+    if(bet.necesitaTipo) return renderPartialRow(bet, i, m);
     const d = describeBetForPreview(bet);
     return `<label class="mini-bet" style="display:flex;align-items:center;gap:8px;cursor:pointer">
       <input type="checkbox" class="chk-preview" data-idx="${i}" checked>
@@ -1287,7 +1322,23 @@ function renderImportPreview(bets, errores){
   if(confirmBtn){
     confirmBtn.addEventListener("click", ()=>{
       const checks = wrap.querySelectorAll(".chk-preview");
-      const elegidos = [...checks].filter(c=>c.checked).map(c=>pendingImport[Number(c.dataset.idx)]);
+      const marcados = [...checks].filter(c=>c.checked).map(c=>Number(c.dataset.idx));
+
+      const faltanTipo = [];
+      const elegidos = marcados.map(idx=>{
+        const bet = pendingImport[idx];
+        if(!bet.necesitaTipo) return bet;
+        const tipoSel = wrap.querySelector(`.sel-partial-tipo[data-idx="${idx}"]`);
+        const alcanceSel = wrap.querySelector(`.sel-partial-alcance[data-idx="${idx}"]`);
+        if(!tipoSel.value){ faltanTipo.push(idx); return null; }
+        const { necesitaTipo, ...resto } = bet;
+        return { ...resto, tipo: tipoSel.value, alcance: alcanceSel.value };
+      }).filter(Boolean);
+
+      if(faltanTipo.length > 0){
+        alert(`Elegí el tipo de apuesta para ${faltanTipo.length} fila(s) marcadas antes de confirmar (o destildalas si no las querés importar).`);
+        return;
+      }
       if(elegidos.length === 0){ alert("No marcaste ninguna apuesta para importar."); return; }
       state.bets.push(...elegidos);
       save();
@@ -1299,6 +1350,75 @@ function renderImportPreview(bets, errores){
     });
   }
 }
+
+// ---------- OCR: leer texto de capturas de BetWarrior directo en el telefono ----------
+// Corre 100% en el navegador (Tesseract.js, WASM) -- la imagen nunca sale del
+// dispositivo. La primera vez tarda mas porque descarga el paquete de idioma
+// español (~15MB, una sola vez, despues queda cacheado por el navegador).
+document.getElementById("btn-ocr-images").addEventListener("click", ()=>{
+  document.getElementById("in-bets-images").click();
+});
+
+// Escala (hasta ~1600px de ancho) y sube el contraste en blanco y negro antes
+// de pasarla a Tesseract: las capturas de apps suelen tener texto chico o gris
+// claro que el OCR lee mejor asi que en color y a resolucion original.
+async function preprocessImageForOCR(file){
+  const bitmap = await createImageBitmap(file);
+  const scale = Math.max(1, Math.min(3, 1600 / bitmap.width));
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.round(bitmap.width * scale);
+  canvas.height = Math.round(bitmap.height * scale);
+  const ctx = canvas.getContext("2d");
+  ctx.imageSmoothingEnabled = true;
+  ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+
+  const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const d = imgData.data;
+  const contrast = 1.4;
+  for(let i=0; i<d.length; i+=4){
+    const gray = 0.299*d[i] + 0.587*d[i+1] + 0.114*d[i+2];
+    const v = Math.max(0, Math.min(255, (gray - 128) * contrast + 128));
+    d[i] = d[i+1] = d[i+2] = v;
+  }
+  ctx.putImageData(imgData, 0, 0);
+  return canvas;
+}
+
+document.getElementById("in-bets-images").addEventListener("change", async (e)=>{
+  const files = [...e.target.files];
+  e.target.value = "";
+  if(files.length === 0) return;
+  if(typeof Tesseract === "undefined"){
+    alert("No se pudo cargar el lector de imágenes (sin conexión a internet la primera vez). Probá de nuevo con internet, o pegá el texto a mano.");
+    return;
+  }
+
+  const status = document.getElementById("ocr-status");
+  const btn = document.getElementById("btn-ocr-images");
+  btn.disabled = true;
+  let worker;
+  try{
+    status.textContent = "Preparando lector (puede tardar la primera vez)...";
+    worker = await Tesseract.createWorker("spa");
+    let textoTotal = "";
+    for(let i=0; i<files.length; i++){
+      status.textContent = `Leyendo imagen ${i+1} de ${files.length}...`;
+      const canvas = await preprocessImageForOCR(files[i]);
+      const {data} = await worker.recognize(canvas);
+      textoTotal += (textoTotal ? "\n\n" : "") + data.text;
+    }
+    const textarea = document.getElementById("in-bets-csv");
+    textarea.value = textoTotal.trim();
+    status.textContent = `Listo, se leyeron ${files.length} imagen(es). Revisá el texto si hace falta y tocá "Previsualizar".`;
+  }catch(err){
+    status.textContent = "";
+    alert("Error leyendo la imagen: " + (err.message || err));
+  }finally{
+    if(worker) await worker.terminate();
+    btn.disabled = false;
+  }
+});
 
 document.getElementById("btn-preview-bets").addEventListener("click", ()=>{
   const text = document.getElementById("in-bets-csv").value;
