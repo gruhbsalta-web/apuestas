@@ -1485,8 +1485,21 @@ document.getElementById("btn-preview-bets").addEventListener("click", ()=>{
 });
 
 // ---------- PWA: service worker para que funcione offline una vez instalada ----------
+// Auto-actualizacion: sw.js ya hace skipWaiting()+clients.claim(), pero eso
+// no alcanza solo -- sin este listener, la pestana/app ya abierta se queda
+// corriendo el JS viejo en memoria hasta que el usuario la cierra y reabre a
+// mano. Con esto, apenas el nuevo service worker toma control, se recarga
+// sola una vez, sin pedirle nada al usuario.
 if("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")){
-  navigator.serviceWorker.register("sw.js").catch(()=>{});
+  let recargando = false;
+  navigator.serviceWorker.addEventListener("controllerchange", ()=>{
+    if(recargando) return;
+    recargando = true;
+    location.reload();
+  });
+  navigator.serviceWorker.register("sw.js").then((reg)=>{
+    reg.update().catch(()=>{});
+  }).catch(()=>{});
 }
 
 // ---------- Actualizar partidos desde Promiedos (parser heurístico) ----------
