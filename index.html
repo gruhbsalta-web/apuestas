@@ -1225,13 +1225,17 @@ function parseBetsFreeText(text){
     if(found.ambiguo){ errores.push(`${label}: el texto menciona equipos de ${found.opciones.length} partidos cargados a la vez, no pude elegir uno solo.`); return; }
     const m = found.match;
 
+    // Cuota y monto pueden no leerse bien (letra chica/numeros pegados); en vez
+    // de descartar la apuesta entera, quedan "a completar" en la vista previa.
     const cuotaMatch = block.match(/@\s*([\d]+[.,]\d+)/) || block.match(/Cuotas[\s\S]{0,25}?([\d]+[.,]\d+)/i);
-    if(!cuotaMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no encontré la cuota.`); return; }
-    const cuota = parseNum(cuotaMatch[1]);
+    const cuota = cuotaMatch ? parseNum(cuotaMatch[1]) : null;
 
     const montoMatch = block.match(/(?:Apuesta|Valor)[:\s]*[\s\S]{0,25}?(?:ARS)?\s*\$?\s*([\d]+[.,]\d{2})/i);
-    if(!montoMatch){ errores.push(`${label} (${m.local} vs ${m.visitante}): no encontré el monto apostado.`); return; }
-    const monto = parseNum(montoMatch[1]);
+    const monto = montoMatch ? parseNum(montoMatch[1]) : null;
+
+    const faltantes = {};
+    if(cuota === null) faltantes.necesitaCuota = true;
+    if(monto === null) faltantes.necesitaMonto = true;
 
     // Mercado "Resultado Final" (asi lo llama BetWarrior): el equipo elegido
     // aparece dos veces en el bloque -- una en el encabezado "quien juega" y
@@ -1247,7 +1251,7 @@ function parseBetsFreeText(text){
       const mejor = Math.max(idxLocal, idxVisit, idxEmpate);
       if(mejor === -1){ errores.push(`${label} (${m.local} vs ${m.visitante}): es una apuesta a "Resultado Final" pero no pude identificar el pick — cargala a mano.`); return; }
       const pick = mejor === idxEmpate ? "empate" : (mejor === idxLocal ? "local" : "visitante");
-      bets.push({id:uid(), matchId:m.id, tipo:"ganador", pick, monto, cuota});
+      bets.push({id:uid(), matchId:m.id, tipo:"ganador", pick, monto, cuota, ...faltantes});
       return;
     }
 
@@ -1261,7 +1265,7 @@ function parseBetsFreeText(text){
       // El OCR a veces pierde justo esta linea (gris, letra chica). En vez de
       // descartar la apuesta entera, queda "a revisar": en la vista previa se
       // completa a mano el tipo/alcance antes de poder confirmarla.
-      bets.push({id:uid(), matchId:m.id, comparador, linea, monto, cuota, necesitaTipo:true});
+      bets.push({id:uid(), matchId:m.id, comparador, linea, monto, cuota, necesitaTipo:true, ...faltantes});
       return;
     }
     const marketLabel = marketMatch[1].trim();
@@ -1276,7 +1280,7 @@ function parseBetsFreeText(text){
       else if(equipo === normTeamName(m.visitante)) alcance = "visitante";
     }
 
-    bets.push({id:uid(), matchId:m.id, tipo, comparador, alcance, linea, monto, cuota});
+    bets.push({id:uid(), matchId:m.id, tipo, comparador, alcance, linea, monto, cuota, ...faltantes});
   });
 
   return {bets, errores};
@@ -1297,23 +1301,52 @@ function describeBetForPreview(bet){
 
 const TIPO_OPCIONES = [["goles","Goles"],["tarjetas","Tarjetas"],["corners","Corners"],["tirosArco","Tiros al arco"],["atajadas","Atajadas"]];
 
-function renderPartialRow(bet, i, m){
-  return `<div class="mini-bet" style="display:flex;align-items:center;gap:8px">
-    <input type="checkbox" class="chk-preview" data-idx="${i}" checked>
+// El OCR no siempre pierde lo mismo: a veces es el tipo de mercado, a veces
+// la cuota, a veces el monto -- nunca todo junto. En vez de un camino separado
+// por campo, cualquier apuesta con algo faltante (necesitaTipo/necesitaCuota/
+// necesitaMonto) se renderiza con inputs solo para lo que falta, y el resto
+// se muestra como texto fijo (lo que ya se leyo bien no se vuelve a pedir).
+function renderFlexibleRow(bet, i, m){
+  const necesitaAlgo = bet.necesitaTipo || bet.necesitaCuota || bet.necesitaMonto;
+  if(!necesitaAlgo){
+    const d = describeBetForPreview(bet);
+    return `<label class="mini-bet" style="display:flex;align-items:center;gap:8px;cursor:pointer">
+      <input type="checkbox" class="chk-preview" data-idx="${i}" checked>
+      <span style="flex:1">
+        <b>${d.partido}</b><br>
+        <span class="bet-sub">${d.condicion} · $${d.monto} @${d.cuota}</span>
+      </span>
+    </label>`;
+  }
+
+  const condicionHtml = bet.necesitaTipo
+    ? `<select class="sel-partial-tipo" data-idx="${i}" style="margin-top:4px">
+         <option value="">-- Tipo --</option>
+         ${TIPO_OPCIONES.map(([v,l])=>`<option value="${v}">${l}</option>`).join("")}
+       </select>
+       <select class="sel-partial-alcance" data-idx="${i}">
+         <option value="combinado">Total del partido</option>
+         <option value="cualquiera">Cualquiera de los 2</option>
+         ${m ? `<option value="local">Solo ${m.local}</option>` : ""}
+         ${m ? `<option value="visitante">Solo ${m.visitante}</option>` : ""}
+       </select><br>
+       <span class="bet-sub">${bet.comparador==='mas'?'Más de':'Menos de'} ${bet.linea}</span>`
+    : `<span class="bet-sub">${condTxtFor(bet, m)}</span>`;
+
+  const montoHtml = bet.necesitaMonto
+    ? `Monto $<input type="text" class="in-partial-monto" data-idx="${i}" inputmode="decimal" placeholder="150" style="width:70px">`
+    : `$${bet.monto}`;
+  const cuotaHtml = bet.necesitaCuota
+    ? `Cuota <input type="text" class="in-partial-cuota" data-idx="${i}" inputmode="decimal" placeholder="2.35" style="width:60px">`
+    : `@${bet.cuota}`;
+
+  return `<div class="mini-bet" style="display:flex;align-items:flex-start;gap:8px">
+    <input type="checkbox" class="chk-preview" data-idx="${i}" checked style="margin-top:3px">
     <span style="flex:1">
       <b>${m ? `${m.local} vs ${m.visitante}` : "(partido no encontrado)"}</b>
-      <span class="bet-sub" style="color:var(--amber)"> — no reconocí el tipo de apuesta, elegilo:</span><br>
-      <select class="sel-partial-tipo" data-idx="${i}" style="margin-top:4px">
-        <option value="">-- Tipo --</option>
-        ${TIPO_OPCIONES.map(([v,l])=>`<option value="${v}">${l}</option>`).join("")}
-      </select>
-      <select class="sel-partial-alcance" data-idx="${i}">
-        <option value="combinado">Total del partido</option>
-        <option value="cualquiera">Cualquiera de los 2</option>
-        ${m ? `<option value="local">Solo ${m.local}</option>` : ""}
-        ${m ? `<option value="visitante">Solo ${m.visitante}</option>` : ""}
-      </select><br>
-      <span class="bet-sub">${bet.comparador==='mas'?'Más de':'Menos de'} ${bet.linea} · $${bet.monto} @${bet.cuota}</span>
+      <span class="bet-sub" style="color:var(--amber)"> — completá lo que falta:</span><br>
+      ${condicionHtml}<br>
+      <span class="bet-sub">${montoHtml} · ${cuotaHtml}</span>
     </span>
   </div>`;
 }
@@ -1324,15 +1357,7 @@ function renderImportPreview(bets, errores){
 
   const filas = bets.map((bet, i)=>{
     const m = state.matches.find(x=>x.id===bet.matchId);
-    if(bet.necesitaTipo) return renderPartialRow(bet, i, m);
-    const d = describeBetForPreview(bet);
-    return `<label class="mini-bet" style="display:flex;align-items:center;gap:8px;cursor:pointer">
-      <input type="checkbox" class="chk-preview" data-idx="${i}" checked>
-      <span style="flex:1">
-        <b>${d.partido}</b><br>
-        <span class="bet-sub">${d.condicion} · $${d.monto} @${d.cuota}</span>
-      </span>
-    </label>`;
+    return renderFlexibleRow(bet, i, m);
   }).join("");
 
   const erroresHtml = errores.length === 0 ? "" : `
@@ -1356,19 +1381,35 @@ function renderImportPreview(bets, errores){
       const checks = wrap.querySelectorAll(".chk-preview");
       const marcados = [...checks].filter(c=>c.checked).map(c=>Number(c.dataset.idx));
 
-      const faltanTipo = [];
+      const incompletos = [];
       const elegidos = marcados.map(idx=>{
         const bet = pendingImport[idx];
-        if(!bet.necesitaTipo) return bet;
-        const tipoSel = wrap.querySelector(`.sel-partial-tipo[data-idx="${idx}"]`);
-        const alcanceSel = wrap.querySelector(`.sel-partial-alcance[data-idx="${idx}"]`);
-        if(!tipoSel.value){ faltanTipo.push(idx); return null; }
-        const { necesitaTipo, ...resto } = bet;
-        return { ...resto, tipo: tipoSel.value, alcance: alcanceSel.value };
+        const { necesitaTipo, necesitaCuota, necesitaMonto, ...resultado } = bet;
+
+        if(necesitaTipo){
+          const tipoSel = wrap.querySelector(`.sel-partial-tipo[data-idx="${idx}"]`);
+          const alcanceSel = wrap.querySelector(`.sel-partial-alcance[data-idx="${idx}"]`);
+          if(!tipoSel.value){ incompletos.push(idx); return null; }
+          resultado.tipo = tipoSel.value;
+          resultado.alcance = alcanceSel.value;
+        }
+        if(necesitaMonto){
+          const montoInp = wrap.querySelector(`.in-partial-monto[data-idx="${idx}"]`);
+          const v = parseNum(montoInp.value);
+          if(isNaN(v)){ incompletos.push(idx); return null; }
+          resultado.monto = v;
+        }
+        if(necesitaCuota){
+          const cuotaInp = wrap.querySelector(`.in-partial-cuota[data-idx="${idx}"]`);
+          const v = parseNum(cuotaInp.value);
+          if(isNaN(v)){ incompletos.push(idx); return null; }
+          resultado.cuota = v;
+        }
+        return resultado;
       }).filter(Boolean);
 
-      if(faltanTipo.length > 0){
-        alert(`Elegí el tipo de apuesta para ${faltanTipo.length} fila(s) marcadas antes de confirmar (o destildalas si no las querés importar).`);
+      if(incompletos.length > 0){
+        alert(`Completá los campos faltantes de ${incompletos.length} fila(s) marcadas antes de confirmar (o destildalas si no las querés importar).`);
         return;
       }
       if(elegidos.length === 0){ alert("No marcaste ninguna apuesta para importar."); return; }
