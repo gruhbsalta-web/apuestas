@@ -19,8 +19,14 @@ self.addEventListener("activate", (event) => {
 
 // Cache-first con actualización en segundo plano: sirve rápido y offline,
 // pero deja la red renovar la copia guardada para la próxima vez.
+// Las requests de otros dominios (ej. el CDN de Tesseract.js para OCR, que
+// baja archivos pesados de WASM/paquete de idioma) se dejan pasar directo a
+// la red sin pasar por este cache: cachearlas acá no aporta nada y suma
+// trabajo/memoria de mas justo en el momento en que el telefono ya esta
+// ocupado corriendo el OCR.
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
+  if (new URL(event.request.url).origin !== self.location.origin) return;
   event.respondWith(
     caches.match(event.request).then((cached) => {
       const fetchPromise = fetch(event.request)

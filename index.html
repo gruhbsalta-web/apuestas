@@ -1385,6 +1385,16 @@ async function preprocessImageForOCR(file){
   return canvas;
 }
 
+let ocrEnCurso = false;
+
+function withTimeout(promise, ms, mensaje){
+  let timer;
+  const timeout = new Promise((_, reject)=>{
+    timer = setTimeout(()=> reject(new Error(mensaje)), ms);
+  });
+  return Promise.race([promise, timeout]).finally(()=> clearTimeout(timer));
+}
+
 document.getElementById("in-bets-images").addEventListener("change", async (e)=>{
   const files = [...e.target.files];
   e.target.value = "";
@@ -1396,16 +1406,19 @@ document.getElementById("in-bets-images").addEventListener("change", async (e)=>
 
   const status = document.getElementById("ocr-status");
   const btn = document.getElementById("btn-ocr-images");
+  const btnPreview = document.getElementById("btn-preview-bets");
+  ocrEnCurso = true;
   btn.disabled = true;
+  btnPreview.disabled = true;
   let worker;
   try{
-    status.textContent = "Preparando lector (puede tardar la primera vez)...";
-    worker = await Tesseract.createWorker("spa");
+    status.textContent = "Preparando lector (puede tardar 1-2 minutos la primera vez: descarga el paquete de español, ~15-20MB. No cambies de pestaña.)";
+    worker = await withTimeout(Tesseract.createWorker("spa"), 120000, "El lector de imágenes tardó demasiado en prepararse (¿conexión lenta o inestable?). Probá de nuevo, o pegá el texto a mano.");
     let textoTotal = "";
     for(let i=0; i<files.length; i++){
-      status.textContent = `Leyendo imagen ${i+1} de ${files.length}...`;
+      status.textContent = `Leyendo imagen ${i+1} de ${files.length} (puede tardar un rato)...`;
       const canvas = await preprocessImageForOCR(files[i]);
-      const {data} = await worker.recognize(canvas);
+      const {data} = await withTimeout(worker.recognize(canvas), 90000, `La imagen ${i+1} tardó demasiado en leerse. Probá con menos imágenes a la vez, o pegá el texto a mano.`);
       textoTotal += (textoTotal ? "\n\n" : "") + data.text;
     }
     const textarea = document.getElementById("in-bets-csv");
@@ -1413,16 +1426,19 @@ document.getElementById("in-bets-images").addEventListener("change", async (e)=>
     status.textContent = `Listo, se leyeron ${files.length} imagen(es). Revisá el texto si hace falta y tocá "Previsualizar".`;
   }catch(err){
     status.textContent = "";
-    alert("Error leyendo la imagen: " + (err.message || err));
+    alert("No se pudo leer la imagen: " + (err.message || err));
   }finally{
-    if(worker) await worker.terminate();
+    if(worker) worker.terminate().catch(()=>{});
+    ocrEnCurso = false;
     btn.disabled = false;
+    btnPreview.disabled = false;
   }
 });
 
 document.getElementById("btn-preview-bets").addEventListener("click", ()=>{
+  if(ocrEnCurso){ alert("Esperá a que termine de leer la(s) imagen(es)."); return; }
   const text = document.getElementById("in-bets-csv").value;
-  if(!text.trim()){ alert("Pegá el texto de BetWarrior o tu CSV primero."); return; }
+  if(!text.trim()){ alert("Subí una captura, pegá el texto de BetWarrior, o tu CSV, primero."); return; }
 
   // Heurística de formato: si aparece "Total de" o "Sencilla" es texto pegado
   // de BetWarrior; si no, se asume el CSV propio (local,visitante,tipo,...).
