@@ -1172,10 +1172,42 @@ function detectTipoFromLabel(label){
   return null;
 }
 
+// Promiedos (fuente de los partidos cargados) y BetWarrior no siempre
+// nombran igual al mismo club: "San Martín Tucumán" vs "San Martín de
+// Tucumán" (una palabra de mas), "Argentinos Juniors" vs "Argentinos Jrs"
+// (abreviatura). En vez de exigir el nombre completo identico como
+// substring, se compara por palabras: todas las palabras significativas
+// del nombre (sin "de/la/los/y", sin acentos) tienen que aparecer en el
+// bloque, en cualquier orden -- tolera palabras de mas o abreviaturas
+// conocidas, pero sigue siendo especifico (no hace matching difuso por
+// distancia de edicion, que con nombres de clubes parecidos podria
+// confundir un partido por otro).
+const STOPWORDS_EQUIPO = new Set(["de","del","la","las","los","y","e"]);
+const SINONIMOS_EQUIPO = [
+  [/\bjrs\.?\b/gi, "juniors"],
+  [/\bdep\.?\b/gi, "deportivo"],
+  [/\batl\.?\b/gi, "atletico"]
+];
+function foldAccents(s){
+  return (s||"").normalize("NFD").replace(/[̀-ͯ]/g, "");
+}
+function expandSinonimos(s){
+  let out = s || "";
+  SINONIMOS_EQUIPO.forEach(([re, rep]) => { out = out.replace(re, rep); });
+  return out;
+}
+function teamTokens(name){
+  const norm = foldAccents(expandSinonimos(normTeamName(name)));
+  return norm.split(/[^a-z0-9]+/i).filter(t => t && !STOPWORDS_EQUIPO.has(t));
+}
+function blockMentionsTeam(blockNorm, teamName){
+  const tokens = teamTokens(teamName);
+  return tokens.length > 0 && tokens.every(t => blockNorm.includes(t));
+}
+
 function findMatchBySubstring(blockText){
-  const norm = s => (s||"").toLowerCase();
-  const b = norm(blockText);
-  const candidatos = state.matches.filter(m => b.includes(norm(m.local)) && b.includes(norm(m.visitante)));
+  const b = foldAccents(expandSinonimos(blockText.toLowerCase()));
+  const candidatos = state.matches.filter(m => blockMentionsTeam(b, m.local) && blockMentionsTeam(b, m.visitante));
   if(candidatos.length === 1) return {match:candidatos[0], ambiguo:false};
   if(candidatos.length > 1) return {match:null, ambiguo:true, opciones:candidatos};
   return null;
