@@ -407,14 +407,20 @@ function matchStatus(m){
 // alcance "combinado" (default): suma local+visitante, como viene de antes.
 // alcance "cualquiera": el mayor de los dos, para apostar a que UN equipo
 // (no importa cual) cumple el objetivo, sin importar lo que haga el otro.
+// alcance "local"/"visitante": solo ese equipo, lo que haga el rival no afecta.
 function betTotal(bet, s){
   if(bet.alcance === "cualquiera") return Math.max(s.l||0, s.v||0);
+  if(bet.alcance === "local") return s.l||0;
+  if(bet.alcance === "visitante") return s.v||0;
   return (s.l||0) + (s.v||0);
 }
 
-function condTxtFor(bet){
+function condTxtFor(bet, m){
   const base = `${TIPO_LABEL[bet.tipo]}: ${bet.comparador==='mas'?'Más de':'Menos de'} ${bet.linea}`;
-  return bet.alcance === "cualquiera" ? `${base} (cualquiera de los 2 equipos)` : base;
+  if(bet.alcance === "cualquiera") return `${base} (cualquiera de los 2 equipos)`;
+  if(bet.alcance === "local") return `${base} (${m ? m.local : "local"})`;
+  if(bet.alcance === "visitante") return `${base} (${m ? m.visitante : "visitante"})`;
+  return base;
 }
 
 // Estimación heurística para apuestas todavía abiertas (evalBet ya resolvió las que
@@ -645,11 +651,28 @@ function teamAverages(teamName){
   return {n, prom};
 }
 
+// Repuebla el selector "Se cuenta sobre" con los nombres reales de los
+// equipos del partido elegido, para poder apostar a uno solo (sin importar
+// lo que haga el otro) ademas de las opciones combinado/cualquiera.
+function renderAlcanceSelect(m){
+  const sel = document.getElementById("sel-alcance");
+  if(!sel) return;
+  const prev = sel.value;
+  sel.innerHTML = `
+    <option value="combinado">El total del partido (local + visitante)</option>
+    <option value="cualquiera">Cualquiera de los 2 equipos</option>
+    ${m ? `<option value="local">Solo ${m.local}</option>` : ""}
+    ${m ? `<option value="visitante">Solo ${m.visitante}</option>` : ""}
+  `;
+  if([...sel.options].some(o=>o.value===prev)) sel.value = prev;
+}
+
 function renderTeamStatsPanel(){
   const panel = document.getElementById("team-stats-panel");
   if(!panel) return;
   const matchId = document.getElementById("sel-match").value;
   const m = state.matches.find(x=>x.id===matchId);
+  renderAlcanceSelect(m);
   if(!m){ panel.innerHTML = ""; return; }
 
   function columna(nombre, st){
@@ -733,7 +756,7 @@ function renderBets(){
   activas.slice().reverse().forEach(bet=>{
     const r = evalBet(bet);
     const m = state.matches.find(x=>x.id===bet.matchId);
-    const condTxt = condTxtFor(bet);
+    const condTxt = condTxtFor(bet, m);
 
     let badgeCls, badgeTxt, subTxt = "", totalLabel = "Total real", totalVal = r.total;
     if(r.estado === "G"){ badgeCls="G"; badgeTxt="Ganada"; }
@@ -829,7 +852,7 @@ function renderTerminados(){
       </div>
       ${betsDelPartido.length === 0 ? '<div class="bet-sub">Sin apuestas cargadas</div>' : betsDelPartido.map(bet=>{
         const r = evalBet(bet);
-        const condTxt = condTxtFor(bet);
+        const condTxt = condTxtFor(bet, m);
         return `<div class="mini-bet">
           <span>${condTxt} · $${bet.monto} @${bet.cuota}</span>
           <span class="badge ${r.estado}">${r.estado==='G' ? `Ganada $${r.ganancia.toFixed(2)}` : "Perdida"}</span>
