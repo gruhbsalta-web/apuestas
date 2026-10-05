@@ -3886,154 +3886,6 @@
       }
     },
     {
-      "id": "promiedos_egddchh",
-      "local": "Huracán",
-      "visitante": "Aldosivi",
-      "fechaHora": "2026-10-04T12:45",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "gameUrlName": "huracan-vs-aldosivi",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egddcih",
-      "local": "Talleres de Córdoba",
-      "visitante": "Belgrano",
-      "fechaHora": "2026-10-04T15:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "gameUrlName": "talleres-cordoba-vs-belgrano",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egddchd",
-      "local": "Argentinos Juniors",
-      "visitante": "Tigre",
-      "fechaHora": "2026-10-04T17:15",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "gameUrlName": "argentinos-juniors-vs-tigre",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egddchj",
-      "local": "Estudiantes RC",
-      "visitante": "Racing Club",
-      "fechaHora": "2026-10-04T19:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "gameUrlName": "estudiantes-rio-cuarto-vs-racing-club",
-        "statusShort": "Prog."
-      }
-    },
-    {
       "id": "promiedos_egddcid",
       "local": "Deportivo Riestra",
       "visitante": "Central Córdoba SdE",
@@ -4182,376 +4034,6 @@
       }
     },
     {
-      "id": "promiedos_eifffgc",
-      "local": "Agropecuario",
-      "visitante": "Midland",
-      "fechaHora": "2026-10-04T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "agropecuario-vs-ferrocarril-midland",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifffgd",
-      "local": "Chacarita Juniors",
-      "visitante": "Patronato",
-      "fechaHora": "2026-10-04T13:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "chacarita-juniors-vs-patronato",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifffhd",
-      "local": "San Telmo",
-      "visitante": "Almirante Brown",
-      "fechaHora": "2026-10-04T13:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "san-telmo-vs-almirante-brown",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifffhh",
-      "local": "Central Norte",
-      "visitante": "Racing de Córdoba",
-      "fechaHora": "2026-10-04T14:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "central-norte-vs-racing-cordoba",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifffgf",
-      "local": "Güemes",
-      "visitante": "Colegiales",
-      "fechaHora": "2026-10-04T15:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "club-atletico-guemes-vs-colegiales",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifffgg",
-      "local": "San Martín San Juan",
-      "visitante": "Almagro",
-      "fechaHora": "2026-10-04T15:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "san-martin-vs-almagro",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifffhf",
-      "local": "Chaco For Ever",
-      "visitante": "Defensores de Belgrano",
-      "fechaHora": "2026-10-04T15:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "chaco-for-ever-vs-defensores-de-belgrano",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifffgb",
-      "local": "Atlético Rafaela",
-      "visitante": "Atlanta",
-      "fechaHora": "2026-10-04T15:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "atletico-rafaela-vs-atlanta",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifffgj",
-      "local": "Godoy Cruz",
-      "visitante": "Los Andes",
-      "fechaHora": "2026-10-04T16:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "godoy-cruz-vs-los-andes",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifffga",
-      "local": "San Martín Tucumán",
-      "visitante": "Gimnasia y Tiro",
-      "fechaHora": "2026-10-04T16:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "san-martin-de-tucuman-vs-gimnasia-y-tiro",
-        "statusShort": "Prog."
-      }
-    },
-    {
       "id": "promiedos_eifffgh",
       "local": "Nueva Chicago",
       "visitante": "Deportivo Maipú",
@@ -4585,80 +4067,6 @@
         "leagueId": "ebj",
         "leagueName": "Primera Nacional",
         "gameUrlName": "nueva-chicago-vs-deportivo-maipu",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egeaejh",
-      "local": "Comunicaciones",
-      "visitante": "Flandria",
-      "fechaHora": "2026-10-04T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fahh",
-        "leagueName": "Primera B Metro",
-        "gameUrlName": "comunicaciones-vs-flandria",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egeafab",
-      "local": "Sportivo Italiano",
-      "visitante": "Talleres RE",
-      "fechaHora": "2026-10-04T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fahh",
-        "leagueName": "Primera B Metro",
-        "gameUrlName": "sportivo-italiano-vs-talleres-re",
         "statusShort": "Prog."
       }
     },
@@ -4733,302 +4141,6 @@
         "leagueId": "fahh",
         "leagueName": "Primera B Metro",
         "gameUrlName": "deportivo-merlo-vs-brown-adrogue",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eigafid",
-      "local": "Cipolletti",
-      "visitante": "Sol De América",
-      "fechaHora": "2026-10-04T09:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fahi",
-        "leagueName": "Federal A",
-        "gameUrlName": "cipolletti-vs-sol-de-america",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eigafib",
-      "local": "Alvarado",
-      "visitante": "Defensores Belgrano (VR)",
-      "fechaHora": "2026-10-04T13:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fahi",
-        "leagueName": "Federal A",
-        "gameUrlName": "alvarado-vs-defensores-belgrano-(vr)",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eigafic",
-      "local": "San Martín de Formosa",
-      "visitante": "Atenas Río Cuarto",
-      "fechaHora": "2026-10-04T14:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fahi",
-        "leagueName": "Federal A",
-        "gameUrlName": "san-martin-de-formosa-vs-scyb-atenas",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eigafia",
-      "local": "CSCyD Gimnasia y Esgrima (Chivilcoy)",
-      "visitante": "Olimpo",
-      "fechaHora": "2026-10-04T15:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fahi",
-        "leagueName": "Federal A",
-        "gameUrlName": "cscyd-gimnasia-y-esgrima-(chivilcoy)-vs-olimpo-de-bahia-blanca",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egdjedj",
-      "local": "Puerto Nuevo",
-      "visitante": "Justo José Urquiza",
-      "fechaHora": "2026-10-04T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ffjb",
-        "leagueName": "Primera C",
-        "gameUrlName": "puerto-nuevo-vs-justo-jose-urquiza",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egdjeed",
-      "local": "Sacachispas",
-      "visitante": "Estrella del Sur",
-      "fechaHora": "2026-10-04T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ffjb",
-        "leagueName": "Primera C",
-        "gameUrlName": "sacachispas-vs-estrella-del-sur",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egdjeee",
-      "local": "CA Lugano",
-      "visitante": "Argentino Rosario",
-      "fechaHora": "2026-10-04T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ffjb",
-        "leagueName": "Primera C",
-        "gameUrlName": "ca-lugano-vs-argentino-rosario",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egdjefa",
-      "local": "Central Córdoba",
-      "visitante": "Yupanqui",
-      "fechaHora": "2026-10-04T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ffjb",
-        "leagueName": "Primera C",
-        "gameUrlName": "central-cordoba-de-rosario-vs-yupanqui",
         "statusShort": "Prog."
       }
     },
@@ -10475,7 +9587,7 @@
       "id": "promiedos_egdjeea",
       "local": "Leandro N. Alem",
       "visitante": "Centro Español",
-      "fechaHora": "2026-10-06T13:00",
+      "fechaHora": "2026-10-06T12:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -10506,6 +9618,894 @@
         "leagueName": "Primera C",
         "gameUrlName": "leandro-n.-alem-vs-centro-espanol",
         "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_egddchh",
+      "local": "Huracán",
+      "visitante": "Aldosivi",
+      "fechaHora": "2026-10-04T12:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 5
+        },
+        "corners": {
+          "l": 6,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "huracan-vs-aldosivi",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egddcih",
+      "local": "Talleres de Córdoba",
+      "visitante": "Belgrano",
+      "fechaHora": "2026-10-04T15:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "talleres-cordoba-vs-belgrano",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egddchd",
+      "local": "Argentinos Juniors",
+      "visitante": "Tigre",
+      "fechaHora": "2026-10-04T17:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "argentinos-juniors-vs-tigre",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egddchj",
+      "local": "Estudiantes RC",
+      "visitante": "Racing Club",
+      "fechaHora": "2026-10-04T19:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "estudiantes-rio-cuarto-vs-racing-club",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifffgc",
+      "local": "Agropecuario",
+      "visitante": "Midland",
+      "fechaHora": "2026-10-04T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "agropecuario-vs-ferrocarril-midland",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifffgd",
+      "local": "Chacarita Juniors",
+      "visitante": "Patronato",
+      "fechaHora": "2026-10-04T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 3
+        },
+        "corners": {
+          "l": 9,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "chacarita-juniors-vs-patronato",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifffhd",
+      "local": "San Telmo",
+      "visitante": "Almirante Brown",
+      "fechaHora": "2026-10-04T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 4,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "san-telmo-vs-almirante-brown",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifffhh",
+      "local": "Central Norte",
+      "visitante": "Racing de Córdoba",
+      "fechaHora": "2026-10-04T14:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "central-norte-vs-racing-cordoba",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifffgf",
+      "local": "Güemes",
+      "visitante": "Colegiales",
+      "fechaHora": "2026-10-04T15:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "club-atletico-guemes-vs-colegiales",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifffgg",
+      "local": "San Martín San Juan",
+      "visitante": "Almagro",
+      "fechaHora": "2026-10-04T15:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "san-martin-vs-almagro",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifffhf",
+      "local": "Chaco For Ever",
+      "visitante": "Defensores de Belgrano",
+      "fechaHora": "2026-10-04T15:20",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "chaco-for-ever-vs-defensores-de-belgrano",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifffgb",
+      "local": "Atlético Rafaela",
+      "visitante": "Atlanta",
+      "fechaHora": "2026-10-04T15:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 1
+        },
+        "corners": {
+          "l": 6,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "atletico-rafaela-vs-atlanta",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifffgj",
+      "local": "Godoy Cruz",
+      "visitante": "Los Andes",
+      "fechaHora": "2026-10-04T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "godoy-cruz-vs-los-andes",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifffga",
+      "local": "San Martín Tucumán",
+      "visitante": "Gimnasia y Tiro",
+      "fechaHora": "2026-10-04T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 1
+        },
+        "corners": {
+          "l": 4,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "san-martin-de-tucuman-vs-gimnasia-y-tiro",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egeaejh",
+      "local": "Comunicaciones",
+      "visitante": "Flandria",
+      "fechaHora": "2026-10-04T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fahh",
+        "leagueName": "Primera B Metro",
+        "gameUrlName": "comunicaciones-vs-flandria",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egeafab",
+      "local": "Sportivo Italiano",
+      "visitante": "Talleres RE",
+      "fechaHora": "2026-10-04T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fahh",
+        "leagueName": "Primera B Metro",
+        "gameUrlName": "sportivo-italiano-vs-talleres-re",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eigafid",
+      "local": "Cipolletti",
+      "visitante": "Sol De América",
+      "fechaHora": "2026-10-04T09:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 6,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fahi",
+        "leagueName": "Federal A",
+        "gameUrlName": "cipolletti-vs-sol-de-america",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eigafib",
+      "local": "Alvarado",
+      "visitante": "Defensores Belgrano (VR)",
+      "fechaHora": "2026-10-04T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fahi",
+        "leagueName": "Federal A",
+        "gameUrlName": "alvarado-vs-defensores-belgrano-(vr)",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eigafic",
+      "local": "San Martín de Formosa",
+      "visitante": "Atenas Río Cuarto",
+      "fechaHora": "2026-10-04T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fahi",
+        "leagueName": "Federal A",
+        "gameUrlName": "san-martin-de-formosa-vs-scyb-atenas",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eigafia",
+      "local": "CSCyD Gimnasia y Esgrima (Chivilcoy)",
+      "visitante": "Olimpo",
+      "fechaHora": "2026-10-04T15:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 4
+        },
+        "corners": {
+          "l": 4,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fahi",
+        "leagueName": "Federal A",
+        "gameUrlName": "cscyd-gimnasia-y-esgrima-(chivilcoy)-vs-olimpo-de-bahia-blanca",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdjedj",
+      "local": "Puerto Nuevo",
+      "visitante": "Justo José Urquiza",
+      "fechaHora": "2026-10-04T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 11,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ffjb",
+        "leagueName": "Primera C",
+        "gameUrlName": "puerto-nuevo-vs-justo-jose-urquiza",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdjeed",
+      "local": "Sacachispas",
+      "visitante": "Estrella del Sur",
+      "fechaHora": "2026-10-04T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 6
+        },
+        "corners": {
+          "l": 7,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ffjb",
+        "leagueName": "Primera C",
+        "gameUrlName": "sacachispas-vs-estrella-del-sur",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdjeee",
+      "local": "CA Lugano",
+      "visitante": "Argentino Rosario",
+      "fechaHora": "2026-10-04T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 6,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ffjb",
+        "leagueName": "Primera C",
+        "gameUrlName": "ca-lugano-vs-argentino-rosario",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdjefa",
+      "local": "Central Córdoba",
+      "visitante": "Yupanqui",
+      "fechaHora": "2026-10-04T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 8,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ffjb",
+        "leagueName": "Primera C",
+        "gameUrlName": "central-cordoba-de-rosario-vs-yupanqui",
+        "statusShort": "Final"
       }
     }
   ],
