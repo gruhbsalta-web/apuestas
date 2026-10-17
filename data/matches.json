@@ -8662,7 +8662,7 @@
       "id": "promiedos_egjafcg",
       "local": "Nashville SC",
       "visitante": "Club América",
-      "fechaHora": "2026-04-07T19:00",
+      "fechaHora": "2026-04-07T18:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8699,7 +8699,7 @@
       "id": "promiedos_egjafcf",
       "local": "Los Angeles FC",
       "visitante": "Cruz Azul",
-      "fechaHora": "2026-04-07T21:00",
+      "fechaHora": "2026-04-07T20:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8736,7 +8736,7 @@
       "id": "promiedos_egjafcd",
       "local": "U.A.N.L. - Tigres",
       "visitante": "Seattle Sounders",
-      "fechaHora": "2026-04-08T20:00",
+      "fechaHora": "2026-04-08T19:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8773,7 +8773,7 @@
       "id": "promiedos_egjafce",
       "local": "Toluca",
       "visitante": "LA Galaxy",
-      "fechaHora": "2026-04-08T22:00",
+      "fechaHora": "2026-04-08T21:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8810,7 +8810,7 @@
       "id": "promiedos_egjafcc",
       "local": "Cruz Azul",
       "visitante": "Los Angeles FC",
-      "fechaHora": "2026-04-14T20:00",
+      "fechaHora": "2026-04-14T19:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8847,7 +8847,7 @@
       "id": "promiedos_egjafcb",
       "local": "Club América",
       "visitante": "Nashville SC",
-      "fechaHora": "2026-04-14T22:30",
+      "fechaHora": "2026-04-14T21:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8884,7 +8884,7 @@
       "id": "promiedos_egjafca",
       "local": "LA Galaxy",
       "visitante": "Toluca",
-      "fechaHora": "2026-04-15T20:00",
+      "fechaHora": "2026-04-15T19:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -8921,7 +8921,7 @@
       "id": "promiedos_egjafbj",
       "local": "Seattle Sounders",
       "visitante": "U.A.N.L. - Tigres",
-      "fechaHora": "2026-04-15T22:30",
+      "fechaHora": "2026-04-15T21:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -14283,154 +14283,6 @@
       }
     },
     {
-      "id": "promiedos_egddcff",
-      "local": "Defensa y Justicia",
-      "visitante": "Instituto",
-      "fechaHora": "2026-10-16T16:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "gameUrlName": "defensa-y-justicia-vs-instituto-ac-cordoba",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egddcfg",
-      "local": "Boca Juniors",
-      "visitante": "Talleres de Córdoba",
-      "fechaHora": "2026-10-16T18:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "gameUrlName": "boca-juniors-vs-talleres-cordoba",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifeija",
-      "local": "Atlético Rafaela",
-      "visitante": "Quilmes",
-      "fechaHora": "2026-10-16T18:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "atletico-rafaela-vs-quilmes",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eifeiii",
-      "local": "Gimnasia y Tiro",
-      "visitante": "Atlanta",
-      "fechaHora": "2026-10-16T19:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "gimnasia-y-tiro-vs-atlanta",
-        "statusShort": "Prog."
-      }
-    },
-    {
       "id": "promiedos_eifgijh",
       "local": "Boca Juniors",
       "visitante": "Vasco Da Gama",
@@ -14798,80 +14650,6 @@
         "leagueName": "Champions League",
         "gameUrlName": "arsenal-vs-lille",
         "statusShort": "Final"
-      }
-    },
-    {
-      "id": "promiedos_ehfaici",
-      "local": "RC Deportivo",
-      "visitante": "Levante UD",
-      "fechaHora": "2026-10-16T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "bb",
-        "leagueName": "La Liga",
-        "gameUrlName": "deportivo-la-coruna-vs-levante",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_ehdcghi",
-      "local": "Frosinone",
-      "visitante": "Sassuolo",
-      "fechaHora": "2026-10-16T12:45",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "bh",
-        "leagueName": "Serie A",
-        "gameUrlName": "frosinone-vs-sassuolo",
-        "statusShort": "Prog."
       }
     },
     {
@@ -15470,7 +15248,7 @@
       "id": "promiedos_egeaehj",
       "local": "Camioneros",
       "visitante": "Argentino Merlo",
-      "fechaHora": "2026-10-17T12:00",
+      "fechaHora": "2026-10-17T10:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -15581,7 +15359,7 @@
       "id": "promiedos_egeaeid",
       "local": "Real Pilar",
       "visitante": "Ituzaingó",
-      "fechaHora": "2026-10-17T12:00",
+      "fechaHora": "2026-10-17T16:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17209,7 +16987,7 @@
       "id": "promiedos_egeaeie",
       "local": "Liniers",
       "visitante": "UAI Urquiza",
-      "fechaHora": "2026-10-18T12:00",
+      "fechaHora": "2026-10-17T08:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -17922,15 +17700,15 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 2
+          "v": 0
         },
         "corners": {
-          "l": 4,
-          "v": 5
+          "l": 0,
+          "v": 0
         },
         "tirosArco": {
-          "l": 3,
-          "v": 10
+          "l": 0,
+          "v": 0
         },
         "atajadas": {
           "l": 0,
@@ -18596,7 +18374,7 @@
         },
         "tirosArco": {
           "l": 5,
-          "v": 5
+          "v": 4
         },
         "atajadas": {
           "l": 0,
@@ -19607,6 +19385,2041 @@
         "leagueId": "bh",
         "leagueName": "Serie A",
         "gameUrlName": "juventus-vs-lazio",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_egddcff",
+      "local": "Defensa y Justicia",
+      "visitante": "Instituto",
+      "fechaHora": "2026-10-16T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 6,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "defensa-y-justicia-vs-instituto-ac-cordoba",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egddcfg",
+      "local": "Boca Juniors",
+      "visitante": "Talleres de Córdoba",
+      "fechaHora": "2026-10-16T18:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "boca-juniors-vs-talleres-cordoba",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egddceh",
+      "local": "Sarmiento Junín",
+      "visitante": "Barracas Central",
+      "fechaHora": "2026-10-19T16:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "sarmiento-junin-vs-barracas-central",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_egddcfc",
+      "local": "Newell's Old Boys",
+      "visitante": "Central Córdoba SdE",
+      "fechaHora": "2026-10-19T16:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "newell's-old-boys-vs-central-cordoba-sde",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_egddcfe",
+      "local": "Deportivo Riestra",
+      "visitante": "Unión de Santa Fe",
+      "fechaHora": "2026-10-19T18:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "riestra-vs-union-santa-fe",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eifeija",
+      "local": "Atlético Rafaela",
+      "visitante": "Quilmes",
+      "fechaHora": "2026-10-16T18:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 5
+        },
+        "corners": {
+          "l": 3,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "atletico-rafaela-vs-quilmes",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifeiii",
+      "local": "Gimnasia y Tiro",
+      "visitante": "Atlanta",
+      "fechaHora": "2026-10-16T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 3,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "gimnasia-y-tiro-vs-atlanta",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifeiie",
+      "local": "San Telmo",
+      "visitante": "Defensores de Belgrano",
+      "fechaHora": "2026-10-19T12:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "san-telmo-vs-defensores-de-belgrano",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_egeaehh",
+      "local": "Sportivo Dock Sud",
+      "visitante": "Deportivo Laferrere",
+      "fechaHora": "2026-10-17T08:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fahh",
+        "leagueName": "Primera B Metro",
+        "gameUrlName": "sportivo-dock-sud-vs-deportivo-laferrere",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eihgcha",
+      "local": "Sportivo Barracas",
+      "visitante": "Sacachispas",
+      "fechaHora": "2026-10-19T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ffjb",
+        "leagueName": "Primera C",
+        "gameUrlName": "sportivo-barracas-vs-sacachispas",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eihgchb",
+      "local": "CA Lugano",
+      "visitante": "Cañuelas",
+      "fechaHora": "2026-10-19T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ffjb",
+        "leagueName": "Primera C",
+        "gameUrlName": "ca-lugano-vs-canuelas",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_egdahfi",
+      "local": "Forge FC",
+      "visitante": "U.A.N.L. - Tigres",
+      "fechaHora": "2026-02-03T17:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 4,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "forge-fc-vs-tigres-uanl",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahga",
+      "local": "CD Olimpia",
+      "visitante": "Club América",
+      "fechaHora": "2026-02-03T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 6,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "cd-olimpia-vs-club-america",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahfj",
+      "local": "San Diego FC",
+      "visitante": "Pumas",
+      "fechaHora": "2026-02-03T21:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 10,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "san-diego-fc-vs-pumas-unam",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahfh",
+      "local": "Club Xelaju",
+      "visitante": "Monterrey",
+      "fechaHora": "2026-02-04T18:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 2,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "club-xelaju-vs-monterrey",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahgb",
+      "local": "Vancouver Fc",
+      "visitante": "Cruz Azul",
+      "fechaHora": "2026-02-04T20:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 1,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "vancouver-fc-vs-cruz-azul",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahgc",
+      "local": "Pumas",
+      "visitante": "San Diego FC",
+      "fechaHora": "2026-02-10T18:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "pumas-unam-vs-san-diego-fc",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahgg",
+      "local": "U.A.N.L. - Tigres",
+      "visitante": "Forge FC",
+      "fechaHora": "2026-02-10T20:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 8,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "tigres-uanl-vs-forge-fc",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahgf",
+      "local": "Club América",
+      "visitante": "CD Olimpia",
+      "fechaHora": "2026-02-11T18:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "club-america-vs-cd-olimpia",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahgd",
+      "local": "Monterrey",
+      "visitante": "Club Xelaju",
+      "fechaHora": "2026-02-11T20:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 5
+        },
+        "corners": {
+          "l": 3,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "monterrey-vs-club-xelaju",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahge",
+      "local": "Cruz Azul",
+      "visitante": "Vancouver Fc",
+      "fechaHora": "2026-02-12T18:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 8,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "cruz-azul-vs-vancouver-fc",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahgh",
+      "local": "Atlético Ottawa",
+      "visitante": "Nashville SC",
+      "fechaHora": "2026-02-17T18:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "atletico-ottawa-vs-nashville-sc",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahgi",
+      "local": "Real CD España",
+      "visitante": "Los Angeles FC",
+      "fechaHora": "2026-02-17T20:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 6
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 4,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "real-cd-espana-vs-los-angeles-fc",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahhb",
+      "local": "Defence Force",
+      "visitante": "Philadelphia Union",
+      "fechaHora": "2026-02-18T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 5
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "defence-force-vs-philadelphia-union",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahgj",
+      "local": "Universidad O&M",
+      "visitante": "FC Cincinnati",
+      "fechaHora": "2026-02-18T18:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 11
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "universidad-o&m-vs-fc-cincinnati",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahha",
+      "local": "CS Cartaginés",
+      "visitante": "Vancouver Whitecaps",
+      "fechaHora": "2026-02-18T20:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 1,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "cs-cartagines-vs-vancouver-whitecaps",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahhc",
+      "local": "Sporting San Miguelito",
+      "visitante": "LA Galaxy",
+      "fechaHora": "2026-02-19T18:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 4,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "sporting-san-miguelito-vs-los-angeles-galaxy",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahhe",
+      "local": "Nashville SC",
+      "visitante": "Atlético Ottawa",
+      "fechaHora": "2026-02-24T18:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 4,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "nashville-sc-vs-atletico-ottawa",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahhf",
+      "local": "Los Angeles FC",
+      "visitante": "Real CD España",
+      "fechaHora": "2026-02-24T20:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "los-angeles-fc-vs-real-cd-espana",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahhd",
+      "local": "FC Cincinnati",
+      "visitante": "Universidad O&M",
+      "fechaHora": "2026-02-25T17:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 9,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 13,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "fc-cincinnati-vs-universidad-o&m",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahhg",
+      "local": "Vancouver Whitecaps",
+      "visitante": "CS Cartaginés",
+      "fechaHora": "2026-02-25T19:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 7,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "vancouver-whitecaps-vs-cs-cartagines",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahhh",
+      "local": "LA Galaxy",
+      "visitante": "Sporting San Miguelito",
+      "fechaHora": "2026-02-25T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 11,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "los-angeles-galaxy-vs-sporting-san-miguelito",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egdahhi",
+      "local": "Philadelphia Union",
+      "visitante": "Defence Force",
+      "fechaHora": "2026-02-26T17:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 7,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "philadelphia-union-vs-defence-force",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjhab",
+      "local": "Philadelphia Union",
+      "visitante": "Club América",
+      "fechaHora": "2026-03-10T17:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "philadelphia-union-vs-club-america",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghcaab",
+      "local": "Monterrey",
+      "visitante": "Cruz Azul",
+      "fechaHora": "2026-03-10T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "monterrey-vs-cruz-azul",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjgjb",
+      "local": "Los Angeles FC",
+      "visitante": "LD Alajuelense",
+      "fechaHora": "2026-03-10T21:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 10,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "los-angeles-fc-vs-ld-alajuelense",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjgje",
+      "local": "Nashville SC",
+      "visitante": "Inter Miami",
+      "fechaHora": "2026-03-11T17:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "nashville-sc-vs-inter-miami",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjgjd",
+      "local": "LA Galaxy",
+      "visitante": "Mount Pleasant",
+      "fechaHora": "2026-03-11T19:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "los-angeles-galaxy-vs-mount-pleasant",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghbdfg",
+      "local": "San Diego FC",
+      "visitante": "Toluca",
+      "fechaHora": "2026-03-11T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 4
+        },
+        "corners": {
+          "l": 0,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "san-diego-fc-vs-toluca",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjgjc",
+      "local": "FC Cincinnati",
+      "visitante": "U.A.N.L. - Tigres",
+      "fechaHora": "2026-03-12T18:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "fc-cincinnati-vs-tigres-uanl",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjgjh",
+      "local": "Vancouver Whitecaps",
+      "visitante": "Seattle Sounders",
+      "fechaHora": "2026-03-12T20:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 11,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "vancouver-whitecaps-vs-seattle-sounders",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjhaa",
+      "local": "LD Alajuelense",
+      "visitante": "Los Angeles FC",
+      "fechaHora": "2026-03-17T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "ld-alajuelense-vs-los-angeles-fc",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghcaaa",
+      "local": "Cruz Azul",
+      "visitante": "Monterrey",
+      "fechaHora": "2026-03-17T21:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 6,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "cruz-azul-vs-monterrey",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjgjj",
+      "local": "Inter Miami",
+      "visitante": "Nashville SC",
+      "fechaHora": "2026-03-18T17:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "inter-miami-vs-nashville-sc",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjgjf",
+      "local": "Club América",
+      "visitante": "Philadelphia Union",
+      "fechaHora": "2026-03-18T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "club-america-vs-philadelphia-union",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghbdff",
+      "local": "Toluca",
+      "visitante": "San Diego FC",
+      "fechaHora": "2026-03-18T21:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 12,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "toluca-vs-san-diego-fc",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjgjg",
+      "local": "Seattle Sounders",
+      "visitante": "Vancouver Whitecaps",
+      "fechaHora": "2026-03-18T21:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "seattle-sounders-vs-vancouver-whitecaps",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjgji",
+      "local": "Mount Pleasant",
+      "visitante": "LA Galaxy",
+      "fechaHora": "2026-03-19T17:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 4,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "mount-pleasant-vs-los-angeles-galaxy",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eghjhac",
+      "local": "U.A.N.L. - Tigres",
+      "visitante": "FC Cincinnati",
+      "fechaHora": "2026-03-19T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 6,
+          "v": 4
+        },
+        "corners": {
+          "l": 6,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bhb",
+        "leagueName": "Concacaf Champions",
+        "gameUrlName": "tigres-uanl-vs-fc-cincinnati",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_ehecadc",
+      "local": "Tottenham",
+      "visitante": "Coventry",
+      "fechaHora": "2026-10-19T13:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "gameUrlName": "tottenham-vs-coventry",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehfaici",
+      "local": "RC Deportivo",
+      "visitante": "Levante UD",
+      "fechaHora": "2026-10-16T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "gameUrlName": "deportivo-la-coruna-vs-levante",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_ehfaicg",
+      "local": "Getafe CF",
+      "visitante": "Rayo Vallecano",
+      "fechaHora": "2026-10-19T13:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "gameUrlName": "getafe-vs-rayo-vallecano",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehdcghi",
+      "local": "Frosinone",
+      "visitante": "Sassuolo",
+      "fechaHora": "2026-10-16T12:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "gameUrlName": "frosinone-vs-sassuolo",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghf",
+      "local": "Monza",
+      "visitante": "Cagliari",
+      "fechaHora": "2026-10-19T10:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "gameUrlName": "monza-vs-cagliari",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehdcghe",
+      "local": "Parma",
+      "visitante": "Torino",
+      "fechaHora": "2026-10-19T12:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "gameUrlName": "parma-vs-torino",
         "statusShort": "Prog."
       }
     }
