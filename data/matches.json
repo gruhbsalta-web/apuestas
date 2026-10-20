@@ -16614,117 +16614,6 @@
       }
     },
     {
-      "id": "promiedos_egddceh",
-      "local": "Sarmiento Junín",
-      "visitante": "Barracas Central",
-      "fechaHora": "2026-10-19T17:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "gameUrlName": "sarmiento-junin-vs-barracas-central",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egddcfc",
-      "local": "Newell's Old Boys",
-      "visitante": "Central Córdoba SdE",
-      "fechaHora": "2026-10-19T17:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "gameUrlName": "newell's-old-boys-vs-central-cordoba-sde",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_egddcfe",
-      "local": "Deportivo Riestra",
-      "visitante": "Unión de Santa Fe",
-      "fechaHora": "2026-10-19T19:15",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "gameUrlName": "riestra-vs-union-santa-fe",
-        "statusShort": "Prog."
-      }
-    },
-    {
       "id": "promiedos_eifeija",
       "local": "Atlético Rafaela",
       "visitante": "Quilmes",
@@ -16796,117 +16685,6 @@
         "leagueName": "Primera Nacional",
         "gameUrlName": "gimnasia-y-tiro-vs-atlanta",
         "statusShort": "Final"
-      }
-    },
-    {
-      "id": "promiedos_eifeiie",
-      "local": "San Telmo",
-      "visitante": "Defensores de Belgrano",
-      "fechaHora": "2026-10-19T13:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "gameUrlName": "san-telmo-vs-defensores-de-belgrano",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eihgcha",
-      "local": "Sportivo Barracas",
-      "visitante": "Sacachispas",
-      "fechaHora": "2026-10-19T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ffjb",
-        "leagueName": "Primera C",
-        "gameUrlName": "sportivo-barracas-vs-sacachispas",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eihgchb",
-      "local": "CA Lugano",
-      "visitante": "Cañuelas",
-      "fechaHora": "2026-10-19T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ffjb",
-        "leagueName": "Primera C",
-        "gameUrlName": "ca-lugano-vs-canuelas",
-        "statusShort": "Prog."
       }
     },
     {
@@ -18316,43 +18094,6 @@
       }
     },
     {
-      "id": "promiedos_ehecadc",
-      "local": "Tottenham",
-      "visitante": "Coventry",
-      "fechaHora": "2026-10-19T14:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "h",
-        "leagueName": "Premier League",
-        "gameUrlName": "tottenham-vs-coventry",
-        "statusShort": "Prog."
-      }
-    },
-    {
       "id": "promiedos_ehfaici",
       "local": "RC Deportivo",
       "visitante": "Levante UD",
@@ -18390,43 +18131,6 @@
       }
     },
     {
-      "id": "promiedos_ehfaicg",
-      "local": "Getafe CF",
-      "visitante": "Rayo Vallecano",
-      "fechaHora": "2026-10-19T14:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "bb",
-        "leagueName": "La Liga",
-        "gameUrlName": "getafe-vs-rayo-vallecano",
-        "statusShort": "Prog."
-      }
-    },
-    {
       "id": "promiedos_ehdcghi",
       "local": "Frosinone",
       "visitante": "Sassuolo",
@@ -18461,80 +18165,6 @@
         "leagueName": "Serie A",
         "gameUrlName": "frosinone-vs-sassuolo",
         "statusShort": "Final"
-      }
-    },
-    {
-      "id": "promiedos_ehdcghf",
-      "local": "Monza",
-      "visitante": "Cagliari",
-      "fechaHora": "2026-10-19T11:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "bh",
-        "leagueName": "Serie A",
-        "gameUrlName": "monza-vs-cagliari",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_ehdcghe",
-      "local": "Parma",
-      "visitante": "Torino",
-      "fechaHora": "2026-10-19T13:45",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "bh",
-        "leagueName": "Serie A",
-        "gameUrlName": "parma-vs-torino",
-        "statusShort": "Prog."
       }
     },
     {
@@ -20622,16 +20252,16 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
-          "v": 0
+          "l": 4,
+          "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 7,
           "v": 0
         },
         "tirosArco": {
-          "l": 2,
-          "v": 2
+          "l": 5,
+          "v": 4
         },
         "atajadas": {
           "l": 0,
@@ -21140,8 +20770,8 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
-          "v": 3
+          "l": 1,
+          "v": 4
         },
         "corners": {
           "l": 5,
@@ -21991,7 +21621,7 @@
           "v": 5
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "corners": {
@@ -22143,7 +21773,7 @@
           "v": 3
         },
         "corners": {
-          "l": 10,
+          "l": 11,
           "v": 5
         },
         "tirosArco": {
@@ -22234,6 +21864,1745 @@
         "leagueId": "bh",
         "leagueName": "Serie A",
         "gameUrlName": "juventus-vs-lazio",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egddceh",
+      "local": "Sarmiento Junín",
+      "visitante": "Barracas Central",
+      "fechaHora": "2026-10-19T17:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 1,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "sarmiento-junin-vs-barracas-central",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egddcfc",
+      "local": "Newell's Old Boys",
+      "visitante": "Central Córdoba SdE",
+      "fechaHora": "2026-10-19T17:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 5
+        },
+        "corners": {
+          "l": 6,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "newell's-old-boys-vs-central-cordoba-sde",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egddcfe",
+      "local": "Deportivo Riestra",
+      "visitante": "Unión de Santa Fe",
+      "fechaHora": "2026-10-19T19:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "riestra-vs-union-santa-fe",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifeiie",
+      "local": "San Telmo",
+      "visitante": "Defensores de Belgrano",
+      "fechaHora": "2026-10-19T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "gameUrlName": "san-telmo-vs-defensores-de-belgrano",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eihgcha",
+      "local": "Sportivo Barracas",
+      "visitante": "Sacachispas",
+      "fechaHora": "2026-10-19T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 8,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ffjb",
+        "leagueName": "Primera C",
+        "gameUrlName": "sportivo-barracas-vs-sacachispas",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eihgchb",
+      "local": "CA Lugano",
+      "visitante": "Cañuelas",
+      "fechaHora": "2026-10-19T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 3
+        },
+        "corners": {
+          "l": 5,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ffjb",
+        "leagueName": "Primera C",
+        "gameUrlName": "ca-lugano-vs-canuelas",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eifiiei",
+      "local": "Flamengo",
+      "visitante": "Estudiantes de La Plata",
+      "fechaHora": "2026-10-22T19:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bac",
+        "leagueName": "Copa Libertadores",
+        "gameUrlName": "flamengo-vs-estudiantes-de-la-plata",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihcb",
+      "local": "Union St. Gilloise",
+      "visitante": "Hapoel Beer Sheva",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "union-st.-gilloise-vs-hapoel-beer-sheva",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihcc",
+      "local": "Dinamo Zagreb",
+      "visitante": "N.E.C. Nijmegen",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "dinamo-zagreb-vs-n.e.c.-nijmegen",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihcd",
+      "local": "Sturm Graz",
+      "visitante": "Olympique Marsella",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "sturm-graz-vs-olympique-de-marseille",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihce",
+      "local": "Lech Poznan",
+      "visitante": "Sunderland",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "lech-poznan-vs-sunderland",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihcf",
+      "local": "Juventus",
+      "visitante": "Rennes",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "juventus-vs-rennes",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihcg",
+      "local": "FC Ararat-Armenia",
+      "visitante": "AZ Alkmaar",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "fc-ararat-armenia-vs-az-alkmaar",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihch",
+      "local": "Ferencvaros",
+      "visitante": "Torreense",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "ferencvaros-vs-torreense",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihci",
+      "local": "OFI Crete",
+      "visitante": "Bayer Leverkusen",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "ofi-crete-vs-bayer-leverkusen",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihbb",
+      "local": "Viktoria Plzen",
+      "visitante": "Levski Sofia",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "viktoria-plzen-vs-levski-sofia",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihbc",
+      "local": "Lillestrom",
+      "visitante": "Real Sociedad",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "lillestrom-vs-real-sociedad",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihbd",
+      "local": "Bournemouth",
+      "visitante": "AC Milan",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "bournemouth-vs-ac-milan",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihbe",
+      "local": "NK Celje",
+      "visitante": "Red Bull Salzburgo",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "nk-celje-vs-red-bull-salzburg",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihbf",
+      "local": "Jagiellonia",
+      "visitante": "Anderlecht",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "jagiellonia-vs-anderlecht",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihbg",
+      "local": "Besiktas",
+      "visitante": "Crystal Palace",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "besiktas-vs-crystal-palace",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihbh",
+      "local": "Hoffenheim",
+      "visitante": "Lyon",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "hoffenheim-vs-lyon",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihbi",
+      "local": "Omonia",
+      "visitante": "Benfica",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "omonia-vs-benfica",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihbj",
+      "local": "Olympiacos",
+      "visitante": "Sparta Praga",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "olympiacos-vs-sparta-praha",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicihca",
+      "local": "Celtic",
+      "visitante": "Celta de Vigo",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhd",
+        "leagueName": "Europa League",
+        "gameUrlName": "celtic-vs-celta-vigo",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijcd",
+      "local": "Kairat Almaty",
+      "visitante": "Panathinaikos",
+      "fechaHora": "2026-10-22T09:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "kairat-almaty-vs-panathinaikos",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijbe",
+      "local": "Trabzonspor",
+      "visitante": "Hearts",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "trabzonspor-vs-hearts",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijbf",
+      "local": "Pafos FC",
+      "visitante": "Riga",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "pafos-fc-vs-riga",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijbg",
+      "local": "Inter Escaldes",
+      "visitante": "CS Universitatea Craiova",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "inter-escaldes-vs-cs-universitatea-craiova",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijbh",
+      "local": "Getafe CF",
+      "visitante": "FC Lugano",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "getafe-vs-fc-lugano",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijbi",
+      "local": "Kauno Zalgiris",
+      "visitante": "Brann",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "kauno-zalgiris-vs-brann",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijbj",
+      "local": "FK Jablonec",
+      "visitante": "Brighton",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "jablonec-97-vs-brighton",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijca",
+      "local": "Estrella Roja Belgrado",
+      "visitante": "FC Copenhague",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "fk-crvena-zvezda-vs-fc-copenhagen",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijcb",
+      "local": "FC Nordsjaelland",
+      "visitante": "CSKA Sofia",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "fc-nordsjælland-vs-cska-sofia",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijcc",
+      "local": "FC Iberia 1999",
+      "visitante": "Mjällby AIF",
+      "fechaHora": "2026-10-22T11:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "fc-iberia-1999-vs-mjallby-aif",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijag",
+      "local": "SC Braga",
+      "visitante": "KAA Gent",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "sc-braga-vs-kaa-gent",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijah",
+      "local": "Lincoln Red Imps",
+      "visitante": "Twente",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "lincoln-red-imps-vs-twente",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijai",
+      "local": "Borac Banjaluka",
+      "visitante": "KuPS",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "borac-banjaluka-vs-kups",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijaj",
+      "local": "FC Thun",
+      "visitante": "HNK Hajduk Split",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "fc-thun-vs-hnk-hajduk-split",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijba",
+      "local": "FC Midtjylland",
+      "visitante": "STVV",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "fc-midtjylland-vs-stvv",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijbb",
+      "local": "Monaco",
+      "visitante": "Friburgo",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "monaco-vs-freiburg",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijbc",
+      "local": "Aarhus",
+      "visitante": "KF Egnatia",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "aarhus-vs-kf-egnatia",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eicijbd",
+      "local": "Ajax",
+      "visitante": "Atalanta",
+      "fechaHora": "2026-10-22T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hgif",
+        "leagueName": "Conference League",
+        "gameUrlName": "ajax-vs-atalanta",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehecadc",
+      "local": "Tottenham",
+      "visitante": "Coventry",
+      "fechaHora": "2026-10-19T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "gameUrlName": "tottenham-vs-coventry",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_ehfaicg",
+      "local": "Getafe CF",
+      "visitante": "Rayo Vallecano",
+      "fechaHora": "2026-10-19T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 7,
+          "v": 3
+        },
+        "corners": {
+          "l": 8,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "gameUrlName": "getafe-vs-rayo-vallecano",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghf",
+      "local": "Monza",
+      "visitante": "Cagliari",
+      "fechaHora": "2026-10-19T11:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "gameUrlName": "monza-vs-cagliari",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghe",
+      "local": "Parma",
+      "visitante": "Torino",
+      "fechaHora": "2026-10-19T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "gameUrlName": "parma-vs-torino",
         "statusShort": "Final"
       }
     }
