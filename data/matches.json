@@ -19389,376 +19389,6 @@
       }
     },
     {
-      "id": "promiedos_eifgiji",
-      "local": "Vasco Da Gama",
-      "visitante": "Boca Juniors",
-      "fechaHora": "2026-10-20T19:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "dij",
-        "leagueName": "Copa Sudamericana",
-        "gameUrlName": "vasco-da-gama-vs-boca-juniors",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eiciegf",
-      "local": "Fenerbahce",
-      "visitante": "Slavia Praga",
-      "fechaHora": "2026-10-20T11:45",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fhc",
-        "leagueName": "Champions League",
-        "gameUrlName": "fenerbahce-sk-vs-slavia-praha",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eiciegg",
-      "local": "Sabah",
-      "visitante": "Borussia Dortmund",
-      "fechaHora": "2026-10-20T11:45",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fhc",
-        "leagueName": "Champions League",
-        "gameUrlName": "sabah-vs-borussia-dortmund",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eiciefi",
-      "local": "Liverpool",
-      "visitante": "Villarreal CF",
-      "fechaHora": "2026-10-20T14:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fhc",
-        "leagueName": "Champions League",
-        "gameUrlName": "liverpool-vs-villarreal",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eiciefj",
-      "local": "FC Porto",
-      "visitante": "PSV Eindhoven",
-      "fechaHora": "2026-10-20T14:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fhc",
-        "leagueName": "Champions League",
-        "gameUrlName": "fc-porto-vs-psv-eindhoven",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eiciega",
-      "local": "Stuttgart",
-      "visitante": "Atlético de Madrid",
-      "fechaHora": "2026-10-20T14:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fhc",
-        "leagueName": "Champions League",
-        "gameUrlName": "stuttgart-vs-atletico-madrid",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eiciegb",
-      "local": "PSG",
-      "visitante": "FC Barcelona",
-      "fechaHora": "2026-10-20T14:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fhc",
-        "leagueName": "Champions League",
-        "gameUrlName": "psg-vs-fc-barcelona",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eiciegc",
-      "local": "Napoli",
-      "visitante": "Bodo Glimt",
-      "fechaHora": "2026-10-20T14:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fhc",
-        "leagueName": "Champions League",
-        "gameUrlName": "napoli-vs-bodo-glimt",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eiciegd",
-      "local": "Manchester City",
-      "visitante": "AEK Atenas",
-      "fechaHora": "2026-10-20T14:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fhc",
-        "leagueName": "Champions League",
-        "gameUrlName": "manchester-city-vs-aek-athens",
-        "statusShort": "Prog."
-      }
-    },
-    {
-      "id": "promiedos_eiciege",
-      "local": "AS Roma",
-      "visitante": "Slovan Bratislava",
-      "fechaHora": "2026-10-20T14:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "fhc",
-        "leagueName": "Champions League",
-        "gameUrlName": "as-roma-vs-slovan-bratislava",
-        "statusShort": "Prog."
-      }
-    },
-    {
       "id": "promiedos_ehecadg",
       "local": "Everton",
       "visitante": "Chelsea",
@@ -23604,6 +23234,635 @@
         "leagueName": "Serie A",
         "gameUrlName": "parma-vs-torino",
         "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_egddceb",
+      "local": "Gimnasia de Mendoza",
+      "visitante": "Platense",
+      "fechaHora": "2026-10-23T16:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "gimnasia-mendoza-vs-platense",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_egddcdb",
+      "local": "Gimnasia La Plata",
+      "visitante": "Sarmiento Junín",
+      "fechaHora": "2026-10-23T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "gimnasia-la-plata-vs-sarmiento-junin",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_egddcdd",
+      "local": "Tigre",
+      "visitante": "Atlético Tucumán",
+      "fechaHora": "2026-10-23T19:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "gameUrlName": "tigre-vs-atletico-tucuman",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eiicbad",
+      "local": "Juventud Antoniana",
+      "visitante": "Sol De América",
+      "fechaHora": "2026-10-23T20:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fahi",
+        "leagueName": "Federal A",
+        "gameUrlName": "juventud-antoniana-vs-sol-de-america",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_eifgiji",
+      "local": "Vasco Da Gama",
+      "visitante": "Boca Juniors",
+      "fechaHora": "2026-10-20T19:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "gameUrlName": "vasco-da-gama-vs-boca-juniors",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eiciegf",
+      "local": "Fenerbahce",
+      "visitante": "Slavia Praga",
+      "fechaHora": "2026-10-20T11:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "gameUrlName": "fenerbahce-sk-vs-slavia-praha",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eiciegg",
+      "local": "Sabah",
+      "visitante": "Borussia Dortmund",
+      "fechaHora": "2026-10-20T11:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 0
+        },
+        "corners": {
+          "l": 4,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "gameUrlName": "sabah-vs-borussia-dortmund",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eiciefi",
+      "local": "Liverpool",
+      "visitante": "Villarreal CF",
+      "fechaHora": "2026-10-20T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "gameUrlName": "liverpool-vs-villarreal",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eiciefj",
+      "local": "FC Porto",
+      "visitante": "PSV Eindhoven",
+      "fechaHora": "2026-10-20T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "gameUrlName": "fc-porto-vs-psv-eindhoven",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eiciega",
+      "local": "Stuttgart",
+      "visitante": "Atlético de Madrid",
+      "fechaHora": "2026-10-20T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 9,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "gameUrlName": "stuttgart-vs-atletico-madrid",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eiciegb",
+      "local": "PSG",
+      "visitante": "FC Barcelona",
+      "fechaHora": "2026-10-20T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 14,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "gameUrlName": "psg-vs-fc-barcelona",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eiciegc",
+      "local": "Napoli",
+      "visitante": "Bodo Glimt",
+      "fechaHora": "2026-10-20T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 0
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "gameUrlName": "napoli-vs-bodo-glimt",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eiciegd",
+      "local": "Manchester City",
+      "visitante": "AEK Atenas",
+      "fechaHora": "2026-10-20T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 8,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "gameUrlName": "manchester-city-vs-aek-athens",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_eiciege",
+      "local": "AS Roma",
+      "visitante": "Slovan Bratislava",
+      "fechaHora": "2026-10-20T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 3
+        },
+        "corners": {
+          "l": 8,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "gameUrlName": "as-roma-vs-slovan-bratislava",
+        "statusShort": "Final"
+      }
+    },
+    {
+      "id": "promiedos_ehecace",
+      "local": "Ipswich",
+      "visitante": "Nottingham Forest",
+      "fechaHora": "2026-10-23T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "gameUrlName": "ipswich-vs-nottingham-forest",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehfaibj",
+      "local": "Alavés",
+      "visitante": "Málaga CF",
+      "fechaHora": "2026-10-23T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "gameUrlName": "alaves-vs-malaga",
+        "statusShort": "Prog."
+      }
+    },
+    {
+      "id": "promiedos_ehdcggc",
+      "local": "Torino",
+      "visitante": "Monza",
+      "fechaHora": "2026-10-23T13:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "gameUrlName": "torino-vs-monza",
+        "statusShort": "Prog."
       }
     }
   ],
