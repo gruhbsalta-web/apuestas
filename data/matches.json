@@ -809,6 +809,8 @@
         "country": "Argentina",
         "gameUrlName": "velez-sarsfield-vs-gimnasia-y-tiro",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -848,6 +850,8 @@
         "country": "Argentina",
         "gameUrlName": "banfield-vs-san-martin-de-tucuman",
         "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -887,6 +891,8 @@
         "country": "Argentina",
         "gameUrlName": "platense-vs-san-martin",
         "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -926,6 +932,8 @@
         "country": "Argentina",
         "gameUrlName": "talleres-cordoba-vs-atletico-tucuman",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -965,6 +973,8 @@
         "country": "Argentina",
         "gameUrlName": "union-santa-fe-vs-independiente",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1004,6 +1014,8 @@
         "country": "Argentina",
         "gameUrlName": "gimnasia-jujuy-vs-belgrano",
         "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1043,6 +1055,8 @@
         "country": "Argentina",
         "gameUrlName": "instituto-ac-cordoba-vs-lanus",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1082,6 +1096,8 @@
         "country": "Argentina",
         "gameUrlName": "estudiantes-de-la-plata-vs-rosario-central",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1121,6 +1137,8 @@
         "country": "Argentina",
         "gameUrlName": "barracas-central-vs-huracan",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1160,6 +1178,8 @@
         "country": "Argentina",
         "gameUrlName": "independiente-rivadavia-vs-tigre",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1199,6 +1219,8 @@
         "country": "Argentina",
         "gameUrlName": "racing-club-vs-defensa-y-justicia",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1238,6 +1260,8 @@
         "country": "Argentina",
         "gameUrlName": "sarmiento-junin-vs-boca-juniors",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1277,6 +1301,8 @@
         "country": "Argentina",
         "gameUrlName": "san-lorenzo-vs-riestra",
         "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1316,6 +1342,8 @@
         "country": "Argentina",
         "gameUrlName": "river-plate-vs-aldosivi",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1355,6 +1383,8 @@
         "country": "Argentina",
         "gameUrlName": "atletico-tucuman-vs-independiente",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1394,6 +1424,8 @@
         "country": "Argentina",
         "gameUrlName": "riestra-vs-gimnasia-la-plata",
         "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1433,6 +1465,8 @@
         "country": "Argentina",
         "gameUrlName": "banfield-vs-ferrocarril-midland",
         "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1472,6 +1506,8 @@
         "country": "Argentina",
         "gameUrlName": "racing-club-vs-belgrano",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1511,6 +1547,8 @@
         "country": "Argentina",
         "gameUrlName": "aldosivi-vs-independiente-rivadavia",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1550,6 +1588,8 @@
         "country": "Argentina",
         "gameUrlName": "estudiantes-de-la-plata-vs-barracas-central",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1589,6 +1629,8 @@
         "country": "Argentina",
         "gameUrlName": "platense-vs-instituto-ac-cordoba",
         "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1628,6 +1670,8 @@
         "country": "Argentina",
         "gameUrlName": "velez-sarsfield-vs-boca-juniors",
         "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1667,6 +1711,8 @@
         "country": "Argentina",
         "gameUrlName": "riestra-vs-banfield",
         "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1706,6 +1752,8 @@
         "country": "Argentina",
         "gameUrlName": "independiente-rivadavia-vs-atletico-tucuman",
         "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1745,6 +1793,8 @@
         "country": "Argentina",
         "gameUrlName": "racing-club-vs-boca-juniors",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -1784,6 +1834,8 @@
         "country": "Argentina",
         "gameUrlName": "platense-vs-estudiantes-de-la-plata",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
@@ -5177,6 +5229,8 @@
         "country": "Argentina",
         "gameUrlName": "aldosivi-vs-belgrano",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5216,6 +5270,8 @@
         "country": "Argentina",
         "gameUrlName": "independiente-vs-boca-juniors",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5255,6 +5311,8 @@
         "country": "Argentina",
         "gameUrlName": "river-plate-vs-racing-club",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5294,6 +5352,8 @@
         "country": "Argentina",
         "gameUrlName": "barracas-central-vs-estudiantes-rio-cuarto",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5333,6 +5393,8 @@
         "country": "Argentina",
         "gameUrlName": "central-cordoba-sde-vs-velez-sarsfield",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5372,6 +5434,8 @@
         "country": "Argentina",
         "gameUrlName": "almirante-brown-vs-deportivo-moron",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5411,6 +5475,8 @@
         "country": "Argentina",
         "gameUrlName": "estudiantes-buenos-aires-vs-los-andes",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5450,6 +5516,8 @@
         "country": "Argentina",
         "gameUrlName": "racing-cordoba-vs-all-boys",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5489,6 +5557,8 @@
         "country": "Argentina",
         "gameUrlName": "temperley-vs-chacarita-juniors",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5528,6 +5598,8 @@
         "country": "Argentina",
         "gameUrlName": "patronato-vs-agropecuario",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5567,6 +5639,8 @@
         "country": "Argentina",
         "gameUrlName": "gimnasia-jujuy-vs-atlanta",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5606,6 +5680,8 @@
         "country": "Argentina",
         "gameUrlName": "central-norte-vs-acassuso",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5645,6 +5721,8 @@
         "country": "Argentina",
         "gameUrlName": "mitre-sde-vs-godoy-cruz",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5684,6 +5762,8 @@
         "country": "Argentina",
         "gameUrlName": "deportivo-maipu-vs-club-atletico-guemes",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5723,6 +5803,8 @@
         "country": "Argentina",
         "gameUrlName": "ferrocarril-midland-vs-gimnasia-y-tiro",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5762,6 +5844,8 @@
         "country": "Argentina",
         "gameUrlName": "gimnasia-la-plata-vs-sarmiento-junin",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5801,6 +5885,8 @@
         "country": "Argentina",
         "gameUrlName": "gimnasia-mendoza-vs-platense",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5840,6 +5926,8 @@
         "country": "Argentina",
         "gameUrlName": "tigre-vs-atletico-tucuman",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5879,6 +5967,8 @@
         "country": "Argentina",
         "gameUrlName": "union-santa-fe-vs-estudiantes-de-la-plata",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5918,6 +6008,8 @@
         "country": "Argentina",
         "gameUrlName": "instituto-ac-cordoba-vs-riestra",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5957,6 +6049,8 @@
         "country": "Argentina",
         "gameUrlName": "nueva-chicago-vs-san-martin",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -5996,6 +6090,8 @@
         "country": "Argentina",
         "gameUrlName": "defensores-de-belgrano-vs-ca-san-miguel",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6035,6 +6131,8 @@
         "country": "Argentina",
         "gameUrlName": "banfield-vs-lanus",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -6074,6 +6172,8 @@
         "country": "Argentina",
         "gameUrlName": "talleres-cordoba-vs-defensa-y-justicia",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -6113,6 +6213,8 @@
         "country": "Argentina",
         "gameUrlName": "san-lorenzo-vs-newell's-old-boys",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -6152,6 +6254,8 @@
         "country": "Argentina",
         "gameUrlName": "rosario-central-vs-huracan",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -6191,6 +6295,8 @@
         "country": "Argentina",
         "gameUrlName": "argentinos-juniors-vs-independiente-rivadavia",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -6230,6 +6336,8 @@
         "country": "Argentina",
         "gameUrlName": "almagro-vs-tristan-suarez",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6269,6 +6377,8 @@
         "country": "Argentina",
         "gameUrlName": "ferro-carril-oeste-vs-chaco-for-ever",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6308,6 +6418,8 @@
         "country": "Argentina",
         "gameUrlName": "quilmes-vs-san-martin-de-tucuman",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6347,6 +6459,8 @@
         "country": "Argentina",
         "gameUrlName": "dep.-madryn-vs-san-telmo",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6386,6 +6500,8 @@
         "country": "Argentina",
         "gameUrlName": "colegiales-vs-atletico-rafaela",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6425,6 +6541,8 @@
         "country": "Argentina",
         "gameUrlName": "ciudad-de-bolivar-vs-colon",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -34037,6 +34155,8 @@
         "country": "Inglaterra",
         "gameUrlName": "leeds-united-vs-manchester-united",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 7"
       }
     },
@@ -34076,6 +34196,8 @@
         "country": "Inglaterra",
         "gameUrlName": "brighton-vs-crystal-palace",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 7"
       }
     },
@@ -34115,6 +34237,8 @@
         "country": "Inglaterra",
         "gameUrlName": "bournemouth-vs-sunderland",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 7"
       }
     },
@@ -34154,6 +34278,8 @@
         "country": "Inglaterra",
         "gameUrlName": "nottingham-forest-vs-arsenal",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 7"
       }
     },
@@ -34193,6 +34319,8 @@
         "country": "Inglaterra",
         "gameUrlName": "tottenham-vs-coventry",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 7"
       }
     },
@@ -34232,6 +34360,8 @@
         "country": "Inglaterra",
         "gameUrlName": "ipswich-vs-nottingham-forest",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -34271,6 +34401,8 @@
         "country": "Inglaterra",
         "gameUrlName": "aston-villa-vs-manchester-city",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -34310,6 +34442,8 @@
         "country": "Inglaterra",
         "gameUrlName": "coventry-vs-fulham",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -34349,6 +34483,8 @@
         "country": "Inglaterra",
         "gameUrlName": "arsenal-vs-everton",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -34388,6 +34524,8 @@
         "country": "Inglaterra",
         "gameUrlName": "chelsea-vs-tottenham",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -34396,7 +34534,7 @@
       "local": "Manchester United",
       "visitante": "Bournemouth",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": true,
+      "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -34408,15 +34546,15 @@
           "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 4
         },
         "tirosArco": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         }
       },
@@ -34427,6 +34565,8 @@
         "country": "Inglaterra",
         "gameUrlName": "manchester-united-vs-bournemouth",
         "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "43'",
         "ronda": "Fecha 8"
       }
     },
@@ -34435,7 +34575,7 @@
       "local": "Liverpool",
       "visitante": "Brighton",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": true,
+      "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -34451,12 +34591,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -34466,6 +34606,8 @@
         "country": "Inglaterra",
         "gameUrlName": "liverpool-vs-brighton",
         "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "42'",
         "ronda": "Fecha 8"
       }
     },
@@ -34474,7 +34616,7 @@
       "local": "Hull City",
       "visitante": "Brentford",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": true,
+      "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -34505,6 +34647,8 @@
         "country": "Inglaterra",
         "gameUrlName": "hull-city-vs-brentford",
         "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "43'",
         "ronda": "Fecha 8"
       }
     },
@@ -34513,7 +34657,7 @@
       "local": "Crystal Palace",
       "visitante": "Newcastle United",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": true,
+      "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -34522,7 +34666,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 1,
@@ -34544,6 +34688,8 @@
         "country": "Inglaterra",
         "gameUrlName": "crystal-palace-vs-newcastle-united",
         "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "43'",
         "ronda": "Fecha 8"
       }
     },
@@ -34583,6 +34729,8 @@
         "country": "Inglaterra",
         "gameUrlName": "sunderland-vs-leeds-united",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -34622,6 +34770,8 @@
         "country": "España",
         "gameUrlName": "osasuna-vs-racing-santander",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
@@ -34661,6 +34811,8 @@
         "country": "España",
         "gameUrlName": "celta-vigo-vs-alaves",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
@@ -34700,6 +34852,8 @@
         "country": "España",
         "gameUrlName": "malaga-vs-real-sociedad",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
@@ -34739,6 +34893,8 @@
         "country": "España",
         "gameUrlName": "real-madrid-vs-sevilla",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
@@ -34778,6 +34934,8 @@
         "country": "España",
         "gameUrlName": "getafe-vs-rayo-vallecano",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
@@ -34817,6 +34975,8 @@
         "country": "España",
         "gameUrlName": "levante-vs-athletic-bilbao",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 6"
       }
     },
@@ -34856,6 +35016,8 @@
         "country": "España",
         "gameUrlName": "alaves-vs-malaga",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
@@ -34895,6 +35057,8 @@
         "country": "España",
         "gameUrlName": "rayo-vallecano-vs-elche",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
@@ -34934,6 +35098,8 @@
         "country": "España",
         "gameUrlName": "racing-santander-vs-espanyol",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
@@ -34973,6 +35139,8 @@
         "country": "España",
         "gameUrlName": "valencia-vs-villarreal",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
@@ -35012,6 +35180,8 @@
         "country": "España",
         "gameUrlName": "atletico-madrid-vs-deportivo-la-coruna",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
@@ -35051,6 +35221,8 @@
         "country": "España",
         "gameUrlName": "athletic-bilbao-vs-getafe",
         "statusShort": "2°",
+        "statusEnum": 2,
+        "minuto": "82'",
         "ronda": "Fecha 10"
       }
     },
@@ -35090,6 +35262,8 @@
         "country": "España",
         "gameUrlName": "celta-vigo-vs-real-betis",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
@@ -35129,6 +35303,8 @@
         "country": "España",
         "gameUrlName": "real-sociedad-vs-levante",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
@@ -35168,6 +35344,8 @@
         "country": "España",
         "gameUrlName": "fc-barcelona-vs-real-madrid",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
@@ -35207,6 +35385,8 @@
         "country": "España",
         "gameUrlName": "sevilla-vs-osasuna",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
@@ -35246,6 +35426,8 @@
         "country": "Italia",
         "gameUrlName": "torino-vs-monza",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -35285,6 +35467,8 @@
         "country": "Italia",
         "gameUrlName": "como-vs-sassuolo",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -35324,6 +35508,8 @@
         "country": "Italia",
         "gameUrlName": "cagliari-vs-bologna",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -35363,6 +35549,8 @@
         "country": "Italia",
         "gameUrlName": "napoli-vs-as-roma",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -35402,6 +35590,8 @@
         "country": "Italia",
         "gameUrlName": "lazio-vs-parma",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -35441,6 +35631,8 @@
         "country": "Italia",
         "gameUrlName": "inter-milan-vs-fiorentina",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -35449,7 +35641,7 @@
       "local": "Genoa",
       "visitante": "Venezia",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": true,
+      "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -35480,6 +35672,8 @@
         "country": "Italia",
         "gameUrlName": "genoa-vs-venezia",
         "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "42'",
         "ronda": "Fecha 8"
       }
     },
@@ -35488,7 +35682,7 @@
       "local": "Atalanta",
       "visitante": "Frosinone",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": true,
+      "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -35500,16 +35694,16 @@
           "v": 2
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 4
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -35519,6 +35713,8 @@
         "country": "Italia",
         "gameUrlName": "atalanta-vs-frosinone",
         "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "43'",
         "ronda": "Fecha 8"
       }
     },
@@ -35558,6 +35754,8 @@
         "country": "Italia",
         "gameUrlName": "lecce-vs-juventus",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -35597,6 +35795,8 @@
         "country": "Italia",
         "gameUrlName": "udinese-vs-ac-milan",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -35636,6 +35836,8 @@
         "country": "Italia",
         "gameUrlName": "sassuolo-vs-lazio",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
@@ -35675,6 +35877,8 @@
         "country": "Italia",
         "gameUrlName": "torino-vs-como",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
@@ -35714,6 +35918,8 @@
         "country": "Italia",
         "gameUrlName": "as-roma-vs-cagliari",
         "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
