@@ -17,7 +17,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { playerLinesFromGame, missingFromGame, normName } = require('./players_lib');
+const { playerLinesFromGame, missingFromGame, coachesFromGame, normName } = require('./players_lib');
 
 const SITE = 'https://www.promiedos.com.ar';
 const API = 'https://api.promiedos.com.ar';
@@ -73,7 +73,27 @@ function roundKeysFromLeaguePage(pageJson) {
 }
 
 function emptyOutput() {
-  return { actualizado: null, partidos: {}, jugadores: {}, ausentes: {} };
+  return { actualizado: null, partidos: {}, jugadores: {}, entrenadores: {}, ausentes: {} };
+}
+
+// Efectividad = puntos obtenidos / puntos posibles (3 por partido), se calcula en la app.
+function addCoaches(out, league, coaches) {
+  if (!out.entrenadores) out.entrenadores = {};
+  coaches.forEach((c) => {
+    const key = `${c.equipoId}|${normName(c.nombre)}`;
+    const e = out.entrenadores[key] || (out.entrenadores[key] = {
+      nombre: c.nombre, equipo: c.equipo, equipoId: c.equipoId, liga: league.id, edad: c.edad,
+      pj: 0, g: 0, e: 0, p: 0, gf: 0, gc: 0
+    });
+    e.pj += 1;
+    if (c.resultado === 'G') e.g += 1;
+    else if (c.resultado === 'E') e.e += 1;
+    else e.p += 1;
+    e.gf += c.gf;
+    e.gc += c.gc;
+    e.equipo = c.equipo || e.equipo;
+    if (c.edad != null) e.edad = c.edad;
+  });
 }
 
 function addLines(out, league, lines) {
@@ -155,6 +175,7 @@ async function run() {
           continue;
         }
         addLines(out, league, lines);
+        addCoaches(out, league, coachesFromGame(ficha));
         out.partidos[game.id] = {
           liga: league.id, fecha: round.nombre, fechaHora,
           local: game?.teams?.[0]?.name, visitante: game?.teams?.[1]?.name
@@ -168,7 +189,7 @@ async function run() {
   out.actualizado = new Date().toISOString();
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(out), 'utf8');
-  console.log(`Partidos nuevos procesados: ${procesados}. Total: ${Object.keys(out.partidos).length} partidos, ${Object.keys(out.jugadores).length} jugadores. Errores: ${errores}.`);
+  console.log(`Partidos nuevos procesados: ${procesados}. Total: ${Object.keys(out.partidos).length} partidos, ${Object.keys(out.jugadores).length} jugadores, ${Object.keys(out.entrenadores || {}).length} entrenadores. Errores: ${errores}.`);
   if (procesados === 0 && Object.keys(out.partidos).length === 0) {
     throw new Error('No se proceso ningun partido: revisar si cambio la API de Promiedos');
   }

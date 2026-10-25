@@ -139,4 +139,32 @@ function missingFromGame(game) {
   return out;
 }
 
-module.exports = { playerLinesFromGame, missingFromGame, minuteOf, normName };
+// DT de cada equipo en el partido (lineups.teams[i].staff, posicion "Dirección")
+// con el resultado desde su lado. Solo para partidos terminados.
+function coachesFromGame(game) {
+  const out = [];
+  const teams = game.teams || [];
+  const scores = Array.isArray(game.scores) ? game.scores : null;
+  if (!scores) return out;
+  (game?.players?.lineups?.teams || []).forEach((lu, idx) => {
+    const teamNum = lu.team_num || idx + 1;
+    const team = teams[teamNum - 1] || {};
+    const staff = lu.staff || [];
+    const dt = staff.find((p) => /direcci|entrenador/i.test(`${p.position} ${p.formation_position}`)) || staff[0];
+    if (!dt || !dt.name) return;
+    const gf = Number(scores[teamNum - 1]) || 0;
+    const gc = Number(scores[teamNum === 1 ? 1 : 0]) || 0;
+    out.push({
+      nombre: dt.name,
+      edad: dt.age ?? null,
+      equipoId: team.id,
+      equipo: team.name,
+      gf,
+      gc,
+      resultado: gf > gc ? 'G' : gf === gc ? 'E' : 'P'
+    });
+  });
+  return out;
+}
+
+module.exports = { playerLinesFromGame, missingFromGame, coachesFromGame, minuteOf, normName };
