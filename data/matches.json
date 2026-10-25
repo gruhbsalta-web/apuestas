@@ -34710,16 +34710,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -34730,7 +34730,7 @@
         "gameUrlName": "sunderland-vs-leeds-united",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "3'",
+        "minuto": "15'",
         "ronda": "Fecha 8"
       }
     },
@@ -35263,7 +35263,7 @@
         "gameUrlName": "celta-vigo-vs-real-betis",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "74'",
         "ronda": "Fecha 10"
       }
     },
