@@ -101,7 +101,8 @@ function roundKeysFromLeaguePage(pageJson) {
 }
 
 // v2: los goles de penal (evento tipo 3) cuentan como gol
-const DATA_VERSION = 2;
+// v3: arqueros con goles recibidos, atajadas estimadas y vallas invictas
+const DATA_VERSION = 3;
 
 function emptyOutput() {
   return { actualizado: null, partidos: {}, jugadores: {}, entrenadores: {}, ausentes: {} };
@@ -135,6 +136,11 @@ function addLines(out, league, lines) {
       posicion: l.posicion, numero: l.numero, edad: l.edad,
       pj: 0, tit: 0, min: 0, goles: 0, asist: 0, amarillas: 0, rojas: 0, penales: 0
     });
+    if (l.gr != null) {
+      p.gr = (p.gr || 0) + l.gr;
+      p.atajadas = Math.round(((p.atajadas || 0) + l.atajadas) * 10) / 10;
+      p.vallas = (p.vallas || 0) + l.valla;
+    }
     p.pj += 1;
     if (l.titular) p.tit += 1;
     p.min += l.minutos;
@@ -290,7 +296,7 @@ async function run() {
   fs.writeFileSync(MATCHES_PATH, JSON.stringify(matchesOut, null, 2), 'utf8');
   console.log(`matches.json: ${partidosHistoricos} partidos terminados agregados (total ${matchesOut.matches.length}).`);
 
-  const unidosJ = mergeVariants(out.jugadores, ['pj', 'tit', 'min', 'goles', 'asist', 'amarillas', 'rojas', 'penales']);
+  const unidosJ = mergeVariants(out.jugadores, ['pj', 'tit', 'min', 'goles', 'asist', 'amarillas', 'rojas', 'penales', 'gr', 'atajadas', 'vallas']);
   const unidosE = mergeVariants(out.entrenadores || {}, ['pj', 'g', 'e', 'p', 'gf', 'gc']);
   if (unidosJ || unidosE) console.log(`Nombres unificados: ${unidosJ} jugadores, ${unidosE} entrenadores.`);
 

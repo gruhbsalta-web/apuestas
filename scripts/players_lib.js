@@ -126,7 +126,54 @@ function playerLinesFromGame(game) {
     const hasta = l.sale ?? FULL_MATCH;
     l.minutos = Math.max(hasta - desde, l.titular ? 0 : 1);
   });
+  agregarDatosArquero(game, lineups, lines, events);
   return lines;
+}
+
+// ---------- Arqueros: goles recibidos, atajadas estimadas y vallas invictas ----------
+// Goles de cada equipo con su minuto. Tipo 1 y 3 suman para e.team. El gol en contra
+// (tipo 2) puede venir marcado con el equipo que lo hizo o con el que se beneficia:
+// se elige la lectura que cierra con el marcador del partido.
+function golesConMinuto(game, events) {
+  const scores = (game.scores || []).map(Number);
+  const normales = events.filter((e) => e.type === 1 || e.type === 3).map((e) => ({ team: e.team, min: minuteOf(e.time) }));
+  const enContra = events.filter((e) => e.type === 2);
+  const contar = (lista) => [1, 2].map((t) => lista.filter((g) => g.team === t).length);
+  const opcionA = normales.concat(enContra.map((e) => ({ team: e.team, min: minuteOf(e.time) })));
+  const opcionB = normales.concat(enContra.map((e) => ({ team: e.team === 1 ? 2 : 1, min: minuteOf(e.time) })));
+  const cierra = (l) => { const c = contar(l); return c[0] === scores[0] && c[1] === scores[1]; };
+  if (cierra(opcionB) && !cierra(opcionA)) return opcionB;
+  return opcionA;
+}
+
+function remates(game) {
+  const st = (game.statistics || []).find((s) => s?.name === 'Remates al arco');
+  const v = st?.values || [];
+  return [Number(v[0]) || 0, Number(v[1]) || 0];
+}
+
+function agregarDatosArquero(game, lineups, lines, events) {
+  const goles = golesConMinuto(game, events);
+  const tiros = remates(game);
+  lineups.forEach((lu, idx) => {
+    const teamNum = lu.team_num || idx + 1;
+    const rival = teamNum === 1 ? 2 : 1;
+    const team = (game.teams || [])[teamNum - 1] || {};
+    const arqueros = lines.filter((l) => l.equipoId === team.id && /arquero/i.test(l.posicion));
+    if (!arqueros.length) return;
+    const golesRival = goles.filter((g) => g.team === rival);
+    const tirosRival = tiros[rival - 1];
+    // atajadas del equipo = remates al arco del rival - goles recibidos (misma fórmula que en los partidos)
+    const atajadasEquipo = Math.max(0, tirosRival - golesRival.length);
+    const minTotal = arqueros.reduce((a, l) => a + l.minutos, 0) || 1;
+    arqueros.forEach((l) => {
+      const desde = l.entra ?? 0;
+      const hasta = l.sale ?? Infinity; // hasta el final, incluye el tiempo agregado
+      l.gr = golesRival.filter((g) => g.min != null && g.min >= desde && g.min < hasta).length;
+      l.atajadas = Math.round(atajadasEquipo * l.minutos / minTotal * 10) / 10;
+      l.valla = l.titular && l.sale == null && golesRival.length === 0 ? 1 : 0;
+    });
+  });
 }
 
 function missingFromGame(game) {

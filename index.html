@@ -1371,8 +1371,24 @@ const PLANTEL_COLS = [
   {k:"rojas", t:"TR"}
 ];
 
+// Columnas para arqueros: lo que importa es lo que evitan, no lo que convierten
+const ARQ_COLS = [
+  {k:"nombre", t:"Arquero"},
+  {k:"pj", t:"PJ"},
+  {k:"min", t:"Min"},
+  {k:"gr", t:"GR"},
+  {k:"gr90", t:"GR/90"},
+  {k:"atajadas", t:"Ataj."},
+  {k:"pctAtaj", t:"% Ataj."},
+  {k:"vallas", t:"Vallas"},
+  {k:"amarillas", t:"TA"},
+  {k:"rojas", t:"TR"}
+];
 function conTasas(p){
+  const esArq = p.gr != null;
   return Object.assign({}, p, {
+    gr90: esArq ? por90(p.gr, p.min) : null,
+    pctAtaj: esArq && (p.atajadas + p.gr) > 0 ? p.atajadas / (p.atajadas + p.gr) * 100 : null,
     g90: por90(p.goles, p.min),
     a90: por90(p.asist, p.min),
     minGol: minPor(p.goles, p.min),
@@ -1398,7 +1414,7 @@ function sortRows(rows, orden = plantelOrden){
     if(va == null) return 1;
     if(vb == null) return -1;
     // para Min/G y Min/A, menos es mejor: el orden "desc" muestra primero a los mejores
-    const mejorMenor = col === "minGol" || col === "minAsist";
+    const mejorMenor = col === "minGol" || col === "minAsist" || col === "gr90" || col === "gr";
     const diff = mejorMenor ? va - vb : vb - va;
     return (desc ? diff : -diff) || (b.min - a.min);
   });
@@ -1406,6 +1422,9 @@ function sortRows(rows, orden = plantelOrden){
 
 function fmtCelda(k, v){
   if(v == null) return '<td class="dim">—</td>';
+  if(k === "gr90") return `<td>${v.toFixed(2)}</td>`;
+  if(k === "pctAtaj") return `<td>${v.toFixed(0)}%</td>`;
+  if(k === "atajadas") return `<td>${Number.isInteger(v) ? v : v.toFixed(1)}</td>`;
   if(k === "g90" || k === "a90") return `<td>${v.toFixed(2)}</td>`;
   if(k === "minGol" || k === "minAsist") return `<td>${v}'</td>`;
   return `<td>${v}</td>`;
@@ -1508,7 +1527,10 @@ async function renderPlantelesTab(){
   const posWrap = document.getElementById("pl-pos");
   posWrap.innerHTML = [{k:"todos", t:"Todos"}, ...POSICIONES].map(p=>`<button class="chip ${plPos === p.k ? "active" : ""}" data-pl-pos="${p.k}">${p.t}</button>`).join("");
   posWrap.querySelectorAll("[data-pl-pos]").forEach(b=>b.addEventListener("click", ()=>{
-    plPos = b.dataset.plPos; plLimite = 50; renderPlantelesTab();
+    plPos = b.dataset.plPos; plLimite = 50;
+    if(plPos === "Arquero") plOrden = {col:"vallas", desc:true};
+    else if(!PLANTEL_COLS.some(c=>c.k === plOrden.col)) plOrden = {col: plEquipo === "todos" ? "goles" : "min", desc:true};
+    renderPlantelesTab();
   }));
   const tabla = document.getElementById("pl-tabla");
   if(!playersData){
@@ -1543,37 +1565,46 @@ async function renderPlantelesTab(){
   }
 
   if(!rows.length){ tabla.innerHTML = '<div class="empty">No hay jugadores con ese nombre.</div>'; return; }
-  const mostrar = rows.slice(0, plLimite);
   const conEquipo = plEquipo === "todos";
-  tabla.innerHTML = `
+  const celdaNombre = p=>`<td>${p.nombre}${conEquipo
+      ? `<span class="pos"><button class="eq" data-ficha="${p.equipo}">${crest(p.equipo)}${p.equipo}</button></span>`
+      : `<span class="pos">${p.numero != null ? "#" + p.numero : ""}</span>`}</td>`;
+  const tablaHtml = (cols, lista, cuerpo)=>`
     <div class="plantel-wrap">
       <table class="plantel">
-        <thead><tr>${PLANTEL_COLS.map(c=>`<th data-col="${c.k}" class="${plOrden.col === c.k ? "sorted" : ""}" scope="col">${c.t}</th>`).join("")}</tr></thead>
-        <tbody>
-          ${(()=>{
-            const fila = p=>`<tr>
-            <td>${p.nombre}${conEquipo
-              ? `<span class="pos"><button class="eq" data-ficha="${p.equipo}">${crest(p.equipo)}${p.equipo}</button></span>`
-              : `<span class="pos">${p.numero != null ? "#" + p.numero : ""}</span>`}</td>
-            ${PLANTEL_COLS.slice(1).map(c=>fmtCelda(c.k, p[c.k])).join("")}
-          </tr>`;
-            // Plantel de un equipo: agrupado por puesto
-            if(!conEquipo && plPos === "todos"){
-              const grupos = [...POSICIONES, {k:"", t:"Sin posición"}];
-              return grupos.map(g=>{
-                const del = mostrar.filter(p=> g.k ? p.posicion === g.k : !POSICIONES.some(x=>x.k === p.posicion));
-                if(!del.length) return "";
-                return `<tr class="grp"><td colspan="${PLANTEL_COLS.length}">${g.t} <span>${del.length}</span></td></tr>` + del.map(fila).join("");
-              }).join("");
-            }
-            return mostrar.map(fila).join("");
-          })()}
-        </tbody>
+        <thead><tr>${cols.map(c=>`<th data-col="${c.k}" class="${plOrden.col === c.k ? "sorted" : ""}" scope="col">${c.t}</th>`).join("")}</tr></thead>
+        <tbody>${cuerpo || lista.map(p=>`<tr>${celdaNombre(p)}${cols.slice(1).map(c=>fmtCelda(c.k, p[c.k])).join("")}</tr>`).join("")}</tbody>
       </table>
-    </div>
-    ${rows.length > plLimite ? `<button class="capital-edit" id="pl-mas" style="width:100%;margin-top:12px">Ver más (${rows.length - plLimite} restantes)</button>` : ""}
-    <div class="h2h-note">G: goles (incluye los de penal). Pen: cuántos fueron de penal. G/90 y A/90: goles y asistencias cada 90 minutos. Min/G y Min/A: minutos por gol o asistencia. Se calculan desde ${MIN_MINUTOS_PRODUCTIVIDAD}' jugados. TA y TR: amarillas y rojas.</div>
-  `;
+    </div>`;
+  const notaCampo = `<div class="h2h-note">G: goles (incluye los de penal). Pen: cuántos fueron de penal. G/90 y A/90: goles y asistencias cada 90 minutos. Min/G y Min/A: minutos por gol o asistencia. Se calculan desde ${MIN_MINUTOS_PRODUCTIVIDAD}' jugados. TA y TR: amarillas y rojas.</div>`;
+  const notaArq = `<div class="h2h-note">GR: goles recibidos con el arquero en cancha. GR/90: cada 90 minutos (desde ${MIN_MINUTOS_PRODUCTIVIDAD}'). Atajadas: remates al arco del rival menos goles recibidos (estimadas). % Ataj.: atajadas sobre remates al arco recibidos. Vallas: partidos completos sin goles en contra.</div>`;
+  const ordenArq = ARQ_COLS.some(c=>c.k === plOrden.col) ? plOrden : {col:"min", desc:true};
+  const ordenCampo = PLANTEL_COLS.some(c=>c.k === plOrden.col) ? plOrden : {col:"min", desc:true};
+  let html = "";
+  let mostradas = rows.length;
+  if(plPos === "Arquero"){
+    const lista = sortRows(rows.slice(), ordenArq).slice(0, plLimite);
+    mostradas = lista.length;
+    html = tablaHtml(ARQ_COLS, lista) + notaArq;
+  } else if(!conEquipo && plPos === "todos"){
+    // Plantel de un equipo: arqueros con sus métricas, y el resto agrupado por puesto
+    const arqs = sortRows(rows.filter(p=>p.posicion === "Arquero"), ordenArq);
+    const campo = sortRows(rows.filter(p=>p.posicion !== "Arquero"), ordenCampo);
+    const grupos = [...POSICIONES.filter(g=>g.k !== "Arquero"), {k:"", t:"Sin posición"}];
+    const cuerpo = grupos.map(g=>{
+      const del = campo.filter(p=> g.k ? p.posicion === g.k : !POSICIONES.some(x=>x.k === p.posicion));
+      if(!del.length) return "";
+      return `<tr class="grp"><td colspan="${PLANTEL_COLS.length}">${g.t} <span>${del.length}</span></td></tr>` +
+        del.map(p=>`<tr>${celdaNombre(p)}${PLANTEL_COLS.slice(1).map(c=>fmtCelda(c.k, p[c.k])).join("")}</tr>`).join("");
+    }).join("");
+    html = (arqs.length ? `<div class="team-stats-name" style="margin:2px 4px 6px;color:var(--accent)">Arqueros <span class="team-stats-n">${arqs.length}</span></div>` + tablaHtml(ARQ_COLS, arqs) + notaArq + '<div style="height:14px"></div>' : "")
+      + tablaHtml(PLANTEL_COLS, campo, cuerpo) + notaCampo;
+  } else {
+    const lista = rows.slice(0, plLimite);
+    mostradas = lista.length;
+    html = tablaHtml(PLANTEL_COLS, lista) + notaCampo;
+  }
+  tabla.innerHTML = html + (mostradas < rows.length && rows.length > plLimite ? `<button class="capital-edit" id="pl-mas" style="width:100%;margin-top:12px">Ver más (${rows.length - plLimite} restantes)</button>` : "");
   tabla.querySelectorAll("th[data-col]").forEach(th=>th.addEventListener("click", ()=>{
     const col = th.dataset.col;
     plOrden = plOrden.col === col ? {col, desc: !plOrden.desc} : {col, desc: col !== "nombre"};
