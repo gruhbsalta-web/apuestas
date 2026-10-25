@@ -5240,27 +5240,27 @@
       "visitante": "Boca Juniors",
       "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 3,
-          "v": 3
+          "v": 4
         },
         "corners": {
           "l": 4,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
-          "l": 4,
-          "v": 2
+          "l": 5,
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
-          "v": 4
+          "l": 3,
+          "v": 5
         }
       },
       "source": {
@@ -5269,9 +5269,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "independiente-vs-boca-juniors",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
         "ronda": "Fecha 14"
       }
     },
@@ -5673,7 +5671,7 @@
         "gameUrlName": "central-norte-vs-acassuso",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "84'",
+        "minuto": "90'",
         "ronda": "Fecha 35"
       }
     },
@@ -5683,15 +5681,15 @@
       "visitante": "Godoy Cruz",
       "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
           "l": 4,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 5,
@@ -5699,7 +5697,7 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
           "l": 0,
@@ -5712,9 +5710,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "mitre-sde-vs-godoy-cruz",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "84'",
+        "statusShort": "Final",
         "ronda": "Fecha 35"
       }
     },
@@ -5724,11 +5720,11 @@
       "visitante": "Güemes",
       "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -5739,12 +5735,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 10,
-          "v": 0
+          "l": 11,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 7
+          "l": 1,
+          "v": 8
         }
       },
       "source": {
@@ -5753,9 +5749,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-maipu-vs-club-atletico-guemes",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "82'",
+        "statusShort": "Final",
         "ronda": "Fecha 35"
       }
     },
@@ -5777,7 +5771,7 @@
         },
         "corners": {
           "l": 6,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 6,
@@ -5796,7 +5790,7 @@
         "gameUrlName": "ferrocarril-midland-vs-gimnasia-y-tiro",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "76'",
+        "minuto": "87'",
         "ronda": "Fecha 35"
       }
     },
@@ -35310,19 +35304,19 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 6
         },
         "tirosArco": {
           "l": 6,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
           "l": 3,
@@ -35337,7 +35331,7 @@
         "gameUrlName": "fc-barcelona-vs-real-madrid",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "90+2'",
         "ronda": "Fecha 10"
       }
     },
