@@ -5278,7 +5278,7 @@
       "local": "River Plate",
       "visitante": "Racing Club",
       "fechaHora": "2026-10-25T19:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -5287,19 +5287,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "corners": {
           "l": 5,
           "v": 3
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 3
         },
         "atajadas": {
           "l": 3,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -5308,9 +5308,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "river-plate-vs-racing-club",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "42'",
+        "minuto": "45'",
         "ronda": "Fecha 14"
       }
     },
