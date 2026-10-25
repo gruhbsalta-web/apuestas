@@ -1,1907 +1,8706 @@
 {
- "sinAsignar": [
-  {
-   "partido": "Platense vs Unión de Santa Fe",
-   "fecha": "Fecha 1",
-   "equipo": "Platense",
-   "tipo": "amarilla",
-   "texto": "Juan Pablo Ludueña",
-   "evento": {
-    "type": 4,
-    "time": "63'",
+ "tipos": {
+  "1": 1494,
+  "2": 40,
+  "3": 131,
+  "4": 3864,
+  "5": 172,
+  "6": 84,
+  "7": 48,
+  "9": 41,
+  "10": 121,
+  "15": 7581
+ },
+ "ejemplos": {
+  "1": [
+   {
+    "type": 1,
+    "time": "30'",
     "team": 1,
     "texts": [
-     "Juan Pablo Ludueña"
+     "Junior Marabel",
+     "Pablo Magnin"
+    ],
+    "player_jersey_num": 27
+   },
+   {
+    "type": 1,
+    "time": "48'",
+    "team": 2,
+    "texts": [
+     "Alan Lescano",
+     "Tomás Molina"
+    ],
+    "player_jersey_num": 10
+   },
+   {
+    "type": 1,
+    "time": "58'",
+    "team": 2,
+    "texts": [
+     "Sebastián Prieto"
+    ],
+    "player_jersey_num": 20
+   },
+   {
+    "type": 1,
+    "time": "69'",
+    "team": 1,
+    "texts": [
+     "Renzo Orihuela",
+     "Cristian Zabala"
+    ],
+    "player_jersey_num": 44
+   }
+  ],
+  "2": [
+   {
+    "type": 2,
+    "time": "24'",
+    "team": 1,
+    "texts": [
+     "Tomas Fagioli"
     ],
     "player_jersey_num": null
    },
-   "alineacion": [
-    "Juan Pablo Cozzani",
-    "Tomás Silva",
-    "Mateo Mendia",
-    "Ignacio Vázquez",
-    "Agustin Lagos",
-    "Martín Barrios",
-    "Iván Gómez",
-    "Juan Carlos Gauto",
-    "Nicolas Retamar",
-    "Guido Mainero",
-    "Leonardo Heredia",
-    "Felipe Bussio",
-    "Pablo Ferreira",
-    "Gonzalo Lencina",
-    "Nicolás López",
-    "Bautista Merlini",
-    "Héctor Bobadilla",
-    "Santiago Dalmasso",
-    "Santiago Quirós",
-    "Eugenio Raggio",
-    "Juan Ignacio Saborido",
-    "Nicolás Sumavil",
-    "Manuel Tucker"
-   ]
-  },
-  {
-   "partido": "Vélez Sarsfield vs Independiente",
-   "fecha": "Fecha 3",
-   "equipo": "Vélez Sarsfield",
-   "tipo": "amarilla",
-   "texto": "Guillermo Barros Schelotto",
-   "evento": {
-    "type": 4,
-    "time": "47'",
-    "team": 1,
+   {
+    "type": 2,
+    "time": "27'",
+    "team": 2,
     "texts": [
-     "Guillermo Barros Schelotto"
+     "Nicolás Otamendi"
     ],
     "player_jersey_num": null
    },
-   "alineacion": [
-    "Tomás Marchiori",
-    "Joaquin García",
-    "Thiago Silvero",
-    "Lisandro Magallan",
-    "Elias Gomez",
-    "Lucas Robertone",
-    "Rodrigo Aliendro",
-    "Matias Pellegrini",
-    "Diego Valdes",
-    "Manuel Lanzini",
-    "Dilan Godoy",
-    "Claudio Baeza",
-    "Luca Feler",
-    "Simón Escobar",
-    "Thiago Aguirre",
-    "Emanuel Mammana",
-    "Lautaro Piola",
-    "Alexis Pereyra",
-    "Leo Cristaldo",
-    "Juan Cruz Policella",
-    "Alvaro Busso",
-    "Alex Veron",
-    "Franco Villalba"
-   ]
-  },
-  {
-   "partido": "Boca Juniors vs Vélez Sarsfield",
-   "fecha": "Fecha 4",
-   "equipo": "Vélez Sarsfield",
-   "tipo": "amarilla",
-   "texto": "Guillermo Barros Schelotto",
-   "evento": {
+   {
+    "type": 2,
+    "time": "61'",
+    "team": 1,
+    "texts": [
+     "Nicolás Zalazar"
+    ],
+    "player_jersey_num": null
+   },
+   {
+    "type": 2,
+    "time": "42'",
+    "team": 1,
+    "texts": [
+     "Tomas Bottari"
+    ],
+    "player_jersey_num": null
+   }
+  ],
+  "3": [
+   {
+    "type": 3,
+    "time": "79'",
+    "team": 2,
+    "texts": [
+     "Cristian Tarragona"
+    ],
+    "player_jersey_num": 25
+   },
+   {
+    "type": 3,
+    "time": "55'",
+    "team": 1,
+    "texts": [
+     "Matias Cóccaro"
+    ],
+    "player_jersey_num": 9
+   },
+   {
+    "type": 3,
+    "time": "82'",
+    "team": 1,
+    "texts": [
+     "Bruno Sepúlveda"
+    ],
+    "player_jersey_num": 9
+   },
+   {
+    "type": 3,
+    "time": "45'+5",
+    "team": 1,
+    "texts": [
+     "Agustin Modica"
+    ],
+    "player_jersey_num": 9
+   }
+  ],
+  "4": [
+   {
     "type": 4,
+    "time": "12'",
+    "team": 1,
+    "texts": [
+     "Elián Giménez"
+    ],
+    "player_jersey_num": 23
+   },
+   {
+    "type": 4,
+    "time": "16'",
+    "team": 2,
+    "texts": [
+     "Franco Paredes"
+    ],
+    "player_jersey_num": 17
+   },
+   {
+    "type": 4,
+    "time": "24'",
+    "team": 2,
+    "texts": [
+     "Iván Morales"
+    ],
+    "player_jersey_num": 7
+   },
+   {
+    "type": 4,
+    "time": "43'",
+    "team": 2,
+    "texts": [
+     "Francisco Álvarez"
+    ],
+    "player_jersey_num": 16
+   }
+  ],
+  "5": [
+   {
+    "type": 5,
+    "time": "90'+4",
+    "team": 2,
+    "texts": [
+     "Israel Damonte"
+    ],
+    "player_jersey_num": null
+   },
+   {
+    "type": 5,
+    "time": "90'",
+    "team": 2,
+    "texts": [
+     "Leandro Lescano"
+    ],
+    "player_jersey_num": 19
+   },
+   {
+    "type": 5,
+    "time": "38'",
+    "team": 1,
+    "texts": [
+     "Franco Vazquez"
+    ],
+    "player_jersey_num": 20
+   },
+   {
+    "type": 5,
+    "time": "62'",
+    "team": 1,
+    "texts": [
+     "Orlando Gill"
+    ],
+    "player_jersey_num": 12
+   }
+  ],
+  "6": [
+   {
+    "type": 6,
+    "time": "90'+1",
+    "team": 2,
+    "texts": [
+     "Diego Porcel"
+    ],
+    "player_jersey_num": 47
+   },
+   {
+    "type": 6,
+    "time": "86'",
+    "team": 2,
+    "texts": [
+     "Román Riquelme"
+    ],
+    "player_jersey_num": 6
+   },
+   {
+    "type": 6,
+    "time": "87'",
+    "team": 2,
+    "texts": [
+     "Adrián Sánchez"
+    ],
+    "player_jersey_num": 21
+   },
+   {
+    "type": 6,
+    "time": "83'",
+    "team": 2,
+    "texts": [
+     "Emanuel Coronel"
+    ],
+    "player_jersey_num": 32
+   }
+  ],
+  "7": [
+   {
+    "type": 7,
     "time": "42'",
     "team": 2,
     "texts": [
-     "Guillermo Barros Schelotto"
+     "Marcelo Torres"
     ],
-    "player_jersey_num": null
+    "player_jersey_num": 32
    },
-   "alineacion": [
-    "Tomás Marchiori",
-    "Elias Gomez",
-    "Emanuel Mammana",
-    "Thiago Silvero",
-    "Joaquin García",
-    "Lucas Robertone",
-    "Rodrigo Aliendro",
-    "Manuel Lanzini",
-    "Diego Valdes",
-    "Matias Pellegrini",
-    "Dilan Godoy",
-    "Thiago Aguirre",
-    "Claudio Baeza",
-    "Simón Escobar",
-    "Luca Feler",
-    "Alex Veron",
-    "Alvaro Busso",
-    "Leo Cristaldo",
-    "Lisandro Magallan",
-    "Alexis Pereyra",
-    "Lautaro Piola",
-    "Juan Cruz Policella",
-    "Franco Villalba"
+   {
+    "type": 7,
+    "time": "81'",
+    "team": 1,
+    "texts": [
+     "Guido Carrillo"
+    ],
+    "player_jersey_num": 9
+   },
+   {
+    "type": 7,
+    "time": "89'",
+    "team": 1,
+    "texts": [
+     "Alfio Oviedo"
+    ],
+    "player_jersey_num": 19
+   },
+   {
+    "type": 7,
+    "time": "87'",
+    "team": 2,
+    "texts": [
+     "David Barbona"
+    ],
+    "player_jersey_num": 19
+   }
+  ],
+  "9": [
+   {
+    "type": 9,
+    "time": "26'",
+    "team": 2,
+    "texts": [
+     "Gol anulado",
+     "Julián Fernández"
+    ],
+    "player_jersey_num": 18
+   },
+   {
+    "type": 9,
+    "time": "55'",
+    "team": 2,
+    "texts": [
+     "Gol anulado",
+     "Tiziano Perrotta"
+    ],
+    "player_jersey_num": 17
+   },
+   {
+    "type": 9,
+    "time": "43'",
+    "team": 1,
+    "texts": [
+     "Gol anulado",
+     "Lucas Martínez Quarta"
+    ],
+    "player_jersey_num": 28
+   },
+   {
+    "type": 9,
+    "time": "56'",
+    "team": 1,
+    "texts": [
+     "Gol anulado",
+     "Facundo Mallo"
+    ],
+    "player_jersey_num": 15
+   }
+  ],
+  "10": [
+   {
+    "type": 10,
+    "time": "68'",
+    "team": 2,
+    "texts": [
+     "Emanuel Coronel"
+    ],
+    "player_jersey_num": 32
+   },
+   {
+    "type": 10,
+    "time": "52'",
+    "team": 2,
+    "texts": [
+     "Ezequiel Naya"
+    ],
+    "player_jersey_num": 19
+   },
+   {
+    "type": 10,
+    "time": "90'",
+    "team": 1,
+    "texts": [
+     "Diego Valdes"
+    ],
+    "player_jersey_num": 10
+   },
+   {
+    "type": 10,
+    "time": "55'",
+    "team": 1,
+    "texts": [
+     "Facundo Colidio"
+    ],
+    "player_jersey_num": 11
+   }
+  ],
+  "15": [
+   {
+    "type": 15,
+    "time": "38'",
+    "team": 2,
+    "texts": [
+     "Kevin Coronel",
+     "Erik Godoy"
+    ]
+   },
+   {
+    "type": 15,
+    "time": "46'",
+    "team": 1,
+    "texts": [
+     "Manuel Garcia",
+     "Elián Giménez"
+    ]
+   },
+   {
+    "type": 15,
+    "time": "46'",
+    "team": 2,
+    "texts": [
+     "Tomás Molina",
+     "Iván Morales"
+    ]
+   },
+   {
+    "type": 15,
+    "time": "46'",
+    "team": 2,
+    "texts": [
+     "Kevin Gutiérrez",
+     "Lucas Gómez"
+    ]
+   }
+  ]
+ },
+ "descuadres": [
+  {
+   "partido": "Platense vs Unión de Santa Fe",
+   "fecha": "Fecha 1",
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "24'",
+     "team": 1,
+     "texts": [
+      "Tomas Fagioli"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 3,
+     "time": "79'",
+     "team": 2,
+     "texts": [
+      "Cristian Tarragona"
+     ],
+     "player_jersey_num": 25
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Tomas Fagioli",
+      "player_sname": "Fagioli",
+      "time": 24,
+      "time_to_display": "24'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Bautista Merlini",
+      "player_sname": "Merlini",
+      "time": 87,
+      "time_to_display": "87'"
+     }
+    ],
+    [
+     {
+      "player_name": "Juan Pablo Ludueña",
+      "player_sname": "Ludueña",
+      "time": 72,
+      "time_to_display": "72'"
+     },
+     {
+      "player_name": "Cristian Tarragona",
+      "player_sname": "Tarragona",
+      "time": 79,
+      "time_to_display": "79'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Newell's Old Boys vs Talleres de Córdoba",
+   "fecha": "Fecha 1",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "55'",
+     "team": 1,
+     "texts": [
+      "Matias Cóccaro"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 6,
+     "time": "86'",
+     "team": 2,
+     "texts": [
+      "Román Riquelme"
+     ],
+     "player_jersey_num": 6
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Matias Cóccaro",
+      "player_sname": "Cóccaro",
+      "time": 55,
+      "time_to_display": "55'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Banfield vs Sarmiento Junín",
+   "fecha": "Fecha 2",
+   "marcador": [
+    3,
+    2
+   ],
+   "eventosGol1": [
+    2,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "82'",
+     "team": 1,
+     "texts": [
+      "Bruno Sepúlveda"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Tiziano Perrotta",
+      "player_sname": "Perrotta",
+      "time": 53,
+      "time_to_display": "53'"
+     },
+     {
+      "player_name": "Tiziano Perrotta",
+      "player_sname": "Perrotta",
+      "time": 59,
+      "time_to_display": "59'"
+     },
+     {
+      "player_name": "Bruno Sepúlveda",
+      "player_sname": "Sepúlveda",
+      "time": 82,
+      "time_to_display": "82'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Jonathan Herrera",
+      "player_sname": "Herrera",
+      "time": 84,
+      "time_to_display": "84'"
+     },
+     {
+      "player_name": "Junior Marabel",
+      "player_sname": "Marabel",
+      "time": 86,
+      "time_to_display": "86'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Gimnasia de Mendoza vs Unión de Santa Fe",
+   "fecha": "Fecha 3",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "6'",
+     "team": 2,
+     "texts": [
+      "Misael Aguirre"
+     ],
+     "player_jersey_num": 31
+    },
+    {
+     "type": 3,
+     "time": "45'+5",
+     "team": 1,
+     "texts": [
+      "Agustin Modica"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 10,
+     "time": "47'",
+     "team": 2,
+     "texts": [
+      "Ignacio Malcorra"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Agustin Modica",
+      "player_sname": "Modica",
+      "time": 45,
+      "time_to_display": "45'+5",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Agustin Modica",
+      "player_sname": "Modica",
+      "time": 50,
+      "time_to_display": "50'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "River Plate vs Rosario Central",
+   "fecha": "Fecha 3",
+   "marcador": [
+    0,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "27'",
+     "team": 2,
+     "texts": [
+      "Nicolás Otamendi"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 6,
+     "time": "83'",
+     "team": 2,
+     "texts": [
+      "Emanuel Coronel"
+     ],
+     "player_jersey_num": 32
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Nicolás Otamendi",
+      "player_sname": "Otamendi",
+      "time": 27,
+      "time_to_display": "27'",
+      "goal_type": "E.C"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Rosario Central vs Aldosivi",
+   "fecha": "Fecha 4",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "61'",
+     "team": 1,
+     "texts": [
+      "Nicolás Zalazar"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 10,
+     "time": "79'",
+     "team": 1,
+     "texts": [
+      "Tomás Badaloni"
+     ],
+     "player_jersey_num": 16
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Nicolás Zalazar",
+      "player_sname": "Zalazar",
+      "time": 61,
+      "time_to_display": "61'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Jáminton Campaz",
+      "player_sname": "Campaz",
+      "time": 80,
+      "time_to_display": "80'"
+     }
+    ],
+    [
+     {
+      "player_name": "Alan Sosa",
+      "player_sname": "Sosa",
+      "time": 52,
+      "time_to_display": "52'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Independiente Rivadavia vs Estudiantes RC",
+   "fecha": "Fecha 4",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "71'",
+     "team": 1,
+     "texts": [
+      "Álex Arce"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 10,
+     "time": "85'",
+     "team": 1,
+     "texts": [
+      "Álex Arce"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Álex Arce",
+      "player_sname": "Arce",
+      "time": 71,
+      "time_to_display": "71'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Álex Arce",
+      "player_sname": "Arce",
+      "time": 80,
+      "time_to_display": "80'"
+     }
+    ],
+    [
+     {
+      "player_name": "Gabriel Alanís",
+      "player_sname": "Alanís",
+      "time": 88,
+      "time_to_display": "88'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Atlético Tucumán vs Sarmiento Junín",
+   "fecha": "Fecha 4",
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "69'",
+     "team": 2,
+     "texts": [
+      "Junior Marabel"
+     ],
+     "player_jersey_num": 27
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Luciano Vallejo",
+      "player_sname": "Vallejo",
+      "time": 81,
+      "time_to_display": "81'"
+     }
+    ],
+    [
+     {
+      "player_name": "Junior Marabel",
+      "player_sname": "Marabel",
+      "time": 69,
+      "time_to_display": "69'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Julian Mavilla",
+      "player_sname": "Mavilla",
+      "time": 71,
+      "time_to_display": "71'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Deportivo Riestra vs Estudiantes de La Plata",
+   "fecha": "Fecha 4",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "12'",
+     "team": 1,
+     "texts": [
+      "Milton Celiz"
+     ],
+     "player_jersey_num": 8
+    },
+    {
+     "type": 10,
+     "time": "59'",
+     "team": 1,
+     "texts": [
+      "Milton Celiz"
+     ],
+     "player_jersey_num": 8
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Milton Celiz",
+      "player_sname": "Celiz",
+      "time": 12,
+      "time_to_display": "12'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Antony Alonso",
+      "player_sname": "Antony Alonso",
+      "time": 73,
+      "time_to_display": "73'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Belgrano vs Independiente Rivadavia",
+   "fecha": "Fecha 5",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "42'",
+     "team": 1,
+     "texts": [
+      "Tomas Bottari"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 10,
+     "time": "82'",
+     "team": 1,
+     "texts": [
+      "Lucas Passerini"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Tomas Bottari",
+      "player_sname": "Bottari",
+      "time": 42,
+      "time_to_display": "42'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Emiliano Rigoni",
+      "player_sname": "Rigoni",
+      "time": 46,
+      "time_to_display": "46'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "River Plate vs Argentinos Juniors",
+   "fecha": "Fecha 5",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "52'",
+     "team": 2,
+     "texts": [
+      "Hernán López Muñoz"
+     ],
+     "player_jersey_num": 8
+    },
+    {
+     "type": 10,
+     "time": "77'",
+     "team": 1,
+     "texts": [
+      "Nicolás Otamendi"
+     ],
+     "player_jersey_num": 30
+    },
+    {
+     "type": 3,
+     "time": "89'",
+     "team": 1,
+     "texts": [
+      "Angel Correa"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Gonzalo Montiel",
+      "player_sname": "Montiel",
+      "time": 37,
+      "time_to_display": "37'"
+     },
+     {
+      "player_name": "Angel Correa",
+      "player_sname": "Correa",
+      "time": 89,
+      "time_to_display": "89'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
    ]
   },
   {
    "partido": "Gimnasia de Mendoza vs Talleres de Córdoba",
    "fecha": "Fecha 5",
-   "equipo": "Talleres de Córdoba",
-   "tipo": "amarilla",
-   "texto": "Jorge Sampaoli",
-   "evento": {
-    "type": 4,
-    "time": "11'",
-    "team": 2,
-    "texts": [
-     "Jorge Sampaoli"
+   "marcador": [
+    3,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "9'",
+     "team": 1,
+     "texts": [
+      "Agustin Modica"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 10,
+     "time": "90'+5",
+     "team": 2,
+     "texts": [
+      "Valentín Depietri"
+     ],
+     "player_jersey_num": 11
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Agustin Modica",
+      "player_sname": "Modica",
+      "time": 9,
+      "time_to_display": "9'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Agustin Modica",
+      "player_sname": "Modica",
+      "time": 20,
+      "time_to_display": "20'"
+     },
+     {
+      "player_name": "Luciano Cingolani",
+      "player_sname": "L. Cingolani",
+      "time": 51,
+      "time_to_display": "51'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Ezequiel Unsain",
-    "Alexandro Maidana",
-    "Valentín Fascendini",
-    "Román Riquelme",
-    "Augusto Schott",
-    "Federico Fattori",
-    "Matías Galarza",
-    "Rick",
-    "Franco Cristaldo",
-    "Emiliano Chiavassa",
-    "Valentín Depietri",
-    "Santiago Fernandez",
-    "Timoteo Chamorro",
-    "Gabriel Báez",
-    "Valentin Davila",
-    "Bruno Trey",
-    "Ronaldo Martínez",
-    "Santino Barbi",
-    "Giovanni Baroni",
-    "Thiago Baroni",
-    "Jeremías Florentín",
-    "Gonzalo Nuccio",
-    "Lautaro Ortiz"
+    [
+     {
+      "player_name": "Santiago Fernandez",
+      "player_sname": "Fernandez",
+      "time": 85,
+      "time_to_display": "85'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Newell's Old Boys vs Banfield",
+   "fecha": "Fecha 6",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "90'+8",
+     "team": 2,
+     "texts": [
+      "Bruno Sepúlveda"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Matias Cóccaro",
+      "player_sname": "Cóccaro",
+      "time": 51,
+      "time_to_display": "51'"
+     },
+     {
+      "player_name": "Matias Cóccaro",
+      "player_sname": "Cóccaro",
+      "time": 77,
+      "time_to_display": "77'"
+     }
+    ],
+    [
+     {
+      "player_name": "Bruno Sepúlveda",
+      "player_sname": "Sepúlveda",
+      "time": 90,
+      "time_to_display": "90'+8",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Barracas Central vs Platense",
+   "fecha": "Fecha 6",
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    0,
+    2
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "9'",
+     "team": 1,
+     "texts": [
+      "Iván Tapia"
+     ],
+     "player_jersey_num": 10
+    },
+    {
+     "type": 3,
+     "time": "23'",
+     "team": 1,
+     "texts": [
+      "Iván Tapia"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Iván Tapia",
+      "player_sname": "Tapia",
+      "time": 23,
+      "time_to_display": "23'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Nicolas Retamar",
+      "player_sname": "Retamar",
+      "time": 59,
+      "time_to_display": "59'"
+     },
+     {
+      "player_name": "Luciano Giménez",
+      "player_sname": "Giménez",
+      "time": 90,
+      "time_to_display": "90'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "River Plate vs Vélez Sarsfield",
+   "fecha": "Fecha 6",
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    2
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "34'",
+     "team": 2,
+     "texts": [
+      "Simón Escobar"
+     ],
+     "player_jersey_num": 18
+    },
+    {
+     "type": 2,
+     "time": "43'",
+     "team": 1,
+     "texts": [
+      "Thiago Silvero"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Angel Correa",
+      "player_sname": "Correa",
+      "time": 11,
+      "time_to_display": "11'"
+     },
+     {
+      "player_name": "Thiago Silvero",
+      "player_sname": "Silvero",
+      "time": 43,
+      "time_to_display": "43'",
+      "goal_type": "E.C"
+     }
+    ],
+    [
+     {
+      "player_name": "Diego Valdes",
+      "player_sname": "Valdes",
+      "time": 61,
+      "time_to_display": "61'"
+     },
+     {
+      "player_name": "Manuel Lanzini",
+      "player_sname": "Lanzini",
+      "time": 79,
+      "time_to_display": "79'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Racing Club vs Boca Juniors",
+   "fecha": "Fecha 6",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "9'",
+     "team": 1,
+     "texts": [
+      "Marcos Rojo"
+     ],
+     "player_jersey_num": 6
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Marcos Rojo",
+      "player_sname": "Rojo",
+      "time": 9,
+      "time_to_display": "9'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Miguel Merentiel",
+      "player_sname": "Merentiel",
+      "time": 28,
+      "time_to_display": "28'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Tigre vs Central Córdoba SdE",
+   "fecha": "Fecha 6",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "58'",
+     "team": 2,
+     "texts": [
+      "Michael Santos"
+     ],
+     "player_jersey_num": 27
+    },
+    {
+     "type": 10,
+     "time": "70'",
+     "team": 1,
+     "texts": [
+      "Mauro Méndez"
+     ],
+     "player_jersey_num": 33
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Mauro Méndez",
+      "player_sname": "Méndez",
+      "time": 6,
+      "time_to_display": "6'"
+     },
+     {
+      "player_name": "Santiago Lopéz",
+      "player_sname": "Lopéz",
+      "time": 26,
+      "time_to_display": "26'"
+     }
+    ],
+    [
+     {
+      "player_name": "Michael Santos",
+      "player_sname": "Santos",
+      "time": 58,
+      "time_to_display": "58'",
+      "goal_type": "Pen"
+     }
+    ]
    ]
   },
   {
    "partido": "Talleres de Córdoba vs Rosario Central",
    "fecha": "Fecha 6",
-   "equipo": "Talleres de Córdoba",
-   "tipo": "amarilla",
-   "texto": "Jorge Sampaoli",
-   "evento": {
-    "type": 4,
-    "time": "53'",
-    "team": 1,
-    "texts": [
-     "Jorge Sampaoli"
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "21'",
+     "team": 1,
+     "texts": [
+      "Agustín Álvarez"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 3,
+     "time": "55'",
+     "team": 2,
+     "texts": [
+      "Ángel Di María"
+     ],
+     "player_jersey_num": 11
+    },
+    {
+     "type": 10,
+     "time": "90'+4",
+     "team": 2,
+     "texts": [
+      "Enzo Copetti"
+     ],
+     "player_jersey_num": 22
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Agustín Álvarez",
+      "player_sname": "Álvarez",
+      "time": 21,
+      "time_to_display": "21'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Valentín Depietri",
+      "player_sname": "Depietri",
+      "time": 47,
+      "time_to_display": "47'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Ezequiel Unsain",
-    "Gabriel Báez",
-    "Valentín Fascendini",
-    "Santiago Fernandez",
-    "Augusto Schott",
-    "Matías Galarza",
-    "Timoteo Chamorro",
-    "Valentín Depietri",
-    "Franco Cristaldo",
-    "Rick",
-    "Agustín Álvarez",
-    "Emiliano Chiavassa",
-    "Valentin Davila",
-    "Federico Fattori",
-    "Alexandro Maidana",
-    "Ronaldo Martínez",
-    "Santino Barbi",
-    "Thiago Baroni",
-    "Giovanni Baroni",
-    "Matias Catalan",
-    "Jeremías Florentín",
-    "Lautaro Ortiz",
-    "Bruno Trey"
+    [
+     {
+      "player_name": "Ángel Di María",
+      "player_sname": "Di María",
+      "time": 55,
+      "time_to_display": "55'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Ángel Di María",
+      "player_sname": "Di María",
+      "time": 63,
+      "time_to_display": "63'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Talleres de Córdoba vs Rosario Central",
-   "fecha": "Fecha 6",
-   "equipo": "Rosario Central",
-   "tipo": "amarilla",
-   "texto": "Jorge Almirón",
-   "evento": {
-    "type": 4,
-    "time": "39'",
-    "team": 2,
-    "texts": [
-     "Jorge Almirón"
+   "partido": "Deportivo Riestra vs Vélez Sarsfield",
+   "fecha": "Fecha 7",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "15'",
+     "team": 1,
+     "texts": [
+      "Braian Sánchez"
+     ],
+     "player_jersey_num": 10
+    },
+    {
+     "type": 2,
+     "time": "76'",
+     "team": 2,
+     "texts": [
+      "Facundo Miño"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Tomás González",
+      "player_sname": "González",
+      "time": 54,
+      "time_to_display": "54'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Conan Ledesma",
-    "Alexis Soto",
-    "Gastón Ávila",
-    "Ignacio Ovando",
-    "Emanuel Coronel",
-    "Vicente Pizarro",
-    "Franco Ibarra",
-    "Giovanni Cantizano",
-    "Ángel Di María",
-    "Alan Rodriguez",
-    "Enzo Copetti",
-    "Jáminton Campaz",
-    "Pol Fernández",
-    "Federico Navarro",
-    "Agustín Sández",
-    "Elías Verón",
-    "Tomás Badaloni",
-    "Franco Cervi",
-    "Julián Fernández",
-    "Facundo Mallo",
-    "Marco Ruben",
-    "Axel Werner",
-    "Sebastian Zaracho"
+    [
+     {
+      "player_name": "Facundo Miño",
+      "player_sname": "Miño",
+      "time": 76,
+      "time_to_display": "76'",
+      "goal_type": "E.C"
+     }
+    ]
    ]
   },
   {
    "partido": "Rosario Central vs Gimnasia La Plata",
    "fecha": "Fecha 7",
-   "equipo": "Gimnasia La Plata",
-   "tipo": "amarilla",
-   "texto": "Ariel Pereyra",
-   "evento": {
-    "type": 4,
-    "time": "19'",
-    "team": 2,
-    "texts": [
-     "Ariel Pereyra"
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "59'",
+     "team": 2,
+     "texts": [
+      "Nacho Fernández"
+     ],
+     "player_jersey_num": 8
+    },
+    {
+     "type": 2,
+     "time": "59'",
+     "team": 2,
+     "texts": [
+      "Conan Ledesma"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Jáminton Campaz",
+      "player_sname": "Campaz",
+      "time": 86,
+      "time_to_display": "86'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Nelson Insfrán",
-    "Pedro Silva Torrejón",
-    "Enzo Martínez",
-    "Germán Conti",
-    "Bautista Barros Schelotto",
-    "Mateo Seoane",
-    "Ignacio Miramon",
-    "Maximiliano Zalazar",
-    "Nacho Fernández",
-    "Lucas Janson",
-    "Agustín Auzmendi",
-    "Agustín Colazo",
-    "Renzo Giampaoli",
-    "Augusto Max",
-    "Manuel Panaro",
-    "Franco Torres",
-    "Pablo Aguiar",
-    "Nicolás Barros Schelotto",
-    "Julian Kadijevic",
-    "Lucas Lamella",
-    "Matías Melluso",
-    "Juan Pérez",
-    "Santiago Villarreal"
+    [
+     {
+      "player_name": "Conan Ledesma",
+      "player_sname": "Ledesma",
+      "time": 59,
+      "time_to_display": "59'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Ignacio Miramon",
+      "player_sname": "Miramon",
+      "time": 88,
+      "time_to_display": "88'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Platense vs Deportivo Riestra",
-   "fecha": "Fecha 8",
-   "equipo": "Deportivo Riestra",
-   "tipo": "amarilla",
-   "texto": "Guillermo Duró",
-   "evento": {
-    "type": 4,
-    "time": "69'",
-    "team": 2,
-    "texts": [
-     "Guillermo Duró"
+   "partido": "Huracán vs Estudiantes RC",
+   "fecha": "Fecha 7",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "3'",
+     "team": 1,
+     "texts": [
+      "Ignacio Pussetto"
+     ],
+     "player_jersey_num": 23
+    },
+    {
+     "type": 3,
+     "time": "18'",
+     "team": 2,
+     "texts": [
+      "Ibrahim Hesar"
+     ],
+     "player_jersey_num": 77
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Ignacio Pussetto",
+      "player_sname": "Pussetto",
+      "time": 3,
+      "time_to_display": "3'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Ignacio Arce",
-    "Ignacio Gariglio",
-    "Cristian Paz",
-    "Facundo Miño",
-    "Nicolás Sansotre",
-    "Mariano Bracamonte",
-    "Tomás González",
-    "Yonatan Goitía",
-    "Milton Celiz",
-    "Braian Sánchez",
-    "Nicolás Benegas",
-    "Alexander Díaz",
-    "Gabriel Obredor",
-    "Pedro Ramírez",
-    "Ángel Almada",
-    "Antony Alonso",
-    "Marino Arzamendia",
-    "Rodrigo Gallo",
-    "Agustin Graneros",
-    "Yeison Murillo",
-    "Pablo Monje",
-    "Ángel Stringa",
-    "Nicólas Watson"
+    [
+     {
+      "player_name": "Ibrahim Hesar",
+      "player_sname": "Hesar",
+      "time": 18,
+      "time_to_display": "18'",
+      "goal_type": "Pen"
+     }
+    ]
    ]
   },
   {
-   "partido": "Gimnasia de Mendoza vs Boca Juniors",
-   "fecha": "Fecha 8",
-   "equipo": "Gimnasia de Mendoza",
-   "tipo": "amarilla",
-   "texto": "Darío Franco",
-   "evento": {
-    "type": 4,
-    "time": "61'",
-    "team": 1,
-    "texts": [
-     "Darío Franco"
+   "partido": "Banfield vs River Plate",
+   "fecha": "Fecha 7",
+   "marcador": [
+    2,
+    3
+   ],
+   "eventosGol1": [
+    2,
+    2
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "21'",
+     "team": 2,
+     "texts": [
+      "Thiago Almada"
+     ],
+     "player_jersey_num": 23
+    },
+    {
+     "type": 3,
+     "time": "41'",
+     "team": 2,
+     "texts": [
+      "Thiago Almada"
+     ],
+     "player_jersey_num": 23
+    },
+    {
+     "type": 10,
+     "time": "90'+5",
+     "team": 2,
+     "texts": [
+      "Tomás Galván"
+     ],
+     "player_jersey_num": 26
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Bruno Sepúlveda",
+      "player_sname": "Sepúlveda",
+      "time": 64,
+      "time_to_display": "64'"
+     },
+     {
+      "player_name": "Bruno Sepúlveda",
+      "player_sname": "Sepúlveda",
+      "time": 84,
+      "time_to_display": "84'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "César Rigamonti",
-    "Matías Recalde",
-    "Ezequiel Munoz",
-    "Diego Mondino",
-    "Luciano Paredes",
-    "Tomas O'Connor",
-    "Fermín Antonini",
-    "Facundo Lencioni",
-    "Esteban Fernández",
-    "Luciano Cingolani",
-    "Ignacio Sabatini",
-    "Brian Andrada",
-    "Nahuel Barboza",
-    "Ismael Cortez",
-    "Valentino Simoni",
-    "Matias Vargas",
-    "Lautaro Carrera",
-    "Julián Ceballos",
-    "Germán Guiffrey",
-    "Lautaro Petruchi",
-    "Santiago Rodríguez",
-    "Nicolás Romano",
-    "Ulises Sánchez"
+    [
+     {
+      "player_name": "Sebastián Driussi",
+      "player_sname": "Driussi",
+      "time": 32,
+      "time_to_display": "32'"
+     },
+     {
+      "player_name": "Thiago Almada",
+      "player_sname": "Almada",
+      "time": 41,
+      "time_to_display": "41'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Angel Correa",
+      "player_sname": "Correa",
+      "time": 69,
+      "time_to_display": "69'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Estudiantes RC vs Sarmiento Junín",
+   "fecha": "Fecha 8",
+   "marcador": [
+    0,
+    2
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "6'",
+     "team": 2,
+     "texts": [
+      "Gonzalo Maffini"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 3,
+     "time": "71'",
+     "team": 2,
+     "texts": [
+      "Junior Marabel"
+     ],
+     "player_jersey_num": 27
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Gonzalo Maffini",
+      "player_sname": "Maffini",
+      "time": 6,
+      "time_to_display": "6'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Junior Marabel",
+      "player_sname": "Marabel",
+      "time": 71,
+      "time_to_display": "71'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Aldosivi vs Banfield",
+   "fecha": "Fecha 8",
+   "marcador": [
+    3,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "34'",
+     "team": 1,
+     "texts": [
+      "Renzo Malanca"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 3,
+     "time": "51'",
+     "team": 2,
+     "texts": [
+      "Matías Hernández"
+     ],
+     "player_jersey_num": 28
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Renzo Malanca",
+      "player_sname": "Malanca",
+      "time": 34,
+      "time_to_display": "34'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Andres Vombergar",
+      "player_sname": "Vombergar",
+      "time": 42,
+      "time_to_display": "42'"
+     },
+     {
+      "player_name": "Andres Vombergar",
+      "player_sname": "Vombergar",
+      "time": 52,
+      "time_to_display": "52'"
+     }
+    ],
+    [
+     {
+      "player_name": "Matías Hernández",
+      "player_sname": "Hernandez",
+      "time": 51,
+      "time_to_display": "51'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Gimnasia La Plata vs Tigre",
+   "fecha": "Fecha 8",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "32'",
+     "team": 2,
+     "texts": [
+      "Jabes Saralegui"
+     ],
+     "player_jersey_num": 10
+    },
+    {
+     "type": 10,
+     "time": "50'",
+     "team": 2,
+     "texts": [
+      "Mauro Méndez"
+     ],
+     "player_jersey_num": 33
+    },
+    {
+     "type": 3,
+     "time": "67'",
+     "team": 1,
+     "texts": [
+      "Agustín Auzmendi"
+     ],
+     "player_jersey_num": 29
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Germán Conti",
+      "player_sname": "Conti",
+      "time": 45,
+      "time_to_display": "45'+2"
+     },
+     {
+      "player_name": "Agustín Auzmendi",
+      "player_sname": "Auzmendi",
+      "time": 67,
+      "time_to_display": "67'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Ignacio Russo",
+      "player_sname": "Russo",
+      "time": 50,
+      "time_to_display": "50'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "River Plate vs Independiente Rivadavia",
+   "fecha": "Fecha 8",
+   "marcador": [
+    3,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "30'",
+     "team": 1,
+     "texts": [
+      "Gonzalo Montiel"
+     ],
+     "player_jersey_num": 29
+    },
+    {
+     "type": 10,
+     "time": "69'",
+     "team": 2,
+     "texts": [
+      "Luis Sequeira"
+     ],
+     "player_jersey_num": 77
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Gonzalo Montiel",
+      "player_sname": "Montiel",
+      "time": 30,
+      "time_to_display": "30'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Tomás Galván",
+      "player_sname": "Galván",
+      "time": 54,
+      "time_to_display": "54'"
+     },
+     {
+      "player_name": "Tomás Galván",
+      "player_sname": "Galván",
+      "time": 80,
+      "time_to_display": "80'"
+     }
+    ],
+    [
+     {
+      "player_name": "Álex Arce",
+      "player_sname": "Arce",
+      "time": 68,
+      "time_to_display": "68'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Independiente Rivadavia vs Aldosivi",
+   "fecha": "Fecha 9",
+   "marcador": [
+    4,
+    3
+   ],
+   "eventosGol1": [
+    3,
+    3
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "45'+3",
+     "team": 1,
+     "texts": [
+      "Álex Arce"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Gonzalo Rios",
+      "player_sname": "Ríos",
+      "time": 10,
+      "time_to_display": "10'"
+     },
+     {
+      "player_name": "Jose Florentín",
+      "player_sname": "Florentín",
+      "time": 19,
+      "time_to_display": "19'"
+     },
+     {
+      "player_name": "Álex Arce",
+      "player_sname": "Arce",
+      "time": 45,
+      "time_to_display": "45'+3",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Álex Arce",
+      "player_sname": "Arce",
+      "time": 75,
+      "time_to_display": "75'"
+     }
+    ],
+    [
+     {
+      "player_name": "Tomás Fernández",
+      "player_sname": "Fernández",
+      "time": 13,
+      "time_to_display": "13'"
+     },
+     {
+      "player_name": "Lucas Castro",
+      "player_sname": "Castro",
+      "time": 59,
+      "time_to_display": "59'"
+     },
+     {
+      "player_name": "Joaquín Pombo",
+      "player_sname": "Pombo",
+      "time": 90,
+      "time_to_display": "90'+2"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Tigre vs Rosario Central",
+   "fecha": "Fecha 9",
+   "marcador": [
+    0,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "60'",
+     "team": 2,
+     "texts": [
+      "Ángel Di María"
+     ],
+     "player_jersey_num": 11
+    },
+    {
+     "type": 6,
+     "time": "76'",
+     "team": 2,
+     "texts": [
+      "Emanuel Coronel"
+     ],
+     "player_jersey_num": 32
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Ángel Di María",
+      "player_sname": "Di María",
+      "time": 60,
+      "time_to_display": "60'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Sarmiento Junín vs Belgrano",
+   "fecha": "Fecha 9",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "90'+10",
+     "team": 2,
+     "texts": [
+      "Lucas Passerini"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Junior Marabel",
+      "player_sname": "Marabel",
+      "time": 33,
+      "time_to_display": "33'"
+     }
+    ],
+    [
+     {
+      "player_name": "Lucas Passerini",
+      "player_sname": "Passerini",
+      "time": 90,
+      "time_to_display": "90'+10",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Banfield vs Barracas Central",
+   "fecha": "Fecha 9",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "31'",
+     "team": 1,
+     "texts": [
+      "Adrián Balboa"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 3,
+     "time": "62'",
+     "team": 2,
+     "texts": [
+      "Iván Tapia"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Lautaro Gómez",
+      "player_sname": "Gómez",
+      "time": 45,
+      "time_to_display": "45'+3"
+     }
+    ],
+    [
+     {
+      "player_name": "Iván Tapia",
+      "player_sname": "Tapia",
+      "time": 62,
+      "time_to_display": "62'",
+      "goal_type": "Pen"
+     }
+    ]
    ]
   },
   {
    "partido": "Instituto vs Estudiantes RC",
    "fecha": "Fecha 9",
-   "equipo": "Estudiantes RC",
-   "tipo": "amarilla",
-   "texto": "Ruben Forestello",
-   "evento": {
-    "type": 4,
-    "time": "72'",
-    "team": 2,
-    "texts": [
-     "Ruben Forestello"
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "75'",
+     "team": 2,
+     "texts": [
+      "Marcos Ledesma"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Giuliano Cerato",
+      "player_sname": "Cerato",
+      "time": 49,
+      "time_to_display": "49'"
+     },
+     {
+      "player_name": "Leonel Mosevich",
+      "player_sname": "Mosevich",
+      "time": 73,
+      "time_to_display": "73'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Lucas Bruera",
-    "Matías Valenti",
-    "Gonzalo Maffini",
-    "Juan Antonini",
-    "Alejandro Cabrera",
-    "Fernando Rodríguez",
-    "Raúl Lozano",
-    "Gabriel Alanís",
-    "Tomas Gonzalez",
-    "Ibrahim Hesar",
-    "Mauro Valiente",
-    "Siro Rosane",
-    "Juan Chalá",
-    "Javier Ferreira",
-    "Martín Garnerone",
-    "Gonzalo Gonzalez",
-    "Mateo Bajamich",
-    "Lucas Baños",
-    "Facundo Cobos",
-    "Agustín Lastra",
-    "Agustin Quiroga",
-    "Joaquín Rivero"
+    [
+     {
+      "player_name": "Marcos Ledesma",
+      "player_sname": "Ledesma",
+      "time": 75,
+      "time_to_display": "75'",
+      "goal_type": "E.C"
+     }
+    ]
    ]
   },
   {
-   "partido": "Aldosivi vs Sarmiento Junín",
+   "partido": "Central Córdoba SdE vs Defensa y Justicia",
+   "fecha": "Fecha 10",
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "90'+6",
+     "team": 1,
+     "texts": [
+      "Leonardo Sequeira"
+     ],
+     "player_jersey_num": 28
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Marco Iacobellis",
+      "player_sname": "Iacobellis",
+      "time": 71,
+      "time_to_display": "71'"
+     },
+     {
+      "player_name": "Leonardo Sequeira",
+      "player_sname": "Sequeira",
+      "time": 90,
+      "time_to_display": "90'+6",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Jeremías Lucco",
+      "player_sname": "Lucco",
+      "time": 36,
+      "time_to_display": "36'"
+     },
+     {
+      "player_name": "Leandro Fernandez",
+      "player_sname": "Leandro Fernandez",
+      "time": 53,
+      "time_to_display": "53'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Instituto vs Talleres de Córdoba",
+   "fecha": "Fecha 10",
+   "marcador": [
+    3,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "80'",
+     "team": 1,
+     "texts": [
+      "Ezequiel Unsain"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Giuliano Cerato",
+      "player_sname": "Cerato",
+      "time": 50,
+      "time_to_display": "50'"
+     },
+     {
+      "player_name": "Fernando Alarcón",
+      "player_sname": "Alarcón",
+      "time": 58,
+      "time_to_display": "58'"
+     },
+     {
+      "player_name": "Ezequiel Unsain",
+      "player_sname": "Unsain",
+      "time": 80,
+      "time_to_display": "80'",
+      "goal_type": "E.C"
+     }
+    ],
+    [
+     {
+      "player_name": "Alexandro Maidana",
+      "player_sname": "Maidana",
+      "time": 66,
+      "time_to_display": "66'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Lanús vs Estudiantes de La Plata",
+   "fecha": "Fecha 10",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "11'",
+     "team": 2,
+     "texts": [
+      "Adolfo Gaich"
+     ],
+     "player_jersey_num": 19
+    },
+    {
+     "type": 3,
+     "time": "60'",
+     "team": 1,
+     "texts": [
+      "Eduardo Salvio"
+     ],
+     "player_jersey_num": 11
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Gonzalo Lobos",
+      "player_sname": "Lobos",
+      "time": 13,
+      "time_to_display": "13'"
+     },
+     {
+      "player_name": "Eduardo Salvio",
+      "player_sname": "Salvio",
+      "time": 60,
+      "time_to_display": "60'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Leandro Gonzalez Pirez",
+      "player_sname": "Pirez",
+      "time": 84,
+      "time_to_display": "84'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Estudiantes de La Plata vs Gimnasia de Mendoza",
+   "fecha": "Fecha 11",
+   "marcador": [
+    3,
+    0
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "83'",
+     "team": 1,
+     "texts": [
+      "Edwuin Cetré"
+     ],
+     "player_jersey_num": 18
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Edwuin Cetré",
+      "player_sname": "Cetré",
+      "time": 83,
+      "time_to_display": "83'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Fabricio Pérez",
+      "player_sname": "Pérez",
+      "time": 90,
+      "time_to_display": "90'"
+     },
+     {
+      "player_name": "Fabricio Pérez",
+      "player_sname": "Pérez",
+      "time": 90,
+      "time_to_display": "90'+4"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Gimnasia La Plata vs Atlético Tucumán",
    "fecha": "Fecha 12",
-   "equipo": "Aldosivi",
-   "tipo": "amarilla",
-   "texto": "Javier Sanguinetti",
-   "evento": {
-    "type": 4,
-    "time": "27'",
-    "team": 1,
-    "texts": [
-     "Javier Sanguinetti"
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "90'+5",
+     "team": 1,
+     "texts": [
+      "Marcelo Torres"
+     ],
+     "player_jersey_num": 32
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Marcelo Torres",
+      "player_sname": "Torres",
+      "time": 90,
+      "time_to_display": "90'+5",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Ignacio Chicco",
-    "Braian Cufré",
-    "Nicolás Zalazar",
-    "Leonardo Sigali",
-    "Rodrigo Gonzalez",
-    "Nico Gaitán",
-    "Lucas Castro",
-    "Nicolas Linares",
-    "Martín García",
-    "Agustín Palavecino",
-    "Nicolás Cordero",
-    "Lautaro Chávez",
-    "Bautista Dadín",
-    "Tomás Fernández",
-    "Santiago Moya",
-    "Felipe Anso",
-    "Néstor Breitenbruch",
-    "Kevin Baez",
-    "Matías Godoy",
-    "Natanael Guzmán",
-    "Federico Laurelli",
-    "Francisco Perruzzi"
+    [
+     {
+      "player_name": "Lautaro Godoy",
+      "player_sname": "Godoy",
+      "time": 83,
+      "time_to_display": "83'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Barracas Central vs Huracán",
+   "partido": "Central Córdoba SdE vs Estudiantes de La Plata",
    "fecha": "Fecha 12",
-   "equipo": "Huracán",
-   "tipo": "amarilla",
-   "texto": "Diego Martínez",
-   "evento": {
-    "type": 4,
-    "time": "90'+5",
-    "team": 2,
-    "texts": [
-     "Diego Martínez"
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "45'+5",
+     "team": 2,
+     "texts": [
+      "Edwuin Cetré"
+     ],
+     "player_jersey_num": 18
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Leonardo Sequeira",
+      "player_sname": "Sequeira",
+      "time": 37,
+      "time_to_display": "37'"
+     },
+     {
+      "player_name": "Michael Santos",
+      "player_sname": "Santos",
+      "time": 38,
+      "time_to_display": "38'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Hernán Galíndez",
-    "César Ibáñez",
-    "Maximo Palazzo",
-    "Fabio Pereyra",
-    "Lucas Blondel",
-    "Facundo Waller",
-    "Rodrigo Fernández Cedrés",
-    "Juan Bisanz",
-    "Facundo Kalinger",
-    "Oscar Cortés",
-    "Jordy Caicedo",
-    "Bruno Barticciotto",
-    "Leonardo Gil",
-    "Leandro Lescano",
-    "Thaiel Peralta",
-    "Ignacio Pussetto",
-    "Ignacio Campo",
-    "Sebástian Meza",
-    "Lautaro Mora",
-    "Hugo Nervo",
-    "Emmanuel Ojeda",
-    "Oscar Romero",
-    "Federico Vera"
+    [
+     {
+      "player_name": "Miguel Monsalve",
+      "player_sname": "Monsalve",
+      "time": 22,
+      "time_to_display": "22'"
+     },
+     {
+      "player_name": "Edwuin Cetré",
+      "player_sname": "Cetré",
+      "time": 45,
+      "time_to_display": "45'+5",
+      "goal_type": "Pen"
+     }
+    ]
    ]
   },
   {
-   "partido": "Rosario Central vs Huracán",
-   "fecha": "Fecha 14",
-   "equipo": "Huracán",
-   "tipo": "amarilla",
-   "texto": "Diego Martínez",
-   "evento": {
-    "type": 4,
-    "time": "45'+2",
-    "team": 2,
-    "texts": [
-     "Diego Martínez"
+   "partido": "Rosario Central vs Independiente Rivadavia",
+   "fecha": "Fecha 12",
+   "marcador": [
+    5,
+    0
+   ],
+   "eventosGol1": [
+    4,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "11'",
+     "team": 1,
+     "texts": [
+      "Ángel Di María"
+     ],
+     "player_jersey_num": 11
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Ángel Di María",
+      "player_sname": "Di María",
+      "time": 11,
+      "time_to_display": "11'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Jáminton Campaz",
+      "player_sname": "Campaz",
+      "time": 51,
+      "time_to_display": "51'"
+     },
+     {
+      "player_name": "Ángel Di María",
+      "player_sname": "Di María",
+      "time": 57,
+      "time_to_display": "57'"
+     },
+     {
+      "player_name": "Enzo Copetti",
+      "player_sname": "Copetti",
+      "time": 69,
+      "time_to_display": "69'"
+     },
+     {
+      "player_name": "Marco Ruben",
+      "player_sname": "Ruben",
+      "time": 74,
+      "time_to_display": "74'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Hernán Galíndez",
-    "César Ibáñez",
-    "Maximo Palazzo",
-    "Fabio Pereyra",
-    "Lucas Blondel",
-    "Facundo Waller",
-    "Rodrigo Fernández Cedrés",
-    "Emmanuel Ojeda",
-    "Juan Bisanz",
-    "Jordy Caicedo",
-    "Oscar Cortés",
-    "Bruno Barticciotto",
-    "Leonardo Gil",
-    "Leandro Lescano",
-    "Thaiel Peralta",
-    "Ignacio Pussetto",
-    "Facundo Kalinger",
-    "Fabrizio Martínez",
-    "Sebástian Meza",
-    "Hugo Nervo",
-    "Santino Raynelli",
-    "Oscar Romero",
-    "Federico Vera"
+    null
    ]
   },
   {
-   "partido": "Almagro vs San Martín Tucumán",
+   "partido": "Platense vs Argentinos Juniors",
+   "fecha": "Fecha 12",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "45'",
+     "team": 2,
+     "texts": [
+      "Tomás Molina"
+     ],
+     "player_jersey_num": 27
+    },
+    {
+     "type": 3,
+     "time": "70'",
+     "team": 1,
+     "texts": [
+      "Franco Zapiola"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Franco Zapiola",
+      "player_sname": "Franco Zapiola",
+      "time": 70,
+      "time_to_display": "70'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Diego Porcel",
+      "player_sname": "Porcel",
+      "time": 11,
+      "time_to_display": "11'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Lanús vs Vélez Sarsfield",
+   "fecha": "Fecha 12",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "31'",
+     "team": 2,
+     "texts": [
+      "Juan Cruz Policella"
+     ],
+     "player_jersey_num": 37
+    },
+    {
+     "type": 10,
+     "time": "90'+4",
+     "team": 1,
+     "texts": [
+      "Ramiro Carrera"
+     ],
+     "player_jersey_num": 23
+    },
+    {
+     "type": 2,
+     "time": "90'+5",
+     "team": 1,
+     "texts": [
+      "Tomás Marchiori"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Sasha Marcich",
+      "player_sname": "Marcich",
+      "time": 59,
+      "time_to_display": "59'"
+     },
+     {
+      "player_name": "Tomás Marchiori",
+      "player_sname": "Marchiori",
+      "time": 90,
+      "time_to_display": "90'+5",
+      "goal_type": "E.C"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Huracán vs Gimnasia La Plata",
+   "fecha": "Fecha 13",
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    0,
+    2
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "5'",
+     "team": 1,
+     "texts": [
+      "Facundo Waller"
+     ],
+     "player_jersey_num": 15
+    },
+    {
+     "type": 3,
+     "time": "83'",
+     "team": 1,
+     "texts": [
+      "Jordy Caicedo"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Jordy Caicedo",
+      "player_sname": "Caicedo",
+      "time": 83,
+      "time_to_display": "83'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Nacho Fernández",
+      "player_sname": "Fernandez",
+      "time": 18,
+      "time_to_display": "18'"
+     },
+     {
+      "player_name": "Germán Conti",
+      "player_sname": "Conti",
+      "time": 90,
+      "time_to_display": "90'+7"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Racing Club vs Independiente",
+   "fecha": "Fecha 13",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "65'",
+     "team": 2,
+     "texts": [
+      "Maximiliano Meza"
+     ],
+     "player_jersey_num": 8
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Matias Zaracho",
+      "player_sname": "Zaracho",
+      "time": 29,
+      "time_to_display": "29'"
+     }
+    ],
+    [
+     {
+      "player_name": "Maximiliano Meza",
+      "player_sname": "Meza",
+      "time": 65,
+      "time_to_display": "65'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Estudiantes de La Plata vs San Lorenzo",
+   "fecha": "Fecha 13",
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    0,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "14'",
+     "team": 1,
+     "texts": [
+      "Edwuin Cetré"
+     ],
+     "player_jersey_num": 18
+    },
+    {
+     "type": 10,
+     "time": "24'",
+     "team": 2,
+     "texts": [
+      "Facundo Farías"
+     ],
+     "player_jersey_num": 38
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Edwuin Cetré",
+      "player_sname": "Cetré",
+      "time": 14,
+      "time_to_display": "14'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Guzman Corujo",
+      "player_sname": "Corujo",
+      "time": 44,
+      "time_to_display": "44'"
+     },
+     {
+      "player_name": "Facundo Gulli",
+      "player_sname": "Gulli",
+      "time": 90,
+      "time_to_display": "90'+5"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Sarmiento Junín vs Barracas Central",
+   "fecha": "Fecha 13",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 10,
+     "time": "24'",
+     "team": 2,
+     "texts": [
+      "Rodrigo Bogarín"
+     ],
+     "player_jersey_num": 28
+    },
+    {
+     "type": 3,
+     "time": "78'",
+     "team": 2,
+     "texts": [
+      "Rodrigo Insúa"
+     ],
+     "player_jersey_num": 6
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Jhon Renteria",
+      "player_sname": "Renteria",
+      "time": 14,
+      "time_to_display": "14'"
+     }
+    ],
+    [
+     {
+      "player_name": "Rodrigo Insúa",
+      "player_sname": "Insúa",
+      "time": 78,
+      "time_to_display": "78'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Deportivo Morón vs Defensores de Belgrano",
+   "fecha": "Fecha 1",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "57'",
+     "team": 1,
+     "texts": [
+      "Franco Fagundez"
+     ],
+     "player_jersey_num": 10
+    },
+    {
+     "type": 6,
+     "time": "88'",
+     "team": 1,
+     "texts": [
+      "Elias Contreras"
+     ],
+     "player_jersey_num": 15
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Franco Fagundez",
+      "player_sname": "Fagundez",
+      "time": 57,
+      "time_to_display": "57'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Patricio Moyano",
+      "player_sname": "Moyano",
+      "time": 32,
+      "time_to_display": "32'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Deportivo Madryn vs Deportivo Morón",
    "fecha": "Fecha 2",
-   "equipo": "San Martín Tucumán",
-   "tipo": "amarilla",
-   "texto": "Andrés Yllana",
-   "evento": {
-    "type": 4,
-    "time": "58'",
-    "team": 2,
-    "texts": [
-     "Andrés Yllana"
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "11'",
+     "team": 1,
+     "texts": [
+      "Franco Vázquez"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 3,
+     "time": "67'",
+     "team": 2,
+     "texts": [
+      "Franco Toloza"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Franco Vázquez",
+      "player_sname": "Vázquez",
+      "time": 11,
+      "time_to_display": "11'",
+      "goal_type": "E.C"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Dario Sand",
-    "Alan Cisnero",
-    "Ezequiel Parnisari",
-    "Nicolas Ferreyra",
-    "Victor Salazar",
-    "Guillermo Rodriguez",
-    "Matías García",
-    "Santiago Briñone",
-    "Laureano Rodríguez",
-    "Facundo Pons",
-    "Benjamín Borasi",
-    "Nicolás Castro",
-    "Diego Diellos",
-    "Jorge Juarez",
-    "Tiago Peñalba",
-    "Gonzalo Rodríguez",
-    "Lucas Diarte",
-    "Kevin López",
-    "Nahuel Manganelli",
-    "Lautaro Ovando"
+    [
+     {
+      "player_name": "Franco Toloza",
+      "player_sname": "Toloza",
+      "time": 67,
+      "time_to_display": "67'",
+      "goal_type": "Pen"
+     }
+    ]
    ]
   },
   {
-   "partido": "Defensores de Belgrano vs Godoy Cruz",
+   "partido": "Chaco For Ever vs San Telmo",
    "fecha": "Fecha 2",
-   "equipo": "Defensores de Belgrano",
-   "tipo": "amarilla",
-   "texto": "Jorge Fabián Nardozza",
-   "evento": {
-    "type": 4,
-    "time": "80'",
-    "team": 1,
-    "texts": [
-     "Jorge Fabián Nardozza"
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    0,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "20'",
+     "team": 1,
+     "texts": [
+      "Gabriel Ramírez"
+     ],
+     "player_jersey_num": 5
+    },
+    {
+     "type": 6,
+     "time": "82'",
+     "team": 2,
+     "texts": [
+      "Elias Peralta"
+     ],
+     "player_jersey_num": 10
+    },
+    {
+     "type": 3,
+     "time": "90'+6",
+     "team": 1,
+     "texts": [
+      "Leonardo Marinucci"
+     ],
+     "player_jersey_num": 18
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Gabriel Ramírez",
+      "player_sname": "Ramírez",
+      "time": 20,
+      "time_to_display": "20'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Leonardo Marinucci",
+      "player_sname": "Marinucci",
+      "time": 90,
+      "time_to_display": "90'+6",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Alejandro Medina",
-    "Fabian Sanchez",
-    "Gonzalo Gamarra",
-    "Alan Perez",
-    "Diego Magallanes",
-    "Patricio Moyano",
-    "Agustín Benítez",
-    "Ignacio Gutierrez",
-    "Brian Gómez",
-    "Enzo Gonzalez",
-    "Ezequiel Aguirre",
-    "Leandro Ciccolini",
-    "Jonathan Dellarossa",
-    "Juan Monteagudo",
-    "Ian Perez",
-    "Francisco Tcherkaski",
-    "Diego García",
-    "Luis Jerez Silva",
-    "Nicolás Nocetti",
-    "Nicolás Vaquer"
+    [
+     {
+      "player_name": "Emanuel Díaz",
+      "player_sname": "Diaz",
+      "time": 29,
+      "time_to_display": "29'"
+     },
+     {
+      "player_name": "Gabriel Paredes",
+      "player_sname": "Gabriel Paredes",
+      "time": 44,
+      "time_to_display": "44'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Gimnasia y Tiro vs Almagro",
+   "fecha": "Fecha 3",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "65'",
+     "team": 1,
+     "texts": [
+      "Lautaro Gordillo"
+     ],
+     "player_jersey_num": 11
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Lautaro Gordillo",
+      "player_sname": "Gordillo",
+      "time": 45,
+      "time_to_display": "45'+3"
+     },
+     {
+      "player_name": "Lautaro Gordillo",
+      "player_sname": "Gordillo",
+      "time": 65,
+      "time_to_display": "65'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Deportivo Morón vs Central Norte",
+   "fecha": "Fecha 3",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "71'",
+     "team": 1,
+     "texts": [
+      "Juan Manuel Olivares"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Santiago Kubiszyn",
+      "player_sname": "Kubiszyn",
+      "time": 58,
+      "time_to_display": "58'"
+     },
+     {
+      "player_name": "Juan Manuel Olivares",
+      "player_sname": "Olivares",
+      "time": 71,
+      "time_to_display": "71'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "San Telmo vs Racing de Córdoba",
+   "fecha": "Fecha 4",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "20'",
+     "team": 1,
+     "texts": [
+      "Martín Batallini"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Elias Britez",
+      "player_sname": "Brítez",
+      "time": 14,
+      "time_to_display": "14'"
+     },
+     {
+      "player_name": "Martín Batallini",
+      "player_sname": "Batallini",
+      "time": 20,
+      "time_to_display": "20'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
    ]
   },
   {
    "partido": "Ciudad De Bolivar vs Estudiantes",
    "fecha": "Fecha 4",
-   "equipo": "Ciudad De Bolivar",
-   "tipo": "amarilla",
-   "texto": "Diego Funes",
-   "evento": {
-    "type": 4,
-    "time": "90'+6",
-    "team": 1,
-    "texts": [
-     "Diego Funes"
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "66'",
+     "team": 2,
+     "texts": [
+      "Ian Vera"
+     ],
+     "player_jersey_num": 19
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Facundo Mucignat",
+      "player_sname": "Mucignat",
+      "time": 3,
+      "time_to_display": "3'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Agustín Rufinetti",
-    "Federico Peralta",
-    "Elías Martínez",
-    "Ezequiel Navarro",
-    "Agustín Paredes",
-    "Alex Díaz",
-    "Nahuel Yeri",
-    "Facundo Mucignat",
-    "Maximiliano Gutiérrez",
-    "Jonathan Maciel",
-    "Arnaldo González",
-    "Jonathan Chacón",
-    "Brian Quintana",
-    "Agustín Rodríguez",
-    "Guillermo Sánchez",
-    "Axel Carrión",
-    "Agustin Diaz",
-    "Tobías Fernández",
-    "Leonel Ruiz",
-    "Marcos Sotelo"
+    [
+     {
+      "player_name": "Ian Vera",
+      "player_sname": "Vera",
+      "time": 66,
+      "time_to_display": "66'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Ian Vera",
+      "player_sname": "Vera",
+      "time": 84,
+      "time_to_display": "84'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Temperley vs San Martín Tucumán",
+   "partido": "Acassuso vs San Miguel",
    "fecha": "Fecha 4",
-   "equipo": "San Martín Tucumán",
-   "tipo": "amarilla",
-   "texto": "Alejandro Orfila",
-   "evento": {
-    "type": 4,
-    "time": "33'",
-    "team": 2,
-    "texts": [
-     "Alejandro Orfila"
+   "marcador": [
+    0,
+    2
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "90'+8",
+     "team": 2,
+     "texts": [
+      "Roman Etcheverri"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Iván Ramírez",
+      "player_sname": "Ramírez",
+      "time": 16,
+      "time_to_display": "16'"
+     },
+     {
+      "player_name": "Roman Etcheverri",
+      "player_sname": "Etcheverri",
+      "time": 90,
+      "time_to_display": "90'+8",
+      "goal_type": "E.C"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Deportivo Madryn vs Los Andes",
+   "fecha": "Fecha 4",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 6,
+     "time": "8'",
+     "team": 2,
+     "texts": [
+      "Mauricio Asenjo"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 3,
+     "time": "34'",
+     "team": 1,
+     "texts": [
+      "Marcelo Meli"
+     ],
+     "player_jersey_num": 8
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Diego Martinez",
+      "player_sname": "Martinez",
+      "time": 22,
+      "time_to_display": "22'"
+     },
+     {
+      "player_name": "Marcelo Meli",
+      "player_sname": "Meli",
+      "time": 34,
+      "time_to_display": "34'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Nahuel Manganelli",
-    "Lucas Diarte",
-    "Guillermo Rodriguez",
-    "Ezequiel Parnisari",
-    "Victor Salazar",
-    "Agustín Graneros",
-    "Anibal Paz",
-    "Nicolás Castro",
-    "Santiago Briñone",
-    "Jorge Juarez",
-    "Luca Arfaras",
-    "Diego Diellos",
-    "Matías García",
-    "Leonardo Monroy",
-    "Laureano Rodríguez",
-    "Milton Ríos",
-    "Nahuel Gallardo",
-    "Alejandro Galván",
-    "Tiago Peñalba",
-    "Dario Sand"
+    [
+     {
+      "player_name": "Sergio Ortiz",
+      "player_sname": "Ortiz",
+      "time": 6,
+      "time_to_display": "6'"
+     }
+    ]
    ]
   },
   {
    "partido": "Almirante Brown vs Mitre SdE",
    "fecha": "Fecha 4",
-   "equipo": "Mitre SdE",
-   "tipo": "amarilla",
-   "texto": "Cristian Mazzón",
-   "evento": {
-    "type": 4,
-    "time": "69'",
-    "team": 2,
-    "texts": [
-     "Cristian Mazzón"
+   "marcador": [
+    3,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "79'",
+     "team": 1,
+     "texts": [
+      "Santiago Vera"
+     ],
+     "player_jersey_num": 18
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Máximo Levi",
+      "player_sname": "Levi",
+      "time": 24,
+      "time_to_display": "24'"
+     },
+     {
+      "player_name": "Santiago Vera",
+      "player_sname": "Santiago Vera",
+      "time": 79,
+      "time_to_display": "79'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Javier Martinez",
+      "player_sname": "J. Martínez",
+      "time": 90,
+      "time_to_display": "90'+4"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Joaquín Ledesma",
-    "Franco Ferrari",
-    "Maximiliano Romero",
-    "Pablo Minissale",
-    "Mieres",
-    "Mateo Maldonado",
-    "Enzo Avaro",
-    "Juan Alesandroni",
-    "Martín Vázquez",
-    "Alan López",
-    "Marcos Machado",
-    "Rodrigo González",
-    "Mateo Montenegro",
-    "Agustín Ramírez",
-    "Juan Pablo Zárate",
-    "Daniel Abello",
-    "Luciano Correa",
-    "Matias Ferrari",
-    "Segundo Rodríguez",
-    "Gastón Unrein"
-   ]
-  },
-  {
-   "partido": "Central Norte vs Godoy Cruz",
-   "fecha": "Fecha 4",
-   "equipo": "Central Norte",
-   "tipo": "amarilla",
-   "texto": "Gaston Gil Romero",
-   "evento": {
-    "type": 4,
-    "time": "55'",
-    "team": 1,
-    "texts": [
-     "Gaston Gil Romero"
-    ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Enzo Vazquez",
-    "Pedro Sanz",
-    "Maximiliano Padilla",
-    "Elias Calderón",
-    "Agustín Lamosa",
-    "Franco Vedoya",
-    "Matias Villarreal",
-    "Maximiliano Ribero",
-    "Matias Moravec",
-    "Francisco Borda",
-    "Tiago Taobas",
-    "Leonardo Felissia",
-    "Kevin Isa Luna",
-    "Julián Lopez",
-    "Gianluca Mancuso",
-    "Joaquin Mateo",
-    "Fabricio Hass",
-    "Arian Pucheta",
-    "Mauricio Rosales",
-    "Gonzalo Alvez"
+    [
+     {
+      "player_name": "Marcos Machado",
+      "player_sname": "Machado",
+      "time": 45,
+      "time_to_display": "45'+1"
+     }
+    ]
    ]
   },
   {
    "partido": "San Miguel vs San Telmo",
    "fecha": "Fecha 5",
-   "equipo": "San Miguel",
-   "tipo": "amarilla",
-   "texto": "Gustavo Coleoni",
-   "evento": {
-    "type": 4,
-    "time": "68'",
-    "team": 1,
-    "texts": [
-     "Gustavo Coleoni"
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "45'+4",
+     "team": 1,
+     "texts": [
+      "Bruno Nasta"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Bruno Nasta",
+      "player_sname": "Nasta",
+      "time": 45,
+      "time_to_display": "45'+4",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Juan Manuel Lungarzo",
-    "Facundo Cardozo",
-    "Kevin Ceceri",
-    "Dixon Rentería",
-    "Luis Perez",
-    "Mateo Serra",
-    "Iván Ramírez",
-    "Lucas Brochero",
-    "Lucas Delgado",
-    "Bruno Nasta",
-    "Máximo Oses",
-    "Franco Aguirre",
-    "Felipe Coronel",
-    "Tomás Díaz",
-    "Jorge Ferrero",
-    "Daniel Juárez",
-    "Damián Adín",
-    "Fabrizio Almeida",
-    "Leandro Desábato",
-    "Mateo Reynoso"
+    [
+     {
+      "player_name": "Franco Tisera",
+      "player_sname": "Tisera",
+      "time": 87,
+      "time_to_display": "87'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Deportivo Madryn vs Estudiantes",
-   "fecha": "Fecha 6",
-   "equipo": "Estudiantes",
-   "tipo": "amarilla",
-   "texto": "Juan Sara",
-   "evento": {
-    "type": 4,
-    "time": "21'",
-    "team": 2,
-    "texts": [
-     "Juan Sara"
+   "partido": "Midland vs Almagro",
+   "fecha": "Fecha 5",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "78'",
+     "team": 2,
+     "texts": [
+      "Emilio Porro"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Maximiliano Rogoski",
+      "player_sname": "Rogoski",
+      "time": 39,
+      "time_to_display": "39'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Facundo Vila",
-    "Tomas Squie",
-    "Balthazar Bernardi",
-    "Jorge Benítez",
-    "Andrés Berizovsky",
-    "Bautista Degregorio",
-    "Jorge Correa",
-    "Juan Manuel Sánchez",
-    "Facundo Ardiles",
-    "Dario Rostagno",
-    "Tobias Salas",
-    "Enzo Acosta",
-    "Santiago Camacho",
-    "Alejandro Melo",
-    "Tomas Nuñez",
-    "Federico Sena",
-    "Martin Albarracin",
-    "Fernando Duré",
-    "Rodrigo Fumo",
-    "Joel Lucero"
+    [
+     {
+      "player_name": "Emilio Porro",
+      "player_sname": "E. Porro",
+      "time": 78,
+      "time_to_display": "78'",
+      "goal_type": "E.C"
+     }
+    ]
    ]
   },
   {
    "partido": "Tristan Suárez vs Gimnasia de Jujuy",
    "fecha": "Fecha 6",
-   "equipo": "Gimnasia de Jujuy",
-   "tipo": "amarilla",
-   "texto": "Hernán Pellerano",
-   "evento": {
-    "type": 4,
-    "time": "75'",
-    "team": 2,
-    "texts": [
-     "Hernán Pellerano"
+   "marcador": [
+    3,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "82'",
+     "team": 1,
+     "texts": [
+      "Maximiliano Álvarez"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 3,
+     "time": "89'",
+     "team": 1,
+     "texts": [
+      "Maximiliano Luayza"
+     ],
+     "player_jersey_num": 16
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Jonathan Berón",
+      "player_sname": "Berón",
+      "time": 21,
+      "time_to_display": "21'"
+     },
+     {
+      "player_name": "Maximiliano Álvarez",
+      "player_sname": "Alvarez",
+      "time": 82,
+      "time_to_display": "82'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Maximiliano Luayza",
+      "player_sname": "Luayza",
+      "time": 89,
+      "time_to_display": "89'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Milton Alvarez",
-    "Emiliano Endrizzi",
-    "Nicolas Dematei",
-    "Guillermo Cosaro",
-    "Diego López",
-    "Maximiliano Casa",
-    "Francisco Maidana",
-    "Hugo Soria",
-    "Federico Paradela",
-    "Cristian Menéndez",
-    "Abel Argañaraz",
-    "Octavio Bianchi",
-    "Mauro Cachi",
-    "David Gallardo",
-    "Francisco Molina",
-    "Juan Pablo Córdoba",
-    "Gonzalo Gómez",
-    "Martin Lazarte",
-    "Delfor Minervino",
-    "Claudio Pombo"
+    null
    ]
   },
   {
-   "partido": "Gimnasia y Tiro vs Central Norte",
+   "partido": "Temperley vs Atlanta",
+   "fecha": "Fecha 6",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "34'",
+     "team": 1,
+     "texts": [
+      "Tomás Rojas"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Tomás Rojas",
+      "player_sname": "Rojas",
+      "time": 34,
+      "time_to_display": "34'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Gabriel Hauche",
+      "player_sname": "Hauche",
+      "time": 80,
+      "time_to_display": "80'"
+     }
+    ],
+    [
+     {
+      "player_name": "Alejandro Quintana",
+      "player_sname": "Quintana",
+      "time": 24,
+      "time_to_display": "24'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Patronato vs Colegiales",
+   "fecha": "Fecha 6",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "38'",
+     "team": 1,
+     "texts": [
+      "Renzo Reynaga"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Renzo Reynaga",
+      "player_sname": "Reynaga",
+      "time": 38,
+      "time_to_display": "38'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Federico Bravo",
+      "player_sname": "Bravo",
+      "time": 52,
+      "time_to_display": "52'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Güemes vs Agropecuario",
+   "fecha": "Fecha 6",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "76'",
+     "team": 2,
+     "texts": [
+      "Diego Vásquez"
+     ],
+     "player_jersey_num": 16
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Milton Gerez",
+      "player_sname": "Gerez",
+      "time": 24,
+      "time_to_display": "24'"
+     }
+    ],
+    [
+     {
+      "player_name": "Diego Vásquez",
+      "player_sname": "Vásquez",
+      "time": 76,
+      "time_to_display": "76'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Nueva Chicago vs Gimnasia y Tiro",
+   "fecha": "Fecha 6",
+   "marcador": [
+    3,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "35'",
+     "team": 1,
+     "texts": [
+      "Lucas Ambrogio"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Lucas Ambrogio",
+      "player_sname": "Ambrogio",
+      "time": 35,
+      "time_to_display": "35'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Sebastian Cocimano",
+      "player_sname": "Sebastian Cocimano",
+      "time": 42,
+      "time_to_display": "42'"
+     },
+     {
+      "player_name": "Alan Ruiz",
+      "player_sname": "Ruiz",
+      "time": 74,
+      "time_to_display": "74'"
+     }
+    ],
+    [
+     {
+      "player_name": "Fabricio Rojas",
+      "player_sname": "Rojas",
+      "time": 45,
+      "time_to_display": "45'+1"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "San Telmo vs Quilmes",
    "fecha": "Fecha 7",
-   "equipo": "Central Norte",
-   "tipo": "amarilla",
-   "texto": "Adrian Bastia",
-   "evento": {
-    "type": 4,
-    "time": "42'",
-    "team": 2,
-    "texts": [
-     "Adrian Bastia"
-    ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Enzo Vazquez",
-    "Pedro Sanz",
-    "Elias Calderón",
-    "Agustín Lamosa",
-    "Mauricio Rosales",
-    "Joaquin Mateo",
-    "Franco Vedoya",
-    "Matias Villarreal",
-    "Gianluca Mancuso",
-    "Matias Moravec",
-    "Julián Lopez",
-    "Agustín Aleo",
-    "Francisco Borda",
-    "Agustín Bustinduy",
-    "Leonardo Felissia",
-    "Kevin Fernández",
-    "Gonzalo Castilla",
-    "Fabricio Hass",
-    "Kevin Isa Luna",
-    "Tiago Taobas"
+   "marcador": [
+    0,
+    3
+   ],
+   "eventosGol1": [
+    0,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "28'",
+     "team": 2,
+     "texts": [
+      "Agustín Lavezzi"
+     ],
+     "player_jersey_num": 7
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Agustín Lavezzi",
+      "player_sname": "Lavezzi",
+      "time": 28,
+      "time_to_display": "28'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Ulises Vera",
+      "player_sname": "Vera",
+      "time": 43,
+      "time_to_display": "43'"
+     },
+     {
+      "player_name": "Alexis Domínguez",
+      "player_sname": "Domínguez",
+      "time": 60,
+      "time_to_display": "60'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Midland vs Temperley",
+   "partido": "Godoy Cruz vs Acassuso",
    "fecha": "Fecha 8",
-   "equipo": "Temperley",
-   "tipo": "amarilla",
-   "texto": "Nicolas Domingo",
-   "evento": {
-    "type": 4,
-    "time": "10'",
-    "team": 2,
-    "texts": [
-     "Nicolas Domingo"
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "66'",
+     "team": 1,
+     "texts": [
+      "Nahuel Ulariaga"
+     ],
+     "player_jersey_num": 11
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Nahuel Ulariaga",
+      "player_sname": "Ulariaga",
+      "time": 66,
+      "time_to_display": "66'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Vicente Poggi",
+      "player_sname": "Poggi",
+      "time": 84,
+      "time_to_display": "84'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Ezequiel Mastrolia",
-    "Lucas Angelini",
-    "Valentin Aguiñagalde",
-    "Santiago Flores",
-    "Lorenzo Monti",
-    "Gabriel Esparza",
-    "Valentino Werro",
-    "Nicolas Avalos",
-    "Franco Benitez",
-    "Facundo Kruger",
-    "Gerónimo Tomasetti",
-    "Matías Calzón",
-    "Franco Díaz",
-    "Gabriel Hauche",
-    "Nicolas Molina",
-    "Oswaldo Pacheco",
-    "Fernando Brandán",
-    "Lisandro Morrone",
-    "Gian Nardelli",
-    "Lucas Richarte"
+    null
    ]
   },
   {
-   "partido": "San Martín Tucumán vs Chacarita Juniors",
+   "partido": "Colón vs San Miguel",
    "fecha": "Fecha 8",
-   "equipo": "San Martín Tucumán",
-   "tipo": "amarilla",
-   "texto": "Cristian Grabinski",
-   "evento": {
-    "type": 4,
-    "time": "20'",
-    "team": 1,
-    "texts": [
-     "Cristian Grabinski"
+   "marcador": [
+    3,
+    0
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "63'",
+     "team": 1,
+     "texts": [
+      "Ignacio Lago"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Ignacio Antonio",
+      "player_sname": "Antonio",
+      "time": 6,
+      "time_to_display": "6'"
+     },
+     {
+      "player_name": "Ignacio Antonio",
+      "player_sname": "Antonio",
+      "time": 13,
+      "time_to_display": "13'"
+     },
+     {
+      "player_name": "Ignacio Lago",
+      "player_sname": "Lago",
+      "time": 63,
+      "time_to_display": "63'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Dario Sand",
-    "Lucas Diarte",
-    "Guillermo Rodriguez",
-    "Nicolas Ferreyra",
-    "Victor Salazar",
-    "Nicolás Castro",
-    "Laureano Rodríguez",
-    "Kevin López",
-    "Luca Arfaras",
-    "Diego Diellos",
-    "Alan Cisnero",
-    "Santiago Briñone",
-    "Luciano Ferreyra",
-    "Matías García",
-    "Jorge Juarez",
-    "Facundo Pons",
-    "Benjamín Borasi",
-    "Nahuel Gallardo",
-    "Nahuel Manganelli",
-    "Tiago Peñalba"
+    null
+   ]
+  },
+  {
+   "partido": "Deportivo Morón vs San Telmo",
+   "fecha": "Fecha 8",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "77'",
+     "team": 1,
+     "texts": [
+      "Juan Manuel Olivares"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Juan Manuel Olivares",
+      "player_sname": "Olivares",
+      "time": 77,
+      "time_to_display": "77'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
    ]
   },
   {
    "partido": "San Telmo vs Godoy Cruz",
    "fecha": "Fecha 9",
-   "equipo": "San Telmo",
-   "tipo": "amarilla",
-   "texto": "Marcelo Vázquez",
-   "evento": {
-    "type": 4,
-    "time": "33'",
-    "team": 1,
-    "texts": [
-     "Marcelo Vázquez"
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "66'",
+     "team": 1,
+     "texts": [
+      "Mateo Mendoza"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Martín Batallini",
+      "player_sname": "Batallini",
+      "time": 18,
+      "time_to_display": "18'"
+     },
+     {
+      "player_name": "Mateo Mendoza",
+      "player_sname": "Mendoza",
+      "time": 66,
+      "time_to_display": "66'",
+      "goal_type": "E.C"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Joaquín Enrico",
-    "Roman Gamarra",
-    "Emanuel Díaz",
-    "Facundo Roncaglia",
-    "Juan Ignacio Motroni",
-    "Javier Iritier",
-    "Elias Britez",
-    "Iñaki Larthirigoyen",
-    "Jeronimo Porto",
-    "Renzo Uriburu",
-    "Martín Batallini",
-    "Matias Laba",
-    "Matías Ledesma",
-    "Elias Peralta",
-    "Leonel Pollacchi",
-    "Juan Cruz Zurbriggen",
-    "Carlos Casas Sanchez",
-    "Román González",
-    "Gabriel Ratalin",
-    "Franco Tisera"
+    null
    ]
   },
   {
-   "partido": "San Telmo vs Godoy Cruz",
+   "partido": "Temperley vs Quilmes",
    "fecha": "Fecha 9",
-   "equipo": "Godoy Cruz",
-   "tipo": "amarilla",
-   "texto": "Mariano Toedtli",
-   "evento": {
-    "type": 4,
-    "time": "33'",
-    "team": 2,
-    "texts": [
-     "Mariano Toedtli"
+   "marcador": [
+    3,
+    3
+   ],
+   "eventosGol1": [
+    2,
+    3
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "14'",
+     "team": 1,
+     "texts": [
+      "Marcos Echeverría"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Marcos Echeverría",
+      "player_sname": "Echeverría",
+      "time": 14,
+      "time_to_display": "14'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Lucas Angelini",
+      "player_sname": "Angelini",
+      "time": 21,
+      "time_to_display": "21'"
+     },
+     {
+      "player_name": "Nicolas Molina",
+      "player_sname": "Molina",
+      "time": 90,
+      "time_to_display": "90'+6"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Roberto Ramírez",
-    "Juan Morán",
-    "Nahuel Brunet",
-    "Mateo Mendoza",
-    "Lucas Arce",
-    "Vicente Poggi",
-    "Gaston Gil Romero",
-    "Brian Orosco",
-    "Tomás Pozzo",
-    "Martín Pino",
-    "Nahuel Ulariaga",
-    "Esteban Burgos",
-    "Santiago Martinez",
-    "Matías Ramírez",
-    "Axel Rodríguez",
-    "Agustín Valverde",
-    "Matías Funes",
-    "Francisco Gerometta",
-    "Federico Milo",
-    "Juan Strumia"
+    [
+     {
+      "player_name": "Axel Batista",
+      "player_sname": "Batista",
+      "time": 44,
+      "time_to_display": "44'"
+     },
+     {
+      "player_name": "Agustín Lavezzi",
+      "player_sname": "Lavezzi",
+      "time": 70,
+      "time_to_display": "70'"
+     },
+     {
+      "player_name": "Aarón Spetale",
+      "player_sname": "Spetale",
+      "time": 81,
+      "time_to_display": "81'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Patronato vs Deportivo Maipú",
+   "partido": "Chaco For Ever vs All Boys",
+   "fecha": "Fecha 9",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "90'+5",
+     "team": 1,
+     "texts": [
+      "Juan Cruz Cerrudo"
+     ],
+     "player_jersey_num": 16
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Ezequiel Pacheco",
+      "player_sname": "Ezequiel Pacheco",
+      "time": 90,
+      "time_to_display": "90'+1"
+     },
+     {
+      "player_name": "Juan Cruz Cerrudo",
+      "player_sname": "Cerrudo",
+      "time": 90,
+      "time_to_display": "90'+5",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Central Norte vs Mitre SdE",
+   "fecha": "Fecha 9",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "84'",
+     "team": 2,
+     "texts": [
+      "Elias Calderón"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Gianluca Mancuso",
+      "player_sname": "Mancuso",
+      "time": 53,
+      "time_to_display": "53'"
+     }
+    ],
+    [
+     {
+      "player_name": "Elias Calderón",
+      "player_sname": "E. Calderón",
+      "time": 84,
+      "time_to_display": "84'",
+      "goal_type": "E.C"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Colón vs Racing de Córdoba",
+   "fecha": "Fecha 9",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "62'",
+     "team": 1,
+     "texts": [
+      "Ignacio Lago"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Ignacio Lago",
+      "player_sname": "Lago",
+      "time": 62,
+      "time_to_display": "62'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Mitre SdE vs Ferro Carril Oeste",
    "fecha": "Fecha 10",
-   "equipo": "Deportivo Maipú",
-   "tipo": "amarilla",
-   "texto": "Felipe Rivarola",
-   "evento": {
-    "type": 4,
-    "time": "26'",
-    "team": 2,
-    "texts": [
-     "Felipe Rivarola"
-    ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Nahuel Galardi",
-    "Luciano Arnijas",
-    "Juan Pablo De la Reta",
-    "Lucas Faggioli",
-    "Gastón Mansilla",
-    "Áaron Agüero",
-    "Franco Saccone",
-    "Mirko Bonfigli",
-    "Luis Rivarola",
-    "Marcelo Eggel",
-    "Julian Vera",
-    "Santiago Paulini",
-    "Matías Viguet",
-    "Juan Cruz Giacone",
-    "Luciano Peraggini",
-    "Mateo Ortale",
-    "Nicolás Fernández",
-    "Luca Landriel",
-    "Tomas Silva",
-    "Lisandro Cabrera"
+   "marcador": [
+    0,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "76'",
+     "team": 2,
+     "texts": [
+      "Mateo Acosta"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Mateo Acosta",
+      "player_sname": "Acosta",
+      "time": 76,
+      "time_to_display": "76'",
+      "goal_type": "Pen"
+     }
+    ]
    ]
   },
   {
-   "partido": "Estudiantes vs Chaco For Ever",
+   "partido": "Racing de Córdoba vs Defensores de Belgrano",
    "fecha": "Fecha 10",
-   "equipo": "Estudiantes",
-   "tipo": "amarilla",
-   "texto": "Alfredo Grelak",
-   "evento": {
-    "type": 4,
-    "time": "88'",
-    "team": 1,
-    "texts": [
-     "Alfredo Grelak"
+   "marcador": [
+    3,
+    0
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Leandro Córdoba",
+      "player_sname": "Leandro Córdoba",
+      "time": 56,
+      "time_to_display": "56'"
+     },
+     {
+      "player_name": "Ricardo Centurión",
+      "player_sname": "Centurión",
+      "time": 61,
+      "time_to_display": "61'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Nicolas Campisi",
-    "Tomas Squie",
-    "Franco Quinteros",
-    "Jorge Benítez",
-    "Balthazar Bernardi",
-    "Federico Sena",
-    "Rodrigo Melo",
-    "Jorge Correa",
-    "Facundo Ardiles",
-    "Tobias Salas",
-    "Dario Rostagno",
-    "Santiago Camacho",
-    "Nicolas Caro Torres",
-    "Bautista Degregorio",
-    "Alejandro Melo",
-    "Ian Vera",
-    "Martin Albarracin",
-    "Fernando Duré",
-    "Juan Manuel Sánchez",
-    "Facundo Vila"
+    null
    ]
   },
   {
-   "partido": "Gimnasia y Tiro vs Güemes",
-   "fecha": "Fecha 10",
-   "equipo": "Güemes",
-   "tipo": "amarilla",
-   "texto": "Juan Vita",
-   "evento": {
-    "type": 4,
-    "time": "38'",
-    "team": 2,
-    "texts": [
-     "Juan Vita"
-    ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Leandro Finochietto",
-    "Marcelo Benítez",
-    "Emilio Lazza",
-    "Oscar Vanegas",
-    "Axel Bordón",
-    "Milton Gerez",
-    "Franco Bergés",
-    "Gianfranco Baier",
-    "David Véliz",
-    "Juan Sánchez Sotelo",
-    "Santiago Sala",
-    "Thomas Amilivia",
-    "Gian Luca Pugliese",
-    "Maico Quiroz",
-    "Facundo Rizzi",
-    "Walter Juárez",
-    "Julián Juárez",
-    "Laureano Martínez",
-    "Juan Mendoza",
-    "Tomás Oneto"
-   ]
-  },
-  {
-   "partido": "San Telmo vs All Boys",
+   "partido": "Agropecuario vs San Martín Tucumán",
    "fecha": "Fecha 11",
-   "equipo": "San Telmo",
-   "tipo": "amarilla",
-   "texto": "Marcelo Vázquez",
-   "evento": {
-    "type": 4,
-    "time": "56'",
-    "team": 1,
-    "texts": [
-     "Marcelo Vázquez"
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "43'",
+     "team": 1,
+     "texts": [
+      "Lorenzo Barrera"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Lorenzo Barrera",
+      "player_sname": "Barrera",
+      "time": 43,
+      "time_to_display": "43'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Brian Blando",
+      "player_sname": "Blando",
+      "time": 90,
+      "time_to_display": "90'+5"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Joaquín Enrico",
-    "Roman Gamarra",
-    "Emanuel Díaz",
-    "Leonel Pollacchi",
-    "Facundo Roncaglia",
-    "Elias Britez",
-    "Renzo Uriburu",
-    "Jeronimo Porto",
-    "Javier Iritier",
-    "Joel Gonzalez",
-    "Martín Batallini",
-    "Fabian Henriquez",
-    "Iñaki Larthirigoyen",
-    "Juan Ignacio Motroni",
-    "Elias Peralta",
-    "Franco Tisera",
-    "Matias Laba",
-    "Matías Ledesma",
-    "Gabriel Ratalin",
-    "Juan Cruz Zurbriggen"
+    null
    ]
   },
   {
-   "partido": "Atlético Rafaela vs Gimnasia de Jujuy",
+   "partido": "Ferro Carril Oeste vs Almirante Brown",
    "fecha": "Fecha 11",
-   "equipo": "Atlético Rafaela",
-   "tipo": "amarilla",
-   "texto": "Iván Juárez",
-   "evento": {
-    "type": 4,
-    "time": "18'",
-    "team": 1,
-    "texts": [
-     "Iván Juárez"
-    ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Mayco Bergia",
-    "Enzo Wuattier",
-    "Fernando Ponce",
-    "Gabriel Fernandez",
-    "Agustín Solveyra",
-    "Francisco Nouet",
-    "Facundo Soloa",
-    "Leonardo Flores",
-    "Agustin Obando",
-    "Martiniano Moreno",
-    "Lucas Albertengo",
-    "Joel Bonifacio",
-    "Marcos Fernández",
-    "Ariel Gonzalez",
-    "Ijiel Protti",
-    "Roque Ramírez",
-    "Ramiro Martínez",
-    "Denis Stracqualursi",
-    "Rodrigo Suárez",
-    "Jeremias Torrens"
+   "marcador": [
+    0,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "11'",
+     "team": 2,
+     "texts": [
+      "Gustavo Cabral"
+     ],
+     "player_jersey_num": 6
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Gustavo Cabral",
+      "player_sname": "Cabral",
+      "time": 11,
+      "time_to_display": "11'",
+      "goal_type": "Pen"
+     }
+    ]
    ]
   },
   {
-   "partido": "Atlético Rafaela vs Gimnasia de Jujuy",
-   "fecha": "Fecha 11",
-   "equipo": "Gimnasia de Jujuy",
-   "tipo": "amarilla",
-   "texto": "Hernán Pellerano",
-   "evento": {
-    "type": 4,
-    "time": "54'",
-    "team": 2,
-    "texts": [
-     "Hernán Pellerano"
-    ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Milton Alvarez",
-    "Martin Lazarte",
-    "Nicolas Dematei",
-    "Guillermo Cosaro",
-    "Delfor Minervino",
-    "Claudio Pombo",
-    "Francisco Molina",
-    "Hugo Soria",
-    "David Gallardo",
-    "Federico Paradela",
-    "Cristian Menéndez",
-    "Abel Argañaraz",
-    "Octavio Bianchi",
-    "Maximiliano Casa",
-    "Francisco Maidana",
-    "Mauro Cachi",
-    "Diego López",
-    "Axel Pinto",
-    "Matías Ramos Mingo",
-    "Gonzalo Villarreal"
+   "partido": "Gimnasia de Jujuy vs Deportivo Maipú",
+   "fecha": "Fecha 12",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 6,
+     "time": "59'",
+     "team": 2,
+     "texts": [
+      "Juan Pablo De la Reta"
+     ],
+     "player_jersey_num": 3
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Marcelo Eggel",
+      "player_sname": "Eggel",
+      "time": 6,
+      "time_to_display": "6'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Tristan Suárez vs Gimnasia y Tiro",
-   "fecha": "Fecha 11",
-   "equipo": "Tristan Suárez",
-   "tipo": "amarilla",
-   "texto": "Jose Maria Martinez",
-   "evento": {
-    "type": 4,
-    "time": "57'",
-    "team": 1,
-    "texts": [
-     "Jose Maria Martinez"
+   "partido": "Godoy Cruz vs Deportivo Morón",
+   "fecha": "Fecha 12",
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "37'",
+     "team": 2,
+     "texts": [
+      "Franco Fagundez"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Axel Rodríguez",
+      "player_sname": "Rodríguez",
+      "time": 10,
+      "time_to_display": "10'"
+     },
+     {
+      "player_name": "Martín Pino",
+      "player_sname": "Pino",
+      "time": 39,
+      "time_to_display": "39'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Joaquin Bigo",
-    "Nicolás Fernandez",
-    "Agustín Baldi",
-    "Brian Aguilar",
-    "Matías Olguín",
-    "Nicolás Del Priore",
-    "Maximiliano Luayza",
-    "Kevin Colli",
-    "Ángel Almada",
-    "Alejandro Molina",
-    "Maximiliano Álvarez",
-    "Augusto Berrondo",
-    "Jonathan Berón",
-    "Nicolas Henry",
-    "Mateo Pérez",
-    "Nicolas Sánchez",
-    "Diego Becker",
-    "Máximo Ferulano",
-    "Joaquín Mendive",
-    "Álvaro Veliez"
+    [
+     {
+      "player_name": "Franco Fagundez",
+      "player_sname": "Fagundez",
+      "time": 37,
+      "time_to_display": "37'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Franco Fagundez",
+      "player_sname": "Fagundez",
+      "time": 47,
+      "time_to_display": "47'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Güemes vs Atlanta",
-   "fecha": "Fecha 11",
-   "equipo": "Güemes",
-   "tipo": "amarilla",
-   "texto": "Juan Vita",
-   "evento": {
-    "type": 4,
-    "time": "56'",
-    "team": 1,
-    "texts": [
-     "Juan Vita"
+   "partido": "Racing de Córdoba vs Deportivo Madryn",
+   "fecha": "Fecha 12",
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "22'",
+     "team": 2,
+     "texts": [
+      "Brian Olivera"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Leandro Córdoba",
+      "player_sname": "Leandro Córdoba",
+      "time": 27,
+      "time_to_display": "27'"
+     },
+     {
+      "player_name": "Sergio Gonzalez",
+      "player_sname": "Gonzalez",
+      "time": 88,
+      "time_to_display": "88'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Leandro Finochietto",
-    "Marcelo Benítez",
-    "Oscar Vanegas",
-    "Tomás Oneto",
-    "Axel Bordón",
-    "David Véliz",
-    "Fernando Godoy",
-    "Gianfranco Baier",
-    "Milton Gerez",
-    "Juan Sánchez Sotelo",
-    "Santiago Sala",
-    "Thomas Amilivia",
-    "Franco Bergés",
-    "Walter Juárez",
-    "Juan Mendoza",
-    "Maico Quiroz",
-    "Laureano Martínez",
-    "Facundo Melillán",
-    "Gian Luca Pugliese",
-    "Facundo Rizzi"
+    [
+     {
+      "player_name": "Brian Olivera",
+      "player_sname": "Olivera",
+      "time": 22,
+      "time_to_display": "22'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Facundo Giacopuzzi",
+      "player_sname": "Giacopuzzi",
+      "time": 78,
+      "time_to_display": "78'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "San Miguel vs Estudiantes",
+   "fecha": "Fecha 13",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "50'",
+     "team": 1,
+     "texts": [
+      "Bruno Nasta"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Bruno Nasta",
+      "player_sname": "Nasta",
+      "time": 50,
+      "time_to_display": "50'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Tobias Salas",
+      "player_sname": "Tobias Salas",
+      "time": 84,
+      "time_to_display": "84'"
+     }
+    ]
    ]
   },
   {
    "partido": "Güemes vs Quilmes",
    "fecha": "Fecha 13",
-   "equipo": "Quilmes",
-   "tipo": "amarilla",
-   "texto": "Leandro Gracian",
-   "evento": {
-    "type": 4,
-    "time": "71'",
-    "team": 2,
-    "texts": [
-     "Leandro Gracian"
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "82'",
+     "team": 1,
+     "texts": [
+      "Thomas Amilivia"
+     ],
+     "player_jersey_num": 19
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Juan Sánchez Sotelo",
+      "player_sname": "Sotelo",
+      "time": 53,
+      "time_to_display": "53'"
+     },
+     {
+      "player_name": "Thomas Amilivia",
+      "player_sname": "Amilivia",
+      "time": 82,
+      "time_to_display": "82'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Joaquín Canadell",
-    "Thomas Ortega",
-    "Ariel Kippes",
-    "Ián Rasso",
-    "Martín Vallejos",
-    "Ulises Vera",
-    "Axel Batista",
-    "Agustín Bolivar",
-    "Ramiro Martinez",
-    "Alexis Domínguez",
-    "Agustín Lavezzi",
-    "Mauro Fernández",
-    "Joaquín Postigo",
-    "Aarón Spetale",
-    "Gabriel Vázquez",
-    "Juan Yangali",
-    "Agustín Bindella",
-    "Thiago Mejías",
-    "Luciano Recalde",
-    "Mateo Rodríguez"
+    [
+     {
+      "player_name": "Ián Rasso",
+      "player_sname": "Rasso",
+      "time": 69,
+      "time_to_display": "69'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Gimnasia y Tiro vs San Martín Tucumán",
+   "partido": "Colón vs All Boys",
+   "fecha": "Fecha 13",
+   "marcador": [
+    3,
+    2
+   ],
+   "eventosGol1": [
+    2,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "63'",
+     "team": 1,
+     "texts": [
+      "Ignacio Lago"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Federico Lertora",
+      "player_sname": "Lertora",
+      "time": 5,
+      "time_to_display": "5'"
+     },
+     {
+      "player_name": "Julián Marcioni",
+      "player_sname": "Marcioni",
+      "time": 32,
+      "time_to_display": "32'"
+     },
+     {
+      "player_name": "Ignacio Lago",
+      "player_sname": "Lago",
+      "time": 63,
+      "time_to_display": "63'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Alejo Tabares",
+      "player_sname": "Tabares",
+      "time": 58,
+      "time_to_display": "58'"
+     },
+     {
+      "player_name": "Iván Zafarana",
+      "player_sname": "Zafarana",
+      "time": 90,
+      "time_to_display": "90'+4"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Racing de Córdoba vs Central Norte",
    "fecha": "Fecha 14",
-   "equipo": "San Martín Tucumán",
-   "tipo": "amarilla",
-   "texto": "Andrés Yllana",
-   "evento": {
-    "type": 4,
-    "time": "45'+2",
-    "team": 2,
-    "texts": [
-     "Andrés Yllana"
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 6,
+     "time": "39'",
+     "team": 2,
+     "texts": [
+      "Maximiliano Padilla"
+     ],
+     "player_jersey_num": 6
+    },
+    {
+     "type": 3,
+     "time": "90'+1",
+     "team": 2,
+     "texts": [
+      "Francisco Borda"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Ricardo Centurión",
+      "player_sname": "Centurión",
+      "time": 78,
+      "time_to_display": "78'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Dario Sand",
-    "Guillermo Rodriguez",
-    "Nicolas Ferreyra",
-    "Ezequiel Parnisari",
-    "Nahuel Gallardo",
-    "Laureano Rodríguez",
-    "Santiago Briñone",
-    "Elias López",
-    "Luca Arfaras",
-    "Alan Cisnero",
-    "Diego Diellos",
-    "Benjamín Borasi",
-    "Matías García",
-    "Facundo Pons",
-    "Gonzalo Rodríguez",
-    "Nicolás Castro",
-    "Luciano Ferreyra",
-    "Nahuel Manganelli",
-    "Tiago Peñalba",
-    "Victor Salazar"
+    [
+     {
+      "player_name": "Agustín Lamosa",
+      "player_sname": "Lamosa",
+      "time": 29,
+      "time_to_display": "29'"
+     },
+     {
+      "player_name": "Francisco Borda",
+      "player_sname": "Borda",
+      "time": 90,
+      "time_to_display": "90'+1",
+      "goal_type": "Pen"
+     }
+    ]
    ]
   },
   {
-   "partido": "Defensores de Belgrano vs Chaco For Ever",
+   "partido": "Colegiales vs Güemes",
    "fecha": "Fecha 14",
-   "equipo": "Defensores de Belgrano",
-   "tipo": "amarilla",
-   "texto": "Fabián Nardozza",
-   "evento": {
-    "type": 4,
-    "time": "77'",
-    "team": 1,
-    "texts": [
-     "Fabián Nardozza"
+   "marcador": [
+    4,
+    1
+   ],
+   "eventosGol1": [
+    3,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "86'",
+     "team": 1,
+     "texts": [
+      "Facundo Rivero"
+     ],
+     "player_jersey_num": 2
+    },
+    {
+     "type": 6,
+     "time": "89'",
+     "team": 2,
+     "texts": [
+      "Oscar Vanegas"
+     ],
+     "player_jersey_num": 2
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Leonardo González",
+      "player_sname": "González",
+      "time": 29,
+      "time_to_display": "29'"
+     },
+     {
+      "player_name": "Nicolás Toloza",
+      "player_sname": "Toloza",
+      "time": 70,
+      "time_to_display": "70'"
+     },
+     {
+      "player_name": "Facundo Montiel",
+      "player_sname": "Montiel",
+      "time": 75,
+      "time_to_display": "75'"
+     },
+     {
+      "player_name": "Facundo Rivero",
+      "player_sname": "Rivero",
+      "time": 86,
+      "time_to_display": "86'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Alejandro Medina",
-    "Fabian Sanchez",
-    "Nicolás Vaquer",
-    "Alan Perez",
-    "Brian Gómez",
-    "Juan De Tomaso",
-    "Luis Jerez Silva",
-    "Agustín Benítez",
-    "Ezequiel Aguirre",
-    "Leandro Ciccolini",
-    "Jonathan Dellarossa",
-    "Diego García",
-    "Diego Magallanes",
-    "Patricio Moyano",
-    "Ian Perez",
-    "Francisco Tcherkaski",
-    "Gonzalo Aquilino",
-    "Gonzalo Gamarra",
-    "Ignacio Gutierrez",
-    "Nicolás Nocetti"
+    [
+     {
+      "player_name": "Santiago Sala",
+      "player_sname": "S. Sala",
+      "time": 59,
+      "time_to_display": "59'"
+     }
+    ]
    ]
   },
   {
-   "partido": "San Martín Tucumán vs Atlanta",
+   "partido": "Mitre SdE vs San Miguel",
+   "fecha": "Fecha 14",
+   "marcador": [
+    4,
+    0
+   ],
+   "eventosGol1": [
+    3,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "28'",
+     "team": 1,
+     "texts": [
+      "Marcos Machado"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 6,
+     "time": "33'",
+     "team": 2,
+     "texts": [
+      "Leandro Desábato"
+     ],
+     "player_jersey_num": 8
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Marcos Machado",
+      "player_sname": "Machado",
+      "time": 28,
+      "time_to_display": "28'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Iván Antunes",
+      "player_sname": "Antunes",
+      "time": 57,
+      "time_to_display": "57'"
+     },
+     {
+      "player_name": "Santiago Rosales",
+      "player_sname": "Rosales",
+      "time": 83,
+      "time_to_display": "83'"
+     },
+     {
+      "player_name": "Agustín Ramírez",
+      "player_sname": "A. Ramírez",
+      "time": 89,
+      "time_to_display": "89'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Patronato vs Chacarita Juniors",
+   "fecha": "Fecha 14",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Juan Salas",
+      "player_sname": "Juan Salas",
+      "time": 69,
+      "time_to_display": "69'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Chaco For Ever vs Deportivo Madryn",
    "fecha": "Fecha 15",
-   "equipo": "San Martín Tucumán",
-   "tipo": "amarilla",
-   "texto": "Andrés Yllana",
-   "evento": {
-    "type": 4,
-    "time": "45'+1",
-    "team": 1,
-    "texts": [
-     "Andrés Yllana"
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "20'",
+     "team": 1,
+     "texts": [
+      "Brian Nievas"
+     ],
+     "player_jersey_num": 5
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Brian Nievas",
+      "player_sname": "Nievas",
+      "time": 20,
+      "time_to_display": "20'",
+      "goal_type": "E.C"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Dario Sand",
-    "Lucas Diarte",
-    "Ezequiel Parnisari",
-    "Tiago Peñalba",
-    "Jorge Juarez",
-    "Alan Cisnero",
-    "Nicolás Castro",
-    "Guillermo Rodriguez",
-    "Santiago Briñone",
-    "Diego Diellos",
-    "Luca Arfaras",
-    "Benjamín Borasi",
-    "Luciano Ferreyra",
-    "Facundo Pons",
-    "Gonzalo Rodríguez",
-    "Victor Salazar",
-    "Nahuel Gallardo",
-    "Elias López",
-    "Nahuel Manganelli",
-    "Milton Ríos"
+    [
+     {
+      "player_name": "Luis Silba",
+      "player_sname": "Luis Silba",
+      "time": 26,
+      "time_to_display": "26'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Defensores de Belgrano vs San Telmo",
+   "fecha": "Fecha 16",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "45'+3",
+     "team": 1,
+     "texts": [
+      "Leandro Ciccolini"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Leandro Ciccolini",
+      "player_sname": "Ciccolini",
+      "time": 45,
+      "time_to_display": "45'+3",
+      "goal_type": "Pen"
+     }
+    ],
+    null
    ]
   },
   {
    "partido": "Atlanta vs Gimnasia y Tiro",
    "fecha": "Fecha 16",
-   "equipo": "Atlanta",
-   "tipo": "amarilla",
-   "texto": "Cristian Pellerano",
-   "evento": {
-    "type": 4,
-    "time": "90'+3",
-    "team": 1,
-    "texts": [
-     "Cristian Pellerano"
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "87'",
+     "team": 1,
+     "texts": [
+      "Nicolás Previtali"
+     ],
+     "player_jersey_num": 5
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Nicolás Previtali",
+      "player_sname": "Previtali",
+      "time": 87,
+      "time_to_display": "87'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Francisco Rago",
-    "Dylan Arguello",
-    "Tomás Rojas",
-    "Rodrigo Moreira",
-    "Martín García",
-    "Tomás Castro Ponce",
-    "Nicolás Previtali",
-    "Lautaro Fedele",
-    "Jeremías Puch",
-    "Federico Castro",
-    "Alejandro Quintana",
-    "Nacho Rodríguez",
-    "Rodrigo Sosa",
-    "Federico Álvarez",
-    "Matias Ibarra",
-    "Lautaro López",
-    "Gustavo Mendoza",
-    "Patricio Ostachuk",
-    "Braian Rivero",
-    "Lucas Ríos"
+    [
+     {
+      "player_name": "Tiago Banega",
+      "player_sname": "Banega",
+      "time": 77,
+      "time_to_display": "77'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Temperley vs San Martín San Juan",
+   "partido": "Mitre SdE vs Deportivo Morón",
    "fecha": "Fecha 16",
-   "equipo": "Temperley",
-   "tipo": "amarilla",
-   "texto": "Nicolas Domingo",
-   "evento": {
-    "type": 4,
-    "time": "26'",
-    "team": 1,
-    "texts": [
-     "Nicolas Domingo"
+   "marcador": [
+    1,
+    3
+   ],
+   "eventosGol1": [
+    0,
+    3
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "51'",
+     "team": 1,
+     "texts": [
+      "Santiago Rosales"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Santiago Rosales",
+      "player_sname": "Rosales",
+      "time": 51,
+      "time_to_display": "51'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Ezequiel Mastrolia",
-    "Lucas Angelini",
-    "Valentin Aguiñagalde",
-    "Oswaldo Pacheco",
-    "Lorenzo Monti",
-    "Pedro Souto",
-    "Franco Díaz",
-    "Adrián Arregui",
-    "Franco Benitez",
-    "Gabriel Hauche",
-    "Facundo Kruger",
-    "Fernando Brandán",
-    "Matías Calzón",
-    "Nicolas Molina",
-    "Gerónimo Tomasetti",
-    "Nicolas Avalos",
-    "Lisandro Morrone",
-    "Luciano Nieto",
-    "Lucas Richarte",
-    "Francisco Silva"
+    [
+     {
+      "player_name": "Franco Toloza",
+      "player_sname": "Toloza",
+      "time": 28,
+      "time_to_display": "28'"
+     },
+     {
+      "player_name": "Elias Contreras",
+      "player_sname": "Contreras",
+      "time": 40,
+      "time_to_display": "40'"
+     },
+     {
+      "player_name": "Franco Fagundez",
+      "player_sname": "Fagundez",
+      "time": 80,
+      "time_to_display": "80'"
+     }
+    ]
    ]
   },
   {
-   "partido": "Chaco For Ever vs Ferro Carril Oeste",
+   "partido": "Patronato vs Tristan Suárez",
+   "fecha": "Fecha 16",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "42'",
+     "team": 1,
+     "texts": [
+      "Renzo Reynaga"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Renzo Reynaga",
+      "player_sname": "Reynaga",
+      "time": 42,
+      "time_to_display": "42'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Maximiliano Álvarez",
+      "player_sname": "Alvarez",
+      "time": 21,
+      "time_to_display": "21'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Deportivo Maipú vs Chacarita Juniors",
+   "fecha": "Fecha 16",
+   "marcador": [
+    3,
+    2
+   ],
+   "eventosGol1": [
+    2,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "49'",
+     "team": 1,
+     "texts": [
+      "Marcelo Eggel"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Marcelo Eggel",
+      "player_sname": "Eggel",
+      "time": 49,
+      "time_to_display": "49'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Franco Saccone",
+      "player_sname": "Saccone",
+      "time": 80,
+      "time_to_display": "80'"
+     },
+     {
+      "player_name": "Franco Saccone",
+      "player_sname": "Saccone",
+      "time": 83,
+      "time_to_display": "83'"
+     }
+    ],
+    [
+     {
+      "player_name": "Maximiliano Meléndez",
+      "player_sname": "Meléndez",
+      "time": 63,
+      "time_to_display": "63'"
+     },
+     {
+      "player_name": "Lorenzo Brun",
+      "player_sname": "Brun",
+      "time": 66,
+      "time_to_display": "66'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Gimnasia y Tiro vs Midland",
    "fecha": "Fecha 17",
-   "equipo": "Ferro Carril Oeste",
-   "tipo": "amarilla",
-   "texto": "Juan Sara",
-   "evento": {
-    "type": 4,
-    "time": "25'",
-    "team": 2,
-    "texts": [
-     "Juan Sara"
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 6,
+     "time": "78'",
+     "team": 2,
+     "texts": [
+      "Fernando González"
+     ],
+     "player_jersey_num": 6
+    },
+    {
+     "type": 3,
+     "time": "81'",
+     "team": 1,
+     "texts": [
+      "Lautaro Gordillo"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Lautaro Gordillo",
+      "player_sname": "Gordillo",
+      "time": 81,
+      "time_to_display": "81'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Fernando Monetti",
-    "Emiliano Ozuna",
-    "Gustavo Canto",
-    "Federico Tévez",
-    "Nazareno Kihm",
-    "Enzo Hoyos",
-    "Felipe Obradovich",
-    "Matías Kabalin",
-    "Ángel Gonzalez",
-    "Lautaro Parisi",
-    "Emanuel Dening",
-    "Gonzalo Castellani",
-    "Sebastián Corda",
-    "Nicolás Gómez",
-    "Laureano Marra",
-    "Jonathan Menéndez",
-    "Gino Olguín",
-    "Sebastian Pepe",
-    "Lucas Ruiz",
-    "Misael Tarón"
+    null
    ]
   },
   {
-   "partido": "Almirante Brown vs Godoy Cruz",
+   "partido": "Atlético Rafaela vs Colegiales",
+   "fecha": "Fecha 17",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "13'",
+     "team": 1,
+     "texts": [
+      "Leonel Ortíz"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 6,
+     "time": "64'",
+     "team": 1,
+     "texts": [
+      "Leonardo Flores"
+     ],
+     "player_jersey_num": 8
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Leonel Ortíz",
+      "player_sname": "Ortíz",
+      "time": 13,
+      "time_to_display": "13'",
+      "goal_type": "E.C"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Güemes vs Deportivo Maipú",
+   "fecha": "Fecha 17",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "90'",
+     "team": 1,
+     "texts": [
+      "Áaron Agüero"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Áaron Agüero",
+      "player_sname": "Áaron Agüero",
+      "time": 90,
+      "time_to_display": "90'",
+      "goal_type": "E.C"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Godoy Cruz vs Mitre SdE",
+   "fecha": "Fecha 17",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "90'+3",
+     "team": 1,
+     "texts": [
+      "Esteban Burgos"
+     ],
+     "player_jersey_num": 2
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Martín Pino",
+      "player_sname": "Pino",
+      "time": 49,
+      "time_to_display": "49'"
+     },
+     {
+      "player_name": "Esteban Burgos",
+      "player_sname": "Burgos",
+      "time": 90,
+      "time_to_display": "90'+3",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Marcos Machado",
+      "player_sname": "Machado",
+      "time": 28,
+      "time_to_display": "28'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Almagro vs Agropecuario",
    "fecha": "Fecha 18",
-   "equipo": "Almirante Brown",
-   "tipo": "amarilla",
-   "texto": "Vicente Poggi",
-   "evento": {
-    "type": 4,
-    "time": "84'",
-    "team": 1,
-    "texts": [
-     "Vicente Poggi"
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "90'+5",
+     "team": 1,
+     "texts": [
+      "Andrés Chávez"
+     ],
+     "player_jersey_num": 20
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Joel Orlando",
+      "player_sname": "Orlando",
+      "time": 67,
+      "time_to_display": "67'"
+     },
+     {
+      "player_name": "Andrés Chávez",
+      "player_sname": "Chávez",
+      "time": 90,
+      "time_to_display": "90'+5",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Bruno Galvan",
-    "Tomás Villoldo",
-    "Gerardo Alegre Rojas",
-    "Gustavo Cabral",
-    "Enzo Cardozo",
-    "Luciano Pascual",
-    "Leonardo Jara",
-    "Santiago Gauna",
-    "Ulises Abreliano",
-    "Nazareno Bazán Vera",
-    "Gastón Moreyra",
-    "Joaquín Borja Velázquez",
-    "Javier Martinez",
-    "Tomas Almada",
-    "Pedro Velurtas",
-    "Santiago Vera",
-    "Gabriel Altamirano",
-    "Augusto Bottini",
-    "Facundo Quignón",
-    "Lucas Vega"
+    [
+     {
+      "player_name": "Brian Blando",
+      "player_sname": "Blando",
+      "time": 90,
+      "time_to_display": "90'+2"
+     }
+    ]
    ]
   },
   {
-   "partido": "Central Norte vs San Miguel",
+   "partido": "Quilmes vs Gimnasia y Tiro",
+   "fecha": "Fecha 18",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "45'+2",
+     "team": 1,
+     "texts": [
+      "Agustín Lavezzi"
+     ],
+     "player_jersey_num": 7
+    },
+    {
+     "type": 6,
+     "time": "79'",
+     "team": 2,
+     "texts": [
+      "Manuel Guanini"
+     ],
+     "player_jersey_num": 2
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Agustín Lavezzi",
+      "player_sname": "Lavezzi",
+      "time": 45,
+      "time_to_display": "45'+2",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Racing de Córdoba vs Chaco For Ever",
+   "fecha": "Fecha 18",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "29'",
+     "team": 1,
+     "texts": [
+      "Pablo Chavarria"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 6,
+     "time": "40'",
+     "team": 2,
+     "texts": [
+      "Lucas Pruzzo"
+     ],
+     "player_jersey_num": 3
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Pablo Chavarria",
+      "player_sname": "Chavarria",
+      "time": 29,
+      "time_to_display": "29'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Pablo Chavarria",
+      "player_sname": "Chavarria",
+      "time": 53,
+      "time_to_display": "53'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Temperley vs Güemes",
+   "fecha": "Fecha 18",
+   "marcador": [
+    4,
+    1
+   ],
+   "eventosGol1": [
+    3,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "24'",
+     "team": 1,
+     "texts": [
+      "Emilio Lazza"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 6,
+     "time": "30'",
+     "team": 2,
+     "texts": [
+      "Facundo Melillán"
+     ],
+     "player_jersey_num": 2
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Emilio Lazza",
+      "player_sname": "Lazza",
+      "time": 24,
+      "time_to_display": "24'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Facundo Kruger",
+      "player_sname": "Kruger",
+      "time": 28,
+      "time_to_display": "28'"
+     },
+     {
+      "player_name": "Facundo Kruger",
+      "player_sname": "Kruger",
+      "time": 56,
+      "time_to_display": "56'"
+     },
+     {
+      "player_name": "Fernando Brandán",
+      "player_sname": "Brandán",
+      "time": 75,
+      "time_to_display": "75'"
+     }
+    ],
+    [
+     {
+      "player_name": "Thomas Amilivia",
+      "player_sname": "Amilivia",
+      "time": 6,
+      "time_to_display": "6'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Deportivo Maipú vs Tristan Suárez",
+   "fecha": "Fecha 18",
+   "marcador": [
+    0,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "82'",
+     "team": 2,
+     "texts": [
+      "Jonathan Berón"
+     ],
+     "player_jersey_num": 20
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Jonathan Berón",
+      "player_sname": "Berón",
+      "time": 82,
+      "time_to_display": "82'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Estudiantes vs Racing de Córdoba",
    "fecha": "Fecha 19",
-   "equipo": "Central Norte",
-   "tipo": "amarilla",
-   "texto": "Alexis Cruz",
-   "evento": {
-    "type": 4,
-    "time": "42'",
-    "team": 1,
-    "texts": [
-     "Alexis Cruz"
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "68'",
+     "team": 1,
+     "texts": [
+      "Mateo Acosta"
+     ],
+     "player_jersey_num": 20
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Mateo Acosta",
+      "player_sname": "Acosta",
+      "time": 68,
+      "time_to_display": "68'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Enzo Vazquez",
-    "Agustín Aleo",
-    "Maximiliano Padilla",
-    "Elias Calderón",
-    "Agustín Lamosa",
-    "Franco Vedoya",
-    "Matias Villarreal",
-    "Maximiliano Ribero",
-    "Matias Moravec",
-    "Tomás Castro",
-    "Francisco Borda",
-    "Julián Lopez",
-    "Arian Pucheta",
-    "Tiago Taobas",
-    "Ramiro Enriquez",
-    "Leonardo Felissia",
-    "Fabricio Hass",
-    "Gianluca Mancuso",
-    "Joaquin Mateo",
-    "Mauricio Rosales"
+    [
+     {
+      "player_name": "Ignacio Valsangiácomo",
+      "player_sname": "Valsangiácomo",
+      "time": 90,
+      "time_to_display": "90'+3"
+     }
+    ]
    ]
   },
   {
-   "partido": "Central Norte vs San Miguel",
-   "fecha": "Fecha 19",
-   "equipo": "San Miguel",
-   "tipo": "amarilla",
-   "texto": "Mario Sciacqua",
-   "evento": {
-    "type": 4,
-    "time": "23'",
-    "team": 2,
-    "texts": [
-     "Mario Sciacqua"
-    ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Mateo Reynoso",
-    "Alexis Cruz",
-    "Kevin Ceceri",
-    "Dixon Rentería",
-    "Damián Adín",
-    "Jorge Ferrero",
-    "Iván Ramírez",
-    "Mateo Serra",
-    "Daniel Juárez",
-    "Lucas Delgado",
-    "Tomás Díaz",
-    "Franco Aguirre",
-    "Fabrizio Almeida",
-    "Facundo Cardozo",
-    "Gustavo Fernández",
-    "Luis Perez",
-    "Matias Escobar",
-    "Tomás Jérez",
-    "Máximo Oses",
-    "Elian de la Cruz"
-   ]
-  },
-  {
-   "partido": "Tristan Suárez vs Nueva Chicago",
+   "partido": "San Telmo vs Chaco For Ever",
    "fecha": "Fecha 20",
-   "equipo": "Tristan Suárez",
-   "tipo": "amarilla",
-   "texto": "Jose Maria Martinez",
-   "evento": {
-    "type": 4,
-    "time": "85'",
-    "team": 1,
-    "texts": [
-     "Jose Maria Martinez"
+   "marcador": [
+    1,
+    3
+   ],
+   "eventosGol1": [
+    1,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "89'",
+     "team": 2,
+     "texts": [
+      "Matías Romero"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Juan Ignacio Motroni",
+      "player_sname": "Motroni",
+      "time": 46,
+      "time_to_display": "46'"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Joaquin Bigo",
-    "Ayrton Sánchez",
-    "Agustín Baldi",
-    "Mauricio Guzmán",
-    "Manuel Guillén",
-    "Marcos Enrique",
-    "Sebastian Ramírez",
-    "Nicolas Sánchez",
-    "Nicolás Del Priore",
-    "Diego Becker",
-    "Agustín Gallo",
-    "Santiago Aquino",
-    "Kevin Colli",
-    "Maximiliano Luayza",
-    "Alejandro Molina",
-    "Maximiliano Álvarez",
-    "Jonathan Berón",
-    "Máximo Ferulano",
-    "Joaquín Mendive",
-    "Tiziano Noriega"
+    [
+     {
+      "player_name": "Matías Romero",
+      "player_sname": "Romero",
+      "time": 9,
+      "time_to_display": "9'"
+     },
+     {
+      "player_name": "Enzo Gaggi",
+      "player_sname": "Gaggi",
+      "time": 38,
+      "time_to_display": "38'"
+     },
+     {
+      "player_name": "Matías Romero",
+      "player_sname": "Romero",
+      "time": 89,
+      "time_to_display": "89'",
+      "goal_type": "Pen"
+     }
+    ]
    ]
   },
   {
-   "partido": "San Miguel vs Acassuso",
+   "partido": "Racing de Córdoba vs Acassuso",
+   "fecha": "Fecha 20",
+   "marcador": [
+    3,
+    2
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "38'",
+     "team": 1,
+     "texts": [
+      "Pablo Chavarria"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 3,
+     "time": "54'",
+     "team": 2,
+     "texts": [
+      "Agustin Hermoso"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Pablo Chavarria",
+      "player_sname": "Chavarria",
+      "time": 38,
+      "time_to_display": "38'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Raul Chamorro",
+      "player_sname": "Chamorro",
+      "time": 75,
+      "time_to_display": "75'"
+     },
+     {
+      "player_name": "Pablo Chavarria",
+      "player_sname": "Chavarria",
+      "time": 89,
+      "time_to_display": "89'"
+     }
+    ],
+    [
+     {
+      "player_name": "Agustin Hermoso",
+      "player_sname": "Hermoso",
+      "time": 54,
+      "time_to_display": "54'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Ramiro Reynoso",
+      "player_sname": "Reynoso",
+      "time": 65,
+      "time_to_display": "65'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Ferro Carril Oeste vs Colón",
+   "fecha": "Fecha 21",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "52'",
+     "team": 1,
+     "texts": [
+      "Lautaro Parisi"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Laureano Marra",
+      "player_sname": "Marra",
+      "time": 2,
+      "time_to_display": "2'"
+     },
+     {
+      "player_name": "Lautaro Parisi",
+      "player_sname": "Parisi",
+      "time": 52,
+      "time_to_display": "52'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Acassuso vs San Telmo",
+   "fecha": "Fecha 21",
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    0,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "65'",
+     "team": 1,
+     "texts": [
+      "Lázaro Romero"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Lázaro Romero",
+      "player_sname": "Lázaro Romero",
+      "time": 65,
+      "time_to_display": "65'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Iñaki Larthirigoyen",
+      "player_sname": "Lartirigoyen",
+      "time": 82,
+      "time_to_display": "82'"
+     },
+     {
+      "player_name": "Ian Pardo",
+      "player_sname": "Pardo",
+      "time": 84,
+      "time_to_display": "84'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Chaco For Ever vs San Miguel",
+   "fecha": "Fecha 21",
+   "marcador": [
+    3,
+    0
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "59'",
+     "team": 1,
+     "texts": [
+      "Matías Romero"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Matías Romero",
+      "player_sname": "Romero",
+      "time": 59,
+      "time_to_display": "59'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Mateo Diaz Chaves",
+      "player_sname": "Diaz",
+      "time": 65,
+      "time_to_display": "65'"
+     },
+     {
+      "player_name": "Brian Nievas",
+      "player_sname": "Nievas",
+      "time": 89,
+      "time_to_display": "89'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Tristan Suárez vs Chacarita Juniors",
    "fecha": "Fecha 22",
-   "equipo": "Acassuso",
-   "tipo": "amarilla",
-   "texto": "Tobías Kohan",
-   "evento": {
-    "type": 4,
-    "time": "68'",
-    "team": 2,
-    "texts": [
-     "Tobías Kohan"
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "59'",
+     "team": 1,
+     "texts": [
+      "Diego Becker"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Diego Becker",
+      "player_sname": "Becker",
+      "time": 59,
+      "time_to_display": "59'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Mariano Monllor",
-    "Bruno Dordoni",
-    "Lucas Pioli",
-    "Santiago Bellatti",
-    "Roman Etcheverri",
-    "Agustin Hermoso",
-    "Jonathan Raccio",
-    "Ramiro Reynoso",
-    "Valentín Serrano",
-    "Tomas Rodriguez",
-    "Kevin Dubini",
-    "Manuel Mónaco",
-    "Juan Cruz Ponce de León",
-    "Joaquín Postigo",
-    "Diego Roberts",
-    "Natan Acosta",
-    "Joel Ghirardello",
-    "Alexis Gónzalez Duarte",
-    "Jorge Luque",
-    "Lucas Rey"
+    null
    ]
   },
   {
-   "partido": "Gimnasia y Tiro vs Tristan Suárez",
+   "partido": "Deportivo Morón vs Ferro Carril Oeste",
+   "fecha": "Fecha 22",
+   "marcador": [
+    4,
+    0
+   ],
+   "eventosGol1": [
+    3,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "20'",
+     "team": 1,
+     "texts": [
+      "Leandro Peña Biafore"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Leandro Peña Biafore",
+      "player_sname": "Peña Biafore",
+      "time": 20,
+      "time_to_display": "20'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Mateo Levato",
+      "player_sname": "Levato",
+      "time": 32,
+      "time_to_display": "32'"
+     },
+     {
+      "player_name": "Juan Cruz Esquivel",
+      "player_sname": "Esquivel",
+      "time": 48,
+      "time_to_display": "48'"
+     },
+     {
+      "player_name": "Franco Toloza",
+      "player_sname": "Toloza",
+      "time": 67,
+      "time_to_display": "67'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Agropecuario vs San Martín San Juan",
+   "fecha": "Fecha 22",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "49'",
+     "team": 1,
+     "texts": [
+      "Alejandro Gagliardi"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 6,
+     "time": "83'",
+     "team": 2,
+     "texts": [
+      "Julian Marchio"
+     ],
+     "player_jersey_num": 6
+    },
+    {
+     "type": 3,
+     "time": "85'",
+     "team": 1,
+     "texts": [
+      "Alejandro Gagliardi"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Alejandro Gagliardi",
+      "player_sname": "Gagliardi",
+      "time": 49,
+      "time_to_display": "49'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Alejandro Gagliardi",
+      "player_sname": "Gagliardi",
+      "time": 85,
+      "time_to_display": "85'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Nazareno Funez",
+      "player_sname": "Funez",
+      "time": 31,
+      "time_to_display": "31'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Gimnasia y Tiro vs Deportivo Maipú",
+   "fecha": "Fecha 22",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "79'",
+     "team": 1,
+     "texts": [
+      "Lautaro Gordillo"
+     ],
+     "player_jersey_num": 20
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Lautaro Gordillo",
+      "player_sname": "Gordillo",
+      "time": 79,
+      "time_to_display": "79'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Defensores de Belgrano vs Estudiantes",
+   "fecha": "Fecha 23",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "83'",
+     "team": 2,
+     "texts": [
+      "Alejandro Medina"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 6,
+     "time": "86'",
+     "team": 2,
+     "texts": [
+      "Martin Albarracin"
+     ],
+     "player_jersey_num": 4
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Joaquin Ardaiz",
+      "player_sname": "Ardaiz",
+      "time": 57,
+      "time_to_display": "57'"
+     }
+    ],
+    [
+     {
+      "player_name": "Alejandro Medina",
+      "player_sname": "Medina",
+      "time": 83,
+      "time_to_display": "83'",
+      "goal_type": "E.C"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Colegiales vs Gimnasia de Jujuy",
+   "fecha": "Fecha 23",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "90'",
+     "team": 2,
+     "texts": [
+      "Emilio Di Fulvio"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Leonel Ortíz",
+      "player_sname": "Ortíz",
+      "time": 49,
+      "time_to_display": "49'"
+     },
+     {
+      "player_name": "Nicolás Toloza",
+      "player_sname": "Toloza",
+      "time": 77,
+      "time_to_display": "77'"
+     }
+    ],
+    [
+     {
+      "player_name": "Emilio Di Fulvio",
+      "player_sname": "Di Fulvio",
+      "time": 90,
+      "time_to_display": "90'",
+      "goal_type": "E.C"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Patronato vs Quilmes",
+   "fecha": "Fecha 23",
+   "marcador": [
+    3,
+    3
+   ],
+   "eventosGol1": [
+    2,
+    3
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "11'",
+     "team": 1,
+     "texts": [
+      "Lucas Romeo"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Valentín Pereyra",
+      "player_sname": "Pereyra",
+      "time": 11,
+      "time_to_display": "11'"
+     },
+     {
+      "player_name": "Lucas Romeo",
+      "player_sname": "Romeo",
+      "time": 11,
+      "time_to_display": "11'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Walter Rueda",
+      "player_sname": "Rueda",
+      "time": 24,
+      "time_to_display": "24'"
+     }
+    ],
+    [
+     {
+      "player_name": "Aarón Spetale",
+      "player_sname": "Spetale",
+      "time": 14,
+      "time_to_display": "14'"
+     },
+     {
+      "player_name": "Ariel Kippes",
+      "player_sname": "Kippes",
+      "time": 48,
+      "time_to_display": "48'"
+     },
+     {
+      "player_name": "Agustín Lavezzi",
+      "player_sname": "Lavezzi",
+      "time": 75,
+      "time_to_display": "75'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Chacarita Juniors vs Agropecuario",
+   "fecha": "Fecha 23",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "66'",
+     "team": 1,
+     "texts": [
+      "Cristian Guanca"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Cristian Guanca",
+      "player_sname": "Guanca",
+      "time": 66,
+      "time_to_display": "66'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Cristian Guanca",
+      "player_sname": "Guanca",
+      "time": 69,
+      "time_to_display": "69'"
+     }
+    ],
+    [
+     {
+      "player_name": "Alejandro Gagliardi",
+      "player_sname": "Gagliardi",
+      "time": 51,
+      "time_to_display": "51'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Deportivo Maipú vs Atlanta",
+   "fecha": "Fecha 23",
+   "marcador": [
+    4,
+    2
+   ],
+   "eventosGol1": [
+    3,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "18'",
+     "team": 2,
+     "texts": [
+      "Nicolás Previtali"
+     ],
+     "player_jersey_num": 5
+    },
+    {
+     "type": 3,
+     "time": "73'",
+     "team": 1,
+     "texts": [
+      "Mirko Bonfigli"
+     ],
+     "player_jersey_num": 8
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Mirko Bonfigli",
+      "player_sname": "Bonfigli",
+      "time": 24,
+      "time_to_display": "24'"
+     },
+     {
+      "player_name": "Juan Cruz Giacone",
+      "player_sname": "Giacone",
+      "time": 27,
+      "time_to_display": "27'"
+     },
+     {
+      "player_name": "Mirko Bonfigli",
+      "player_sname": "Bonfigli",
+      "time": 73,
+      "time_to_display": "73'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Santiago Paulini",
+      "player_sname": "Paulini",
+      "time": 86,
+      "time_to_display": "86'"
+     }
+    ],
+    [
+     {
+      "player_name": "Nicolás Previtali",
+      "player_sname": "Previtali",
+      "time": 18,
+      "time_to_display": "18'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Jeremías Puch",
+      "player_sname": "Puch",
+      "time": 44,
+      "time_to_display": "44'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Atlanta vs Temperley",
+   "fecha": "Fecha 24",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "88'",
+     "team": 1,
+     "texts": [
+      "Nicolás Previtali"
+     ],
+     "player_jersey_num": 5
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Nicolás Previtali",
+      "player_sname": "Previtali",
+      "time": 88,
+      "time_to_display": "88'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Deportivo Morón vs Acassuso",
+   "fecha": "Fecha 24",
+   "marcador": [
+    4,
+    1
+   ],
+   "eventosGol1": [
+    3,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "90'",
+     "team": 1,
+     "texts": [
+      "Franco Toloza"
+     ],
+     "player_jersey_num": 20
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Franco Fagundez",
+      "player_sname": "Fagundez",
+      "time": 17,
+      "time_to_display": "17'"
+     },
+     {
+      "player_name": "Emanuel Iñíguez",
+      "player_sname": "Iñíguez",
+      "time": 24,
+      "time_to_display": "24'"
+     },
+     {
+      "player_name": "Franco Fagundez",
+      "player_sname": "Fagundez",
+      "time": 37,
+      "time_to_display": "37'"
+     },
+     {
+      "player_name": "Franco Toloza",
+      "player_sname": "Toloza",
+      "time": 90,
+      "time_to_display": "90'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Tomas Rodriguez",
+      "player_sname": "Rodriguez",
+      "time": 36,
+      "time_to_display": "36'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Colegiales vs Patronato",
+   "fecha": "Fecha 24",
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "49'",
+     "team": 1,
+     "texts": [
+      "Facundo Rivero"
+     ],
+     "player_jersey_num": 2
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Facundo Rivero",
+      "player_sname": "Rivero",
+      "time": 49,
+      "time_to_display": "49'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Mauro Albertengo",
+      "player_sname": "Albertengo",
+      "time": 64,
+      "time_to_display": "64'"
+     }
+    ],
+    [
+     {
+      "player_name": "Walter Rueda",
+      "player_sname": "Rueda",
+      "time": 42,
+      "time_to_display": "42'"
+     },
+     {
+      "player_name": "Walter Rueda",
+      "player_sname": "Rueda",
+      "time": 70,
+      "time_to_display": "70'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Colón vs San Telmo",
+   "fecha": "Fecha 24",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "79'",
+     "team": 1,
+     "texts": [
+      "Ignacio Lago"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Ignacio Lago",
+      "player_sname": "Lago",
+      "time": 79,
+      "time_to_display": "79'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Mitre SdE vs Defensores de Belgrano",
+   "fecha": "Fecha 24",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "25'",
+     "team": 2,
+     "texts": [
+      "Joaquin Ardaiz"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Marcos Machado",
+      "player_sname": "Machado",
+      "time": 19,
+      "time_to_display": "19'"
+     },
+     {
+      "player_name": "Marcos Machado",
+      "player_sname": "Machado",
+      "time": 66,
+      "time_to_display": "66'"
+     }
+    ],
+    [
+     {
+      "player_name": "Joaquin Ardaiz",
+      "player_sname": "Ardaiz",
+      "time": 25,
+      "time_to_display": "25'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "San Martín Tucumán vs San Martín San Juan",
+   "fecha": "Fecha 24",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "52'",
+     "team": 1,
+     "texts": [
+      "Gabriel Carabajal"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Gabriel Carabajal",
+      "player_sname": "Carabajal",
+      "time": 52,
+      "time_to_display": "52'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Franco Coronel",
+      "player_sname": "Coronel",
+      "time": 55,
+      "time_to_display": "55'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "All Boys vs Central Norte",
+   "fecha": "Fecha 24",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "64'",
+     "team": 1,
+     "texts": [
+      "Francisco Borda"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Francisco Borda",
+      "player_sname": "Borda",
+      "time": 64,
+      "time_to_display": "64'",
+      "goal_type": "E.C"
+     }
+    ],
+    [
+     {
+      "player_name": "Mauricio Rosales",
+      "player_sname": "Rosales",
+      "time": 62,
+      "time_to_display": "62'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Mitre SdE vs Güemes",
+   "fecha": "Fecha 25",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "29'",
+     "team": 1,
+     "texts": [
+      "Matias Martinez"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Matias Martinez",
+      "player_sname": "Martinez",
+      "time": 29,
+      "time_to_display": "29'",
+      "goal_type": "E.C"
+     }
+    ],
+    [
+     {
+      "player_name": "Juan Sánchez Sotelo",
+      "player_sname": "Sotelo",
+      "time": 21,
+      "time_to_display": "21'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Estudiantes vs Chacarita Juniors",
+   "fecha": "Fecha 25",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "63'",
+     "team": 1,
+     "texts": [
+      "Ian Vera"
+     ],
+     "player_jersey_num": 11
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Ian Vera",
+      "player_sname": "Vera",
+      "time": 63,
+      "time_to_display": "63'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Facundo Ardiles",
+      "player_sname": "Ardiles",
+      "time": 76,
+      "time_to_display": "76'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Gimnasia de Jujuy vs Chaco For Ever",
+   "fecha": "Fecha 25",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "63'",
+     "team": 1,
+     "texts": [
+      "Juan Carrizo"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 6,
+     "time": "86'",
+     "team": 2,
+     "texts": [
+      "Juan Carrizo"
+     ],
+     "player_jersey_num": 7
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Juan Carrizo",
+      "player_sname": "Carrizo",
+      "time": 63,
+      "time_to_display": "63'",
+      "goal_type": "E.C"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Central Norte vs Estudiantes",
+   "fecha": "Fecha 26",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "62'",
+     "team": 1,
+     "texts": [
+      "Jorge Benítez"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Jorge Benítez",
+      "player_sname": "Benítez",
+      "time": 62,
+      "time_to_display": "62'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Francisco Borda",
+      "player_sname": "Borda",
+      "time": 90,
+      "time_to_display": "90'+5"
+     }
+    ],
+    [
+     {
+      "player_name": "Franco Quinteros",
+      "player_sname": "Franco Quinteros",
+      "time": 70,
+      "time_to_display": "70'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Ferro Carril Oeste vs All Boys",
+   "fecha": "Fecha 26",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "56'",
+     "team": 1,
+     "texts": [
+      "Emanuel Dening"
+     ],
+     "player_jersey_num": 11
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Emanuel Dening",
+      "player_sname": "Dening",
+      "time": 56,
+      "time_to_display": "56'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Colegiales vs Deportivo Maipú",
+   "fecha": "Fecha 27",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "75'",
+     "team": 1,
+     "texts": [
+      "Nahuel Galardi"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Nahuel Galardi",
+      "player_sname": "Galardi",
+      "time": 75,
+      "time_to_display": "75'",
+      "goal_type": "E.C"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Mitre SdE vs Central Norte",
+   "fecha": "Fecha 27",
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "85'",
+     "team": 2,
+     "texts": [
+      "Maximiliano Romero"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Marcos Machado",
+      "player_sname": "Machado",
+      "time": 41,
+      "time_to_display": "41'"
+     },
+     {
+      "player_name": "Juan Pablo Zárate",
+      "player_sname": "Zárate",
+      "time": 44,
+      "time_to_display": "44'"
+     }
+    ],
+    [
+     {
+      "player_name": "Maximiliano Romero",
+      "player_sname": "Romero",
+      "time": 85,
+      "time_to_display": "85'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Francisco Borda",
+      "player_sname": "Borda",
+      "time": 90,
+      "time_to_display": "90'+5"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Deportivo Morón vs San Miguel",
+   "fecha": "Fecha 27",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "58'",
+     "team": 1,
+     "texts": [
+      "Dixon Rentería"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Dixon Rentería",
+      "player_sname": "Rentería",
+      "time": 58,
+      "time_to_display": "58'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Joaquín Zappacosta",
+      "player_sname": "Zappacosta",
+      "time": 77,
+      "time_to_display": "77'"
+     }
+    ],
+    [
+     {
+      "player_name": "Leandro Desábato",
+      "player_sname": "Desábato",
+      "time": 66,
+      "time_to_display": "66'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Defensores de Belgrano vs Racing de Córdoba",
+   "fecha": "Fecha 28",
+   "marcador": [
+    3,
+    0
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "16'",
+     "team": 1,
+     "texts": [
+      "Enzo Gonzalez"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Gonzalo Gamarra",
+      "player_sname": "Gamarra",
+      "time": 7,
+      "time_to_display": "7'"
+     },
+     {
+      "player_name": "Enzo Gonzalez",
+      "player_sname": "Gonzalez",
+      "time": 16,
+      "time_to_display": "16'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Gonzalo Gamarra",
+      "player_sname": "Gamarra",
+      "time": 59,
+      "time_to_display": "59'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Acassuso vs All Boys",
+   "fecha": "Fecha 28",
+   "marcador": [
+    0,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "52'",
+     "team": 2,
+     "texts": [
+      "Lucas Pioli"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Lucas Pioli",
+      "player_sname": "Pioli",
+      "time": 52,
+      "time_to_display": "52'",
+      "goal_type": "E.C"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "San Miguel vs Godoy Cruz",
+   "fecha": "Fecha 28",
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "29'",
+     "team": 2,
+     "texts": [
+      "Martín Pino"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Bruno Nasta",
+      "player_sname": "Nasta",
+      "time": 76,
+      "time_to_display": "76'"
+     }
+    ],
+    [
+     {
+      "player_name": "Martín Pino",
+      "player_sname": "Pino",
+      "time": 29,
+      "time_to_display": "29'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Felipe Cairus",
+      "player_sname": "Cairus",
+      "time": 39,
+      "time_to_display": "39'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "San Martín San Juan vs Midland",
+   "fecha": "Fecha 28",
+   "marcador": [
+    3,
+    2
+   ],
+   "eventosGol1": [
+    2,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "87'",
+     "team": 1,
+     "texts": [
+      "Luciano Ferreyra"
+     ],
+     "player_jersey_num": 19
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Sebastián González",
+      "player_sname": "González",
+      "time": 12,
+      "time_to_display": "12'"
+     },
+     {
+      "player_name": "Luciano Ferreyra",
+      "player_sname": "Ferreyra",
+      "time": 87,
+      "time_to_display": "87'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Dante Álvarez",
+      "player_sname": "Alvarez",
+      "time": 90,
+      "time_to_display": "90'+1"
+     }
+    ],
+    [
+     {
+      "player_name": "Matías Flores",
+      "player_sname": "Flores",
+      "time": 52,
+      "time_to_display": "52'"
+     },
+     {
+      "player_name": "Marcos Roseti",
+      "player_sname": "Roseti",
+      "time": 77,
+      "time_to_display": "77'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Temperley vs Colegiales",
+   "fecha": "Fecha 28",
+   "marcador": [
+    3,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "73'",
+     "team": 1,
+     "texts": [
+      "Lucas Angelini"
+     ],
+     "player_jersey_num": 3
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Marcos Echeverría",
+      "player_sname": "Echeverría",
+      "time": 43,
+      "time_to_display": "43'"
+     },
+     {
+      "player_name": "Marcos Echeverría",
+      "player_sname": "Echeverría",
+      "time": 50,
+      "time_to_display": "50'"
+     },
+     {
+      "player_name": "Lucas Angelini",
+      "player_sname": "Angelini",
+      "time": 73,
+      "time_to_display": "73'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Lucio Castillo",
+      "player_sname": "Castillo",
+      "time": 42,
+      "time_to_display": "42'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Güemes vs Gimnasia y Tiro",
+   "fecha": "Fecha 28",
+   "marcador": [
+    1,
+    3
+   ],
+   "eventosGol1": [
+    0,
+    3
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "62'",
+     "team": 1,
+     "texts": [
+      "Juan Sánchez Sotelo"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Juan Sánchez Sotelo",
+      "player_sname": "Sotelo",
+      "time": 62,
+      "time_to_display": "62'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Lautaro Gordillo",
+      "player_sname": "Gordillo",
+      "time": 23,
+      "time_to_display": "23'"
+     },
+     {
+      "player_name": "Franco Sivetti",
+      "player_sname": "Sivetti",
+      "time": 44,
+      "time_to_display": "44'"
+     },
+     {
+      "player_name": "Walter Montoya",
+      "player_sname": "Montoya",
+      "time": 90,
+      "time_to_display": "90'+1"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Racing de Córdoba vs Deportivo Morón",
    "fecha": "Fecha 29",
-   "equipo": "Tristan Suárez",
-   "tipo": "amarilla",
-   "texto": "Jose Maria Martinez",
-   "evento": {
-    "type": 4,
-    "time": "45'",
-    "team": 2,
-    "texts": [
-     "Jose Maria Martinez"
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "72'",
+     "team": 2,
+     "texts": [
+      "Franco Fagundez"
+     ],
+     "player_jersey_num": 10
+    },
+    {
+     "type": 2,
+     "time": "90'",
+     "team": 1,
+     "texts": [
+      "Franco Toloza"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Franco Toloza",
+      "player_sname": "Toloza",
+      "time": 90,
+      "time_to_display": "90'",
+      "goal_type": "E.C"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Joaquin Bigo",
-    "Agustín Baldi",
-    "Mauricio Guzmán",
-    "Brian Aguilar",
-    "Nicolás Fernandez",
-    "Manuel Guillén",
-    "Kevin Colli",
-    "Marcos Enrique",
-    "Nicolás Del Priore",
-    "Diego Becker",
-    "Agustín Gallo",
-    "Augusto Berrondo",
-    "Jonathan Berón",
-    "Matías Olguín",
-    "Nicolas Sánchez",
-    "Santiago Aquino",
-    "Joaquín Mendive",
-    "Alejandro Molina",
-    "Tiziano Noriega",
-    "Maximiliano Álvarez"
+    [
+     {
+      "player_name": "Mateo Levato",
+      "player_sname": "Levato",
+      "time": 41,
+      "time_to_display": "41'"
+     },
+     {
+      "player_name": "Franco Fagundez",
+      "player_sname": "Fagundez",
+      "time": 72,
+      "time_to_display": "72'",
+      "goal_type": "Pen"
+     }
+    ]
    ]
   },
   {
-   "partido": "Nueva Chicago vs Deportivo Maipú",
-   "fecha": "Fecha 32",
-   "equipo": "Deportivo Maipú",
-   "tipo": "amarilla",
-   "texto": "Mariano Echeverría",
-   "evento": {
-    "type": 4,
-    "time": "74'",
-    "team": 2,
-    "texts": [
-     "Mariano Echeverría"
+   "partido": "Defensores de Belgrano vs Deportivo Madryn",
+   "fecha": "Fecha 29",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "39'",
+     "team": 1,
+     "texts": [
+      "Enzo Gonzalez"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 3,
+     "time": "60'",
+     "team": 2,
+     "texts": [
+      "Nazareno Solís"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Enzo Gonzalez",
+      "player_sname": "Gonzalez",
+      "time": 34,
+      "time_to_display": "34'"
+     },
+     {
+      "player_name": "Enzo Gonzalez",
+      "player_sname": "Gonzalez",
+      "time": 39,
+      "time_to_display": "39'",
+      "goal_type": "Pen"
+     }
     ],
-    "player_jersey_num": null
-   },
-   "alineacion": [
-    "Nahuel Galardi",
-    "Nicolás Fernández",
-    "Áaron Agüero",
-    "Santiago Paulini",
-    "Lucas Faggioli",
-    "Franco Saccone",
-    "Juan Pablo Gobetto",
-    "Enzo Pérez",
-    "Mirko Bonfigli",
-    "Tomas Silva",
-    "Matías Viguet",
-    "Tiago Ferreyra",
-    "Juan Cruz Giacone",
-    "Brian Orosco",
-    "Juan Pablo De la Reta",
-    "Lisandro Cabrera",
-    "Mateo Ortale",
-    "Luciano Peraggini",
-    "Julian Vera",
-    "Agustín Gaitán"
+    [
+     {
+      "player_name": "Nazareno Solís",
+      "player_sname": "Solís",
+      "time": 60,
+      "time_to_display": "60'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "San Miguel vs All Boys",
+   "fecha": "Fecha 30",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "49'",
+     "team": 1,
+     "texts": [
+      "Gustavo Fernández"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Gustavo Fernández",
+      "player_sname": "Fernández",
+      "time": 49,
+      "time_to_display": "49'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Lucas Cano",
+      "player_sname": "Cano",
+      "time": 52,
+      "time_to_display": "52'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Temperley vs Almagro",
+   "fecha": "Fecha 30",
+   "marcador": [
+    3,
+    1
+   ],
+   "eventosGol1": [
+    2,
+    1
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "3'",
+     "team": 1,
+     "texts": [
+      "Brian Negro"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Brian Negro",
+      "player_sname": "Negro",
+      "time": 3,
+      "time_to_display": "3'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Facundo Kruger",
+      "player_sname": "Kruger",
+      "time": 56,
+      "time_to_display": "56'"
+     },
+     {
+      "player_name": "Facundo Kruger",
+      "player_sname": "Kruger",
+      "time": 65,
+      "time_to_display": "65'"
+     }
+    ],
+    [
+     {
+      "player_name": "Facundo De La Vega",
+      "player_sname": "Facundo De La Vega",
+      "time": 6,
+      "time_to_display": "6'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Deportivo Morón vs Godoy Cruz",
+   "fecha": "Fecha 30",
+   "marcador": [
+    1,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "30'",
+     "team": 2,
+     "texts": [
+      "Martín Pino"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Emilio Lazza",
+      "player_sname": "Lazza",
+      "time": 36,
+      "time_to_display": "36'"
+     }
+    ],
+    [
+     {
+      "player_name": "Martín Pino",
+      "player_sname": "Pino",
+      "time": 30,
+      "time_to_display": "30'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Gaston Gil Romero",
+      "player_sname": "Romero",
+      "time": 71,
+      "time_to_display": "71'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Agropecuario vs Gimnasia y Tiro",
+   "fecha": "Fecha 30",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 6,
+     "time": "74'",
+     "team": 2,
+     "texts": [
+      "Lautaro Montoya"
+     ],
+     "player_jersey_num": 3
+    },
+    {
+     "type": 3,
+     "time": "90'+1",
+     "team": 1,
+     "texts": [
+      "Carlos Auzqui"
+     ],
+     "player_jersey_num": 19
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Carlos Auzqui",
+      "player_sname": "Auzqui",
+      "time": 90,
+      "time_to_display": "90'+1",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Colón vs Los Andes",
+   "fecha": "Fecha 30",
+   "marcador": [
+    3,
+    0
+   ],
+   "eventosGol1": [
+    2,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "17'",
+     "team": 1,
+     "texts": [
+      "Alan Bonansea"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Alan Bonansea",
+      "player_sname": "Bonansea",
+      "time": 17,
+      "time_to_display": "17'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Ignacio Lago",
+      "player_sname": "Lago",
+      "time": 41,
+      "time_to_display": "41'"
+     },
+     {
+      "player_name": "Ignacio Lago",
+      "player_sname": "Lago",
+      "time": 43,
+      "time_to_display": "43'"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "San Martín San Juan vs Colegiales",
+   "fecha": "Fecha 30",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "53'",
+     "team": 1,
+     "texts": [
+      "Nazareno Funez"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Dante Álvarez",
+      "player_sname": "Alvarez",
+      "time": 38,
+      "time_to_display": "38'"
+     },
+     {
+      "player_name": "Nazareno Funez",
+      "player_sname": "Funez",
+      "time": 53,
+      "time_to_display": "53'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Nueva Chicago vs Patronato",
+   "fecha": "Fecha 30",
+   "marcador": [
+    1,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "29'",
+     "team": 2,
+     "texts": [
+      "Renzo Reynaga"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Tomas Rodriguez",
+      "player_sname": "Rodriguez",
+      "time": 55,
+      "time_to_display": "55'"
+     }
+    ],
+    [
+     {
+      "player_name": "Renzo Reynaga",
+      "player_sname": "Reynaga",
+      "time": 29,
+      "time_to_display": "29'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Almirante Brown vs Acassuso",
+   "fecha": "Fecha 31",
+   "marcador": [
+    0,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "57'",
+     "team": 2,
+     "texts": [
+      "David Escalante"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "David Escalante",
+      "player_sname": "Escalante",
+      "time": 57,
+      "time_to_display": "57'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Estudiantes vs San Miguel",
+   "fecha": "Fecha 31",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "81'",
+     "team": 1,
+     "texts": [
+      "Ian Vera"
+     ],
+     "player_jersey_num": 19
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Dario Rostagno",
+      "player_sname": "Rostagno",
+      "time": 69,
+      "time_to_display": "69'"
+     },
+     {
+      "player_name": "Ian Vera",
+      "player_sname": "Vera",
+      "time": 81,
+      "time_to_display": "81'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Lucas Delgado",
+      "player_sname": "Delgado",
+      "time": 49,
+      "time_to_display": "49'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Quilmes vs Güemes",
+   "fecha": "Fecha 31",
+   "marcador": [
+    2,
+    0
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "9'",
+     "team": 1,
+     "texts": [
+      "Agustín Lavezzi"
+     ],
+     "player_jersey_num": 7
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Agustín Lavezzi",
+      "player_sname": "Lavezzi",
+      "time": 9,
+      "time_to_display": "9'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Gonzalo Vega",
+      "player_sname": "Vega",
+      "time": 90,
+      "time_to_display": "90'+1"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Los Andes vs Deportivo Morón",
+   "fecha": "Fecha 31",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    1,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "33'",
+     "team": 2,
+     "texts": [
+      "Franco Fagundez"
+     ],
+     "player_jersey_num": 10
+    },
+    {
+     "type": 3,
+     "time": "76'",
+     "team": 1,
+     "texts": [
+      "Mauricio Asenjo"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Mauricio Asenjo",
+      "player_sname": "Asenjo",
+      "time": 76,
+      "time_to_display": "76'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Franco Tisera",
+      "player_sname": "Tisera",
+      "time": 90,
+      "time_to_display": "90'+2"
+     }
+    ],
+    [
+     {
+      "player_name": "Franco Fagundez",
+      "player_sname": "Fagundez",
+      "time": 33,
+      "time_to_display": "33'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Midland vs Tristan Suárez",
+   "fecha": "Fecha 31",
+   "marcador": [
+    0,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "30'",
+     "team": 2,
+     "texts": [
+      "Isaias Andrada"
+     ],
+     "player_jersey_num": null
+    },
+    {
+     "type": 6,
+     "time": "86'",
+     "team": 2,
+     "texts": [
+      "Jonathan Berón"
+     ],
+     "player_jersey_num": 20
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Isaias Andrada",
+      "player_sname": "Andrada",
+      "time": 30,
+      "time_to_display": "30'",
+      "goal_type": "E.C"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Colón vs Estudiantes",
+   "fecha": "Fecha 32",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "88'",
+     "team": 1,
+     "texts": [
+      "Jorge Benítez"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Jorge Benítez",
+      "player_sname": "Benítez",
+      "time": 88,
+      "time_to_display": "88'",
+      "goal_type": "E.C"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Acassuso vs Ciudad De Bolivar",
+   "fecha": "Fecha 32",
+   "marcador": [
+    0,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "50'",
+     "team": 2,
+     "texts": [
+      "Guillermo Sánchez"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    null,
+    [
+     {
+      "player_name": "Guillermo Sánchez",
+      "player_sname": "Sánchez",
+      "time": 50,
+      "time_to_display": "50'",
+      "goal_type": "Pen"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Atlético Rafaela vs Atlanta",
+   "fecha": "Fecha 32",
+   "marcador": [
+    2,
+    3
+   ],
+   "eventosGol1": [
+    1,
+    3
+   ],
+   "otros": [
+    {
+     "type": 2,
+     "time": "25'",
+     "team": 1,
+     "texts": [
+      "Martín García"
+     ],
+     "player_jersey_num": null
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Martín García",
+      "player_sname": "Garcia",
+      "time": 25,
+      "time_to_display": "25'",
+      "goal_type": "E.C"
+     },
+     {
+      "player_name": "Mauro Quiroga",
+      "player_sname": "Quiroga",
+      "time": 90,
+      "time_to_display": "90'"
+     }
+    ],
+    [
+     {
+      "player_name": "Federico Álvarez",
+      "player_sname": "Álvarez",
+      "time": 41,
+      "time_to_display": "41'"
+     },
+     {
+      "player_name": "Braian Rivero",
+      "player_sname": "Rivero",
+      "time": 71,
+      "time_to_display": "71'"
+     },
+     {
+      "player_name": "Leonel Galeano",
+      "player_sname": "Galeano",
+      "time": 81,
+      "time_to_display": "81'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Midland vs Atlético Rafaela",
+   "fecha": "Fecha 33",
+   "marcador": [
+    4,
+    0
+   ],
+   "eventosGol1": [
+    3,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "78'",
+     "team": 1,
+     "texts": [
+      "Luciano Recalde"
+     ],
+     "player_jersey_num": 6
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Ezequiel Bulacio",
+      "player_sname": "Bulacio",
+      "time": 13,
+      "time_to_display": "13'"
+     },
+     {
+      "player_name": "Facundo Marin",
+      "player_sname": "Marin",
+      "time": 25,
+      "time_to_display": "25'"
+     },
+     {
+      "player_name": "Luciano Recalde",
+      "player_sname": "Recalde",
+      "time": 78,
+      "time_to_display": "78'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Matias Abbruzzese",
+      "player_sname": "Abbruzzese",
+      "time": 90,
+      "time_to_display": "90'+2"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Gimnasia de Jujuy vs Gimnasia y Tiro",
+   "fecha": "Fecha 33",
+   "marcador": [
+    2,
+    2
+   ],
+   "eventosGol1": [
+    1,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "70'",
+     "team": 1,
+     "texts": [
+      "Francisco Molina"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Guillermo Cosaro",
+      "player_sname": "Cosaro",
+      "time": 62,
+      "time_to_display": "62'"
+     },
+     {
+      "player_name": "Francisco Molina",
+      "player_sname": "Molina",
+      "time": 70,
+      "time_to_display": "70'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Fabricio Rojas",
+      "player_sname": "Rojas",
+      "time": 75,
+      "time_to_display": "75'"
+     },
+     {
+      "player_name": "Manuel Guanini",
+      "player_sname": "Guanini",
+      "time": 85,
+      "time_to_display": "85'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Atlético Rafaela vs Quilmes",
+   "fecha": "Fecha 34",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "2'",
+     "team": 1,
+     "texts": [
+      "Martiniano Moreno"
+     ],
+     "player_jersey_num": 7
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Martiniano Moreno",
+      "player_sname": "Moreno",
+      "time": 2,
+      "time_to_display": "2'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Tristan Suárez vs Patronato",
+   "fecha": "Fecha 34",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "25'",
+     "team": 1,
+     "texts": [
+      "Diego Becker"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Diego Becker",
+      "player_sname": "Becker",
+      "time": 25,
+      "time_to_display": "25'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Ferro Carril Oeste vs Racing de Córdoba",
+   "fecha": "Fecha 34",
+   "marcador": [
+    1,
+    0
+   ],
+   "eventosGol1": [
+    0,
+    0
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "58'",
+     "team": 1,
+     "texts": [
+      "Lautaro Parisi"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Lautaro Parisi",
+      "player_sname": "Parisi",
+      "time": 58,
+      "time_to_display": "58'",
+      "goal_type": "Pen"
+     }
+    ],
+    null
+   ]
+  },
+  {
+   "partido": "Godoy Cruz vs Estudiantes",
+   "fecha": "Fecha 34",
+   "marcador": [
+    6,
+    3
+   ],
+   "eventosGol1": [
+    6,
+    2
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "40'",
+     "team": 2,
+     "texts": [
+      "Ian Vera"
+     ],
+     "player_jersey_num": 10
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Vicente Poggi",
+      "player_sname": "Poggi",
+      "time": 33,
+      "time_to_display": "33'"
+     },
+     {
+      "player_name": "Martín Pino",
+      "player_sname": "Pino",
+      "time": 43,
+      "time_to_display": "43'"
+     },
+     {
+      "player_name": "Diego Viera",
+      "player_sname": "Viera",
+      "time": 45,
+      "time_to_display": "45'"
+     },
+     {
+      "player_name": "Axel Rodríguez",
+      "player_sname": "Rodríguez",
+      "time": 52,
+      "time_to_display": "52'"
+     },
+     {
+      "player_name": "Martín Pino",
+      "player_sname": "Pino",
+      "time": 58,
+      "time_to_display": "58'"
+     },
+     {
+      "player_name": "Martín Pino",
+      "player_sname": "Pino",
+      "time": 87,
+      "time_to_display": "87'"
+     }
+    ],
+    [
+     {
+      "player_name": "Ian Vera",
+      "player_sname": "Vera",
+      "time": 13,
+      "time_to_display": "13'"
+     },
+     {
+      "player_name": "Ian Vera",
+      "player_sname": "Vera",
+      "time": 40,
+      "time_to_display": "40'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Santiago Camacho",
+      "player_sname": "Camacho",
+      "time": 70,
+      "time_to_display": "70'"
+     }
+    ]
+   ]
+  },
+  {
+   "partido": "Quilmes vs San Martín Tucumán",
+   "fecha": "Fecha 35",
+   "marcador": [
+    2,
+    1
+   ],
+   "eventosGol1": [
+    0,
+    1
+   ],
+   "otros": [
+    {
+     "type": 3,
+     "time": "28'",
+     "team": 1,
+     "texts": [
+      "Aarón Spetale"
+     ],
+     "player_jersey_num": 9
+    },
+    {
+     "type": 3,
+     "time": "84'",
+     "team": 1,
+     "texts": [
+      "Aarón Spetale"
+     ],
+     "player_jersey_num": 9
+    }
+   ],
+   "teamGoals": [
+    [
+     {
+      "player_name": "Aarón Spetale",
+      "player_sname": "Spetale",
+      "time": 28,
+      "time_to_display": "28'",
+      "goal_type": "Pen"
+     },
+     {
+      "player_name": "Aarón Spetale",
+      "player_sname": "Spetale",
+      "time": 84,
+      "time_to_display": "84'",
+      "goal_type": "Pen"
+     }
+    ],
+    [
+     {
+      "player_name": "Nicolás Castro",
+      "player_sname": "Castro",
+      "time": 7,
+      "time_to_display": "7'"
+     }
+    ]
    ]
   }
  ],
- "resumen": {
-  "partidos": 820,
-  "sinAsignar": 49
- }
+ "gordillo": [
+  {
+   "fecha": "Fecha 1",
+   "partido": "Gimnasia y Tiro vs Colegiales",
+   "e": {
+    "type": 1,
+    "time": "25'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo",
+     "Fabricio Rojas"
+    ],
+    "player_jersey_num": 11
+   }
+  },
+  {
+   "fecha": "Fecha 1",
+   "partido": "Gimnasia y Tiro vs Colegiales",
+   "e": {
+    "type": 1,
+    "time": "33'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo",
+     "Lautaro Montoya"
+    ],
+    "player_jersey_num": 11
+   }
+  },
+  {
+   "fecha": "Fecha 2",
+   "partido": "Patronato vs Gimnasia y Tiro",
+   "e": {
+    "type": 1,
+    "time": "31'",
+    "team": 2,
+    "texts": [
+     "Lautaro Gordillo",
+     "Nicolas Rinaldi"
+    ],
+    "player_jersey_num": 11
+   }
+  },
+  {
+   "fecha": "Fecha 2",
+   "partido": "Patronato vs Gimnasia y Tiro",
+   "e": {
+    "type": 15,
+    "time": "62'",
+    "team": 2,
+    "texts": [
+     "Franco Sivetti",
+     "Lautaro Gordillo"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 3",
+   "partido": "Gimnasia y Tiro vs Almagro",
+   "e": {
+    "type": 1,
+    "time": "45'+3",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo",
+     "Jonas Aguirre"
+    ],
+    "player_jersey_num": 11
+   }
+  },
+  {
+   "fecha": "Fecha 3",
+   "partido": "Gimnasia y Tiro vs Almagro",
+   "e": {
+    "type": 3,
+    "time": "65'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 11
+   }
+  },
+  {
+   "fecha": "Fecha 3",
+   "partido": "Gimnasia y Tiro vs Almagro",
+   "e": {
+    "type": 15,
+    "time": "87'",
+    "team": 1,
+    "texts": [
+     "Franco Sivetti",
+     "Lautaro Gordillo"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 4",
+   "partido": "Deportivo Maipú vs Gimnasia y Tiro",
+   "e": {
+    "type": 15,
+    "time": "79'",
+    "team": 2,
+    "texts": [
+     "Nicolás Contin",
+     "Lautaro Gordillo"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 7",
+   "partido": "Gimnasia y Tiro vs Central Norte",
+   "e": {
+    "type": 4,
+    "time": "87'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 8",
+   "partido": "Gimnasia y Tiro vs San Martín San Juan",
+   "e": {
+    "type": 1,
+    "time": "2'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 8",
+   "partido": "Gimnasia y Tiro vs San Martín San Juan",
+   "e": {
+    "type": 4,
+    "time": "33'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 9",
+   "partido": "Chacarita Juniors vs Gimnasia y Tiro",
+   "e": {
+    "type": 4,
+    "time": "75'",
+    "team": 2,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 15",
+   "partido": "Gimnasia y Tiro vs Gimnasia de Jujuy",
+   "e": {
+    "type": 15,
+    "time": "76'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo",
+     "Walter Montoya"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 16",
+   "partido": "Atlanta vs Gimnasia y Tiro",
+   "e": {
+    "type": 15,
+    "time": "69'",
+    "team": 2,
+    "texts": [
+     "Lautaro Gordillo",
+     "Nicolás Contin"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 16",
+   "partido": "Atlanta vs Gimnasia y Tiro",
+   "e": {
+    "type": 4,
+    "time": "72'",
+    "team": 2,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 20
+   }
+  },
+  {
+   "fecha": "Fecha 17",
+   "partido": "Gimnasia y Tiro vs Midland",
+   "e": {
+    "type": 3,
+    "time": "81'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 17",
+   "partido": "Gimnasia y Tiro vs Midland",
+   "e": {
+    "type": 15,
+    "time": "87'",
+    "team": 1,
+    "texts": [
+     "Matías Birge",
+     "Lautaro Gordillo"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 20",
+   "partido": "Gimnasia y Tiro vs Patronato",
+   "e": {
+    "type": 15,
+    "time": "57'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo",
+     "Juan Rocca"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 20",
+   "partido": "Gimnasia y Tiro vs Patronato",
+   "e": {
+    "type": 4,
+    "time": "69'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 20
+   }
+  },
+  {
+   "fecha": "Fecha 21",
+   "partido": "Almagro vs Gimnasia y Tiro",
+   "e": {
+    "type": 1,
+    "time": "34'",
+    "team": 2,
+    "texts": [
+     "Lautaro Gordillo",
+     "Juan Rocca"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 21",
+   "partido": "Almagro vs Gimnasia y Tiro",
+   "e": {
+    "type": 1,
+    "time": "72'",
+    "team": 2,
+    "texts": [
+     "Lautaro Gordillo",
+     "Jonas Aguirre"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 21",
+   "partido": "Almagro vs Gimnasia y Tiro",
+   "e": {
+    "type": 15,
+    "time": "90'",
+    "team": 2,
+    "texts": [
+     "Nicolás Contin",
+     "Lautaro Gordillo"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 22",
+   "partido": "Gimnasia y Tiro vs Deportivo Maipú",
+   "e": {
+    "type": 15,
+    "time": "62'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo",
+     "Nicolás Contin"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 22",
+   "partido": "Gimnasia y Tiro vs Deportivo Maipú",
+   "e": {
+    "type": 3,
+    "time": "79'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 20
+   }
+  },
+  {
+   "fecha": "Fecha 23",
+   "partido": "Temperley vs Gimnasia y Tiro",
+   "e": {
+    "type": 1,
+    "time": "9'",
+    "team": 2,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 23",
+   "partido": "Temperley vs Gimnasia y Tiro",
+   "e": {
+    "type": 15,
+    "time": "77'",
+    "team": 2,
+    "texts": [
+     "Gonzalo Soto",
+     "Lautaro Gordillo"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 24",
+   "partido": "Gimnasia y Tiro vs Nueva Chicago",
+   "e": {
+    "type": 15,
+    "time": "82'",
+    "team": 1,
+    "texts": [
+     "Nicolás Contin",
+     "Lautaro Gordillo"
+    ]
+   }
+  },
+  {
+   "fecha": "Fecha 27",
+   "partido": "Gimnasia y Tiro vs Chacarita Juniors",
+   "e": {
+    "type": 1,
+    "time": "90'+1",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo",
+     "Gonzalo Soto"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 28",
+   "partido": "Güemes vs Gimnasia y Tiro",
+   "e": {
+    "type": 1,
+    "time": "23'",
+    "team": 2,
+    "texts": [
+     "Lautaro Gordillo",
+     "Jonas Aguirre"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 28",
+   "partido": "Güemes vs Gimnasia y Tiro",
+   "e": {
+    "type": 1,
+    "time": "44'",
+    "team": 2,
+    "texts": [
+     "Franco Sivetti",
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 5
+   }
+  },
+  {
+   "fecha": "Fecha 31",
+   "partido": "Gimnasia y Tiro vs Atlético Rafaela",
+   "e": {
+    "type": 4,
+    "time": "60'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 32",
+   "partido": "San Martín Tucumán vs Gimnasia y Tiro",
+   "e": {
+    "type": 5,
+    "time": "90'+8",
+    "team": 2,
+    "texts": [
+     "Lautaro Gordillo"
+    ],
+    "player_jersey_num": 9
+   }
+  },
+  {
+   "fecha": "Fecha 34",
+   "partido": "Gimnasia y Tiro vs Atlanta",
+   "e": {
+    "type": 15,
+    "time": "62'",
+    "team": 1,
+    "texts": [
+     "Lautaro Gordillo",
+     "Nicolás Contin"
+    ]
+   }
+  }
+ ]
 }
