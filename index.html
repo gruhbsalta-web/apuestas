@@ -2016,7 +2016,7 @@ document.getElementById('btn-reset-all').addEventListener('click', ()=>{
   renderAll();
   // refresca minuto de juego y probabilidad estimada cada 60s
   setInterval(renderAll, 60000);
-  // trae datos nuevos solo (el cron los actualiza cada 30 min en horario de partidos)
+  // trae datos nuevos solo (el cron los actualiza cada 10 min de 08:00 a 00:00)
   setInterval(async ()=>{
     try{
       await syncFromData();
