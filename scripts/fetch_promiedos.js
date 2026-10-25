@@ -18,12 +18,16 @@ const LEAGUE_OVERRIDE = (process.env.PROMIEDOS_LEAGUES || '').split(',').map((v)
 // Paises/categorias del menu de Promiedos que queremos cubrir. El resto
 // (Alemania, Portugal, Francia, Brasil, Uruguay, Paraguay, Colombia, Chile,
 // Mexico, EEUU, Selecciones) queda afuera a proposito.
-const COUNTRY_WHITELIST = ['Argentina', 'Internacional'];
+const COUNTRY_WHITELIST = ['Argentina', 'Inglaterra', 'España', 'Italia', 'Internacional'];
 // Ligas que se siguen, agrupadas por pais. Para sumar otra liga o pais basta
 // con agregar su id de Promiedos aca (y el pais en COUNTRY_BY_LEAGUE).
-// Hoy solo interesa Argentina: Liga Profesional, Primera Nacional y Copa Argentina.
-const LEAGUE_ID_INCLUDE = new Set(['hc', 'ebj', 'gea']);
-const COUNTRY_BY_LEAGUE = { hc: 'Argentina', ebj: 'Argentina', gea: 'Argentina' };
+// Argentina: Liga Profesional, Primera Nacional y Copa Argentina.
+// Europa (solo partidos, sin planteles): Premier League, La Liga y Serie A.
+const LEAGUE_ID_INCLUDE = new Set(['hc', 'ebj', 'gea', 'h', 'bb', 'bh']);
+const COUNTRY_BY_LEAGUE = {
+  hc: 'Argentina', ebj: 'Argentina', gea: 'Argentina',
+  h: 'Inglaterra', bb: 'España', bh: 'Italia'
+};
 // Ligas puntuales que no queremos aunque su pais/categoria este en la
 // whitelist: reserva/amateur argentino (no estan en las listas de equipos
 // de la app) y las copas domesticas de Inglaterra/España/Italia (de las
@@ -114,6 +118,14 @@ async function resolveLeagues(buildId) {
   return [...leagues.values()];
 }
 
+// Nombre de la jornada: "Clausura, Fecha 14" -> "Fecha 14"
+function nombreRonda(s) {
+  const t = String(s || '').trim();
+  if (!t) return null;
+  const partes = t.split(',').map((x) => x.trim()).filter(Boolean);
+  return partes[partes.length - 1];
+}
+
 function normalizeMatch(game, league) {
   const scores = Array.isArray(game.scores) ? game.scores : [0, 0];
   const goles = { l: scores[0] || 0, v: scores[1] || 0 };
@@ -135,7 +147,8 @@ function normalizeMatch(game, league) {
       leagueName: league.name || league.id,
       country: league.country || COUNTRY_BY_LEAGUE[league.id] || 'Argentina',
       gameUrlName: game.url_name,
-      statusShort: game?.status?.short_name || ''
+      statusShort: game?.status?.short_name || '',
+      ronda: nombreRonda(game.stage_round_name)
     },
     _needsDetail: finPartido || finPrimerTiempo,
     _goles: goles,

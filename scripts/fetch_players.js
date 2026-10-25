@@ -36,7 +36,7 @@ const OUTPUT_PATH = process.env.PLAYERS_OUTPUT || path.join(__dirname, '..', 'da
 // asi la pestaña Terminados y los promedios por equipo cubren toda la temporada.
 const MATCHES_PATH = process.env.MATCHES_OUTPUT || path.join(__dirname, '..', 'data', 'matches.json');
 
-function matchRecord(ficha, league, country, fechaHora) {
+function matchRecord(ficha, league, country, fechaHora, ronda) {
   const scores = Array.isArray(ficha.scores) ? ficha.scores : [0, 0];
   return {
     id: `promiedos_${ficha.id}`,
@@ -52,7 +52,8 @@ function matchRecord(ficha, league, country, fechaHora) {
       leagueName: league.nombre,
       country,
       gameUrlName: ficha.url_name,
-      statusShort: ficha?.status?.short_name || 'Final'
+      statusShort: ficha?.status?.short_name || 'Final',
+      ronda: ronda || null
     }
   };
 }
@@ -256,7 +257,7 @@ async function run() {
         }
         addLines(out, league, lines);
         addCoaches(out, league, coachesFromGame(ficha));
-        const rec = matchRecord(ficha, league, 'Argentina', fichaHora || fechaHora);
+        const rec = matchRecord(ficha, league, 'Argentina', fichaHora || fechaHora, round.nombre);
         if (!matchById.has(rec.id)) partidosHistoricos++;
         matchById.set(rec.id, rec);
         out.partidos[game.id] = {
