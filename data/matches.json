@@ -34396,28 +34396,28 @@
       "local": "Manchester United",
       "visitante": "Bournemouth",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 4
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -34426,7 +34426,7 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "manchester-united-vs-bournemouth",
-        "statusShort": "Prog.",
+        "statusShort": "1°",
         "ronda": "Fecha 8"
       }
     },
@@ -34435,11 +34435,11 @@
       "local": "Liverpool",
       "visitante": "Brighton",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -34447,16 +34447,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 3,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -34465,7 +34465,7 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "liverpool-vs-brighton",
-        "statusShort": "Prog.",
+        "statusShort": "1°",
         "ronda": "Fecha 8"
       }
     },
@@ -34474,27 +34474,27 @@
       "local": "Hull City",
       "visitante": "Brentford",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         }
       },
@@ -34504,7 +34504,7 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "hull-city-vs-brentford",
-        "statusShort": "Prog.",
+        "statusShort": "1°",
         "ronda": "Fecha 8"
       }
     },
@@ -34513,7 +34513,7 @@
       "local": "Crystal Palace",
       "visitante": "Newcastle United",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -34522,19 +34522,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -34543,7 +34543,7 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "crystal-palace-vs-newcastle-united",
-        "statusShort": "Prog.",
+        "statusShort": "1°",
         "ronda": "Fecha 8"
       }
     },
@@ -35024,19 +35024,19 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 2
+          "l": 1,
+          "v": 3
         },
         "corners": {
-          "l": 1,
-          "v": 2
+          "l": 2,
+          "v": 4
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "atajadas": {
@@ -35050,7 +35050,7 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "athletic-bilbao-vs-getafe",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "ronda": "Fecha 10"
       }
     },
@@ -35449,11 +35449,11 @@
       "local": "Genoa",
       "visitante": "Venezia",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -35461,16 +35461,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -35479,7 +35479,7 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "genoa-vs-venezia",
-        "statusShort": "Prog.",
+        "statusShort": "1°",
         "ronda": "Fecha 8"
       }
     },
@@ -35488,28 +35488,28 @@
       "local": "Atalanta",
       "visitante": "Frosinone",
       "fechaHora": "2026-10-25T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 4
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 3
         }
       },
       "source": {
@@ -35518,7 +35518,7 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "atalanta-vs-frosinone",
-        "statusShort": "Prog.",
+        "statusShort": "1°",
         "ronda": "Fecha 8"
       }
     },
