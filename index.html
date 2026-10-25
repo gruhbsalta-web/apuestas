@@ -86,7 +86,25 @@
     padding:6px 2px;border-radius:var(--radius);min-height:48px;
   }
   .tab-btn svg{width:22px;height:22px;}
-  .tab-btn{font-size:11.5px;}
+  .tab-btn{font-size:11px;padding:6px 0;}
+  .tabs{gap:0;padding-left:2px;padding-right:2px;}
+  table.posiciones{width:100%;border-collapse:collapse;font-size:15px;}
+  table.posiciones th{color:var(--muted);font-weight:600;font-size:12px;text-align:center;padding:8px 4px;border-bottom:1px solid var(--line);white-space:nowrap;}
+  table.posiciones th.eq{text-align:left;}
+  table.posiciones td{text-align:center;padding:8px 4px;border-bottom:1px solid var(--line);font-family:var(--ff-num);font-size:16px;white-space:nowrap;}
+  table.posiciones td.pos{width:30px;font-weight:700;color:var(--muted);box-shadow:inset 3px 0 0 var(--dest, transparent);}
+  table.posiciones td.eq{text-align:left;font-family:var(--ff);font-size:15px;font-weight:600;}
+  table.posiciones td.eq button{display:flex;align-items:center;gap:8px;background:none;border:none;color:var(--text);font:inherit;padding:0;text-align:left;max-width:150px;}
+  table.posiciones td.eq button span{overflow:hidden;text-overflow:ellipsis;}
+  table.posiciones td.eq .crest{width:24px;height:24px;font-size:8px;}
+  table.posiciones td.pts{font-weight:700;font-size:18px;color:var(--text);}
+  table.posiciones tr.mine td{background:var(--surface-2);}
+  .tend{display:inline-flex;gap:3px;}
+  .tend i{width:8px;height:8px;border-radius:50%;display:inline-block;}
+  .tend i.G{background:var(--good);} .tend i.E{background:#B8B08A;} .tend i.P{background:var(--red);}
+  .leyenda{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:10px;font-size:12px;color:var(--muted);}
+  .leyenda span{display:inline-flex;align-items:center;gap:6px;}
+  .leyenda i{width:10px;height:10px;border-radius:3px;display:inline-block;}
   .pl-head{display:flex;align-items:center;gap:12px;margin:2px 0 12px;}
   .pl-head button{background:none;border:none;color:var(--text);font:inherit;font-size:20px;font-weight:700;padding:0;text-align:left;}
   .pl-head .bet-sub{margin:0;}
@@ -373,6 +391,10 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3l-5 3 2 4 3-1v12h8V9l3 1 2-4-5-3c-.5 1.5-2 2.5-4 2.5S8.5 4.5 8 3z"/></svg>
     Planteles
   </button>
+  <button class="tab-btn" data-view="tablas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h16M4 20h16M8 5v15"/></svg>
+    Tablas
+  </button>
   <button class="tab-btn" data-view="resumen">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
     Resumen
@@ -509,6 +531,14 @@
     <div class="card" style="padding:12px 10px">
       <div id="pl-tabla"></div>
     </div>
+  </section>
+
+  <!-- TABLAS -->
+  <section id="view-tablas" class="view">
+    <div id="tb-paises" class="chips paises"></div>
+    <div id="tb-ligas" class="chips"></div>
+    <div id="tb-grupos" class="chips"></div>
+    <div id="tb-contenido"></div>
   </section>
 
   <!-- RESUMEN -->
@@ -752,6 +782,7 @@ document.querySelectorAll(".tab-btn").forEach(btn=>{
     if(btn.dataset.view === "terminados") renderTerminados();
     if(btn.dataset.view === "resumen") renderResumen();
     if(btn.dataset.view === "planteles") renderPlantelesTab();
+    if(btn.dataset.view === "tablas") renderTablas();
   });
 });
 
@@ -1607,6 +1638,64 @@ new MutationObserver(muts=>muts.forEach(m=>m.addedNodes.forEach(n=>{
   if(n.tagName === "SELECT") mejorarSelect(n);
   n.querySelectorAll && n.querySelectorAll("select").forEach(mejorarSelect);
 }))).observe(document.body, {childList:true, subtree:true});
+
+// ---------- Pestaña Tablas: posiciones de cada liga (data/tablas.json, lo arma el cron) ----------
+let tablasData = null;
+let tbPais = "Argentina", tbLiga = "hc", tbGrupo = 0;
+function loadTablas(){
+  if(tablasData) return Promise.resolve(tablasData);
+  return fetch("data/tablas.json", {cache:"no-store"}).then(r=>r.ok ? r.json() : null).then(d=>{ tablasData = d; return d; }).catch(()=>null);
+}
+// tendencia de Promiedos: 1 ganó, 2 empató, 0 perdió (de la más reciente a la más vieja)
+const TEND = {1:"G", 2:"E", 0:"P"};
+async function renderTablas(){
+  const cont = document.getElementById("tb-contenido");
+  if(!tablasData){
+    cont.innerHTML = '<div class="bet-sub">Cargando tablas…</div>';
+    if(!(await loadTablas())){ cont.innerHTML = '<div class="empty">Todavía no hay tablas cargadas. Aparecen con la próxima actualización automática.</div>'; return; }
+  }
+  const ligas = Object.entries(tablasData.ligas || {}).map(([id, l])=>Object.assign({id}, l));
+  const paises = Array.from(new Set(ligas.map(l=>l.pais)));
+  if(!paises.includes(tbPais)) tbPais = paises[0];
+  const ligasPais = ligas.filter(l=>l.pais === tbPais);
+  if(!ligasPais.some(l=>l.id === tbLiga)){ tbLiga = ligasPais[0].id; tbGrupo = 0; }
+  const liga = ligasPais.find(l=>l.id === tbLiga);
+  if(tbGrupo >= liga.grupos.length) tbGrupo = 0;
+
+  const chip = (attr, v, txt, act)=>`<button class="chip ${act ? "active" : ""}" ${attr}="${v}">${txt}</button>`;
+  document.getElementById("tb-paises").innerHTML = paises.length > 1 ? paises.map(p=>chip("data-tb-pais", p, p, p === tbPais)).join("") : "";
+  document.getElementById("tb-ligas").innerHTML = ligasPais.length > 1 ? ligasPais.map(l=>chip("data-tb-liga", l.id, l.nombre, l.id === tbLiga)).join("") : "";
+  document.getElementById("tb-grupos").innerHTML = liga.grupos.length > 1
+    ? liga.grupos.map((g,i)=>chip("data-tb-grupo", i, g.nombre || g.tablas[0].nombre, i === tbGrupo)).join("") : "";
+
+  const grupo = liga.grupos[tbGrupo];
+  cont.innerHTML = grupo.tablas.map(t=>{
+    const cols = t.columnas.filter(c=>c.key !== "{trend}");
+    const conTend = t.columnas.some(c=>c.key === "{trend}");
+    // en celulares angostos se ocultan G/E/P (quedan en la ficha del equipo)
+    return `<div class="card" style="padding:12px 8px">
+      ${grupo.tablas.length > 1 || !grupo.nombre ? `<h3 style="margin:2px 6px 8px">${t.nombre}</h3>` : ""}
+      <div class="plantel-wrap">
+        <table class="posiciones">
+          <thead><tr><th>#</th><th class="eq">Equipo</th>${cols.map(c=>`<th>${c.titulo}</th>`).join("")}${conTend ? "<th>Últimas</th>" : ""}</tr></thead>
+          <tbody>${t.filas.map(f=>`<tr>
+            <td class="pos" style="--dest:${f.color || "transparent"}">${f.pos}</td>
+            <td class="eq"><button data-ficha="${f.equipo}">${crest(f.equipo)}<span>${f.equipo}</span></button></td>
+            ${cols.map(c=>`<td class="${c.key === "Points" ? "pts" : ""}">${f.valores[c.key] ?? ""}</td>`).join("")}
+            ${conTend ? `<td><span class="tend">${(f.valores["{trend}"] || []).slice().reverse().map(x=>`<i class="${TEND[x] || ""}" title="${{G:"Ganó",E:"Empató",P:"Perdió"}[TEND[x]] || ""}"></i>`).join("")}</span></td>` : ""}
+          </tr>`).join("")}</tbody>
+        </table>
+      </div>
+      ${t.destinos.length ? `<div class="leyenda">${t.destinos.map(d=>`<span><i style="background:${d.color}"></i>${d.nombre}</span>`).join("")}</div>` : ""}
+    </div>`;
+  }).join("") + (conTendencia(grupo) ? '<div class="h2h-note">Últimas: de la más vieja (izquierda) a la más reciente. Verde ganó, gris empató, rojo perdió. Tocá un equipo para ver su ficha.</div>' : '<div class="h2h-note">Tocá un equipo para ver su ficha.</div>');
+
+  document.querySelectorAll("[data-tb-pais]").forEach(b=>b.addEventListener("click", ()=>{ tbPais = b.dataset.tbPais; tbGrupo = 0; renderTablas(); }));
+  document.querySelectorAll("[data-tb-liga]").forEach(b=>b.addEventListener("click", ()=>{ tbLiga = b.dataset.tbLiga; tbGrupo = 0; renderTablas(); }));
+  document.querySelectorAll("[data-tb-grupo]").forEach(b=>b.addEventListener("click", ()=>{ tbGrupo = +b.dataset.tbGrupo; renderTablas(); }));
+  cont.querySelectorAll("[data-ficha]").forEach(b=>b.addEventListener("click", ()=> abrirFicha(b.dataset.ficha)));
+}
+function conTendencia(grupo){ return grupo.tablas.some(t=>t.columnas.some(c=>c.key === "{trend}")); }
 
 // ---------- Agregar apuesta ----------
 document.getElementById("btn-add-bet").addEventListener("click", ()=>{
@@ -2585,6 +2674,8 @@ async function leerEstado(){
     if(ultimaVista && e.ultima !== ultimaVista){
       await syncFromData();
       playersData = null;
+      tablasData = null;
+      if(document.getElementById("view-tablas").classList.contains("active")) renderTablas();
       renderAll();
     }
     ultimaVista = e.ultima;

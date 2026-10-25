@@ -68,6 +68,7 @@ async function getJson(url) {
 const { emptyStats, statsFromStatistics } = require('./promiedos_stats');
 const { calibrarApi, fichaHoraArgentina } = require('./promiedos_time');
 const { collectTeams, saveTeams } = require('./teams_lib');
+const { actualizarTablas } = require('./tablas_lib');
 const EQUIPOS = {};
 // Conversor de horarios de la API a hora argentina (Promiedos responde en la zona
 // de quien pide; se calibra en cada corrida contra la ficha de un partido).
@@ -287,6 +288,13 @@ async function run() {
   };
 
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
+  // Tablas de posiciones (Liga Profesional, Primera Nacional y las ligas europeas)
+  try {
+    const slugs = Object.fromEntries(leagues.filter((l) => l.url_name).map((l) => [l.id, l.url_name]));
+    if (await actualizarTablas(getJson, SITE, buildId, collectTeams, EQUIPOS, slugs)) console.log('tablas.json actualizado.');
+  } catch (err) {
+    console.warn('No se pudieron actualizar las tablas:', err.message || err);
+  }
   const nEquipos = saveTeams(EQUIPOS);
   if (nEquipos) console.log(`teams.json actualizado (${nEquipos} equipos).`);
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(out, null, 2), 'utf8');

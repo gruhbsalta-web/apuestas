@@ -63,7 +63,7 @@ jobs:
             fi
             printf '{"ultima":"%s","proxima":"%s","intervaloMin":%d}\n' \
               "$(date -u -d @$ahora_e +%Y-%m-%dT%H:%M:%SZ)" "$(date -u -d @$prox_e +%Y-%m-%dT%H:%M:%SZ)" $((int_e/60)) > data/estado.json
-            git add data/matches.json data/players.json data/teams.json data/estado.json || true
+            git add data/*.json || true
             if git commit -q -m "chore: update matches.json y players.json (promiedos)"; then
               git pull --rebase --autostash -q origin master || true
               git push -q || echo "no se pudo subir, se reintenta en la proxima vuelta"
