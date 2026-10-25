@@ -5308,9 +5308,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "river-plate-vs-racing-club",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": "Fecha 14"
       }
     },
