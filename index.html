@@ -1361,6 +1361,7 @@ const PLANTEL_COLS = [
   {k:"pj", t:"PJ"},
   {k:"min", t:"Min"},
   {k:"goles", t:"G"},
+  {k:"penales", t:"Pen"},
   {k:"asist", t:"A"},
   {k:"g90", t:"G/90"},
   {k:"a90", t:"A/90"},
@@ -1571,7 +1572,7 @@ async function renderPlantelesTab(){
       </table>
     </div>
     ${rows.length > plLimite ? `<button class="capital-edit" id="pl-mas" style="width:100%;margin-top:12px">Ver más (${rows.length - plLimite} restantes)</button>` : ""}
-    <div class="h2h-note">G/90 y A/90: goles y asistencias cada 90 minutos. Min/G y Min/A: minutos por gol o asistencia. Se calculan desde ${MIN_MINUTOS_PRODUCTIVIDAD}' jugados. TA y TR: amarillas y rojas.</div>
+    <div class="h2h-note">G: goles (incluye los de penal). Pen: cuántos fueron de penal. G/90 y A/90: goles y asistencias cada 90 minutos. Min/G y Min/A: minutos por gol o asistencia. Se calculan desde ${MIN_MINUTOS_PRODUCTIVIDAD}' jugados. TA y TR: amarillas y rojas.</div>
   `;
   tabla.querySelectorAll("th[data-col]").forEach(th=>th.addEventListener("click", ()=>{
     const col = th.dataset.col;

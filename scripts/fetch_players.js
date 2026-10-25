@@ -100,6 +100,9 @@ function roundKeysFromLeaguePage(pageJson) {
   return rounds.slice(firstIdx).map((f) => ({ key: f.key, nombre: f.name }));
 }
 
+// v2: los goles de penal (evento tipo 3) cuentan como gol
+const DATA_VERSION = 2;
+
 function emptyOutput() {
   return { actualizado: null, partidos: {}, jugadores: {}, entrenadores: {}, ausentes: {} };
 }
@@ -130,7 +133,7 @@ function addLines(out, league, lines) {
     const p = out.jugadores[key] || (out.jugadores[key] = {
       nombre: l.nombre, equipo: l.equipo, equipoId: l.equipoId, liga: league.id,
       posicion: l.posicion, numero: l.numero, edad: l.edad,
-      pj: 0, tit: 0, min: 0, goles: 0, asist: 0, amarillas: 0, rojas: 0
+      pj: 0, tit: 0, min: 0, goles: 0, asist: 0, amarillas: 0, rojas: 0, penales: 0
     });
     p.pj += 1;
     if (l.titular) p.tit += 1;
@@ -139,6 +142,7 @@ function addLines(out, league, lines) {
     p.asist += l.asist;
     p.amarillas += l.amarillas;
     p.rojas += l.rojas;
+    p.penales = (p.penales || 0) + (l.penales || 0);
     // datos de ficha: nos quedamos con los del ultimo partido
     p.equipo = l.equipo || p.equipo;
     if (l.posicion) p.posicion = l.posicion;
@@ -185,7 +189,13 @@ function mergeVariants(map, sumFields) {
 }
 
 async function run() {
-  const out = fs.existsSync(OUTPUT_PATH) ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8')) : emptyOutput();
+  let out = fs.existsSync(OUTPUT_PATH) ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8')) : emptyOutput();
+  // Si cambió la forma de calcular (ej. sumar los goles de penal), se recalcula toda la temporada
+  if (out.version !== DATA_VERSION) {
+    console.log(`players.json versión ${out.version || 1} -> ${DATA_VERSION}: se recalcula todo.`);
+    out = emptyOutput();
+  }
+  out.version = DATA_VERSION;
   const html = await getText(`${SITE}/league/primera-nacional/ebj`);
   const buildId = (html.match(/"buildId":"([^"]+)"/) || [])[1];
   if (!buildId) throw new Error('No se pudo resolver el buildId de Promiedos');
@@ -280,7 +290,7 @@ async function run() {
   fs.writeFileSync(MATCHES_PATH, JSON.stringify(matchesOut, null, 2), 'utf8');
   console.log(`matches.json: ${partidosHistoricos} partidos terminados agregados (total ${matchesOut.matches.length}).`);
 
-  const unidosJ = mergeVariants(out.jugadores, ['pj', 'tit', 'min', 'goles', 'asist', 'amarillas', 'rojas']);
+  const unidosJ = mergeVariants(out.jugadores, ['pj', 'tit', 'min', 'goles', 'asist', 'amarillas', 'rojas', 'penales']);
   const unidosE = mergeVariants(out.entrenadores || {}, ['pj', 'g', 'e', 'p', 'gf', 'gc']);
   if (unidosJ || unidosE) console.log(`Nombres unificados: ${unidosJ} jugadores, ${unidosE} entrenadores.`);
 

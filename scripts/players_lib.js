@@ -7,6 +7,8 @@
 // - events[].rows[].events[]: fuente de verdad de goles, asistencias y tarjetas
 //   (la alineacion a veces no marca la roja).
 //     type 1  = gol      texts: [autor, asistente?]
+//     type 3  = gol de penal texts: [autor]
+//     type 2  = gol en contra (no se suma al jugador)
 //     type 4  = amarilla texts: [jugador]
 //     type 7  = roja     texts: [jugador]
 //     type 9  = gol anulado (se ignora)
@@ -74,7 +76,8 @@ function playerLinesFromGame(game) {
         goles: 0,
         asist: 0,
         amarillas: 0,
-        rojas: 0
+        rojas: 0,
+        penales: 0
       };
       lines.push(line);
       byName.set(normName(p.name), line);
@@ -96,10 +99,13 @@ function playerLinesFromGame(game) {
 
     events.filter((e) => e.team === teamNum).forEach((e) => {
       const t = e.texts || [];
-      if (e.type === 1) {
+      if (e.type === 1 || e.type === 3) {
         const autor = find(t[0]);
-        if (autor) autor.goles += 1;
-        const asist = t[1] ? find(t[1]) : null;
+        if (autor) {
+          autor.goles += 1;
+          if (e.type === 3) autor.penales += 1;
+        }
+        const asist = e.type === 1 && t[1] ? find(t[1]) : null;
         if (asist) asist.asist += 1;
       } else if (e.type === 4) {
         const p = find(t[0]);
