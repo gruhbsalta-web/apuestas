@@ -21,8 +21,10 @@ on:
 permissions:
   contents: write
 
+# El bucle va en un grupo; los pedidos manuales desde la app ("una vez") en otro,
+# asi corren enseguida aunque el bucle este activo.
 concurrency:
-  group: update-matches
+  group: ${{ github.event.inputs.una_vez == 'true' && 'update-once' || 'update-matches' }}
   cancel-in-progress: false
 
 jobs:
@@ -56,6 +58,11 @@ jobs:
             dia_e=$(TZ=America/Argentina/Buenos_Aires date +%u)
             if [ "$dia_e" -ge 6 ]; then int_e=600; else int_e=1800; fi
             prox_e=$((ahora_e + int_e))
+            # pedido manual: se respeta la proxima que ya tenia anunciada el bucle
+            if [ "$UNA_VEZ" = "true" ] && [ -f data/estado.json ]; then
+              prev=$(node -e 'try{const e=require("./data/estado.json");process.stdout.write(String(Math.floor(new Date(e.proxima)/1000)))}catch(x){}')
+              [ -n "$prev" ] && [ "$prev" -gt "$ahora_e" ] && prox_e=$prev
+            fi
             if [ "$(TZ=America/Argentina/Buenos_Aires date -d @$prox_e +%H)" -lt 8 ]; then
               # fuera de horario: la proxima es a las 08:00 (hoy si todavia no pasaron, si no mañana)
               prox_e=$(TZ=America/Argentina/Buenos_Aires date -d "today 08:00" +%s)
