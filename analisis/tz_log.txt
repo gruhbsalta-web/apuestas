@@ -1,0 +1,20 @@
+Runner TZ: UTC UTC now: 2026-10-25T13:47:51.375Z
+pagina liga 0 US TX Aldosivi-Belgrano: ?
+pagina liga 1 US TX Aldosivi-Belgrano: ?
+pagina liga 2 US TX Aldosivi-Belgrano: ?
+API sin headers extra: 25-10-2026 12:45
+API {"X-TZ":"America/Argentina/Buenos_Aires"}  -> 25-10-2026 12:45
+API {"X-Timezone":"America/Argentina/Buenos_Aires"}  -> 25-10-2026 12:45
+API {"Timezone":"America/Argentina/Buenos_Aires"}  -> 25-10-2026 12:45
+API {"TZ":"America/Argentina/Buenos_Aires"}  -> 25-10-2026 12:45
+API {"X-UTC-Offset":"-180"}  -> 25-10-2026 12:45
+API {"X-Offset":"-180"}  -> 25-10-2026 12:45
+API {"X-Country":"AR"}  -> 25-10-2026 12:45
+API {"CF-IPCountry":"AR"}  -> 25-10-2026 12:45
+API {"X-Forwarded-For":"181.46.0.1"}  -> 25-10-2026 12:45
+API {"X-Real-IP":"181.46.0.1"}  -> 25-10-2026 12:45
+API {} ?tz=America/Argentina/Buenos_Aires -> 25-10-2026 12:45
+API {} ?timezone=America/Argentina/Buenos_Aires -> 25-10-2026 12:45
+API {} ?utc_offset=-180 -> 25-10-2026 12:45
+API {} ?offset=-3 -> 25-10-2026 12:45
+API {"Accept-Language":"es-AR"}  -> 25-10-2026 12:45
