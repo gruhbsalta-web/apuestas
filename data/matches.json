@@ -5238,7 +5238,7 @@
       "id": "promiedos_egddcdf",
       "local": "Independiente",
       "visitante": "Boca Juniors",
-      "fechaHora": "2026-10-25T16:00",
+      "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
@@ -5269,9 +5269,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "independiente-vs-boca-juniors",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "46'",
         "ronda": "Fecha 14"
       }
     },
@@ -5279,7 +5279,7 @@
       "id": "promiedos_egddcci",
       "local": "River Plate",
       "visitante": "Racing Club",
-      "fechaHora": "2026-10-25T18:15",
+      "fechaHora": "2026-10-25T19:15",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -5320,7 +5320,7 @@
       "id": "promiedos_egddcda",
       "local": "Barracas Central",
       "visitante": "Estudiantes RC",
-      "fechaHora": "2026-10-25T20:30",
+      "fechaHora": "2026-10-25T21:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -5361,7 +5361,7 @@
       "id": "promiedos_egddcdj",
       "local": "Central Córdoba SdE",
       "visitante": "Vélez Sarsfield",
-      "fechaHora": "2026-10-25T20:30",
+      "fechaHora": "2026-10-25T21:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -5523,7 +5523,7 @@
       "id": "promiedos_eifeihb",
       "local": "Temperley",
       "visitante": "Chacarita Juniors",
-      "fechaHora": "2026-10-25T15:00",
+      "fechaHora": "2026-10-25T16:00",
       "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
@@ -5533,11 +5533,11 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 2
+          "v": 4
         },
         "corners": {
           "l": 3,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 0,
@@ -5564,9 +5564,9 @@
       "id": "promiedos_eifeihe",
       "local": "Patronato",
       "visitante": "Agropecuario",
-      "fechaHora": "2026-10-25T15:00",
+      "fechaHora": "2026-10-25T16:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -5582,10 +5582,10 @@
         },
         "tirosArco": {
           "l": 9,
-          "v": 5
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 9
         }
       },
@@ -5595,9 +5595,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "patronato-vs-agropecuario",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
         "ronda": "Fecha 35"
       }
     },
@@ -5605,9 +5603,9 @@
       "id": "promiedos_eifeihi",
       "local": "Gimnasia de Jujuy",
       "visitante": "Atlanta",
-      "fechaHora": "2026-10-25T15:00",
+      "fechaHora": "2026-10-25T16:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -5636,9 +5634,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-jujuy-vs-atlanta",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
         "ronda": "Fecha 35"
       }
     },
@@ -5646,7 +5642,7 @@
       "id": "promiedos_eifeigc",
       "local": "Central Norte",
       "visitante": "Acassuso",
-      "fechaHora": "2026-10-25T16:00",
+      "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
@@ -5687,7 +5683,7 @@
       "id": "promiedos_eifeigh",
       "local": "Mitre SdE",
       "visitante": "Godoy Cruz",
-      "fechaHora": "2026-10-25T16:00",
+      "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
@@ -5728,7 +5724,7 @@
       "id": "promiedos_eifeihc",
       "local": "Deportivo Maipú",
       "visitante": "Güemes",
-      "fechaHora": "2026-10-25T16:00",
+      "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
@@ -5769,7 +5765,7 @@
       "id": "promiedos_eifeihh",
       "local": "Midland",
       "visitante": "Gimnasia y Tiro",
-      "fechaHora": "2026-10-25T16:00",
+      "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
@@ -5933,7 +5929,7 @@
       "id": "promiedos_egddcdi",
       "local": "Unión de Santa Fe",
       "visitante": "Estudiantes de La Plata",
-      "fechaHora": "2026-10-26T18:00",
+      "fechaHora": "2026-10-26T19:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -5974,7 +5970,7 @@
       "id": "promiedos_egddcdh",
       "local": "Instituto",
       "visitante": "Deportivo Riestra",
-      "fechaHora": "2026-10-26T20:15",
+      "fechaHora": "2026-10-26T21:15",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -6015,7 +6011,7 @@
       "id": "promiedos_eifeiha",
       "local": "Nueva Chicago",
       "visitante": "San Martín San Juan",
-      "fechaHora": "2026-10-26T12:00",
+      "fechaHora": "2026-10-26T13:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -6056,7 +6052,7 @@
       "id": "promiedos_eifeige",
       "local": "Defensores de Belgrano",
       "visitante": "San Miguel",
-      "fechaHora": "2026-10-26T14:30",
+      "fechaHora": "2026-10-26T15:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -6261,7 +6257,7 @@
       "id": "promiedos_egddcde",
       "local": "Argentinos Juniors",
       "visitante": "Independiente Rivadavia",
-      "fechaHora": "2026-10-27T18:00",
+      "fechaHora": "2026-10-27T19:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -35310,7 +35306,7 @@
       "id": "promiedos_ehfafbe",
       "local": "FC Barcelona",
       "visitante": "Real Madrid",
-      "fechaHora": "2026-10-25T16:00",
+      "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
@@ -35351,7 +35347,7 @@
       "id": "promiedos_ehfaibd",
       "local": "Sevilla FC",
       "visitante": "Osasuna",
-      "fechaHora": "2026-10-26T16:00",
+      "fechaHora": "2026-10-26T17:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -35761,7 +35757,7 @@
       "id": "promiedos_ehdcggb",
       "local": "Udinese",
       "visitante": "AC Milan",
-      "fechaHora": "2026-10-25T15:45",
+      "fechaHora": "2026-10-25T16:45",
       "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
@@ -35775,14 +35771,14 @@
         },
         "corners": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 4
         }
       },
@@ -35794,7 +35790,7 @@
         "gameUrlName": "udinese-vs-ac-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "61'",
         "ronda": "Fecha 8"
       }
     },
@@ -35802,7 +35798,7 @@
       "id": "promiedos_ehdcgfd",
       "local": "Sassuolo",
       "visitante": "Lazio",
-      "fechaHora": "2026-10-27T13:30",
+      "fechaHora": "2026-10-27T14:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -35843,7 +35839,7 @@
       "id": "promiedos_ehdcgfc",
       "local": "Torino",
       "visitante": "Como",
-      "fechaHora": "2026-10-27T15:45",
+      "fechaHora": "2026-10-27T16:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -35884,7 +35880,7 @@
       "id": "promiedos_ehdcgfe",
       "local": "AS Roma",
       "visitante": "Cagliari",
-      "fechaHora": "2026-10-27T15:45",
+      "fechaHora": "2026-10-27T16:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
