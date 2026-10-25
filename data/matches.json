@@ -5211,14 +5211,14 @@
         },
         "corners": {
           "l": 2,
-          "v": 4
+          "v": 7
         },
         "tirosArco": {
           "l": 5,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 4
         }
       },
@@ -5230,7 +5230,7 @@
         "gameUrlName": "aldosivi-vs-belgrano",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "52'",
+        "minuto": "64'",
         "ronda": "Fecha 14"
       }
     },
@@ -5411,11 +5411,11 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tirosArco": {
@@ -5435,7 +5435,7 @@
         "gameUrlName": "almirante-brown-vs-deportivo-moron",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "28'",
+        "minuto": "40'",
         "ronda": "Fecha 35"
       }
     },
@@ -5452,12 +5452,12 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 2,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -5476,7 +5476,7 @@
         "gameUrlName": "estudiantes-buenos-aires-vs-los-andes",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "21'",
+        "minuto": "33'",
         "ronda": "Fecha 35"
       }
     },
@@ -5498,7 +5498,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -5515,9 +5515,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "racing-cordoba-vs-all-boys",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": "Fecha 35"
       }
     },
@@ -5556,9 +5556,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "temperley-vs-chacarita-juniors",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 35"
       }
     },
@@ -5575,8 +5575,8 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
           "l": 0,
@@ -5597,9 +5597,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "patronato-vs-agropecuario",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 35"
       }
     },
@@ -5620,7 +5620,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -5638,9 +5638,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-jujuy-vs-atlanta",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 35"
       }
     },
@@ -35281,11 +35281,11 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 3,
@@ -35304,7 +35304,7 @@
         "gameUrlName": "real-sociedad-vs-levante",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "80'",
         "ronda": "Fecha 10"
       }
     },
@@ -35724,19 +35724,19 @@
       "visitante": "Juventus",
       "fechaHora": "2026-10-25T14:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
           "v": 2
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "corners": {
           "l": 5,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 4,
@@ -35753,9 +35753,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "lecce-vs-juventus",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+2'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
