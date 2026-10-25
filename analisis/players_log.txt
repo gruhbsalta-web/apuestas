@@ -1,0 +1,3 @@
+Liga Profesional: 16 fechas (Fecha 1 .. Fecha 16)
+Primera Nacional: 36 fechas (Fecha 1 .. Fecha 36)
+Partidos nuevos procesados: 819. Total: 819 partidos, 1981 jugadores, 136 entrenadores. Errores: 1.
