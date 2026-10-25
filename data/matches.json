@@ -34728,9 +34728,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "sunderland-vs-leeds-united",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "3'",
         "ronda": "Fecha 8"
       }
     },
@@ -35248,10 +35248,10 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 4
         }
       },
@@ -35263,7 +35263,7 @@
         "gameUrlName": "celta-vigo-vs-real-betis",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "49'",
+        "minuto": "62'",
         "ronda": "Fecha 10"
       }
     },
