@@ -5199,7 +5199,7 @@
       "visitante": "Belgrano",
       "fechaHora": "2026-10-25T14:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -5215,10 +5215,10 @@
         },
         "tirosArco": {
           "l": 5,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
-          "l": 4,
+          "l": 5,
           "v": 4
         }
       },
@@ -5228,9 +5228,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "aldosivi-vs-belgrano",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
         "ronda": "Fecha 14"
       }
     },
@@ -5416,14 +5414,14 @@
         },
         "corners": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -5433,9 +5431,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "almirante-brown-vs-deportivo-moron",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "50'",
         "ronda": "Fecha 35"
       }
     },
@@ -5457,7 +5455,7 @@
         },
         "corners": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 1,
@@ -5474,9 +5472,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "estudiantes-buenos-aires-vs-los-andes",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "50'",
         "ronda": "Fecha 35"
       }
     },
@@ -5498,14 +5496,14 @@
         },
         "corners": {
           "l": 3,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 2,
-          "v": 1
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 3,
           "v": 2
         }
       },
@@ -5517,7 +5515,7 @@
         "gameUrlName": "racing-cordoba-vs-all-boys",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "31'",
+        "minuto": "42'",
         "ronda": "Fecha 35"
       }
     },
@@ -5539,7 +5537,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -5558,7 +5556,7 @@
         "gameUrlName": "temperley-vs-chacarita-juniors",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "25'",
+        "minuto": "37'",
         "ronda": "Fecha 35"
       }
     },
@@ -5575,7 +5573,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "corners": {
@@ -5583,12 +5581,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
-          "v": 2
+          "l": 4,
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         }
       },
       "source": {
@@ -5599,7 +5597,7 @@
         "gameUrlName": "patronato-vs-agropecuario",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "27'",
+        "minuto": "38'",
         "ronda": "Fecha 35"
       }
     },
@@ -5620,16 +5618,16 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 3
         },
         "tirosArco": {
-          "l": 1,
+          "l": 3,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 3
         }
       },
       "source": {
@@ -5640,7 +5638,7 @@
         "gameUrlName": "gimnasia-jujuy-vs-atlanta",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "27'",
+        "minuto": "38'",
         "ronda": "Fecha 35"
       }
     },
