@@ -5202,7 +5202,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -5211,15 +5211,15 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -5230,7 +5230,7 @@
         "gameUrlName": "aldosivi-vs-belgrano",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "13'",
+        "minuto": "31'",
         "ronda": "Fecha 14"
       }
     },
@@ -34685,14 +34685,14 @@
         },
         "corners": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 4
         }
       },
@@ -34704,7 +34704,7 @@
         "gameUrlName": "sunderland-vs-leeds-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "73'",
+        "minuto": "90+1'",
         "ronda": "Fecha 8"
       }
     },
@@ -35246,7 +35246,7 @@
       "local": "Real Sociedad",
       "visitante": "Levante UD",
       "fechaHora": "2026-10-25T14:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -35259,15 +35259,15 @@
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 2
         },
         "tirosArco": {
-          "l": 2,
-          "v": 1
+          "l": 3,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -35276,9 +35276,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-sociedad-vs-levante",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "33'",
+        "minuto": "45'",
         "ronda": "Fecha 10"
       }
     },
@@ -35709,16 +35709,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 2,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -35727,9 +35727,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "lecce-vs-juventus",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Fecha 8"
       }
     },
