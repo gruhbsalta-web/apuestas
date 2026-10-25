@@ -294,6 +294,10 @@
           <select id="sel-dia"></select>
         </div>
       </div>
+      <div id="wrap-term-ronda" hidden>
+        <label for="sel-term-ronda">Fecha (jornada)</label>
+        <select id="sel-term-ronda"></select>
+      </div>
       <label for="in-term-equipo">Equipo</label>
       <input type="text" id="in-term-equipo" list="dl-equipos" placeholder="Todos los equipos" autocomplete="off">
     </div>
@@ -564,8 +568,14 @@ document.getElementById("sel-dia").addEventListener("change", (e)=>{
   terminadosLimite = 40;
   renderTerminados();
 });
+document.getElementById("sel-term-ronda").addEventListener("change", (e)=>{
+  terminadosFiltroRonda = e.target.value;
+  terminadosLimite = 40;
+  renderTerminados();
+});
 document.getElementById("sel-term-liga").addEventListener("change", (e)=>{
   terminadosFiltroLiga = e.target.value;
+  terminadosFiltroRonda = "todas";
   terminadosLimite = 40;
   renderTerminados();
 });
@@ -1190,6 +1200,9 @@ function renderBets(){
 // ---------- Render Terminados: partidos con "Fin del partido" tildado, filtrables por día ----------
 let terminadosFiltroLiga = "todas";
 let terminadosFiltroEquipo = "";
+let terminadosFiltroRonda = "todas";
+// "Fecha 14" -> 14 para ordenar; las rondas sin número (Octavos, Final...) van al final
+function numRonda(r){ const m = String(r||"").match(/(\d+)/); return m ? +m[1] : 1000; }
 let terminadosLimite = 40;
 function renderTerminados(){
   const selLiga = document.getElementById("sel-term-liga");
@@ -1199,12 +1212,29 @@ function renderTerminados(){
   selLiga.innerHTML = ligasOpts.map(([v,t])=>`<option value="${v}">${t}</option>`).join("");
   selLiga.value = terminadosFiltroLiga;
 
+  // Fecha (jornada): solo cuando hay una liga elegida
+  const wrapRonda = document.getElementById("wrap-term-ronda");
+  const selRonda = document.getElementById("sel-term-ronda");
+  const ligaElegida = terminadosFiltroLiga !== "todas" && terminadosFiltroLiga !== "otros";
+  wrapRonda.hidden = !ligaElegida;
+  if(ligaElegida){
+    const rondas = Array.from(new Set(state.matches
+      .filter(m=>m.finPartido && ligaDe(m) === terminadosFiltroLiga && m.source && m.source.ronda)
+      .map(m=>m.source.ronda))).sort((a,b)=> numRonda(b) - numRonda(a) || a.localeCompare(b));
+    if(terminadosFiltroRonda !== "todas" && !rondas.includes(terminadosFiltroRonda)) terminadosFiltroRonda = "todas";
+    selRonda.innerHTML = '<option value="todas">Todas las fechas</option>' + rondas.map(r=>`<option value="${r}">${r}</option>`).join("");
+    selRonda.value = terminadosFiltroRonda;
+  } else {
+    terminadosFiltroRonda = "todas";
+  }
+
   const eq = terminadosFiltroEquipo.trim().toLowerCase();
   const finalizados = state.matches.filter(m=>{
     if(!m.finPartido) return false;
     if(terminadosFiltroLiga === "otros" && ligaDe(m)) return false;
     if(terminadosFiltroLiga !== "todas" && terminadosFiltroLiga !== "otros" && ligaDe(m) !== terminadosFiltroLiga) return false;
     if(eq && !m.local.toLowerCase().includes(eq) && !m.visitante.toLowerCase().includes(eq)) return false;
+    if(terminadosFiltroRonda !== "todas" && !(m.source && m.source.ronda === terminadosFiltroRonda)) return false;
     return true;
   });
 
@@ -1247,7 +1277,7 @@ function renderTerminados(){
     card.innerHTML = `
       <button class="del-x" data-del-match-t="${m.id}">✕</button>
       <div class="match-title">${m.local} vs ${m.visitante}</div>
-      <span class="status-badge finished">${formatDay(matchDay(m))}${ligaDe(m) ? " · " + LIGA_INFO[ligaDe(m)].nombre : ""}</span>
+      <span class="status-badge finished">${formatDay(matchDay(m))}${ligaDe(m) ? " · " + LIGA_INFO[ligaDe(m)].nombre : ""}${m.source && m.source.ronda ? " · " + m.source.ronda : ""}</span>
       <div class="stat-grid">
         <div class="stat-row"><span></span><span style="text-align:center">Local</span><span style="text-align:center">Visit.</span></div>
         ${Object.keys(TIPO_LABEL).map(k=>`

@@ -118,6 +118,14 @@ async function resolveLeagues(buildId) {
   return [...leagues.values()];
 }
 
+// Nombre de la jornada: "Clausura, Fecha 14" -> "Fecha 14"
+function nombreRonda(s) {
+  const t = String(s || '').trim();
+  if (!t) return null;
+  const partes = t.split(',').map((x) => x.trim()).filter(Boolean);
+  return partes[partes.length - 1];
+}
+
 function normalizeMatch(game, league) {
   const scores = Array.isArray(game.scores) ? game.scores : [0, 0];
   const goles = { l: scores[0] || 0, v: scores[1] || 0 };
@@ -139,7 +147,8 @@ function normalizeMatch(game, league) {
       leagueName: league.name || league.id,
       country: league.country || COUNTRY_BY_LEAGUE[league.id] || 'Argentina',
       gameUrlName: game.url_name,
-      statusShort: game?.status?.short_name || ''
+      statusShort: game?.status?.short_name || '',
+      ronda: nombreRonda(game.stage_round_name)
     },
     _needsDetail: finPartido || finPrimerTiempo,
     _goles: goles,
