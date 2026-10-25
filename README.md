@@ -26,7 +26,7 @@ App móvil (PWA) para registrar partidos de Primera División y Primera Nacional
   - tiros al arco, corners, tarjetas amarillas+rojas sumadas (reales, no estimadas).
   - **Atajadas de arquero**: Promiedos no las publica, se estiman como remates al arco del rival menos goles del rival (nunca negativo).
   - Horarios: Promiedos responde en la hora local de quien pide (el cron corre en EE.UU.); `scripts/promiedos_time.js` los convierte a hora argentina.
-  - El cron corre de 08:00 a 00:00 (hora Argentina): cada 10 min sábados y domingos, cada 30 min de lunes a viernes y también arma `data/players.json` (planteles, DT y ausentes) con `scripts/fetch_players.js`.
+  - El cron corre de 08:00 a 00:00 (hora Argentina): cada 10 min sábados y domingos, cada 30 min de lunes a viernes, con una corrida larga en bucle (las programadas de GitHub se atrasan horas) y también arma `data/players.json` (planteles, DT y ausentes) con `scripts/fetch_players.js`.
   - Cada corrida hace upsert por id de partido sobre lo que ya había en `data/matches.json`, así los promedios históricos (`teamAverages`) se van acumulando entre corridas en vez de perderse cada vez.
   - Alcance actual: Argentina — Liga Profesional (`hc`), Primera Nacional (`ebj`) y Copa Argentina (`gea`). Cada partido guarda `source.country` y `source.leagueId`, y la app los agrupa país → liga → día. Para sumar una liga o un país: agregar su id en `LEAGUE_ID_INCLUDE` / `COUNTRY_BY_LEAGUE` del script y en `PAISES` de `index.html`.
   - Para correrlo a mano: `npm run fetch` (sin variables de entorno necesarias). `PROMIEDOS_LEAGUES=ebj,hc npm run fetch` corre solo esas ligas (por id de Promiedos) para probar rápido.

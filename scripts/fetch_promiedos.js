@@ -131,9 +131,14 @@ function nombreRonda(s) {
 function normalizeMatch(game, league) {
   const scores = Array.isArray(game.scores) ? game.scores : [0, 0];
   const goles = { l: scores[0] || 0, v: scores[1] || 0 };
+  // status.enum: 1 programado, 2 en juego, 3 finalizado.
+  // En juego, short_name dice el tramo: "1°" primer tiempo, "ET" entretiempo, "2°" segundo.
   const statusEnum = game?.status?.enum;
+  const short = game?.status?.short_name || '';
   const finPartido = statusEnum === 3;
-  const finPrimerTiempo = statusEnum >= 2;
+  const enJuego = statusEnum === 2;
+  const finPrimerTiempo = finPartido || (enJuego && !/^1/.test(short));
+  const minuto = game?.game_time_to_display || (enJuego && game?.game_time > 0 ? `${game.game_time}'` : '');
 
   return {
     id: `promiedos_${game.id}`,
@@ -149,10 +154,12 @@ function normalizeMatch(game, league) {
       leagueName: league.name || league.id,
       country: league.country || COUNTRY_BY_LEAGUE[league.id] || 'Argentina',
       gameUrlName: game.url_name,
-      statusShort: game?.status?.short_name || '',
+      statusShort: short,
+      statusEnum: statusEnum ?? null,
+      minuto,
       ronda: nombreRonda(game.stage_round_name)
     },
-    _needsDetail: finPartido || finPrimerTiempo,
+    _needsDetail: finPartido || enJuego,
     _goles: goles,
     _gameUrlName: game.url_name
   };

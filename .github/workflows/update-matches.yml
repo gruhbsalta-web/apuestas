@@ -1,23 +1,26 @@
 name: Update matches from Promiedos
 
+# Las corridas programadas de GitHub se atrasan mucho (a veces horas), asi que
+# en vez de muchas corridas cortas hay una corrida larga que se queda activa y
+# actualiza en bucle:
+#   - sabados y domingos cada 10 min
+#   - lunes a viernes cada 30 min
+#   - solo de 08:00 a 00:00 hora Argentina
+# Se lanza 4 veces por dia como respaldo (08, 12, 16 y 20 hs Argentina); si ya
+# hay una corriendo, la nueva espera en cola y sigue cuando termina la anterior.
 on:
   schedule:
-    # De 08:00 a 00:00 hora Argentina (11:00-03:00 UTC):
-    # - sabados y domingos (mas partidos) cada 10 min
-    # - lunes a viernes cada 30 min
-    # Las horas 00-02 UTC son 21:00-23:59 del dia ANTERIOR en Argentina,
-    # por eso esos tramos usan el dia de la semana siguiente.
-    - cron: '*/10 11-23 * * 6,0'   # sab y dom 08:00-20:50
-    - cron: '*/10 0-2 * * 0,1'     # sab y dom 21:00-23:50
-    - cron: '*/30 11-23 * * 1-5'   # lun a vie 08:00-20:30
-    - cron: '*/30 0-2 * * 2-6'     # lun a vie 21:00-23:30
-    - cron: '0 3 * * *'            # todos los dias 00:00
-  workflow_dispatch: {}
+    - cron: '0 11,15,19,23 * * *'
+  workflow_dispatch:
+    inputs:
+      una_vez:
+        description: 'Actualizar una sola vez (sin bucle)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
 
-# nunca dos corridas a la vez (se pisarian los commits)
 concurrency:
   group: update-matches
   cancel-in-progress: false
@@ -25,6 +28,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,17 +38,35 @@ jobs:
           node-version: '22'
       - name: Install dependencies
         run: npm install
-      - name: Fetch matches
-        run: npm run fetch
-      - name: Fetch players (planteles, DT y ausentes)
-        # si falla no frena la actualizacion de partidos
-        continue-on-error: true
-        run: npm run fetch:players
-      - name: Commit data
+      - name: Actualizar en bucle
+        env:
+          UNA_VEZ: ${{ github.event.inputs.una_vez || 'false' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/matches.json data/players.json data/teams.json || true
-          git commit -m "chore: update matches.json y players.json (promiedos)" || echo "no changes to commit"
-          git pull --rebase --autostash origin master || true
-          git push
+          inicio=$(date +%s)
+          limite=$((inicio + 5*3600 + 40*60))   # dentro del maximo de 6 h de GitHub
+          while true; do
+            echo "=== Actualizacion $(TZ=America/Argentina/Buenos_Aires date '+%a %H:%M') ==="
+            git pull --rebase --autostash -q origin master || true
+            npm run fetch || echo "fallo fetch de partidos"
+            npm run fetch:players || echo "fallo fetch de jugadores (los partidos se guardan igual)"
+            git add data/matches.json data/players.json data/teams.json || true
+            if git commit -q -m "chore: update matches.json y players.json (promiedos)"; then
+              git pull --rebase --autostash -q origin master || true
+              git push -q || echo "no se pudo subir, se reintenta en la proxima vuelta"
+            else
+              echo "sin cambios"
+            fi
+            [ "$UNA_VEZ" = "true" ] && break
+            hora=$(TZ=America/Argentina/Buenos_Aires date +%H)
+            dia=$(TZ=America/Argentina/Buenos_Aires date +%u)   # 6 sabado, 7 domingo
+            if [ "$dia" -ge 6 ]; then intervalo=600; else intervalo=1800; fi
+            ahora=$(date +%s)
+            # fuera de horario (00:00 a 07:59 Argentina) o cerca del limite de tiempo: terminar
+            if [ "$hora" -lt 8 ] || [ $((ahora + intervalo)) -ge "$limite" ]; then
+              echo "Fin del bucle (hora $hora, limite de tiempo o fuera de horario)"
+              break
+            fi
+            sleep "$intervalo"
+          done

@@ -614,6 +614,16 @@ function matchMinutesSince(m){
 // frac = fracción del partido jugada (0 a 1), usada para proyectar el total a los 90'
 function matchStatus(m){
   if(m.finPartido) return {label:"Finalizado", cls:"finished", frac:1};
+  // Estado real que informa Promiedos (lo actualiza el cron)
+  const src = m.source || {};
+  if(src.statusEnum === 2){
+    const sh = String(src.statusShort || "");
+    const min = src.minuto || "";
+    if(/^ET|^Ent/i.test(sh)) return {label:"Entretiempo", cls:"ht", frac:45/90};
+    const n = parseInt(min) || 0;
+    if(/^2/.test(sh)) return {label:`2T ${min}`.trim(), cls:"live", frac:Math.min(n,90)/90};
+    return {label:`1T ${min}`.trim(), cls:"live", frac:Math.min(n,45)/90};
+  }
   const mins = matchMinutesSince(m);
   if(mins === null) return {label:"Sin horario", cls:"", frac:0};
   if(mins === 0) return {label:"Programado", cls:"", frac:0};
