@@ -19,7 +19,7 @@ const fs = require('fs');
 const path = require('path');
 const { playerLinesFromGame, missingFromGame, coachesFromGame, normName } = require('./players_lib');
 const { statsFromStatistics } = require('./promiedos_stats');
-const { toArgentina, timezoneFromNextData } = require('./promiedos_time');
+const { calibrarApi, fichaHoraArgentina } = require('./promiedos_time');
 
 const SITE = 'https://www.promiedos.com.ar';
 const API = 'https://api.promiedos.com.ar';
@@ -190,6 +190,7 @@ async function run() {
 
   const today = todayInArgentina();
   const ausentesNuevos = {};
+  let convertirApi = null;
   const matchesOut = fs.existsSync(MATCHES_PATH)
     ? JSON.parse(fs.readFileSync(MATCHES_PATH, 'utf8'))
     : { matches: [], bets: [], capitalInicial: 0 };
@@ -200,7 +201,6 @@ async function run() {
 
   for (const league of LEAGUES) {
     const page = await getJson(`${SITE}/_next/data/${buildId}/league/${league.slug}/${league.id}.json`);
-    const sourceTz = timezoneFromNextData(page);
     const rounds = roundKeysFromLeaguePage(page);
     if (!rounds.length) throw new Error(`Sin fechas para ${league.nombre}: cambio el formato de Promiedos?`);
     console.log(`${league.nombre}: ${rounds.length} fechas (${rounds[0].nombre} .. ${rounds[rounds.length - 1].nombre})`);
@@ -208,10 +208,18 @@ async function run() {
     for (const round of rounds) {
       const data = await getJson(`${API}/league/games/${league.id}/${encodeURIComponent(round.key)}`);
       const games = Array.isArray(data?.games) ? data.games : [];
+      if (!convertirApi && games.length) {
+        const cal = await calibrarApi(games[0], getJson, SITE, buildId);
+        if (cal) {
+          convertirApi = cal.convertir;
+          console.log(`Horarios calibrados: zona ${cal.tz}, ajuste API ${cal.delta} min`);
+        }
+      }
       await sleep(DELAY_MS);
 
       for (const game of games) {
-        const fechaHora = toArgentina(parseFechaHora(game.start_time), sourceTz);
+        // aproximada (API calibrada): solo para decidir si es de los proximos dias
+        const fechaHora = convertirApi ? convertirApi(parseFechaHora(game.start_time)) : parseFechaHora(game.start_time);
         const terminado = game?.status?.enum === 3;
         const diffDays = fechaHora
           ? Math.round((new Date(`${fechaHora.slice(0, 10)}T00:00:00Z`) - new Date(`${today}T00:00:00Z`)) / 86400000)
@@ -222,8 +230,11 @@ async function run() {
 
         const url = `${SITE}/_next/data/${buildId}/game/${encodeURIComponent(game.url_name)}/${game.id}.json`;
         let ficha;
+        let fichaHora = null;
         try {
-          ficha = (await getJson(url))?.pageProps?.initialData?.game;
+          const fichaJson = await getJson(url);
+          ficha = fichaJson?.pageProps?.initialData?.game;
+          fichaHora = fichaHoraArgentina(fichaJson);
         } catch (err) {
           console.warn(`No se pudo bajar la ficha ${game.id}: ${err.message}`);
           errores++;
@@ -245,11 +256,11 @@ async function run() {
         }
         addLines(out, league, lines);
         addCoaches(out, league, coachesFromGame(ficha));
-        const rec = matchRecord(ficha, league, 'Argentina', fechaHora);
+        const rec = matchRecord(ficha, league, 'Argentina', fichaHora || fechaHora);
         if (!matchById.has(rec.id)) partidosHistoricos++;
         matchById.set(rec.id, rec);
         out.partidos[game.id] = {
-          liga: league.id, fecha: round.nombre, fechaHora,
+          liga: league.id, fecha: round.nombre, fechaHora: fichaHora || fechaHora,
           local: game?.teams?.[0]?.name, visitante: game?.teams?.[1]?.name
         };
         procesados++;
@@ -266,7 +277,13 @@ async function run() {
   const unidosE = mergeVariants(out.entrenadores || {}, ['pj', 'g', 'e', 'p', 'gf', 'gc']);
   if (unidosJ || unidosE) console.log(`Nombres unificados: ${unidosJ} jugadores, ${unidosE} entrenadores.`);
 
+  // Solo se reescribe el archivo si cambio algo (evita commits vacios cada 30 min)
+  const cambioAusentes = JSON.stringify(out.ausentes || {}) !== JSON.stringify(ausentesNuevos);
   out.ausentes = ausentesNuevos;
+  if (procesados === 0 && !cambioAusentes && !unidosJ && !unidosE && fs.existsSync(OUTPUT_PATH)) {
+    console.log('Sin cambios en jugadores/ausentes.');
+    return;
+  }
   out.actualizado = new Date().toISOString();
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(out), 'utf8');

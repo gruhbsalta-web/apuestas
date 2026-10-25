@@ -62,4 +62,42 @@ function timezoneFromNextData(json) {
   return sourceTimezone(json?.countryId, json?.regionId);
 }
 
-module.exports = { toArgentina, sourceTimezone, timezoneFromNextData, AR_TZ };
+// "DD-MM-YYYY HH:mm" -> "YYYY-MM-DDTHH:mm"
+function parseStartTime(s) {
+  const m = String(s || '').match(/^(\d{2})-(\d{2})-(\d{4}) (\d{2}):(\d{2})$/);
+  return m ? `${m[3]}-${m[2]}-${m[1]}T${m[4]}:${m[5]}` : null;
+}
+
+function minutesBetween(a, b) {
+  const t = (s) => Date.UTC(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10), +s.slice(11, 13), +s.slice(14, 16));
+  return (t(b) - t(a)) / 60000;
+}
+
+function shiftMinutes(fechaHora, mins) {
+  if (!fechaHora || !mins) return fechaHora;
+  const d = new Date(Date.UTC(+fechaHora.slice(0, 4), +fechaHora.slice(5, 7) - 1, +fechaHora.slice(8, 10), +fechaHora.slice(11, 13), +fechaHora.slice(14, 16)) + mins * 60000);
+  return d.toISOString().slice(0, 16);
+}
+
+// Hora argentina de una ficha de partido (_next/data/.../game/...json):
+// usa el start_time y la geolocalizacion de la MISMA respuesta, asi siempre coinciden.
+function fichaHoraArgentina(fichaJson) {
+  const game = fichaJson?.pageProps?.initialData?.game;
+  return toArgentina(parseStartTime(game?.start_time), timezoneFromNextData(fichaJson));
+}
+
+// La API (api.promiedos.com.ar) y las paginas pueden geolocalizar distinto,
+// asi que se calibra: se compara un partido de la API contra su ficha y se
+// devuelve un conversor de horarios de la API a hora argentina.
+async function calibrarApi(apiGame, getJson, site, buildId) {
+  const url = `${site}/_next/data/${buildId}/game/${encodeURIComponent(apiGame.url_name)}/${apiGame.id}.json`;
+  const ficha = await getJson(url);
+  const enFicha = parseStartTime(ficha?.pageProps?.initialData?.game?.start_time);
+  const enApi = parseStartTime(apiGame.start_time);
+  const tz = timezoneFromNextData(ficha);
+  if (!enFicha || !enApi || !tz) return null;
+  const delta = minutesBetween(enApi, enFicha); // minutos a sumar a la hora de la API para llevarla a la zona de la ficha
+  return { tz, delta, convertir: (fechaHora) => toArgentina(shiftMinutes(fechaHora, delta), tz) };
+}
+
+module.exports = { toArgentina, sourceTimezone, timezoneFromNextData, parseStartTime, fichaHoraArgentina, calibrarApi, AR_TZ };
