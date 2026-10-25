@@ -2,7 +2,7 @@ name: Analisis Promiedos (temporal)
 on:
   push:
     branches: [analisis-promiedos]
-    paths: [analisis/dump.js]
+    paths: [analisis/dump.js, scripts/**]
 permissions:
   contents: write
 jobs:
@@ -17,6 +17,6 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add analisis/*.json
+          git add analisis/*.json analisis/*.txt
           git commit -m "analisis: json crudo de partidos" || true
           git push
