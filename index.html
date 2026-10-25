@@ -80,6 +80,12 @@
     padding:6px 2px;border-radius:var(--radius);min-height:48px;
   }
   .tab-btn svg{width:22px;height:22px;}
+  .tab-btn{font-size:11.5px;}
+  .pl-head{display:flex;align-items:center;gap:12px;margin:2px 0 12px;}
+  .pl-head button{background:none;border:none;color:var(--text);font:inherit;font-size:20px;font-weight:700;padding:0;text-align:left;}
+  .pl-head .bet-sub{margin:0;}
+  table.plantel td .eq{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:12px;font-weight:500;background:none;border:none;padding:2px 0 0;font-family:var(--ff);}
+  table.plantel td .eq .crest{width:18px;height:18px;font-size:7px;}
   .tab-btn.active{color:var(--accent);}
   .tab-btn.active svg{stroke:var(--accent);}
 
@@ -324,6 +330,10 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
     Terminados
   </button>
+  <button class="tab-btn" data-view="planteles">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3l-5 3 2 4 3-1v12h8V9l3 1 2-4-5-3c-.5 1.5-2 2.5-4 2.5S8.5 4.5 8 3z"/></svg>
+    Planteles
+  </button>
   <button class="tab-btn" data-view="resumen">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
     Resumen
@@ -445,6 +455,21 @@
     </div>
     <div id="terminados-stats"></div>
     <div id="terminados-list"></div>
+  </section>
+
+  <!-- PLANTELES -->
+  <section id="view-planteles" class="view">
+    <div id="pl-ligas" class="chips"></div>
+    <div class="card">
+      <label for="sel-pl-equipo" style="margin-top:0">Equipo</label>
+      <select id="sel-pl-equipo"></select>
+      <label for="in-pl-buscar">Buscar jugador</label>
+      <input type="search" id="in-pl-buscar" placeholder="Nombre o apellido" autocomplete="off">
+    </div>
+    <div id="pl-cabecera"></div>
+    <div class="card" style="padding:12px 10px">
+      <div id="pl-tabla"></div>
+    </div>
   </section>
 
   <!-- RESUMEN -->
@@ -676,6 +701,7 @@ document.querySelectorAll(".tab-btn").forEach(btn=>{
     if(btn.dataset.view === "apuestas") renderMatchSelect();
     if(btn.dataset.view === "terminados") renderTerminados();
     if(btn.dataset.view === "resumen") renderResumen();
+    if(btn.dataset.view === "planteles") renderPlantelesTab();
   });
 });
 
@@ -1236,6 +1262,14 @@ const PLANTEL_COLS = [
   {k:"rojas", t:"TR"}
 ];
 
+function conTasas(p){
+  return Object.assign({}, p, {
+    g90: por90(p.goles, p.min),
+    a90: por90(p.asist, p.min),
+    minGol: minPor(p.goles, p.min),
+    minAsist: minPor(p.asist, p.min)
+  });
+}
 function plantelRows(equipo){
   return jugadoresDe(equipo).map(p=>Object.assign({}, p, {
     g90: por90(p.goles, p.min),
@@ -1245,8 +1279,8 @@ function plantelRows(equipo){
   }));
 }
 
-function sortRows(rows){
-  const {col, desc} = plantelOrden;
+function sortRows(rows, orden = plantelOrden){
+  const {col, desc} = orden;
   return rows.sort((a,b)=>{
     if(col === "nombre") return desc ? b.nombre.localeCompare(a.nombre,"es") : a.nombre.localeCompare(b.nombre,"es");
     const va = a[col], vb = b[col];
@@ -1340,6 +1374,89 @@ function renderPlanteles(m){
     renderPlanteles(m);
   }));
 }
+
+// ---------- Pestaña Planteles: estadísticas de todos los jugadores ----------
+const PL_LIGAS = [{id:"hc", nombre:"Liga Profesional"}, {id:"ebj", nombre:"Primera Nacional"}];
+let plLiga = "hc";
+let plEquipo = "todos";
+let plBuscar = "";
+let plOrden = {col:"goles", desc:true};
+let plLimite = 50;
+
+async function renderPlantelesTab(){
+  const ligasWrap = document.getElementById("pl-ligas");
+  ligasWrap.innerHTML = PL_LIGAS.map(l=>`<button class="chip ${plLiga === l.id ? "active" : ""}" data-pl-liga="${l.id}">${l.nombre}</button>`).join("");
+  ligasWrap.querySelectorAll("[data-pl-liga]").forEach(b=>b.addEventListener("click", ()=>{
+    plLiga = b.dataset.plLiga; plEquipo = "todos"; plLimite = 50; renderPlantelesTab();
+  }));
+  const tabla = document.getElementById("pl-tabla");
+  if(!playersData){
+    tabla.innerHTML = '<div class="bet-sub">Cargando estadísticas de jugadores…</div>';
+    const d = await loadPlayers();
+    if(!d){ tabla.innerHTML = '<div class="bet-sub">Todavía no hay estadísticas de jugadores.</div>'; return; }
+  }
+  const todos = Object.values(playersData.jugadores || {}).filter(p=>p.liga === plLiga);
+  const equipos = Array.from(new Set(todos.map(p=>p.equipo))).sort((a,b)=>a.localeCompare(b,"es"));
+  if(plEquipo !== "todos" && !equipos.includes(plEquipo)) plEquipo = "todos";
+  const sel = document.getElementById("sel-pl-equipo");
+  sel.innerHTML = '<option value="todos">Toda la liga (ranking)</option>' + equipos.map(e=>`<option value="${e}">${e}</option>`).join("");
+  sel.value = plEquipo;
+
+  const q = plBuscar.trim().toLowerCase();
+  let rows = todos
+    .filter(p=> plEquipo === "todos" || p.equipo === plEquipo)
+    .filter(p=> !q || p.nombre.toLowerCase().includes(q))
+    .map(conTasas);
+  rows = sortRows(rows, plOrden);
+
+  // Cabecera: equipo elegido (con acceso a su ficha) o explicación del ranking
+  const cab = document.getElementById("pl-cabecera");
+  if(plEquipo !== "todos"){
+    const dt = Object.values(playersData.entrenadores || {}).filter(e=>e.equipo === plEquipo).sort((a,b)=>b.pj - a.pj)[0];
+    cab.innerHTML = `<div class="pl-head">${crest(plEquipo,"lg")}<div><button data-ficha="${plEquipo}">${plEquipo}</button>
+      <p class="bet-sub">${rows.length} jugadores${dt ? `, DT ${dt.nombre} (${efectividad(dt).toFixed(0)}% efectividad)` : ""}</p></div></div>`;
+    cab.querySelector("[data-ficha]").addEventListener("click", ()=> abrirFicha(plEquipo));
+  } else {
+    cab.innerHTML = `<p class="bet-sub" style="margin:0 2px 10px">${rows.length} jugadores de ${PL_LIGAS.find(l=>l.id === plLiga).nombre}. Tocá una columna para ordenar.</p>`;
+  }
+
+  if(!rows.length){ tabla.innerHTML = '<div class="empty">No hay jugadores con ese nombre.</div>'; return; }
+  const mostrar = rows.slice(0, plLimite);
+  const conEquipo = plEquipo === "todos";
+  tabla.innerHTML = `
+    <div class="plantel-wrap">
+      <table class="plantel">
+        <thead><tr>${PLANTEL_COLS.map(c=>`<th data-col="${c.k}" class="${plOrden.col === c.k ? "sorted" : ""}" scope="col">${c.t}</th>`).join("")}</tr></thead>
+        <tbody>
+          ${mostrar.map(p=>`<tr>
+            <td>${p.nombre}${conEquipo
+              ? `<span class="pos"><button class="eq" data-ficha="${p.equipo}">${crest(p.equipo)}${p.equipo}</button></span>`
+              : `<span class="pos">${p.posicion || ""}${p.numero != null ? ", #" + p.numero : ""}</span>`}</td>
+            ${PLANTEL_COLS.slice(1).map(c=>fmtCelda(c.k, p[c.k])).join("")}
+          </tr>`).join("")}
+        </tbody>
+      </table>
+    </div>
+    ${rows.length > plLimite ? `<button class="capital-edit" id="pl-mas" style="width:100%;margin-top:12px">Ver más (${rows.length - plLimite} restantes)</button>` : ""}
+    <div class="h2h-note">G/90 y A/90: goles y asistencias cada 90 minutos. Min/G y Min/A: minutos por gol o asistencia. Se calculan desde ${MIN_MINUTOS_PRODUCTIVIDAD}' jugados. TA y TR: amarillas y rojas.</div>
+  `;
+  tabla.querySelectorAll("th[data-col]").forEach(th=>th.addEventListener("click", ()=>{
+    const col = th.dataset.col;
+    plOrden = plOrden.col === col ? {col, desc: !plOrden.desc} : {col, desc: col !== "nombre"};
+    renderPlantelesTab();
+  }));
+  tabla.querySelectorAll("[data-ficha]").forEach(b=>b.addEventListener("click", ()=> abrirFicha(b.dataset.ficha)));
+  const mas = document.getElementById("pl-mas");
+  if(mas) mas.addEventListener("click", ()=>{ plLimite += 50; renderPlantelesTab(); });
+}
+document.getElementById("sel-pl-equipo").addEventListener("change", (e)=>{
+  plEquipo = e.target.value; plLimite = 50;
+  plOrden = plEquipo === "todos" ? {col:"goles", desc:true} : {col:"min", desc:true};
+  renderPlantelesTab();
+});
+document.getElementById("in-pl-buscar").addEventListener("input", (e)=>{
+  plBuscar = e.target.value; plLimite = 50; renderPlantelesTab();
+});
 
 // ---------- Agregar apuesta ----------
 document.getElementById("btn-add-bet").addEventListener("click", ()=>{
