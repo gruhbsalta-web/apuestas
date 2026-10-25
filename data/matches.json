@@ -5247,20 +5247,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "corners": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         }
       },
       "source": {
@@ -5271,7 +5271,7 @@
         "gameUrlName": "independiente-vs-boca-juniors",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "66'",
         "ronda": "Fecha 14"
       }
     },
@@ -5673,7 +5673,7 @@
         "gameUrlName": "central-norte-vs-acassuso",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "59'",
+        "minuto": "64'",
         "ronda": "Fecha 35"
       }
     },
@@ -5694,7 +5694,7 @@
           "v": 2
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "tirosArco": {
@@ -5714,7 +5714,7 @@
         "gameUrlName": "mitre-sde-vs-godoy-cruz",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "58'",
+        "minuto": "63'",
         "ronda": "Fecha 35"
       }
     },
@@ -5735,7 +5735,7 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 2
         },
         "tirosArco": {
@@ -5755,7 +5755,7 @@
         "gameUrlName": "deportivo-maipu-vs-club-atletico-guemes",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "62'",
         "ronda": "Fecha 35"
       }
     },
@@ -5776,7 +5776,7 @@
           "v": 1
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 1
         },
         "tirosArco": {
@@ -5796,7 +5796,7 @@
         "gameUrlName": "ferrocarril-midland-vs-gimnasia-y-tiro",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "51'",
+        "minuto": "56'",
         "ronda": "Fecha 35"
       }
     },
@@ -35309,7 +35309,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
@@ -35318,7 +35318,7 @@
         },
         "corners": {
           "l": 2,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
           "l": 4,
@@ -35326,7 +35326,7 @@
         },
         "atajadas": {
           "l": 1,
-          "v": 4
+          "v": 3
         }
       },
       "source": {
@@ -35337,7 +35337,7 @@
         "gameUrlName": "fc-barcelona-vs-real-madrid",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "56'",
+        "minuto": "61'",
         "ronda": "Fecha 10"
       }
     },
@@ -35768,16 +35768,16 @@
           "v": 1
         },
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 3
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 5
         },
         "atajadas": {
           "l": 3,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -35788,7 +35788,7 @@
         "gameUrlName": "udinese-vs-ac-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "77'",
+        "minuto": "82'",
         "ronda": "Fecha 8"
       }
     },
