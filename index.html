@@ -2570,7 +2570,8 @@ document.getElementById('btn-reset-all').addEventListener('click', ()=>{
 // ---------- Indicador de actualización automática (data/estado.json) ----------
 // El bucle de GitHub escribe la hora de cada actualización y la de la próxima.
 // La app muestra la cuenta regresiva y, cuando aparece una actualización nueva,
-// trae los datos sola. Si la próxima se pasa más de 10 min, avisa en rojo.
+// trae los datos sola. Amarillo si se demora (menos de 3 vueltas), rojo si pasan
+// 3 vueltas sin actualizar.
 let estadoSync = null;
 let ultimaVista = null;
 const fmtHora = d => d.toLocaleTimeString("es-AR", {hour:"2-digit", minute:"2-digit", hour12:false});
@@ -2605,13 +2606,22 @@ function pintarSync(){
       const mm = Math.floor(falta / 60), ss = String(falta % 60).padStart(2, "0");
       txt.textContent = `Actualizado ${fmtHora(ultima)} · próxima en ${mm}:${ss}`;
     }
-  } else if(falta > -600){
-    el.className = "sync esperando";
-    txt.textContent = `Actualizado ${fmtHora(ultima)} · actualizando…`;
   } else {
+    // atrasada: amarillo mientras no se pierdan 3 vueltas seguidas (demora normal de GitHub);
+    // rojo después, para pedir revisión
+    const intervalo = (estadoSync.intervaloMin || 10) * 60;
+    const atraso = -falta;
     const hace = Math.round((Date.now() - ultima) / 60000);
-    el.className = "sync mal";
-    txt.textContent = `Atrasada: la última fue hace ${hace} min`;
+    if(atraso < 120){
+      el.className = "sync esperando";
+      txt.textContent = `Actualizado ${fmtHora(ultima)} · actualizando…`;
+    } else if(atraso < 3 * intervalo){
+      el.className = "sync esperando";
+      txt.textContent = `Demorada por alta demanda · última hace ${hace} min`;
+    } else {
+      el.className = "sync mal";
+      txt.textContent = `Sin actualizar hace ${hace} min · pedí revisión`;
+    }
   }
 }
 function iniciarIndicadorSync(){
