@@ -1,18 +1,20 @@
 
 $ node scripts/fetch_promiedos.js
 buildId: N5dwuc0LGWZ7lPlu21XWX
-Ligas a recorrer: 3
+Ligas a recorrer: 6
 Fecha de hoy (Argentina): 2026-10-25
 Horarios calibrados: zona America/Chicago, ajuste API 0 min
 Liga Liga Profesional (hc): 15 partidos en 'latest', 15 relevantes (terminados o de hoy)
 Liga Primera Nacional (ebj): 18 partidos en 'latest', 18 relevantes (terminados o de hoy)
 Liga Copa Argentina (gea): 28 partidos en 'latest', 26 relevantes (terminados o de hoy)
-Se escribieron 165 partidos en total (59 traidos en esta corrida) en /home/runner/work/apuestas/apuestas/data/matches.json
+Liga Premier League (h): 23 partidos en 'latest', 15 relevantes (terminados o de hoy)
+Liga La Liga (bb): 21 partidos en 'latest', 16 relevantes (terminados o de hoy)
+Liga Serie A (bh): 18 partidos en 'latest', 13 relevantes (terminados o de hoy)
+Se escribieron 916 partidos en total (103 traidos en esta corrida) en /home/runner/work/apuestas/apuestas/data/matches.json
 
 $ node scripts/fetch_players.js
 Liga Profesional: 16 fechas (Fecha 1 .. Fecha 16)
 Horarios calibrados: zona America/Chicago, ajuste API 0 min
 Primera Nacional: 36 fechas (Fecha 1 .. Fecha 36)
-matches.json: 707 partidos terminados agregados (total 872).
-Nombres unificados: 1 jugadores, 3 entrenadores.
-Partidos nuevos procesados: 819. Total: 819 partidos, 1980 jugadores, 133 entrenadores. Errores: 1.
+matches.json: 1 partidos terminados agregados (total 917).
+Partidos nuevos procesados: 1. Total: 820 partidos, 1980 jugadores, 133 entrenadores. Errores: 0.
