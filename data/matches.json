@@ -34576,7 +34576,7 @@
       "visitante": "Brighton",
       "fechaHora": "2026-10-25T11:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -34605,9 +34605,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "liverpool-vs-brighton",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+5'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -34658,7 +34658,7 @@
       "visitante": "Newcastle United",
       "fechaHora": "2026-10-25T11:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -34669,7 +34669,7 @@
           "v": 3
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 4
         },
         "tirosArco": {
@@ -34687,9 +34687,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "crystal-palace-vs-newcastle-united",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+8'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 8"
       }
     },
@@ -35231,7 +35231,7 @@
       "local": "Celta de Vigo",
       "visitante": "Real Betis",
       "fechaHora": "2026-10-25T12:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -35240,7 +35240,7 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 2,
@@ -35261,9 +35261,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "celta-vigo-vs-real-betis",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 10"
       }
     },
