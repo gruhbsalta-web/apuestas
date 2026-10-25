@@ -5214,12 +5214,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         }
       },
       "source": {
@@ -5230,7 +5230,7 @@
         "gameUrlName": "aldosivi-vs-belgrano",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "3'",
+        "minuto": "13'",
         "ronda": "Fecha 14"
       }
     },
@@ -5844,8 +5844,6 @@
         "country": "Argentina",
         "gameUrlName": "gimnasia-la-plata-vs-sarmiento-junin",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5885,8 +5883,6 @@
         "country": "Argentina",
         "gameUrlName": "gimnasia-mendoza-vs-platense",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5926,8 +5922,6 @@
         "country": "Argentina",
         "gameUrlName": "tigre-vs-atletico-tucuman",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -6131,8 +6125,6 @@
         "country": "Argentina",
         "gameUrlName": "banfield-vs-lanus",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -6172,8 +6164,6 @@
         "country": "Argentina",
         "gameUrlName": "talleres-cordoba-vs-defensa-y-justicia",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -6213,8 +6203,6 @@
         "country": "Argentina",
         "gameUrlName": "san-lorenzo-vs-newell's-old-boys",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -6254,8 +6242,6 @@
         "country": "Argentina",
         "gameUrlName": "rosario-central-vs-huracan",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -6336,8 +6322,6 @@
         "country": "Argentina",
         "gameUrlName": "almagro-vs-tristan-suarez",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6377,8 +6361,6 @@
         "country": "Argentina",
         "gameUrlName": "ferro-carril-oeste-vs-chaco-for-ever",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6418,8 +6400,6 @@
         "country": "Argentina",
         "gameUrlName": "quilmes-vs-san-martin-de-tucuman",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6459,8 +6439,6 @@
         "country": "Argentina",
         "gameUrlName": "dep.-madryn-vs-san-telmo",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6500,8 +6478,6 @@
         "country": "Argentina",
         "gameUrlName": "colegiales-vs-atletico-rafaela",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -6541,8 +6517,6 @@
         "country": "Argentina",
         "gameUrlName": "ciudad-de-bolivar-vs-colon",
         "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
         "ronda": "Fecha 35"
       }
     },
@@ -34707,19 +34681,19 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -34730,7 +34704,7 @@
         "gameUrlName": "sunderland-vs-leeds-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "63'",
+        "minuto": "73'",
         "ronda": "Fecha 8"
       }
     },
@@ -35276,20 +35250,20 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
           "l": 0,
@@ -35304,7 +35278,7 @@
         "gameUrlName": "real-sociedad-vs-levante",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "22'",
+        "minuto": "33'",
         "ronda": "Fecha 10"
       }
     },
@@ -35723,7 +35697,7 @@
       "local": "Lecce",
       "visitante": "Juventus",
       "fechaHora": "2026-10-25T14:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -35753,7 +35727,7 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "lecce-vs-juventus",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Fecha 8"
