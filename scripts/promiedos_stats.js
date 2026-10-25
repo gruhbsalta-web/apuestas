@@ -34,6 +34,13 @@ function statsFromStatistics(statistics, goles) {
   const [redL, redV] = getPair('Tarjetas Rojas');
 
   stats.tirosArco = { l: shotsL, v: shotsV };
+  // Promiedos no publica atajadas: se estiman como remates al arco del rival
+  // menos goles del rival (ej. 0-0 con 2 remates al arco del local = 2 atajadas
+  // del arquero visitante). Nunca negativo (un gol en contra no es remate).
+  stats.atajadas = {
+    l: Math.max(0, shotsV - (Number(goles?.v) || 0)),
+    v: Math.max(0, shotsL - (Number(goles?.l) || 0))
+  };
   stats.corners = { l: cornersL, v: cornersV };
   stats.tarjetas = { l: yellowL + redL, v: yellowV + redV };
   return stats;
