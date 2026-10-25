@@ -18,7 +18,12 @@ const LEAGUE_OVERRIDE = (process.env.PROMIEDOS_LEAGUES || '').split(',').map((v)
 // Paises/categorias del menu de Promiedos que queremos cubrir. El resto
 // (Alemania, Portugal, Francia, Brasil, Uruguay, Paraguay, Colombia, Chile,
 // Mexico, EEUU, Selecciones) queda afuera a proposito.
-const COUNTRY_WHITELIST = ['Argentina', 'Inglaterra', 'España', 'Italia', 'Internacional'];
+const COUNTRY_WHITELIST = ['Argentina', 'Internacional'];
+// Ligas que se siguen, agrupadas por pais. Para sumar otra liga o pais basta
+// con agregar su id de Promiedos aca (y el pais en COUNTRY_BY_LEAGUE).
+// Hoy solo interesa Argentina: Liga Profesional, Primera Nacional y Copa Argentina.
+const LEAGUE_ID_INCLUDE = new Set(['hc', 'ebj', 'gea']);
+const COUNTRY_BY_LEAGUE = { hc: 'Argentina', ebj: 'Argentina', gea: 'Argentina' };
 // Ligas puntuales que no queremos aunque su pais/categoria este en la
 // whitelist: reserva/amateur argentino (no estan en las listas de equipos
 // de la app) y las copas domesticas de Inglaterra/España/Italia (de las
@@ -129,8 +134,9 @@ async function resolveLeagues(buildId) {
       if (!leagueMatch) return;
       const [, urlName, id] = leagueMatch;
       if (LEAGUE_ID_EXCLUDE.has(id)) return;
+      if (!LEAGUE_ID_INCLUDE.has(id)) return;
       if (!leagues.has(id)) {
-        leagues.set(id, { id, url_name: decodeURIComponent(urlName), name, country: category.name });
+        leagues.set(id, { id, url_name: decodeURIComponent(urlName), name, country: COUNTRY_BY_LEAGUE[id] || category.name });
       }
     });
   });
@@ -157,6 +163,7 @@ function normalizeMatch(game, league) {
       provider: 'promiedos',
       leagueId: league.id,
       leagueName: league.name || league.id,
+      country: league.country || COUNTRY_BY_LEAGUE[league.id] || 'Argentina',
       gameUrlName: game.url_name,
       statusShort: game?.status?.short_name || ''
     },
@@ -263,6 +270,7 @@ async function run() {
   // terminados de ligas vigentes se conservan siempre.
   const keptExisting = (existing.matches || [])
     .filter((m) => !LEAGUE_ID_EXCLUDE.has(m?.source?.leagueId))
+    .filter((m) => LEAGUE_ID_INCLUDE.has(m?.source?.leagueId))
     .filter((m) => isRelevantForToday(m, today));
   const dropped = (existing.matches || []).length - keptExisting.length;
   if (dropped > 0) console.log(`Se limpiaron ${dropped} partidos programados viejos que ya no son de hoy.`);

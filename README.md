@@ -5,7 +5,7 @@ App móvil (PWA) para registrar partidos de Primera División y Primera Nacional
 ## Stack
 
 - HTML + CSS + JavaScript vanilla, sin frameworks ni build step.
-- Todo el markup, estilos y lógica viven en `index.html` (un solo archivo, ~930 líneas).
+- Todo el markup, estilos y lógica viven en `index.html` (un solo archivo).
 - PWA: `manifest.json` + `sw.js` (service worker) + `icon.svg` para que sea instalable y funcione offline.
 - Persistencia: `localStorage`, clave `futbolTrackerData_v1`.
 
@@ -26,7 +26,7 @@ App móvil (PWA) para registrar partidos de Primera División y Primera Nacional
   - tiros al arco, corners, tarjetas amarillas+rojas sumadas (reales, no estimadas).
   - **Atajadas de arquero no está disponible** en los datos públicos de Promiedos — esa categoría queda siempre en 0 y se completa a mano desde la pestaña Partidos, como cualquier otro dato que el usuario quiera corregir.
   - Cada corrida hace upsert por id de partido sobre lo que ya había en `data/matches.json`, así los promedios históricos (`teamAverages`) se van acumulando entre corridas en vez de perderse cada vez.
-  - Alcance actual: Argentina (todas las divisiones y copas que lista el menú de Promiedos, salvo Liga Femenina), Inglaterra, España e Italia. Se puede ajustar en `COUNTRY_WHITELIST` dentro del script.
+  - Alcance actual: Argentina — Liga Profesional (`hc`), Primera Nacional (`ebj`) y Copa Argentina (`gea`). Cada partido guarda `source.country` y `source.leagueId`, y la app los agrupa país → liga → día. Para sumar una liga o un país: agregar su id en `LEAGUE_ID_INCLUDE` / `COUNTRY_BY_LEAGUE` del script y en `PAISES` de `index.html`.
   - Para correrlo a mano: `npm run fetch` (sin variables de entorno necesarias). `PROMIEDOS_LEAGUES=ebj,hc npm run fetch` corre solo esas ligas (por id de Promiedos) para probar rápido.
 
 - **Alternativa evaluada y descartada**: API-Sports / API-Football ([scripts/fetch_api_sports.js](scripts/fetch_api_sports.js), `npm run fetch:api-sports`). El plan free **no da acceso a la temporada en curso** ("Free plans do not have access to this season, try from 2022 to 2024"), así que no sirve para traer partidos actuales sin pagar un plan pago. El script queda en el repo por si en algún momento se paga un plan, pero no es el que usa el cron.

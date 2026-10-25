@@ -1,4 +1,4 @@
-const CACHE_NAME = "apuestas-futbol-v2";
+const CACHE_NAME = "apuestas-futbol-v3";
 const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", (event) => {
@@ -26,7 +26,24 @@ self.addEventListener("activate", (event) => {
 // ocupado corriendo el OCR.
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
-  if (new URL(event.request.url).origin !== self.location.origin) return;
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
+  // Los datos de partidos van siempre primero a la red (si no, la app mostraba
+  // el matches.json del dia anterior); el cache queda solo como respaldo offline.
+  if (url.pathname.endsWith("/data/matches.json")) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response && response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(url.pathname, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(url.pathname))
+    );
+    return;
+  }
   event.respondWith(
     caches.match(event.request).then((cached) => {
       const fetchPromise = fetch(event.request)

@@ -152,6 +152,17 @@
   .team-stats-row:first-of-type{border-top:none;}
   .team-stats-row b{color:var(--text);}
   optgroup{color:var(--muted);}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;}
+  .chip{border:1px solid var(--card-border);background:var(--card);color:var(--muted);font-size:12.5px;font-weight:600;padding:8px 13px;border-radius:20px;}
+  .chip.active{background:var(--accent);color:#06210f;border-color:var(--accent);}
+  .chip.off{opacity:.45;text-decoration:line-through;}
+  details.liga{margin-bottom:16px;}
+  details.liga>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:700;padding:10px 2px;border-bottom:1px solid var(--card-border);margin-bottom:10px;}
+  details.liga>summary::-webkit-details-marker{display:none;}
+  details.liga>summary .n{color:var(--muted);font-weight:600;font-size:12.5px;}
+  .dia-head{font-size:11.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:12px 2px 8px;}
+  details.card>summary{cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted);}
+  details.card[open]>summary{margin-bottom:6px;}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/tesseract.js@7.0.0/dist/tesseract.min.js"></script>
 </head>
@@ -171,40 +182,33 @@
 
   <!-- PARTIDOS -->
   <section id="view-partidos" class="view active">
-    <div class="card">
-      <h3>Nuevo partido</h3>
-      <label for="sel-local">Local</label>
-      <select id="sel-local"></select>
-      <label for="sel-visitante">Visitante</label>
-      <select id="sel-visitante"></select>
+    <div id="partidos-filtros"></div>
+    <div id="matches-list"></div>
+
+    <div style="display:flex;align-items:center;gap:10px;margin:4px 0 14px;">
+      <button class="capital-edit" id="btn-refresh-json">↻ Actualizar partidos</button>
+      <span class="bet-sub" id="data-updated"></span>
+    </div>
+
+    <details class="card" id="card-nuevo-partido">
+      <summary>+ Agregar un partido a mano</summary>
+      <label for="sel-liga">Liga</label>
+      <select id="sel-liga"></select>
+      <div class="row2">
+        <div>
+          <label for="in-local">Local</label>
+          <input type="text" id="in-local" list="dl-equipos" autocomplete="off">
+        </div>
+        <div>
+          <label for="in-visitante">Visitante</label>
+          <input type="text" id="in-visitante" list="dl-equipos" autocomplete="off">
+        </div>
+      </div>
+      <datalist id="dl-equipos"></datalist>
       <label for="in-fecha-hora">Fecha y hora de inicio</label>
       <input type="datetime-local" id="in-fecha-hora">
       <button class="primary" id="btn-add-match">Agregar partido</button>
-    </div>
-
-    <div class="card">
-      <h3>Actualizar partidos desde Promiedos</h3>
-      <label for="in-promiedos-url">URL de Promiedos (página de fixture o torneo)</label>
-      <input type="text" id="in-promiedos-url" placeholder="https://www.promiedos.com.ar" value="https://www.promiedos.com.ar">
-      <div class="row2" style="margin-top:10px;">
-        <button class="primary" id="btn-fetch-promiedos">Buscar y agregar partidos</button>
-        <button id="btn-clear-fetch" class="capital-edit">Limpiar resultados</button>
-      </div>
-      <button class="primary" id="btn-refresh-json" style="margin-top:10px;">Recargar desde data/matches.json</button>
-      <div class="bet-sub" style="margin-top:8px">Nota: la importación heurística de Promiedos puede necesitar revisión manual. Si ya corriste el fetch con API-Sports, este botón carga el JSON generado en la app sin perder tus apuestas.</div>
-    </div>
-
-    <div id="matches-list">
-      <div class="card">
-        <h3>Partidos por categoría</h3>
-        <div id="matches-primera">
-          <h4 style="margin-top:0;margin-bottom:8px;color:var(--muted)">Primera División</h4>
-        </div>
-        <div id="matches-nacional" style="margin-top:12px">
-          <h4 style="margin-top:0;margin-bottom:8px;color:var(--muted)">Primera Nacional</h4>
-        </div>
-      </div>
-    </div>
+    </details>
   </section>
 
   <!-- APUESTAS -->
@@ -341,36 +345,20 @@
 </footer>
 
 <script>
-// ---------- Datos: clubes Argentina 2026 ----------
-const PRIMERA_DIVISION = [
-  "Aldosivi","Argentinos Juniors","Atlético Tucumán","Banfield","Barracas Central",
-  "Belgrano","Boca Juniors","Central Córdoba (SdE)","Defensa y Justicia","Deportivo Riestra",
-  "Estudiantes (LP)","Estudiantes (Río Cuarto)","Gimnasia y Esgrima (LP)","Gimnasia y Esgrima (Mza)",
-  "Huracán","Independiente","Independiente Rivadavia","Instituto","Lanús","Newell's Old Boys",
-  "Platense","Racing Club","River Plate","Rosario Central","San Lorenzo","Sarmiento",
-  "Talleres","Tigre","Unión","Vélez Sarsfield"
+// ---------- Ligas que se siguen: país -> ligas ----------
+// Para sumar un país o una liga: agregarlo acá y en LEAGUE_ID_INCLUDE /
+// COUNTRY_BY_LEAGUE de scripts/fetch_promiedos.js (los ids son los de Promiedos).
+const PAISES = [
+  { id: "Argentina", ligas: [
+    { id: "hc",  nombre: "Liga Profesional" },
+    { id: "ebj", nombre: "Primera Nacional" },
+    { id: "gea", nombre: "Copa Argentina" }
+  ]}
 ];
-const NACIONAL_ZONA_A = [
-  "Acassuso","All Boys","Almirante Brown","Central Norte","Chaco For Ever","Ciudad de Bolívar",
-  "Colón","Defensores de Belgrano","Deportivo Madryn","Deportivo Morón","Estudiantes (BA)",
-  "Ferro Carril Oeste","Godoy Cruz","Los Andes","Mitre (SdE)","Racing (Córdoba)","San Miguel","San Telmo"
-];
-const NACIONAL_ZONA_B = [
-  "Agropecuario","Almagro","Atlanta","Atlético de Rafaela","Chacarita Juniors","Colegiales",
-  "Deportivo Maipú","Ferrocarril Midland","Gimnasia y Esgrima (Jujuy)","Gimnasia y Tiro (Salta)",
-  "Güemes","Nueva Chicago","Patronato","Quilmes","San Martín (SJ)","San Martín (Tuc)",
-  "Temperley","Tristán Suárez"
-];
+const LIGA_INFO = {};
+PAISES.forEach(p => p.ligas.forEach(l => { LIGA_INFO[l.id] = { id: l.id, nombre: l.nombre, pais: p.id }; }));
 
 const TIPO_LABEL = {goles:"Goles",tarjetas:"Tarjetas",corners:"Corners",tirosArco:"Tiros al arco",atajadas:"Atajadas"};
-
-// ---------- Precarga de partidos detectados en Promiedos (puedes editar horarios luego) ----------
-const PRELOADED_MATCHES = [
-  { id: 'pre_almagro_gyt', local: 'Almagro', visitante: 'Gimnasia y Tiro', fechaHora: '2026-08-05T15:00', finPrimerTiempo:false, finPartido:false, stats: emptyStats() },
-  { id: 'pre_quilmes_gjuj', local: 'Quilmes', visitante: 'Gimnasia de Jujuy', fechaHora: '2026-08-05T20:00', finPrimerTiempo:false, finPartido:false, stats: emptyStats() },
-  { id: 'pre_boca_est', local: 'Boca Juniors', visitante: 'Estudiantes (LP)', fechaHora: '2026-08-05T19:00', finPrimerTiempo:false, finPartido:false, stats: emptyStats() },
-  { id: 'pre_tigre_bel', local: 'Tigre', visitante: 'Belgrano', fechaHora: '2026-08-05T21:15', finPrimerTiempo:false, finPartido:false, stats: emptyStats() }
-];
 
 // ---------- Estado (persistido en localStorage) ----------
 const STORAGE_KEY = "futbolTrackerData_v1";
@@ -385,8 +373,8 @@ function load(){
       return data;
     }
   }catch(e){}
-  // Si no hay datos en localStorage, inicializamos con precarga para facilitar pruebas
-  return {matches: PRELOADED_MATCHES.slice(), bets:[], capitalInicial:0};
+  // Si no hay datos en localStorage arrancamos vacío: los partidos entran solos desde data/matches.json
+  return {matches: [], bets:[], capitalInicial:0, ui:{}};
 }
 function save(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
 function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
@@ -492,28 +480,31 @@ function formatDay(dayStr){
 }
 let terminadosFiltroDia = "todos";
 
-// ---------- Poblar selects de clubes ----------
-function buildClubSelect(el){
+// ---------- Formulario "agregar partido a mano" ----------
+function buildLigaSelect(){
+  const el = document.getElementById("sel-liga");
   el.innerHTML = "";
-  const groups = [
-    ["Primera División", PRIMERA_DIVISION],
-    ["Primera Nacional - Zona A", NACIONAL_ZONA_A],
-    ["Primera Nacional - Zona B", NACIONAL_ZONA_B]
-  ];
-  groups.forEach(([label, clubs])=>{
-    const og = document.createElement("optgroup");
-    og.label = label;
-    clubs.forEach(c=>{
+  PAISES.forEach(p=>{
+    p.ligas.forEach(l=>{
       const opt = document.createElement("option");
-      opt.value = c; opt.textContent = c;
-      og.appendChild(opt);
+      opt.value = l.id;
+      opt.textContent = PAISES.length > 1 ? `${p.id} · ${l.nombre}` : l.nombre;
+      el.appendChild(opt);
     });
-    el.appendChild(og);
   });
 }
-buildClubSelect(document.getElementById("sel-local"));
-buildClubSelect(document.getElementById("sel-visitante"));
-document.getElementById("sel-visitante").selectedIndex = 1;
+function refreshEquiposDatalist(){
+  const names = new Set();
+  state.matches.forEach(m=>{ names.add(m.local); names.add(m.visitante); });
+  const dl = document.getElementById("dl-equipos");
+  dl.innerHTML = "";
+  [...names].sort((a,b)=>a.localeCompare(b,"es")).forEach(n=>{
+    const opt = document.createElement("option");
+    opt.value = n;
+    dl.appendChild(opt);
+  });
+}
+buildLigaSelect();
 document.getElementById("in-fecha-hora").value = nowLocalInputValue();
 
 // ---------- Tabs ----------
@@ -536,70 +527,173 @@ document.getElementById("sel-dia").addEventListener("change", (e)=>{
 
 // ---------- Agregar partido ----------
 document.getElementById("btn-add-match").addEventListener("click", ()=>{
-  const local = document.getElementById("sel-local").value;
-  const visitante = document.getElementById("sel-visitante").value;
-  if(local === visitante){ alert("Local y visitante no pueden ser el mismo club."); return; }
+  const local = document.getElementById("in-local").value.trim();
+  const visitante = document.getElementById("in-visitante").value.trim();
+  if(!local || !visitante){ alert("Completá local y visitante."); return; }
+  if(local.toLowerCase() === visitante.toLowerCase()){ alert("Local y visitante no pueden ser el mismo club."); return; }
+  const info = LIGA_INFO[document.getElementById("sel-liga").value];
   const fechaHora = document.getElementById("in-fecha-hora").value || nowLocalInputValue();
   state.matches.push({
     id: uid(), local, visitante, fechaHora,
-    finPrimerTiempo:false, finPartido:false, stats: emptyStats()
+    finPrimerTiempo:false, finPartido:false, stats: emptyStats(),
+    source: { provider:"manual", leagueId: info.id, leagueName: info.nombre, country: info.pais }
   });
   save();
+  document.getElementById("in-local").value = "";
+  document.getElementById("in-visitante").value = "";
   document.getElementById("in-fecha-hora").value = nowLocalInputValue();
   renderAll();
 });
 
-// ---------- Render partidos (solo los que todavía no terminaron; los finalizados viven en Terminados) ----------
-function renderMatches(){
-  const primeraWrap = document.getElementById("matches-primera");
-  const nacionalWrap = document.getElementById("matches-nacional");
-  const activos = state.matches.filter(m=>!m.finPartido);
-  if(activos.length === 0){
-    primeraWrap.innerHTML = '<div class="empty">Todavía no agregaste ningún partido.</div>';
-    nacionalWrap.innerHTML = '';
-    return;
-  }
-  primeraWrap.innerHTML = '';
-  nacionalWrap.innerHTML = '';
+// ---------- Render partidos: país -> liga -> día (solo los que no terminaron; los finalizados viven en Terminados) ----------
+function uiState(){
+  if(!state.ui || typeof state.ui !== "object") state.ui = {};
+  if(!PAISES.some(p=>p.id === state.ui.pais)) state.ui.pais = PAISES[0].id;
+  if(!Array.isArray(state.ui.ligasOcultas)) state.ui.ligasOcultas = [];
+  if(!Array.isArray(state.ui.ligasCerradas)) state.ui.ligasCerradas = [];
+  return state.ui;
+}
+// Liga conocida de un partido, o null si no tiene (partidos viejos cargados antes del rediseño).
+function ligaDe(m){
+  const id = m.source && m.source.leagueId;
+  return LIGA_INFO[id] ? id : null;
+}
+function dayLabel(dayStr){
+  if(!dayStr) return "Sin fecha";
+  const iso = d => new Date(d.getTime() - d.getTimezoneOffset()*60000).toISOString().slice(0,10);
+  const hoy = new Date();
+  const man = new Date(); man.setDate(man.getDate()+1);
+  if(dayStr === iso(hoy)) return "Hoy";
+  if(dayStr === iso(man)) return "Mañana";
+  return formatDay(dayStr);
+}
+function sortByFecha(list){
+  return list.slice().sort((a,b)=> (a.fechaHora || "9999").localeCompare(b.fechaHora || "9999"));
+}
 
-  activos.slice().reverse().forEach(m=>{
-    const card = document.createElement("div");
-    card.className = "card match-card";
-    const statKeys = Object.keys(TIPO_LABEL);
-    const st = matchStatus(m);
-    card.innerHTML = `
-      <button class="del-x" data-del-match="${m.id}">✕</button>
-      <div class="match-title">${m.local} vs ${m.visitante}</div>
-      <span class="status-badge ${st.cls}">${st.label}</span>
+function buildMatchCard(m){
+  const card = document.createElement("div");
+  card.className = "card match-card";
+  const statKeys = Object.keys(TIPO_LABEL);
+  const st = matchStatus(m);
+  card.innerHTML = `
+    <button class="del-x" data-del-match="${m.id}">✕</button>
+    <div class="match-title">${m.local} vs ${m.visitante}</div>
+    <span class="status-badge ${st.cls}">${st.label}</span>
 
-      <label>Fecha y hora de inicio</label>
-      <input type="datetime-local" data-fecha="${m.id}" value="${m.fechaHora || ""}">
-      <div class="checkbox-row">
-        <label><input type="checkbox" data-fin1="${m.id}" ${m.finPrimerTiempo ? "checked" : ""}> Fin 1er tiempo</label>
-        <label><input type="checkbox" data-finp="${m.id}" ${m.finPartido ? "checked" : ""}> Fin del partido</label>
-      </div>
+    <label>Fecha y hora de inicio</label>
+    <input type="datetime-local" data-fecha="${m.id}" value="${m.fechaHora || ""}">
+    <div class="checkbox-row">
+      <label><input type="checkbox" data-fin1="${m.id}" ${m.finPrimerTiempo ? "checked" : ""}> Fin 1er tiempo</label>
+      <label><input type="checkbox" data-finp="${m.id}" ${m.finPartido ? "checked" : ""}> Fin del partido</label>
+    </div>
 
-      <div class="stat-grid">
-        <div class="stat-row"><span></span><span style="text-align:center">Local</span><span style="text-align:center">Visit.</span></div>
-        ${statKeys.map(k=>`
-          <div class="stat-row">
-            <span>${TIPO_LABEL[k]}</span>
-            <input type="number" min="0" data-stat="${m.id}|${k}|l" value="${m.stats[k].l}">
-            <input type="number" min="0" data-stat="${m.id}|${k}|v" value="${m.stats[k].v}">
-          </div>`).join("")}
-      </div>
-      <div class="btn-row">
-        <button class="btn-del" data-del-match2="${m.id}">Eliminar partido</button>
-      </div>
-    `;
+    <div class="stat-grid">
+      <div class="stat-row"><span></span><span style="text-align:center">Local</span><span style="text-align:center">Visit.</span></div>
+      ${statKeys.map(k=>`
+        <div class="stat-row">
+          <span>${TIPO_LABEL[k]}</span>
+          <input type="number" min="0" data-stat="${m.id}|${k}|l" value="${m.stats[k].l}">
+          <input type="number" min="0" data-stat="${m.id}|${k}|v" value="${m.stats[k].v}">
+        </div>`).join("")}
+    </div>
+    <div class="btn-row">
+      <button class="btn-del" data-del-match2="${m.id}">Eliminar partido</button>
+    </div>
+  `;
+  return card;
+}
 
-    // Decide categoría
-    const inPrimera = PRIMERA_DIVISION.includes(m.local) && PRIMERA_DIVISION.includes(m.visitante);
-    const inNacional = (NACIONAL_ZONA_A.includes(m.local) || NACIONAL_ZONA_B.includes(m.local)) && (NACIONAL_ZONA_A.includes(m.visitante) || NACIONAL_ZONA_B.includes(m.visitante));
-    if(inPrimera) primeraWrap.appendChild(card);
-    else if(inNacional) nacionalWrap.appendChild(card);
-    else primeraWrap.appendChild(card); // por defecto a Primera si no se detecta
+function buildLigaSection(key, titulo, lista){
+  const ui = uiState();
+  const det = document.createElement("details");
+  det.className = "liga";
+  det.open = !ui.ligasCerradas.includes(key);
+  const sum = document.createElement("summary");
+  sum.innerHTML = `<span>${titulo}</span><span class="n">${lista.length}</span>`;
+  det.appendChild(sum);
+  det.addEventListener("toggle", ()=>{
+    const cerradas = new Set(ui.ligasCerradas);
+    if(det.open) cerradas.delete(key); else cerradas.add(key);
+    ui.ligasCerradas = [...cerradas];
+    save();
   });
+  if(lista.length === 0){
+    const e = document.createElement("div");
+    e.className = "empty";
+    e.style.padding = "10px 8px 16px";
+    e.textContent = "Sin partidos próximos.";
+    det.appendChild(e);
+    return det;
+  }
+  let diaActual = null;
+  sortByFecha(lista).forEach(m=>{
+    const dia = matchDay(m);
+    if(dia !== diaActual){
+      diaActual = dia;
+      const h = document.createElement("div");
+      h.className = "dia-head";
+      h.textContent = dayLabel(dia);
+      det.appendChild(h);
+    }
+    det.appendChild(buildMatchCard(m));
+  });
+  return det;
+}
+
+function renderMatches(){
+  const ui = uiState();
+  const filtros = document.getElementById("partidos-filtros");
+  const root = document.getElementById("matches-list");
+  filtros.innerHTML = "";
+  root.innerHTML = "";
+  refreshEquiposDatalist();
+
+  // Nivel 1: país (solo se muestran las pestañas si hay más de uno)
+  if(PAISES.length > 1){
+    const row = document.createElement("div");
+    row.className = "chips";
+    PAISES.forEach(p=>{
+      const b = document.createElement("button");
+      b.className = "chip" + (p.id === ui.pais ? " active" : "");
+      b.textContent = p.id;
+      b.addEventListener("click", ()=>{ ui.pais = p.id; save(); renderMatches(); });
+      row.appendChild(b);
+    });
+    filtros.appendChild(row);
+  }
+
+  const pais = PAISES.find(p=>p.id === ui.pais);
+  const activos = state.matches.filter(m=>!m.finPartido);
+
+  // Nivel 2: ligas del país (cada chip muestra u oculta esa liga)
+  const chips = document.createElement("div");
+  chips.className = "chips";
+  pais.ligas.forEach(l=>{
+    const oculta = ui.ligasOcultas.includes(l.id);
+    const b = document.createElement("button");
+    b.className = "chip" + (oculta ? " off" : " active");
+    b.textContent = l.nombre;
+    b.addEventListener("click", ()=>{
+      const set = new Set(ui.ligasOcultas);
+      if(oculta) set.delete(l.id); else set.add(l.id);
+      ui.ligasOcultas = [...set];
+      save(); renderMatches();
+    });
+    chips.appendChild(b);
+  });
+  filtros.appendChild(chips);
+
+  pais.ligas.forEach(l=>{
+    if(ui.ligasOcultas.includes(l.id)) return;
+    root.appendChild(buildLigaSection(l.id, l.nombre, activos.filter(m=>ligaDe(m) === l.id)));
+  });
+
+  // Partidos sin liga (cargados antes del rediseño): se muestran en el primer país
+  if(pais.id === PAISES[0].id){
+    const sinLiga = activos.filter(m=>!ligaDe(m));
+    if(sinLiga.length) root.appendChild(buildLigaSection("sin-liga", "Otros partidos", sinLiga));
+  }
 
   // Attach listeners (delegated selection)
   document.querySelectorAll("[data-fecha]").forEach(inp=>{
@@ -649,14 +743,23 @@ function renderMatchSelect(){
   sel.innerHTML = "";
   const activos = state.matches.filter(m=>!m.finPartido);
   if(activos.length === 0){
-    sel.innerHTML = '<option value="">Agregá un partido primero</option>';
+    sel.innerHTML = '<option value="">No hay partidos próximos</option>';
     return;
   }
-  activos.forEach(m=>{
-    const opt = document.createElement("option");
-    opt.value = m.id;
-    opt.textContent = `${m.local} vs ${m.visitante}`;
-    sel.appendChild(opt);
+  const grupos = [];
+  PAISES.forEach(p=> p.ligas.forEach(l=> grupos.push([l.nombre, activos.filter(m=>ligaDe(m) === l.id)])));
+  grupos.push(["Otros partidos", activos.filter(m=>!ligaDe(m))]);
+  grupos.forEach(([label, lista])=>{
+    if(!lista.length) return;
+    const og = document.createElement("optgroup");
+    og.label = label;
+    sortByFecha(lista).forEach(m=>{
+      const opt = document.createElement("option");
+      opt.value = m.id;
+      opt.textContent = `${m.local} vs ${m.visitante}`;
+      og.appendChild(opt);
+    });
+    sel.appendChild(og);
   });
   renderTeamStatsPanel();
 }
@@ -1543,102 +1646,94 @@ if("serviceWorker" in navigator && (location.protocol === "https:" || location.h
   }).catch(()=>{});
 }
 
-// ---------- Actualizar partidos desde Promiedos (parser heurístico) ----------
-async function fetchPromiedos(url){
-  if(!url) throw new Error('URL vacía');
-  // Intentamos usar un proxy texto que suele permitir CORS (r.jina.ai). Si falla, el fetch lanzará.
-  const proxy = 'https://r.jina.ai/http://';
-  const target = proxy + url.replace(/^https?:\/\//i, '');
-  const resp = await fetch(target);
-  if(!resp.ok) throw new Error('Error al recuperar la página');
-  const text = await resp.text();
-  return parsePromiedosHtml(text);
+// ---------- Partidos desde data/matches.json (lo actualiza solo el cron diario) ----------
+// Mezcla por id en vez de pisar: los partidos agregados a mano, las apuestas y las
+// atajadas cargadas a mano se conservan. Si ya marcaste un partido como terminado y
+// el JSON todavía lo trae sin terminar, gana lo que vos cargaste.
+function mergeData(dataMatches){
+  const byId = new Map(state.matches.map(m=>[m.id, m]));
+  let nuevos = 0;
+  dataMatches.forEach(dm=>{
+    if(!LIGA_INFO[dm && dm.source && dm.source.leagueId]) return;
+    const cur = byId.get(dm.id);
+    if(!cur){
+      state.matches.push(dm);
+      byId.set(dm.id, dm);
+      nuevos++;
+      return;
+    }
+    cur.source = dm.source;
+    if(cur.finPartido && !dm.finPartido) return;
+    const atajadas = cur.stats && cur.stats.atajadas && (cur.stats.atajadas.l || cur.stats.atajadas.v)
+      ? cur.stats.atajadas : dm.stats.atajadas;
+    cur.local = dm.local;
+    cur.visitante = dm.visitante;
+    cur.fechaHora = dm.fechaHora;
+    cur.finPrimerTiempo = dm.finPrimerTiempo;
+    cur.finPartido = dm.finPartido;
+    cur.stats = Object.assign({}, dm.stats, {atajadas});
+  });
+  return nuevos;
 }
 
-function parsePromiedosHtml(html){
-  // Heurística: buscamos apariciones de nombres de equipos y los emparejamos por proximidad.
-  const teams = PRIMERA_DIVISION.concat(NACIONAL_ZONA_A, NACIONAL_ZONA_B);
-  const occurrences = [];
-  const lower = html.toLowerCase();
-  teams.forEach(team => {
-    const t = team.toLowerCase();
-    let idx = 0;
-    while(true){
-      const pos = lower.indexOf(t, idx);
-      if(pos === -1) break;
-      occurrences.push({team, pos});
-      idx = pos + t.length;
-    }
+// Saca de la memoria los partidos de ligas que ya no se siguen y la precarga vieja,
+// salvo que tengan apuestas asociadas.
+function limpiarPartidosViejos(){
+  const conApuesta = new Set(state.bets.map(b=>b.matchId));
+  const antes = state.matches.length;
+  state.matches = state.matches.filter(m=>{
+    if(conApuesta.has(m.id)) return true;
+    if(m.source && m.source.provider === "promiedos" && !LIGA_INFO[m.source.leagueId]) return false;
+    if(typeof m.id === "string" && m.id.startsWith("pre_")) return false;
+    return true;
   });
-  occurrences.sort((a,b)=>a.pos-b.pos);
-  const pairs = [];
-  for(let i=0;i<occurrences.length-1;i++){
-    const a = occurrences[i], b = occurrences[i+1];
-    if(a.team !== b.team && (b.pos - a.pos) < 400){
-      pairs.push({local: a.team, visitante: b.team});
-      i++; // saltamos el siguiente
-    }
-  }
-  // Dedupe pairs
-  const seen = new Set();
-  const unique = pairs.filter(p=>{
-    const key = [p.local,p.visitante].join(' vs ');
-    if(seen.has(key)) return false; seen.add(key); return true;
-  });
-  return unique;
+  return antes - state.matches.length;
 }
 
-document.getElementById('btn-fetch-promiedos').addEventListener('click', async ()=>{
-  const url = document.getElementById('in-promiedos-url').value.trim();
-  if(!url){ alert('Pegá la URL de Promiedos a usar.'); return; }
-  try{
-    const found = await fetchPromiedos(url);
-    if(!found || found.length === 0){ alert('No se encontraron partidos con la heurística.'); return; }
-    if(!confirm(`Se encontraron ${found.length} partidos. ¿Agregar al tracker?`)) return;
-    found.forEach(p=>{
-      state.matches.push({id: uid(), local: p.local, visitante: p.visitante, fechaHora: null, finPrimerTiempo:false, finPartido:false, stats: emptyStats()});
-    });
-    save(); renderAll();
-    alert('Partidos importados. Revisa la solapa Partidos para ajustar horarios y confirmar.');
-  }catch(err){
-    alert('Error al importar: '+err.message+". Si la página no permite CORS prueba con otro proxy o trae la página como archivo.");
+async function syncFromData(){
+  const resp = await fetch('data/matches.json', {cache:'no-store'});
+  if(!resp.ok) throw new Error('No se pudo leer data/matches.json');
+  const data = await resp.json();
+  if(!Array.isArray(data.matches)) throw new Error('El archivo no tiene partidos válidos');
+  const primeraVez = !localStorage.getItem(STORAGE_KEY);
+  mergeData(data.matches);
+  limpiarPartidosViejos();
+  if(primeraVez){
+    state.bets = Array.isArray(data.bets) ? data.bets : state.bets;
+    if(typeof data.capitalInicial === 'number') state.capitalInicial = data.capitalInicial;
   }
-});
+  save();
+  return data.matches.filter(m=>LIGA_INFO[m && m.source && m.source.leagueId]).length;
+}
 
-document.getElementById('btn-clear-fetch').addEventListener('click', ()=>{
-  document.getElementById('in-promiedos-url').value = 'https://www.promiedos.com.ar';
-});
+function setUpdatedLabel(texto){
+  const el = document.getElementById('data-updated');
+  if(el) el.textContent = texto;
+}
+function horaActual(){
+  return new Date().toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'});
+}
 
-document.getElementById('btn-refresh-json').addEventListener('click', async ()=>{
+document.getElementById('btn-refresh-json').addEventListener('click', async (ev)=>{
+  const btn = ev.currentTarget;
+  btn.disabled = true;
   try{
-    const resp = await fetch('data/matches.json');
-    if(!resp.ok) throw new Error('No se pudo leer data/matches.json');
-    const data = await resp.json();
-    if(!Array.isArray(data.matches)) throw new Error('El archivo no tiene partidos válidos');
-    state.matches = data.matches;
-    save();
+    await syncFromData();
     renderAll();
-    alert('Partidos recargados desde data/matches.json');
+    setUpdatedLabel('Actualizado ' + horaActual());
   }catch(err){
-    alert('Error al recargar: ' + err.message);
+    alert('Error al actualizar: ' + err.message);
+  }finally{
+    btn.disabled = false;
   }
 });
 
 // ---------- Init ----------
-(async function initFromData(){
+(async function init(){
   try{
-    const resp = await fetch('data/matches.json');
-    if(resp.ok){
-      const data = await resp.json();
-      // solo cargar si no hay datos previos en localStorage
-      if(!localStorage.getItem(STORAGE_KEY) && Array.isArray(data.matches)){
-        state.matches = data.matches;
-        state.bets = Array.isArray(data.bets) ? data.bets : [];
-        state.capitalInicial = typeof data.capitalInicial === 'number' ? data.capitalInicial : state.capitalInicial;
-        save();
-      }
-    }
-  }catch(e){ /* no-op si no existe o error de CORS */ }
+    await syncFromData();
+    setUpdatedLabel('Actualizado ' + horaActual());
+  }catch(e){ /* sin red o sin JSON: se usa lo que ya hay guardado */ }
   renderAll();
   // refresca minuto de juego y probabilidad estimada cada 60s
   setInterval(renderAll, 60000);
