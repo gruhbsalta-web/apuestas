@@ -283,8 +283,19 @@
   <!-- TERMINADOS -->
   <section id="view-terminados" class="view">
     <div class="card">
-      <h3>Filtrar por día</h3>
-      <select id="sel-dia"></select>
+      <h3>Filtrar</h3>
+      <div class="row2">
+        <div>
+          <label for="sel-term-liga">Liga</label>
+          <select id="sel-term-liga"></select>
+        </div>
+        <div>
+          <label for="sel-dia">Día</label>
+          <select id="sel-dia"></select>
+        </div>
+      </div>
+      <label for="in-term-equipo">Equipo</label>
+      <input type="text" id="in-term-equipo" list="dl-equipos" placeholder="Todos los equipos" autocomplete="off">
     </div>
     <div id="terminados-stats"></div>
     <div id="terminados-list"></div>
@@ -547,6 +558,17 @@ document.querySelectorAll(".tab-btn").forEach(btn=>{
 
 document.getElementById("sel-dia").addEventListener("change", (e)=>{
   terminadosFiltroDia = e.target.value;
+  terminadosLimite = 40;
+  renderTerminados();
+});
+document.getElementById("sel-term-liga").addEventListener("change", (e)=>{
+  terminadosFiltroLiga = e.target.value;
+  terminadosLimite = 40;
+  renderTerminados();
+});
+document.getElementById("in-term-equipo").addEventListener("input", (e)=>{
+  terminadosFiltroEquipo = e.target.value;
+  terminadosLimite = 40;
   renderTerminados();
 });
 
@@ -1145,8 +1167,25 @@ function renderBets(){
 }
 
 // ---------- Render Terminados: partidos con "Fin del partido" tildado, filtrables por día ----------
+let terminadosFiltroLiga = "todas";
+let terminadosFiltroEquipo = "";
+let terminadosLimite = 40;
 function renderTerminados(){
-  const finalizados = state.matches.filter(m=>m.finPartido);
+  const selLiga = document.getElementById("sel-term-liga");
+  const ligasOpts = [["todas","Todas las ligas"]];
+  PAISES.forEach(p=>p.ligas.forEach(l=>ligasOpts.push([l.id, l.nombre])));
+  ligasOpts.push(["otros","Otros partidos"]);
+  selLiga.innerHTML = ligasOpts.map(([v,t])=>`<option value="${v}">${t}</option>`).join("");
+  selLiga.value = terminadosFiltroLiga;
+
+  const eq = terminadosFiltroEquipo.trim().toLowerCase();
+  const finalizados = state.matches.filter(m=>{
+    if(!m.finPartido) return false;
+    if(terminadosFiltroLiga === "otros" && ligaDe(m)) return false;
+    if(terminadosFiltroLiga !== "todas" && terminadosFiltroLiga !== "otros" && ligaDe(m) !== terminadosFiltroLiga) return false;
+    if(eq && !m.local.toLowerCase().includes(eq) && !m.visitante.toLowerCase().includes(eq)) return false;
+    return true;
+  });
 
   const dias = Array.from(new Set(finalizados.map(matchDay))).sort((a,b)=> (b||"").localeCompare(a||""));
   if(terminadosFiltroDia !== "todos" && !dias.includes(terminadosFiltroDia)) terminadosFiltroDia = "todos";
@@ -1179,14 +1218,15 @@ function renderTerminados(){
     return;
   }
   listWrap.innerHTML = "";
-  filtrados.slice().reverse().forEach(m=>{
+  const ordenados = sortByFecha(filtrados).reverse();
+  ordenados.slice(0, terminadosLimite).forEach(m=>{
     const betsDelPartido = state.bets.filter(b=>b.matchId===m.id);
     const card = document.createElement("div");
     card.className = "card match-card";
     card.innerHTML = `
       <button class="del-x" data-del-match-t="${m.id}">✕</button>
       <div class="match-title">${m.local} vs ${m.visitante}</div>
-      <span class="status-badge finished">${formatDay(matchDay(m))}</span>
+      <span class="status-badge finished">${formatDay(matchDay(m))}${ligaDe(m) ? " · " + LIGA_INFO[ligaDe(m)].nombre : ""}</span>
       <div class="stat-grid">
         <div class="stat-row"><span></span><span style="text-align:center">Local</span><span style="text-align:center">Visit.</span></div>
         ${Object.keys(TIPO_LABEL).map(k=>`
@@ -1207,6 +1247,14 @@ function renderTerminados(){
     `;
     listWrap.appendChild(card);
   });
+  if(ordenados.length > terminadosLimite){
+    const mas = document.createElement("button");
+    mas.className = "capital-edit";
+    mas.style.width = "100%";
+    mas.textContent = `Ver más (${ordenados.length - terminadosLimite} restantes)`;
+    mas.addEventListener("click", ()=>{ terminadosLimite += 40; renderTerminados(); });
+    listWrap.appendChild(mas);
+  }
 
   listWrap.querySelectorAll("[data-del-match-t]").forEach(b=>{
     b.addEventListener("click", ()=> deleteMatch(b.dataset.delMatchT));
