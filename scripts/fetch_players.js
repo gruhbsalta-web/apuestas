@@ -20,6 +20,7 @@ const path = require('path');
 const { playerLinesFromGame, missingFromGame, coachesFromGame, normName } = require('./players_lib');
 const { statsFromStatistics } = require('./promiedos_stats');
 const { calibrarApi, fichaHoraArgentina } = require('./promiedos_time');
+const { collectTeams, saveTeams } = require('./teams_lib');
 
 const SITE = 'https://www.promiedos.com.ar';
 const API = 'https://api.promiedos.com.ar';
@@ -192,6 +193,7 @@ async function run() {
   const today = todayInArgentina();
   const ausentesNuevos = {};
   let convertirApi = null;
+  const equipos = {};
   const matchesOut = fs.existsSync(MATCHES_PATH)
     ? JSON.parse(fs.readFileSync(MATCHES_PATH, 'utf8'))
     : { matches: [], bets: [], capitalInicial: 0 };
@@ -209,6 +211,7 @@ async function run() {
     for (const round of rounds) {
       const data = await getJson(`${API}/league/games/${league.id}/${encodeURIComponent(round.key)}`);
       const games = Array.isArray(data?.games) ? data.games : [];
+      collectTeams(games, equipos);
       if (!convertirApi && games.length) {
         const cal = await calibrarApi(games[0], getJson, SITE, buildId);
         if (cal) {
@@ -268,6 +271,9 @@ async function run() {
       }
     }
   }
+
+  const nEquipos = saveTeams(equipos);
+  if (nEquipos) console.log(`teams.json actualizado (${nEquipos} equipos).`);
 
   matchesOut.matches = [...matchById.values()];
   fs.mkdirSync(path.dirname(MATCHES_PATH), { recursive: true });

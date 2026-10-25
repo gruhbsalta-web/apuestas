@@ -67,6 +67,8 @@ async function getJson(url) {
 
 const { emptyStats, statsFromStatistics } = require('./promiedos_stats');
 const { calibrarApi, fichaHoraArgentina } = require('./promiedos_time');
+const { collectTeams, saveTeams } = require('./teams_lib');
+const EQUIPOS = {};
 // Conversor de horarios de la API a hora argentina (Promiedos responde en la zona
 // de quien pide; se calibra en cada corrida contra la ficha de un partido).
 let CONVERTIR = null;
@@ -195,6 +197,7 @@ async function fetchLeagueGames(league, today) {
         console.log(`Horarios calibrados: zona ${cal.tz}, ajuste API ${cal.delta} min`);
       }
     }
+    collectTeams(games, EQUIPOS);
     const matches = games.map((game) => normalizeMatch(game, league));
     const relevant = matches.filter((m) => isRelevantForToday(m, today));
     console.log(`Liga ${league.name || league.id} (${league.id}): ${games.length} partidos en 'latest', ${relevant.length} relevantes (terminados o de hoy)`);
@@ -277,6 +280,8 @@ async function run() {
   };
 
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
+  const nEquipos = saveTeams(EQUIPOS);
+  if (nEquipos) console.log(`teams.json actualizado (${nEquipos} equipos).`);
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(out, null, 2), 'utf8');
   console.log(`Se escribieron ${out.matches.length} partidos en total (${allMatches.length} traidos en esta corrida) en ${OUTPUT_PATH}`);
 }
