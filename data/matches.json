@@ -5290,7 +5290,7 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
@@ -5310,7 +5310,7 @@
         "gameUrlName": "river-plate-vs-racing-club",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "22'",
+        "minuto": "32'",
         "ronda": "Fecha 14"
       }
     },
