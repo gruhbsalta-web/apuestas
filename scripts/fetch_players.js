@@ -19,6 +19,7 @@ const fs = require('fs');
 const path = require('path');
 const { playerLinesFromGame, missingFromGame, coachesFromGame, normName } = require('./players_lib');
 const { statsFromStatistics } = require('./promiedos_stats');
+const { toArgentina, timezoneFromNextData } = require('./promiedos_time');
 
 const SITE = 'https://www.promiedos.com.ar';
 const API = 'https://api.promiedos.com.ar';
@@ -199,6 +200,7 @@ async function run() {
 
   for (const league of LEAGUES) {
     const page = await getJson(`${SITE}/_next/data/${buildId}/league/${league.slug}/${league.id}.json`);
+    const sourceTz = timezoneFromNextData(page);
     const rounds = roundKeysFromLeaguePage(page);
     if (!rounds.length) throw new Error(`Sin fechas para ${league.nombre}: cambio el formato de Promiedos?`);
     console.log(`${league.nombre}: ${rounds.length} fechas (${rounds[0].nombre} .. ${rounds[rounds.length - 1].nombre})`);
@@ -209,7 +211,7 @@ async function run() {
       await sleep(DELAY_MS);
 
       for (const game of games) {
-        const fechaHora = parseFechaHora(game.start_time);
+        const fechaHora = toArgentina(parseFechaHora(game.start_time), sourceTz);
         const terminado = game?.status?.enum === 3;
         const diffDays = fechaHora
           ? Math.round((new Date(`${fechaHora.slice(0, 10)}T00:00:00Z`) - new Date(`${today}T00:00:00Z`)) / 86400000)
@@ -264,7 +266,13 @@ async function run() {
   const unidosE = mergeVariants(out.entrenadores || {}, ['pj', 'g', 'e', 'p', 'gf', 'gc']);
   if (unidosJ || unidosE) console.log(`Nombres unificados: ${unidosJ} jugadores, ${unidosE} entrenadores.`);
 
+  // Solo se reescribe el archivo si cambio algo (evita commits vacios cada 30 min)
+  const cambioAusentes = JSON.stringify(out.ausentes || {}) !== JSON.stringify(ausentesNuevos);
   out.ausentes = ausentesNuevos;
+  if (procesados === 0 && !cambioAusentes && !unidosJ && !unidosE && fs.existsSync(OUTPUT_PATH)) {
+    console.log('Sin cambios en jugadores/ausentes.');
+    return;
+  }
   out.actualizado = new Date().toISOString();
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(out), 'utf8');

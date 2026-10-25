@@ -688,6 +688,7 @@ function buildLigaSection(key, titulo, lista){
   return det;
 }
 
+let partidosFiltroDia = "todos";
 function renderMatches(){
   const ui = uiState();
   const filtros = document.getElementById("partidos-filtros");
@@ -711,7 +712,21 @@ function renderMatches(){
   }
 
   const pais = PAISES.find(p=>p.id === ui.pais);
-  const activos = state.matches.filter(m=>!m.finPartido);
+  const pendientes = state.matches.filter(m=>!m.finPartido);
+
+  // Filtro por día: Todos / Hoy / Mañana / cada día con partidos
+  const dias = Array.from(new Set(pendientes.map(matchDay))).sort((a,b)=>(a||"9999").localeCompare(b||"9999"));
+  if(partidosFiltroDia !== "todos" && !dias.includes(partidosFiltroDia)) partidosFiltroDia = "todos";
+  const diaRow = document.createElement("div");
+  diaRow.className = "chips";
+  [["todos","Todos"], ...dias.map(d=>[d, dayLabel(d)])].forEach(([v,t])=>{
+    const b = document.createElement("button");
+    b.className = "chip" + (partidosFiltroDia === v ? " active" : "");
+    b.textContent = t;
+    b.addEventListener("click", ()=>{ partidosFiltroDia = v; renderMatches(); });
+    diaRow.appendChild(b);
+  });
+  const activos = pendientes.filter(m=> partidosFiltroDia === "todos" || matchDay(m) === partidosFiltroDia);
 
   // Nivel 2: ligas del país (cada chip muestra u oculta esa liga)
   const chips = document.createElement("div");
@@ -730,6 +745,7 @@ function renderMatches(){
     chips.appendChild(b);
   });
   filtros.appendChild(chips);
+  filtros.appendChild(diaRow);
 
   pais.ligas.forEach(l=>{
     if(ui.ligasOcultas.includes(l.id)) return;
@@ -787,6 +803,7 @@ function renderMatches(){
 // ---------- Poblar select de partidos (tab apuestas, solo partidos activos) ----------
 function renderMatchSelect(){
   const sel = document.getElementById("sel-match");
+  const previo = sel.value; // se conserva el partido elegido al refrescar
   sel.innerHTML = "";
   const activos = state.matches.filter(m=>!m.finPartido);
   if(activos.length === 0){
@@ -808,6 +825,7 @@ function renderMatchSelect(){
     });
     sel.appendChild(og);
   });
+  if(previo && [...sel.options].some(o=>o.value === previo)) sel.value = previo;
   renderTeamStatsPanel();
 }
 
@@ -1965,6 +1983,15 @@ document.getElementById('btn-reset-all').addEventListener('click', ()=>{
   renderAll();
   // refresca minuto de juego y probabilidad estimada cada 60s
   setInterval(renderAll, 60000);
+  // trae datos nuevos solo (el cron los actualiza cada 30 min en horario de partidos)
+  setInterval(async ()=>{
+    try{
+      await syncFromData();
+      playersData = null;
+      renderAll();
+      setUpdatedLabel('Actualizado ' + horaActual());
+    }catch(e){ /* sin red: se reintenta en la próxima vuelta */ }
+  }, 5 * 60000);
 })();
 </script>
 </body>

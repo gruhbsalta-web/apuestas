@@ -62,6 +62,9 @@ async function getJson(url) {
 }
 
 const { emptyStats, statsFromStatistics } = require('./promiedos_stats');
+const { toArgentina, timezoneFromNextData } = require('./promiedos_time');
+// Zona horaria en la que Promiedos devuelve los horarios (depende de donde corre el cron)
+let SOURCE_TZ = null;
 
 // start_time llega como "DD-MM-YYYY HH:mm"; lo paso al formato que usa el
 // <input type="datetime-local"> de la app: "YYYY-MM-DDTHH:mm".
@@ -120,7 +123,7 @@ function normalizeMatch(game, league) {
     id: `promiedos_${game.id}`,
     local: game?.teams?.[0]?.name || 'Desconocido',
     visitante: game?.teams?.[1]?.name || 'Desconocido',
-    fechaHora: parseFechaHora(game.start_time),
+    fechaHora: toArgentina(parseFechaHora(game.start_time), SOURCE_TZ),
     finPrimerTiempo,
     finPartido,
     stats: emptyStats(),
@@ -206,6 +209,8 @@ async function enrichWithDetail(match, buildId) {
 
 async function run() {
   const buildId = await resolveBuildId();
+  SOURCE_TZ = timezoneFromNextData(await getJson(`${SITE}/_next/data/${buildId}${ANCHOR_LEAGUE_PATH}.json`));
+  console.log('Horarios de Promiedos en zona:', SOURCE_TZ || 'desconocida (sin convertir)');
   console.log('buildId:', buildId);
 
   const leagues = await resolveLeagues(buildId);
