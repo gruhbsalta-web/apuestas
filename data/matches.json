@@ -5210,8 +5210,8 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
-          "v": 8
+          "l": 3,
+          "v": 9
         },
         "tirosArco": {
           "l": 5,
@@ -5230,7 +5230,7 @@
         "gameUrlName": "aldosivi-vs-belgrano",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "75'",
+        "minuto": "87'",
         "ronda": "Fecha 14"
       }
     },
@@ -5444,11 +5444,11 @@
       "local": "Estudiantes",
       "visitante": "Los Andes",
       "fechaHora": "2026-10-25T15:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -5460,7 +5460,7 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "atajadas": {
@@ -5474,9 +5474,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "estudiantes-buenos-aires-vs-los-andes",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "44'",
+        "minuto": "45'",
         "ronda": "Fecha 35"
       }
     },
@@ -5494,19 +5494,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 3
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -5517,7 +5517,7 @@
         "gameUrlName": "racing-cordoba-vs-all-boys",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "19'",
+        "minuto": "31'",
         "ronda": "Fecha 35"
       }
     },
@@ -5558,7 +5558,7 @@
         "gameUrlName": "temperley-vs-chacarita-juniors",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "14'",
+        "minuto": "25'",
         "ronda": "Fecha 35"
       }
     },
@@ -5572,23 +5572,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 1
+          "l": 3,
+          "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 3
         }
       },
       "source": {
@@ -5599,7 +5599,7 @@
         "gameUrlName": "patronato-vs-agropecuario",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "27'",
         "ronda": "Fecha 35"
       }
     },
@@ -5620,16 +5620,16 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -5640,7 +5640,7 @@
         "gameUrlName": "gimnasia-jujuy-vs-atlanta",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "27'",
         "ronda": "Fecha 35"
       }
     },
@@ -35273,7 +35273,7 @@
       "visitante": "Levante UD",
       "fechaHora": "2026-10-25T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -35302,9 +35302,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-sociedad-vs-levante",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
