@@ -5287,19 +5287,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 3
+          "v": 4
         },
         "corners": {
           "l": 5,
           "v": 5
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 3
         },
         "atajadas": {
           "l": 3,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -5310,7 +5310,7 @@
         "gameUrlName": "river-plate-vs-racing-club",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "78'",
         "ronda": "Fecha 14"
       }
     },
