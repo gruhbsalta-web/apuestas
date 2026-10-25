@@ -67,6 +67,9 @@ async function getJson(url) {
 
 const { emptyStats, statsFromStatistics } = require('./promiedos_stats');
 const { calibrarApi, fichaHoraArgentina } = require('./promiedos_time');
+const { collectTeams, saveTeams } = require('./teams_lib');
+const { actualizarTablas } = require('./tablas_lib');
+const EQUIPOS = {};
 // Conversor de horarios de la API a hora argentina (Promiedos responde en la zona
 // de quien pide; se calibra en cada corrida contra la ficha de un partido).
 let CONVERTIR = null;
@@ -129,9 +132,14 @@ function nombreRonda(s) {
 function normalizeMatch(game, league) {
   const scores = Array.isArray(game.scores) ? game.scores : [0, 0];
   const goles = { l: scores[0] || 0, v: scores[1] || 0 };
+  // status.enum: 1 programado, 2 en juego, 3 finalizado.
+  // En juego, short_name dice el tramo: "1°" primer tiempo, "ET" entretiempo, "2°" segundo.
   const statusEnum = game?.status?.enum;
+  const short = game?.status?.short_name || '';
   const finPartido = statusEnum === 3;
-  const finPrimerTiempo = statusEnum >= 2;
+  const enJuego = statusEnum === 2;
+  const finPrimerTiempo = finPartido || (enJuego && !/^1/.test(short));
+  const minuto = game?.game_time_to_display || (enJuego && game?.game_time > 0 ? `${game.game_time}'` : '');
 
   return {
     id: `promiedos_${game.id}`,
@@ -147,10 +155,12 @@ function normalizeMatch(game, league) {
       leagueName: league.name || league.id,
       country: league.country || COUNTRY_BY_LEAGUE[league.id] || 'Argentina',
       gameUrlName: game.url_name,
-      statusShort: game?.status?.short_name || '',
+      statusShort: short,
+      statusEnum: statusEnum ?? null,
+      minuto,
       ronda: nombreRonda(game.stage_round_name)
     },
-    _needsDetail: finPartido || finPrimerTiempo,
+    _needsDetail: finPartido || enJuego,
     _goles: goles,
     _gameUrlName: game.url_name
   };
@@ -195,6 +205,7 @@ async function fetchLeagueGames(league, today) {
         console.log(`Horarios calibrados: zona ${cal.tz}, ajuste API ${cal.delta} min`);
       }
     }
+    collectTeams(games, EQUIPOS);
     const matches = games.map((game) => normalizeMatch(game, league));
     const relevant = matches.filter((m) => isRelevantForToday(m, today));
     console.log(`Liga ${league.name || league.id} (${league.id}): ${games.length} partidos en 'latest', ${relevant.length} relevantes (terminados o de hoy)`);
@@ -277,6 +288,15 @@ async function run() {
   };
 
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
+  // Tablas de posiciones (Liga Profesional, Primera Nacional y las ligas europeas)
+  try {
+    const slugs = Object.fromEntries(leagues.filter((l) => l.url_name).map((l) => [l.id, l.url_name]));
+    if (await actualizarTablas(getJson, SITE, buildId, collectTeams, EQUIPOS, slugs)) console.log('tablas.json actualizado.');
+  } catch (err) {
+    console.warn('No se pudieron actualizar las tablas:', err.message || err);
+  }
+  const nEquipos = saveTeams(EQUIPOS);
+  if (nEquipos) console.log(`teams.json actualizado (${nEquipos} equipos).`);
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(out, null, 2), 'utf8');
   console.log(`Se escribieron ${out.matches.length} partidos en total (${allMatches.length} traidos en esta corrida) en ${OUTPUT_PATH}`);
 }
