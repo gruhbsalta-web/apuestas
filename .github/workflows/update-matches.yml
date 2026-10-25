@@ -2,11 +2,16 @@ name: Update matches from Promiedos
 
 on:
   schedule:
-    # Cada 10 min de 08:00 a 00:00 hora Argentina (11:00-03:00 UTC),
-    # asi los resultados y estadisticas se actualizan solos durante los partidos
-    # (incluye los de Europa de la mañana).
-    - cron: '*/10 0-2,11-23 * * *'
-    - cron: '0 3 * * *'
+    # De 08:00 a 00:00 hora Argentina (11:00-03:00 UTC):
+    # - sabados y domingos (mas partidos) cada 10 min
+    # - lunes a viernes cada 30 min
+    # Las horas 00-02 UTC son 21:00-23:59 del dia ANTERIOR en Argentina,
+    # por eso esos tramos usan el dia de la semana siguiente.
+    - cron: '*/10 11-23 * * 6,0'   # sab y dom 08:00-20:50
+    - cron: '*/10 0-2 * * 0,1'     # sab y dom 21:00-23:50
+    - cron: '*/30 11-23 * * 1-5'   # lun a vie 08:00-20:30
+    - cron: '*/30 0-2 * * 2-6'     # lun a vie 21:00-23:30
+    - cron: '0 3 * * *'            # todos los dias 00:00
   workflow_dispatch: {}
 
 permissions:
