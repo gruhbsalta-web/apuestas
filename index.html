@@ -2860,11 +2860,15 @@ async function pedirActualizacion(){
       return;
     }
     btn.classList.remove("girando");
-    if(r.status === 401 || r.status === 403 || r.status === 404){
-      abrirConfigLlave("La llave guardada no funciona (venció o le falta el permiso de Actions). Creá una nueva siguiendo los pasos.");
-    } else {
-      alert("GitHub no aceptó el pedido (código " + r.status + "). Probá de nuevo en un rato.");
-    }
+    let detalle = "";
+    try{ const j = await r.json(); detalle = j && j.message ? j.message : ""; }catch(e){}
+    const motivo = {
+      401: "GitHub no reconoce la llave (puede estar mal copiada, incompleta o borrada).",
+      403: "La llave existe pero no tiene permiso: en GitHub, Actions tiene que estar en Read and write.",
+      404: "La llave no tiene acceso al repositorio: en GitHub, en Repository access tiene que estar elegido apuestas.",
+      422: "GitHub rechazó el pedido por un dato del workflow."
+    }[r.status] || "GitHub no aceptó el pedido.";
+    abrirConfigLlave(`${motivo} (código ${r.status}${detalle ? ": " + detalle : ""})`);
   }catch(err){
     btn.classList.remove("girando");
     alert("No se pudo contactar a GitHub. Revisá la conexión y probá de nuevo.");
