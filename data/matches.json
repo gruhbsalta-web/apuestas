@@ -5210,7 +5210,7 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 4
         },
         "tirosArco": {
@@ -5228,9 +5228,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "aldosivi-vs-belgrano",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Fecha 14"
       }
     },
@@ -5435,7 +5435,7 @@
         "gameUrlName": "almirante-brown-vs-deportivo-moron",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "16'",
+        "minuto": "28'",
         "ronda": "Fecha 35"
       }
     },
@@ -5456,7 +5456,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
@@ -5476,7 +5476,7 @@
         "gameUrlName": "estudiantes-buenos-aires-vs-los-andes",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "9'",
+        "minuto": "21'",
         "ronda": "Fecha 35"
       }
     },
@@ -35280,7 +35280,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -35304,7 +35304,7 @@
         "gameUrlName": "real-sociedad-vs-levante",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "68'",
         "ronda": "Fecha 10"
       }
     },
@@ -35755,7 +35755,7 @@
         "gameUrlName": "lecce-vs-juventus",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "90+2'",
         "ronda": "Fecha 8"
       }
     },
