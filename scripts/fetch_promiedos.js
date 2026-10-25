@@ -12,7 +12,7 @@ const path = require('path');
 const SITE = 'https://www.promiedos.com.ar';
 const API = 'https://api.promiedos.com.ar';
 const ANCHOR_LEAGUE_PATH = '/league/primera-nacional/ebj';
-const DELAY_MS = Number(process.env.PROMIEDOS_DELAY_MS || 300);
+const DELAY_MS = Number(process.env.PROMIEDOS_DELAY_MS || 150);
 const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'matches.json');
 const LEAGUE_OVERRIDE = (process.env.PROMIEDOS_LEAGUES || '').split(',').map((v) => v.trim()).filter(Boolean);
 // Paises/categorias del menu de Promiedos que queremos cubrir. El resto
@@ -254,19 +254,30 @@ async function run() {
   console.log('Fecha de hoy (Argentina):', today);
 
   const allMatches = [];
+  const existing = fs.existsSync(OUTPUT_PATH)
+    ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'))
+    : { matches: [], bets: [], capitalInicial: 0 };
+  // Partidos ya terminados y guardados: no se vuelve a bajar su ficha (no cambian)
+  const yaTerminados = new Map((existing.matches || []).filter((m) => m.finPartido).map((m) => [m.id, m]));
+  let fichas = 0, reusados = 0;
+
   for (const league of leagues) {
     const matches = await fetchLeagueGames(league, today);
     for (const match of matches) {
+      const guardado = yaTerminados.get(match.id);
+      if (match.finPartido && guardado) {
+        allMatches.push(Object.assign(guardado, { source: Object.assign({}, guardado.source, { ronda: match.source.ronda || guardado.source?.ronda }) }));
+        reusados++;
+        continue;
+      }
       await enrichWithDetail(match, buildId);
       allMatches.push(match);
+      fichas++;
       if (DELAY_MS > 0) await sleep(DELAY_MS);
     }
     if (DELAY_MS > 0) await sleep(DELAY_MS);
   }
-
-  const existing = fs.existsSync(OUTPUT_PATH)
-    ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'))
-    : { matches: [], bets: [], capitalInicial: 0 };
+  console.log(`Fichas bajadas: ${fichas} (en juego o recién terminados); reutilizados sin bajar: ${reusados}.`);
 
   // Limpieza de corridas anteriores: partidos programados que quedaron
   // guardados (ej. la proxima ronda de una copa, meses adelante) y hoy ya

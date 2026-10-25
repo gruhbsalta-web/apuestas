@@ -59,7 +59,9 @@ jobs:
           }
           inicio=$(date +%s)
           limite=$((inicio + 5*3600 + 40*60))   # dentro del maximo de 6 h de GitHub
+          ultima_dur=90   # segundos que tardo la vuelta anterior (estimado inicial)
           while true; do
+            vuelta_ini=$(date +%s)
             echo "=== Actualizacion $(TZ=America/Argentina/Buenos_Aires date '+%a %H:%M') ==="
             git fetch -q origin master && git reset -q --hard origin/master
             npm run fetch || echo "fallo fetch de partidos"
@@ -68,7 +70,8 @@ jobs:
             ahora_e=$(date +%s)
             dia_e=$(TZ=America/Argentina/Buenos_Aires date +%u)
             if [ "$dia_e" -ge 6 ]; then int_e=600; else int_e=1800; fi
-            prox_e=$((ahora_e + int_e))
+            # proxima: cuando arranca la siguiente vuelta + lo que tarda procesar + ~1 min de publicacion
+            prox_e=$((vuelta_ini + int_e + ultima_dur + 60))
             # pedido manual: se respeta la proxima que ya tenia anunciada el bucle
             if [ "$UNA_VEZ" = "true" ] && [ -f data/estado.json ]; then
               prev=$(node -e 'try{const e=require("./data/estado.json");process.stdout.write(String(Math.floor(new Date(e.proxima)/1000)))}catch(x){}')
@@ -96,10 +99,15 @@ jobs:
             dia=$(TZ=America/Argentina/Buenos_Aires date +%u)   # 6 sabado, 7 domingo
             if [ "$dia" -ge 6 ]; then intervalo=600; else intervalo=1800; fi
             ahora=$(date +%s)
+            ultima_dur=$((ahora - vuelta_ini))
+            echo "Vuelta en ${ultima_dur}s"
             # fuera de horario (00:00 a 07:59 Argentina) o cerca del limite de tiempo: terminar
             if [ "$hora" -lt 8 ] || [ $((ahora + intervalo)) -ge "$limite" ]; then
               echo "Fin del bucle (hora $hora, limite de tiempo o fuera de horario)"
               break
             fi
-            sleep "$intervalo"
+            # ritmo fijo: la proxima vuelta arranca intervalo segundos despues del inicio de esta
+            espera=$((vuelta_ini + intervalo - $(date +%s)))
+            [ "$espera" -lt 30 ] && espera=30
+            sleep "$espera"
           done

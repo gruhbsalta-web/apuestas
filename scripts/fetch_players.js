@@ -58,7 +58,7 @@ function matchRecord(ficha, league, country, fechaHora, ronda) {
     }
   };
 }
-const DELAY_MS = Number(process.env.PROMIEDOS_DELAY_MS || 300);
+const DELAY_MS = Number(process.env.PROMIEDOS_DELAY_MS || 150);
 const DAYS_AHEAD = Number(process.env.PROMIEDOS_DAYS_AHEAD || 2);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -97,7 +97,17 @@ function roundKeysFromLeaguePage(pageJson) {
   if (!selected) return [];
   const stagePrefix = selected.key.split('_').slice(0, 3).join('_') + '_';
   const firstIdx = rounds.findIndex((f) => f.key.startsWith(stagePrefix));
-  return rounds.slice(firstIdx).map((f) => ({ key: f.key, nombre: f.name }));
+  const lista = rounds.slice(firstIdx).map((f) => ({ key: f.key, nombre: f.name, actual: f === selected }));
+  return lista;
+}
+
+// En las vueltas normales solo pueden aparecer partidos nuevos en la fecha actual y
+// sus vecinas; el resto se revisa en un barrido completo una vez por día.
+function fechasARevisar(rounds, completo) {
+  if (completo) return rounds;
+  const i = rounds.findIndex((r) => r.actual);
+  if (i === -1) return rounds;
+  return rounds.slice(Math.max(0, i - 1), i + 2);
 }
 
 // v2: los goles de penal (evento tipo 3) cuentan como gol
@@ -202,6 +212,8 @@ async function run() {
     out = emptyOutput();
   }
   out.version = DATA_VERSION;
+  // Barrido completo de todas las fechas: si nunca se hizo, o si el último no fue hoy
+  const barridoCompleto = !Object.keys(out.partidos || {}).length || out.barridoCompleto !== todayInArgentina() || process.env.BARRIDO_COMPLETO === '1';
   const html = await getText(`${SITE}/league/primera-nacional/ebj`);
   const buildId = (html.match(/"buildId":"([^"]+)"/) || [])[1];
   if (!buildId) throw new Error('No se pudo resolver el buildId de Promiedos');
@@ -220,9 +232,10 @@ async function run() {
 
   for (const league of LEAGUES) {
     const page = await getJson(`${SITE}/_next/data/${buildId}/league/${league.slug}/${league.id}.json`);
-    const rounds = roundKeysFromLeaguePage(page);
-    if (!rounds.length) throw new Error(`Sin fechas para ${league.nombre}: cambio el formato de Promiedos?`);
-    console.log(`${league.nombre}: ${rounds.length} fechas (${rounds[0].nombre} .. ${rounds[rounds.length - 1].nombre})`);
+    const todasLasFechas = roundKeysFromLeaguePage(page);
+    if (!todasLasFechas.length) throw new Error(`Sin fechas para ${league.nombre}: cambio el formato de Promiedos?`);
+    const rounds = fechasARevisar(todasLasFechas, barridoCompleto);
+    console.log(`${league.nombre}: ${rounds.length} de ${todasLasFechas.length} fechas (${rounds[0].nombre} .. ${rounds[rounds.length - 1].nombre})${barridoCompleto ? ' [barrido completo]' : ''}`);
 
     for (const round of rounds) {
       const data = await getJson(`${API}/league/games/${league.id}/${encodeURIComponent(round.key)}`);
@@ -302,8 +315,9 @@ async function run() {
 
   // Solo se reescribe el archivo si cambio algo (evita commits vacios cada 30 min)
   const cambioAusentes = JSON.stringify(out.ausentes || {}) !== JSON.stringify(ausentesNuevos);
+  if (barridoCompleto) out.barridoCompleto = todayInArgentina();
   out.ausentes = ausentesNuevos;
-  if (procesados === 0 && !cambioAusentes && !unidosJ && !unidosE && fs.existsSync(OUTPUT_PATH)) {
+  if (procesados === 0 && !cambioAusentes && !unidosJ && !unidosE && !barridoCompleto && fs.existsSync(OUTPUT_PATH)) {
     console.log('Sin cambios en jugadores/ausentes.');
     return;
   }
