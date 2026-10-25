@@ -34546,16 +34546,16 @@
           "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "atajadas": {
           "l": 1,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -34566,7 +34566,7 @@
         "gameUrlName": "manchester-united-vs-bournemouth",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "72'",
+        "minuto": "84'",
         "ronda": "Fecha 8"
       }
     },
@@ -34584,11 +34584,11 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 4,
@@ -34607,7 +34607,7 @@
         "gameUrlName": "liverpool-vs-brighton",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "71'",
+        "minuto": "83'",
         "ronda": "Fecha 8"
       }
     },
@@ -34629,14 +34629,14 @@
         },
         "corners": {
           "l": 5,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
           "l": 2,
-          "v": 4
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
+          "l": 5,
           "v": 1
         }
       },
@@ -34648,7 +34648,7 @@
         "gameUrlName": "hull-city-vs-brentford",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "72'",
+        "minuto": "84'",
         "ronda": "Fecha 8"
       }
     },
@@ -34665,8 +34665,8 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 0,
-          "v": 2
+          "l": 2,
+          "v": 3
         },
         "corners": {
           "l": 4,
@@ -34689,7 +34689,7 @@
         "gameUrlName": "crystal-palace-vs-newcastle-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "74'",
+        "minuto": "86'",
         "ronda": "Fecha 8"
       }
     },
@@ -35244,15 +35244,15 @@
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 2,
-          "v": 0
+          "l": 4,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 2
+          "l": 1,
+          "v": 4
         }
       },
       "source": {
@@ -35263,7 +35263,7 @@
         "gameUrlName": "celta-vigo-vs-real-betis",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "26'",
         "ronda": "Fecha 10"
       }
     },
@@ -35654,7 +35654,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 5
+          "v": 7
         },
         "tirosArco": {
           "l": 3,
@@ -35673,7 +35673,7 @@
         "gameUrlName": "genoa-vs-venezia",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "72'",
+        "minuto": "84'",
         "ronda": "Fecha 8"
       }
     },
@@ -35687,7 +35687,7 @@
       "stats": {
         "goles": {
           "l": 4,
-          "v": 3
+          "v": 4
         },
         "tarjetas": {
           "l": 1,
@@ -35695,14 +35695,14 @@
         },
         "corners": {
           "l": 8,
-          "v": 4
+          "v": 6
         },
         "tirosArco": {
           "l": 8,
-          "v": 5
+          "v": 7
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 4
         }
       },
@@ -35714,7 +35714,7 @@
         "gameUrlName": "atalanta-vs-frosinone",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "73'",
+        "minuto": "84'",
         "ronda": "Fecha 8"
       }
     },
