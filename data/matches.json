@@ -5407,7 +5407,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -5416,10 +5416,10 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -5435,7 +5435,7 @@
         "gameUrlName": "almirante-brown-vs-deportivo-moron",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "16'",
         "ronda": "Fecha 35"
       }
     },
@@ -5474,9 +5474,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "estudiantes-buenos-aires-vs-los-andes",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "9'",
         "ronda": "Fecha 35"
       }
     },
@@ -35302,9 +35302,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-sociedad-vs-levante",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "57'",
         "ronda": "Fecha 10"
       }
     },
@@ -35731,20 +35731,20 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 2
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 4
         }
       },
       "source": {
@@ -35755,7 +35755,7 @@
         "gameUrlName": "lecce-vs-juventus",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "69'",
+        "minuto": "81'",
         "ronda": "Fecha 8"
       }
     },
