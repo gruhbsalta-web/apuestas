@@ -1,0 +1,1907 @@
+{
+ "sinAsignar": [
+  {
+   "partido": "Platense vs Unión de Santa Fe",
+   "fecha": "Fecha 1",
+   "equipo": "Platense",
+   "tipo": "amarilla",
+   "texto": "Juan Pablo Ludueña",
+   "evento": {
+    "type": 4,
+    "time": "63'",
+    "team": 1,
+    "texts": [
+     "Juan Pablo Ludueña"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Juan Pablo Cozzani",
+    "Tomás Silva",
+    "Mateo Mendia",
+    "Ignacio Vázquez",
+    "Agustin Lagos",
+    "Martín Barrios",
+    "Iván Gómez",
+    "Juan Carlos Gauto",
+    "Nicolas Retamar",
+    "Guido Mainero",
+    "Leonardo Heredia",
+    "Felipe Bussio",
+    "Pablo Ferreira",
+    "Gonzalo Lencina",
+    "Nicolás López",
+    "Bautista Merlini",
+    "Héctor Bobadilla",
+    "Santiago Dalmasso",
+    "Santiago Quirós",
+    "Eugenio Raggio",
+    "Juan Ignacio Saborido",
+    "Nicolás Sumavil",
+    "Manuel Tucker"
+   ]
+  },
+  {
+   "partido": "Vélez Sarsfield vs Independiente",
+   "fecha": "Fecha 3",
+   "equipo": "Vélez Sarsfield",
+   "tipo": "amarilla",
+   "texto": "Guillermo Barros Schelotto",
+   "evento": {
+    "type": 4,
+    "time": "47'",
+    "team": 1,
+    "texts": [
+     "Guillermo Barros Schelotto"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Tomás Marchiori",
+    "Joaquin García",
+    "Thiago Silvero",
+    "Lisandro Magallan",
+    "Elias Gomez",
+    "Lucas Robertone",
+    "Rodrigo Aliendro",
+    "Matias Pellegrini",
+    "Diego Valdes",
+    "Manuel Lanzini",
+    "Dilan Godoy",
+    "Claudio Baeza",
+    "Luca Feler",
+    "Simón Escobar",
+    "Thiago Aguirre",
+    "Emanuel Mammana",
+    "Lautaro Piola",
+    "Alexis Pereyra",
+    "Leo Cristaldo",
+    "Juan Cruz Policella",
+    "Alvaro Busso",
+    "Alex Veron",
+    "Franco Villalba"
+   ]
+  },
+  {
+   "partido": "Boca Juniors vs Vélez Sarsfield",
+   "fecha": "Fecha 4",
+   "equipo": "Vélez Sarsfield",
+   "tipo": "amarilla",
+   "texto": "Guillermo Barros Schelotto",
+   "evento": {
+    "type": 4,
+    "time": "42'",
+    "team": 2,
+    "texts": [
+     "Guillermo Barros Schelotto"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Tomás Marchiori",
+    "Elias Gomez",
+    "Emanuel Mammana",
+    "Thiago Silvero",
+    "Joaquin García",
+    "Lucas Robertone",
+    "Rodrigo Aliendro",
+    "Manuel Lanzini",
+    "Diego Valdes",
+    "Matias Pellegrini",
+    "Dilan Godoy",
+    "Thiago Aguirre",
+    "Claudio Baeza",
+    "Simón Escobar",
+    "Luca Feler",
+    "Alex Veron",
+    "Alvaro Busso",
+    "Leo Cristaldo",
+    "Lisandro Magallan",
+    "Alexis Pereyra",
+    "Lautaro Piola",
+    "Juan Cruz Policella",
+    "Franco Villalba"
+   ]
+  },
+  {
+   "partido": "Gimnasia de Mendoza vs Talleres de Córdoba",
+   "fecha": "Fecha 5",
+   "equipo": "Talleres de Córdoba",
+   "tipo": "amarilla",
+   "texto": "Jorge Sampaoli",
+   "evento": {
+    "type": 4,
+    "time": "11'",
+    "team": 2,
+    "texts": [
+     "Jorge Sampaoli"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Ezequiel Unsain",
+    "Alexandro Maidana",
+    "Valentín Fascendini",
+    "Román Riquelme",
+    "Augusto Schott",
+    "Federico Fattori",
+    "Matías Galarza",
+    "Rick",
+    "Franco Cristaldo",
+    "Emiliano Chiavassa",
+    "Valentín Depietri",
+    "Santiago Fernandez",
+    "Timoteo Chamorro",
+    "Gabriel Báez",
+    "Valentin Davila",
+    "Bruno Trey",
+    "Ronaldo Martínez",
+    "Santino Barbi",
+    "Giovanni Baroni",
+    "Thiago Baroni",
+    "Jeremías Florentín",
+    "Gonzalo Nuccio",
+    "Lautaro Ortiz"
+   ]
+  },
+  {
+   "partido": "Talleres de Córdoba vs Rosario Central",
+   "fecha": "Fecha 6",
+   "equipo": "Talleres de Córdoba",
+   "tipo": "amarilla",
+   "texto": "Jorge Sampaoli",
+   "evento": {
+    "type": 4,
+    "time": "53'",
+    "team": 1,
+    "texts": [
+     "Jorge Sampaoli"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Ezequiel Unsain",
+    "Gabriel Báez",
+    "Valentín Fascendini",
+    "Santiago Fernandez",
+    "Augusto Schott",
+    "Matías Galarza",
+    "Timoteo Chamorro",
+    "Valentín Depietri",
+    "Franco Cristaldo",
+    "Rick",
+    "Agustín Álvarez",
+    "Emiliano Chiavassa",
+    "Valentin Davila",
+    "Federico Fattori",
+    "Alexandro Maidana",
+    "Ronaldo Martínez",
+    "Santino Barbi",
+    "Thiago Baroni",
+    "Giovanni Baroni",
+    "Matias Catalan",
+    "Jeremías Florentín",
+    "Lautaro Ortiz",
+    "Bruno Trey"
+   ]
+  },
+  {
+   "partido": "Talleres de Córdoba vs Rosario Central",
+   "fecha": "Fecha 6",
+   "equipo": "Rosario Central",
+   "tipo": "amarilla",
+   "texto": "Jorge Almirón",
+   "evento": {
+    "type": 4,
+    "time": "39'",
+    "team": 2,
+    "texts": [
+     "Jorge Almirón"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Conan Ledesma",
+    "Alexis Soto",
+    "Gastón Ávila",
+    "Ignacio Ovando",
+    "Emanuel Coronel",
+    "Vicente Pizarro",
+    "Franco Ibarra",
+    "Giovanni Cantizano",
+    "Ángel Di María",
+    "Alan Rodriguez",
+    "Enzo Copetti",
+    "Jáminton Campaz",
+    "Pol Fernández",
+    "Federico Navarro",
+    "Agustín Sández",
+    "Elías Verón",
+    "Tomás Badaloni",
+    "Franco Cervi",
+    "Julián Fernández",
+    "Facundo Mallo",
+    "Marco Ruben",
+    "Axel Werner",
+    "Sebastian Zaracho"
+   ]
+  },
+  {
+   "partido": "Rosario Central vs Gimnasia La Plata",
+   "fecha": "Fecha 7",
+   "equipo": "Gimnasia La Plata",
+   "tipo": "amarilla",
+   "texto": "Ariel Pereyra",
+   "evento": {
+    "type": 4,
+    "time": "19'",
+    "team": 2,
+    "texts": [
+     "Ariel Pereyra"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Nelson Insfrán",
+    "Pedro Silva Torrejón",
+    "Enzo Martínez",
+    "Germán Conti",
+    "Bautista Barros Schelotto",
+    "Mateo Seoane",
+    "Ignacio Miramon",
+    "Maximiliano Zalazar",
+    "Nacho Fernández",
+    "Lucas Janson",
+    "Agustín Auzmendi",
+    "Agustín Colazo",
+    "Renzo Giampaoli",
+    "Augusto Max",
+    "Manuel Panaro",
+    "Franco Torres",
+    "Pablo Aguiar",
+    "Nicolás Barros Schelotto",
+    "Julian Kadijevic",
+    "Lucas Lamella",
+    "Matías Melluso",
+    "Juan Pérez",
+    "Santiago Villarreal"
+   ]
+  },
+  {
+   "partido": "Platense vs Deportivo Riestra",
+   "fecha": "Fecha 8",
+   "equipo": "Deportivo Riestra",
+   "tipo": "amarilla",
+   "texto": "Guillermo Duró",
+   "evento": {
+    "type": 4,
+    "time": "69'",
+    "team": 2,
+    "texts": [
+     "Guillermo Duró"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Ignacio Arce",
+    "Ignacio Gariglio",
+    "Cristian Paz",
+    "Facundo Miño",
+    "Nicolás Sansotre",
+    "Mariano Bracamonte",
+    "Tomás González",
+    "Yonatan Goitía",
+    "Milton Celiz",
+    "Braian Sánchez",
+    "Nicolás Benegas",
+    "Alexander Díaz",
+    "Gabriel Obredor",
+    "Pedro Ramírez",
+    "Ángel Almada",
+    "Antony Alonso",
+    "Marino Arzamendia",
+    "Rodrigo Gallo",
+    "Agustin Graneros",
+    "Yeison Murillo",
+    "Pablo Monje",
+    "Ángel Stringa",
+    "Nicólas Watson"
+   ]
+  },
+  {
+   "partido": "Gimnasia de Mendoza vs Boca Juniors",
+   "fecha": "Fecha 8",
+   "equipo": "Gimnasia de Mendoza",
+   "tipo": "amarilla",
+   "texto": "Darío Franco",
+   "evento": {
+    "type": 4,
+    "time": "61'",
+    "team": 1,
+    "texts": [
+     "Darío Franco"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "César Rigamonti",
+    "Matías Recalde",
+    "Ezequiel Munoz",
+    "Diego Mondino",
+    "Luciano Paredes",
+    "Tomas O'Connor",
+    "Fermín Antonini",
+    "Facundo Lencioni",
+    "Esteban Fernández",
+    "Luciano Cingolani",
+    "Ignacio Sabatini",
+    "Brian Andrada",
+    "Nahuel Barboza",
+    "Ismael Cortez",
+    "Valentino Simoni",
+    "Matias Vargas",
+    "Lautaro Carrera",
+    "Julián Ceballos",
+    "Germán Guiffrey",
+    "Lautaro Petruchi",
+    "Santiago Rodríguez",
+    "Nicolás Romano",
+    "Ulises Sánchez"
+   ]
+  },
+  {
+   "partido": "Instituto vs Estudiantes RC",
+   "fecha": "Fecha 9",
+   "equipo": "Estudiantes RC",
+   "tipo": "amarilla",
+   "texto": "Ruben Forestello",
+   "evento": {
+    "type": 4,
+    "time": "72'",
+    "team": 2,
+    "texts": [
+     "Ruben Forestello"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Lucas Bruera",
+    "Matías Valenti",
+    "Gonzalo Maffini",
+    "Juan Antonini",
+    "Alejandro Cabrera",
+    "Fernando Rodríguez",
+    "Raúl Lozano",
+    "Gabriel Alanís",
+    "Tomas Gonzalez",
+    "Ibrahim Hesar",
+    "Mauro Valiente",
+    "Siro Rosane",
+    "Juan Chalá",
+    "Javier Ferreira",
+    "Martín Garnerone",
+    "Gonzalo Gonzalez",
+    "Mateo Bajamich",
+    "Lucas Baños",
+    "Facundo Cobos",
+    "Agustín Lastra",
+    "Agustin Quiroga",
+    "Joaquín Rivero"
+   ]
+  },
+  {
+   "partido": "Aldosivi vs Sarmiento Junín",
+   "fecha": "Fecha 12",
+   "equipo": "Aldosivi",
+   "tipo": "amarilla",
+   "texto": "Javier Sanguinetti",
+   "evento": {
+    "type": 4,
+    "time": "27'",
+    "team": 1,
+    "texts": [
+     "Javier Sanguinetti"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Ignacio Chicco",
+    "Braian Cufré",
+    "Nicolás Zalazar",
+    "Leonardo Sigali",
+    "Rodrigo Gonzalez",
+    "Nico Gaitán",
+    "Lucas Castro",
+    "Nicolas Linares",
+    "Martín García",
+    "Agustín Palavecino",
+    "Nicolás Cordero",
+    "Lautaro Chávez",
+    "Bautista Dadín",
+    "Tomás Fernández",
+    "Santiago Moya",
+    "Felipe Anso",
+    "Néstor Breitenbruch",
+    "Kevin Baez",
+    "Matías Godoy",
+    "Natanael Guzmán",
+    "Federico Laurelli",
+    "Francisco Perruzzi"
+   ]
+  },
+  {
+   "partido": "Barracas Central vs Huracán",
+   "fecha": "Fecha 12",
+   "equipo": "Huracán",
+   "tipo": "amarilla",
+   "texto": "Diego Martínez",
+   "evento": {
+    "type": 4,
+    "time": "90'+5",
+    "team": 2,
+    "texts": [
+     "Diego Martínez"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Hernán Galíndez",
+    "César Ibáñez",
+    "Maximo Palazzo",
+    "Fabio Pereyra",
+    "Lucas Blondel",
+    "Facundo Waller",
+    "Rodrigo Fernández Cedrés",
+    "Juan Bisanz",
+    "Facundo Kalinger",
+    "Oscar Cortés",
+    "Jordy Caicedo",
+    "Bruno Barticciotto",
+    "Leonardo Gil",
+    "Leandro Lescano",
+    "Thaiel Peralta",
+    "Ignacio Pussetto",
+    "Ignacio Campo",
+    "Sebástian Meza",
+    "Lautaro Mora",
+    "Hugo Nervo",
+    "Emmanuel Ojeda",
+    "Oscar Romero",
+    "Federico Vera"
+   ]
+  },
+  {
+   "partido": "Rosario Central vs Huracán",
+   "fecha": "Fecha 14",
+   "equipo": "Huracán",
+   "tipo": "amarilla",
+   "texto": "Diego Martínez",
+   "evento": {
+    "type": 4,
+    "time": "45'+2",
+    "team": 2,
+    "texts": [
+     "Diego Martínez"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Hernán Galíndez",
+    "César Ibáñez",
+    "Maximo Palazzo",
+    "Fabio Pereyra",
+    "Lucas Blondel",
+    "Facundo Waller",
+    "Rodrigo Fernández Cedrés",
+    "Emmanuel Ojeda",
+    "Juan Bisanz",
+    "Jordy Caicedo",
+    "Oscar Cortés",
+    "Bruno Barticciotto",
+    "Leonardo Gil",
+    "Leandro Lescano",
+    "Thaiel Peralta",
+    "Ignacio Pussetto",
+    "Facundo Kalinger",
+    "Fabrizio Martínez",
+    "Sebástian Meza",
+    "Hugo Nervo",
+    "Santino Raynelli",
+    "Oscar Romero",
+    "Federico Vera"
+   ]
+  },
+  {
+   "partido": "Almagro vs San Martín Tucumán",
+   "fecha": "Fecha 2",
+   "equipo": "San Martín Tucumán",
+   "tipo": "amarilla",
+   "texto": "Andrés Yllana",
+   "evento": {
+    "type": 4,
+    "time": "58'",
+    "team": 2,
+    "texts": [
+     "Andrés Yllana"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Dario Sand",
+    "Alan Cisnero",
+    "Ezequiel Parnisari",
+    "Nicolas Ferreyra",
+    "Victor Salazar",
+    "Guillermo Rodriguez",
+    "Matías García",
+    "Santiago Briñone",
+    "Laureano Rodríguez",
+    "Facundo Pons",
+    "Benjamín Borasi",
+    "Nicolás Castro",
+    "Diego Diellos",
+    "Jorge Juarez",
+    "Tiago Peñalba",
+    "Gonzalo Rodríguez",
+    "Lucas Diarte",
+    "Kevin López",
+    "Nahuel Manganelli",
+    "Lautaro Ovando"
+   ]
+  },
+  {
+   "partido": "Defensores de Belgrano vs Godoy Cruz",
+   "fecha": "Fecha 2",
+   "equipo": "Defensores de Belgrano",
+   "tipo": "amarilla",
+   "texto": "Jorge Fabián Nardozza",
+   "evento": {
+    "type": 4,
+    "time": "80'",
+    "team": 1,
+    "texts": [
+     "Jorge Fabián Nardozza"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Alejandro Medina",
+    "Fabian Sanchez",
+    "Gonzalo Gamarra",
+    "Alan Perez",
+    "Diego Magallanes",
+    "Patricio Moyano",
+    "Agustín Benítez",
+    "Ignacio Gutierrez",
+    "Brian Gómez",
+    "Enzo Gonzalez",
+    "Ezequiel Aguirre",
+    "Leandro Ciccolini",
+    "Jonathan Dellarossa",
+    "Juan Monteagudo",
+    "Ian Perez",
+    "Francisco Tcherkaski",
+    "Diego García",
+    "Luis Jerez Silva",
+    "Nicolás Nocetti",
+    "Nicolás Vaquer"
+   ]
+  },
+  {
+   "partido": "Ciudad De Bolivar vs Estudiantes",
+   "fecha": "Fecha 4",
+   "equipo": "Ciudad De Bolivar",
+   "tipo": "amarilla",
+   "texto": "Diego Funes",
+   "evento": {
+    "type": 4,
+    "time": "90'+6",
+    "team": 1,
+    "texts": [
+     "Diego Funes"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Agustín Rufinetti",
+    "Federico Peralta",
+    "Elías Martínez",
+    "Ezequiel Navarro",
+    "Agustín Paredes",
+    "Alex Díaz",
+    "Nahuel Yeri",
+    "Facundo Mucignat",
+    "Maximiliano Gutiérrez",
+    "Jonathan Maciel",
+    "Arnaldo González",
+    "Jonathan Chacón",
+    "Brian Quintana",
+    "Agustín Rodríguez",
+    "Guillermo Sánchez",
+    "Axel Carrión",
+    "Agustin Diaz",
+    "Tobías Fernández",
+    "Leonel Ruiz",
+    "Marcos Sotelo"
+   ]
+  },
+  {
+   "partido": "Temperley vs San Martín Tucumán",
+   "fecha": "Fecha 4",
+   "equipo": "San Martín Tucumán",
+   "tipo": "amarilla",
+   "texto": "Alejandro Orfila",
+   "evento": {
+    "type": 4,
+    "time": "33'",
+    "team": 2,
+    "texts": [
+     "Alejandro Orfila"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Nahuel Manganelli",
+    "Lucas Diarte",
+    "Guillermo Rodriguez",
+    "Ezequiel Parnisari",
+    "Victor Salazar",
+    "Agustín Graneros",
+    "Anibal Paz",
+    "Nicolás Castro",
+    "Santiago Briñone",
+    "Jorge Juarez",
+    "Luca Arfaras",
+    "Diego Diellos",
+    "Matías García",
+    "Leonardo Monroy",
+    "Laureano Rodríguez",
+    "Milton Ríos",
+    "Nahuel Gallardo",
+    "Alejandro Galván",
+    "Tiago Peñalba",
+    "Dario Sand"
+   ]
+  },
+  {
+   "partido": "Almirante Brown vs Mitre SdE",
+   "fecha": "Fecha 4",
+   "equipo": "Mitre SdE",
+   "tipo": "amarilla",
+   "texto": "Cristian Mazzón",
+   "evento": {
+    "type": 4,
+    "time": "69'",
+    "team": 2,
+    "texts": [
+     "Cristian Mazzón"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Joaquín Ledesma",
+    "Franco Ferrari",
+    "Maximiliano Romero",
+    "Pablo Minissale",
+    "Mieres",
+    "Mateo Maldonado",
+    "Enzo Avaro",
+    "Juan Alesandroni",
+    "Martín Vázquez",
+    "Alan López",
+    "Marcos Machado",
+    "Rodrigo González",
+    "Mateo Montenegro",
+    "Agustín Ramírez",
+    "Juan Pablo Zárate",
+    "Daniel Abello",
+    "Luciano Correa",
+    "Matias Ferrari",
+    "Segundo Rodríguez",
+    "Gastón Unrein"
+   ]
+  },
+  {
+   "partido": "Central Norte vs Godoy Cruz",
+   "fecha": "Fecha 4",
+   "equipo": "Central Norte",
+   "tipo": "amarilla",
+   "texto": "Gaston Gil Romero",
+   "evento": {
+    "type": 4,
+    "time": "55'",
+    "team": 1,
+    "texts": [
+     "Gaston Gil Romero"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Enzo Vazquez",
+    "Pedro Sanz",
+    "Maximiliano Padilla",
+    "Elias Calderón",
+    "Agustín Lamosa",
+    "Franco Vedoya",
+    "Matias Villarreal",
+    "Maximiliano Ribero",
+    "Matias Moravec",
+    "Francisco Borda",
+    "Tiago Taobas",
+    "Leonardo Felissia",
+    "Kevin Isa Luna",
+    "Julián Lopez",
+    "Gianluca Mancuso",
+    "Joaquin Mateo",
+    "Fabricio Hass",
+    "Arian Pucheta",
+    "Mauricio Rosales",
+    "Gonzalo Alvez"
+   ]
+  },
+  {
+   "partido": "San Miguel vs San Telmo",
+   "fecha": "Fecha 5",
+   "equipo": "San Miguel",
+   "tipo": "amarilla",
+   "texto": "Gustavo Coleoni",
+   "evento": {
+    "type": 4,
+    "time": "68'",
+    "team": 1,
+    "texts": [
+     "Gustavo Coleoni"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Juan Manuel Lungarzo",
+    "Facundo Cardozo",
+    "Kevin Ceceri",
+    "Dixon Rentería",
+    "Luis Perez",
+    "Mateo Serra",
+    "Iván Ramírez",
+    "Lucas Brochero",
+    "Lucas Delgado",
+    "Bruno Nasta",
+    "Máximo Oses",
+    "Franco Aguirre",
+    "Felipe Coronel",
+    "Tomás Díaz",
+    "Jorge Ferrero",
+    "Daniel Juárez",
+    "Damián Adín",
+    "Fabrizio Almeida",
+    "Leandro Desábato",
+    "Mateo Reynoso"
+   ]
+  },
+  {
+   "partido": "Deportivo Madryn vs Estudiantes",
+   "fecha": "Fecha 6",
+   "equipo": "Estudiantes",
+   "tipo": "amarilla",
+   "texto": "Juan Sara",
+   "evento": {
+    "type": 4,
+    "time": "21'",
+    "team": 2,
+    "texts": [
+     "Juan Sara"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Facundo Vila",
+    "Tomas Squie",
+    "Balthazar Bernardi",
+    "Jorge Benítez",
+    "Andrés Berizovsky",
+    "Bautista Degregorio",
+    "Jorge Correa",
+    "Juan Manuel Sánchez",
+    "Facundo Ardiles",
+    "Dario Rostagno",
+    "Tobias Salas",
+    "Enzo Acosta",
+    "Santiago Camacho",
+    "Alejandro Melo",
+    "Tomas Nuñez",
+    "Federico Sena",
+    "Martin Albarracin",
+    "Fernando Duré",
+    "Rodrigo Fumo",
+    "Joel Lucero"
+   ]
+  },
+  {
+   "partido": "Tristan Suárez vs Gimnasia de Jujuy",
+   "fecha": "Fecha 6",
+   "equipo": "Gimnasia de Jujuy",
+   "tipo": "amarilla",
+   "texto": "Hernán Pellerano",
+   "evento": {
+    "type": 4,
+    "time": "75'",
+    "team": 2,
+    "texts": [
+     "Hernán Pellerano"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Milton Alvarez",
+    "Emiliano Endrizzi",
+    "Nicolas Dematei",
+    "Guillermo Cosaro",
+    "Diego López",
+    "Maximiliano Casa",
+    "Francisco Maidana",
+    "Hugo Soria",
+    "Federico Paradela",
+    "Cristian Menéndez",
+    "Abel Argañaraz",
+    "Octavio Bianchi",
+    "Mauro Cachi",
+    "David Gallardo",
+    "Francisco Molina",
+    "Juan Pablo Córdoba",
+    "Gonzalo Gómez",
+    "Martin Lazarte",
+    "Delfor Minervino",
+    "Claudio Pombo"
+   ]
+  },
+  {
+   "partido": "Gimnasia y Tiro vs Central Norte",
+   "fecha": "Fecha 7",
+   "equipo": "Central Norte",
+   "tipo": "amarilla",
+   "texto": "Adrian Bastia",
+   "evento": {
+    "type": 4,
+    "time": "42'",
+    "team": 2,
+    "texts": [
+     "Adrian Bastia"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Enzo Vazquez",
+    "Pedro Sanz",
+    "Elias Calderón",
+    "Agustín Lamosa",
+    "Mauricio Rosales",
+    "Joaquin Mateo",
+    "Franco Vedoya",
+    "Matias Villarreal",
+    "Gianluca Mancuso",
+    "Matias Moravec",
+    "Julián Lopez",
+    "Agustín Aleo",
+    "Francisco Borda",
+    "Agustín Bustinduy",
+    "Leonardo Felissia",
+    "Kevin Fernández",
+    "Gonzalo Castilla",
+    "Fabricio Hass",
+    "Kevin Isa Luna",
+    "Tiago Taobas"
+   ]
+  },
+  {
+   "partido": "Midland vs Temperley",
+   "fecha": "Fecha 8",
+   "equipo": "Temperley",
+   "tipo": "amarilla",
+   "texto": "Nicolas Domingo",
+   "evento": {
+    "type": 4,
+    "time": "10'",
+    "team": 2,
+    "texts": [
+     "Nicolas Domingo"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Ezequiel Mastrolia",
+    "Lucas Angelini",
+    "Valentin Aguiñagalde",
+    "Santiago Flores",
+    "Lorenzo Monti",
+    "Gabriel Esparza",
+    "Valentino Werro",
+    "Nicolas Avalos",
+    "Franco Benitez",
+    "Facundo Kruger",
+    "Gerónimo Tomasetti",
+    "Matías Calzón",
+    "Franco Díaz",
+    "Gabriel Hauche",
+    "Nicolas Molina",
+    "Oswaldo Pacheco",
+    "Fernando Brandán",
+    "Lisandro Morrone",
+    "Gian Nardelli",
+    "Lucas Richarte"
+   ]
+  },
+  {
+   "partido": "San Martín Tucumán vs Chacarita Juniors",
+   "fecha": "Fecha 8",
+   "equipo": "San Martín Tucumán",
+   "tipo": "amarilla",
+   "texto": "Cristian Grabinski",
+   "evento": {
+    "type": 4,
+    "time": "20'",
+    "team": 1,
+    "texts": [
+     "Cristian Grabinski"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Dario Sand",
+    "Lucas Diarte",
+    "Guillermo Rodriguez",
+    "Nicolas Ferreyra",
+    "Victor Salazar",
+    "Nicolás Castro",
+    "Laureano Rodríguez",
+    "Kevin López",
+    "Luca Arfaras",
+    "Diego Diellos",
+    "Alan Cisnero",
+    "Santiago Briñone",
+    "Luciano Ferreyra",
+    "Matías García",
+    "Jorge Juarez",
+    "Facundo Pons",
+    "Benjamín Borasi",
+    "Nahuel Gallardo",
+    "Nahuel Manganelli",
+    "Tiago Peñalba"
+   ]
+  },
+  {
+   "partido": "San Telmo vs Godoy Cruz",
+   "fecha": "Fecha 9",
+   "equipo": "San Telmo",
+   "tipo": "amarilla",
+   "texto": "Marcelo Vázquez",
+   "evento": {
+    "type": 4,
+    "time": "33'",
+    "team": 1,
+    "texts": [
+     "Marcelo Vázquez"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Joaquín Enrico",
+    "Roman Gamarra",
+    "Emanuel Díaz",
+    "Facundo Roncaglia",
+    "Juan Ignacio Motroni",
+    "Javier Iritier",
+    "Elias Britez",
+    "Iñaki Larthirigoyen",
+    "Jeronimo Porto",
+    "Renzo Uriburu",
+    "Martín Batallini",
+    "Matias Laba",
+    "Matías Ledesma",
+    "Elias Peralta",
+    "Leonel Pollacchi",
+    "Juan Cruz Zurbriggen",
+    "Carlos Casas Sanchez",
+    "Román González",
+    "Gabriel Ratalin",
+    "Franco Tisera"
+   ]
+  },
+  {
+   "partido": "San Telmo vs Godoy Cruz",
+   "fecha": "Fecha 9",
+   "equipo": "Godoy Cruz",
+   "tipo": "amarilla",
+   "texto": "Mariano Toedtli",
+   "evento": {
+    "type": 4,
+    "time": "33'",
+    "team": 2,
+    "texts": [
+     "Mariano Toedtli"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Roberto Ramírez",
+    "Juan Morán",
+    "Nahuel Brunet",
+    "Mateo Mendoza",
+    "Lucas Arce",
+    "Vicente Poggi",
+    "Gaston Gil Romero",
+    "Brian Orosco",
+    "Tomás Pozzo",
+    "Martín Pino",
+    "Nahuel Ulariaga",
+    "Esteban Burgos",
+    "Santiago Martinez",
+    "Matías Ramírez",
+    "Axel Rodríguez",
+    "Agustín Valverde",
+    "Matías Funes",
+    "Francisco Gerometta",
+    "Federico Milo",
+    "Juan Strumia"
+   ]
+  },
+  {
+   "partido": "Patronato vs Deportivo Maipú",
+   "fecha": "Fecha 10",
+   "equipo": "Deportivo Maipú",
+   "tipo": "amarilla",
+   "texto": "Felipe Rivarola",
+   "evento": {
+    "type": 4,
+    "time": "26'",
+    "team": 2,
+    "texts": [
+     "Felipe Rivarola"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Nahuel Galardi",
+    "Luciano Arnijas",
+    "Juan Pablo De la Reta",
+    "Lucas Faggioli",
+    "Gastón Mansilla",
+    "Áaron Agüero",
+    "Franco Saccone",
+    "Mirko Bonfigli",
+    "Luis Rivarola",
+    "Marcelo Eggel",
+    "Julian Vera",
+    "Santiago Paulini",
+    "Matías Viguet",
+    "Juan Cruz Giacone",
+    "Luciano Peraggini",
+    "Mateo Ortale",
+    "Nicolás Fernández",
+    "Luca Landriel",
+    "Tomas Silva",
+    "Lisandro Cabrera"
+   ]
+  },
+  {
+   "partido": "Estudiantes vs Chaco For Ever",
+   "fecha": "Fecha 10",
+   "equipo": "Estudiantes",
+   "tipo": "amarilla",
+   "texto": "Alfredo Grelak",
+   "evento": {
+    "type": 4,
+    "time": "88'",
+    "team": 1,
+    "texts": [
+     "Alfredo Grelak"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Nicolas Campisi",
+    "Tomas Squie",
+    "Franco Quinteros",
+    "Jorge Benítez",
+    "Balthazar Bernardi",
+    "Federico Sena",
+    "Rodrigo Melo",
+    "Jorge Correa",
+    "Facundo Ardiles",
+    "Tobias Salas",
+    "Dario Rostagno",
+    "Santiago Camacho",
+    "Nicolas Caro Torres",
+    "Bautista Degregorio",
+    "Alejandro Melo",
+    "Ian Vera",
+    "Martin Albarracin",
+    "Fernando Duré",
+    "Juan Manuel Sánchez",
+    "Facundo Vila"
+   ]
+  },
+  {
+   "partido": "Gimnasia y Tiro vs Güemes",
+   "fecha": "Fecha 10",
+   "equipo": "Güemes",
+   "tipo": "amarilla",
+   "texto": "Juan Vita",
+   "evento": {
+    "type": 4,
+    "time": "38'",
+    "team": 2,
+    "texts": [
+     "Juan Vita"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Leandro Finochietto",
+    "Marcelo Benítez",
+    "Emilio Lazza",
+    "Oscar Vanegas",
+    "Axel Bordón",
+    "Milton Gerez",
+    "Franco Bergés",
+    "Gianfranco Baier",
+    "David Véliz",
+    "Juan Sánchez Sotelo",
+    "Santiago Sala",
+    "Thomas Amilivia",
+    "Gian Luca Pugliese",
+    "Maico Quiroz",
+    "Facundo Rizzi",
+    "Walter Juárez",
+    "Julián Juárez",
+    "Laureano Martínez",
+    "Juan Mendoza",
+    "Tomás Oneto"
+   ]
+  },
+  {
+   "partido": "San Telmo vs All Boys",
+   "fecha": "Fecha 11",
+   "equipo": "San Telmo",
+   "tipo": "amarilla",
+   "texto": "Marcelo Vázquez",
+   "evento": {
+    "type": 4,
+    "time": "56'",
+    "team": 1,
+    "texts": [
+     "Marcelo Vázquez"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Joaquín Enrico",
+    "Roman Gamarra",
+    "Emanuel Díaz",
+    "Leonel Pollacchi",
+    "Facundo Roncaglia",
+    "Elias Britez",
+    "Renzo Uriburu",
+    "Jeronimo Porto",
+    "Javier Iritier",
+    "Joel Gonzalez",
+    "Martín Batallini",
+    "Fabian Henriquez",
+    "Iñaki Larthirigoyen",
+    "Juan Ignacio Motroni",
+    "Elias Peralta",
+    "Franco Tisera",
+    "Matias Laba",
+    "Matías Ledesma",
+    "Gabriel Ratalin",
+    "Juan Cruz Zurbriggen"
+   ]
+  },
+  {
+   "partido": "Atlético Rafaela vs Gimnasia de Jujuy",
+   "fecha": "Fecha 11",
+   "equipo": "Atlético Rafaela",
+   "tipo": "amarilla",
+   "texto": "Iván Juárez",
+   "evento": {
+    "type": 4,
+    "time": "18'",
+    "team": 1,
+    "texts": [
+     "Iván Juárez"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Mayco Bergia",
+    "Enzo Wuattier",
+    "Fernando Ponce",
+    "Gabriel Fernandez",
+    "Agustín Solveyra",
+    "Francisco Nouet",
+    "Facundo Soloa",
+    "Leonardo Flores",
+    "Agustin Obando",
+    "Martiniano Moreno",
+    "Lucas Albertengo",
+    "Joel Bonifacio",
+    "Marcos Fernández",
+    "Ariel Gonzalez",
+    "Ijiel Protti",
+    "Roque Ramírez",
+    "Ramiro Martínez",
+    "Denis Stracqualursi",
+    "Rodrigo Suárez",
+    "Jeremias Torrens"
+   ]
+  },
+  {
+   "partido": "Atlético Rafaela vs Gimnasia de Jujuy",
+   "fecha": "Fecha 11",
+   "equipo": "Gimnasia de Jujuy",
+   "tipo": "amarilla",
+   "texto": "Hernán Pellerano",
+   "evento": {
+    "type": 4,
+    "time": "54'",
+    "team": 2,
+    "texts": [
+     "Hernán Pellerano"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Milton Alvarez",
+    "Martin Lazarte",
+    "Nicolas Dematei",
+    "Guillermo Cosaro",
+    "Delfor Minervino",
+    "Claudio Pombo",
+    "Francisco Molina",
+    "Hugo Soria",
+    "David Gallardo",
+    "Federico Paradela",
+    "Cristian Menéndez",
+    "Abel Argañaraz",
+    "Octavio Bianchi",
+    "Maximiliano Casa",
+    "Francisco Maidana",
+    "Mauro Cachi",
+    "Diego López",
+    "Axel Pinto",
+    "Matías Ramos Mingo",
+    "Gonzalo Villarreal"
+   ]
+  },
+  {
+   "partido": "Tristan Suárez vs Gimnasia y Tiro",
+   "fecha": "Fecha 11",
+   "equipo": "Tristan Suárez",
+   "tipo": "amarilla",
+   "texto": "Jose Maria Martinez",
+   "evento": {
+    "type": 4,
+    "time": "57'",
+    "team": 1,
+    "texts": [
+     "Jose Maria Martinez"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Joaquin Bigo",
+    "Nicolás Fernandez",
+    "Agustín Baldi",
+    "Brian Aguilar",
+    "Matías Olguín",
+    "Nicolás Del Priore",
+    "Maximiliano Luayza",
+    "Kevin Colli",
+    "Ángel Almada",
+    "Alejandro Molina",
+    "Maximiliano Álvarez",
+    "Augusto Berrondo",
+    "Jonathan Berón",
+    "Nicolas Henry",
+    "Mateo Pérez",
+    "Nicolas Sánchez",
+    "Diego Becker",
+    "Máximo Ferulano",
+    "Joaquín Mendive",
+    "Álvaro Veliez"
+   ]
+  },
+  {
+   "partido": "Güemes vs Atlanta",
+   "fecha": "Fecha 11",
+   "equipo": "Güemes",
+   "tipo": "amarilla",
+   "texto": "Juan Vita",
+   "evento": {
+    "type": 4,
+    "time": "56'",
+    "team": 1,
+    "texts": [
+     "Juan Vita"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Leandro Finochietto",
+    "Marcelo Benítez",
+    "Oscar Vanegas",
+    "Tomás Oneto",
+    "Axel Bordón",
+    "David Véliz",
+    "Fernando Godoy",
+    "Gianfranco Baier",
+    "Milton Gerez",
+    "Juan Sánchez Sotelo",
+    "Santiago Sala",
+    "Thomas Amilivia",
+    "Franco Bergés",
+    "Walter Juárez",
+    "Juan Mendoza",
+    "Maico Quiroz",
+    "Laureano Martínez",
+    "Facundo Melillán",
+    "Gian Luca Pugliese",
+    "Facundo Rizzi"
+   ]
+  },
+  {
+   "partido": "Güemes vs Quilmes",
+   "fecha": "Fecha 13",
+   "equipo": "Quilmes",
+   "tipo": "amarilla",
+   "texto": "Leandro Gracian",
+   "evento": {
+    "type": 4,
+    "time": "71'",
+    "team": 2,
+    "texts": [
+     "Leandro Gracian"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Joaquín Canadell",
+    "Thomas Ortega",
+    "Ariel Kippes",
+    "Ián Rasso",
+    "Martín Vallejos",
+    "Ulises Vera",
+    "Axel Batista",
+    "Agustín Bolivar",
+    "Ramiro Martinez",
+    "Alexis Domínguez",
+    "Agustín Lavezzi",
+    "Mauro Fernández",
+    "Joaquín Postigo",
+    "Aarón Spetale",
+    "Gabriel Vázquez",
+    "Juan Yangali",
+    "Agustín Bindella",
+    "Thiago Mejías",
+    "Luciano Recalde",
+    "Mateo Rodríguez"
+   ]
+  },
+  {
+   "partido": "Gimnasia y Tiro vs San Martín Tucumán",
+   "fecha": "Fecha 14",
+   "equipo": "San Martín Tucumán",
+   "tipo": "amarilla",
+   "texto": "Andrés Yllana",
+   "evento": {
+    "type": 4,
+    "time": "45'+2",
+    "team": 2,
+    "texts": [
+     "Andrés Yllana"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Dario Sand",
+    "Guillermo Rodriguez",
+    "Nicolas Ferreyra",
+    "Ezequiel Parnisari",
+    "Nahuel Gallardo",
+    "Laureano Rodríguez",
+    "Santiago Briñone",
+    "Elias López",
+    "Luca Arfaras",
+    "Alan Cisnero",
+    "Diego Diellos",
+    "Benjamín Borasi",
+    "Matías García",
+    "Facundo Pons",
+    "Gonzalo Rodríguez",
+    "Nicolás Castro",
+    "Luciano Ferreyra",
+    "Nahuel Manganelli",
+    "Tiago Peñalba",
+    "Victor Salazar"
+   ]
+  },
+  {
+   "partido": "Defensores de Belgrano vs Chaco For Ever",
+   "fecha": "Fecha 14",
+   "equipo": "Defensores de Belgrano",
+   "tipo": "amarilla",
+   "texto": "Fabián Nardozza",
+   "evento": {
+    "type": 4,
+    "time": "77'",
+    "team": 1,
+    "texts": [
+     "Fabián Nardozza"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Alejandro Medina",
+    "Fabian Sanchez",
+    "Nicolás Vaquer",
+    "Alan Perez",
+    "Brian Gómez",
+    "Juan De Tomaso",
+    "Luis Jerez Silva",
+    "Agustín Benítez",
+    "Ezequiel Aguirre",
+    "Leandro Ciccolini",
+    "Jonathan Dellarossa",
+    "Diego García",
+    "Diego Magallanes",
+    "Patricio Moyano",
+    "Ian Perez",
+    "Francisco Tcherkaski",
+    "Gonzalo Aquilino",
+    "Gonzalo Gamarra",
+    "Ignacio Gutierrez",
+    "Nicolás Nocetti"
+   ]
+  },
+  {
+   "partido": "San Martín Tucumán vs Atlanta",
+   "fecha": "Fecha 15",
+   "equipo": "San Martín Tucumán",
+   "tipo": "amarilla",
+   "texto": "Andrés Yllana",
+   "evento": {
+    "type": 4,
+    "time": "45'+1",
+    "team": 1,
+    "texts": [
+     "Andrés Yllana"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Dario Sand",
+    "Lucas Diarte",
+    "Ezequiel Parnisari",
+    "Tiago Peñalba",
+    "Jorge Juarez",
+    "Alan Cisnero",
+    "Nicolás Castro",
+    "Guillermo Rodriguez",
+    "Santiago Briñone",
+    "Diego Diellos",
+    "Luca Arfaras",
+    "Benjamín Borasi",
+    "Luciano Ferreyra",
+    "Facundo Pons",
+    "Gonzalo Rodríguez",
+    "Victor Salazar",
+    "Nahuel Gallardo",
+    "Elias López",
+    "Nahuel Manganelli",
+    "Milton Ríos"
+   ]
+  },
+  {
+   "partido": "Atlanta vs Gimnasia y Tiro",
+   "fecha": "Fecha 16",
+   "equipo": "Atlanta",
+   "tipo": "amarilla",
+   "texto": "Cristian Pellerano",
+   "evento": {
+    "type": 4,
+    "time": "90'+3",
+    "team": 1,
+    "texts": [
+     "Cristian Pellerano"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Francisco Rago",
+    "Dylan Arguello",
+    "Tomás Rojas",
+    "Rodrigo Moreira",
+    "Martín García",
+    "Tomás Castro Ponce",
+    "Nicolás Previtali",
+    "Lautaro Fedele",
+    "Jeremías Puch",
+    "Federico Castro",
+    "Alejandro Quintana",
+    "Nacho Rodríguez",
+    "Rodrigo Sosa",
+    "Federico Álvarez",
+    "Matias Ibarra",
+    "Lautaro López",
+    "Gustavo Mendoza",
+    "Patricio Ostachuk",
+    "Braian Rivero",
+    "Lucas Ríos"
+   ]
+  },
+  {
+   "partido": "Temperley vs San Martín San Juan",
+   "fecha": "Fecha 16",
+   "equipo": "Temperley",
+   "tipo": "amarilla",
+   "texto": "Nicolas Domingo",
+   "evento": {
+    "type": 4,
+    "time": "26'",
+    "team": 1,
+    "texts": [
+     "Nicolas Domingo"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Ezequiel Mastrolia",
+    "Lucas Angelini",
+    "Valentin Aguiñagalde",
+    "Oswaldo Pacheco",
+    "Lorenzo Monti",
+    "Pedro Souto",
+    "Franco Díaz",
+    "Adrián Arregui",
+    "Franco Benitez",
+    "Gabriel Hauche",
+    "Facundo Kruger",
+    "Fernando Brandán",
+    "Matías Calzón",
+    "Nicolas Molina",
+    "Gerónimo Tomasetti",
+    "Nicolas Avalos",
+    "Lisandro Morrone",
+    "Luciano Nieto",
+    "Lucas Richarte",
+    "Francisco Silva"
+   ]
+  },
+  {
+   "partido": "Chaco For Ever vs Ferro Carril Oeste",
+   "fecha": "Fecha 17",
+   "equipo": "Ferro Carril Oeste",
+   "tipo": "amarilla",
+   "texto": "Juan Sara",
+   "evento": {
+    "type": 4,
+    "time": "25'",
+    "team": 2,
+    "texts": [
+     "Juan Sara"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Fernando Monetti",
+    "Emiliano Ozuna",
+    "Gustavo Canto",
+    "Federico Tévez",
+    "Nazareno Kihm",
+    "Enzo Hoyos",
+    "Felipe Obradovich",
+    "Matías Kabalin",
+    "Ángel Gonzalez",
+    "Lautaro Parisi",
+    "Emanuel Dening",
+    "Gonzalo Castellani",
+    "Sebastián Corda",
+    "Nicolás Gómez",
+    "Laureano Marra",
+    "Jonathan Menéndez",
+    "Gino Olguín",
+    "Sebastian Pepe",
+    "Lucas Ruiz",
+    "Misael Tarón"
+   ]
+  },
+  {
+   "partido": "Almirante Brown vs Godoy Cruz",
+   "fecha": "Fecha 18",
+   "equipo": "Almirante Brown",
+   "tipo": "amarilla",
+   "texto": "Vicente Poggi",
+   "evento": {
+    "type": 4,
+    "time": "84'",
+    "team": 1,
+    "texts": [
+     "Vicente Poggi"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Bruno Galvan",
+    "Tomás Villoldo",
+    "Gerardo Alegre Rojas",
+    "Gustavo Cabral",
+    "Enzo Cardozo",
+    "Luciano Pascual",
+    "Leonardo Jara",
+    "Santiago Gauna",
+    "Ulises Abreliano",
+    "Nazareno Bazán Vera",
+    "Gastón Moreyra",
+    "Joaquín Borja Velázquez",
+    "Javier Martinez",
+    "Tomas Almada",
+    "Pedro Velurtas",
+    "Santiago Vera",
+    "Gabriel Altamirano",
+    "Augusto Bottini",
+    "Facundo Quignón",
+    "Lucas Vega"
+   ]
+  },
+  {
+   "partido": "Central Norte vs San Miguel",
+   "fecha": "Fecha 19",
+   "equipo": "Central Norte",
+   "tipo": "amarilla",
+   "texto": "Alexis Cruz",
+   "evento": {
+    "type": 4,
+    "time": "42'",
+    "team": 1,
+    "texts": [
+     "Alexis Cruz"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Enzo Vazquez",
+    "Agustín Aleo",
+    "Maximiliano Padilla",
+    "Elias Calderón",
+    "Agustín Lamosa",
+    "Franco Vedoya",
+    "Matias Villarreal",
+    "Maximiliano Ribero",
+    "Matias Moravec",
+    "Tomás Castro",
+    "Francisco Borda",
+    "Julián Lopez",
+    "Arian Pucheta",
+    "Tiago Taobas",
+    "Ramiro Enriquez",
+    "Leonardo Felissia",
+    "Fabricio Hass",
+    "Gianluca Mancuso",
+    "Joaquin Mateo",
+    "Mauricio Rosales"
+   ]
+  },
+  {
+   "partido": "Central Norte vs San Miguel",
+   "fecha": "Fecha 19",
+   "equipo": "San Miguel",
+   "tipo": "amarilla",
+   "texto": "Mario Sciacqua",
+   "evento": {
+    "type": 4,
+    "time": "23'",
+    "team": 2,
+    "texts": [
+     "Mario Sciacqua"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Mateo Reynoso",
+    "Alexis Cruz",
+    "Kevin Ceceri",
+    "Dixon Rentería",
+    "Damián Adín",
+    "Jorge Ferrero",
+    "Iván Ramírez",
+    "Mateo Serra",
+    "Daniel Juárez",
+    "Lucas Delgado",
+    "Tomás Díaz",
+    "Franco Aguirre",
+    "Fabrizio Almeida",
+    "Facundo Cardozo",
+    "Gustavo Fernández",
+    "Luis Perez",
+    "Matias Escobar",
+    "Tomás Jérez",
+    "Máximo Oses",
+    "Elian de la Cruz"
+   ]
+  },
+  {
+   "partido": "Tristan Suárez vs Nueva Chicago",
+   "fecha": "Fecha 20",
+   "equipo": "Tristan Suárez",
+   "tipo": "amarilla",
+   "texto": "Jose Maria Martinez",
+   "evento": {
+    "type": 4,
+    "time": "85'",
+    "team": 1,
+    "texts": [
+     "Jose Maria Martinez"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Joaquin Bigo",
+    "Ayrton Sánchez",
+    "Agustín Baldi",
+    "Mauricio Guzmán",
+    "Manuel Guillén",
+    "Marcos Enrique",
+    "Sebastian Ramírez",
+    "Nicolas Sánchez",
+    "Nicolás Del Priore",
+    "Diego Becker",
+    "Agustín Gallo",
+    "Santiago Aquino",
+    "Kevin Colli",
+    "Maximiliano Luayza",
+    "Alejandro Molina",
+    "Maximiliano Álvarez",
+    "Jonathan Berón",
+    "Máximo Ferulano",
+    "Joaquín Mendive",
+    "Tiziano Noriega"
+   ]
+  },
+  {
+   "partido": "San Miguel vs Acassuso",
+   "fecha": "Fecha 22",
+   "equipo": "Acassuso",
+   "tipo": "amarilla",
+   "texto": "Tobías Kohan",
+   "evento": {
+    "type": 4,
+    "time": "68'",
+    "team": 2,
+    "texts": [
+     "Tobías Kohan"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Mariano Monllor",
+    "Bruno Dordoni",
+    "Lucas Pioli",
+    "Santiago Bellatti",
+    "Roman Etcheverri",
+    "Agustin Hermoso",
+    "Jonathan Raccio",
+    "Ramiro Reynoso",
+    "Valentín Serrano",
+    "Tomas Rodriguez",
+    "Kevin Dubini",
+    "Manuel Mónaco",
+    "Juan Cruz Ponce de León",
+    "Joaquín Postigo",
+    "Diego Roberts",
+    "Natan Acosta",
+    "Joel Ghirardello",
+    "Alexis Gónzalez Duarte",
+    "Jorge Luque",
+    "Lucas Rey"
+   ]
+  },
+  {
+   "partido": "Gimnasia y Tiro vs Tristan Suárez",
+   "fecha": "Fecha 29",
+   "equipo": "Tristan Suárez",
+   "tipo": "amarilla",
+   "texto": "Jose Maria Martinez",
+   "evento": {
+    "type": 4,
+    "time": "45'",
+    "team": 2,
+    "texts": [
+     "Jose Maria Martinez"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Joaquin Bigo",
+    "Agustín Baldi",
+    "Mauricio Guzmán",
+    "Brian Aguilar",
+    "Nicolás Fernandez",
+    "Manuel Guillén",
+    "Kevin Colli",
+    "Marcos Enrique",
+    "Nicolás Del Priore",
+    "Diego Becker",
+    "Agustín Gallo",
+    "Augusto Berrondo",
+    "Jonathan Berón",
+    "Matías Olguín",
+    "Nicolas Sánchez",
+    "Santiago Aquino",
+    "Joaquín Mendive",
+    "Alejandro Molina",
+    "Tiziano Noriega",
+    "Maximiliano Álvarez"
+   ]
+  },
+  {
+   "partido": "Nueva Chicago vs Deportivo Maipú",
+   "fecha": "Fecha 32",
+   "equipo": "Deportivo Maipú",
+   "tipo": "amarilla",
+   "texto": "Mariano Echeverría",
+   "evento": {
+    "type": 4,
+    "time": "74'",
+    "team": 2,
+    "texts": [
+     "Mariano Echeverría"
+    ],
+    "player_jersey_num": null
+   },
+   "alineacion": [
+    "Nahuel Galardi",
+    "Nicolás Fernández",
+    "Áaron Agüero",
+    "Santiago Paulini",
+    "Lucas Faggioli",
+    "Franco Saccone",
+    "Juan Pablo Gobetto",
+    "Enzo Pérez",
+    "Mirko Bonfigli",
+    "Tomas Silva",
+    "Matías Viguet",
+    "Tiago Ferreyra",
+    "Juan Cruz Giacone",
+    "Brian Orosco",
+    "Juan Pablo De la Reta",
+    "Lisandro Cabrera",
+    "Mateo Ortale",
+    "Luciano Peraggini",
+    "Julian Vera",
+    "Agustín Gaitán"
+   ]
+  }
+ ],
+ "resumen": {
+  "partidos": 820,
+  "sinAsignar": 49
+ }
+}
