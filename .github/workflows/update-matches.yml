@@ -46,11 +46,22 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Sincroniza con lo ultimo del repo (por ejemplo, un pedido manual desde la app
+          # que guardo datos mientras esta vuelta procesaba). Si hay choque en los datos,
+          # gana lo de esta vuelta (es lo mas nuevo); si igual no se puede, se descarta
+          # esta vuelta y se sigue con la proxima, sin que el bucle quede trabado.
+          sincronizar() {
+            if ! git pull --rebase -X theirs -q origin master; then
+              git rebase --abort 2>/dev/null || true
+              git fetch -q origin master && git reset -q --hard origin/master
+              return 1
+            fi
+          }
           inicio=$(date +%s)
           limite=$((inicio + 5*3600 + 40*60))   # dentro del maximo de 6 h de GitHub
           while true; do
             echo "=== Actualizacion $(TZ=America/Argentina/Buenos_Aires date '+%a %H:%M') ==="
-            git pull --rebase --autostash -q origin master || true
+            git fetch -q origin master && git reset -q --hard origin/master
             npm run fetch || echo "fallo fetch de partidos"
             npm run fetch:players || echo "fallo fetch de jugadores (los partidos se guardan igual)"
             # estado.json: hora de esta actualizacion y de la proxima (la app muestra la cuenta regresiva)
@@ -72,8 +83,11 @@ jobs:
               "$(date -u -d @$ahora_e +%Y-%m-%dT%H:%M:%SZ)" "$(date -u -d @$prox_e +%Y-%m-%dT%H:%M:%SZ)" $((int_e/60)) > data/estado.json
             git add data/*.json || true
             if git commit -q -m "chore: update matches.json y players.json (promiedos)"; then
-              git pull --rebase --autostash -q origin master || true
-              git push -q || echo "no se pudo subir, se reintenta en la proxima vuelta"
+              if sincronizar; then
+                git push -q || { sincronizar && git push -q; } || echo "no se pudo subir, se reintenta en la proxima vuelta"
+              else
+                echo "choque con otra actualizacion: se descarta esta vuelta"
+              fi
             else
               echo "sin cambios"
             fi
