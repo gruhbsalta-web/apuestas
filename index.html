@@ -126,6 +126,8 @@
     border-radius:var(--radius);color:var(--text);font-size:16px;
   }
   select:focus,input:focus,textarea:focus{outline:none;border-color:var(--accent);}
+  input[type=checkbox]{width:20px;height:20px;flex:0 0 auto;padding:0;accent-color:var(--accent);}
+  #import-preview .mini-bet{align-items:flex-start;}
   .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
   .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;}
   button.primary{
@@ -2261,9 +2263,27 @@ function findMatchBySubstring(blockText){
   const b = foldAccents(expandSinonimos(blockText.toLowerCase()));
   const candidatos = state.matches.filter(m => blockMentionsTeam(b, m.local) && blockMentionsTeam(b, m.visitante));
   if(candidatos.length === 1) return {match:candidatos[0], ambiguo:false};
-  if(candidatos.length > 1) return {match:null, ambiguo:true, opciones:candidatos};
+  if(candidatos.length > 1){
+    // el mismo cruce puede estar varias veces en la temporada: se toma el de hoy / más cercano,
+    // priorizando los que no terminaron (una apuesta recién hecha es de un partido en juego o próximo)
+    const ahora = Date.now();
+    const dist = m => Math.abs((m.fechaHora ? new Date(m.fechaHora).getTime() : 0) - ahora);
+    const orden = candidatos.slice().sort((a,b)=> (a.finPartido - b.finPartido) || (dist(a) - dist(b)));
+    const elegido = orden[0];
+    if(dist(elegido) < 3 * 86400000) return {match:elegido, ambiguo:false};
+    return {match:null, ambiguo:true, opciones:candidatos};
+  }
   return null;
 }
+
+// "1.260,50" -> 1260.5 ; "260,00" -> 260 ; "3.15" -> 3.15
+function parseMoney(str){
+  let t = String(str || "").replace(/[^\d.,]/g, "");
+  if(/,\d{1,2}$/.test(t)) t = t.replace(/\./g, "").replace(",", ".");
+  else t = t.replace(/,/g, "");
+  return parseFloat(t);
+}
+function cuotaValida(c){ return typeof c === "number" && !isNaN(c) && c >= 1.01 && c <= 100; }
 
 function parseBetsFreeText(text){
   const blocks = text.split(/(?=Sencilla\b)/i).map(b=>b.trim()).filter(b=>b.length>10);
@@ -2279,11 +2299,27 @@ function parseBetsFreeText(text){
 
     // Cuota y monto pueden no leerse bien (letra chica/numeros pegados); en vez
     // de descartar la apuesta entera, quedan "a completar" en la vista previa.
-    const cuotaMatch = block.match(/@\s*([\d]+[.,]\d+)/) || block.match(/Cuotas[\s\S]{0,25}?([\d]+[.,]\d+)/i);
-    const cuota = cuotaMatch ? parseNum(cuotaMatch[1]) : null;
+    // Cuota: "@ 3.15", "Cuotas 3.15", o en la misma línea que "Más de 3.5  3.15"
+    // (en la pantalla de BetWarrior va en un recuadro negro al lado de la línea)
+    const cuotaMatch = block.match(/@\s*(\d+[.,]\d+)/)
+      || block.match(/(?:Más|Mas|Menos) de\s+\d+(?:[.,]\d+)?\s*[\[|(]?\s*(\d{1,2}[.,]\d{2})\b/i)
+      || block.match(/Cuotas?[^\n\d]{0,15}(\d{1,2}[.,]\d{1,2})\b/i);
+    let cuota = cuotaMatch ? parseNum(cuotaMatch[1]) : null;
+    if(!cuotaValida(cuota)) cuota = null;
 
-    const montoMatch = block.match(/(?:Apuesta|Valor)[:\s]*[\s\S]{0,25}?(?:ARS)?\s*\$?\s*([\d]+[.,]\d{2})/i);
-    const monto = montoMatch ? parseNum(montoMatch[1]) : null;
+    const montoMatch = block.match(/(?:Apuesta|Valor|Importe)[:\s]*[\s\S]{0,25}?(?:ARS)?\s*\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2}|\d+[.,]\d{2})/i);
+    let monto = montoMatch ? parseMoney(montoMatch[1]) : null;
+    if(monto !== null && (isNaN(monto) || monto <= 0)) monto = null;
+
+    // Ganancia potencial = monto x cuota: sirve para completar o corregir lo que el OCR leyó mal
+    const ganMatch = block.match(/Ganancias?\s+potencial(?:es)?[^\d]{0,15}(\d{1,3}(?:\.\d{3})*,\d{2}|\d+[.,]\d{2})/i);
+    const ganancia = ganMatch ? parseMoney(ganMatch[1]) : null;
+    if(ganancia && monto && !cuota) cuota = Math.round(ganancia / monto * 100) / 100;
+    else if(ganancia && cuota && !monto) monto = Math.round(ganancia / cuota * 100) / 100;
+    else if(ganancia && cuota && monto && Math.abs(monto * cuota - ganancia) / ganancia > 0.02){
+      cuota = Math.round(ganancia / monto * 100) / 100;
+    }
+    if(!cuotaValida(cuota)) cuota = null;
 
     const faltantes = {};
     if(cuota === null) faltantes.necesitaCuota = true;
@@ -2327,9 +2363,17 @@ function parseBetsFreeText(text){
     let alcance = "combinado";
     const favorMatch = marketLabel.match(/a favor de (.+)/i);
     if(favorMatch){
-      const equipo = normTeamName(favorMatch[1]);
-      if(equipo === normTeamName(m.local)) alcance = "local";
-      else if(equipo === normTeamName(m.visitante)) alcance = "visitante";
+      const fav = foldAccents(expandSinonimos(favorMatch[1].toLowerCase()));
+      const esLocal = blockMentionsTeam(fav, m.local), esVisit = blockMentionsTeam(fav, m.visitante);
+      if(esLocal && !esVisit) alcance = "local";
+      else if(esVisit && !esLocal) alcance = "visitante";
+      else {
+        // nombre distinto en cada fuente: se usa la palabra más distintiva en común
+        const tl = teamTokens(m.local), tv = teamTokens(m.visitante);
+        const enFav = t => fav.includes(t);
+        const pl = tl.filter(enFav).length / (tl.length || 1), pv = tv.filter(enFav).length / (tv.length || 1);
+        if(pl > pv) alcance = "local"; else if(pv > pl) alcance = "visitante";
+      }
     }
 
     bets.push({id:uid(), matchId:m.id, tipo, comparador, alcance, linea, monto, cuota, ...faltantes});
@@ -2487,27 +2531,44 @@ document.getElementById("btn-ocr-images").addEventListener("click", ()=>{
 // Escala (hasta ~1600px de ancho) y sube el contraste en blanco y negro antes
 // de pasarla a Tesseract: las capturas de apps suelen tener texto chico o gris
 // claro que el OCR lee mejor asi que en color y a resolucion original.
-async function preprocessImageForOCR(file){
+// Dos versiones de cada captura para el OCR:
+// - "gris": escala de grises al doble de tamaño; lee bien la cuota (blanco sobre negro)
+//   y el mercado.
+// - "oscura": la misma con gamma 2.2, que oscurece el texto gris claro (Valor, Cuotas,
+//   Ganancias potenciales), que con contraste común se borraba.
+// Antes se subía el contraste y eso perdía justo el mercado, la cuota y el monto.
+async function versionesParaOCR(file){
   const bitmap = await createImageBitmap(file);
-  const scale = Math.max(1, Math.min(3, 1600 / bitmap.width));
-  const canvas = document.createElement("canvas");
-  canvas.width = Math.round(bitmap.width * scale);
-  canvas.height = Math.round(bitmap.height * scale);
-  const ctx = canvas.getContext("2d");
+  const scale = Math.max(1, Math.min(3, 2000 / bitmap.width));
+  const w = Math.round(bitmap.width * scale), h = Math.round(bitmap.height * scale);
+  const base = document.createElement("canvas");
+  base.width = w; base.height = h;
+  const ctx = base.getContext("2d");
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = "high";
-  ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
-
-  const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-  const d = imgData.data;
-  const contrast = 1.4;
-  for(let i=0; i<d.length; i+=4){
-    const gray = 0.299*d[i] + 0.587*d[i+1] + 0.114*d[i+2];
-    const v = Math.max(0, Math.min(255, (gray - 128) * contrast + 128));
-    d[i] = d[i+1] = d[i+2] = v;
+  ctx.drawImage(bitmap, 0, 0, w, h);
+  const img = ctx.getImageData(0, 0, w, h);
+  const gris = new ImageData(w, h), oscura = new ImageData(w, h);
+  for(let i=0; i<img.data.length; i+=4){
+    const g = 0.299*img.data[i] + 0.587*img.data[i+1] + 0.114*img.data[i+2];
+    const o = 255 * Math.pow(g / 255, 2.2);
+    gris.data[i] = gris.data[i+1] = gris.data[i+2] = g; gris.data[i+3] = 255;
+    oscura.data[i] = oscura.data[i+1] = oscura.data[i+2] = o; oscura.data[i+3] = 255;
   }
-  ctx.putImageData(imgData, 0, 0);
-  return canvas;
+  const aCanvas = (data)=>{ const c = document.createElement("canvas"); c.width = w; c.height = h; c.getContext("2d").putImageData(data, 0, 0); return c; };
+  return [aCanvas(gris), aCanvas(oscura)];
+}
+
+// Une las dos lecturas: la primera completa y, de la segunda, solo las líneas nuevas
+// (sin repetir "Sencilla", que marca el comienzo de cada apuesta).
+function combinarLecturas(t1, t2){
+  const norm = l => l.toLowerCase().replace(/\s+/g, " ").trim();
+  const vistas = new Set(t1.split("\n").map(norm).filter(Boolean));
+  const extra = t2.split("\n").filter(l=>{
+    const n = norm(l);
+    return n && !vistas.has(n) && !/sencilla/i.test(l);
+  });
+  return t1.trim() + (extra.length ? "\n" + extra.join("\n") : "");
 }
 
 let ocrEnCurso = false;
@@ -2542,9 +2603,12 @@ document.getElementById("in-bets-images").addEventListener("change", async (e)=>
     let textoTotal = "";
     for(let i=0; i<files.length; i++){
       status.textContent = `Leyendo imagen ${i+1} de ${files.length} (puede tardar un rato)...`;
-      const canvas = await preprocessImageForOCR(files[i]);
-      const {data} = await withTimeout(worker.recognize(canvas), 90000, `La imagen ${i+1} tardó demasiado en leerse. Probá con menos imágenes a la vez, o pegá el texto a mano.`);
-      textoTotal += (textoTotal ? "\n\n" : "") + data.text;
+      const [vGris, vOscura] = await versionesParaOCR(files[i]);
+      const msg = `La imagen ${i+1} tardó demasiado en leerse. Probá con menos imágenes a la vez.`;
+      const r1 = await withTimeout(worker.recognize(vGris), 90000, msg);
+      status.textContent = `Leyendo imagen ${i+1} de ${files.length} (segunda pasada)...`;
+      const r2 = await withTimeout(worker.recognize(vOscura), 90000, msg);
+      textoTotal += (textoTotal ? "\n\n" : "") + combinarLecturas(r1.data.text, r2.data.text);
     }
     const textarea = document.getElementById("in-bets-csv");
     textarea.value = textoTotal.trim();
