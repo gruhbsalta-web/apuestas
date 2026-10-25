@@ -1,4 +1,4 @@
-const CACHE_NAME = "apuestas-futbol-v4";
+const CACHE_NAME = "apuestas-futbol-v5";
 const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", (event) => {
@@ -28,9 +28,9 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
-  // Los datos de partidos van siempre primero a la red (si no, la app mostraba
+  // Los datos de partidos y jugadores van siempre primero a la red (si no, la app mostraba
   // el matches.json del dia anterior); el cache queda solo como respaldo offline.
-  if (url.pathname.endsWith("/data/matches.json")) {
+  if (url.pathname.endsWith("/data/matches.json") || url.pathname.endsWith("/data/players.json")) {
     event.respondWith(
       fetch(event.request)
         .then((response) => {

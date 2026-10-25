@@ -6,7 +6,8 @@
   "scripts": {
     "fetch": "node scripts/fetch_promiedos.js",
     "fetch:playwright": "node scripts/fetch_promiedos_playwright.js",
-    "fetch:api-sports": "node scripts/fetch_api_sports.js"
+    "fetch:api-sports": "node scripts/fetch_api_sports.js",
+    "fetch:players": "node scripts/fetch_players.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",

@@ -161,6 +161,16 @@
   details.liga>summary::-webkit-details-marker{display:none;}
   details.liga>summary .n{color:var(--muted);font-weight:600;font-size:12.5px;}
   .dia-head{font-size:11.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:12px 2px 8px;}
+  .plantel-wrap{overflow-x:auto;margin:0 -4px;}
+  table.plantel{width:100%;border-collapse:collapse;font-size:12px;}
+  table.plantel th{color:var(--muted);font-weight:600;text-align:right;padding:6px 5px;border-bottom:1px solid var(--card-border);white-space:nowrap;cursor:pointer;user-select:none;}
+  table.plantel th:first-child,table.plantel td:first-child{text-align:left;}
+  table.plantel th.sorted{color:var(--accent);}
+  table.plantel td{text-align:right;padding:7px 5px;border-bottom:1px solid #1d2229;white-space:nowrap;font-variant-numeric:tabular-nums;}
+  table.plantel td .pos{display:block;color:var(--muted);font-size:10.5px;}
+  table.plantel td.dim{color:var(--muted);}
+  .ausente{font-size:12.5px;padding:5px 0;border-top:1px solid var(--card-border);display:flex;justify-content:space-between;gap:8px;}
+  .ausente span{color:var(--muted);}
   details.card>summary{cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted);}
   details.card[open]>summary{margin-bottom:6px;}
 </style>
@@ -779,7 +789,7 @@ function renderMatchSelect(){
   renderTeamStatsPanel();
 }
 
-document.getElementById("sel-match").addEventListener("change", renderTeamStatsPanel);
+document.getElementById("sel-match").addEventListener("change", ()=>{ plantelEquipo = "local"; renderTeamStatsPanel(); });
 document.getElementById("sel-tipo").addEventListener("change", ()=>{
   const matchId = document.getElementById("sel-match").value;
   const m = state.matches.find(x=>x.id===matchId);
@@ -859,7 +869,155 @@ function renderTeamStatsPanel(){
         ${columna(m.visitante, teamAverages(m.visitante))}
       </div>
     </div>
+    <div class="team-stats-block" id="planteles-block"></div>
   `;
+  renderPlanteles(m);
+}
+
+// ---------- Planteles: estadísticas por jugador (data/players.json, lo arma el cron) ----------
+// Liga Profesional desde el Clausura 2026 y Primera Nacional desde la Fecha 1.
+// Se lee aparte y no se guarda en localStorage (es pesado y se regenera solo).
+const MIN_MINUTOS_PRODUCTIVIDAD = 270; // menos de 3 partidos completos: no se muestran las tasas por 90'
+let playersData = null;
+let playersLoading = null;
+let plantelEquipo = "local";
+let plantelOrden = {col:"min", desc:true};
+
+function loadPlayers(){
+  if(playersData) return Promise.resolve(playersData);
+  if(!playersLoading){
+    playersLoading = fetch('data/players.json', {cache:'no-store'})
+      .then(r=> r.ok ? r.json() : null)
+      .then(d=>{ playersData = d; return d; })
+      .catch(()=> null)
+      .finally(()=>{ playersLoading = null; });
+  }
+  return playersLoading;
+}
+
+function jugadoresDe(equipo){
+  if(!playersData || !playersData.jugadores) return [];
+  return Object.values(playersData.jugadores).filter(p=>p.equipo === equipo);
+}
+
+// Entrenadores del equipo (puede haber más de uno si hubo cambio de DT), el más usado primero.
+function entrenadoresDe(equipo){
+  if(!playersData || !playersData.entrenadores) return [];
+  return Object.values(playersData.entrenadores).filter(e=>e.equipo === equipo).sort((a,b)=>b.pj - a.pj);
+}
+function efectividad(e){ return e.pj ? (e.g*3 + e.e) / (e.pj*3) * 100 : null; }
+function htmlEntrenadores(equipo){
+  const lista = entrenadoresDe(equipo);
+  if(!lista.length) return "";
+  return `<div style="margin-bottom:12px">${lista.map(e=>{
+    const ef = efectividad(e);
+    return `<div class="ausente"><b>DT ${e.nombre}</b><span>${e.pj} PJ · ${e.g}G ${e.e}E ${e.p}P · <b style="color:var(--accent)">${ef.toFixed(0)}%</b> efectividad</span></div>`;
+  }).join("")}</div>`;
+}
+
+function por90(valor, min){ return min >= MIN_MINUTOS_PRODUCTIVIDAD ? valor * 90 / min : null; }
+function minPor(valor, min){ return (min >= MIN_MINUTOS_PRODUCTIVIDAD && valor > 0) ? Math.round(min / valor) : null; }
+
+const PLANTEL_COLS = [
+  {k:"nombre", t:"Jugador"},
+  {k:"pj", t:"PJ"},
+  {k:"min", t:"Min"},
+  {k:"goles", t:"G"},
+  {k:"asist", t:"A"},
+  {k:"g90", t:"G/90"},
+  {k:"a90", t:"A/90"},
+  {k:"minGol", t:"Min/G"},
+  {k:"minAsist", t:"Min/A"},
+  {k:"amarillas", t:"TA"},
+  {k:"rojas", t:"TR"}
+];
+
+function plantelRows(equipo){
+  return jugadoresDe(equipo).map(p=>Object.assign({}, p, {
+    g90: por90(p.goles, p.min),
+    a90: por90(p.asist, p.min),
+    minGol: minPor(p.goles, p.min),
+    minAsist: minPor(p.asist, p.min)
+  }));
+}
+
+function sortRows(rows){
+  const {col, desc} = plantelOrden;
+  return rows.sort((a,b)=>{
+    if(col === "nombre") return desc ? b.nombre.localeCompare(a.nombre,"es") : a.nombre.localeCompare(b.nombre,"es");
+    const va = a[col], vb = b[col];
+    // los "—" (sin datos suficientes) siempre al final
+    if(va == null && vb == null) return b.min - a.min;
+    if(va == null) return 1;
+    if(vb == null) return -1;
+    // para Min/G y Min/A, menos es mejor: el orden "desc" muestra primero a los mejores
+    const mejorMenor = col === "minGol" || col === "minAsist";
+    const diff = mejorMenor ? va - vb : vb - va;
+    return (desc ? diff : -diff) || (b.min - a.min);
+  });
+}
+
+function fmtCelda(k, v){
+  if(v == null) return '<td class="dim">—</td>';
+  if(k === "g90" || k === "a90") return `<td>${v.toFixed(2)}</td>`;
+  if(k === "minGol" || k === "minAsist") return `<td>${v}'</td>`;
+  return `<td>${v}</td>`;
+}
+
+function renderPlanteles(m){
+  const block = document.getElementById("planteles-block");
+  if(!block || !m) return;
+  if(!playersData){
+    block.innerHTML = '<div class="team-stats-heading">Planteles</div><div class="bet-sub">Cargando estadísticas de jugadores…</div>';
+    loadPlayers().then(d=>{
+      const actual = state.matches.find(x=>x.id === document.getElementById("sel-match").value);
+      if(actual && actual.id === m.id){
+        if(d) renderPlanteles(m);
+        else block.innerHTML = '<div class="team-stats-heading">Planteles</div><div class="bet-sub">Todavía no hay estadísticas de jugadores.</div>';
+      }
+    });
+    return;
+  }
+  const equipo = plantelEquipo === "visitante" ? m.visitante : m.local;
+  const rows = sortRows(plantelRows(equipo));
+  const ausentes = (playersData.ausentes && playersData.ausentes[m.id]) || [];
+  const ausentesEq = ausentes.filter(a=>a.equipo === equipo);
+
+  const tabla = rows.length ? `
+    <div class="plantel-wrap">
+      <table class="plantel">
+        <thead><tr>${PLANTEL_COLS.map(c=>`<th data-col="${c.k}" class="${plantelOrden.col === c.k ? "sorted" : ""}">${c.t}</th>`).join("")}</tr></thead>
+        <tbody>
+          ${rows.map(p=>`<tr>
+            <td>${p.nombre}<span class="pos">${p.posicion || ""}${p.numero != null ? " · #" + p.numero : ""}</span></td>
+            ${PLANTEL_COLS.slice(1).map(c=>fmtCelda(c.k, p[c.k])).join("")}
+          </tr>`).join("")}
+        </tbody>
+      </table>
+    </div>
+    <div class="bet-sub" style="margin-top:8px">G/90 y A/90: goles y asistencias cada 90 minutos. Min/G y Min/A: minutos por gol o asistencia. Se muestran desde ${MIN_MINUTOS_PRODUCTIVIDAD}' jugados. Tocá una columna para ordenar.</div>
+    <div class="bet-sub" style="margin-top:4px">Efectividad del DT: puntos obtenidos sobre puntos posibles (3 por partido), en el torneo.</div>
+  ` : '<div class="bet-sub">Sin estadísticas de jugadores para este equipo (solo Liga Profesional y Primera Nacional).</div>';
+
+  block.innerHTML = `
+    <div class="team-stats-heading">Planteles</div>
+    <div class="chips">
+      <button class="chip ${plantelEquipo === "local" ? "active" : ""}" data-plantel="local">${m.local}</button>
+      <button class="chip ${plantelEquipo === "visitante" ? "active" : ""}" data-plantel="visitante">${m.visitante}</button>
+    </div>
+    ${htmlEntrenadores(equipo)}
+    ${ausentesEq.length ? `<div style="margin-bottom:12px"><div class="team-stats-name">Ausentes</div>${ausentesEq.map(a=>`<div class="ausente"><b>${a.nombre}</b><span>${[a.posicion, a.motivo].filter(Boolean).join(" · ")}</span></div>`).join("")}</div>` : ""}
+    ${tabla}
+  `;
+  block.querySelectorAll("[data-plantel]").forEach(b=>b.addEventListener("click", ()=>{
+    plantelEquipo = b.dataset.plantel;
+    renderPlanteles(m);
+  }));
+  block.querySelectorAll("th[data-col]").forEach(th=>th.addEventListener("click", ()=>{
+    const col = th.dataset.col;
+    plantelOrden = plantelOrden.col === col ? {col, desc: !plantelOrden.desc} : {col, desc: col !== "nombre"};
+    renderPlanteles(m);
+  }));
 }
 
 // ---------- Agregar apuesta ----------
@@ -1734,6 +1892,7 @@ document.getElementById('btn-refresh-json').addEventListener('click', async (ev)
   btn.disabled = true;
   try{
     await syncFromData();
+    playersData = null;
     renderAll();
     setUpdatedLabel('Actualizado ' + horaActual());
   }catch(err){

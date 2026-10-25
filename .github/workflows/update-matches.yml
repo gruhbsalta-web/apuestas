@@ -22,10 +22,14 @@ jobs:
         run: npm install
       - name: Fetch matches
         run: npm run fetch
-      - name: Commit matches.json
+      - name: Fetch players (planteles, DT y ausentes)
+        # si falla no frena la actualizacion de partidos
+        continue-on-error: true
+        run: npm run fetch:players
+      - name: Commit data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/matches.json || true
-          git commit -m "chore: update matches.json (promiedos)" || echo "no changes to commit"
+          git add data/matches.json data/players.json || true
+          git commit -m "chore: update matches.json y players.json (promiedos)" || echo "no changes to commit"
           git push
