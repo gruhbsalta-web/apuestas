@@ -5640,7 +5640,7 @@
       "visitante": "Acassuso",
       "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -5669,9 +5669,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "central-norte-vs-acassuso",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
         "ronda": "Fecha 35"
       }
     },
@@ -5759,10 +5757,10 @@
       "visitante": "Gimnasia y Tiro",
       "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tarjetas": {
@@ -5774,7 +5772,7 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 0
         },
         "atajadas": {
@@ -5788,9 +5786,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "ferrocarril-midland-vs-gimnasia-y-tiro",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
         "ronda": "Fecha 35"
       }
     },
@@ -35300,15 +35296,15 @@
       "visitante": "Real Madrid",
       "fechaHora": "2026-10-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
           "v": 2
         },
         "tarjetas": {
-          "l": 1,
-          "v": 2
+          "l": 3,
+          "v": 3
         },
         "corners": {
           "l": 6,
@@ -35329,9 +35325,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "fc-barcelona-vs-real-madrid",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+2'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
