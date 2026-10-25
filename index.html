@@ -244,6 +244,8 @@
   table.plantel td:first-child{font-family:var(--ff);font-size:14px;font-weight:600;}
   table.plantel td .pos{display:block;color:var(--muted);font-size:12px;font-weight:500;}
   table.plantel td.dim{color:var(--muted);}
+  table.plantel tr.grp td{position:static;background:var(--surface-2);font-family:var(--ff);font-size:13px;font-weight:700;color:var(--accent);text-align:left;padding:7px 8px;border-bottom:none;}
+  table.plantel tr.grp td span{color:var(--muted);font-weight:600;margin-left:4px;}
   .ausentes{margin:4px 0 12px;}
   .ausente{font-size:14px;padding:8px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:8px;}
   .ausente span{color:var(--muted);}
@@ -521,6 +523,7 @@
   <!-- PLANTELES -->
   <section id="view-planteles" class="view">
     <div id="pl-ligas" class="chips"></div>
+    <div id="pl-pos" class="chips"></div>
     <div class="card">
       <label for="sel-pl-equipo" style="margin-top:0">Equipo</label>
       <select id="sel-pl-equipo"></select>
@@ -1470,12 +1473,24 @@ let plEquipo = "todos";
 let plBuscar = "";
 let plOrden = {col:"goles", desc:true};
 let plLimite = 50;
+let plPos = "todos";
+const POSICIONES = [
+  {k:"Arquero", t:"Arqueros"},
+  {k:"Defensor", t:"Defensores"},
+  {k:"Mediocampista", t:"Mediocampistas"},
+  {k:"Delantero", t:"Delanteros"}
+];
 
 async function renderPlantelesTab(){
   const ligasWrap = document.getElementById("pl-ligas");
   ligasWrap.innerHTML = PL_LIGAS.map(l=>`<button class="chip ${plLiga === l.id ? "active" : ""}" data-pl-liga="${l.id}">${l.nombre}</button>`).join("");
   ligasWrap.querySelectorAll("[data-pl-liga]").forEach(b=>b.addEventListener("click", ()=>{
     plLiga = b.dataset.plLiga; plEquipo = "todos"; plLimite = 50; renderPlantelesTab();
+  }));
+  const posWrap = document.getElementById("pl-pos");
+  posWrap.innerHTML = [{k:"todos", t:"Todos"}, ...POSICIONES].map(p=>`<button class="chip ${plPos === p.k ? "active" : ""}" data-pl-pos="${p.k}">${p.t}</button>`).join("");
+  posWrap.querySelectorAll("[data-pl-pos]").forEach(b=>b.addEventListener("click", ()=>{
+    plPos = b.dataset.plPos; plLimite = 50; renderPlantelesTab();
   }));
   const tabla = document.getElementById("pl-tabla");
   if(!playersData){
@@ -1494,6 +1509,7 @@ async function renderPlantelesTab(){
   let rows = todos
     .filter(p=> plEquipo === "todos" || p.equipo === plEquipo)
     .filter(p=> !q || p.nombre.toLowerCase().includes(q))
+    .filter(p=> plPos === "todos" || p.posicion === plPos)
     .map(conTasas);
   rows = sortRows(rows, plOrden);
 
@@ -1516,12 +1532,24 @@ async function renderPlantelesTab(){
       <table class="plantel">
         <thead><tr>${PLANTEL_COLS.map(c=>`<th data-col="${c.k}" class="${plOrden.col === c.k ? "sorted" : ""}" scope="col">${c.t}</th>`).join("")}</tr></thead>
         <tbody>
-          ${mostrar.map(p=>`<tr>
+          ${(()=>{
+            const fila = p=>`<tr>
             <td>${p.nombre}${conEquipo
               ? `<span class="pos"><button class="eq" data-ficha="${p.equipo}">${crest(p.equipo)}${p.equipo}</button></span>`
-              : `<span class="pos">${p.posicion || ""}${p.numero != null ? ", #" + p.numero : ""}</span>`}</td>
+              : `<span class="pos">${p.numero != null ? "#" + p.numero : ""}</span>`}</td>
             ${PLANTEL_COLS.slice(1).map(c=>fmtCelda(c.k, p[c.k])).join("")}
-          </tr>`).join("")}
+          </tr>`;
+            // Plantel de un equipo: agrupado por puesto
+            if(!conEquipo && plPos === "todos"){
+              const grupos = [...POSICIONES, {k:"", t:"Sin posición"}];
+              return grupos.map(g=>{
+                const del = mostrar.filter(p=> g.k ? p.posicion === g.k : !POSICIONES.some(x=>x.k === p.posicion));
+                if(!del.length) return "";
+                return `<tr class="grp"><td colspan="${PLANTEL_COLS.length}">${g.t} <span>${del.length}</span></td></tr>` + del.map(fila).join("");
+              }).join("");
+            }
+            return mostrar.map(fila).join("");
+          })()}
         </tbody>
       </table>
     </div>
