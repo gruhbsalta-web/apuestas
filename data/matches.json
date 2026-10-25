@@ -5247,7 +5247,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "corners": {
@@ -5271,7 +5271,7 @@
         "gameUrlName": "independiente-vs-boca-juniors",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "46'",
+        "minuto": "56'",
         "ronda": "Fecha 14"
       }
     },
@@ -5525,14 +5525,14 @@
       "visitante": "Chacarita Juniors",
       "fechaHora": "2026-10-25T16:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "corners": {
@@ -5554,9 +5554,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "temperley-vs-chacarita-juniors",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
         "ronda": "Fecha 35"
       }
     },
@@ -5673,9 +5671,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "central-norte-vs-acassuso",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "54'",
         "ronda": "Fecha 35"
       }
     },
@@ -5693,11 +5691,11 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -5714,9 +5712,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "mitre-sde-vs-godoy-cruz",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "53'",
         "ronda": "Fecha 35"
       }
     },
@@ -5729,7 +5727,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -5741,7 +5739,7 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 7,
+          "l": 8,
           "v": 0
         },
         "atajadas": {
@@ -5755,9 +5753,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-maipu-vs-club-atletico-guemes",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Fecha 35"
       }
     },
@@ -5796,7 +5794,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "ferrocarril-midland-vs-gimnasia-y-tiro",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Fecha 35"
@@ -35316,10 +35314,10 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "tirosArco": {
@@ -35337,9 +35335,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "fc-barcelona-vs-real-madrid",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "51'",
         "ronda": "Fecha 10"
       }
     },
@@ -35763,7 +35761,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 1,
@@ -35775,10 +35773,10 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 2
+          "v": 4
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 4
         }
       },
@@ -35790,7 +35788,7 @@
         "gameUrlName": "udinese-vs-ac-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "72'",
         "ronda": "Fecha 8"
       }
     },
