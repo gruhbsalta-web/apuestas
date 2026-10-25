@@ -62,9 +62,11 @@ async function getJson(url) {
 }
 
 const { emptyStats, statsFromStatistics } = require('./promiedos_stats');
-const { toArgentina, timezoneFromNextData } = require('./promiedos_time');
-// Zona horaria en la que Promiedos devuelve los horarios (depende de donde corre el cron)
-let SOURCE_TZ = null;
+const { calibrarApi, fichaHoraArgentina } = require('./promiedos_time');
+// Conversor de horarios de la API a hora argentina (Promiedos responde en la zona
+// de quien pide; se calibra en cada corrida contra la ficha de un partido).
+let CONVERTIR = null;
+let BUILD_ID = null;
 
 // start_time llega como "DD-MM-YYYY HH:mm"; lo paso al formato que usa el
 // <input type="datetime-local"> de la app: "YYYY-MM-DDTHH:mm".
@@ -123,7 +125,7 @@ function normalizeMatch(game, league) {
     id: `promiedos_${game.id}`,
     local: game?.teams?.[0]?.name || 'Desconocido',
     visitante: game?.teams?.[1]?.name || 'Desconocido',
-    fechaHora: toArgentina(parseFechaHora(game.start_time), SOURCE_TZ),
+    fechaHora: CONVERTIR ? CONVERTIR(parseFechaHora(game.start_time)) : parseFechaHora(game.start_time),
     finPrimerTiempo,
     finPartido,
     stats: emptyStats(),
@@ -173,6 +175,13 @@ async function fetchLeagueGames(league, today) {
   try {
     const data = await getJson(url);
     const games = Array.isArray(data?.games) ? data.games : [];
+    if (!CONVERTIR && games.length) {
+      const cal = await calibrarApi(games[0], getJson, SITE, BUILD_ID);
+      if (cal) {
+        CONVERTIR = cal.convertir;
+        console.log(`Horarios calibrados: zona ${cal.tz}, ajuste API ${cal.delta} min`);
+      }
+    }
     const matches = games.map((game) => normalizeMatch(game, league));
     const relevant = matches.filter((m) => isRelevantForToday(m, today));
     console.log(`Liga ${league.name || league.id} (${league.id}): ${games.length} partidos en 'latest', ${relevant.length} relevantes (terminados o de hoy)`);
@@ -195,6 +204,8 @@ async function enrichWithDetail(match, buildId) {
   const url = `${SITE}/_next/data/${buildId}/game/${encodeURIComponent(match._gameUrlName)}/${gameId}.json`;
   try {
     const data = await getJson(url);
+    const exacta = fichaHoraArgentina(data);
+    if (exacta) match.fechaHora = exacta; // la ficha trae hora y zona en la misma respuesta
     const statistics = data?.pageProps?.initialData?.game?.statistics;
     match.stats = statsFromStatistics(statistics, match._goles);
   } catch (error) {
@@ -209,8 +220,7 @@ async function enrichWithDetail(match, buildId) {
 
 async function run() {
   const buildId = await resolveBuildId();
-  SOURCE_TZ = timezoneFromNextData(await getJson(`${SITE}/_next/data/${buildId}${ANCHOR_LEAGUE_PATH}.json`));
-  console.log('Horarios de Promiedos en zona:', SOURCE_TZ || 'desconocida (sin convertir)');
+  BUILD_ID = buildId;
   console.log('buildId:', buildId);
 
   const leagues = await resolveLeagues(buildId);
