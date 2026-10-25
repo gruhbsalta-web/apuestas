@@ -34728,9 +34728,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "sunderland-vs-leeds-united",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 8"
       }
     },
@@ -35276,7 +35276,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -35304,7 +35304,7 @@
         "gameUrlName": "real-sociedad-vs-levante",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "9'",
         "ronda": "Fecha 10"
       }
     },
@@ -35728,7 +35728,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -35740,7 +35740,7 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
           "l": 0,
@@ -35755,7 +35755,7 @@
         "gameUrlName": "lecce-vs-juventus",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "27'",
+        "minuto": "31'",
         "ronda": "Fecha 8"
       }
     },
