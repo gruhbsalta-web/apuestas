@@ -288,6 +288,11 @@
       <div id="resumen-categorias"></div>
     </div>
     <div class="card">
+      <h3>Reiniciar</h3>
+      <div class="bet-sub" style="margin-bottom:12px">Borra apuestas, capital y partidos de este dispositivo y vuelve a cargar los partidos desde cero. No se puede deshacer (si querés, exportá un backup antes).</div>
+      <button class="btn-del" id="btn-reset-all" style="width:100%;padding:10px;border-radius:9px;font-size:13px;font-weight:600;">Reiniciar todo</button>
+    </div>
+    <div class="card">
       <h3>Backup</h3>
       <div class="bet-sub" style="margin-bottom:12px">Descargá tus datos para pasarlos entre el celular y la PC (o guardar una copia). Al importar se reemplaza todo lo que tenés cargado.</div>
       <div class="btn-row">
@@ -362,6 +367,16 @@ const TIPO_LABEL = {goles:"Goles",tarjetas:"Tarjetas",corners:"Corners",tirosArc
 
 // ---------- Estado (persistido en localStorage) ----------
 const STORAGE_KEY = "futbolTrackerData_v1";
+// Reinicio general pedido el 25/10/2026: cada dispositivo borra sus datos una
+// sola vez al abrir esta versión. Cambiar RESET_ID fuerza otro reinicio.
+const RESET_KEY = "futbolTrackerResetId";
+const RESET_ID = "2026-10-25";
+try{
+  if(localStorage.getItem(RESET_KEY) !== RESET_ID){
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.setItem(RESET_KEY, RESET_ID);
+  }
+}catch(e){}
 let state = load();
 
 function load(){
@@ -1726,6 +1741,12 @@ document.getElementById('btn-refresh-json').addEventListener('click', async (ev)
   }finally{
     btn.disabled = false;
   }
+});
+
+document.getElementById('btn-reset-all').addEventListener('click', ()=>{
+  if(!confirm('¿Borrar todas las apuestas, el capital y los partidos de este dispositivo? No se puede deshacer.')) return;
+  try{ localStorage.removeItem(STORAGE_KEY); }catch(e){}
+  location.reload();
 });
 
 // ---------- Init ----------

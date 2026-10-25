@@ -1,4 +1,4 @@
-const CACHE_NAME = "apuestas-futbol-v3";
+const CACHE_NAME = "apuestas-futbol-v4";
 const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", (event) => {
