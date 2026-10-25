@@ -51,7 +51,19 @@ jobs:
             git pull --rebase --autostash -q origin master || true
             npm run fetch || echo "fallo fetch de partidos"
             npm run fetch:players || echo "fallo fetch de jugadores (los partidos se guardan igual)"
-            git add data/matches.json data/players.json data/teams.json || true
+            # estado.json: hora de esta actualizacion y de la proxima (la app muestra la cuenta regresiva)
+            ahora_e=$(date +%s)
+            dia_e=$(TZ=America/Argentina/Buenos_Aires date +%u)
+            if [ "$dia_e" -ge 6 ]; then int_e=600; else int_e=1800; fi
+            prox_e=$((ahora_e + int_e))
+            if [ "$(TZ=America/Argentina/Buenos_Aires date -d @$prox_e +%H)" -lt 8 ]; then
+              # fuera de horario: la proxima es a las 08:00 (hoy si todavia no pasaron, si no mañana)
+              prox_e=$(TZ=America/Argentina/Buenos_Aires date -d "today 08:00" +%s)
+              [ "$ahora_e" -ge "$prox_e" ] && prox_e=$(TZ=America/Argentina/Buenos_Aires date -d "tomorrow 08:00" +%s)
+            fi
+            printf '{"ultima":"%s","proxima":"%s","intervaloMin":%d}\n' \
+              "$(date -u -d @$ahora_e +%Y-%m-%dT%H:%M:%SZ)" "$(date -u -d @$prox_e +%Y-%m-%dT%H:%M:%SZ)" $((int_e/60)) > data/estado.json
+            git add data/matches.json data/players.json data/teams.json data/estado.json || true
             if git commit -q -m "chore: update matches.json y players.json (promiedos)"; then
               git pull --rebase --autostash -q origin master || true
               git push -q || echo "no se pudo subir, se reintenta en la proxima vuelta"

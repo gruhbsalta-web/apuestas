@@ -58,6 +58,12 @@
   h1{margin:0;font-family:var(--ff-num);font-size:24px;font-weight:700;letter-spacing:.01em;}
   h1 span{color:var(--accent);}
   .bank{display:flex;align-items:center;gap:10px;}
+  .sync{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-top:2px;font-variant-numeric:tabular-nums;}
+  .sync i{width:8px;height:8px;border-radius:50%;background:var(--muted);flex:0 0 auto;}
+  .sync.ok i{background:var(--good);}
+  .sync.esperando i{background:var(--accent);}
+  .sync.mal{color:#F0A39D;}
+  .sync.mal i{background:var(--red);}
   .bank-cap{text-align:right;}
   .bank-cap .lbl{font-size:12px;color:var(--muted);}
   .capital-val{font-family:var(--ff-num);font-size:22px !important;font-weight:700;line-height:1.1;}
@@ -330,7 +336,10 @@
 
 <header>
   <div class="topbar">
-    <h1>Warrior<span>.</span></h1>
+    <div>
+      <h1>Warrior<span>.</span></h1>
+      <div class="sync" id="sync-status" role="status" aria-live="polite"><i></i><span>Buscando datos…</span></div>
+    </div>
     <div class="bank">
       <div class="bank-cap">
         <div class="lbl">Capital</div>
@@ -2558,6 +2567,65 @@ document.getElementById('btn-reset-all').addEventListener('click', ()=>{
   location.reload();
 });
 
+// ---------- Indicador de actualización automática (data/estado.json) ----------
+// El bucle de GitHub escribe la hora de cada actualización y la de la próxima.
+// La app muestra la cuenta regresiva y, cuando aparece una actualización nueva,
+// trae los datos sola. Si la próxima se pasa más de 10 min, avisa en rojo.
+let estadoSync = null;
+let ultimaVista = null;
+const fmtHora = d => d.toLocaleTimeString("es-AR", {hour:"2-digit", minute:"2-digit", hour12:false});
+async function leerEstado(){
+  try{
+    const r = await fetch("data/estado.json", {cache:"no-store"});
+    if(!r.ok) return;
+    const e = await r.json();
+    if(!e || !e.ultima) return;
+    estadoSync = e;
+    if(ultimaVista && e.ultima !== ultimaVista){
+      await syncFromData();
+      playersData = null;
+      renderAll();
+    }
+    ultimaVista = e.ultima;
+  }catch(err){ /* sin red: se reintenta */ }
+}
+function pintarSync(){
+  const el = document.getElementById("sync-status");
+  if(!el) return;
+  const txt = el.querySelector("span");
+  if(!estadoSync){ el.className = "sync"; txt.textContent = "Sin datos de actualización"; return; }
+  const ultima = new Date(estadoSync.ultima), prox = new Date(estadoSync.proxima);
+  const falta = Math.round((prox - Date.now()) / 1000);
+  const mismoDia = prox.toDateString() === new Date().toDateString();
+  if(falta > 0){
+    el.className = "sync ok";
+    if(falta > 3600 || !mismoDia){
+      txt.textContent = `Actualizado ${fmtHora(ultima)} · próxima ${mismoDia ? "" : "mañana "}${fmtHora(prox)}`;
+    } else {
+      const mm = Math.floor(falta / 60), ss = String(falta % 60).padStart(2, "0");
+      txt.textContent = `Actualizado ${fmtHora(ultima)} · próxima en ${mm}:${ss}`;
+    }
+  } else if(falta > -600){
+    el.className = "sync esperando";
+    txt.textContent = `Actualizado ${fmtHora(ultima)} · actualizando…`;
+  } else {
+    const hace = Math.round((Date.now() - ultima) / 60000);
+    el.className = "sync mal";
+    txt.textContent = `Atrasada: la última fue hace ${hace} min`;
+  }
+}
+function iniciarIndicadorSync(){
+  leerEstado().then(pintarSync);
+  setInterval(pintarSync, 1000);
+  // seguido cuando se espera una actualización, más espaciado el resto del tiempo
+  let ultimoChequeo = Date.now();
+  setInterval(()=>{
+    const falta = estadoSync ? new Date(estadoSync.proxima) - Date.now() : 0;
+    const cada = falta < 60000 ? 20000 : 60000;
+    if(Date.now() - ultimoChequeo >= cada){ ultimoChequeo = Date.now(); leerEstado().then(pintarSync); }
+  }, 5000);
+}
+
 // ---------- Init ----------
 (async function init(){
   await loadTeams();
@@ -2568,15 +2636,8 @@ document.getElementById('btn-reset-all').addEventListener('click', ()=>{
   renderAll();
   // refresca minuto de juego y probabilidad estimada cada 60s
   setInterval(renderAll, 60000);
-  // trae datos nuevos solo (el cron los actualiza de 08:00 a 00:00: cada 10 min sáb/dom, cada 30 min lun-vie)
-  setInterval(async ()=>{
-    try{
-      await syncFromData();
-      playersData = null;
-      renderAll();
-      setUpdatedLabel('Actualizado ' + horaActual());
-    }catch(e){ /* sin red: se reintenta en la próxima vuelta */ }
-  }, 5 * 60000);
+  // estado de la actualización automática: cuenta regresiva y aviso si se atrasa
+  iniciarIndicadorSync();
 })();
 </script>
 </body>
