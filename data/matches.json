@@ -5230,7 +5230,7 @@
         "gameUrlName": "aldosivi-vs-belgrano",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "1'",
+        "minuto": "3'",
         "ronda": "Fecha 14"
       }
     },
@@ -34730,7 +34730,7 @@
         "gameUrlName": "sunderland-vs-leeds-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "63'",
         "ronda": "Fecha 8"
       }
     },
@@ -35304,7 +35304,7 @@
         "gameUrlName": "real-sociedad-vs-levante",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "20'",
+        "minuto": "22'",
         "ronda": "Fecha 10"
       }
     },
@@ -35755,7 +35755,7 @@
         "gameUrlName": "lecce-vs-juventus",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "43'",
+        "minuto": "45'",
         "ronda": "Fecha 8"
       }
     },
