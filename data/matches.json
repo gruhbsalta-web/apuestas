@@ -34539,23 +34539,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
           "l": 4,
           "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 4
         },
         "tirosArco": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -34566,7 +34566,7 @@
         "gameUrlName": "manchester-united-vs-bournemouth",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "60'",
+        "minuto": "72'",
         "ronda": "Fecha 8"
       }
     },
@@ -34587,7 +34587,7 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
@@ -34607,7 +34607,7 @@
         "gameUrlName": "liverpool-vs-brighton",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "59'",
+        "minuto": "71'",
         "ronda": "Fecha 8"
       }
     },
@@ -34621,7 +34621,7 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -34632,12 +34632,12 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 4
         },
         "atajadas": {
-          "l": 4,
-          "v": 0
+          "l": 3,
+          "v": 1
         }
       },
       "source": {
@@ -34648,7 +34648,7 @@
         "gameUrlName": "hull-city-vs-brentford",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "72'",
         "ronda": "Fecha 8"
       }
     },
@@ -34669,16 +34669,16 @@
           "v": 2
         },
         "corners": {
-          "l": 1,
+          "l": 4,
           "v": 4
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 4
         }
       },
       "source": {
@@ -34689,7 +34689,7 @@
         "gameUrlName": "crystal-palace-vs-newcastle-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "74'",
         "ronda": "Fecha 8"
       }
     },
@@ -35243,16 +35243,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -35263,7 +35263,7 @@
         "gameUrlName": "celta-vigo-vs-real-betis",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "3'",
+        "minuto": "15'",
         "ronda": "Fecha 10"
       }
     },
@@ -35654,15 +35654,15 @@
         },
         "corners": {
           "l": 1,
-          "v": 3
+          "v": 5
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "atajadas": {
           "l": 4,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -35673,7 +35673,7 @@
         "gameUrlName": "genoa-vs-venezia",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "72'",
         "ronda": "Fecha 8"
       }
     },
@@ -35690,20 +35690,20 @@
           "v": 3
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "corners": {
-          "l": 6,
+          "l": 8,
           "v": 4
         },
         "tirosArco": {
-          "l": 7,
-          "v": 3
+          "l": 8,
+          "v": 5
         },
         "atajadas": {
-          "l": 0,
-          "v": 3
+          "l": 2,
+          "v": 4
         }
       },
       "source": {
@@ -35714,7 +35714,7 @@
         "gameUrlName": "atalanta-vs-frosinone",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "73'",
         "ronda": "Fecha 8"
       }
     },
