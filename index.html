@@ -136,6 +136,10 @@
     box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.18);
   }
   .crest.lg{width:44px;height:44px;font-size:16px;}
+  .crest{position:relative;overflow:hidden;}
+  .crest img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;}
+  .crest.has-img{background:transparent !important;color:transparent !important;box-shadow:none;}
+  .crest.has-img img{opacity:1;}
 
   /* ---------- Lista de partidos ---------- */
   details.liga{margin-bottom:18px;}
@@ -225,6 +229,32 @@
   .team-stats-n{color:var(--muted);font-weight:500;font-size:13px;}
   .team-stats-row{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);padding:5px 0;border-top:1px solid var(--line);}
   .team-stats-row b{color:var(--text);}
+
+  /* ---------- Selector propio (en lugar del menú del sistema) ---------- */
+  select.picker-native{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px;}
+  .picker-btn{
+    width:100%;display:flex;align-items:center;gap:10px;text-align:left;min-height:48px;
+    padding:10px 12px;background:var(--surface-2);border:1px solid transparent;border-radius:var(--radius);
+    color:var(--text);font-size:16px;font-weight:600;
+  }
+  .picker-btn:focus-visible{border-color:var(--accent);}
+  .picker-btn .txt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .picker-btn .crests{display:inline-flex;gap:2px;}
+  .picker-btn .crest{width:24px;height:24px;font-size:8px;}
+  .picker-btn::after{content:"";width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg) translateY(-3px);flex:0 0 auto;}
+  .pick-title{font-size:18px;font-weight:700;margin:0;}
+  .pick-search{margin:12px 0 6px;}
+  .pick-group{font-size:13px;font-weight:700;color:var(--muted);margin:14px 4px 6px;}
+  .pick-opt{
+    width:100%;display:flex;align-items:center;gap:12px;text-align:left;min-height:52px;
+    padding:10px 12px;background:none;border:none;border-radius:var(--radius);color:var(--text);font-size:16px;font-weight:600;
+  }
+  .pick-opt:hover,.pick-opt:focus-visible{background:var(--surface-2);}
+  .pick-opt.sel{background:var(--surface-2);box-shadow:inset 3px 0 0 var(--accent);}
+  .pick-opt .crest{width:30px;height:30px;font-size:10px;}
+  .pick-opt .crests{display:inline-flex;gap:3px;}
+  .pick-opt .txt{flex:1;min-width:0;}
+  .pick-opt .sub{display:block;font-size:13px;font-weight:500;color:var(--muted);}
 
   /* ---------- Ficha de equipo ---------- */
   dialog.sheet{
@@ -514,6 +544,7 @@
 </main>
 
 <dialog class="sheet" id="team-sheet" aria-label="Ficha de equipo"><div class="sheet-in" id="team-sheet-in"></div></dialog>
+<dialog class="sheet" id="pick-sheet"><div class="sheet-in" id="pick-in"></div></dialog>
 
 <script>
 // ---------- Ligas que se siguen: país -> ligas ----------
@@ -798,9 +829,16 @@ function initials(name){
   if(words.length === 1) return words[0].slice(0,3).toUpperCase();
   return (words[0][0] + words[1][0]).toUpperCase();
 }
+// Escudo real de Promiedos (por id del club); si no carga, quedan las iniciales con sus colores
+function crestUrl(name){
+  const t = teamsData[name];
+  return t && t.id ? `https://api.promiedos.com.ar/images/team/${t.id}/4` : null;
+}
 function crest(name, cls=""){
   const c = teamColors(name);
-  return `<span class="crest ${cls}" style="background:${c.bg};color:${c.fg}" aria-hidden="true">${initials(name)}</span>`;
+  const url = crestUrl(name);
+  const img = url ? `<img src="${url}" alt="" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">` : "";
+  return `<span class="crest ${cls}" style="background:${c.bg};color:${c.fg}" aria-hidden="true">${initials(name)}${img}</span>`;
 }
 function horaDe(m){ return m.fechaHora ? m.fechaHora.slice(11,16) : "--:--"; }
 
@@ -1457,6 +1495,99 @@ document.getElementById("sel-pl-equipo").addEventListener("change", (e)=>{
 document.getElementById("in-pl-buscar").addEventListener("input", (e)=>{
   plBuscar = e.target.value; plLimite = 50; renderPlantelesTab();
 });
+
+// ---------- Selector propio: reemplaza los <select> del sistema ----------
+// El <select> sigue existiendo (oculto) y el resto del código lo usa igual:
+// al elegir se cambia su valor y se dispara "change".
+function crestsDeTexto(txt){
+  const partes = String(txt).split(/\s+vs\s+/i);
+  if(partes.length === 2 && teamsData[partes[0]] !== undefined && teamsData[partes[1]] !== undefined)
+    return `<span class="crests">${crest(partes[0])}${crest(partes[1])}</span>`;
+  if(partes.length === 2) return `<span class="crests">${crest(partes[0])}${crest(partes[1])}</span>`;
+  if(teamsData[txt] !== undefined) return crest(txt);
+  return "";
+}
+function textoSeleccionado(sel){
+  const o = sel.options[sel.selectedIndex];
+  return o ? o.textContent : "";
+}
+function pintarBoton(sel){
+  const btn = sel._pickerBtn;
+  if(!btn) return;
+  const t = textoSeleccionado(sel);
+  btn.innerHTML = `${crestsDeTexto(t)}<span class="txt">${t || "Elegir"}</span>`;
+  btn.disabled = sel.options.length === 0;
+}
+function abrirPicker(sel){
+  const dlg = document.getElementById("pick-sheet");
+  const cont = document.getElementById("pick-in");
+  const lbl = document.querySelector(`label[for="${sel.id}-btn"]`) || document.querySelector(`label[for="${sel.id}"]`);
+  const titulo = (lbl && lbl.textContent.trim().replace(/\s+/g," ")) || "Elegir";
+  const items = [];
+  [...sel.children].forEach(ch=>{
+    if(ch.tagName === "OPTGROUP"){ items.push({grupo: ch.label}); [...ch.children].forEach(o=>items.push({o})); }
+    else items.push({o: ch});
+  });
+  const muchos = sel.options.length > 12;
+  const render = (q="")=>{
+    const ql = q.trim().toLowerCase();
+    let html = "", grupoPend = null;
+    items.forEach(it=>{
+      if(it.grupo !== undefined){ grupoPend = it.grupo; return; }
+      const t = it.o.textContent;
+      if(ql && !t.toLowerCase().includes(ql)) return;
+      if(grupoPend !== null){ html += `<div class="pick-group">${grupoPend}</div>`; grupoPend = null; }
+      const m = state.matches.find(x=>x.id === it.o.value);
+      const sub = m && m.fechaHora ? `<span class="sub">${dayLabel(matchDay(m))}, ${horaDe(m)}</span>` : "";
+      html += `<button class="pick-opt ${it.o.selected ? "sel" : ""}" data-v="${it.o.value.replace(/"/g,"&quot;")}">${crestsDeTexto(t)}<span class="txt">${t}${sub}</span></button>`;
+    });
+    cont.querySelector(".pick-list").innerHTML = html || '<div class="empty">Sin resultados.</div>';
+    cont.querySelectorAll(".pick-opt").forEach(b=>b.addEventListener("click", ()=>{
+      sel.value = b.dataset.v;
+      sel.dispatchEvent(new Event("change", {bubbles:true}));
+      pintarBoton(sel);
+      dlg.close();
+    }));
+  };
+  cont.innerHTML = `
+    <div class="sheet-head"><h2 class="pick-title">${titulo}</h2><button class="sheet-close" aria-label="Cerrar">✕</button></div>
+    ${muchos ? '<input type="search" class="pick-search" placeholder="Buscar" autocomplete="off">' : ""}
+    <div class="pick-list"></div>`;
+  cont.querySelector(".sheet-close").addEventListener("click", ()=> dlg.close());
+  const busc = cont.querySelector(".pick-search");
+  if(busc) busc.addEventListener("input", ()=> render(busc.value));
+  render();
+  if(!dlg.open) dlg.showModal();
+  const actual = cont.querySelector(".pick-opt.sel");
+  if(actual) actual.scrollIntoView({block:"center"});
+}
+function mejorarSelect(sel){
+  if(sel._pickerBtn) return;
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "picker-btn";
+  btn.id = sel.id + "-btn";
+  const lbl = document.querySelector(`label[for="${sel.id}"]`);
+  if(lbl) lbl.setAttribute("for", btn.id);
+  sel.classList.add("picker-native");
+  sel.setAttribute("tabindex", "-1");
+  sel.setAttribute("aria-hidden", "true");
+  sel.insertAdjacentElement("afterend", btn);
+  sel._pickerBtn = btn;
+  btn.addEventListener("click", ()=> abrirPicker(sel));
+  sel.addEventListener("change", ()=> pintarBoton(sel));
+  // cuando el código vuelve a llenar las opciones, se actualiza el botón
+  new MutationObserver(()=> pintarBoton(sel)).observe(sel, {childList:true, subtree:true});
+  pintarBoton(sel);
+}
+document.getElementById("pick-sheet").addEventListener("click", (e)=>{ if(e.target.id === "pick-sheet") e.target.close(); });
+document.querySelectorAll("select").forEach(mejorarSelect);
+// los <select> que se crean después (vista previa de importación) también se mejoran
+new MutationObserver(muts=>muts.forEach(m=>m.addedNodes.forEach(n=>{
+  if(n.nodeType !== 1) return;
+  if(n.tagName === "SELECT") mejorarSelect(n);
+  n.querySelectorAll && n.querySelectorAll("select").forEach(mejorarSelect);
+}))).observe(document.body, {childList:true, subtree:true});
 
 // ---------- Agregar apuesta ----------
 document.getElementById("btn-add-bet").addEventListener("click", ()=>{
