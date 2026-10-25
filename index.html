@@ -379,7 +379,10 @@ const PAISES = [
     { id: "hc",  nombre: "Liga Profesional" },
     { id: "ebj", nombre: "Primera Nacional" },
     { id: "gea", nombre: "Copa Argentina" }
-  ]}
+  ]},
+  { id: "España",     ligas: [ { id: "bb", nombre: "La Liga" } ]},
+  { id: "Inglaterra", ligas: [ { id: "h",  nombre: "Premier League" } ]},
+  { id: "Italia",     ligas: [ { id: "bh", nombre: "Serie A" } ]}
 ];
 const LIGA_INFO = {};
 PAISES.forEach(p => p.ligas.forEach(l => { LIGA_INFO[l.id] = { id: l.id, nombre: l.nombre, pais: p.id }; }));

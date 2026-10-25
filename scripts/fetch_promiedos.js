@@ -18,12 +18,16 @@ const LEAGUE_OVERRIDE = (process.env.PROMIEDOS_LEAGUES || '').split(',').map((v)
 // Paises/categorias del menu de Promiedos que queremos cubrir. El resto
 // (Alemania, Portugal, Francia, Brasil, Uruguay, Paraguay, Colombia, Chile,
 // Mexico, EEUU, Selecciones) queda afuera a proposito.
-const COUNTRY_WHITELIST = ['Argentina', 'Internacional'];
+const COUNTRY_WHITELIST = ['Argentina', 'Inglaterra', 'España', 'Italia', 'Internacional'];
 // Ligas que se siguen, agrupadas por pais. Para sumar otra liga o pais basta
 // con agregar su id de Promiedos aca (y el pais en COUNTRY_BY_LEAGUE).
-// Hoy solo interesa Argentina: Liga Profesional, Primera Nacional y Copa Argentina.
-const LEAGUE_ID_INCLUDE = new Set(['hc', 'ebj', 'gea']);
-const COUNTRY_BY_LEAGUE = { hc: 'Argentina', ebj: 'Argentina', gea: 'Argentina' };
+// Argentina: Liga Profesional, Primera Nacional y Copa Argentina.
+// Europa (solo partidos, sin planteles): Premier League, La Liga y Serie A.
+const LEAGUE_ID_INCLUDE = new Set(['hc', 'ebj', 'gea', 'h', 'bb', 'bh']);
+const COUNTRY_BY_LEAGUE = {
+  hc: 'Argentina', ebj: 'Argentina', gea: 'Argentina',
+  h: 'Inglaterra', bb: 'España', bh: 'Italia'
+};
 // Ligas puntuales que no queremos aunque su pais/categoria este en la
 // whitelist: reserva/amateur argentino (no estan en las listas de equipos
 // de la app) y las copas domesticas de Inglaterra/España/Italia (de las
