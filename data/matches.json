@@ -5211,7 +5211,7 @@
         },
         "corners": {
           "l": 2,
-          "v": 7
+          "v": 8
         },
         "tirosArco": {
           "l": 5,
@@ -5230,7 +5230,7 @@
         "gameUrlName": "aldosivi-vs-belgrano",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "64'",
+        "minuto": "75'",
         "ronda": "Fecha 14"
       }
     },
@@ -5403,7 +5403,7 @@
       "local": "Almirante Brown",
       "visitante": "Deportivo Morón",
       "fechaHora": "2026-10-25T15:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -5433,9 +5433,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "almirante-brown-vs-deportivo-moron",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "40'",
+        "minuto": "45'",
         "ronda": "Fecha 35"
       }
     },
@@ -5461,10 +5461,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -5476,7 +5476,7 @@
         "gameUrlName": "estudiantes-buenos-aires-vs-los-andes",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "33'",
+        "minuto": "44'",
         "ronda": "Fecha 35"
       }
     },
@@ -5497,16 +5497,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 1
+          "l": 2,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -5517,7 +5517,7 @@
         "gameUrlName": "racing-cordoba-vs-all-boys",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "8'",
+        "minuto": "19'",
         "ronda": "Fecha 35"
       }
     },
@@ -5538,7 +5538,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -5558,7 +5558,7 @@
         "gameUrlName": "temperley-vs-chacarita-juniors",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "2'",
+        "minuto": "14'",
         "ronda": "Fecha 35"
       }
     },
@@ -5579,15 +5579,15 @@
           "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -5599,7 +5599,7 @@
         "gameUrlName": "patronato-vs-agropecuario",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "4'",
+        "minuto": "15'",
         "ronda": "Fecha 35"
       }
     },
@@ -5621,7 +5621,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 3
         },
         "tirosArco": {
           "l": 0,
@@ -5640,7 +5640,7 @@
         "gameUrlName": "gimnasia-jujuy-vs-atlanta",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "4'",
+        "minuto": "15'",
         "ronda": "Fecha 35"
       }
     },
@@ -35281,10 +35281,10 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 3
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "tirosArco": {
@@ -35304,7 +35304,7 @@
         "gameUrlName": "real-sociedad-vs-levante",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "80'",
+        "minuto": "90+1'",
         "ronda": "Fecha 10"
       }
     },
