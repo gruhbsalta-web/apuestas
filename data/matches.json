@@ -5229,6 +5229,8 @@
         "country": "Argentina",
         "gameUrlName": "aldosivi-vs-belgrano",
         "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 14"
       }
     },
@@ -5410,19 +5412,19 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 1,
           "v": 2
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -5433,7 +5435,7 @@
         "gameUrlName": "almirante-brown-vs-deportivo-moron",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "50'",
+        "minuto": "62'",
         "ronda": "Fecha 35"
       }
     },
@@ -5451,11 +5453,11 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 1,
@@ -5474,7 +5476,7 @@
         "gameUrlName": "estudiantes-buenos-aires-vs-los-andes",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "50'",
+        "minuto": "62'",
         "ronda": "Fecha 35"
       }
     },
@@ -5483,7 +5485,7 @@
       "local": "Racing de Córdoba",
       "visitante": "All Boys",
       "fechaHora": "2026-10-25T16:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -5513,9 +5515,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "racing-cordoba-vs-all-boys",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "42'",
+        "minuto": "45'",
         "ronda": "Fecha 35"
       }
     },
@@ -5524,7 +5526,7 @@
       "local": "Temperley",
       "visitante": "Chacarita Juniors",
       "fechaHora": "2026-10-25T16:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -5533,11 +5535,11 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         },
         "tirosArco": {
           "l": 0,
@@ -5554,9 +5556,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "temperley-vs-chacarita-juniors",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "37'",
+        "minuto": "45'",
         "ronda": "Fecha 35"
       }
     },
@@ -5565,7 +5567,7 @@
       "local": "Patronato",
       "visitante": "Agropecuario",
       "fechaHora": "2026-10-25T16:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -5577,7 +5579,7 @@
           "v": 2
         },
         "corners": {
-          "l": 1,
+          "l": 4,
           "v": 0
         },
         "tirosArco": {
@@ -5595,9 +5597,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "patronato-vs-agropecuario",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 35"
       }
     },
@@ -5606,7 +5608,7 @@
       "local": "Gimnasia de Jujuy",
       "visitante": "Atlanta",
       "fechaHora": "2026-10-25T16:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -5615,7 +5617,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 3,
@@ -5636,9 +5638,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-jujuy-vs-atlanta",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 35"
       }
     },
@@ -35767,7 +35769,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -35778,12 +35780,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -35792,9 +35794,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "udinese-vs-ac-milan",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "11'",
         "ronda": "Fecha 8"
       }
     },
