@@ -144,6 +144,43 @@ function addLines(out, league, lines) {
   });
 }
 
+// Algunas fichas traen el nombre completo y otras no ("Carlos Mayor" /
+// "Carlos Alberto Mayor"). Dentro del mismo equipo, si coinciden nombre y
+// apellido y uno contiene al otro, se suman en la entrada con más partidos.
+function sameNameVariant(a, b) {
+  const ta = normName(a).split(' ');
+  const tb = normName(b).split(' ');
+  if (ta.join(' ') === tb.join(' ') || ta.length < 2 || tb.length < 2) return false;
+  const [corto, largo] = ta.length <= tb.length ? [ta, tb] : [tb, ta];
+  return corto[0] === largo[0] && corto[corto.length - 1] === largo[largo.length - 1] && corto.every((t) => largo.includes(t));
+}
+
+function mergeVariants(map, sumFields) {
+  const keys = Object.keys(map);
+  const byTeam = new Map();
+  keys.forEach((k) => {
+    const t = map[k].equipoId;
+    if (!byTeam.has(t)) byTeam.set(t, []);
+    byTeam.get(t).push(k);
+  });
+  let unidos = 0;
+  byTeam.forEach((ks) => {
+    ks.sort((a, b) => map[b].pj - map[a].pj);
+    for (let i = 0; i < ks.length; i++) {
+      const base = map[ks[i]];
+      if (!base) continue;
+      for (let j = i + 1; j < ks.length; j++) {
+        const other = map[ks[j]];
+        if (!other || !sameNameVariant(base.nombre, other.nombre)) continue;
+        sumFields.forEach((f) => { base[f] = (base[f] || 0) + (other[f] || 0); });
+        delete map[ks[j]];
+        unidos++;
+      }
+    }
+  });
+  return unidos;
+}
+
 async function run() {
   const out = fs.existsSync(OUTPUT_PATH) ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8')) : emptyOutput();
   const html = await getText(`${SITE}/league/primera-nacional/ebj`);
@@ -222,6 +259,10 @@ async function run() {
   fs.mkdirSync(path.dirname(MATCHES_PATH), { recursive: true });
   fs.writeFileSync(MATCHES_PATH, JSON.stringify(matchesOut, null, 2), 'utf8');
   console.log(`matches.json: ${partidosHistoricos} partidos terminados agregados (total ${matchesOut.matches.length}).`);
+
+  const unidosJ = mergeVariants(out.jugadores, ['pj', 'tit', 'min', 'goles', 'asist', 'amarillas', 'rojas']);
+  const unidosE = mergeVariants(out.entrenadores || {}, ['pj', 'g', 'e', 'p', 'gf', 'gc']);
+  if (unidosJ || unidosE) console.log(`Nombres unificados: ${unidosJ} jugadores, ${unidosE} entrenadores.`);
 
   out.ausentes = ausentesNuevos;
   out.actualizado = new Date().toISOString();
