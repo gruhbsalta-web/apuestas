@@ -5322,23 +5322,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 1
         },
         "corners": {
-          "l": 5,
+          "l": 7,
           "v": 1
         },
         "tirosArco": {
-          "l": 4,
-          "v": 1
+          "l": 6,
+          "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 4
+          "v": 6
         }
       },
       "source": {
@@ -5349,7 +5349,7 @@
         "gameUrlName": "barracas-central-vs-estudiantes-rio-cuarto",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "39'",
+        "minuto": "45+3'",
         "ronda": "Fecha 14"
       }
     },
@@ -5358,7 +5358,7 @@
       "local": "Central Córdoba SdE",
       "visitante": "Vélez Sarsfield",
       "fechaHora": "2026-10-25T22:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -5374,12 +5374,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         },
         "atajadas": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         }
       },
       "source": {
@@ -5388,9 +5388,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "central-cordoba-sde-vs-velez-sarsfield",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "39'",
+        "minuto": "45'",
         "ronda": "Fecha 14"
       }
     },
