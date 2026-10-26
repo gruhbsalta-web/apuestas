@@ -5995,7 +5995,7 @@
       "visitante": "San Martín San Juan",
       "fechaHora": "2026-10-26T14:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -6006,16 +6006,16 @@
           "v": 2
         },
         "corners": {
-          "l": 5,
-          "v": 5
+          "l": 10,
+          "v": 7
         },
         "tirosArco": {
-          "l": 9,
+          "l": 12,
           "v": 5
         },
         "atajadas": {
           "l": 4,
-          "v": 8
+          "v": 11
         }
       },
       "source": {
@@ -6024,9 +6024,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "nueva-chicago-vs-san-martin",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "80'",
+        "statusShort": "Final",
         "ronda": "Fecha 35"
       }
     },
