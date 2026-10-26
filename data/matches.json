@@ -5924,16 +5924,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -5942,9 +5942,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "union-santa-fe-vs-estudiantes-de-la-plata",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "15'",
         "ronda": "Fecha 14"
       }
     },
@@ -35327,7 +35327,7 @@
       "visitante": "Osasuna",
       "fechaHora": "2026-10-26T18:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -35339,14 +35339,14 @@
         },
         "corners": {
           "l": 7,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 7,
-          "v": 0
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 5
         }
       },
@@ -35356,9 +35356,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "sevilla-vs-osasuna",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "83'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10"
       }
     },
