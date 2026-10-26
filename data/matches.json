@@ -6049,12 +6049,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -6063,9 +6063,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "defensores-de-belgrano-vs-ca-san-miguel",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "17'",
         "ronda": "Fecha 35"
       }
     },
