@@ -18,7 +18,16 @@
       var p = new URLSearchParams(location.search).get("modo");
       if(p === "estadisticas") localStorage.setItem("warriorModo", "estadisticas");
       if(p === "completo") localStorage.removeItem("warriorModo");
-      if(localStorage.getItem("warriorModo") === "estadisticas") document.documentElement.classList.add("modo-stats");
+      if(localStorage.getItem("warriorModo") === "estadisticas"){
+        document.documentElement.classList.add("modo-stats");
+        // nombre neutro, sin "apuestas" (pestaña, app instalada y descripción)
+        document.title = "Warrior · Estadísticas de fútbol";
+        document.addEventListener("DOMContentLoaded", function(){
+          var man = document.querySelector('link[rel="manifest"]'); if(man) man.href = "manifest-estadisticas.json";
+          var t = document.querySelector('meta[name="apple-mobile-web-app-title"]'); if(t) t.content = "Warrior";
+          var d = document.querySelector('meta[name="description"]'); if(d) d.content = "Partidos, planteles, tablas y estadísticas del fútbol argentino.";
+        });
+      }
     }catch(e){}
   })();
 </script>
