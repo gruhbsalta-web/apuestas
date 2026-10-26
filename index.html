@@ -454,6 +454,7 @@
 
   <!-- APUESTAS -->
   <section id="view-apuestas" class="view">
+    <div id="avisos-card"></div>
     <div class="card">
       <h3>Nueva apuesta</h3>
       <label for="sel-match">Partido</label>
@@ -2091,6 +2092,81 @@ function renderAll(){
   renderTerminados();
   renderResumen();
   renderFooter();
+  renderAvisosCard();
+  chequearAvisos();
+}
+
+// ---------- Avisos: notificación cuando una apuesta se define (ganada o perdida) ----------
+// Se revisa cada vez que llegan datos nuevos (y cada minuto). La notificación la
+// muestra el service worker, que es lo que permite avisos en Android.
+// Funciona con la app abierta o en segundo plano reciente; con la app cerrada del
+// todo, el aviso aparece apenas se abre.
+function soportaAvisos(){ return "Notification" in window && "serviceWorker" in navigator; }
+function avisosActivos(){ return soportaAvisos() && Notification.permission === "granted" && !!(state.ui && state.ui.avisos); }
+function notificadas(){ if(!Array.isArray(state.notificadas)) state.notificadas = []; return state.notificadas; }
+function marcarDecididasComoAvisadas(){
+  const n = new Set(notificadas());
+  state.bets.forEach(b=>{ const r = evalBet(b); if(r.estado === "G" || r.estado === "P") n.add(b.id); });
+  state.notificadas = [...n];
+}
+async function mostrarAviso(titulo, cuerpo, tag){
+  try{
+    const reg = await navigator.serviceWorker.ready;
+    await reg.showNotification(titulo, { body: cuerpo, tag, icon: "icon.svg", badge: "icon.svg", vibrate: [120, 60, 120], data: { url: "./" } });
+  }catch(e){
+    try{ new Notification(titulo, { body: cuerpo, tag, icon: "icon.svg" }); }catch(e2){}
+  }
+}
+function chequearAvisos(){
+  if(!avisosActivos()) return;
+  const yaAvisadas = new Set(notificadas());
+  let cambios = false;
+  state.bets.forEach(b=>{
+    if(yaAvisadas.has(b.id)) return;
+    const r = evalBet(b);
+    if(r.estado !== "G" && r.estado !== "P") return;
+    const m = r.match || state.matches.find(x=>x.id === b.matchId);
+    const partido = m ? `${m.local} vs ${m.visitante}` : "Partido";
+    const cond = condTxtFor(b, m);
+    const marcador = m ? ` (${m.stats.goles.l}-${m.stats.goles.v}${m.finPartido ? "" : ", en juego"})` : "";
+    if(r.estado === "G"){
+      mostrarAviso(`✅ Apuesta ganada · cobrás $${(b.monto * b.cuota).toFixed(2)}`, `${partido}${marcador}\n${cond} · $${b.monto} a ${b.cuota}`, "bet-" + b.id);
+    } else {
+      mostrarAviso(`❌ Apuesta perdida · -$${Number(b.monto).toFixed(2)}`, `${partido}${marcador}\n${cond} · $${b.monto} a ${b.cuota}`, "bet-" + b.id);
+    }
+    yaAvisadas.add(b.id);
+    cambios = true;
+  });
+  if(cambios){ state.notificadas = [...yaAvisadas]; save(); }
+}
+function renderAvisosCard(){
+  const el = document.getElementById("avisos-card");
+  if(!el) return;
+  if(!soportaAvisos()){ el.innerHTML = ""; return; }
+  const activos = avisosActivos();
+  const bloqueado = Notification.permission === "denied";
+  el.innerHTML = `<div class="card" style="display:flex;align-items:center;gap:12px;padding:12px 14px">
+    <div style="flex:1">
+      <div style="font-weight:700">${activos ? "Avisos activados" : "Avisos de apuestas"}</div>
+      <div class="bet-sub">${bloqueado
+        ? "Las notificaciones están bloqueadas para esta app. Habilitalas en los ajustes del navegador (Notificaciones) y volvé a tocar Activar."
+        : activos ? "Te aviso cuando una apuesta se gana o se pierde." : "Recibí una notificación cuando una apuesta se gana o se pierde."}</div>
+    </div>
+    <button class="capital-edit" id="btn-avisos">${activos ? "Desactivar" : "Activar"}</button>
+  </div>`;
+  el.querySelector("#btn-avisos").addEventListener("click", async ()=>{
+    if(!state.ui) state.ui = {};
+    if(avisosActivos()){ state.ui.avisos = false; save(); renderAvisosCard(); return; }
+    let perm = Notification.permission;
+    if(perm !== "granted") perm = await Notification.requestPermission();
+    if(perm === "granted"){
+      state.ui.avisos = true;
+      marcarDecididasComoAvisadas();   // no avisar de golpe las que ya estaban definidas
+      save();
+      mostrarAviso("Avisos activados", "Te voy a avisar cuando cada apuesta se gane o se pierda.", "avisos-on");
+    }
+    renderAvisosCard();
+  });
 }
 
 // ---------- Footer totales y capital de la cuenta ----------

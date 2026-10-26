@@ -1,4 +1,4 @@
-const CACHE_NAME = "apuestas-futbol-v18";
+const CACHE_NAME = "apuestas-futbol-v19";
 const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", (event) => {
@@ -56,6 +56,18 @@ self.addEventListener("fetch", (event) => {
         })
         .catch(() => cached);
       return cached || fetchPromise;
+    })
+  );
+});
+
+// Tocar un aviso de apuesta abre (o trae al frente) la app
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  event.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((lista) => {
+      const abierta = lista.find((c) => "focus" in c);
+      if (abierta) return abierta.focus();
+      return self.clients.openWindow("./");
     })
   );
 });
