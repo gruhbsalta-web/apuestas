@@ -6041,12 +6041,12 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 3
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 2
         },
         "tirosArco": {
           "l": 3,
@@ -6065,7 +6065,7 @@
         "gameUrlName": "defensores-de-belgrano-vs-ca-san-miguel",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "59'",
+        "minuto": "88'",
         "ronda": "Fecha 35"
       }
     },
@@ -35341,7 +35341,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -35358,9 +35358,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "sevilla-vs-osasuna",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "12'",
         "ronda": "Fecha 10"
       }
     },
