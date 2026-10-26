@@ -10,6 +10,18 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Apuestas">
+<script>
+  // Modo "solo estadísticas" para compartir: ?modo=estadisticas lo activa (y queda
+  // recordado en ese dispositivo), ?modo=completo lo saca.
+  (function(){
+    try{
+      var p = new URLSearchParams(location.search).get("modo");
+      if(p === "estadisticas") localStorage.setItem("warriorModo", "estadisticas");
+      if(p === "completo") localStorage.removeItem("warriorModo");
+      if(localStorage.getItem("warriorModo") === "estadisticas") document.documentElement.classList.add("modo-stats");
+    }catch(e){}
+  })();
+</script>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
@@ -47,6 +59,16 @@
   button{cursor:pointer;}
   :focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
   @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important;}}
+
+  /* ---------- Modo solo estadísticas (para compartir) ---------- */
+  .modo-stats .solo-apuestas,
+  .modo-stats #avisos-card,
+  .modo-stats #terminados-stats,
+  .modo-stats .mr-bets,
+  .modo-stats .mini-bet,
+  .modo-stats .tab-btn[data-view="resumen"]{display:none !important;}
+  .solo-stats{display:none;}
+  .modo-stats .solo-stats{display:revert;}
 
   /* ---------- Barra superior: marca + caja ---------- */
   header{
@@ -371,12 +393,12 @@
       <h1>Warrior<span>.</span></h1>
       <div class="sync-row">
         <div class="sync" id="sync-status" role="status" aria-live="polite"><i></i><span>Buscando datos…</span></div>
-        <button class="sync-btn" id="btn-actualizar-ya" aria-label="Actualizar ahora">
+        <button class="sync-btn solo-apuestas" id="btn-actualizar-ya" aria-label="Actualizar ahora">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>
         </button>
       </div>
     </div>
-    <div class="bank">
+    <div class="bank solo-apuestas">
       <div class="bank-cap">
         <div class="lbl">Capital</div>
         <div class="val capital-val" id="foot-capital">$0</div>
@@ -384,7 +406,7 @@
       <button id="btn-edit-capital" class="capital-edit" aria-label="Editar capital">Editar</button>
     </div>
   </div>
-  <div class="bank-strip">
+  <div class="bank-strip solo-apuestas">
     <span>Apostado<b id="foot-apostado">$0</b></span>
     <span>Ganado<b id="foot-ganancia" style="color:var(--good)">$0</b></span>
     <span>Perdido<b id="foot-perdido" style="color:var(--red)">$0</b></span>
@@ -399,7 +421,7 @@
   </button>
   <button class="tab-btn" data-view="apuestas">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
-    Apuestas
+    <span class="solo-apuestas">Apuestas</span><span class="solo-stats">Análisis</span>
   </button>
   <button class="tab-btn" data-view="terminados">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
@@ -456,12 +478,13 @@
   <section id="view-apuestas" class="view">
     <div id="avisos-card"></div>
     <div class="card">
-      <h3>Nueva apuesta</h3>
+      <h3><span class="solo-apuestas">Nueva apuesta</span><span class="solo-stats">Análisis del partido</span></h3>
       <label for="sel-match">Partido</label>
       <select id="sel-match"></select>
 
       <div id="team-stats-panel"></div>
 
+      <div class="solo-apuestas">
       <div class="row2">
         <div>
           <label for="sel-tipo">Condición</label>
@@ -507,9 +530,10 @@
       </div>
 
       <button class="primary" id="btn-add-bet">Agregar apuesta</button>
+      </div>
     </div>
 
-    <div id="bets-list"></div>
+    <div id="bets-list" class="solo-apuestas"></div>
   </section>
 
   <!-- TERMINADOS -->
@@ -948,7 +972,7 @@ function buildMatchCard(m){
           <div class="stat-row"><span>${TIPO_LABEL[k]}</span><b>${m.stats[k].l}</b><b>${m.stats[k].v}</b></div>`).join("")}
       </div>` : `<p class="bet-sub">Las estadísticas aparecen solas cuando empieza el partido.</p>`}
       <div class="btn-row">
-        <button class="btn-save" data-apostar="${m.id}">Apostar a este partido</button>
+        <button class="btn-save" data-apostar="${m.id}">${MODO_STATS ? "Ver análisis del partido" : "Apostar a este partido"}</button>
       </div>
       <details class="edit-box">
         <summary>Corregir datos</summary>
@@ -2096,13 +2120,15 @@ function renderAll(){
   chequearAvisos();
 }
 
+const MODO_STATS = document.documentElement.classList.contains("modo-stats");
+
 // ---------- Avisos: notificación cuando una apuesta se define (ganada o perdida) ----------
 // Se revisa cada vez que llegan datos nuevos (y cada minuto). La notificación la
 // muestra el service worker, que es lo que permite avisos en Android.
 // Funciona con la app abierta o en segundo plano reciente; con la app cerrada del
 // todo, el aviso aparece apenas se abre.
 function soportaAvisos(){ return "Notification" in window && "serviceWorker" in navigator; }
-function avisosActivos(){ return soportaAvisos() && Notification.permission === "granted" && !!(state.ui && state.ui.avisos); }
+function avisosActivos(){ return !MODO_STATS && soportaAvisos() && Notification.permission === "granted" && !!(state.ui && state.ui.avisos); }
 function notificadas(){ if(!Array.isArray(state.notificadas)) state.notificadas = []; return state.notificadas; }
 function marcarDecididasComoAvisadas(){
   const n = new Set(notificadas());
