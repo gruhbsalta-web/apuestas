@@ -6034,7 +6034,7 @@
       "visitante": "San Miguel",
       "fechaHora": "2026-10-26T16:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -6049,12 +6049,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -6063,9 +6063,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "defensores-de-belgrano-vs-ca-san-miguel",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "88'",
+        "statusShort": "Final",
         "ronda": "Fecha 35"
       }
     },
@@ -35332,24 +35330,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 3,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -35360,7 +35358,7 @@
         "gameUrlName": "sevilla-vs-osasuna",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "12'",
+        "minuto": "42'",
         "ronda": "Fecha 10"
       }
     },
