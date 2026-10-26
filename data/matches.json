@@ -6041,20 +6041,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 3
         },
         "corners": {
           "l": 0,
           "v": 0
         },
         "tirosArco": {
-          "l": 2,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 2
+          "l": 1,
+          "v": 3
         }
       },
       "source": {
@@ -6065,7 +6065,7 @@
         "gameUrlName": "defensores-de-belgrano-vs-ca-san-miguel",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "17'",
+        "minuto": "45'",
         "ronda": "Fecha 35"
       }
     },
