@@ -5998,24 +5998,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 2,
           "v": 2
         },
+        "corners": {
+          "l": 5,
+          "v": 5
+        },
         "tirosArco": {
-          "l": 3,
-          "v": 3
+          "l": 9,
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
-          "v": 3
+          "l": 4,
+          "v": 8
         }
       },
       "source": {
@@ -6026,7 +6026,7 @@
         "gameUrlName": "nueva-chicago-vs-san-martin",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "50'",
+        "minuto": "80'",
         "ronda": "Fecha 35"
       }
     },
