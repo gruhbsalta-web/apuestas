@@ -5329,16 +5329,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -5347,9 +5347,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "barracas-central-vs-estudiantes-rio-cuarto",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "9'",
         "ronda": "Fecha 14"
       }
     },
@@ -5363,7 +5363,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -5371,11 +5371,11 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
           "l": 0,
@@ -5388,9 +5388,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "central-cordoba-sde-vs-velez-sarsfield",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "9'",
         "ronda": "Fecha 14"
       }
     },
