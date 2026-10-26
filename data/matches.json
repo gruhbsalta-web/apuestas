@@ -5318,7 +5318,7 @@
       "visitante": "Estudiantes RC",
       "fechaHora": "2026-10-25T22:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -5329,8 +5329,8 @@
           "v": 2
         },
         "corners": {
-          "l": 11,
-          "v": 1
+          "l": 12,
+          "v": 2
         },
         "tirosArco": {
           "l": 12,
@@ -5347,9 +5347,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "barracas-central-vs-estudiantes-rio-cuarto",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
         "ronda": "Fecha 14"
       }
     },
@@ -5359,7 +5357,7 @@
       "visitante": "Vélez Sarsfield",
       "fechaHora": "2026-10-25T22:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -5388,9 +5386,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "central-cordoba-sde-vs-velez-sarsfield",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
         "ronda": "Fecha 14"
       }
     },
