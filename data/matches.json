@@ -6033,7 +6033,7 @@
       "local": "Defensores de Belgrano",
       "visitante": "San Miguel",
       "fechaHora": "2026-10-26T16:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -6041,11 +6041,11 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -6063,9 +6063,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "defensores-de-belgrano-vs-ca-san-miguel",
-        "statusShort": "1°",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "59'",
         "ronda": "Fecha 35"
       }
     },
