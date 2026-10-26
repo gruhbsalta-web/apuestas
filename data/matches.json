@@ -5917,23 +5917,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 2,
           "v": 1
         },
+        "corners": {
+          "l": 3,
+          "v": 2
+        },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -5944,7 +5944,7 @@
         "gameUrlName": "union-santa-fe-vs-estudiantes-de-la-plata",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "45'",
         "ronda": "Fecha 14"
       }
     },
