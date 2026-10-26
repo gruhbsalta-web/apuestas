@@ -35326,7 +35326,7 @@
       "local": "Sevilla FC",
       "visitante": "Osasuna",
       "fechaHora": "2026-10-26T18:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -35338,7 +35338,7 @@
           "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
@@ -35356,9 +35356,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "sevilla-vs-osasuna",
-        "statusShort": "1°",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "42'",
+        "minuto": "53'",
         "ronda": "Fecha 10"
       }
     },
