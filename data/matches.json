@@ -5317,7 +5317,7 @@
       "local": "Barracas Central",
       "visitante": "Estudiantes RC",
       "fechaHora": "2026-10-25T22:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -5347,9 +5347,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "barracas-central-vs-estudiantes-rio-cuarto",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+3'",
+        "minuto": "45'",
         "ronda": "Fecha 14"
       }
     },
