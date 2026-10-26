@@ -5321,7 +5321,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tarjetas": {
@@ -5329,16 +5329,16 @@
           "v": 2
         },
         "corners": {
-          "l": 8,
+          "l": 10,
           "v": 1
         },
         "tirosArco": {
-          "l": 9,
+          "l": 11,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 8
+          "v": 9
         }
       },
       "source": {
@@ -5349,7 +5349,7 @@
         "gameUrlName": "barracas-central-vs-estudiantes-rio-cuarto",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "67'",
+        "minuto": "77'",
         "ronda": "Fecha 14"
       }
     },
@@ -5390,7 +5390,7 @@
         "gameUrlName": "central-cordoba-sde-vs-velez-sarsfield",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "70'",
+        "minuto": "80'",
         "ronda": "Fecha 14"
       }
     },
