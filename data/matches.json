@@ -5329,7 +5329,7 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 1
         },
         "tirosArco": {
@@ -5349,7 +5349,7 @@
         "gameUrlName": "barracas-central-vs-estudiantes-rio-cuarto",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "29'",
+        "minuto": "39'",
         "ronda": "Fecha 14"
       }
     },
@@ -5375,10 +5375,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         }
       },
@@ -5390,7 +5390,7 @@
         "gameUrlName": "central-cordoba-sde-vs-velez-sarsfield",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "29'",
+        "minuto": "39'",
         "ronda": "Fecha 14"
       }
     },
