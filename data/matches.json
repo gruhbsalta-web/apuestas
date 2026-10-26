@@ -35330,24 +35330,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         },
         "corners": {
-          "l": 3,
-          "v": 1
+          "l": 7,
+          "v": 3
         },
         "tirosArco": {
-          "l": 3,
+          "l": 7,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 5
         }
       },
       "source": {
@@ -35358,7 +35358,7 @@
         "gameUrlName": "sevilla-vs-osasuna",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "53'",
+        "minuto": "83'",
         "ronda": "Fecha 10"
       }
     },
