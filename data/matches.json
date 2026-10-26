@@ -5911,7 +5911,7 @@
       "id": "promiedos_egddcdi",
       "local": "Unión de Santa Fe",
       "visitante": "Estudiantes de La Plata",
-      "fechaHora": "2026-10-26T18:00",
+      "fechaHora": "2026-10-26T19:00",
       "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
@@ -5921,18 +5921,18 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 5,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
           "l": 5,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         }
       },
@@ -5944,7 +5944,7 @@
         "gameUrlName": "union-santa-fe-vs-estudiantes-de-la-plata",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "76'",
+        "minuto": "90+3'",
         "ronda": "Fecha 14"
       }
     },
@@ -5952,7 +5952,7 @@
       "id": "promiedos_egddcdh",
       "local": "Instituto",
       "visitante": "Deportivo Riestra",
-      "fechaHora": "2026-10-26T20:15",
+      "fechaHora": "2026-10-26T21:15",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -6235,7 +6235,7 @@
       "id": "promiedos_egddcde",
       "local": "Argentinos Juniors",
       "visitante": "Independiente Rivadavia",
-      "fechaHora": "2026-10-27T18:00",
+      "fechaHora": "2026-10-27T19:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -35776,7 +35776,7 @@
       "id": "promiedos_ehdcgfd",
       "local": "Sassuolo",
       "visitante": "Lazio",
-      "fechaHora": "2026-10-27T13:30",
+      "fechaHora": "2026-10-27T14:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -35817,7 +35817,7 @@
       "id": "promiedos_ehdcgfc",
       "local": "Torino",
       "visitante": "Como",
-      "fechaHora": "2026-10-27T15:45",
+      "fechaHora": "2026-10-27T16:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -35858,7 +35858,7 @@
       "id": "promiedos_ehdcgfe",
       "local": "AS Roma",
       "visitante": "Cagliari",
-      "fechaHora": "2026-10-27T15:45",
+      "fechaHora": "2026-10-27T16:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -35938,7 +35938,7 @@
       "id": "promiedos_eigjbai",
       "local": "Atlético Tucumán",
       "visitante": "Platense",
-      "fechaHora": "2026-10-28T18:00",
+      "fechaHora": "2026-10-28T19:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -35979,7 +35979,7 @@
       "id": "promiedos_ehdcgfb",
       "local": "Venezia",
       "visitante": "Inter Milan",
-      "fechaHora": "2026-10-28T13:30",
+      "fechaHora": "2026-10-28T14:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -36020,7 +36020,7 @@
       "id": "promiedos_ehdcgff",
       "local": "Parma",
       "visitante": "Udinese",
-      "fechaHora": "2026-10-28T13:30",
+      "fechaHora": "2026-10-28T14:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -36061,7 +36061,7 @@
       "id": "promiedos_ehdcgfh",
       "local": "AC Milan",
       "visitante": "Bologna",
-      "fechaHora": "2026-10-28T13:30",
+      "fechaHora": "2026-10-28T14:30",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -36102,7 +36102,7 @@
       "id": "promiedos_ehdcgfg",
       "local": "Monza",
       "visitante": "Napoli",
-      "fechaHora": "2026-10-28T15:45",
+      "fechaHora": "2026-10-28T16:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -36143,7 +36143,7 @@
       "id": "promiedos_ehdcgfi",
       "local": "Genoa",
       "visitante": "Juventus",
-      "fechaHora": "2026-10-28T15:45",
+      "fechaHora": "2026-10-28T16:45",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
