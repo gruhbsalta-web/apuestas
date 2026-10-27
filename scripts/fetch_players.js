@@ -17,7 +17,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { playerLinesFromGame, missingFromGame, coachesFromGame, normName } = require('./players_lib');
+const { playerLinesFromGame, missingFromGame, coachesFromGame, alineacionFromGame, normName } = require('./players_lib');
 const { statsFromStatistics } = require('./promiedos_stats');
 const { calibrarApi, fichaHoraArgentina } = require('./promiedos_time');
 const { collectTeams, saveTeams } = require('./teams_lib');
@@ -220,6 +220,7 @@ async function run() {
 
   const today = todayInArgentina();
   const ausentesNuevos = {};
+  const alineacionesNuevas = {};
   let convertirApi = null;
   const equipos = {};
   const matchesOut = fs.existsSync(MATCHES_PATH)
@@ -279,6 +280,8 @@ async function run() {
 
         if (proximo) {
           ausentesNuevos[`promiedos_${game.id}`] = missingFromGame(ficha);
+          const ali = alineacionFromGame(ficha);
+          if (ali) alineacionesNuevas[`promiedos_${game.id}`] = ali;
           continue;
         }
         const lines = playerLinesFromGame(ficha);
@@ -314,7 +317,9 @@ async function run() {
   if (unidosJ || unidosE) console.log(`Nombres unificados: ${unidosJ} jugadores, ${unidosE} entrenadores.`);
 
   // Solo se reescribe el archivo si cambio algo (evita commits vacios cada 30 min)
-  const cambioAusentes = JSON.stringify(out.ausentes || {}) !== JSON.stringify(ausentesNuevos);
+  const cambioAusentes = JSON.stringify(out.ausentes || {}) !== JSON.stringify(ausentesNuevos)
+    || JSON.stringify(out.alineaciones || {}) !== JSON.stringify(alineacionesNuevas);
+  out.alineaciones = alineacionesNuevas;
   if (barridoCompleto) out.barridoCompleto = todayInArgentina();
   out.ausentes = ausentesNuevos;
   if (procesados === 0 && !cambioAusentes && !unidosJ && !unidosE && !barridoCompleto && fs.existsSync(OUTPUT_PATH)) {

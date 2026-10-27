@@ -293,6 +293,19 @@
   table.plantel td.dim{color:var(--muted);}
   table.plantel tr.grp td{position:static;background:var(--surface-2);font-family:var(--ff);font-size:13px;font-weight:700;color:var(--accent);text-align:left;padding:7px 8px;border-bottom:none;}
   table.plantel tr.grp td span{color:var(--muted);font-weight:600;margin-left:4px;}
+  .fm-lista{margin-top:4px;}
+  .fm-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:14px;}
+  .fm-row.salio .fm-nom b{color:var(--muted);}
+  .fm-num{width:24px;text-align:center;font-family:var(--ff-num);color:var(--muted);font-size:15px;}
+  .fm-nom{flex:1;min-width:0;}
+  .fm-nom b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .fm-nom small{color:var(--muted);font-size:12px;}
+  .fm-mk{display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:13px;}
+  .fm-tarj{display:inline-block;width:10px;height:14px;border-radius:2px;}
+  .fm-tarj.am{background:#f5c518;} .fm-tarj.ro{background:#e5484d;}
+  .fm-sale{color:#e5484d;font-family:var(--ff-num);} .fm-entra{color:#3ccf7a;font-family:var(--ff-num);}
+  .fm-estado{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;margin-left:6px;background:var(--surface-2);color:var(--muted);vertical-align:middle;}
+  .fm-estado.ok{color:#3ccf7a;}
   .ausentes{margin:4px 0 12px;}
   .ausente{font-size:14px;padding:8px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:8px;}
   .ausente span{color:var(--muted);}
@@ -1500,21 +1513,7 @@ function renderPlanteles(m){
       <div class="top"><div class="k">Asistidor</div><div class="v">${ta.asist}</div><div class="p">${ta.nombre}</div></div>
       <div class="top"><div class="k">Gol cada 90'</div><div class="v">${conTasa ? conTasa.g90.toFixed(2) : "—"}</div><div class="p">${conTasa ? conTasa.nombre : "Sin datos"}</div></div>
     </div>
-    <details class="plantel-box" ${plantelAbierto ? "open" : ""}>
-      <summary>${plantelAbierto ? "Ocultar" : "Ver"} plantel completo (${rows.length} jugadores)</summary>
-      <div class="plantel-wrap">
-        <table class="plantel">
-          <thead><tr>${PLANTEL_COLS.map(c=>`<th data-col="${c.k}" class="${plantelOrden.col === c.k ? "sorted" : ""}" scope="col">${c.t}</th>`).join("")}</tr></thead>
-          <tbody>
-            ${rows.map(p=>`<tr>
-              <td>${p.nombre}<span class="pos">${p.posicion || ""}${p.numero != null ? ", #" + p.numero : ""}</span></td>
-              ${PLANTEL_COLS.slice(1).map(c=>fmtCelda(c.k, p[c.k])).join("")}
-            </tr>`).join("")}
-          </tbody>
-        </table>
-      </div>
-      <div class="h2h-note">G/90 y A/90: goles y asistencias cada 90 minutos. Min/G y Min/A: minutos por gol o asistencia. Se calculan desde ${MIN_MINUTOS_PRODUCTIVIDAD}' jugados. Tocá una columna para ordenar.</div>
-    </details>`;
+    ${htmlFormacion(m, equipo, base)}`;
   })() : '<div class="bet-sub">Sin estadísticas de jugadores para este equipo (solo Liga Profesional y Primera Nacional).</div>';
 
   block.innerHTML = `
@@ -1530,16 +1529,39 @@ function renderPlanteles(m){
     plantelEquipo = b.dataset.plantel;
     renderPlanteles(m);
   }));
-  const box = block.querySelector("details.plantel-box");
-  if(box) box.addEventListener("toggle", ()=>{
-    plantelAbierto = box.open;
-    box.querySelector("summary").textContent = `${box.open ? "Ocultar" : "Ver"} plantel completo (${rows.length} jugadores)`;
-  });
-  block.querySelectorAll("th[data-col]").forEach(th=>th.addEventListener("click", ()=>{
-    const col = th.dataset.col;
-    plantelOrden = plantelOrden.col === col ? {col, desc: !plantelOrden.desc} : {col, desc: col !== "nombre"};
-    renderPlanteles(m);
-  }));
+}
+
+// Formación titular del partido (la publica Promiedos ~1 h antes) con lo que va
+// pasando: goles, tarjetas, quién sale y quién entra. Se actualiza con cada vuelta.
+function htmlFormacion(m, equipo, base){
+  const ali = playersData.alineaciones && playersData.alineaciones[m.id] && playersData.alineaciones[m.id][equipo];
+  if(!ali || !(ali.titulares || []).length){
+    return `<div class="team-stats-name" style="margin-top:6px">Formación titular</div>
+      <div class="bet-sub">Aparece acá cuando Promiedos la publique (suele ser 1 hora antes del partido). Después se va actualizando sola con los cambios, goles y tarjetas.</div>`;
+  }
+  const norm = t=>String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
+  const temporada = n=>base.find(p=>norm(p.nombre) === norm(n));
+  const ordenPos = {Arquero:0, Defensor:1, Mediocampista:2, Delantero:3};
+  const abrev = {Arquero:"ARQ", Defensor:"DEF", Mediocampista:"MED", Delantero:"DEL"};
+  const marcas = p=>(p.goles ? `<span class="fm-gol">⚽${p.goles > 1 ? "×" + p.goles : ""}</span>` : "")
+    + (p.amarillas ? '<span class="fm-tarj am"></span>' : "") + (p.rojas ? '<span class="fm-tarj ro"></span>' : "");
+  const statsTemp = n=>{ const t = temporada(n); return t ? `<span class="fm-temp">${t.goles} G · ${t.asist} A</span>` : ""; };
+  const tit = ali.titulares.slice().sort((a,b)=>(ordenPos[a.posicion] ?? 9) - (ordenPos[b.posicion] ?? 9));
+  const confirmada = /confirm/i.test(ali.estado || "");
+  return `<div class="team-stats-name" style="margin-top:6px">Formación titular${ali.formacion ? " · " + ali.formacion : ""}
+      <span class="fm-estado ${confirmada ? "ok" : ""}">${confirmada ? "Confirmada" : "Probable"}</span></div>
+    <div class="fm-lista">${tit.map(p=>`<div class="fm-row${p.sale != null ? " salio" : ""}">
+      <span class="fm-num">${p.numero ?? ""}</span>
+      <span class="fm-nom"><b>${p.nombre}</b><small>${abrev[p.posicion] || p.posicion || ""}${statsTemp(p.nombre) ? " · " : ""}${statsTemp(p.nombre)}</small></span>
+      <span class="fm-mk">${marcas(p)}${p.sale != null ? `<span class="fm-sale">▼ ${p.sale}'</span>` : ""}</span>
+    </div>`).join("")}</div>
+    ${(ali.entraron || []).length ? `<div class="team-stats-name" style="margin-top:12px">Cambios</div>
+    <div class="fm-lista">${ali.entraron.map(p=>`<div class="fm-row">
+      <span class="fm-num">${p.numero ?? ""}</span>
+      <span class="fm-nom"><b>${p.nombre}</b><small>${p.por ? "por " + p.por : (abrev[p.posicion] || "")}</small></span>
+      <span class="fm-mk">${marcas(p)}<span class="fm-entra">▲ ${p.entra ?? ""}'</span></span>
+    </div>`).join("")}</div>` : ""}
+    <div class="h2h-note">G · A: goles y asistencias en la temporada. Se actualiza en cada vuelta automática o con ↻.</div>`;
 }
 
 // ---------- Pestaña Planteles: estadísticas de todos los jugadores ----------

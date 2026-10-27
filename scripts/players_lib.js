@@ -220,4 +220,45 @@ function coachesFromGame(game) {
   return out;
 }
 
-module.exports = { playerLinesFromGame, missingFromGame, coachesFromGame, minuteOf, normName };
+// Formacion titular de cada equipo (para la pestaña Apuestas): los 11 que arrancan,
+// con lo que va pasando en el partido (goles, tarjetas, minuto en que salen) y los
+// suplentes que entraron. Vacio si Promiedos todavia no publico la formacion.
+function alineacionFromGame(game) {
+  const teams = game.teams || [];
+  const luTeams = game?.players?.lineups?.teams || [];
+  if (!luTeams.some((lu) => (lu.starting || []).length)) return null;
+  const lines = playerLinesFromGame(game);
+  const out = {};
+  luTeams.forEach((lu, idx) => {
+    const teamNum = lu.team_num || idx + 1;
+    const team = teams[teamNum - 1] || {};
+    if (!(lu.starting || []).length || !team.name) return;
+    const deEquipo = lines.filter((l) => l.equipo === team.name);
+    const datos = (l) => ({
+      nombre: l.nombre, numero: l.numero ?? null, posicion: l.posicion || '',
+      goles: l.goles, amarillas: l.amarillas, rojas: l.rojas
+    });
+    // quien salio por cada suplente que entro (evento de cambio: [entra, sale])
+    const parecido = (a, b) => {
+      const x = normName(a); const y = normName(b);
+      return x && y && (x === y || x.endsWith(' ' + y) || y.endsWith(' ' + x));
+    };
+    const cambios = allEvents(game).filter((e) => e.type === 15 && e.team === teamNum);
+    const porQuien = (l) => {
+      const ev = cambios.find((e) => parecido((e.texts || [])[0], l.nombre) || parecido((e.texts || [])[0], l.corto));
+      if (!ev) return null;
+      const sale = deEquipo.find((t) => t.titular !== undefined && (parecido(ev.texts[1], t.nombre) || parecido(ev.texts[1], t.corto)));
+      return sale ? sale.nombre : (ev.texts[1] || null);
+    };
+    out[team.name] = {
+      estado: lu.status || '',
+      formacion: lu.formation || '',
+      titulares: deEquipo.filter((l) => l.titular).map((l) => ({ ...datos(l), sale: l.sale })),
+      entraron: deEquipo.filter((l) => !l.titular).map((l) => ({ ...datos(l), entra: l.entra, por: porQuien(l) }))
+        .sort((a, b) => (a.entra ?? 999) - (b.entra ?? 999))
+    };
+  });
+  return Object.keys(out).length ? out : null;
+}
+
+module.exports = { playerLinesFromGame, missingFromGame, coachesFromGame, alineacionFromGame, minuteOf, normName };
