@@ -5952,7 +5952,7 @@
       "visitante": "Deportivo Riestra",
       "fechaHora": "2026-10-26T20:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -5963,16 +5963,16 @@
           "v": 4
         },
         "corners": {
-          "l": 12,
+          "l": 13,
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -5981,9 +5981,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "instituto-ac-cordoba-vs-riestra",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
         "ronda": "Fecha 14"
       }
     },
