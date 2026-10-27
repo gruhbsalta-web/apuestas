@@ -6232,7 +6232,7 @@
       "local": "Argentinos Juniors",
       "visitante": "Independiente Rivadavia",
       "fechaHora": "2026-10-27T19:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -6262,9 +6262,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "argentinos-juniors-vs-independiente-rivadavia",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+1'",
+        "minuto": "45'",
         "ronda": "Fecha 14"
       }
     },
