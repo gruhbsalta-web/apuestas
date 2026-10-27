@@ -6240,12 +6240,12 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 3,
-          "v": 2
+          "l": 6,
+          "v": 3
         },
         "corners": {
-          "l": 7,
-          "v": 2
+          "l": 9,
+          "v": 3
         },
         "tirosArco": {
           "l": 5,
@@ -6264,7 +6264,7 @@
         "gameUrlName": "argentinos-juniors-vs-independiente-rivadavia",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "79'",
+        "minuto": "90+1'",
         "ronda": "Fecha 14"
       }
     },
