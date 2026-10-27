@@ -35819,19 +35819,19 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 2
         },
         "tarjetas": {
           "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 4,
-          "v": 5
+          "l": 5,
+          "v": 6
         },
         "tirosArco": {
           "l": 5,
-          "v": 2
+          "v": 4
         },
         "atajadas": {
           "l": 2,
@@ -35846,7 +35846,7 @@
         "gameUrlName": "torino-vs-como",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "77'",
+        "minuto": "89'",
         "ronda": "Fecha 9"
       }
     },
@@ -35856,27 +35856,27 @@
       "visitante": "Cagliari",
       "fechaHora": "2026-10-27T16:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 4,
           "v": 2
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 6,
-          "v": 5
+          "l": 7,
+          "v": 8
         },
         "tirosArco": {
-          "l": 7,
-          "v": 7
+          "l": 8,
+          "v": 8
         },
         "atajadas": {
-          "l": 5,
-          "v": 5
+          "l": 6,
+          "v": 4
         }
       },
       "source": {
@@ -35885,9 +35885,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "as-roma-vs-cagliari",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "83'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
