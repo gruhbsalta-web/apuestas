@@ -6240,7 +6240,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "corners": {
@@ -6248,12 +6248,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 3
         },
         "atajadas": {
           "l": 3,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -6262,9 +6262,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "argentinos-juniors-vs-independiente-rivadavia",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 14"
       }
     },
