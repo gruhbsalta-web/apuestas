@@ -5960,18 +5960,18 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 1
+          "v": 2
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 1
         },
         "tirosArco": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         }
       },
@@ -5981,9 +5981,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "instituto-ac-cordoba-vs-riestra",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "61'",
         "ronda": "Fecha 14"
       }
     },
