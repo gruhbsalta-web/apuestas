@@ -2948,6 +2948,8 @@ async function leerEstado(){
     if(!r.ok) return;
     const e = await r.json();
     if(!e || !e.ultima) return;
+    // leyendo la página publicada, la próxima novedad llega cuando se vuelve a publicar
+    if(!ultimaLecturaDirecta && e.proximaPagina) e.proxima = e.proximaPagina;
     estadoSync = e;
     if(ultimaVista && e.ultima !== ultimaVista){
       await syncFromData();
@@ -3011,16 +3013,20 @@ const LLAVE_KEY = "warriorGithubToken";
 // Lectura directa del repositorio: con la llave cargada, los datos se leen de GitHub
 // apenas el bucle los guarda, sin esperar a que se publique la página (~1 min).
 // Si la llave no tiene permiso de lectura (Contents), se usa la página publicada.
+// El bucle guarda cada vuelta en la rama "datos"; la página publicada se actualiza
+// cada 10 min mientras hay partidos en juego.
 let lecturaDirecta = true;
+let ultimaLecturaDirecta = false;
 async function fetchDato(ruta){
   const llave = MODO_STATS ? "" : leerLlave();
+  ultimaLecturaDirecta = false;
   if(llave && lecturaDirecta){
     try{
-      const r = await fetch(`https://api.github.com/repos/gruhbsalta-web/apuestas/contents/${ruta}?ref=master&t=${Date.now()}`, {
+      const r = await fetch(`https://api.github.com/repos/gruhbsalta-web/apuestas/contents/${ruta}?ref=datos&t=${Date.now()}`, {
         cache:"no-store",
         headers:{ "Authorization":"Bearer " + llave, "Accept":"application/vnd.github.raw+json", "X-GitHub-Api-Version":"2022-11-28" }
       });
-      if(r.ok) return r;
+      if(r.ok){ ultimaLecturaDirecta = true; return r; }
       if(r.status === 401 || r.status === 403 || r.status === 404) lecturaDirecta = false;
     }catch(e){ /* sin red o bloqueado: se usa la página publicada */ }
   }

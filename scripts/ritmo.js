@@ -1,13 +1,13 @@
 // Decide cuánto esperar hasta la próxima vuelta del bucle de actualización.
 // - Partido en juego o por empezar (desde 1 h antes, cuando sale la formación,
-//   hasta 2 h 30 después del inicio): cada 5 minutos.
+//   hasta 2 h 30 después del inicio): cada 2 minutos.
 // - Si no: sábados y domingos cada 10 min, lunes a viernes cada 30 min, pero
 //   adelantando la vuelta para despertar 1 h antes del próximo partido.
 // Imprime JSON: {"intervalo": segundos, "vivo": true|false}
 const fs = require('fs');
 const path = require('path');
 
-const VIVO = 300;
+const VIVO = 120;
 const ANTES = 60 * 60 * 1000;
 const DESPUES = 150 * 60 * 1000;
 

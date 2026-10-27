@@ -3,12 +3,15 @@ name: Update matches from Promiedos
 # Las corridas programadas de GitHub se atrasan mucho (a veces horas), asi que
 # en vez de muchas corridas cortas hay una corrida larga que se queda activa y
 # actualiza en bucle:
-#   - con partidos en juego o por empezar (desde 1 h antes): cada 5 min, con
+#   - con partidos en juego o por empezar (desde 1 h antes): cada 2 min, con
 #     vueltas livianas (solo esos partidos) y una completa cada 30 min
 #   - si no: sabados y domingos cada 10 min, lunes a viernes cada 30 min,
 #     adelantando la vuelta para despertar 1 h antes del proximo partido
 #   - solo de 08:00 a 00:00 hora Argentina
 #   (scripts/ritmo.js decide el intervalo)
+# Los datos se guardan en cada vuelta en la rama "datos" (la app con llave los lee
+# de ahi al instante). La pagina publicada (master) se actualiza cada 10 min con
+# partidos en juego, para no pasar el tope de publicaciones por hora de GitHub.
 # Se lanza 4 veces por dia como respaldo (08, 12, 16 y 20 hs Argentina); si ya
 # hay una corriendo, la nueva espera en cola y sigue cuando termina la anterior.
 on:
@@ -64,10 +67,13 @@ jobs:
           limite=$((inicio + 5*3600 + 40*60))   # dentro del maximo de 6 h de GitHub
           ultima_dur=90   # segundos que tardo la vuelta anterior (estimado inicial)
           ultimo_completo=0   # ultima vuelta completa (las rapidas solo miran los partidos en juego)
+          ultima_pagina=0     # ultima vez que se actualizo la pagina publicada (master)
           ritmo() { node scripts/ritmo.js | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const r=JSON.parse(s);console.log(r[process.argv[1]])})' "$1"; }
           while true; do
             vuelta_ini=$(date +%s)
             git fetch -q origin master && git reset -q --hard origin/master
+            # los datos mas nuevos estan en la rama "datos" (si existe)
+            if git fetch -q origin datos 2>/dev/null; then git checkout FETCH_HEAD -- data/ 2>/dev/null || true; fi
             if [ "$(ritmo vivo)" = "true" ] && [ $((vuelta_ini - ultimo_completo)) -lt 1800 ] && [ "$UNA_VEZ" != "true" ]; then
               export RAPIDO=1
             else
@@ -80,8 +86,10 @@ jobs:
             ahora_e=$(date +%s)
             int_e=$(ritmo intervalo); [ -z "$int_e" ] && int_e=1800
             vivo_e=$(ritmo vivo); [ "$vivo_e" = "true" ] || vivo_e=false
-            # proxima: cuando arranca la siguiente vuelta + lo que tarda procesar + ~1 min de publicacion
-            prox_e=$((vuelta_ini + int_e + ultima_dur + 60))
+            # pagina publicada: cada 10 min con partidos en juego, si no en cada vuelta
+            if [ "$vivo_e" != "true" ] || [ "$UNA_VEZ" = "true" ] || [ $((ahora_e - ultima_pagina)) -ge 540 ]; then publicar=1; else publicar=0; fi
+            # proxima: cuando arranca la siguiente vuelta + lo que tarda procesar + ~30 s de guardado
+            prox_e=$((vuelta_ini + int_e + ultima_dur + 30))
             # pedido manual: se respeta la proxima que ya tenia anunciada el bucle
             if [ "$UNA_VEZ" = "true" ] && [ -f data/estado.json ]; then
               prev=$(node -e 'try{const e=require("./data/estado.json");process.stdout.write(String(Math.floor(new Date(e.proxima)/1000)))}catch(x){}')
@@ -92,14 +100,25 @@ jobs:
               prox_e=$(TZ=America/Argentina/Buenos_Aires date -d "today 08:00" +%s)
               [ "$ahora_e" -ge "$prox_e" ] && prox_e=$(TZ=America/Argentina/Buenos_Aires date -d "tomorrow 08:00" +%s)
             fi
-            printf '{"ultima":"%s","proxima":"%s","intervaloMin":%d,"vivo":%s}\n' \
-              "$(date -u -d @$ahora_e +%Y-%m-%dT%H:%M:%SZ)" "$(date -u -d @$prox_e +%Y-%m-%dT%H:%M:%SZ)" $((int_e/60)) "$vivo_e" > data/estado.json
+            # proximaPagina: cuando se actualiza la pagina publicada (la usa la app sin llave)
+            if [ "$publicar" = 1 ]; then
+              if [ "$vivo_e" = "true" ]; then prox_p=$((ahora_e + 600 + 90)); else prox_p=$((prox_e + 60)); fi
+            else
+              prox_p=$((ultima_pagina + 600 + 90))
+            fi
+            [ "$prox_p" -lt "$prox_e" ] && prox_p=$prox_e
+            printf '{"ultima":"%s","proxima":"%s","proximaPagina":"%s","intervaloMin":%d,"vivo":%s}\n' \
+              "$(date -u -d @$ahora_e +%Y-%m-%dT%H:%M:%SZ)" "$(date -u -d @$prox_e +%Y-%m-%dT%H:%M:%SZ)" "$(date -u -d @$prox_p +%Y-%m-%dT%H:%M:%SZ)" $((int_e/60)) "$vivo_e" > data/estado.json
             git add data/*.json || true
             if git commit -q -m "chore: update matches.json y players.json (promiedos)"; then
-              if sincronizar; then
-                git push -q || { sincronizar && git push -q; } || echo "no se pudo subir, se reintenta en la proxima vuelta"
-              else
-                echo "choque con otra actualizacion: se descarta esta vuelta"
+              # primero la rama datos (antes de sincronizar, que puede descartar esta vuelta en master)
+              git push -q -f origin HEAD:datos || echo "no se pudo guardar en la rama datos"
+              if [ "$publicar" = 1 ]; then
+                if sincronizar; then
+                  if git push -q || { sincronizar && git push -q; }; then ultima_pagina=$ahora_e; else echo "no se pudo publicar, se reintenta en la proxima vuelta"; fi
+                else
+                  echo "choque con otra actualizacion: la pagina se publica en la proxima vuelta"
+                fi
               fi
             else
               echo "sin cambios"
