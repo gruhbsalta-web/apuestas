@@ -35773,7 +35773,7 @@
       "local": "Sassuolo",
       "visitante": "Lazio",
       "fechaHora": "2026-10-27T14:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -35803,9 +35803,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "sassuolo-vs-lazio",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+5'",
+        "minuto": "45'",
         "ronda": "Fecha 9"
       }
     },
