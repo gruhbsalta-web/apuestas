@@ -35814,7 +35814,7 @@
       "local": "Torino",
       "visitante": "Como",
       "fechaHora": "2026-10-27T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -35827,14 +35827,14 @@
         },
         "corners": {
           "l": 2,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         }
       },
@@ -35844,9 +35844,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "torino-vs-como",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 9"
       }
     },
@@ -35855,7 +35855,7 @@
       "local": "AS Roma",
       "visitante": "Cagliari",
       "fechaHora": "2026-10-27T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -35885,9 +35885,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "as-roma-vs-cagliari",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "41'",
+        "minuto": "45'",
         "ronda": "Fecha 9"
       }
     },
