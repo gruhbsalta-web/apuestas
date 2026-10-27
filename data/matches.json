@@ -5955,24 +5955,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 2,
-          "v": 2
+          "v": 4
         },
         "corners": {
-          "l": 5,
+          "l": 12,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 3,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -5983,7 +5983,7 @@
         "gameUrlName": "instituto-ac-cordoba-vs-riestra",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "90+1'",
         "ronda": "Fecha 14"
       }
     },
