@@ -35778,7 +35778,7 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 4
+          "v": 5
         },
         "tarjetas": {
           "l": 1,
@@ -35790,10 +35790,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 4
+          "v": 6
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -35803,9 +35803,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "sassuolo-vs-lazio",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "56'",
         "ronda": "Fecha 9"
       }
     },
