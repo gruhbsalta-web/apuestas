@@ -2846,8 +2846,7 @@ if("serviceWorker" in navigator && (location.protocol === "https:" || location.h
 }
 
 // ---------- Partidos desde data/matches.json (lo actualiza solo el cron diario) ----------
-// Mezcla por id en vez de pisar: los partidos agregados a mano, las apuestas y las
-// atajadas cargadas a mano se conservan. Si ya marcaste un partido como terminado y
+// Mezcla por id en vez de pisar: los partidos agregados a mano y las apuestas se conservan. Si ya marcaste un partido como terminado y
 // el JSON todavía lo trae sin terminar, gana lo que vos cargaste.
 function mergeData(dataMatches){
   const byId = new Map(state.matches.map(m=>[m.id, m]));
@@ -2863,14 +2862,13 @@ function mergeData(dataMatches){
     }
     cur.source = dm.source;
     if(cur.finPartido && !dm.finPartido) return;
-    const atajadas = cur.stats && cur.stats.atajadas && (cur.stats.atajadas.l || cur.stats.atajadas.v)
-      ? cur.stats.atajadas : dm.stats.atajadas;
     cur.local = dm.local;
     cur.visitante = dm.visitante;
     cur.fechaHora = dm.fechaHora;
     cur.finPrimerTiempo = dm.finPrimerTiempo;
     cur.finPartido = dm.finPartido;
-    cur.stats = Object.assign({}, dm.stats, {atajadas});
+    // todo sale de los datos automáticos (las atajadas se recalculan en cada vuelta)
+    cur.stats = Object.assign({}, dm.stats);
   });
   return nuevos;
 }
