@@ -35786,7 +35786,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 2,
@@ -35805,7 +35805,7 @@
         "gameUrlName": "sassuolo-vs-lazio",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "74'",
+        "minuto": "85'",
         "ronda": "Fecha 9"
       }
     },
