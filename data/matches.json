@@ -35774,7 +35774,7 @@
       "visitante": "Lazio",
       "fechaHora": "2026-10-27T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -35785,7 +35785,7 @@
           "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tirosArco": {
@@ -35803,9 +35803,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "sassuolo-vs-lazio",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "86'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
