@@ -35826,16 +35826,16 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 4
         }
       },
       "source": {
@@ -35846,7 +35846,7 @@
         "gameUrlName": "torino-vs-como",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "47'",
+        "minuto": "59'",
         "ronda": "Fecha 9"
       }
     },
@@ -35868,14 +35868,14 @@
         },
         "corners": {
           "l": 6,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 5,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         }
       },
@@ -35887,7 +35887,7 @@
         "gameUrlName": "as-roma-vs-cagliari",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "53'",
+        "minuto": "65'",
         "ronda": "Fecha 9"
       }
     },
