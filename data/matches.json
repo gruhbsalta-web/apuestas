@@ -5913,10 +5913,10 @@
       "visitante": "Estudiantes de La Plata",
       "fechaHora": "2026-10-26T18:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tarjetas": {
@@ -5924,15 +5924,15 @@
           "v": 2
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 5
         },
         "tirosArco": {
-          "l": 5,
-          "v": 3
+          "l": 6,
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 3
         }
       },
@@ -5942,9 +5942,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "union-santa-fe-vs-estudiantes-de-la-plata",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+3'",
+        "statusShort": "Final",
         "ronda": "Fecha 14"
       }
     },
