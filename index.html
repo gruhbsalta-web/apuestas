@@ -931,7 +931,7 @@ let teamsData = {};
 let teamsLoaded = false;
 function loadTeams(){
   if(teamsLoaded) return Promise.resolve(teamsData);
-  return fetch('data/teams.json', {cache:'no-store'})
+  return fetchDato('data/teams.json')
     .then(r=> r.ok ? r.json() : {})
     .then(d=>{ teamsData = d || {}; teamsLoaded = true; return teamsData; })
     .catch(()=>{ teamsLoaded = true; return teamsData; });
@@ -1391,7 +1391,7 @@ let plantelOrden = {col:"min", desc:true};
 function loadPlayers(){
   if(playersData) return Promise.resolve(playersData);
   if(!playersLoading){
-    playersLoading = fetch('data/players.json', {cache:'no-store'})
+    playersLoading = fetchDato('data/players.json')
       .then(r=> r.ok ? r.json() : null)
       .then(d=>{ playersData = d; return d; })
       .catch(()=> null)
@@ -1783,7 +1783,7 @@ let tablasData = null;
 let tbPais = "Argentina", tbLiga = "hc", tbGrupo = 0;
 function loadTablas(){
   if(tablasData) return Promise.resolve(tablasData);
-  return fetch("data/tablas.json", {cache:"no-store"}).then(r=>r.ok ? r.json() : null).then(d=>{ tablasData = d; return d; }).catch(()=>null);
+  return fetchDato("data/tablas.json").then(r=>r.ok ? r.json() : null).then(d=>{ tablasData = d; return d; }).catch(()=>null);
 }
 // tendencia de Promiedos: 1 ganó, 2 empató, 0 perdió (de la más reciente a la más vieja)
 const TEND = {1:"G", 2:"E", 0:"P"};
@@ -2890,7 +2890,7 @@ function limpiarPartidosViejos(){
 }
 
 async function syncFromData(){
-  const resp = await fetch('data/matches.json', {cache:'no-store'});
+  const resp = await fetchDato('data/matches.json');
   if(!resp.ok) throw new Error('No se pudo leer data/matches.json');
   const data = await resp.json();
   if(!Array.isArray(data.matches)) throw new Error('El archivo no tiene partidos válidos');
@@ -2944,7 +2944,7 @@ let ultimaVista = null;
 const fmtHora = d => d.toLocaleTimeString("es-AR", {hour:"2-digit", minute:"2-digit", hour12:false});
 async function leerEstado(){
   try{
-    const r = await fetch("data/estado.json", {cache:"no-store"});
+    const r = await fetchDato("data/estado.json");
     if(!r.ok) return;
     const e = await r.json();
     if(!e || !e.ultima) return;
@@ -2984,7 +2984,7 @@ function pintarSync(){
       txt.textContent = `Actualizado ${fmtHora(ultima)} · próxima ${mismoDia ? "" : "mañana "}${fmtHora(prox)}`;
     } else {
       const mm = Math.floor(falta / 60), ss = String(falta % 60).padStart(2, "0");
-      txt.textContent = `Actualizado ${fmtHora(ultima)} · próxima en ${mm}:${ss}`;
+      txt.textContent = `Actualizado ${fmtHora(ultima)} · próxima en ${mm}:${ss}${estadoSync.vivo ? " · en vivo" : ""}`;
     }
   } else {
     // atrasada: amarillo mientras no se pierdan 3 vueltas seguidas (demora normal de GitHub);
@@ -3008,6 +3008,24 @@ function pintarSync(){
 // Necesita una llave (token) de GitHub con permiso solo de "Actions" sobre este
 // repositorio. Se guarda únicamente en este dispositivo (localStorage), nunca en el código.
 const LLAVE_KEY = "warriorGithubToken";
+// Lectura directa del repositorio: con la llave cargada, los datos se leen de GitHub
+// apenas el bucle los guarda, sin esperar a que se publique la página (~1 min).
+// Si la llave no tiene permiso de lectura (Contents), se usa la página publicada.
+let lecturaDirecta = true;
+async function fetchDato(ruta){
+  const llave = MODO_STATS ? "" : leerLlave();
+  if(llave && lecturaDirecta){
+    try{
+      const r = await fetch(`https://api.github.com/repos/gruhbsalta-web/apuestas/contents/${ruta}?ref=master&t=${Date.now()}`, {
+        cache:"no-store",
+        headers:{ "Authorization":"Bearer " + llave, "Accept":"application/vnd.github.raw+json", "X-GitHub-Api-Version":"2022-11-28" }
+      });
+      if(r.ok) return r;
+      if(r.status === 401 || r.status === 403 || r.status === 404) lecturaDirecta = false;
+    }catch(e){ /* sin red o bloqueado: se usa la página publicada */ }
+  }
+  return fetch(ruta, {cache:"no-store"});
+}
 const REPO_API = "https://api.github.com/repos/gruhbsalta-web/apuestas/actions/workflows/update-matches.yml/dispatches";
 let pedidoManual = null;
 function leerLlave(){ try{ return localStorage.getItem(LLAVE_KEY) || ""; }catch(e){ return ""; } }
@@ -3058,7 +3076,7 @@ function abrirConfigLlave(aviso){
       <li>Abrí <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener" style="color:var(--accent)">la página de llaves de GitHub</a> (con tu sesión iniciada).</li>
       <li>En <b>Token name</b> poné "Warrior". En <b>Expiration</b> elegí la duración que quieras (por ejemplo 1 año).</li>
       <li>En <b>Repository access</b> elegí <b>Only select repositories</b> y marcá <b>apuestas</b>.</li>
-      <li>En <b>Permissions</b>, buscá <b>Actions</b> y elegí <b>Read and write</b>. No hace falta ningún otro permiso.</li>
+      <li>En <b>Permissions</b>, buscá <b>Actions</b> y elegí <b>Read and write</b>. Buscá también <b>Contents</b> y elegí <b>Read-only</b> (para ver los datos apenas se guardan). No hace falta ningún otro permiso.</li>
       <li>Tocá <b>Generate token</b>, copiá la llave (empieza con <b>github_pat_</b>) y pegala acá abajo.</li>
     </ol>
     <label for="in-llave">Llave de GitHub</label>

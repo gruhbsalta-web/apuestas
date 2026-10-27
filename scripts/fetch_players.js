@@ -60,6 +60,16 @@ function matchRecord(ficha, league, country, fechaHora, ronda) {
 }
 const DELAY_MS = Number(process.env.PROMIEDOS_DELAY_MS || 150);
 const DAYS_AHEAD = Number(process.env.PROMIEDOS_DAYS_AHEAD || 2);
+// RAPIDO=1: vuelta liviana mientras hay partidos en juego (la pone el bucle)
+const RAPIDO = process.env.RAPIDO === '1';
+// En juego, o desde 1 h antes del inicio (cuando sale la formación) hasta 2 h 30 después
+function enVentana(game, fechaHora) {
+  if (game?.status?.enum === 2) return true;
+  if (!fechaHora) return false;
+  const inicio = new Date(`${fechaHora}:00-03:00`).getTime();
+  const ahora = Date.now();
+  return ahora >= inicio - 60 * 60 * 1000 && ahora <= inicio + 150 * 60 * 1000;
+}
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -213,7 +223,7 @@ async function run() {
   }
   out.version = DATA_VERSION;
   // Barrido completo de todas las fechas: si nunca se hizo, o si el último no fue hoy
-  const barridoCompleto = !Object.keys(out.partidos || {}).length || out.barridoCompleto !== todayInArgentina() || process.env.BARRIDO_COMPLETO === '1';
+  const barridoCompleto = !Object.keys(out.partidos || {}).length || (!RAPIDO && out.barridoCompleto !== todayInArgentina()) || process.env.BARRIDO_COMPLETO === '1';
   const html = await getText(`${SITE}/league/primera-nacional/ebj`);
   const buildId = (html.match(/"buildId":"([^"]+)"/) || [])[1];
   if (!buildId) throw new Error('No se pudo resolver el buildId de Promiedos');
@@ -261,6 +271,14 @@ async function run() {
         const proximo = !terminado && diffDays != null && diffDays >= 0 && diffDays <= DAYS_AHEAD;
         if (terminado && out.partidos[game.id]) continue;
         if (!terminado && !proximo) continue;
+        // Vuelta rápida (hay partidos en juego): solo se bajan las fichas de los
+        // partidos en juego o por empezar; el resto conserva lo de la vuelta anterior.
+        if (RAPIDO && proximo && !enVentana(game, fechaHora)) {
+          const clave = `promiedos_${game.id}`;
+          if (out.ausentes && out.ausentes[clave]) ausentesNuevos[clave] = out.ausentes[clave];
+          if (out.alineaciones && out.alineaciones[clave]) alineacionesNuevas[clave] = out.alineaciones[clave];
+          continue;
+        }
 
         const url = `${SITE}/_next/data/${buildId}/game/${encodeURIComponent(game.url_name)}/${game.id}.json`;
         let ficha;

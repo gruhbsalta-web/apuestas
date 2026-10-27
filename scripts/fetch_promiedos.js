@@ -300,7 +300,8 @@ async function run() {
 
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
   // Tablas de posiciones (Liga Profesional, Primera Nacional y las ligas europeas)
-  try {
+  // En la vuelta rápida (partidos en juego) las tablas se dejan para la vuelta completa
+  if (process.env.RAPIDO !== '1') try {
     const slugs = Object.fromEntries(leagues.filter((l) => l.url_name).map((l) => [l.id, l.url_name]));
     if (await actualizarTablas(getJson, SITE, buildId, collectTeams, EQUIPOS, slugs)) console.log('tablas.json actualizado.');
   } catch (err) {
