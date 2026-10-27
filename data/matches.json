@@ -35815,11 +35815,11 @@
       "visitante": "Como",
       "fechaHora": "2026-10-27T16:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
           "l": 1,
@@ -35831,7 +35831,7 @@
         },
         "tirosArco": {
           "l": 5,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
           "l": 2,
@@ -35844,9 +35844,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "torino-vs-como",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
