@@ -199,7 +199,7 @@ async function fetchLeagueGames(league, today) {
     const data = await getJson(url);
     const games = Array.isArray(data?.games) ? data.games : [];
     if (!CONVERTIR && games.length) {
-      const cal = await calibrarApi(games[0], getJson, SITE, BUILD_ID);
+      const cal = await calibrarApi(games[0], getJson, SITE, BUILD_ID, league.id);
       if (cal) {
         CONVERTIR = cal.convertir;
         console.log(`Horarios calibrados: zona ${cal.tz}, ajuste API ${cal.delta} min`);

@@ -253,7 +253,7 @@ async function run() {
       const games = Array.isArray(data?.games) ? data.games : [];
       collectTeams(games, equipos);
       if (!convertirApi && games.length) {
-        const cal = await calibrarApi(games[0], getJson, SITE, buildId);
+        const cal = await calibrarApi(games[0], getJson, SITE, buildId, league.id);
         if (cal) {
           convertirApi = cal.convertir;
           console.log(`Horarios calibrados: zona ${cal.tz}, ajuste API ${cal.delta} min`);

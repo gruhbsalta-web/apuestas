@@ -79,22 +79,87 @@ function shiftMinutes(fechaHora, mins) {
   return d.toISOString().slice(0, 16);
 }
 
+// Zona horaria verificada contra ESPN (ver verificarZona). Si esta, manda sobre la
+// que se deduce de countryId/regionId, que a veces no coincide con la que usa Promiedos.
+let ZONA_VERIFICADA = null;
+
 // Hora argentina de una ficha de partido (_next/data/.../game/...json):
 // usa el start_time y la geolocalizacion de la MISMA respuesta, asi siempre coinciden.
 function fichaHoraArgentina(fichaJson) {
   const game = fichaJson?.pageProps?.initialData?.game;
-  return toArgentina(parseStartTime(game?.start_time), timezoneFromNextData(fichaJson));
+  return toArgentina(parseStartTime(game?.start_time), ZONA_VERIFICADA || timezoneFromNextData(fichaJson));
+}
+
+// ---- Verificacion con ESPN ----
+// Promiedos no dice en que zona da los horarios, y deducirla de la ubicacion del
+// servidor fallaba por una hora segun el servidor que tocara. ESPN da el horario
+// en UTC: se busca el mismo partido y se mide el corrimiento real.
+const ESPN_LIGA = { hc: 'arg.1', ebj: 'arg.2', gea: 'arg.copa', h: 'eng.1', bb: 'esp.1', bh: 'ita.1' };
+const ZONAS_CANDIDATAS = ['America/New_York', 'America/Chicago', 'America/Denver', 'America/Phoenix',
+  'America/Los_Angeles', 'America/Anchorage', 'Pacific/Honolulu', AR_TZ, 'Europe/London', 'Europe/Dublin',
+  'Europe/Amsterdam', 'Europe/Madrid', 'Asia/Singapore', 'Asia/Tokyo', 'Australia/Sydney', 'Asia/Kolkata', 'UTC'];
+
+function palabras(nombre) {
+  return String(nombre || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+    .replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length >= 4 && !['club', 'atletico', 'deportivo', 'united', 'city'].includes(w));
+}
+function mismoEquipo(a, b) {
+  const pa = palabras(a); const pb = palabras(b);
+  return pa.some((w) => pb.includes(w));
+}
+
+// wallSrc: "YYYY-MM-DDTHH:mm" en la zona de Promiedos. Devuelve la zona que explica
+// la diferencia con ESPN, o null si no se pudo verificar.
+async function verificarZona(leagueId, local, visitante, wallSrc, zonaSupuesta) {
+  const liga = ESPN_LIGA[leagueId];
+  if (!liga || !wallSrc || typeof fetch !== 'function') return null;
+  const wall = Date.UTC(+wallSrc.slice(0, 4), +wallSrc.slice(5, 7) - 1, +wallSrc.slice(8, 10), +wallSrc.slice(11, 13), +wallSrc.slice(14, 16));
+  const dias = [0, 1, -1].map((d) => new Date(wall + d * 86400000).toISOString().slice(0, 10).replace(/-/g, ''));
+  for (const dia of dias) {
+    try {
+      const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/soccer/${liga}/scoreboard?dates=${dia}`);
+      if (!r.ok) continue;
+      const data = await r.json();
+      for (const ev of data.events || []) {
+        const comp = ev?.competitions?.[0]?.competitors || [];
+        const casa = comp.find((c) => c.homeAway === 'home')?.team?.displayName;
+        const fuera = comp.find((c) => c.homeAway === 'away')?.team?.displayName;
+        if (!casa || !fuera || !mismoEquipo(local, casa) || !mismoEquipo(visitante, fuera)) continue;
+        const utc = Date.parse(ev.date);
+        if (Number.isNaN(utc)) continue;
+        const medido = Math.round((wall - utc) / 60000); // minutos de la zona de Promiedos respecto de UTC
+        if (Math.abs(medido) > 14 * 60) return null;
+        const orden = zonaSupuesta ? [zonaSupuesta, ...ZONAS_CANDIDATAS] : ZONAS_CANDIDATAS;
+        const zona = orden.find((tz) => tzOffsetMinutes(tz, utc) === medido);
+        if (zona) return zona;
+        const h = -medido / 60; // Etc/GMT tiene el signo invertido
+        return Number.isInteger(h) ? `Etc/GMT${h >= 0 ? '+' : ''}${h}` : null;
+      }
+    } catch (e) { /* sin ESPN: se usa la zona deducida */ }
+  }
+  return null;
 }
 
 // La API (api.promiedos.com.ar) y las paginas pueden geolocalizar distinto,
 // asi que se calibra: se compara un partido de la API contra su ficha y se
 // devuelve un conversor de horarios de la API a hora argentina.
-async function calibrarApi(apiGame, getJson, site, buildId) {
+async function calibrarApi(apiGame, getJson, site, buildId, leagueId) {
   const url = `${site}/_next/data/${buildId}/game/${encodeURIComponent(apiGame.url_name)}/${apiGame.id}.json`;
   const ficha = await getJson(url);
-  const enFicha = parseStartTime(ficha?.pageProps?.initialData?.game?.start_time);
+  const juego = ficha?.pageProps?.initialData?.game;
+  const enFicha = parseStartTime(juego?.start_time);
   const enApi = parseStartTime(apiGame.start_time);
-  const tz = timezoneFromNextData(ficha);
+  const supuesta = timezoneFromNextData(ficha);
+  const local = juego?.teams?.[0]?.name || apiGame?.teams?.[0]?.name;
+  const visitante = juego?.teams?.[1]?.name || apiGame?.teams?.[1]?.name;
+  const verificada = await verificarZona(leagueId || juego?.league?.id, local, visitante, enFicha, supuesta);
+  if (verificada) {
+    ZONA_VERIFICADA = verificada;
+    if (verificada !== supuesta) console.log(`Zona horaria corregida con ESPN: ${supuesta} -> ${verificada} (${local} - ${visitante})`);
+  } else {
+    console.warn(`No se pudo verificar la zona horaria con ESPN (${local} - ${visitante}); se usa ${supuesta}`);
+  }
+  const tz = ZONA_VERIFICADA || supuesta;
   if (!enFicha || !enApi || !tz) return null;
   const delta = minutesBetween(enApi, enFicha); // minutos a sumar a la hora de la API para llevarla a la zona de la ficha
   return { tz, delta, convertir: (fechaHora) => toArgentina(shiftMinutes(fechaHora, delta), tz) };
