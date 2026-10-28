@@ -36004,9 +36004,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "venezia-vs-inter-milan",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 9"
       }
     },
@@ -36045,9 +36045,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "parma-vs-udinese",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 9"
       }
     },
@@ -36073,10 +36073,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -36086,9 +36086,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "ac-milan-vs-bologna",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 9"
       }
     },
