@@ -36004,9 +36004,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "venezia-vs-inter-milan",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": "Fecha 9"
       }
     },
@@ -36045,9 +36045,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "parma-vs-udinese",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": "Fecha 9"
       }
     },
@@ -36086,7 +36086,7 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "ac-milan-vs-bologna",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Fecha 9"
