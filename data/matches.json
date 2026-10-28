@@ -35979,7 +35979,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
@@ -35987,14 +35987,14 @@
         },
         "corners": {
           "l": 1,
-          "v": 5
+          "v": 6
         },
         "tirosArco": {
           "l": 3,
           "v": 2
         },
         "atajadas": {
-          "l": 2,
+          "l": 0,
           "v": 3
         }
       },
@@ -36006,7 +36006,7 @@
         "gameUrlName": "venezia-vs-inter-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "78'",
+        "minuto": "90'",
         "ronda": "Fecha 9"
       }
     },
@@ -36023,8 +36023,8 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         },
         "corners": {
           "l": 3,
@@ -36032,10 +36032,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
-          "l": 4,
+          "l": 5,
           "v": 2
         }
       },
@@ -36047,7 +36047,7 @@
         "gameUrlName": "parma-vs-udinese",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "77'",
+        "minuto": "90'",
         "ronda": "Fecha 9"
       }
     },
@@ -36061,11 +36061,11 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 3
+          "v": 4
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 1,
@@ -36073,7 +36073,7 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
           "l": 1,
@@ -36088,7 +36088,7 @@
         "gameUrlName": "ac-milan-vs-bologna",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "75'",
+        "minuto": "88'",
         "ronda": "Fecha 9"
       }
     },
