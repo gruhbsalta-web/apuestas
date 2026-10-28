@@ -35975,7 +35975,7 @@
       "visitante": "Inter Milan",
       "fechaHora": "2026-10-28T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -35986,16 +35986,16 @@
           "v": 2
         },
         "corners": {
-          "l": 1,
+          "l": 3,
           "v": 6
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -36004,9 +36004,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "venezia-vs-inter-milan",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
@@ -36016,7 +36016,7 @@
       "visitante": "Udinese",
       "fechaHora": "2026-10-28T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -36045,9 +36045,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "parma-vs-udinese",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
@@ -36057,7 +36057,7 @@
       "visitante": "Bologna",
       "fechaHora": "2026-10-28T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -36068,16 +36068,16 @@
           "v": 2
         },
         "corners": {
-          "l": 1,
-          "v": 2
+          "l": 2,
+          "v": 3
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 5
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -36086,9 +36086,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "ac-milan-vs-bologna",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "88'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
