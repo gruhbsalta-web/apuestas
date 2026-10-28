@@ -36006,7 +36006,7 @@
         "gameUrlName": "venezia-vs-inter-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "66'",
+        "minuto": "78'",
         "ronda": "Fecha 9"
       }
     },
@@ -36028,7 +36028,7 @@
         },
         "corners": {
           "l": 3,
-          "v": 5
+          "v": 6
         },
         "tirosArco": {
           "l": 2,
@@ -36047,7 +36047,7 @@
         "gameUrlName": "parma-vs-udinese",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "65'",
+        "minuto": "77'",
         "ronda": "Fecha 9"
       }
     },
@@ -36065,7 +36065,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 1,
@@ -36088,7 +36088,7 @@
         "gameUrlName": "ac-milan-vs-bologna",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "63'",
+        "minuto": "75'",
         "ronda": "Fecha 9"
       }
     },
