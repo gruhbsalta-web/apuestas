@@ -36105,7 +36105,7 @@
           "v": 4
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "corners": {
@@ -36129,7 +36129,7 @@
         "gameUrlName": "monza-vs-napoli",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "78'",
+        "minuto": "90'",
         "ronda": "Fecha 9"
       }
     },
@@ -36170,7 +36170,7 @@
         "gameUrlName": "genoa-vs-juventus",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "78'",
+        "minuto": "90'",
         "ronda": "Fecha 9"
       }
     },
