@@ -36097,11 +36097,11 @@
       "local": "Monza",
       "visitante": "Napoli",
       "fechaHora": "2026-10-28T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
@@ -36110,10 +36110,10 @@
         },
         "corners": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
@@ -36127,9 +36127,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "monza-vs-napoli",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "37'",
+        "minuto": "45'",
         "ronda": "Fecha 9"
       }
     },
@@ -36138,7 +36138,7 @@
       "local": "Genoa",
       "visitante": "Juventus",
       "fechaHora": "2026-10-28T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -36168,9 +36168,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "genoa-vs-juventus",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "37'",
+        "minuto": "45'",
         "ronda": "Fecha 9"
       }
     },
