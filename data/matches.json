@@ -36109,16 +36109,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 3,
           "v": 1
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 3
         }
       },
       "source": {
@@ -36129,7 +36129,7 @@
         "gameUrlName": "monza-vs-napoli",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "19'",
+        "minuto": "31'",
         "ronda": "Fecha 9"
       }
     },
@@ -36142,7 +36142,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -36151,14 +36151,14 @@
         },
         "corners": {
           "l": 4,
-          "v": 2
+          "v": 6
         },
         "tirosArco": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -36170,7 +36170,7 @@
         "gameUrlName": "genoa-vs-juventus",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "19'",
+        "minuto": "31'",
         "ronda": "Fecha 9"
       }
     },
