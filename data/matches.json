@@ -36127,9 +36127,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "monza-vs-napoli",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "1'",
         "ronda": "Fecha 9"
       }
     },
@@ -36168,9 +36168,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "genoa-vs-juventus",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "1'",
         "ronda": "Fecha 9"
       }
     },
