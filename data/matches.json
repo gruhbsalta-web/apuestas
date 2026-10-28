@@ -36114,10 +36114,10 @@
         },
         "tirosArco": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 3
         }
       },
@@ -36129,7 +36129,7 @@
         "gameUrlName": "monza-vs-napoli",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "31'",
+        "minuto": "37'",
         "ronda": "Fecha 9"
       }
     },
@@ -36170,7 +36170,7 @@
         "gameUrlName": "genoa-vs-juventus",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "31'",
+        "minuto": "37'",
         "ronda": "Fecha 9"
       }
     },
