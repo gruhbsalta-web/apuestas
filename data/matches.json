@@ -36191,16 +36191,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -36209,9 +36209,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "frosinone-vs-lecce",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 9"
       }
     },
