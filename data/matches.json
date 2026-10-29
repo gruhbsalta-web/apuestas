@@ -35937,8 +35937,8 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
-          "v": 0
+          "l": 4,
+          "v": 3
         },
         "tarjetas": {
           "l": 3,
@@ -35953,7 +35953,7 @@
           "v": 2
         },
         "atajadas": {
-          "l": 2,
+          "l": 0,
           "v": 0
         }
       },
