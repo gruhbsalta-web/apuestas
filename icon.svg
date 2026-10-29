@@ -1,4 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="22" fill="#22c55e"/>
-  <text x="50" y="68" font-size="55" text-anchor="middle">⚽</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17463A"/>
+      <stop offset="1" stop-color="#0B2119"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#g)"/>
+  <g fill="none" stroke="#2A5E50" stroke-width="10" opacity=".9">
+    <circle cx="256" cy="256" r="150"/>
+    <line x1="0" y1="256" x2="512" y2="256"/>
+  </g>
+  <circle cx="256" cy="256" r="12" fill="#2A5E50"/>
+  <g fill="#F4F1E8">
+    <rect x="166" y="120" width="62" height="272" rx="6"/>
+    <rect x="166" y="120" width="190" height="58" rx="6"/>
+    <rect x="166" y="232" width="146" height="54" rx="6"/>
+  </g>
+  <circle cx="338" cy="356" r="36" fill="#F2C94C"/>
 </svg>

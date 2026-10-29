@@ -1,5 +1,5 @@
-const CACHE_NAME = "apuestas-futbol-v35";
-const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg"];
+const CACHE_NAME = "apuestas-futbol-v36";
+const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
