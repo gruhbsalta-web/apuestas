@@ -36191,16 +36191,16 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
-          "v": 0
+          "l": 4,
+          "v": 2
         },
         "tirosArco": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 1
+          "l": 2,
+          "v": 2
         }
       },
       "source": {
@@ -36211,7 +36211,7 @@
         "gameUrlName": "frosinone-vs-lecce",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "19'",
+        "minuto": "25'",
         "ronda": "Fecha 9"
       }
     },
