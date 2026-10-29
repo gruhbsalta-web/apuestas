@@ -3326,7 +3326,8 @@ function puntosDe(pr, m){
   if(a){ pts += a * PRODE_PTS.asistente; det.push(a === 1 ? "1 asistencia" : `${a} asistencias`); }
   if(pr.pg && m.primerGol !== undefined && pr.pg === m.primerGol){ pts += PRODE_PTS.primerGol; det.push("1er gol"); }
   if(pr.ht && Array.isArray(m.ht) && pr.ht === `${m.ht[0]}-${m.ht[1]}`){ pts += PRODE_PTS.primerTiempo; det.push("1er tiempo"); }
-  if(pr.roja != null && m.rojas != null && (m.rojas > 0) === pr.roja){ pts += PRODE_PTS.roja; det.push(pr.roja ? "roja" : "sin rojas"); }
+  // solo paga si dijiste que hay roja y la hubo (una o más: suma 1)
+  if(pr.roja === true && m.rojas != null && m.rojas > 0){ pts += PRODE_PTS.roja; det.push("roja"); }
   return {pts, det, extras: g + a};
 }
 
@@ -3395,13 +3396,13 @@ function masHtml(m, l, v, mas){
   }
   const ht = `<select class="pr-mini sin-picker" data-k="ht" aria-label="Primer tiempo"><option value="">1er tiempo</option>${ops}</select>`;
   const roja = `<select class="pr-mini sin-picker" data-k="roja" aria-label="Tarjeta roja"><option value="">Roja</option>
-      <option value="si" ${mas.roja === true ? "selected" : ""}>Hay roja</option><option value="no" ${mas.roja === false ? "selected" : ""}>Sin rojas</option></select>`;
+      <option value="si" ${mas.roja === true ? "selected" : ""}>🟥 Hay roja</option></select>`;
   return `<div class="pr-mas">${pg}${ht}${roja}</div>`;
 }
 function leerMas(div){
   const val = k=>{ const e = div.querySelector(`.pr-mini[data-k="${k}"]`); return e ? e.value : ""; };
   const r = val("roja");
-  return {pg: val("pg") || null, ht: val("ht") || null, roja: r === "si" ? true : r === "no" ? false : null};
+  return {pg: val("pg") || null, ht: val("ht") || null, roja: r === "si" ? true : null};
 }
 function extraHtml(m, l, v, gol, asi, mas){
   const bloque = (equipo, n)=>{
@@ -3436,7 +3437,7 @@ function textoPron(pr){
   const resumen = arr=>{ const c = {}; listaJug(arr).forEach(n=>{ c[n] = (c[n] || 0) + 1; }); return Object.entries(c).map(([n,k])=> k > 1 ? `${n} ×${k}` : n).join(", "); };
   const g = resumen(pr.gol), a = resumen(pr.asi);
   const pgT = pr.pg === "l" ? "1er gol local" : pr.pg === "v" ? "1er gol visitante" : "";
-  return [r, g ? "⚽ " + g : "", a ? "👟 " + a : "", pgT, pr.ht ? "PT " + pr.ht : "", pr.roja === true ? "🟥 hay roja" : pr.roja === false ? "sin rojas" : ""].filter(Boolean).join(" · ");
+  return [r, g ? "⚽ " + g : "", a ? "👟 " + a : "", pgT, pr.ht ? "PT " + pr.ht : "", pr.roja === true ? "🟥 hay roja" : ""].filter(Boolean).join(" · ");
 }
 
 async function renderProde(){
@@ -3471,7 +3472,7 @@ async function renderProde(){
         <input id="pr-pin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="${crear ? "new-password" : "current-password"}" placeholder="4 números" value="${escH(f.pin)}">
         <button class="primary" id="pr-ok">${crear ? "Crear usuario" : "Entrar"}</button>
         <div class="btn-row"><button class="btn-save" id="pr-cambiar">${crear ? "Ya tengo usuario: entrar" : "Soy nuevo: crear usuario"}</button></div>
-        <p class="bet-sub" style="margin-top:12px">Puntos: ${PRODE_PTS.exacto} por resultado exacto, ${PRODE_PTS.ganador} por acertar ganador o empate, +${PRODE_PTS.goleador} por cada gol que acertás de un jugador, +${PRODE_PTS.asistente} por cada asistencia, y +1 por acertar primer gol, resultado del primer tiempo y si hay roja.</p>
+        <p class="bet-sub" style="margin-top:12px">Puntos: ${PRODE_PTS.exacto} por resultado exacto, ${PRODE_PTS.ganador} por acertar ganador o empate, +${PRODE_PTS.goleador} por cada gol que acertás de un jugador, +${PRODE_PTS.asistente} por cada asistencia, y +1 por acertar primer gol, resultado del primer tiempo o que hay roja (una o más).</p>
       </div>`;
     const leer = ()=>{
       prode.form = {nombre: cont.querySelector("#pr-nombre").value.trim(), pin: cont.querySelector("#pr-pin").value.trim()};
@@ -3554,7 +3555,7 @@ async function renderProde(){
       <p class="h2h-note">Cuentan los partidos jugados desde que se creó el torneo (${escH(t.desde || "")}).</p>
     </div>`}
     <div class="team-stats-heading" style="margin-top:6px">Mis pronósticos</div>
-    <p class="bet-sub" style="margin:-4px 0 10px">Valen para todos tus torneos y se pueden cambiar hasta 5 minutos antes de cada partido. Puntos: ${PRODE_PTS.exacto} exacto, ${PRODE_PTS.ganador} ganador o empate, +${PRODE_PTS.goleador} por cada gol acertado de un jugador, +${PRODE_PTS.asistente} por cada asistencia, +1 primer gol, +1 primer tiempo exacto, +1 roja sí/no. Todo lo extra es opcional; repetí un jugador para darle más de un gol.</p>
+    <p class="bet-sub" style="margin:-4px 0 10px">Valen para todos tus torneos y se pueden cambiar hasta 5 minutos antes de cada partido. Puntos: ${PRODE_PTS.exacto} exacto, ${PRODE_PTS.ganador} ganador o empate, +${PRODE_PTS.goleador} por cada gol acertado de un jugador, +${PRODE_PTS.asistente} por cada asistencia, +1 primer gol, +1 primer tiempo exacto, +1 si decís que hay roja y la hay. Todo lo extra es opcional; repetí un jugador para darle más de un gol.</p>
     <div class="chips" id="pr-rondas">${rondas.map(r=>`<button class="chip ${r === prode.ronda ? "active" : ""}" data-r="${escH(r)}">${escH(r)}</button>`).join("")}</div>
     ${!deRonda.length ? '<div class="empty">Todavía no hay partidos cargados. Aparecen solos con la próxima actualización.</div>' : ""}
     <div id="pr-lista">${deRonda.map(m=>filaPron(m, t)).join("")}</div>
