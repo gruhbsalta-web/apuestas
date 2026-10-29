@@ -371,8 +371,9 @@ async function run() {
         // Prode: quién hizo los goles y quién asistió (puntos extra por acertarlos)
         if (league.id === 'hc') {
           detallesProde.set(`promiedos_${game.id}`, {
-            goleadores: [...new Set(lines.filter((l) => l.goles > 0).map((l) => l.nombre))],
-            asistentes: [...new Set(lines.filter((l) => l.asist > 0).map((l) => l.nombre))]
+            // {jugador: cantidad}: en el prode cada gol/asistencia acertada suma
+            goleadores: Object.fromEntries(lines.filter((l) => l.goles > 0).map((l) => [l.nombre, l.goles])),
+            asistentes: Object.fromEntries(lines.filter((l) => l.asist > 0).map((l) => [l.nombre, l.asist]))
           });
         }
         addCoaches(out, league, coachesFromGame(ficha));

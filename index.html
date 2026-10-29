@@ -330,6 +330,11 @@
   .pr-guion{color:var(--muted);}
   .pr-res{font-family:var(--ff-num);font-size:22px;font-weight:700;padding:0 6px;}
   .pr-extra{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:10px;}
+  .pr-extras{margin-top:6px;}
+  .pr-bloque{margin-top:8px;}
+  .pr-bloque-t{font-size:12px;color:var(--muted);font-weight:600;margin-bottom:4px;}
+  .pr-bloque .pr-extra{margin-top:0;}
+  .pr-ayuda{font-size:12px;color:var(--muted);margin-top:6px;}
   .pr-sel{padding:9px 8px;font-size:13px;min-width:0;width:100%;text-overflow:ellipsis;}
   .pr-mio{font-size:13px;color:var(--muted);margin-top:8px;}
   .pr-pts{color:var(--accent);}
@@ -3242,8 +3247,22 @@ async function cargarDatosUsuario(){
 // dejan escribir después del inicio. Además, al sumar puntos se descarta cualquier
 // pronóstico guardado después del inicio real (hora del servidor vs. fixture).
 function normPick(d){
-  return {matchId: d.matchId, l: d.l ?? null, v: d.v ?? null, gol: d.gol || null, asi: d.asi || null,
+  return {matchId: d.matchId, l: d.l ?? null, v: d.v ?? null, gol: listaJug(d.gol), asi: listaJug(d.asi),
     t: d.t && d.t.toMillis ? d.t.toMillis() : (typeof d.t === "number" ? d.t : null)};
+}
+// goleadores/asistentes elegidos: lista de nombres (repetido = más de un gol)
+function listaJug(x){ return Array.isArray(x) ? x.filter(Boolean) : (x ? [x] : []); }
+// real: {nombre: cantidad} (o lista vieja de nombres = 1 cada uno)
+function cuentaReal(x){
+  const c = {};
+  if(Array.isArray(x)) x.forEach(n=>{ c[normP(n)] = (c[normP(n)] || 0) + 1; });
+  else if(x) Object.entries(x).forEach(([n, k])=>{ c[normP(n)] = (c[normP(n)] || 0) + Number(k || 0); });
+  return c;
+}
+function aciertosJug(elegidos, real){
+  const pred = {}; listaJug(elegidos).forEach(n=>{ pred[normP(n)] = (pred[normP(n)] || 0) + 1; });
+  const r = cuentaReal(real);
+  return Object.entries(pred).reduce((a, [k, n])=> a + Math.min(n, r[k] || 0), 0);
 }
 const PICKS_KEY = "laFijaPicks";
 function leerCachePicks(){ try{ return JSON.parse(localStorage.getItem(PICKS_KEY) || "{}"); }catch(e){ return {}; } }
@@ -3289,9 +3308,10 @@ function puntosDe(pr, m){
     if(pr.l === gl && pr.v === gv){ pts += PRODE_PTS.exacto; det.push("exacto"); }
     else if(Math.sign(pr.l - pr.v) === Math.sign(gl - gv)){ pts += PRODE_PTS.ganador; det.push(gl === gv ? "empate" : "ganador"); }
   }
-  if(pr.gol && (m.goleadores || []).some(n=>normP(n) === normP(pr.gol))){ pts += PRODE_PTS.goleador; det.push("goleador"); }
-  if(pr.asi && (m.asistentes || []).some(n=>normP(n) === normP(pr.asi))){ pts += PRODE_PTS.asistente; det.push("asistente"); }
-  return {pts, det};
+  const g = aciertosJug(pr.gol, m.goleadores), a = aciertosJug(pr.asi, m.asistentes);
+  if(g){ pts += g * PRODE_PTS.goleador; det.push(g === 1 ? "1 gol" : `${g} goles`); }
+  if(a){ pts += a * PRODE_PTS.asistente; det.push(a === 1 ? "1 asistencia" : `${a} asistencias`); }
+  return {pts, det, extras: g + a};
 }
 
 function rankingTorneo(t){
@@ -3305,7 +3325,7 @@ function rankingTorneo(t){
       pts += r.pts;
       if(r.det.includes("exacto")) exactos++;
       if(r.det.includes("exacto") || r.det.includes("ganador") || r.det.includes("empate")) aciertos++;
-      if(r.det.includes("goleador") || r.det.includes("asistente")) extras++;
+      extras += r.extras || 0;
     });
     return {uid, nombre: mb.nombre, pts, exactos, aciertos, extras};
   }).sort((a,b)=> b.pts - a.pts || b.exactos - a.exactos || a.nombre.localeCompare(b.nombre));
@@ -3322,19 +3342,45 @@ function jugadoresDe(m, equipo){
     .sort((a,b)=> (b.goles - a.goles) || (b.asist - a.asist) || (b.min - a.min))
     .map(p=>p.nombre);
 }
-function selectJugador(m, k, actual){
-  const grupo = eq=>{
-    const lista = jugadoresDe(m, eq);
-    return lista.length ? `<optgroup label="${escH(eq)}">${lista.map(n=>`<option value="${escH(n)}" ${normP(n) === normP(actual) ? "selected" : ""}>${escH(n)}</option>`).join("")}</optgroup>` : "";
+// Goleadores y asistentes coherentes con el resultado: tantos lugares como goles
+// pronosticados para cada equipo, solo con jugadores de ese equipo. Repetir un
+// jugador = le asignás más de un gol (o asistencia). Todo es opcional.
+const MAX_SLOTS = 6;
+function selectJugador(m, equipo, k, actual){
+  const lista = jugadoresDe(m, equipo);
+  const vacio = k === "gol" ? "⚽ Goleador (opcional)" : "👟 Asistente (opcional)";
+  return `<select class="pr-sel" data-k="${k}" data-eq="${escH(equipo)}"><option value="">${vacio}</option>${lista.map(n=>`<option value="${escH(n)}" ${actual && normP(n) === normP(actual) ? "selected" : ""}>${escH(n)}</option>`).join("")}</select>`;
+}
+function extraHtml(m, l, v, gol, asi){
+  const bloque = (equipo, n)=>{
+    if(!n) return "";
+    n = Math.min(n, MAX_SLOTS);
+    const jug = new Set(jugadoresDe(m, equipo).map(normP));
+    const golEq = listaJug(gol).filter(x=>jug.has(normP(x)));
+    const asiEq = listaJug(asi).filter(x=>jug.has(normP(x)));
+    let html = `<div class="pr-bloque"><div class="pr-bloque-t">${escH(equipo)}: ${n === 1 ? "1 gol" : n + " goles"}</div><div class="pr-extra">`;
+    for(let i = 0; i < n; i++) html += selectJugador(m, equipo, "gol", golEq[i]) + selectJugador(m, equipo, "asi", asiEq[i]);
+    return html + "</div></div>";
   };
-  const ninguno = k === "gol" ? "⚽ Goleador" : "👟 Asistente";
-  return `<select class="pr-sel" data-id="${m.id}" data-k="${k}"><option value="">${ninguno}</option>${grupo(m.local)}${grupo(m.visitante)}</select>`;
+  const txt = (l == null || v == null) ? '<div class="pr-ayuda">Poné el resultado para elegir goleadores y asistentes (opcional).</div>' : "";
+  return txt + bloque(m.local, l) + bloque(m.visitante, v);
+}
+function leerExtra(div){
+  const gol = [], asi = [];
+  div.querySelectorAll('.pr-sel').forEach(s=>{ if(s.value) (s.dataset.k === "gol" ? gol : asi).push(s.value); });
+  return {gol, asi};
+}
+function golesInput(div){
+  const l = div.querySelector('[data-k="l"]').value.trim(), v = div.querySelector('[data-k="v"]').value.trim();
+  return {l: /^\d{1,2}$/.test(l) ? Number(l) : null, v: /^\d{1,2}$/.test(v) ? Number(v) : null};
 }
 
 function textoPron(pr){
   if(!pr) return "Sin pronóstico";
   const r = pr.l != null && pr.v != null ? `${pr.l}-${pr.v}` : "—";
-  return [r, pr.gol ? "⚽ " + pr.gol : "", pr.asi ? "👟 " + pr.asi : ""].filter(Boolean).join(" · ");
+  const resumen = arr=>{ const c = {}; listaJug(arr).forEach(n=>{ c[n] = (c[n] || 0) + 1; }); return Object.entries(c).map(([n,k])=> k > 1 ? `${n} ×${k}` : n).join(", "); };
+  const g = resumen(pr.gol), a = resumen(pr.asi);
+  return [r, g ? "⚽ " + g : "", a ? "👟 " + a : ""].filter(Boolean).join(" · ");
 }
 
 async function renderProde(){
@@ -3369,7 +3415,7 @@ async function renderProde(){
         <input id="pr-pin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="${crear ? "new-password" : "current-password"}" placeholder="4 números" value="${escH(f.pin)}">
         <button class="primary" id="pr-ok">${crear ? "Crear usuario" : "Entrar"}</button>
         <div class="btn-row"><button class="btn-save" id="pr-cambiar">${crear ? "Ya tengo usuario: entrar" : "Soy nuevo: crear usuario"}</button></div>
-        <p class="bet-sub" style="margin-top:12px">Puntos: ${PRODE_PTS.exacto} por resultado exacto, ${PRODE_PTS.ganador} por acertar ganador o empate, +${PRODE_PTS.goleador} si acertás un goleador y +${PRODE_PTS.asistente} si acertás un asistente.</p>
+        <p class="bet-sub" style="margin-top:12px">Puntos: ${PRODE_PTS.exacto} por resultado exacto, ${PRODE_PTS.ganador} por acertar ganador o empate, +${PRODE_PTS.goleador} por cada gol que acertás de un jugador y +${PRODE_PTS.asistente} por cada asistencia.</p>
       </div>`;
     const leer = ()=>{
       prode.form = {nombre: cont.querySelector("#pr-nombre").value.trim(), pin: cont.querySelector("#pr-pin").value.trim()};
@@ -3452,7 +3498,7 @@ async function renderProde(){
       <p class="h2h-note">Cuentan los partidos jugados desde que se creó el torneo (${escH(t.desde || "")}).</p>
     </div>`}
     <div class="team-stats-heading" style="margin-top:6px">Mis pronósticos</div>
-    <p class="bet-sub" style="margin:-4px 0 10px">Valen para todos tus torneos y se pueden cambiar hasta que empieza cada partido. Puntos: ${PRODE_PTS.exacto} exacto, ${PRODE_PTS.ganador} ganador o empate, +${PRODE_PTS.goleador} goleador, +${PRODE_PTS.asistente} asistente.</p>
+    <p class="bet-sub" style="margin:-4px 0 10px">Valen para todos tus torneos y se pueden cambiar hasta que empieza cada partido. Puntos: ${PRODE_PTS.exacto} exacto, ${PRODE_PTS.ganador} ganador o empate, +${PRODE_PTS.goleador} por cada gol acertado de un jugador, +${PRODE_PTS.asistente} por cada asistencia. Goleadores y asistentes son opcionales; repetí un jugador para darle más de un gol.</p>
     <div class="chips" id="pr-rondas">${rondas.map(r=>`<button class="chip ${r === prode.ronda ? "active" : ""}" data-r="${escH(r)}">${escH(r)}</button>`).join("")}</div>
     ${!deRonda.length ? '<div class="empty">Todavía no hay partidos cargados. Aparecen solos con la próxima actualización.</div>' : ""}
     <div id="pr-lista">${deRonda.map(m=>filaPron(m, t)).join("")}</div>
@@ -3480,6 +3526,16 @@ async function renderProde(){
   if(comp) comp.addEventListener("click", ()=> invitar(t));
   const guardar = cont.querySelector("#pr-guardar");
   if(guardar) guardar.addEventListener("click", ()=> guardarPronosticos(cont));
+  // al cambiar el resultado se rearman los lugares de goleadores/asistentes (se conserva lo elegido)
+  cont.querySelectorAll(".pr-match:not(.cerrado)").forEach(div=>{
+    const id = div.querySelector(".pr-g").dataset.id;
+    const m = partidos.find(x=>x.id === id);
+    div.querySelectorAll(".pr-g").forEach(inp=>inp.addEventListener("input", ()=>{
+      const {l, v} = golesInput(div);
+      const {gol, asi} = leerExtra(div);
+      div.querySelector(".pr-extras").innerHTML = extraHtml(m, l, v, gol, asi);
+    }));
+  });
 }
 
 function filaPron(m, t){
@@ -3495,7 +3551,7 @@ function filaPron(m, t){
         <input class="pr-g" inputmode="numeric" pattern="[0-9]*" maxlength="2" data-id="${m.id}" data-k="v" value="${pr && pr.v != null ? pr.v : ""}" aria-label="Goles de ${escH(m.visitante)}">
         <span class="pr-eq der"><span>${escH(m.visitante)}</span>${crest(m.visitante)}</span>
       </div>
-      <div class="pr-extra">${selectJugador(m, "gol", pr && pr.gol)}${selectJugador(m, "asi", pr && pr.asi)}</div>
+      <div class="pr-extras" data-extra="${m.id}">${extraHtml(m, pr ? pr.l : null, pr ? pr.v : null, pr && pr.gol, pr && pr.asi)}</div>
     </div>`;
   }
   const r = puntosDe(pr, m);
@@ -3527,16 +3583,15 @@ async function guardarPronosticos(cont){
     const id = l.dataset.id;
     const m = partidos.find(x=>x.id === id);
     if(!m || empezado(m)) return; // ya empezó: no se puede cambiar
-    const gol = div.querySelector('[data-k="gol"]').value || null;
-    const asi = div.querySelector('[data-k="asi"]').value || null;
+    const {gol, asi} = leerExtra(div);
     const lv = l.value.trim(), vv = v.value.trim();
-    if(lv === "" && vv === "" && !gol && !asi) return;
+    if(lv === "" && vv === "") return;
     if((lv === "") !== (vv === "") || (lv !== "" && (!/^\d{1,2}$/.test(lv) || !/^\d{1,2}$/.test(vv)))){
       error = `Completá los dos resultados de ${m.local} - ${m.visitante}.`; return;
     }
     const pick = {l: lv === "" ? null : Number(lv), v: vv === "" ? null : Number(vv), gol, asi};
     const ant = prode.mios[id];
-    if(ant && ant.l === pick.l && ant.v === pick.v && ant.gol === pick.gol && ant.asi === pick.asi) return; // sin cambios
+    if(ant && ant.l === pick.l && ant.v === pick.v && JSON.stringify(listaJug(ant.gol)) === JSON.stringify(gol) && JSON.stringify(listaJug(ant.asi)) === JSON.stringify(asi)) return; // sin cambios
     nuevos[id] = {m, pick};
   });
   if(error){ prode.error = error; renderProde(); return; }
