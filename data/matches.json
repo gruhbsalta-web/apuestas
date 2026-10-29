@@ -35950,10 +35950,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -35965,7 +35965,7 @@
         "gameUrlName": "atletico-tucuman-vs-platense",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "69'",
+        "minuto": "75'",
         "ronda": null
       }
     },
