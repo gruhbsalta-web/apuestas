@@ -3198,7 +3198,10 @@ try{ const c = new URLSearchParams(location.search).get("torneo"); if(c) prode.c
 const escH = s=>String(s ?? "").replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const normP = s=>String(s || "").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim();
 const inicioDe = m=> m && m.fechaHora ? new Date(m.fechaHora + ":00-03:00").getTime() : NaN;
-const empezado = m=> (m.estado != null && m.estado >= 2) || inicioDe(m) <= Date.now();
+// Los pronósticos se cierran 5 minutos antes de la hora de inicio
+const CIERRE_MIN = 5;
+const cierreDe = m=> inicioDe(m) - CIERRE_MIN * 60000;
+const empezado = m=> (m.estado != null && m.estado >= 2) || cierreDe(m) <= Date.now();
 const hoyAR = ()=> new Intl.DateTimeFormat("en-CA", {timeZone:"America/Argentina/Buenos_Aires"}).format(new Date());
 
 async function cargarFirebase(){
@@ -3308,7 +3311,7 @@ async function cargarMiembros(t){
 
 function puntosDe(pr, m){
   if(!pr || !m || m.estado !== 3 || !Array.isArray(m.goles)) return null;
-  if(pr.t != null && pr.t > inicioDe(m) + 60000) return {pts:0, det:["fuera de hora"]};
+  if(pr.t != null && pr.t > cierreDe(m) + 60000) return {pts:0, det:["fuera de hora"]};
   const [gl, gv] = m.goles.map(Number);
   let pts = 0; const det = [];
   if(pr.l != null && pr.v != null){
@@ -3522,7 +3525,7 @@ async function renderProde(){
       <p class="h2h-note">Cuentan los partidos jugados desde que se creó el torneo (${escH(t.desde || "")}).</p>
     </div>`}
     <div class="team-stats-heading" style="margin-top:6px">Mis pronósticos</div>
-    <p class="bet-sub" style="margin:-4px 0 10px">Valen para todos tus torneos y se pueden cambiar hasta que empieza cada partido. Puntos: ${PRODE_PTS.exacto} exacto, ${PRODE_PTS.ganador} ganador o empate, +${PRODE_PTS.goleador} por cada gol acertado de un jugador, +${PRODE_PTS.asistente} por cada asistencia. Goleadores y asistentes son opcionales; repetí un jugador para darle más de un gol.</p>
+    <p class="bet-sub" style="margin:-4px 0 10px">Valen para todos tus torneos y se pueden cambiar hasta 5 minutos antes de cada partido. Puntos: ${PRODE_PTS.exacto} exacto, ${PRODE_PTS.ganador} ganador o empate, +${PRODE_PTS.goleador} por cada gol acertado de un jugador, +${PRODE_PTS.asistente} por cada asistencia. Goleadores y asistentes son opcionales; repetí un jugador para darle más de un gol.</p>
     <div class="chips" id="pr-rondas">${rondas.map(r=>`<button class="chip ${r === prode.ronda ? "active" : ""}" data-r="${escH(r)}">${escH(r)}</button>`).join("")}</div>
     ${!deRonda.length ? '<div class="empty">Todavía no hay partidos cargados. Aparecen solos con la próxima actualización.</div>' : ""}
     <div id="pr-lista">${deRonda.map(m=>filaPron(m, t)).join("")}</div>
@@ -3569,7 +3572,7 @@ function filaPron(m, t){
   const fecha = m.fechaHora ? new Date(m.fechaHora + ":00-03:00").toLocaleString("es-AR", {weekday:"short", day:"numeric", month:"numeric", hour:"2-digit", minute:"2-digit", hour12:false, timeZone:"America/Argentina/Buenos_Aires"}) : "";
   if(!empezado(m)){
     return `<div class="pr-match">
-      <div class="pr-fecha">${escH(fecha)}</div>
+      <div class="pr-fecha">${escH(fecha)} · cierra ${new Date(cierreDe(m)).toLocaleTimeString("es-AR", {hour:"2-digit", minute:"2-digit", hour12:false, timeZone:"America/Argentina/Buenos_Aires"})}</div>
       <div class="pr-linea">
         <span class="pr-eq">${crest(m.local)}<span>${escH(m.local)}</span></span>
         <input class="pr-g" inputmode="numeric" pattern="[0-9]*" maxlength="2" data-id="${m.id}" data-k="l" value="${pr && pr.l != null ? pr.l : ""}" aria-label="Goles de ${escH(m.local)}">
@@ -3582,7 +3585,7 @@ function filaPron(m, t){
   }
   const r = puntosDe(pr, m);
   const res = Array.isArray(m.goles) ? `${m.goles[0]}-${m.goles[1]}` : "-";
-  const estado = m.estado === 3 ? "Final" : "En juego";
+  const estado = m.estado === 3 ? "Final" : (m.estado === 2 || inicioDe(m) <= Date.now()) ? "En juego" : "Pronósticos cerrados";
   const otros = t ? (t.miembros || []).filter(uid=>uid !== prode.usuario.uid).map(uid=>{
     const mb = prode.miembros[uid]; if(!mb) return "";
     const rr = puntosDe(mb.p[m.id], m);
@@ -3628,7 +3631,7 @@ async function guardarPronosticos(cont){
     Object.entries(nuevos).forEach(([id, {m, pick}])=>{
       lote.set(FS.doc(db, "pronos", `${id}_${uid}`), {
         uid, matchId: id, ...pick,
-        inicio: FS.Timestamp.fromMillis(inicioDe(m)), // hasta acá se puede cambiar y queda oculto
+        inicio: FS.Timestamp.fromMillis(cierreDe(m)), // hasta acá se puede cambiar y queda oculto (5' antes del partido)
         t: FS.serverTimestamp()
       });
     });
