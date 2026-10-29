@@ -35941,7 +35941,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -35965,7 +35965,7 @@
         "gameUrlName": "atletico-tucuman-vs-platense",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "4'",
+        "minuto": "16'",
         "ronda": null
       }
     },
