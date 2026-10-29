@@ -330,6 +330,25 @@
   .pr-guion{color:var(--muted);}
   .pr-res{font-family:var(--ff-num);font-size:22px;font-weight:700;padding:0 6px;}
   .pr-extra{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:10px;}
+  .pr-tf h3{margin-bottom:8px;}
+  .tf-wrap{overflow-x:auto;margin:0 -8px;}
+  table.tf{border-collapse:separate;border-spacing:3px;font-size:13px;min-width:100%;}
+  table.tf th{font-weight:600;color:var(--muted);font-size:11px;padding:2px;white-space:nowrap;}
+  table.tf th span{display:block;line-height:1.25;}
+  table.tf th .tf-res{color:var(--text);font-family:var(--ff-num);font-size:14px;font-weight:700;}
+  table.tf td{text-align:center;padding:5px 4px;border-radius:6px;background:var(--surface-2);min-width:40px;white-space:nowrap;}
+  table.tf td b{display:block;font-family:var(--ff-num);font-size:15px;}
+  table.tf td small{display:block;font-size:10px;opacity:.85;}
+  table.tf .tf-nom{text-align:left;position:sticky;left:0;background:var(--surface);font-weight:600;font-size:13px;max-width:110px;overflow:hidden;text-overflow:ellipsis;z-index:1;}
+  table.tf th.tf-nom{color:var(--muted);font-size:11px;}
+  table.tf .tf-tot{font-family:var(--ff-num);font-size:18px;font-weight:700;color:var(--accent);background:transparent;}
+  table.tf tr.mine .tf-nom{color:var(--accent);}
+  table.tf td.tf-exacto{background:#2F7D4F;}
+  table.tf td.tf-ganador{background:#8A7420;}
+  table.tf td.tf-algo{background:#2E5A4D;}
+  table.tf td.tf-cero{background:#3A4F48;color:var(--muted);}
+  table.tf td.tf-nada{background:transparent;color:var(--muted);}
+  table.tf td.tf-pend{background:var(--surface-2);}
   .pr-extras{margin-top:6px;}
   .pr-mas{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:6px;margin-top:8px;}
   .pr-mini{padding:9px 4px;font-size:13px;min-width:0;width:100%;}
@@ -3558,6 +3577,7 @@ async function renderProde(){
     <p class="bet-sub" style="margin:-4px 0 10px">Valen para todos tus torneos y se pueden cambiar hasta 5 minutos antes de cada partido. Puntos: ${PRODE_PTS.exacto} exacto, ${PRODE_PTS.ganador} ganador o empate, +${PRODE_PTS.goleador} por cada gol acertado de un jugador, +${PRODE_PTS.asistente} por cada asistencia, +1 primer gol, +1 primer tiempo exacto, +1 si decís que hay roja y la hay. Todo lo extra es opcional; repetí un jugador para darle más de un gol.</p>
     <div class="chips" id="pr-rondas">${rondas.map(r=>`<button class="chip ${r === prode.ronda ? "active" : ""}" data-r="${escH(r)}">${escH(r)}</button>`).join("")}</div>
     ${!deRonda.length ? '<div class="empty">Todavía no hay partidos cargados. Aparecen solos con la próxima actualización.</div>' : ""}
+    ${t ? tablaFecha(t, deRonda) : ""}
     <div id="pr-lista">${deRonda.map(m=>filaPron(m, t)).join("")}</div>
     ${hayEditables ? '<button class="primary pr-guardar" id="pr-guardar">Guardar pronósticos</button>' : ""}
   `;
@@ -3595,6 +3615,47 @@ async function renderProde(){
     div.querySelectorAll(".pr-g").forEach(inp=>inp.addEventListener("input", rearmar));
     div.querySelector(".pr-extras").addEventListener("change", rearmar);
   });
+}
+
+// Tabla de la fecha: participantes × partidos ya cerrados, con pronóstico, puntos y total
+function tablaFecha(t, deRonda){
+  const cerrados = deRonda.filter(m=>empezado(m) && String(m.fechaHora) >= String(t.desde || ""));
+  const ocultos = deRonda.length - deRonda.filter(m=>empezado(m)).length;
+  if(!cerrados.length){
+    return `<div class="card pr-tf"><h3>Tabla de la ${escH(prode.ronda || "fecha")}</h3><p class="bet-sub" style="margin:0">Los pronósticos de todos aparecen acá cuando se cierra cada partido (5 minutos antes del inicio).</p></div>`;
+  }
+  const yo = prode.usuario.uid;
+  const filas = (t.miembros || []).map(uid=>{
+    const mb = prode.miembros[uid] || {nombre:"…", p:{}};
+    const picks = uid === yo ? prode.mios : mb.p;
+    let total = 0;
+    const celdas = cerrados.map(m=>{
+      const pr = picks[m.id];
+      if(!pr) return '<td class="tf-nada">—</td>';
+      const r = puntosDe(pr, m);
+      const res = pr.l != null && pr.v != null ? `${pr.l}-${pr.v}` : "·";
+      if(!r) return `<td class="tf-pend"><b>${res}</b></td>`;
+      total += r.pts;
+      const cls = r.det.includes("exacto") ? "tf-exacto" : (r.det.includes("ganador") || r.det.includes("empate")) ? "tf-ganador" : r.pts ? "tf-algo" : "tf-cero";
+      return `<td class="${cls}" title="${escH(r.det.join(", "))}"><b>${res}</b><small>${r.pts} pts</small></td>`;
+    }).join("");
+    return {uid, nombre: mb.nombre, total, celdas};
+  }).sort((a,b)=> b.total - a.total || a.nombre.localeCompare(b.nombre));
+  const terminada = deRonda.length > 0 && deRonda.every(m=>m.estado === 3);
+  const max = filas.length ? filas[0].total : 0;
+  const head = cerrados.map(m=>{
+    const res = Array.isArray(m.goles) ? `${m.goles[0]}-${m.goles[1]}` : "vs";
+    return `<th><span>${escH(initials(m.local))}</span><span class="tf-res">${res}</span><span>${escH(initials(m.visitante))}</span></th>`;
+  }).join("");
+  return `<div class="card pr-tf">
+    <h3>Tabla de la ${escH(prode.ronda || "fecha")}</h3>
+    <div class="tf-wrap"><table class="tf">
+      <thead><tr><th class="tf-nom">Jugador</th>${head}<th class="tf-tot">Total</th></tr></thead>
+      <tbody>${filas.map(f=>`<tr class="${f.uid === yo ? "mine" : ""}"><td class="tf-nom">${max > 0 && f.total === max ? (terminada ? "🏆 " : "▲ ") : ""}${escH(f.nombre)}</td>${f.celdas}<td class="tf-tot">${f.total}</td></tr>`).join("")}</tbody>
+    </table></div>
+    <div class="leyenda"><span><i style="background:#2F7D4F"></i>Exacto</span><span><i style="background:#8A7420"></i>Ganador o empate</span><span><i style="background:#3A4F48"></i>Sin puntos</span>${ocultos ? `<span>${ocultos} partido(s) todavía ocultos</span>` : ""}</div>
+    <p class="h2h-note">${terminada ? "🏆 Ganador de la fecha." : "▲ Va ganando la fecha."} El detalle de cada pronóstico está abajo, en cada partido.</p>
+  </div>`;
 }
 
 function filaPron(m, t){
