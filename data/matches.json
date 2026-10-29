@@ -35933,7 +35933,7 @@
       "local": "Atlético Tucumán",
       "visitante": "Platense",
       "fechaHora": "2026-10-28T21:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -35963,9 +35963,9 @@
         "leagueName": "Copa Argentina",
         "country": "Argentina",
         "gameUrlName": "atletico-tucuman-vs-platense",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+1'",
+        "minuto": "45'",
         "ronda": null
       }
     },
