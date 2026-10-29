@@ -35938,19 +35938,19 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "corners": {
           "l": 1,
-          "v": 3
+          "v": 5
         },
         "tirosArco": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
           "l": 0,
@@ -35965,7 +35965,7 @@
         "gameUrlName": "atletico-tucuman-vs-platense",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "69'",
         "ronda": null
       }
     },
