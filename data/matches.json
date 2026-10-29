@@ -35941,11 +35941,11 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
-          "v": 0
+          "l": 3,
+          "v": 2
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 5
         },
         "tirosArco": {
@@ -35965,7 +35965,7 @@
         "gameUrlName": "atletico-tucuman-vs-platense",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "75'",
+        "minuto": "87'",
         "ronda": null
       }
     },
