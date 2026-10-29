@@ -261,4 +261,21 @@ function alineacionFromGame(game) {
   return Object.keys(out).length ? out : null;
 }
 
-module.exports = { playerLinesFromGame, missingFromGame, coachesFromGame, alineacionFromGame, minuteOf, normName };
+// Datos para el prode: qué equipo hizo el primer gol ('l', 'v' o null si no hubo),
+// resultado del primer tiempo y cantidad de expulsados.
+function datosProdeFromGame(game) {
+  const etapas = (game.events || []).filter((st) => !st.is_penalties_stage);
+  let primerGol = null;
+  for (const st of etapas) {
+    for (const row of st.rows || []) {
+      for (const e of row.events || []) {
+        if ([1, 2, 3].includes(e.type) && !primerGol) primerGol = e.team === 2 ? 'v' : 'l';
+      }
+    }
+  }
+  const ht = Array.isArray(etapas[0]?.scores) ? etapas[0].scores.map(Number) : null;
+  const rojas = allEvents(game).filter((e) => e.type === 7).length;
+  return { primerGol, ht, rojas };
+}
+
+module.exports = { datosProdeFromGame, playerLinesFromGame, missingFromGame, coachesFromGame, alineacionFromGame, minuteOf, normName };

@@ -17,7 +17,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { playerLinesFromGame, missingFromGame, coachesFromGame, alineacionFromGame, normName } = require('./players_lib');
+const { playerLinesFromGame, missingFromGame, coachesFromGame, alineacionFromGame, datosProdeFromGame, normName } = require('./players_lib');
 const { statsFromStatistics } = require('./promiedos_stats');
 const { calibrarApi, fichaHoraArgentina } = require('./promiedos_time');
 const { collectTeams, saveTeams } = require('./teams_lib');
@@ -373,7 +373,8 @@ async function run() {
           detallesProde.set(`promiedos_${game.id}`, {
             // {jugador: cantidad}: en el prode cada gol/asistencia acertada suma
             goleadores: Object.fromEntries(lines.filter((l) => l.goles > 0).map((l) => [l.nombre, l.goles])),
-            asistentes: Object.fromEntries(lines.filter((l) => l.asist > 0).map((l) => [l.nombre, l.asist]))
+            asistentes: Object.fromEntries(lines.filter((l) => l.asist > 0).map((l) => [l.nombre, l.asist])),
+            ...datosProdeFromGame(ficha)
           });
         }
         addCoaches(out, league, coachesFromGame(ficha));
