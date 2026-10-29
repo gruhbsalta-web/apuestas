@@ -331,6 +331,16 @@
   .pr-res{font-family:var(--ff-num);font-size:22px;font-weight:700;padding:0 6px;}
   .pr-extra{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:10px;}
   .pr-tf h3{margin-bottom:8px;}
+  table.tf td[data-uid]{cursor:pointer;}
+  .pv-partido{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;background:var(--surface-2);border-radius:var(--radius);padding:12px;margin-bottom:12px;}
+  .pv-lista{display:flex;flex-direction:column;}
+  .pv-fila{display:flex;justify-content:space-between;gap:12px;padding:10px 2px;border-top:1px solid var(--line);font-size:15px;}
+  .pv-fila span{color:var(--muted);}
+  .pv-fila b{text-align:right;}
+  .pv-pts{display:flex;align-items:baseline;gap:10px;margin-top:12px;padding:12px;background:var(--surface-2);border-radius:var(--radius);}
+  .pv-pts b{font-family:var(--ff-num);font-size:24px;color:var(--accent);}
+  .pv-pts span{color:var(--muted);font-size:14px;}
+
   .tf-wrap{overflow-x:auto;margin:0 -8px;}
   table.tf{border-collapse:separate;border-spacing:3px;font-size:13px;min-width:100%;}
   table.tf th{font-weight:600;color:var(--muted);font-size:11px;padding:2px;white-space:nowrap;}
@@ -730,6 +740,7 @@
 
 <dialog class="sheet" id="team-sheet" aria-label="Ficha de equipo"><div class="sheet-in" id="team-sheet-in"></div></dialog>
 <dialog class="sheet" id="pick-sheet"><div class="sheet-in" id="pick-in"></div></dialog>
+<dialog class="sheet" id="pron-sheet" aria-label="Pronóstico"><div class="sheet-in" id="pron-in"></div></dialog>
 <dialog class="sheet" id="llave-sheet" aria-label="Actualizar a pedido"><div class="sheet-in" id="llave-in"></div></dialog>
 
 <script>
@@ -3601,6 +3612,7 @@ async function renderProde(){
   });
   const comp = cont.querySelector("#pr-compartir");
   if(comp) comp.addEventListener("click", ()=> invitar(t));
+  cont.querySelectorAll("table.tf td[data-uid]").forEach(td=>td.addEventListener("click", ()=> verPronostico(td.dataset.uid, td.dataset.mid)));
   const guardar = cont.querySelector("#pr-guardar");
   if(guardar) guardar.addEventListener("click", ()=> guardarPronosticos(cont));
   // al cambiar el resultado se rearman los lugares de goleadores/asistentes (se conserva lo elegido)
@@ -3617,6 +3629,42 @@ async function renderProde(){
   });
 }
 
+// Detalle de un pronóstico (al tocar un casillero de la tabla de la fecha)
+function verPronostico(uid, mid){
+  const m = ((prode.fixture && prode.fixture.partidos) || []).find(x=>x.id === mid);
+  if(!m) return;
+  const yo = prode.usuario && prode.usuario.uid;
+  const mb = prode.miembros[uid] || {nombre:"", p:{}};
+  const pr = uid === yo ? prode.mios[mid] : mb.p[mid];
+  const r = pr ? puntosDe(pr, m) : null;
+  const res = Array.isArray(m.goles) ? `${m.goles[0]} - ${m.goles[1]}` : "vs";
+  const resumen = arr=>{ const c = {}; listaJug(arr).forEach(n=>{ c[n] = (c[n] || 0) + 1; }); return Object.entries(c).map(([n,k])=> k > 1 ? `${n} ×${k}` : n).join(", "); };
+  const fila = (k, v)=> v ? `<div class="pv-fila"><span>${k}</span><b>${escH(v)}</b></div>` : "";
+  const estado = m.estado === 3 ? "Final" : (m.estado === 2 || inicioDe(m) <= Date.now()) ? "En juego" : "Pronósticos cerrados";
+  const dlg = document.getElementById("pron-sheet"), cont = document.getElementById("pron-in");
+  cont.innerHTML = `
+    <div class="sheet-head"><div><h2 class="pick-title">${escH(uid === yo ? "Tu pronóstico" : mb.nombre)}</h2><p class="bet-sub">${escH(prode.ronda || "")} · ${estado}</p></div><button class="sheet-close" aria-label="Cerrar">✕</button></div>
+    <div class="pv-partido">
+      <span class="pr-eq">${crest(m.local)}<span>${escH(m.local)}</span></span>
+      <span class="pr-res">${res}</span>
+      <span class="pr-eq der"><span>${escH(m.visitante)}</span>${crest(m.visitante)}</span>
+    </div>
+    ${!pr ? '<p class="bet-sub">No cargó pronóstico para este partido.</p>' : `
+    <div class="pv-lista">
+      ${fila("Resultado", pr.l != null && pr.v != null ? `${pr.l} - ${pr.v}` : "")}
+      ${fila("⚽ Goleadores", resumen(pr.gol))}
+      ${fila("👟 Asistentes", resumen(pr.asi))}
+      ${fila("1er gol", pr.pg === "l" ? m.local : pr.pg === "v" ? m.visitante : "")}
+      ${fila("1er tiempo", pr.ht || "")}
+      ${fila("Roja", pr.roja === true ? "Hay roja" : "")}
+    </div>
+    ${r ? `<div class="pv-pts"><b>${r.pts} pts</b><span>${escH(r.det.length ? r.det.join(" · ") : "sin aciertos")}</span></div>` : '<p class="bet-sub">Los puntos se suman cuando termina el partido.</p>'}`}
+  `;
+  cont.querySelector(".sheet-close").addEventListener("click", ()=> dlg.close());
+  if(!dlg.open) dlg.showModal();
+}
+document.getElementById("pron-sheet").addEventListener("click", (e)=>{ if(e.target.id === "pron-sheet") e.target.close(); });
+
 // Tabla de la fecha: participantes × partidos ya cerrados, con pronóstico, puntos y total
 function tablaFecha(t, deRonda){
   const cerrados = deRonda.filter(m=>empezado(m) && String(m.fechaHora) >= String(t.desde || ""));
@@ -3631,13 +3679,14 @@ function tablaFecha(t, deRonda){
     let total = 0;
     const celdas = cerrados.map(m=>{
       const pr = picks[m.id];
-      if(!pr) return '<td class="tf-nada">—</td>';
+      const datos = `data-uid="${uid}" data-mid="${m.id}"`;
+      if(!pr) return `<td class="tf-nada" ${datos}>—</td>`;
       const r = puntosDe(pr, m);
       const res = pr.l != null && pr.v != null ? `${pr.l}-${pr.v}` : "·";
-      if(!r) return `<td class="tf-pend"><b>${res}</b></td>`;
+      if(!r) return `<td class="tf-pend" ${datos}><b>${res}</b></td>`;
       total += r.pts;
       const cls = r.det.includes("exacto") ? "tf-exacto" : (r.det.includes("ganador") || r.det.includes("empate")) ? "tf-ganador" : r.pts ? "tf-algo" : "tf-cero";
-      return `<td class="${cls}" title="${escH(r.det.join(", "))}"><b>${res}</b><small>${r.pts} pts</small></td>`;
+      return `<td class="${cls}" ${datos}><b>${res}</b><small>${r.pts} pts</small></td>`;
     }).join("");
     return {uid, nombre: mb.nombre, total, celdas};
   }).sort((a,b)=> b.total - a.total || a.nombre.localeCompare(b.nombre));
@@ -3654,7 +3703,7 @@ function tablaFecha(t, deRonda){
       <tbody>${filas.map(f=>`<tr class="${f.uid === yo ? "mine" : ""}"><td class="tf-nom">${max > 0 && f.total === max ? (terminada ? "🏆 " : "▲ ") : ""}${escH(f.nombre)}</td>${f.celdas}<td class="tf-tot">${f.total}</td></tr>`).join("")}</tbody>
     </table></div>
     <div class="leyenda"><span><i style="background:#2F7D4F"></i>Exacto</span><span><i style="background:#8A7420"></i>Ganador o empate</span><span><i style="background:#3A4F48"></i>Sin puntos</span>${ocultos ? `<span>${ocultos} partido(s) todavía ocultos</span>` : ""}</div>
-    <p class="h2h-note">${terminada ? "🏆 Ganador de la fecha." : "▲ Va ganando la fecha."} El detalle de cada pronóstico está abajo, en cada partido.</p>
+    <p class="h2h-note">${terminada ? "🏆 Ganador de la fecha." : "▲ Va ganando la fecha."} Tocá un casillero para ver el pronóstico completo.</p>
   </div>`;
 }
 
