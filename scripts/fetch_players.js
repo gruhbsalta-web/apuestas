@@ -124,6 +124,15 @@ function fechasARevisar(rounds, completo) {
 // v3: arqueros con goles recibidos, atajadas estimadas y vallas invictas
 const DATA_VERSION = 3;
 
+// ¿Ya hay partidos argentinos terminados en este año? (matches.json lo escribe
+// fetch_promiedos.js justo antes en la misma vuelta)
+function hayTerminadosDelAnio(anio) {
+  try {
+    const m = JSON.parse(fs.readFileSync(MATCHES_PATH, 'utf8')).matches || [];
+    return m.some((x) => x.finPartido && ['hc', 'ebj'].includes(x?.source?.leagueId) && String(x.fechaHora || '').startsWith(String(anio)));
+  } catch (e) { return false; }
+}
+
 function emptyOutput() {
   return { actualizado: null, partidos: {}, jugadores: {}, entrenadores: {}, ausentes: {} };
 }
@@ -222,6 +231,17 @@ async function run() {
     out = emptyOutput();
   }
   out.version = DATA_VERSION;
+  // Temporada (año calendario, como las ligas argentinas). Cuando aparece el primer
+  // partido terminado del año nuevo, lo del año anterior ya quedó guardado en
+  // data/archivo/argentina/<año>/ (scripts/archivar.js) y se empieza a contar de cero.
+  const anioActual = Number(todayInArgentina().slice(0, 4));
+  if (!out.temporada) out.temporada = anioActual;
+  if (out.temporada < anioActual && hayTerminadosDelAnio(anioActual)) {
+    console.log(`Temporada nueva: ${out.temporada} -> ${anioActual}. La anterior queda en el archivo; se empieza de cero.`);
+    out = emptyOutput();
+    out.version = DATA_VERSION;
+    out.temporada = anioActual;
+  }
   // Barrido completo de todas las fechas: si nunca se hizo, o si el último no fue hoy
   const barridoCompleto = !Object.keys(out.partidos || {}).length || (!RAPIDO && out.barridoCompleto !== todayInArgentina()) || process.env.BARRIDO_COMPLETO === '1';
   const html = await getText(`${SITE}/league/primera-nacional/ebj`);
@@ -271,6 +291,8 @@ async function run() {
         const proximo = !terminado && diffDays != null && diffDays >= 0 && diffDays <= DAYS_AHEAD;
         if (terminado && out.partidos[game.id]) continue;
         if (!terminado && !proximo) continue;
+        // partidos de otra temporada (ej. en enero Promiedos todavía muestra las fechas de diciembre)
+        if (terminado && fechaHora && Number(fechaHora.slice(0, 4)) !== out.temporada) continue;
         // Vuelta rápida (hay partidos en juego): solo se bajan las fichas de los
         // partidos en juego o por empezar; el resto conserva lo de la vuelta anterior.
         if (RAPIDO && proximo && !enVentana(game, fechaHora)) {

@@ -82,6 +82,8 @@ jobs:
             echo "=== Actualizacion $(TZ=America/Argentina/Buenos_Aires date '+%a %H:%M') $([ "$RAPIDO" = 1 ] && echo '(rapida)') ==="
             npm run fetch || echo "fallo fetch de partidos"
             npm run fetch:players || echo "fallo fetch de jugadores (los partidos se guardan igual)"
+            # archivo de temporadas de Argentina (resultados, planteles, tablas) en las vueltas completas
+            [ "$RAPIDO" = 1 ] || npm run archivar || echo "fallo el archivo de temporadas"
             # estado.json: hora de esta actualizacion y de la proxima (la app muestra la cuenta regresiva)
             ahora_e=$(date +%s)
             int_e=$(ritmo intervalo); [ -z "$int_e" ] && int_e=1800
@@ -109,7 +111,7 @@ jobs:
             [ "$prox_p" -lt "$prox_e" ] && prox_p=$prox_e
             printf '{"ultima":"%s","proxima":"%s","proximaPagina":"%s","intervaloMin":%d,"vivo":%s}\n' \
               "$(date -u -d @$ahora_e +%Y-%m-%dT%H:%M:%SZ)" "$(date -u -d @$prox_e +%Y-%m-%dT%H:%M:%SZ)" "$(date -u -d @$prox_p +%Y-%m-%dT%H:%M:%SZ)" $((int_e/60)) "$vivo_e" > data/estado.json
-            git add data/*.json || true
+            git add data || true
             if git commit -q -m "chore: update matches.json y players.json (promiedos)"; then
               # primero la rama datos (antes de sincronizar, que puede descartar esta vuelta en master)
               git push -q -f origin HEAD:datos || echo "no se pudo guardar en la rama datos"
