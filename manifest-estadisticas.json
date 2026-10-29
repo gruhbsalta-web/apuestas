@@ -1,6 +1,6 @@
 {
-  "name": "Warrior · Estadísticas de fútbol",
-  "short_name": "Warrior",
+  "name": "La Fija · Estadísticas de fútbol",
+  "short_name": "La Fija",
   "description": "Partidos, planteles, tablas y estadísticas del fútbol argentino.",
   "start_url": "./index.html?modo=estadisticas",
   "scope": "./",

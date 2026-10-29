@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Tracker de Apuestas - Fútbol Argentino</title>
+<title>La Fija · Fútbol</title>
 <meta name="theme-color" content="#0F2019">
 <meta name="description" content="Tracker de apuestas de fútbol argentino: partidos, probabilidad en vivo, capital y promedios por equipo.">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Apuestas">
+<meta name="apple-mobile-web-app-title" content="La Fija">
 <script>
   // Modo "solo estadísticas" para compartir: ?modo=estadisticas lo activa (y queda
   // recordado en ese dispositivo), ?modo=completo lo saca.
@@ -21,10 +21,10 @@
       if(localStorage.getItem("warriorModo") === "estadisticas"){
         document.documentElement.classList.add("modo-stats");
         // nombre neutro, sin "apuestas" (pestaña, app instalada y descripción)
-        document.title = "Warrior · Estadísticas de fútbol";
+        document.title = "La Fija · Estadísticas de fútbol";
         document.addEventListener("DOMContentLoaded", function(){
           var man = document.querySelector('link[rel="manifest"]'); if(man) man.href = "manifest-estadisticas.json";
-          var t = document.querySelector('meta[name="apple-mobile-web-app-title"]'); if(t) t.content = "Warrior";
+          var t = document.querySelector('meta[name="apple-mobile-web-app-title"]'); if(t) t.content = "La Fija";
           var d = document.querySelector('meta[name="description"]'); if(d) d.content = "Partidos, planteles, tablas y estadísticas del fútbol argentino.";
         });
       }
@@ -417,7 +417,7 @@
 <header>
   <div class="topbar">
     <div>
-      <h1>Warrior<span>.</span></h1>
+      <h1>La Fija<span>.</span></h1>
       <div class="sync-row">
         <div class="sync" id="sync-status" role="status" aria-live="polite"><i></i><span>Buscando datos…</span></div>
         <button class="sync-btn solo-apuestas" id="btn-actualizar-ya" aria-label="Actualizar ahora">
@@ -3078,7 +3078,7 @@ function abrirConfigLlave(aviso){
     <p class="bet-sub">Para que el botón pueda pedirle a GitHub una actualización hace falta una llave de tu cuenta. Se crea una sola vez y queda guardada solo en este celular.</p>
     <ol class="pasos">
       <li>Abrí <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener" style="color:var(--accent)">la página de llaves de GitHub</a> (con tu sesión iniciada).</li>
-      <li>En <b>Token name</b> poné "Warrior". En <b>Expiration</b> elegí la duración que quieras (por ejemplo 1 año).</li>
+      <li>En <b>Token name</b> poné "La Fija". En <b>Expiration</b> elegí la duración que quieras (por ejemplo 1 año).</li>
       <li>En <b>Repository access</b> elegí <b>Only select repositories</b> y marcá <b>apuestas</b>.</li>
       <li>En <b>Permissions</b>, buscá <b>Actions</b> y elegí <b>Read and write</b>. Buscá también <b>Contents</b> y elegí <b>Read-only</b> (para ver los datos apenas se guardan). No hace falta ningún otro permiso.</li>
       <li>Tocá <b>Generate token</b>, copiá la llave (empieza con <b>github_pat_</b>) y pegala acá abajo.</li>
