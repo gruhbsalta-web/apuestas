@@ -35934,11 +35934,11 @@
       "visitante": "Platense",
       "fechaHora": "2026-10-28T21:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 4,
-          "v": 3
+          "l": 1,
+          "v": 1
         },
         "tarjetas": {
           "l": 3,
@@ -35953,7 +35953,7 @@
           "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -35963,9 +35963,9 @@
         "leagueName": "Copa Argentina",
         "country": "Argentina",
         "gameUrlName": "atletico-tucuman-vs-platense",
-        "statusShort": "Pen",
-        "statusEnum": 2,
-        "minuto": "120'",
+        "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null
       }
     },
