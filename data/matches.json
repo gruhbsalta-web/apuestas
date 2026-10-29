@@ -36180,7 +36180,7 @@
       "visitante": "Lecce",
       "fechaHora": "2026-10-29T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 5,
@@ -36209,9 +36209,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "frosinone-vs-lecce",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+4'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
