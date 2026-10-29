@@ -36232,7 +36232,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -36252,7 +36252,7 @@
         "gameUrlName": "fiorentina-vs-atalanta",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "11'",
         "ronda": "Fecha 9"
       }
     },
