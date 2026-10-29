@@ -36224,19 +36224,19 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "corners": {
           "l": 5,
-          "v": 0
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "atajadas": {
@@ -36252,7 +36252,7 @@
         "gameUrlName": "fiorentina-vs-atalanta",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "48'",
+        "minuto": "60'",
         "ronda": "Fecha 9"
       }
     },
