@@ -36221,7 +36221,7 @@
       "visitante": "Atalanta",
       "fechaHora": "2026-10-29T16:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -36232,15 +36232,15 @@
           "v": 2
         },
         "corners": {
-          "l": 7,
+          "l": 8,
           "v": 2
         },
         "tirosArco": {
           "l": 4,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 2
         }
       },
@@ -36250,9 +36250,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "fiorentina-vs-atalanta",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9"
       }
     },
