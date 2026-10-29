@@ -36460,6 +36460,1277 @@
         "minuto": "",
         "ronda": "Fecha 11"
       }
+    },
+    {
+      "id": "promiedos_egddccf",
+      "local": "Deportivo Riestra",
+      "visitante": "Talleres de Córdoba",
+      "fechaHora": "2026-10-31T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "riestra-vs-talleres-cordoba",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 15"
+      }
+    },
+    {
+      "id": "promiedos_egddccc",
+      "local": "Vélez Sarsfield",
+      "visitante": "San Lorenzo",
+      "fechaHora": "2026-10-31T19:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "velez-sarsfield-vs-san-lorenzo",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 15"
+      }
+    },
+    {
+      "id": "promiedos_egddcce",
+      "local": "Estudiantes de La Plata",
+      "visitante": "Instituto",
+      "fechaHora": "2026-10-31T21:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "estudiantes-de-la-plata-vs-instituto-ac-cordoba",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 15"
+      }
+    },
+    {
+      "id": "promiedos_eifeied",
+      "local": "Godoy Cruz",
+      "visitante": "Almirante Brown",
+      "fechaHora": "2026-10-31T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "godoy-cruz-vs-almirante-brown",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeiei",
+      "local": "San Miguel",
+      "visitante": "Deportivo Madryn",
+      "fechaHora": "2026-10-31T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "ca-san-miguel-vs-dep.-madryn",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeiej",
+      "local": "San Telmo",
+      "visitante": "Central Norte",
+      "fechaHora": "2026-10-31T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "san-telmo-vs-central-norte",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeifa",
+      "local": "Atlanta",
+      "visitante": "Midland",
+      "fechaHora": "2026-10-31T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "atlanta-vs-ferrocarril-midland",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeifc",
+      "local": "Acassuso",
+      "visitante": "Ferro Carril Oeste",
+      "fechaHora": "2026-10-31T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "acassuso-vs-ferro-carril-oeste",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeifg",
+      "local": "Agropecuario",
+      "visitante": "Almagro",
+      "fechaHora": "2026-10-31T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "agropecuario-vs-almagro",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeifh",
+      "local": "Tristan Suárez",
+      "visitante": "Deportivo Maipú",
+      "fechaHora": "2026-10-31T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "tristan-suarez-vs-deportivo-maipu",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeifi",
+      "local": "Güemes",
+      "visitante": "Temperley",
+      "fechaHora": "2026-10-31T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "club-atletico-guemes-vs-temperley",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeiga",
+      "local": "San Martín San Juan",
+      "visitante": "Gimnasia de Jujuy",
+      "fechaHora": "2026-10-31T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "san-martin-vs-gimnasia-jujuy",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeief",
+      "local": "Deportivo Morón",
+      "visitante": "Ciudad De Bolivar",
+      "fechaHora": "2026-10-31T15:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "deportivo-moron-vs-ciudad-de-bolivar",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeieg",
+      "local": "Los Andes",
+      "visitante": "Mitre SdE",
+      "fechaHora": "2026-10-31T15:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "los-andes-vs-mitre-sde",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeifb",
+      "local": "Chaco For Ever",
+      "visitante": "Racing de Córdoba",
+      "fechaHora": "2026-10-31T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "chaco-for-ever-vs-racing-cordoba",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_eifeieh",
+      "local": "Colón",
+      "visitante": "Defensores de Belgrano",
+      "fechaHora": "2026-10-31T18:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "colon-vs-defensores-de-belgrano",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 36"
+      }
+    },
+    {
+      "id": "promiedos_ehecabh",
+      "local": "Chelsea",
+      "visitante": "Manchester United",
+      "fechaHora": "2026-10-31T09:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "chelsea-vs-manchester-united",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 9"
+      }
+    },
+    {
+      "id": "promiedos_ehecabd",
+      "local": "Manchester City",
+      "visitante": "Brighton",
+      "fechaHora": "2026-10-31T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "manchester-city-vs-brighton",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 9"
+      }
+    },
+    {
+      "id": "promiedos_ehecabf",
+      "local": "Hull City",
+      "visitante": "Ipswich",
+      "fechaHora": "2026-10-31T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "hull-city-vs-ipswich",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 9"
+      }
+    },
+    {
+      "id": "promiedos_ehecabg",
+      "local": "Coventry",
+      "visitante": "Sunderland",
+      "fechaHora": "2026-10-31T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "coventry-vs-sunderland",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 9"
+      }
+    },
+    {
+      "id": "promiedos_ehecabi",
+      "local": "Brentford",
+      "visitante": "Nottingham Forest",
+      "fechaHora": "2026-10-31T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "brentford-vs-nottingham-forest",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 9"
+      }
+    },
+    {
+      "id": "promiedos_ehecaca",
+      "local": "Bournemouth",
+      "visitante": "Leeds United",
+      "fechaHora": "2026-10-31T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "bournemouth-vs-leeds-united",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 9"
+      }
+    },
+    {
+      "id": "promiedos_ehecacj",
+      "local": "Tottenham",
+      "visitante": "Crystal Palace",
+      "fechaHora": "2026-10-31T14:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "tottenham-vs-crystal-palace",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 9"
+      }
+    },
+    {
+      "id": "promiedos_ehecabj",
+      "local": "Aston Villa",
+      "visitante": "Fulham",
+      "fechaHora": "2026-10-31T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "aston-villa-vs-fulham",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 9"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiaf",
+      "local": "Levante UD",
+      "visitante": "Atlético de Madrid",
+      "fechaHora": "2026-10-31T10:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "levante-vs-atletico-madrid",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiad",
+      "local": "Rayo Vallecano",
+      "visitante": "Celta de Vigo",
+      "fechaHora": "2026-10-31T12:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "rayo-vallecano-vs-celta-vigo",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiaj",
+      "local": "Real Betis",
+      "visitante": "Málaga CF",
+      "fechaHora": "2026-10-31T14:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-betis-vs-malaga",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiah",
+      "local": "FC Barcelona",
+      "visitante": "Alavés",
+      "fechaHora": "2026-10-31T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "barcelona-vs-alaves",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgej",
+      "local": "Bologna",
+      "visitante": "Monza",
+      "fechaHora": "2026-10-31T11:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "bologna-vs-monza",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 10"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgeb",
+      "local": "Udinese",
+      "visitante": "AS Roma",
+      "fechaHora": "2026-10-31T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "udinese-vs-as-roma",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 10"
+      }
+    },
+    {
+      "id": "promiedos_ehdcged",
+      "local": "AC Milan",
+      "visitante": "Inter Milan",
+      "fechaHora": "2026-10-31T16:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "ac-milan-vs-inter-milan",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 10"
+      }
     }
   ],
   "bets": [],
