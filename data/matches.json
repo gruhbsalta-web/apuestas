@@ -36184,11 +36184,11 @@
       "stats": {
         "goles": {
           "l": 4,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 8,
@@ -36196,7 +36196,7 @@
         },
         "tirosArco": {
           "l": 8,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
           "l": 4,
@@ -36211,7 +36211,7 @@
         "gameUrlName": "frosinone-vs-lecce",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "76'",
+        "minuto": "88'",
         "ronda": "Fecha 9"
       }
     },
