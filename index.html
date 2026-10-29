@@ -3168,7 +3168,14 @@ function iniciarIndicadorSync(){
 // Los usuarios, torneos y pronósticos se guardan en Firebase (proyecto "lafija").
 // El fixture y los resultados salen de data/fixture.json, que arma el bucle solo.
 // Puntos: 3 resultado exacto, 1 ganador o empate, +2 goleador, +1 asistente.
-const FIREBASE_CONFIG = null; // datos públicos del proyecto (no son secretos)
+const FIREBASE_CONFIG = { // datos públicos del proyecto (no son secretos; la base la protegen las reglas)
+  apiKey: "AIzaSyAit6HzsQKrzldCQDZmrmLoR4gAqd0Jzms",
+  authDomain: "la-fija-872ca.firebaseapp.com",
+  projectId: "la-fija-872ca",
+  storageBucket: "la-fija-872ca.firebasestorage.app",
+  messagingSenderId: "731038578090",
+  appId: "1:731038578090:web:bfaf2d1e75c6e6f272a7d3"
+};
 const FB_VER = "10.12.2";
 const PRODE_PTS = {exacto:3, ganador:1, goleador:2, asistente:1};
 let fb = null, fbCargando = null;
