@@ -3225,29 +3225,64 @@ async function cargarDatosUsuario(){
   try{
     const [u, p, ts] = await Promise.all([
       FS.getDoc(FS.doc(db, "usuarios", uid)),
-      FS.getDoc(FS.doc(db, "pronosticos", uid)),
+      FS.getDocs(FS.query(FS.collection(db, "pronos"), FS.where("uid", "==", uid))),
       FS.getDocs(FS.query(FS.collection(db, "torneos"), FS.where("miembros", "array-contains", uid)))
     ]);
     prode.nombre = u.exists() ? u.data().nombre : (prode.usuario.displayName || "");
-    prode.mios = p.exists() ? (p.data().p || {}) : {};
+    prode.mios = {};
+    p.docs.forEach(d=>{ const x = normPick(d.data()); prode.mios[x.matchId] = x; });
     prode.torneos = ts.docs.map(d=>({id:d.id, ...d.data()})).sort((a,b)=>String(a.nombre).localeCompare(String(b.nombre)));
     if(!prode.torneoSel || !prode.torneos.some(t=>t.id === prode.torneoSel)) prode.torneoSel = prode.torneos[0] ? prode.torneos[0].id : null;
     if(prode.codigoPendiente){ const c = prode.codigoPendiente; prode.codigoPendiente = null; await unirseTorneo(c); }
   }catch(err){ prode.error = "No se pudieron leer tus datos: " + (err.code || err.message); }
 }
 
+// Cada pronóstico es un documento propio (pronos/<partido>_<usuario>). Las reglas de
+// Firebase solo dejan leer el de otro participante cuando ya empezó el partido, y no
+// dejan escribir después del inicio. Además, al sumar puntos se descarta cualquier
+// pronóstico guardado después del inicio real (hora del servidor vs. fixture).
+function normPick(d){
+  return {matchId: d.matchId, l: d.l ?? null, v: d.v ?? null, gol: d.gol || null, asi: d.asi || null,
+    t: d.t && d.t.toMillis ? d.t.toMillis() : (typeof d.t === "number" ? d.t : null)};
+}
+const PICKS_KEY = "laFijaPicks";
+function leerCachePicks(){ try{ return JSON.parse(localStorage.getItem(PICKS_KEY) || "{}"); }catch(e){ return {}; } }
+function guardarCachePicks(c){ try{ localStorage.setItem(PICKS_KEY, JSON.stringify(c)); }catch(e){} }
+
 async function cargarMiembros(t){
   const {FS, db} = fb;
+  const yo = prode.usuario.uid;
+  const cache = leerCachePicks();
+  let cambio = false;
+  const iniciados = ((prode.fixture && prode.fixture.partidos) || [])
+    .filter(m=>empezado(m) && String(m.fechaHora) >= String(t.desde || ""));
   await Promise.all((t.miembros || []).map(async uid=>{
+    const mb = prode.miembros[uid] || (prode.miembros[uid] = {nombre:"…", p:{}});
     try{
-      const [u, p] = await Promise.all([FS.getDoc(FS.doc(db, "usuarios", uid)), FS.getDoc(FS.doc(db, "pronosticos", uid))]);
-      prode.miembros[uid] = {nombre: u.exists() ? u.data().nombre : "?", p: p.exists() ? (p.data().p || {}) : {}};
-    }catch(e){ prode.miembros[uid] = prode.miembros[uid] || {nombre:"?", p:{}}; }
+      const u = await FS.getDoc(FS.doc(db, "usuarios", uid));
+      mb.nombre = u.exists() ? u.data().nombre : "?";
+    }catch(e){}
+    if(uid === yo){ mb.p = prode.mios; return; }
+    await Promise.all(iniciados.map(async m=>{
+      const clave = `${m.id}_${uid}`;
+      if(clave in cache){ mb.p[m.id] = cache[clave] || undefined; return; }
+      let pick = null, ok = false;
+      try{
+        const d = await FS.getDoc(FS.doc(db, "pronos", clave));
+        pick = d.exists() ? normPick(d.data()) : null; ok = true;
+      }catch(e){ /* todavía no visible (relojes desparejos justo al inicio) */ }
+      if(!ok) return;
+      mb.p[m.id] = pick || undefined;
+      // después del inicio ya no puede cambiar: se guarda en este dispositivo
+      if(Date.now() > inicioDe(m) + 15 * 60000){ cache[clave] = pick || 0; cambio = true; }
+    }));
   }));
+  if(cambio) guardarCachePicks(cache);
 }
 
 function puntosDe(pr, m){
   if(!pr || !m || m.estado !== 3 || !Array.isArray(m.goles)) return null;
+  if(pr.t != null && pr.t > inicioDe(m) + 60000) return {pts:0, det:["fuera de hora"]};
   const [gl, gv] = m.goles.map(Number);
   let pts = 0; const det = [];
   if(pr.l != null && pr.v != null){
@@ -3499,15 +3534,29 @@ async function guardarPronosticos(cont){
     if((lv === "") !== (vv === "") || (lv !== "" && (!/^\d{1,2}$/.test(lv) || !/^\d{1,2}$/.test(vv)))){
       error = `Completá los dos resultados de ${m.local} - ${m.visitante}.`; return;
     }
-    nuevos[id] = {l: lv === "" ? null : Number(lv), v: vv === "" ? null : Number(vv), gol, asi, t: Date.now()};
+    const pick = {l: lv === "" ? null : Number(lv), v: vv === "" ? null : Number(vv), gol, asi};
+    const ant = prode.mios[id];
+    if(ant && ant.l === pick.l && ant.v === pick.v && ant.gol === pick.gol && ant.asi === pick.asi) return; // sin cambios
+    nuevos[id] = {m, pick};
   });
   if(error){ prode.error = error; renderProde(); return; }
-  if(!Object.keys(nuevos).length){ prode.aviso = "No hay pronósticos nuevos para guardar."; renderProde(); return; }
+  if(!Object.keys(nuevos).length){ prode.aviso = "No hay cambios para guardar."; renderProde(); return; }
   try{
-    await fb.FS.setDoc(fb.FS.doc(fb.db, "pronosticos", prode.usuario.uid), {p: nuevos}, {merge:true});
-    Object.assign(prode.mios, nuevos);
+    const {FS, db} = fb; const uid = prode.usuario.uid;
+    const lote = FS.writeBatch(db);
+    Object.entries(nuevos).forEach(([id, {m, pick}])=>{
+      lote.set(FS.doc(db, "pronos", `${id}_${uid}`), {
+        uid, matchId: id, ...pick,
+        inicio: FS.Timestamp.fromMillis(inicioDe(m)), // hasta acá se puede cambiar y queda oculto
+        t: FS.serverTimestamp()
+      });
+    });
+    await lote.commit();
+    Object.entries(nuevos).forEach(([id, {pick}])=>{ prode.mios[id] = {matchId: id, ...pick, t: Date.now()}; });
     prode.aviso = `Guardado: ${Object.keys(nuevos).length} pronóstico(s).`;
-  }catch(err){ prode.error = "No se pudo guardar (" + (err.code || err.message) + ")."; }
+  }catch(err){
+    prode.error = err.code === "permission-denied" ? "No se pudo guardar: algún partido ya empezó. Actualizá la pantalla." : "No se pudo guardar (" + (err.code || err.message) + ").";
+  }
   renderProde();
 }
 
