@@ -3319,44 +3319,57 @@ async function renderProde(){
   prode.error = ""; prode.aviso = "";
 
   if(!prode.usuario){
+    const crear = prode.modoLogin === "crear";
+    const f = prode.form || {nombre:"", pin:""};
     cont.innerHTML = `
       <div class="card">
-        <h3>Pronósticos</h3>
-        <p class="bet-sub">Armá torneos de prode con amigos para la Liga Profesional. Entrá con tu nombre y un PIN de 4 números.</p>
+        <h3>${crear ? "Crear tu usuario" : "Pronósticos"}</h3>
+        <p class="bet-sub">${crear
+          ? "Elegí el nombre con el que te van a ver tus amigos y un PIN de 4 números para entrar (anotalo: lo vas a necesitar si cambiás de celular)."
+          : "Armá torneos de prode con amigos para la Liga Profesional. Entrá con tu nombre y tu PIN de 4 números."}</p>
         ${aviso}
         <label for="pr-nombre">Nombre</label>
-        <input id="pr-nombre" autocomplete="username" maxlength="24" placeholder="Ej.: Gustavo">
+        <input id="pr-nombre" autocomplete="username" maxlength="24" placeholder="Ej.: Gustavo" value="${escH(f.nombre)}">
         <label for="pr-pin">PIN (4 números)</label>
-        <input id="pr-pin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="current-password" placeholder="••••">
-        <button class="primary" id="pr-entrar">Entrar</button>
-        <div class="btn-row"><button class="btn-save" id="pr-crear">Soy nuevo: crear usuario</button></div>
+        <input id="pr-pin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="${crear ? "new-password" : "current-password"}" placeholder="4 números" value="${escH(f.pin)}">
+        <button class="primary" id="pr-ok">${crear ? "Crear usuario" : "Entrar"}</button>
+        <div class="btn-row"><button class="btn-save" id="pr-cambiar">${crear ? "Ya tengo usuario: entrar" : "Soy nuevo: crear usuario"}</button></div>
         <p class="bet-sub" style="margin-top:12px">Puntos: ${PRODE_PTS.exacto} por resultado exacto, ${PRODE_PTS.ganador} por acertar ganador o empate, +${PRODE_PTS.goleador} si acertás un goleador y +${PRODE_PTS.asistente} si acertás un asistente.</p>
       </div>`;
-    const datos = ()=>{
-      const nombre = cont.querySelector("#pr-nombre").value.trim(), pin = cont.querySelector("#pr-pin").value.trim();
-      if(normP(nombre).length < 2){ prode.error = "Poné tu nombre (al menos 2 letras)."; renderProde(); return null; }
-      if(!/^\d{4}$/.test(pin)){ prode.error = "El PIN tiene que ser de 4 números."; renderProde(); return null; }
-      return {nombre, pin};
+    const leer = ()=>{
+      prode.form = {nombre: cont.querySelector("#pr-nombre").value.trim(), pin: cont.querySelector("#pr-pin").value.trim()};
+      return prode.form;
     };
-    cont.querySelector("#pr-entrar").addEventListener("click", async ()=>{
-      const d = datos(); if(!d) return;
-      const c = credenciales(d.nombre, d.pin);
-      try{ await fb.AU.signInWithEmailAndPassword(fb.auth, c.email, c.pass); }
-      catch(err){
-        prode.error = err.code === "auth/too-many-requests" ? "Demasiados intentos. Esperá unos minutos." : "Nombre o PIN incorrectos. Si es tu primera vez, tocá «Soy nuevo».";
-        renderProde();
-      }
+    const datos = ()=>{
+      const d = leer();
+      if(normP(d.nombre).length < 2){ prode.error = "Escribí tu nombre (al menos 2 letras)."; renderProde(); return null; }
+      if(!/^\d{4}$/.test(d.pin)){ prode.error = "El PIN tiene que ser de 4 números."; renderProde(); return null; }
+      return d;
+    };
+    cont.querySelector("#pr-cambiar").addEventListener("click", ()=>{
+      leer(); prode.modoLogin = crear ? "entrar" : "crear"; renderProde();
+      const n = document.getElementById("pr-nombre"); if(n && !n.value) n.focus();
     });
-    cont.querySelector("#pr-crear").addEventListener("click", async ()=>{
+    cont.querySelector("#pr-ok").addEventListener("click", async ()=>{
       const d = datos(); if(!d) return;
       const c = credenciales(d.nombre, d.pin);
+      const btn = cont.querySelector("#pr-ok"); btn.disabled = true; btn.textContent = crear ? "Creando…" : "Entrando…";
+      if(!crear){
+        try{ await fb.AU.signInWithEmailAndPassword(fb.auth, c.email, c.pass); prode.form = null; }
+        catch(err){
+          prode.error = err.code === "auth/too-many-requests" ? "Demasiados intentos. Esperá unos minutos." : "Nombre o PIN incorrectos. Si es tu primera vez, tocá «Soy nuevo: crear usuario».";
+          renderProde();
+        }
+        return;
+      }
       try{
         const cred = await fb.AU.createUserWithEmailAndPassword(fb.auth, c.email, c.pass);
         await fb.FS.setDoc(fb.FS.doc(fb.db, "usuarios", cred.user.uid), {nombre: d.nombre, creado: fb.FS.serverTimestamp()});
-        prode.nombre = d.nombre;
+        prode.nombre = d.nombre; prode.form = null; prode.modoLogin = null;
         renderProde();
       }catch(err){
-        prode.error = err.code === "auth/email-already-in-use" ? "Ese nombre ya está en uso. Si sos vos, tocá «Entrar»; si no, elegí otro." : "No se pudo crear el usuario (" + (err.code || err.message) + ").";
+        prode.error = err.code === "auth/email-already-in-use" ? "Ese nombre ya está en uso. Si sos vos, tocá «Ya tengo usuario: entrar»; si no, elegí otro."
+          : "No se pudo crear el usuario (" + (err.code || err.message) + ").";
         renderProde();
       }
     });
