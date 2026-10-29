@@ -3777,7 +3777,7 @@ function tablaFecha(t, deRonda){
       <tbody>${filas.map((f, i)=>`<tr class="${f.uid === yo ? "mine" : ""}"><td class="tf-nom">${marcaFecha(filas, i, max, terminada)}${escH(f.nombre)}</td>${f.celdas}<td class="tf-tot">${f.total}</td></tr>`).join("")}</tbody>
     </table></div>
     <div class="leyenda"><span><i style="background:#2F7D4F"></i>Exacto</span><span><i style="background:#8A7420"></i>Ganador o empate</span><span><i style="background:#3A4F48"></i>Sin puntos</span>${ocultos ? `<span>${ocultos} partido(s) todavía ocultos</span>` : ""}</div>
-    <p class="h2h-note">${terminada ? "🏆 Ganador · 🥈 Segundo · 🤡 Payaso (último)." : "▲ Va ganando la fecha."} Tocá un casillero para ver el pronóstico completo.</p>
+    <p class="h2h-note">${terminada ? "" : "▲ Va ganando la fecha. "}Tocá un casillero para ver el pronóstico completo.</p>
     <p class="h2h-note">Desempate: más exactos, más aciertos de ganador o empate, más goleadores acertados, más asistentes, más extras y, por último, quien terminó de cargar primero.</p>
   </div>`;
 }
