@@ -3365,25 +3365,43 @@ function puntosDe(pr, m){
   // solo paga si dijiste que hay roja y la hubo (una o más: suma 1)
   if(pr.roja === true && m.rojas != null && m.rojas > 0){ pts += PRODE_PTS.roja; det.push("roja"); }
   const base = det.includes("exacto") ? PRODE_PTS.exacto : (det.includes("ganador") || det.includes("empate")) ? PRODE_PTS.ganador : 0;
-  return {pts, det, extras: pts - base};
+  return {pts, det, extras: pts - base, g, a};
 }
+
+// Estadísticas de un participante sobre una lista de partidos (para ordenar y desempatar)
+function sumarStats(picks, partidos){
+  const st = {pts:0, exactos:0, aciertos:0, goleadores:0, asistentes:0, extras:0, ultimo:-Infinity};
+  partidos.forEach(m=>{
+    const pr = picks[m.id];
+    if(!pr) return;
+    if(pr.t != null) st.ultimo = Math.max(st.ultimo, pr.t);
+    const r = puntosDe(pr, m);
+    if(!r) return;
+    st.pts += r.pts;
+    if(r.det.includes("exacto")) st.exactos++;
+    if(r.det.includes("exacto") || r.det.includes("ganador") || r.det.includes("empate")) st.aciertos++;
+    st.goleadores += r.g || 0; st.asistentes += r.a || 0; st.extras += r.extras || 0;
+  });
+  if(st.ultimo === -Infinity) st.ultimo = Infinity;
+  return st;
+}
+// Desempate: puntos, resultados exactos, aciertos de ganador/empate, goleadores
+// acertados, asistentes acertados, extras en general y, por último, quien terminó
+// de cargar sus pronósticos primero.
+function compararPosicion(a, b){
+  return b.pts - a.pts || b.exactos - a.exactos || b.aciertos - a.aciertos
+    || b.goleadores - a.goleadores || b.asistentes - a.asistentes || b.extras - a.extras
+    || (a.ultimo - b.ultimo) || 0;
+}
+function mismaPosicion(a, b){ return compararPosicion(a, b) === 0; }
 
 function rankingTorneo(t){
   const partidos = ((prode.fixture && prode.fixture.partidos) || []).filter(m=>m.estado === 3 && String(m.fechaHora) >= String(t.desde || ""));
   return (t.miembros || []).map(uid=>{
     const mb = prode.miembros[uid] || {nombre:"…", p:{}};
     const picksCup = aplicarCupos(uid === prode.usuario.uid ? prode.mios : mb.p);
-    let pts = 0, exactos = 0, aciertos = 0, extras = 0;
-    partidos.forEach(m=>{
-      const r = puntosDe(picksCup[m.id], m);
-      if(!r) return;
-      pts += r.pts;
-      if(r.det.includes("exacto")) exactos++;
-      if(r.det.includes("exacto") || r.det.includes("ganador") || r.det.includes("empate")) aciertos++;
-      extras += r.extras || 0;
-    });
-    return {uid, nombre: mb.nombre, pts, exactos, aciertos, extras};
-  }).sort((a,b)=> b.pts - a.pts || b.exactos - a.exactos || a.nombre.localeCompare(b.nombre));
+    return {uid, nombre: mb.nombre, ...sumarStats(picksCup, partidos)};
+  }).sort((a,b)=> compararPosicion(a, b) || a.nombre.localeCompare(b.nombre));
 }
 
 // Jugadores para elegir goleador/asistente: la formación si ya salió, si no el plantel
@@ -3628,7 +3646,7 @@ async function renderProde(){
       <div class="pr-thead"><h3 style="margin:0">${escH(t.nombre)}</h3><button class="pr-link" id="pr-compartir">Invitar · ${escH(t.id)}</button></div>
       <table class="posiciones pr-rank">
         <thead><tr><th></th><th class="eq">Jugador</th><th>Pts</th><th title="Resultados exactos">Ex.</th><th title="Aciertos de ganador o empate">Ac.</th><th title="Extras acertados">Ext.</th></tr></thead>
-        <tbody>${ranking.map((r,i)=>`<tr class="${r.uid === yo ? "mine" : ""}"><td class="pos">${i+1}</td><td class="eq">${escH(r.nombre)}</td><td class="pts">${r.pts}</td><td>${r.exactos}</td><td>${r.aciertos}</td><td>${r.extras}</td></tr>`).join("")}</tbody>
+        <tbody>${ranking.map((r,i)=>`<tr class="${r.uid === yo ? "mine" : ""}"><td class="pos">${i > 0 && mismaPosicion(r, ranking[i-1]) ? "" : i+1}</td><td class="eq">${escH(r.nombre)}</td><td class="pts">${r.pts}</td><td>${r.exactos}</td><td>${r.aciertos}</td><td>${r.extras}</td></tr>`).join("")}</tbody>
       </table>
       <p class="h2h-note">Cuentan los partidos jugados desde que se creó el torneo (${escH(t.desde || "")}).</p>
     </div>`}
@@ -3732,8 +3750,8 @@ function tablaFecha(t, deRonda){
       const cls = r.det.includes("exacto") ? "tf-exacto" : (r.det.includes("ganador") || r.det.includes("empate")) ? "tf-ganador" : r.pts ? "tf-algo" : "tf-cero";
       return `<td class="${cls}" ${datos}><b>${res}</b><small>${r.pts} pts</small></td>`;
     }).join("");
-    return {uid, nombre: mb.nombre, total, celdas};
-  }).sort((a,b)=> b.total - a.total || a.nombre.localeCompare(b.nombre));
+    return {uid, nombre: mb.nombre, total, celdas, ...sumarStats(picks, cerrados)};
+  }).sort((a,b)=> compararPosicion(a, b) || a.nombre.localeCompare(b.nombre));
   const terminada = deRonda.length > 0 && deRonda.every(m=>m.estado === 3);
   const max = filas.length ? filas[0].total : 0;
   const head = cerrados.map(m=>{
@@ -3744,10 +3762,11 @@ function tablaFecha(t, deRonda){
     <h3>Tabla de la ${escH(prode.ronda || "fecha")}</h3>
     <div class="tf-wrap"><table class="tf">
       <thead><tr><th class="tf-nom">Jugador</th>${head}<th class="tf-tot">Total</th></tr></thead>
-      <tbody>${filas.map(f=>`<tr class="${f.uid === yo ? "mine" : ""}"><td class="tf-nom">${max > 0 && f.total === max ? (terminada ? "🏆 " : "▲ ") : ""}${escH(f.nombre)}</td>${f.celdas}<td class="tf-tot">${f.total}</td></tr>`).join("")}</tbody>
+      <tbody>${filas.map(f=>`<tr class="${f.uid === yo ? "mine" : ""}"><td class="tf-nom">${max > 0 && mismaPosicion(f, filas[0]) ? (terminada ? "🏆 " : "▲ ") : ""}${escH(f.nombre)}</td>${f.celdas}<td class="tf-tot">${f.total}</td></tr>`).join("")}</tbody>
     </table></div>
     <div class="leyenda"><span><i style="background:#2F7D4F"></i>Exacto</span><span><i style="background:#8A7420"></i>Ganador o empate</span><span><i style="background:#3A4F48"></i>Sin puntos</span>${ocultos ? `<span>${ocultos} partido(s) todavía ocultos</span>` : ""}</div>
     <p class="h2h-note">${terminada ? "🏆 Ganador de la fecha." : "▲ Va ganando la fecha."} Tocá un casillero para ver el pronóstico completo.</p>
+    <p class="h2h-note">Desempate: más exactos, más aciertos de ganador o empate, más goleadores acertados, más asistentes, más extras y, por último, quien terminó de cargar primero.</p>
   </div>`;
 }
 
