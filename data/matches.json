@@ -36250,9 +36250,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "fiorentina-vs-atalanta",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 9"
       }
     },
