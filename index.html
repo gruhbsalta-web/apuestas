@@ -3727,7 +3727,7 @@ function verPronostico(uid, mid){
 }
 document.getElementById("pron-sheet").addEventListener("click", (e)=>{ if(e.target.id === "pron-sheet") e.target.close(); });
 
-// Marcas de la fecha: 🏆 primero, 🥈 segundo y 🏮 farolito rojo para el último
+// Marcas de la fecha: 🏆 primero, 🥈 segundo y 🤡 payaso para el último
 // (solo con la fecha terminada y al menos 3 participantes; mientras se juega, ▲ al que va primero)
 function marcaFecha(filas, i, max, terminada){
   if(!(max > 0)) return "";
@@ -3736,7 +3736,7 @@ function marcaFecha(filas, i, max, terminada){
   if(mismaPosicion(f, filas[0])) return "🏆 ";
   const segundo = filas.find(x=>!mismaPosicion(x, filas[0]));
   if(segundo && mismaPosicion(f, segundo)) return "🥈 ";
-  if(filas.length >= 3 && mismaPosicion(f, filas[filas.length - 1])) return "🏮 ";
+  if(filas.length >= 3 && mismaPosicion(f, filas[filas.length - 1])) return "🤡 ";
   return "";
 }
 // Tabla de la fecha: participantes × partidos ya cerrados, con pronóstico, puntos y total
@@ -3777,7 +3777,7 @@ function tablaFecha(t, deRonda){
       <tbody>${filas.map((f, i)=>`<tr class="${f.uid === yo ? "mine" : ""}"><td class="tf-nom">${marcaFecha(filas, i, max, terminada)}${escH(f.nombre)}</td>${f.celdas}<td class="tf-tot">${f.total}</td></tr>`).join("")}</tbody>
     </table></div>
     <div class="leyenda"><span><i style="background:#2F7D4F"></i>Exacto</span><span><i style="background:#8A7420"></i>Ganador o empate</span><span><i style="background:#3A4F48"></i>Sin puntos</span>${ocultos ? `<span>${ocultos} partido(s) todavía ocultos</span>` : ""}</div>
-    <p class="h2h-note">${terminada ? "🏆 Ganador · 🥈 Segundo · 🏮 Farolito rojo (último)." : "▲ Va ganando la fecha."} Tocá un casillero para ver el pronóstico completo.</p>
+    <p class="h2h-note">${terminada ? "🏆 Ganador · 🥈 Segundo · 🤡 Payaso (último)." : "▲ Va ganando la fecha."} Tocá un casillero para ver el pronóstico completo.</p>
     <p class="h2h-note">Desempate: más exactos, más aciertos de ganador o empate, más goleadores acertados, más asistentes, más extras y, por último, quien terminó de cargar primero.</p>
   </div>`;
 }
