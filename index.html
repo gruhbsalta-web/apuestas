@@ -306,6 +306,38 @@
   .fm-sale{color:#e5484d;font-family:var(--ff-num);} .fm-entra{color:#3ccf7a;font-family:var(--ff-num);}
   .fm-estado{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;margin-left:6px;background:var(--surface-2);color:var(--muted);vertical-align:middle;}
   .fm-estado.ok{color:#3ccf7a;}
+  /* ---------- Pronósticos ---------- */
+  .tab-btn{white-space:nowrap;overflow:hidden;min-width:0;font-size:10px;letter-spacing:-.02em;}
+  .modo-stats .tab-btn{font-size:11px;letter-spacing:0;}
+  .pr-top{display:flex;justify-content:space-between;align-items:center;margin:0 0 10px;font-size:15px;}
+  .pr-link{background:none;border:none;color:var(--accent);font:inherit;font-size:14px;font-weight:600;padding:6px 0;}
+  .pr-msg{background:var(--surface-2);border-radius:var(--radius);padding:10px 12px;font-size:14px;margin:8px 0;}
+  .pr-msg.err{color:#F0A39D;}
+  .pr-form{display:flex;gap:8px;margin:-2px 0 12px;}
+  .pr-form input{flex:1;}
+  .pr-form button{flex:0 0 auto;padding:0 18px;}
+  .pr-thead{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;}
+  .pr-rank td.eq{max-width:150px;overflow:hidden;text-overflow:ellipsis;}
+  .pr-match{background:var(--surface);border-radius:var(--radius-lg);padding:12px;margin-bottom:10px;}
+  .pr-fecha{font-size:12px;color:var(--muted);margin-bottom:8px;text-transform:capitalize;}
+  .pr-linea{display:grid;grid-template-columns:1fr auto auto auto 1fr;align-items:center;gap:6px;}
+  .pr-match.cerrado .pr-linea{grid-template-columns:1fr auto 1fr;}
+  .pr-eq{display:flex;align-items:center;gap:6px;min-width:0;font-weight:600;font-size:14px;}
+  .pr-eq span:not(.crest){overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .pr-eq.der{justify-content:flex-end;text-align:right;}
+  .pr-eq .crest{width:26px;height:26px;font-size:9px;}
+  .pr-g{width:44px;padding:8px 0;text-align:center;font-family:var(--ff-num);font-size:20px;font-weight:700;}
+  .pr-guion{color:var(--muted);}
+  .pr-res{font-family:var(--ff-num);font-size:22px;font-weight:700;padding:0 6px;}
+  .pr-extra{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:10px;}
+  .pr-sel{padding:9px 8px;font-size:13px;min-width:0;width:100%;text-overflow:ellipsis;}
+  .pr-mio{font-size:13px;color:var(--muted);margin-top:8px;}
+  .pr-pts{color:var(--accent);}
+  .pr-otros{margin-top:8px;font-size:13px;}
+  .pr-otros summary{color:var(--accent);font-weight:600;cursor:pointer;padding:4px 0;}
+  .pr-otro{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-top:1px solid var(--line);}
+  .pr-otro span{color:var(--muted);text-align:right;}
+  .pr-guardar{position:sticky;bottom:calc(var(--nav-h) + 10px);box-shadow:0 6px 18px rgba(0,0,0,.35);}
   .ausentes{margin:4px 0 12px;}
   .ausente{font-size:14px;padding:8px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:8px;}
   .ausente span{color:var(--muted);}
@@ -462,6 +494,10 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h16M4 20h16M8 5v15"/></svg>
     Tablas
   </button>
+  <button class="tab-btn" data-view="prode">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/></svg>
+    Pronósticos
+  </button>
   <button class="tab-btn" data-view="resumen">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
     Resumen
@@ -605,6 +641,11 @@
   </section>
 
   <!-- TABLAS -->
+  <!-- PRONÓSTICOS -->
+  <section id="view-prode" class="view">
+    <div id="prode"></div>
+  </section>
+
   <section id="view-tablas" class="view">
     <div id="tb-paises" class="chips paises"></div>
     <div id="tb-ligas" class="chips"></div>
@@ -855,6 +896,7 @@ document.querySelectorAll(".tab-btn").forEach(btn=>{
     if(btn.dataset.view === "resumen") renderResumen();
     if(btn.dataset.view === "planteles") renderPlantelesTab();
     if(btn.dataset.view === "tablas") renderTablas();
+    if(btn.dataset.view === "prode") renderProde();
   });
 });
 
@@ -3120,6 +3162,381 @@ function iniciarIndicadorSync(){
     const cada = (falta < 60000 || pedidoManual) ? 20000 : 60000;
     if(Date.now() - ultimoChequeo >= cada){ ultimoChequeo = Date.now(); leerEstado().then(pintarSync); }
   }, 5000);
+}
+
+// ---------- Pestaña Pronósticos: prode entre amigos (Liga Profesional) ----------
+// Los usuarios, torneos y pronósticos se guardan en Firebase (proyecto "lafija").
+// El fixture y los resultados salen de data/fixture.json, que arma el bucle solo.
+// Puntos: 3 resultado exacto, 1 ganador o empate, +2 goleador, +1 asistente.
+const FIREBASE_CONFIG = null; // datos públicos del proyecto (no son secretos)
+const FB_VER = "10.12.2";
+const PRODE_PTS = {exacto:3, ganador:1, goleador:2, asistente:1};
+let fb = null, fbCargando = null;
+const prode = {listo:false, usuario:null, nombre:"", torneos:[], torneoSel:null, mios:{}, fixture:null,
+  ronda:null, miembros:{}, error:"", aviso:"", formTorneo:null, codigoPendiente:null};
+try{ const c = new URLSearchParams(location.search).get("torneo"); if(c) prode.codigoPendiente = c.toUpperCase(); }catch(e){}
+
+const escH = s=>String(s ?? "").replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const normP = s=>String(s || "").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim();
+const inicioDe = m=> m && m.fechaHora ? new Date(m.fechaHora + ":00-03:00").getTime() : NaN;
+const empezado = m=> (m.estado != null && m.estado >= 2) || inicioDe(m) <= Date.now();
+const hoyAR = ()=> new Intl.DateTimeFormat("en-CA", {timeZone:"America/Argentina/Buenos_Aires"}).format(new Date());
+
+async function cargarFirebase(){
+  if(fb) return fb;
+  if(!fbCargando) fbCargando = (async()=>{
+    const base = `https://www.gstatic.com/firebasejs/${FB_VER}/`;
+    const [A, AU, FS] = await Promise.all([import(base + "firebase-app.js"), import(base + "firebase-auth.js"), import(base + "firebase-firestore.js")]);
+    const app = A.initializeApp(FIREBASE_CONFIG);
+    fb = {AU, FS, auth: AU.getAuth(app), db: FS.getFirestore(app)};
+    AU.onAuthStateChanged(fb.auth, async u=>{
+      prode.usuario = u; prode.listo = true;
+      if(u) await cargarDatosUsuario();
+      renderProde();
+    });
+    return fb;
+  })().catch(err=>{ fbCargando = null; throw err; });
+  return fbCargando;
+}
+
+async function cargarFixture(){
+  try{
+    const r = await fetchDato("data/fixture.json");
+    if(r.ok) prode.fixture = await r.json();
+  }catch(e){}
+  return prode.fixture;
+}
+
+// Nombre + PIN: por dentro es un usuario de Firebase con correo y contraseña derivados
+function credenciales(nombre, pin){
+  const slug = normP(nombre).replace(/ /g, ".");
+  return {email: `${slug}@lafija.app`, pass: `lafija-${pin}`, slug};
+}
+
+async function cargarDatosUsuario(){
+  const {FS, db} = fb; const uid = prode.usuario.uid;
+  try{
+    const [u, p, ts] = await Promise.all([
+      FS.getDoc(FS.doc(db, "usuarios", uid)),
+      FS.getDoc(FS.doc(db, "pronosticos", uid)),
+      FS.getDocs(FS.query(FS.collection(db, "torneos"), FS.where("miembros", "array-contains", uid)))
+    ]);
+    prode.nombre = u.exists() ? u.data().nombre : (prode.usuario.displayName || "");
+    prode.mios = p.exists() ? (p.data().p || {}) : {};
+    prode.torneos = ts.docs.map(d=>({id:d.id, ...d.data()})).sort((a,b)=>String(a.nombre).localeCompare(String(b.nombre)));
+    if(!prode.torneoSel || !prode.torneos.some(t=>t.id === prode.torneoSel)) prode.torneoSel = prode.torneos[0] ? prode.torneos[0].id : null;
+    if(prode.codigoPendiente){ const c = prode.codigoPendiente; prode.codigoPendiente = null; await unirseTorneo(c); }
+  }catch(err){ prode.error = "No se pudieron leer tus datos: " + (err.code || err.message); }
+}
+
+async function cargarMiembros(t){
+  const {FS, db} = fb;
+  await Promise.all((t.miembros || []).map(async uid=>{
+    try{
+      const [u, p] = await Promise.all([FS.getDoc(FS.doc(db, "usuarios", uid)), FS.getDoc(FS.doc(db, "pronosticos", uid))]);
+      prode.miembros[uid] = {nombre: u.exists() ? u.data().nombre : "?", p: p.exists() ? (p.data().p || {}) : {}};
+    }catch(e){ prode.miembros[uid] = prode.miembros[uid] || {nombre:"?", p:{}}; }
+  }));
+}
+
+function puntosDe(pr, m){
+  if(!pr || !m || m.estado !== 3 || !Array.isArray(m.goles)) return null;
+  const [gl, gv] = m.goles.map(Number);
+  let pts = 0; const det = [];
+  if(pr.l != null && pr.v != null){
+    if(pr.l === gl && pr.v === gv){ pts += PRODE_PTS.exacto; det.push("exacto"); }
+    else if(Math.sign(pr.l - pr.v) === Math.sign(gl - gv)){ pts += PRODE_PTS.ganador; det.push(gl === gv ? "empate" : "ganador"); }
+  }
+  if(pr.gol && (m.goleadores || []).some(n=>normP(n) === normP(pr.gol))){ pts += PRODE_PTS.goleador; det.push("goleador"); }
+  if(pr.asi && (m.asistentes || []).some(n=>normP(n) === normP(pr.asi))){ pts += PRODE_PTS.asistente; det.push("asistente"); }
+  return {pts, det};
+}
+
+function rankingTorneo(t){
+  const partidos = ((prode.fixture && prode.fixture.partidos) || []).filter(m=>m.estado === 3 && String(m.fechaHora) >= String(t.desde || ""));
+  return (t.miembros || []).map(uid=>{
+    const mb = prode.miembros[uid] || {nombre:"…", p:{}};
+    let pts = 0, exactos = 0, aciertos = 0, extras = 0;
+    partidos.forEach(m=>{
+      const r = puntosDe(mb.p[m.id], m);
+      if(!r) return;
+      pts += r.pts;
+      if(r.det.includes("exacto")) exactos++;
+      if(r.det.includes("exacto") || r.det.includes("ganador") || r.det.includes("empate")) aciertos++;
+      if(r.det.includes("goleador") || r.det.includes("asistente")) extras++;
+    });
+    return {uid, nombre: mb.nombre, pts, exactos, aciertos, extras};
+  }).sort((a,b)=> b.pts - a.pts || b.exactos - a.exactos || a.nombre.localeCompare(b.nombre));
+}
+
+// Jugadores para elegir goleador/asistente: la formación si ya salió, si no el plantel
+function jugadoresDe(m, equipo){
+  const ali = playersData && playersData.alineaciones && playersData.alineaciones[m.id] && playersData.alineaciones[m.id][equipo];
+  if(ali && (ali.titulares || []).length){
+    return ali.titulares.concat(ali.entraron || []).filter(p=>p.posicion !== "Arquero").map(p=>p.nombre);
+  }
+  return Object.values((playersData && playersData.jugadores) || {})
+    .filter(p=>p.equipo === equipo && p.posicion !== "Arquero")
+    .sort((a,b)=> (b.goles - a.goles) || (b.asist - a.asist) || (b.min - a.min))
+    .map(p=>p.nombre);
+}
+function selectJugador(m, k, actual){
+  const grupo = eq=>{
+    const lista = jugadoresDe(m, eq);
+    return lista.length ? `<optgroup label="${escH(eq)}">${lista.map(n=>`<option value="${escH(n)}" ${normP(n) === normP(actual) ? "selected" : ""}>${escH(n)}</option>`).join("")}</optgroup>` : "";
+  };
+  const ninguno = k === "gol" ? "⚽ Goleador" : "👟 Asistente";
+  return `<select class="pr-sel" data-id="${m.id}" data-k="${k}"><option value="">${ninguno}</option>${grupo(m.local)}${grupo(m.visitante)}</select>`;
+}
+
+function textoPron(pr){
+  if(!pr) return "Sin pronóstico";
+  const r = pr.l != null && pr.v != null ? `${pr.l}-${pr.v}` : "—";
+  return [r, pr.gol ? "⚽ " + pr.gol : "", pr.asi ? "👟 " + pr.asi : ""].filter(Boolean).join(" · ");
+}
+
+async function renderProde(){
+  const cont = document.getElementById("prode");
+  if(!cont) return;
+  if(!FIREBASE_CONFIG){
+    cont.innerHTML = '<div class="card"><h3>Pronósticos</h3><p class="bet-sub">Se está configurando. En cuanto esté listo vas a poder crear tu usuario y armar torneos con amigos.</p></div>';
+    return;
+  }
+  if(!fb){
+    cont.innerHTML = '<div class="empty">Cargando…</div>';
+    try{ await cargarFirebase(); }catch(e){ cont.innerHTML = '<div class="empty">No se pudo conectar. Revisá la conexión y volvé a entrar a la pestaña.</div>'; }
+    return; // onAuthStateChanged vuelve a dibujar
+  }
+  if(!prode.listo){ cont.innerHTML = '<div class="empty">Cargando…</div>'; return; }
+  const aviso = (prode.error ? `<p class="pr-msg err">${escH(prode.error)}</p>` : "") + (prode.aviso ? `<p class="pr-msg">${escH(prode.aviso)}</p>` : "");
+  prode.error = ""; prode.aviso = "";
+
+  if(!prode.usuario){
+    cont.innerHTML = `
+      <div class="card">
+        <h3>Pronósticos</h3>
+        <p class="bet-sub">Armá torneos de prode con amigos para la Liga Profesional. Entrá con tu nombre y un PIN de 4 números.</p>
+        ${aviso}
+        <label for="pr-nombre">Nombre</label>
+        <input id="pr-nombre" autocomplete="username" maxlength="24" placeholder="Ej.: Gustavo">
+        <label for="pr-pin">PIN (4 números)</label>
+        <input id="pr-pin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="current-password" placeholder="••••">
+        <button class="primary" id="pr-entrar">Entrar</button>
+        <div class="btn-row"><button class="btn-save" id="pr-crear">Soy nuevo: crear usuario</button></div>
+        <p class="bet-sub" style="margin-top:12px">Puntos: ${PRODE_PTS.exacto} por resultado exacto, ${PRODE_PTS.ganador} por acertar ganador o empate, +${PRODE_PTS.goleador} si acertás un goleador y +${PRODE_PTS.asistente} si acertás un asistente.</p>
+      </div>`;
+    const datos = ()=>{
+      const nombre = cont.querySelector("#pr-nombre").value.trim(), pin = cont.querySelector("#pr-pin").value.trim();
+      if(normP(nombre).length < 2){ prode.error = "Poné tu nombre (al menos 2 letras)."; renderProde(); return null; }
+      if(!/^\d{4}$/.test(pin)){ prode.error = "El PIN tiene que ser de 4 números."; renderProde(); return null; }
+      return {nombre, pin};
+    };
+    cont.querySelector("#pr-entrar").addEventListener("click", async ()=>{
+      const d = datos(); if(!d) return;
+      const c = credenciales(d.nombre, d.pin);
+      try{ await fb.AU.signInWithEmailAndPassword(fb.auth, c.email, c.pass); }
+      catch(err){
+        prode.error = err.code === "auth/too-many-requests" ? "Demasiados intentos. Esperá unos minutos." : "Nombre o PIN incorrectos. Si es tu primera vez, tocá «Soy nuevo».";
+        renderProde();
+      }
+    });
+    cont.querySelector("#pr-crear").addEventListener("click", async ()=>{
+      const d = datos(); if(!d) return;
+      const c = credenciales(d.nombre, d.pin);
+      try{
+        const cred = await fb.AU.createUserWithEmailAndPassword(fb.auth, c.email, c.pass);
+        await fb.FS.setDoc(fb.FS.doc(fb.db, "usuarios", cred.user.uid), {nombre: d.nombre, creado: fb.FS.serverTimestamp()});
+        prode.nombre = d.nombre;
+        renderProde();
+      }catch(err){
+        prode.error = err.code === "auth/email-already-in-use" ? "Ese nombre ya está en uso. Si sos vos, tocá «Entrar»; si no, elegí otro." : "No se pudo crear el usuario (" + (err.code || err.message) + ").";
+        renderProde();
+      }
+    });
+    return;
+  }
+
+  // ---- con usuario ----
+  if(!prode.fixture) await cargarFixture();
+  if(!playersData) await loadPlayers();
+  const t = prode.torneos.find(x=>x.id === prode.torneoSel) || null;
+  if(t) await cargarMiembros(t);
+  const partidos = ((prode.fixture && prode.fixture.partidos) || []).filter(m=>m.ronda && m.local);
+  const rondas = [...new Set(partidos.map(m=>m.ronda))];
+  if(!prode.ronda || !rondas.includes(prode.ronda)){
+    const pendiente = partidos.find(m=>m.estado !== 3);
+    prode.ronda = pendiente ? pendiente.ronda : rondas[rondas.length - 1];
+  }
+  const deRonda = partidos.filter(m=>m.ronda === prode.ronda);
+  const hayEditables = deRonda.some(m=>!empezado(m));
+
+  const formTorneo = prode.formTorneo === "crear"
+    ? `<div class="pr-form"><input id="pr-t-nombre" maxlength="30" placeholder="Nombre del torneo"><button class="btn-save" id="pr-t-ok">Crear</button></div>`
+    : prode.formTorneo === "unir"
+    ? `<div class="pr-form"><input id="pr-t-codigo" maxlength="6" placeholder="Código (6 letras)" style="text-transform:uppercase"><button class="btn-save" id="pr-t-ok">Unirme</button></div>`
+    : "";
+
+  const ranking = t ? rankingTorneo(t) : [];
+  const yo = prode.usuario.uid;
+  cont.innerHTML = `
+    <div class="pr-top"><span>Hola, <b>${escH(prode.nombre)}</b></span><button class="pr-link" id="pr-salir">Salir</button></div>
+    ${aviso}
+    <div class="chips" id="pr-torneos">
+      ${prode.torneos.map(x=>`<button class="chip ${x.id === prode.torneoSel ? "active" : ""}" data-t="${x.id}">${escH(x.nombre)}</button>`).join("")}
+      <button class="chip" data-accion="crear">+ Crear torneo</button>
+      <button class="chip" data-accion="unir">Unirme con código</button>
+    </div>
+    ${formTorneo}
+    ${!t ? `<div class="card"><p class="bet-sub" style="margin:0">Todavía no estás en ningún torneo. Creá uno y pasales el código a tus amigos, o sumate al de alguien con su código.</p></div>` : `
+    <div class="card">
+      <div class="pr-thead"><h3 style="margin:0">${escH(t.nombre)}</h3><button class="pr-link" id="pr-compartir">Invitar · ${escH(t.id)}</button></div>
+      <table class="posiciones pr-rank">
+        <thead><tr><th></th><th class="eq">Jugador</th><th>Pts</th><th title="Resultados exactos">Ex.</th><th title="Aciertos de ganador o empate">Ac.</th><th title="Goleadores o asistentes acertados">⚽</th></tr></thead>
+        <tbody>${ranking.map((r,i)=>`<tr class="${r.uid === yo ? "mine" : ""}"><td class="pos">${i+1}</td><td class="eq">${escH(r.nombre)}</td><td class="pts">${r.pts}</td><td>${r.exactos}</td><td>${r.aciertos}</td><td>${r.extras}</td></tr>`).join("")}</tbody>
+      </table>
+      <p class="h2h-note">Cuentan los partidos jugados desde que se creó el torneo (${escH(t.desde || "")}).</p>
+    </div>`}
+    <div class="team-stats-heading" style="margin-top:6px">Mis pronósticos</div>
+    <p class="bet-sub" style="margin:-4px 0 10px">Valen para todos tus torneos y se pueden cambiar hasta que empieza cada partido. Puntos: ${PRODE_PTS.exacto} exacto, ${PRODE_PTS.ganador} ganador o empate, +${PRODE_PTS.goleador} goleador, +${PRODE_PTS.asistente} asistente.</p>
+    <div class="chips" id="pr-rondas">${rondas.map(r=>`<button class="chip ${r === prode.ronda ? "active" : ""}" data-r="${escH(r)}">${escH(r)}</button>`).join("")}</div>
+    ${!deRonda.length ? '<div class="empty">Todavía no hay partidos cargados. Aparecen solos con la próxima actualización.</div>' : ""}
+    <div id="pr-lista">${deRonda.map(m=>filaPron(m, t)).join("")}</div>
+    ${hayEditables ? '<button class="primary pr-guardar" id="pr-guardar">Guardar pronósticos</button>' : ""}
+  `;
+
+  cont.querySelector("#pr-salir").addEventListener("click", ()=> fb.AU.signOut(fb.auth));
+  cont.querySelectorAll("[data-t]").forEach(b=>b.addEventListener("click", ()=>{ prode.torneoSel = b.dataset.t; renderProde(); }));
+  cont.querySelectorAll("[data-accion]").forEach(b=>b.addEventListener("click", ()=>{
+    prode.formTorneo = prode.formTorneo === b.dataset.accion ? null : b.dataset.accion; renderProde();
+  }));
+  cont.querySelectorAll("[data-r]").forEach(b=>b.addEventListener("click", ()=>{ prode.ronda = b.dataset.r; renderProde(); }));
+  const ok = cont.querySelector("#pr-t-ok");
+  if(ok) ok.addEventListener("click", async ()=>{
+    if(prode.formTorneo === "crear"){
+      const nombre = cont.querySelector("#pr-t-nombre").value.trim();
+      if(nombre.length < 2){ prode.error = "Poné un nombre para el torneo."; renderProde(); return; }
+      await crearTorneo(nombre);
+    } else {
+      await unirseTorneo(cont.querySelector("#pr-t-codigo").value.trim().toUpperCase());
+    }
+    renderProde();
+  });
+  const comp = cont.querySelector("#pr-compartir");
+  if(comp) comp.addEventListener("click", ()=> invitar(t));
+  const guardar = cont.querySelector("#pr-guardar");
+  if(guardar) guardar.addEventListener("click", ()=> guardarPronosticos(cont));
+}
+
+function filaPron(m, t){
+  const pr = prode.mios[m.id];
+  const fecha = m.fechaHora ? new Date(m.fechaHora + ":00-03:00").toLocaleString("es-AR", {weekday:"short", day:"numeric", month:"numeric", hour:"2-digit", minute:"2-digit", hour12:false, timeZone:"America/Argentina/Buenos_Aires"}) : "";
+  if(!empezado(m)){
+    return `<div class="pr-match">
+      <div class="pr-fecha">${escH(fecha)}</div>
+      <div class="pr-linea">
+        <span class="pr-eq">${crest(m.local)}<span>${escH(m.local)}</span></span>
+        <input class="pr-g" inputmode="numeric" pattern="[0-9]*" maxlength="2" data-id="${m.id}" data-k="l" value="${pr && pr.l != null ? pr.l : ""}" aria-label="Goles de ${escH(m.local)}">
+        <span class="pr-guion">-</span>
+        <input class="pr-g" inputmode="numeric" pattern="[0-9]*" maxlength="2" data-id="${m.id}" data-k="v" value="${pr && pr.v != null ? pr.v : ""}" aria-label="Goles de ${escH(m.visitante)}">
+        <span class="pr-eq der"><span>${escH(m.visitante)}</span>${crest(m.visitante)}</span>
+      </div>
+      <div class="pr-extra">${selectJugador(m, "gol", pr && pr.gol)}${selectJugador(m, "asi", pr && pr.asi)}</div>
+    </div>`;
+  }
+  const r = puntosDe(pr, m);
+  const res = Array.isArray(m.goles) ? `${m.goles[0]}-${m.goles[1]}` : "-";
+  const estado = m.estado === 3 ? "Final" : "En juego";
+  const otros = t ? (t.miembros || []).filter(uid=>uid !== prode.usuario.uid).map(uid=>{
+    const mb = prode.miembros[uid]; if(!mb) return "";
+    const rr = puntosDe(mb.p[m.id], m);
+    return `<div class="pr-otro"><b>${escH(mb.nombre)}</b><span>${escH(textoPron(mb.p[m.id]))}${rr ? ` · <b>${rr.pts} pts</b>` : ""}</span></div>`;
+  }).join("") : "";
+  return `<div class="pr-match cerrado">
+    <div class="pr-fecha">${escH(fecha)} · ${estado}</div>
+    <div class="pr-linea">
+      <span class="pr-eq">${crest(m.local)}<span>${escH(m.local)}</span></span>
+      <span class="pr-res">${res}</span>
+      <span class="pr-eq der"><span>${escH(m.visitante)}</span>${crest(m.visitante)}</span>
+    </div>
+    <div class="pr-mio">Vos: ${escH(textoPron(pr))}${r ? ` · <b class="pr-pts">${r.pts} pts</b>${r.det.length ? ` (${r.det.join(", ")})` : ""}` : ""}</div>
+    ${otros ? `<details class="pr-otros"><summary>Pronósticos del torneo</summary>${otros}</details>` : ""}
+  </div>`;
+}
+
+async function guardarPronosticos(cont){
+  const nuevos = {};
+  const partidos = (prode.fixture && prode.fixture.partidos) || [];
+  let error = "";
+  cont.querySelectorAll(".pr-match:not(.cerrado)").forEach(div=>{
+    const l = div.querySelector('[data-k="l"]'), v = div.querySelector('[data-k="v"]');
+    const id = l.dataset.id;
+    const m = partidos.find(x=>x.id === id);
+    if(!m || empezado(m)) return; // ya empezó: no se puede cambiar
+    const gol = div.querySelector('[data-k="gol"]').value || null;
+    const asi = div.querySelector('[data-k="asi"]').value || null;
+    const lv = l.value.trim(), vv = v.value.trim();
+    if(lv === "" && vv === "" && !gol && !asi) return;
+    if((lv === "") !== (vv === "") || (lv !== "" && (!/^\d{1,2}$/.test(lv) || !/^\d{1,2}$/.test(vv)))){
+      error = `Completá los dos resultados de ${m.local} - ${m.visitante}.`; return;
+    }
+    nuevos[id] = {l: lv === "" ? null : Number(lv), v: vv === "" ? null : Number(vv), gol, asi, t: Date.now()};
+  });
+  if(error){ prode.error = error; renderProde(); return; }
+  if(!Object.keys(nuevos).length){ prode.aviso = "No hay pronósticos nuevos para guardar."; renderProde(); return; }
+  try{
+    await fb.FS.setDoc(fb.FS.doc(fb.db, "pronosticos", prode.usuario.uid), {p: nuevos}, {merge:true});
+    Object.assign(prode.mios, nuevos);
+    prode.aviso = `Guardado: ${Object.keys(nuevos).length} pronóstico(s).`;
+  }catch(err){ prode.error = "No se pudo guardar (" + (err.code || err.message) + ")."; }
+  renderProde();
+}
+
+async function crearTorneo(nombre){
+  const {FS, db} = fb;
+  const letras = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  for(let intento = 0; intento < 5; intento++){
+    const codigo = Array.from({length:6}, ()=>letras[Math.floor(Math.random() * letras.length)]).join("");
+    const ref = FS.doc(db, "torneos", codigo);
+    try{
+      if((await FS.getDoc(ref)).exists()) continue;
+      const t = {nombre, creador: prode.usuario.uid, miembros: [prode.usuario.uid], desde: hoyAR(), creado: FS.serverTimestamp()};
+      await FS.setDoc(ref, t);
+      prode.torneos.push({id: codigo, ...t});
+      prode.torneoSel = codigo; prode.formTorneo = null;
+      prode.aviso = `Torneo creado. Código para invitar: ${codigo}`;
+      return;
+    }catch(err){ prode.error = "No se pudo crear el torneo (" + (err.code || err.message) + ")."; return; }
+  }
+  prode.error = "No se pudo generar un código. Probá de nuevo.";
+}
+
+async function unirseTorneo(codigo){
+  const {FS, db} = fb;
+  if(!/^[A-Z0-9]{6}$/.test(codigo)){ prode.error = "El código tiene 6 letras o números."; return; }
+  try{
+    const ref = FS.doc(db, "torneos", codigo);
+    const snap = await FS.getDoc(ref);
+    if(!snap.exists()){ prode.error = "No existe un torneo con ese código."; return; }
+    const t = {id: codigo, ...snap.data()};
+    if(!(t.miembros || []).includes(prode.usuario.uid)){
+      await FS.updateDoc(ref, {miembros: FS.arrayUnion(prode.usuario.uid)});
+      t.miembros = (t.miembros || []).concat(prode.usuario.uid);
+      prode.aviso = `Te sumaste a «${t.nombre}».`;
+    }
+    if(!prode.torneos.some(x=>x.id === codigo)) prode.torneos.push(t);
+    prode.torneoSel = codigo; prode.formTorneo = null;
+  }catch(err){ prode.error = "No se pudo entrar al torneo (" + (err.code || err.message) + ")."; }
+}
+
+async function invitar(t){
+  const url = `${location.origin}${location.pathname}?modo=estadisticas&torneo=${t.id}`;
+  const texto = `Sumate a mi torneo de prode «${t.nombre}» en La Fija. Código: ${t.id}`;
+  try{
+    if(navigator.share){ await navigator.share({title:"La Fija · Pronósticos", text: texto, url}); return; }
+    await navigator.clipboard.writeText(`${texto}\n${url}`);
+    prode.aviso = "Link copiado: pegalo en WhatsApp.";
+  }catch(e){ prode.aviso = `Código del torneo: ${t.id}`; }
+  renderProde();
 }
 
 // ---------- Init ----------

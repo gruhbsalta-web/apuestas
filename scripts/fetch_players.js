@@ -133,6 +133,26 @@ function hayTerminadosDelAnio(anio) {
   } catch (e) { return false; }
 }
 
+// data/fixture.json: partidos de la Liga Profesional (fecha en curso y la siguiente)
+// para el prode. Se suma a lo anterior: un partido que ya salió de la ventana queda.
+const FIXTURE_PATH = path.join(__dirname, '..', 'data', 'fixture.json');
+function guardarFixture(fixture) {
+  if (!fixture.size) return;
+  let prev = [];
+  try { prev = JSON.parse(fs.readFileSync(FIXTURE_PATH, 'utf8')).partidos || []; } catch (e) { /* nuevo */ }
+  const anio = todayInArgentina().slice(0, 4);
+  const porId = new Map(prev.filter((p) => String(p.fechaHora || '').startsWith(anio)).map((p) => [p.id, p]));
+  // se combina con lo anterior (goleadores/asistentes quedan aunque el partido ya no se vuelva a mirar)
+  fixture.forEach((p, id) => porId.set(id, { ...(porId.get(id) || {}), ...p }));
+  const partidos = [...porId.values()].sort((a, b) => String(a.fechaHora).localeCompare(String(b.fechaHora)));
+  const nuevo = JSON.stringify({ liga: 'hc', partidos });
+  let viejo = null;
+  try { const v = JSON.parse(fs.readFileSync(FIXTURE_PATH, 'utf8')); viejo = JSON.stringify({ liga: v.liga, partidos: v.partidos }); } catch (e) { /* nuevo */ }
+  if (nuevo === viejo) return;
+  fs.writeFileSync(FIXTURE_PATH, JSON.stringify({ actualizado: new Date().toISOString(), liga: 'hc', partidos }), 'utf8');
+  console.log(`fixture.json: ${partidos.length} partidos de la Liga Profesional.`);
+}
+
 function emptyOutput() {
   return { actualizado: null, partidos: {}, jugadores: {}, entrenadores: {}, ausentes: {} };
 }
@@ -251,6 +271,8 @@ async function run() {
   const today = todayInArgentina();
   const ausentesNuevos = {};
   const alineacionesNuevas = {};
+  const fixture = new Map();
+  const detallesProde = new Map();
   let convertirApi = null;
   const equipos = {};
   const matchesOut = fs.existsSync(MATCHES_PATH)
@@ -280,6 +302,21 @@ async function run() {
         }
       }
       await sleep(DELAY_MS);
+      // Fixture de la Liga Profesional para la pestaña Pronósticos (fecha en curso y la siguiente)
+      if (league.id === 'hc') {
+        games.forEach((g) => {
+          const fh = convertirApi ? convertirApi(parseFechaHora(g.start_time)) : parseFechaHora(g.start_time);
+          fixture.set(`promiedos_${g.id}`, {
+            id: `promiedos_${g.id}`,
+            ronda: round.nombre,
+            fechaHora: fh,
+            local: g?.teams?.[0]?.name || '',
+            visitante: g?.teams?.[1]?.name || '',
+            estado: g?.status?.enum ?? null, // 1 programado, 2 en juego, 3 terminado
+            goles: Array.isArray(g.scores) ? g.scores : null
+          });
+        });
+      }
 
       for (const game of games) {
         // aproximada (API calibrada): solo para decidir si es de los proximos dias
@@ -331,6 +368,13 @@ async function run() {
           continue;
         }
         addLines(out, league, lines);
+        // Prode: quién hizo los goles y quién asistió (puntos extra por acertarlos)
+        if (league.id === 'hc') {
+          detallesProde.set(`promiedos_${game.id}`, {
+            goleadores: [...new Set(lines.filter((l) => l.goles > 0).map((l) => l.nombre))],
+            asistentes: [...new Set(lines.filter((l) => l.asist > 0).map((l) => l.nombre))]
+          });
+        }
         addCoaches(out, league, coachesFromGame(ficha));
         const rec = matchRecord(ficha, league, 'Argentina', fichaHora || fechaHora, round.nombre);
         if (!matchById.has(rec.id)) partidosHistoricos++;
@@ -344,6 +388,8 @@ async function run() {
     }
   }
 
+  detallesProde.forEach((d, id) => { if (fixture.has(id)) Object.assign(fixture.get(id), d); else fixture.set(id, { id, ...d }); });
+  guardarFixture(fixture);
   const nEquipos = saveTeams(equipos);
   if (nEquipos) console.log(`teams.json actualizado (${nEquipos} equipos).`);
 
