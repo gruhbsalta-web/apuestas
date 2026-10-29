@@ -35945,8 +35945,8 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -35963,9 +35963,9 @@
         "leagueName": "Copa Argentina",
         "country": "Argentina",
         "gameUrlName": "atletico-tucuman-vs-platense",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": null
       }
     },
