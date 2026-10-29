@@ -82,7 +82,7 @@ jobs:
             echo "=== Actualizacion $(TZ=America/Argentina/Buenos_Aires date '+%a %H:%M') $([ "$RAPIDO" = 1 ] && echo '(rapida)') ==="
             npm run fetch || echo "fallo fetch de partidos"
             npm run fetch:players || echo "fallo fetch de jugadores (los partidos se guardan igual)"
-            # archivo de temporadas de Argentina (resultados, planteles, tablas) en las vueltas completas
+            # archivo de temporadas de Argentina (resultados, planteles, tablas): una vez por dia
             [ "$RAPIDO" = 1 ] || npm run archivar || echo "fallo el archivo de temporadas"
             # estado.json: hora de esta actualizacion y de la proxima (la app muestra la cuenta regresiva)
             ahora_e=$(date +%s)

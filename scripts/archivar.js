@@ -1,5 +1,5 @@
 // Archivo de temporadas de Argentina: resultados, planteles y tablas.
-// Se va completando en cada vuelta completa del bucle, así siempre está al día;
+// Se completa una vez por día (lo ya guardado no cambia, solo se suman los partidos nuevos);
 // cuando empieza el año nuevo, la carpeta del año anterior deja de cambiar y queda
 // como archivo de esa temporada.
 //   data/archivo/argentina/<año>/partidos.json   resultados y estadísticas (Liga Profesional, Primera Nacional, Copa Argentina)
@@ -26,6 +26,17 @@ function guardar(archivo, datos) {
   fs.writeFileSync(archivo, JSON.stringify(datos), 'utf8');
   return true;
 }
+
+// Una sola vez por día (la primera vuelta completa): lo ya guardado no cambia,
+// solo se suman los partidos terminados desde la vez anterior.
+const hoy = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Argentina/Buenos_Aires' }).format(new Date());
+try {
+  const idx = JSON.parse(fs.readFileSync(path.join(BASE, 'indice.json'), 'utf8'));
+  if (idx.ultimoArchivo === hoy && process.env.ARCHIVAR_YA !== '1') {
+    console.log(`Archivo Argentina: ya se guardó hoy (${hoy}).`);
+    process.exit(0);
+  }
+} catch (e) { /* primera vez */ }
 
 const ahora = new Date().toISOString();
 let cambios = 0;
@@ -85,6 +96,7 @@ if (tablas && tablas.ligas && (!players?.temporada || players.temporada === anio
 let previasIdx = [];
 try { previasIdx = JSON.parse(fs.readFileSync(path.join(BASE, 'indice.json'), 'utf8')).temporadas || []; } catch (e) { /* nuevo */ }
 const todas = [...new Set([...previasIdx.map(String), ...anios])].sort().map(Number);
-if (guardar(path.join(BASE, 'indice.json'), { actualizado: ahora, temporadas: todas })) cambios++;
+fs.mkdirSync(BASE, { recursive: true });
+fs.writeFileSync(path.join(BASE, 'indice.json'), JSON.stringify({ actualizado: ahora, ultimoArchivo: hoy, temporadas: todas }), 'utf8');
 
 console.log(`Archivo Argentina: ${cambios ? cambios + ' archivo(s) actualizado(s)' : 'sin cambios'} (temporadas ${todas.join(', ')}).`);
