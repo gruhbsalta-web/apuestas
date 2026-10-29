@@ -333,7 +333,14 @@
   .pr-extras{margin-top:6px;}
   .pr-bloque{margin-top:8px;}
   .pr-bloque-t{font-size:12px;color:var(--muted);font-weight:600;margin-bottom:4px;}
-  .pr-bloque .pr-extra{margin-top:0;}
+  .pr-cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;}
+  .pr-fila{display:flex;gap:4px;margin-bottom:6px;}
+  .pr-fila .pr-sel{flex:1 1 auto;min-width:0;width:auto;padding:9px 6px;}
+  .pr-fila .pr-cant{min-width:0;}
+  .pr-fila .picker-btn{flex:1 1 auto;min-width:0;width:auto;padding:9px 8px;font-size:13px;gap:4px;}
+  .pr-cols > div{min-width:0;}
+  .pr-cant{flex:0 0 46px;width:46px;padding:9px 2px;font-size:13px;text-align:center;}
+  .pr-cant:disabled{opacity:.4;}
   .pr-ayuda{font-size:12px;color:var(--muted);margin-top:6px;}
   .pr-sel{padding:9px 8px;font-size:13px;min-width:0;width:100%;text-overflow:ellipsis;}
   .pr-mio{font-size:13px;color:var(--muted);margin-top:8px;}
@@ -1798,7 +1805,7 @@ function abrirPicker(sel){
   if(actual) actual.scrollIntoView({block:"center"});
 }
 function mejorarSelect(sel){
-  if(sel._pickerBtn) return;
+  if(sel._pickerBtn || sel.classList.contains("sin-picker")) return;
   const btn = document.createElement("button");
   btn.type = "button";
   btn.className = "picker-btn";
@@ -3349,7 +3356,21 @@ const MAX_SLOTS = 6;
 function selectJugador(m, equipo, k, actual){
   const lista = jugadoresDe(m, equipo);
   const vacio = k === "gol" ? "⚽ Goleador (opcional)" : "👟 Asistente (opcional)";
-  return `<select class="pr-sel" data-k="${k}" data-eq="${escH(equipo)}"><option value="">${vacio}</option>${lista.map(n=>`<option value="${escH(n)}" ${actual && normP(n) === normP(actual) ? "selected" : ""}>${escH(n)}</option>`).join("")}</select>`;
+  return `<select class="pr-sel" data-k="${k}">${`<option value="">${vacio}</option>`}${lista.map(n=>`<option value="${escH(n)}" ${actual && normP(n) === normP(actual) ? "selected" : ""}>${escH(n)}</option>`).join("")}</select>`;
+}
+// Una fila por jugador con la cantidad al lado (Caicedo ×2). Aparece otra fila vacía
+// mientras queden goles del equipo sin asignar.
+function filasJug(m, equipo, k, elegidos, n){
+  const grupos = [];
+  listaJug(elegidos).forEach(x=>{ const g = grupos.find(y=>normP(y.nombre) === normP(x)); if(g) g.cant++; else grupos.push({nombre:x, cant:1}); });
+  let usados = 0; const ok = [];
+  grupos.forEach(g=>{ const c = Math.min(g.cant, n - usados); if(c > 0){ ok.push({nombre:g.nombre, cant:c}); usados += c; } });
+  if(usados < n) ok.push({nombre:"", cant:1});
+  return ok.map(g=>{
+    const max = g.nombre ? g.cant + (n - usados) : n - usados;
+    const cant = `<select class="pr-cant sin-picker" data-k="${k}-cant" ${g.nombre ? "" : "disabled"} aria-label="Cantidad">${Array.from({length: Math.max(1, max)}, (_, i)=>`<option value="${i+1}" ${i+1 === g.cant ? "selected" : ""}>×${i+1}</option>`).join("")}</select>`;
+    return `<div class="pr-fila">${selectJugador(m, equipo, k, g.nombre)}${cant}</div>`;
+  }).join("");
 }
 function extraHtml(m, l, v, gol, asi){
   const bloque = (equipo, n)=>{
@@ -3358,16 +3379,19 @@ function extraHtml(m, l, v, gol, asi){
     const jug = new Set(jugadoresDe(m, equipo).map(normP));
     const golEq = listaJug(gol).filter(x=>jug.has(normP(x)));
     const asiEq = listaJug(asi).filter(x=>jug.has(normP(x)));
-    let html = `<div class="pr-bloque"><div class="pr-bloque-t">${escH(equipo)}: ${n === 1 ? "1 gol" : n + " goles"}</div><div class="pr-extra">`;
-    for(let i = 0; i < n; i++) html += selectJugador(m, equipo, "gol", golEq[i]) + selectJugador(m, equipo, "asi", asiEq[i]);
-    return html + "</div></div>";
+    return `<div class="pr-bloque" data-eq="${escH(equipo)}"><div class="pr-bloque-t">${escH(equipo)}: ${n === 1 ? "1 gol" : n + " goles"}</div>
+      <div class="pr-cols"><div>${filasJug(m, equipo, "gol", golEq, n)}</div><div>${filasJug(m, equipo, "asi", asiEq, n)}</div></div></div>`;
   };
   const txt = (l == null || v == null) ? '<div class="pr-ayuda">Poné el resultado para elegir goleadores y asistentes (opcional).</div>' : "";
   return txt + bloque(m.local, l) + bloque(m.visitante, v);
 }
 function leerExtra(div){
   const gol = [], asi = [];
-  div.querySelectorAll('.pr-sel').forEach(s=>{ if(s.value) (s.dataset.k === "gol" ? gol : asi).push(s.value); });
+  div.querySelectorAll('.pr-fila').forEach(f=>{
+    const s = f.querySelector('.pr-sel'); if(!s.value) return;
+    const c = Number(f.querySelector('.pr-cant').value) || 1;
+    for(let i = 0; i < c; i++) (s.dataset.k === "gol" ? gol : asi).push(s.value);
+  });
   return {gol, asi};
 }
 function golesInput(div){
@@ -3530,11 +3554,13 @@ async function renderProde(){
   cont.querySelectorAll(".pr-match:not(.cerrado)").forEach(div=>{
     const id = div.querySelector(".pr-g").dataset.id;
     const m = partidos.find(x=>x.id === id);
-    div.querySelectorAll(".pr-g").forEach(inp=>inp.addEventListener("input", ()=>{
+    const rearmar = ()=>{
       const {l, v} = golesInput(div);
       const {gol, asi} = leerExtra(div);
       div.querySelector(".pr-extras").innerHTML = extraHtml(m, l, v, gol, asi);
-    }));
+    };
+    div.querySelectorAll(".pr-g").forEach(inp=>inp.addEventListener("input", rearmar));
+    div.querySelector(".pr-extras").addEventListener("change", rearmar);
   });
 }
 
