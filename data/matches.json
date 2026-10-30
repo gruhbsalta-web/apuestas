@@ -36434,7 +36434,7 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 4,
@@ -36457,7 +36457,7 @@
         "gameUrlName": "villarreal-vs-espanyol",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "72'",
+        "minuto": "78'",
         "ronda": "Fecha 11"
       }
     },
