@@ -36438,15 +36438,15 @@
         },
         "corners": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         }
       },
       "source": {
@@ -36457,7 +36457,7 @@
         "gameUrlName": "villarreal-vs-espanyol",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "29'",
+        "minuto": "35'",
         "ronda": "Fecha 11"
       }
     },
