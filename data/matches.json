@@ -36426,18 +36426,18 @@
       "visitante": "RCD Espanyol",
       "fechaHora": "2026-10-30T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 3
         },
         "corners": {
-          "l": 5,
+          "l": 7,
           "v": 3
         },
         "tirosArco": {
@@ -36455,9 +36455,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "villarreal-vs-espanyol",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11"
       }
     },
