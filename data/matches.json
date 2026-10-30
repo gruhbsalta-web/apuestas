@@ -36437,8 +36437,8 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -36457,7 +36457,7 @@
         "gameUrlName": "villarreal-vs-espanyol",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "17'",
         "ronda": "Fecha 11"
       }
     },
