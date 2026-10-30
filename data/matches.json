@@ -36277,12 +36277,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -36293,7 +36293,7 @@
         "gameUrlName": "huracan-vs-tigre",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "75'",
+        "minuto": "80'",
         "ronda": "Fecha 15"
       }
     },
@@ -36334,7 +36334,7 @@
         "gameUrlName": "estudiantes-rio-cuarto-vs-gimnasia-la-plata",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "77'",
+        "minuto": "82'",
         "ronda": "Fecha 15"
       }
     },
