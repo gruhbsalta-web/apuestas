@@ -36266,7 +36266,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -36278,7 +36278,7 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 1,
@@ -36291,9 +36291,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "huracan-vs-tigre",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "50'",
         "ronda": "Fecha 15"
       }
     },
@@ -36310,19 +36310,19 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "corners": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         },
         "tirosArco": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         }
       },
@@ -36332,9 +36332,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "estudiantes-rio-cuarto-vs-gimnasia-la-plata",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Fecha 15"
       }
     },
