@@ -36291,9 +36291,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "huracan-vs-tigre",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 15"
       }
     },
@@ -36332,9 +36332,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "estudiantes-rio-cuarto-vs-gimnasia-la-plata",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 15"
       }
     },
