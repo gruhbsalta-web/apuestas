@@ -36269,7 +36269,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "corners": {
@@ -36278,10 +36278,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         }
       },
@@ -36293,7 +36293,7 @@
         "gameUrlName": "huracan-vs-tigre",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "75'",
         "ronda": "Fecha 15"
       }
     },
@@ -36311,7 +36311,7 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 3
+          "v": 4
         },
         "corners": {
           "l": 4,
@@ -36334,7 +36334,7 @@
         "gameUrlName": "estudiantes-rio-cuarto-vs-gimnasia-la-plata",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "70'",
+        "minuto": "77'",
         "ronda": "Fecha 15"
       }
     },
