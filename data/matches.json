@@ -36455,9 +36455,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "villarreal-vs-espanyol",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 11"
       }
     },
