@@ -359,6 +359,15 @@ async function run() {
           ausentesNuevos[`promiedos_${game.id}`] = missingFromGame(ficha);
           const ali = alineacionFromGame(ficha);
           if (ali) alineacionesNuevas[`promiedos_${game.id}`] = ali;
+          // Prode en vivo: goleadores, asistentes, primer gol, primer tiempo y rojas parciales
+          if (league.id === 'hc' && game?.status?.enum === 2) {
+            const parciales = playerLinesFromGame(ficha);
+            detallesProde.set(`promiedos_${game.id}`, {
+              goleadores: Object.fromEntries(parciales.filter((l) => l.goles > 0).map((l) => [l.nombre, l.goles])),
+              asistentes: Object.fromEntries(parciales.filter((l) => l.asist > 0).map((l) => [l.nombre, l.asist])),
+              ...datosProdeFromGame(ficha)
+            });
+          }
           continue;
         }
         const lines = playerLinesFromGame(ficha);

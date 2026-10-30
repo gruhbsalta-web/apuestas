@@ -359,6 +359,7 @@
   table.tf td.tf-cero{background:#3A4F48;color:var(--muted);}
   table.tf td.tf-nada{background:transparent;color:var(--muted);}
   table.tf td.tf-pend{background:var(--surface-2);}
+  table.tf td.tf-vivo{box-shadow:inset 0 0 0 2px var(--live, #4FC3F7);}
   .pr-cupo{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted);background:var(--surface);border-radius:var(--radius);padding:8px 12px;margin:0 0 10px;}
   .pr-cupo b{color:var(--text);font-family:var(--ff-num);font-size:14px;}
   .pr-cupo .lleno b{color:var(--accent);}
@@ -3046,6 +3047,9 @@ async function leerEstado(){
       tablasData = null;
       if(document.getElementById("view-tablas").classList.contains("active")) renderTablas();
       renderAll();
+      // Pronósticos: resultados y puntos parciales al día (sin pisar lo que se esté cargando)
+      prode.fixture = null;
+      if(document.getElementById("view-prode").classList.contains("active") && !prode.editando) renderProde();
     }
     ultimaVista = e.ultima;
   }catch(err){ /* sin red: se reintenta */ }
@@ -3348,8 +3352,10 @@ async function cargarMiembros(t){
   if(cambio) guardarCachePicks(cache);
 }
 
+// Con el partido terminado da los puntos finales; en juego, los parciales (vivo: true)
 function puntosDe(pr, m){
-  if(!pr || !m || m.estado !== 3 || !Array.isArray(m.goles)) return null;
+  if(!pr || !m || !(m.estado === 3 || m.estado === 2) || !Array.isArray(m.goles)) return null;
+  const vivo = m.estado === 2;
   if(pr.t != null && pr.t > cierreDe(m) + 60000) return {pts:0, det:["fuera de hora"]};
   const [gl, gv] = m.goles.map(Number);
   let pts = 0; const det = [];
@@ -3365,7 +3371,7 @@ function puntosDe(pr, m){
   // solo paga si dijiste que hay roja y la hubo (una o más: suma 1)
   if(pr.roja === true && m.rojas != null && m.rojas > 0){ pts += PRODE_PTS.roja; det.push("roja"); }
   const base = det.includes("exacto") ? PRODE_PTS.exacto : (det.includes("ganador") || det.includes("empate")) ? PRODE_PTS.ganador : 0;
-  return {pts, det, extras: pts - base, g, a};
+  return {pts, det, extras: pts - base, g, a, vivo};
 }
 
 // Estadísticas de un participante sobre una lista de partidos (para ordenar y desempatar)
@@ -3396,7 +3402,7 @@ function compararPosicion(a, b){
 function mismaPosicion(a, b){ return compararPosicion(a, b) === 0; }
 
 function rankingTorneo(t){
-  const partidos = ((prode.fixture && prode.fixture.partidos) || []).filter(m=>m.estado === 3 && String(m.fechaHora) >= String(t.desde || ""));
+  const partidos = ((prode.fixture && prode.fixture.partidos) || []).filter(m=>(m.estado === 3 || m.estado === 2) && String(m.fechaHora) >= String(t.desde || ""));
   return (t.miembros || []).map(uid=>{
     const mb = prode.miembros[uid] || {nombre:"…", p:{}};
     const picksCup = aplicarCupos(uid === prode.usuario.uid ? prode.mios : mb.p);
@@ -3611,6 +3617,7 @@ async function renderProde(){
   }
 
   // ---- con usuario ----
+  prode.editando = false;
   if(!prode.fixture) await cargarFixture();
   if(!playersData) await loadPlayers();
   const t = prode.torneos.find(x=>x.id === prode.torneoSel) || null;
@@ -3648,7 +3655,7 @@ async function renderProde(){
         <thead><tr><th></th><th class="eq">Jugador</th><th>Pts</th><th title="Resultados exactos">Ex.</th><th title="Aciertos de ganador o empate">Ac.</th><th title="Extras acertados">Ext.</th></tr></thead>
         <tbody>${ranking.map((r,i)=>`<tr class="${r.uid === yo ? "mine" : ""}"><td class="pos">${i > 0 && mismaPosicion(r, ranking[i-1]) ? "" : i+1}</td><td class="eq">${escH(r.nombre)}</td><td class="pts">${r.pts}</td><td>${r.exactos}</td><td>${r.aciertos}</td><td>${r.extras}</td></tr>`).join("")}</tbody>
       </table>
-      <p class="h2h-note">Cuentan los partidos jugados desde que se creó el torneo (${escH(t.desde || "")}).</p>
+      <p class="h2h-note">Cuentan los partidos jugados desde que se creó el torneo (${escH(t.desde || "")})${((prode.fixture && prode.fixture.partidos) || []).some(m=>m.estado === 2) ? ", incluidos los parciales de los que se están jugando" : ""}.</p>
     </div>`}
     <div class="team-stats-heading" style="margin-top:6px">Mis pronósticos</div>
     <p class="bet-sub" style="margin:-4px 0 10px">Valen para todos tus torneos y se pueden cambiar hasta 5 minutos antes de cada partido. Puntos: ${PRODE_PTS.exacto} exacto, ${PRODE_PTS.ganador} ganador o empate. Extras opcionales, 1 punto cada uno y hasta ${CUPO} por fecha: goleador (si hace al menos los goles que le pusiste), asistente (ídem), primer gol, primer tiempo exacto y roja (si decís que hay y la hay).</p>
@@ -3683,12 +3690,12 @@ async function renderProde(){
   const guardar = cont.querySelector("#pr-guardar");
   if(guardar) guardar.addEventListener("click", ()=> guardarPronosticos(cont));
   // al cambiar el resultado se rearman los lugares de goleadores/asistentes (se conserva lo elegido)
-  const rearmar = ()=> rearmarRonda(cont, partidos);
+  const rearmar = ()=>{ prode.editando = true; rearmarRonda(cont, partidos); };
   cont.querySelectorAll(".pr-match:not(.cerrado)").forEach(div=>{
     div.querySelectorAll(".pr-g").forEach(inp=>inp.addEventListener("input", rearmar));
     div.querySelector(".pr-extras").addEventListener("change", rearmar);
   });
-  rearmar();
+  rearmarRonda(cont, partidos);
 }
 
 // Detalle de un pronóstico (al tocar un casillero de la tabla de la fecha)
@@ -3720,7 +3727,7 @@ function verPronostico(uid, mid){
       ${fila("1er tiempo", pr.ht || "")}
       ${fila("Roja", pr.roja === true ? "Hay roja" : "")}
     </div>
-    ${r ? `<div class="pv-pts"><b>${r.pts} pts</b><span>${escH(r.det.length ? r.det.join(" · ") : "sin aciertos")}</span></div>` : '<p class="bet-sub">Los puntos se suman cuando termina el partido.</p>'}`}
+    ${r ? `<div class="pv-pts"><b>${r.pts} pts${r.vivo ? " parciales" : ""}</b><span>${escH(r.det.length ? r.det.join(" · ") : "sin aciertos")}</span></div>` : '<p class="bet-sub">Los puntos se suman cuando termina el partido.</p>'}`}
   `;
   cont.querySelector(".sheet-close").addEventListener("click", ()=> dlg.close());
   if(!dlg.open) dlg.showModal();
@@ -3760,7 +3767,7 @@ function tablaFecha(t, deRonda){
       if(!r) return `<td class="tf-pend" ${datos}><b>${res}</b></td>`;
       total += r.pts;
       const cls = r.det.includes("exacto") ? "tf-exacto" : (r.det.includes("ganador") || r.det.includes("empate")) ? "tf-ganador" : r.pts ? "tf-algo" : "tf-cero";
-      return `<td class="${cls}" ${datos}><b>${res}</b><small>${r.pts} pts</small></td>`;
+      return `<td class="${cls}${r.vivo ? " tf-vivo" : ""}" ${datos}><b>${res}</b><small>${r.pts} pts${r.vivo ? "*" : ""}</small></td>`;
     }).join("");
     return {uid, nombre: mb.nombre, total, celdas, ...sumarStats(picks, cerrados)};
   }).sort((a,b)=> compararPosicion(a, b) || a.nombre.localeCompare(b.nombre));
@@ -3777,7 +3784,7 @@ function tablaFecha(t, deRonda){
       <tbody>${filas.map((f, i)=>`<tr class="${f.uid === yo ? "mine" : ""}"><td class="tf-nom">${marcaFecha(filas, i, max, terminada)}${escH(f.nombre)}</td>${f.celdas}<td class="tf-tot">${f.total}</td></tr>`).join("")}</tbody>
     </table></div>
     <div class="leyenda"><span><i style="background:#2F7D4F"></i>Exacto</span><span><i style="background:#8A7420"></i>Ganador o empate</span><span><i style="background:#3A4F48"></i>Sin puntos</span>${ocultos ? `<span>${ocultos} partido(s) todavía ocultos</span>` : ""}</div>
-    <p class="h2h-note">${terminada ? "" : "▲ Va ganando la fecha. "}Tocá un casillero para ver el pronóstico completo.</p>
+    <p class="h2h-note">${terminada ? "" : "▲ Va ganando la fecha. "}${cerrados.some(m=>m.estado === 2) ? "* Puntos parciales de partidos en juego. " : ""}Tocá un casillero para ver el pronóstico completo.</p>
     <p class="h2h-note">Desempate: más exactos, más aciertos de ganador o empate, más goleadores acertados, más asistentes, más extras y, por último, quien terminó de cargar primero.</p>
   </div>`;
 }
@@ -3805,7 +3812,7 @@ function filaPron(m, t){
     const mb = prode.miembros[uid]; if(!mb) return "";
     const pc = aplicarCupos(mb.p)[m.id];
     const rr = puntosDe(pc, m);
-    return `<div class="pr-otro"><b>${escH(mb.nombre)}</b><span>${escH(textoPron(pc))}${rr ? ` · <b>${rr.pts} pts</b>` : ""}</span></div>`;
+    return `<div class="pr-otro"><b>${escH(mb.nombre)}</b><span>${escH(textoPron(pc))}${rr ? ` · <b>${rr.pts} pts${rr.vivo ? " parciales" : ""}</b>` : ""}</span></div>`;
   }).join("") : "";
   return `<div class="pr-match cerrado">
     <div class="pr-fecha">${escH(fecha)} · ${estado}</div>
@@ -3814,7 +3821,7 @@ function filaPron(m, t){
       <span class="pr-res">${res}</span>
       <span class="pr-eq der"><span>${escH(m.visitante)}</span>${crest(m.visitante)}</span>
     </div>
-    <div class="pr-mio">Vos: ${escH(textoPron(pr))}${r ? ` · <b class="pr-pts">${r.pts} pts</b>${r.det.length ? ` (${r.det.join(", ")})` : ""}` : ""}</div>
+    <div class="pr-mio">Vos: ${escH(textoPron(pr))}${r ? ` · <b class="pr-pts">${r.pts} pts${r.vivo ? " parciales" : ""}</b>${r.det.length ? ` (${r.det.join(", ")})` : ""}` : ""}</div>
     ${otros ? `<details class="pr-otros"><summary>Pronósticos del torneo</summary>${otros}</details>` : ""}
   </div>`;
 }
