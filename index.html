@@ -387,6 +387,9 @@
   .pr-otro{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-top:1px solid var(--line);}
   .pr-otro span{color:var(--muted);text-align:right;}
   .pr-guardar{position:sticky;bottom:calc(var(--nav-h) + 10px);box-shadow:0 6px 18px rgba(0,0,0,.35);}
+  .mr-tv{font-size:12px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .mr-info{font-size:13px;color:var(--muted);margin:8px 0 10px;display:flex;flex-direction:column;gap:3px;}
+  .mr-info b{color:var(--text);font-weight:600;}
   .ausentes{margin:4px 0 12px;}
   .ausente{font-size:14px;padding:8px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:8px;}
   .ausente span{color:var(--muted);}
@@ -1079,12 +1082,17 @@ function buildMatchCard(m){
       <div class="mr-teams">
         <div class="mr-team ${pierdeL ? "lose" : ""}">${crest(m.local)}<span class="nm">${m.local}</span></div>
         <div class="mr-team ${pierdeV ? "lose" : ""}">${crest(m.visitante)}<span class="nm">${m.visitante}</span></div>
+        ${!m.finPartido && m.source && m.source.tv ? `<div class="mr-tv">📺 ${escH(m.source.tv)}</div>` : ""}
         ${nBets ? `<span><span class="mr-bets">${nBets} ${nBets === 1 ? "apuesta" : "apuestas"}</span></span>` : ""}
       </div>
       <div class="mr-score">${empezo ? `<span class="${pierdeL ? "lose" : ""}">${gl}</span><span class="${pierdeV ? "lose" : ""}">${gv}</span>` : ""}</div>
     </summary>
     <div class="match-detail">
       <span class="status-badge ${st.cls}">${st.label}</span>
+      ${m.source && (m.source.estadio || m.source.arbitro) ? `<div class="mr-info">
+        ${m.source.estadio ? `<div>🏟️ ${escH(m.source.estadio)}</div>` : ""}
+        ${m.source.arbitro ? `<div>Árbitro: ${escH(m.source.arbitro)}</div>` : ""}
+      </div>` : ""}
       ${empezo ? `<div class="stat-grid">
         <div class="stat-row"><span></span><span style="text-align:center">${initials(m.local)}</span><span style="text-align:center">${initials(m.visitante)}</span></div>
         ${statKeys.filter(k=>k !== "goles").map(k=>`

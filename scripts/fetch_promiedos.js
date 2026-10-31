@@ -216,9 +216,39 @@ async function fetchLeagueGames(league, today) {
   }
 }
 
-async function enrichWithDetail(match, buildId) {
+// Canal de TV (Argentina), estadio y árbitro: vienen en game_info de la ficha
+function infoDeFicha(game) {
+  const info = Array.isArray(game?.game_info) ? game.game_info : [];
+  const val = (re) => (info.find((x) => re.test(String(x?.name || ''))) || {}).value || null;
+  return { tv: val(/arg\s*tv/i) || val(/\btv\b/i), estadio: val(/estadio/i), arbitro: val(/rbitro/i) };
+}
+function ponerInfo(match, info) {
+  match.source = Object.assign({}, match.source);
+  if (info.tv) match.source.tv = info.tv;
+  if (info.estadio) match.source.estadio = info.estadio;
+  if (info.arbitro) match.source.arbitro = info.arbitro;
+}
+
+async function enrichWithDetail(match, buildId, previo, today) {
   if (!match._needsDetail || !match._gameUrlName) {
     match.stats.goles = match._goles;
+    // Programados: la ficha se baja una vez por día para el canal de TV (cambia poco)
+    if (previo && previo.source && previo.source.infoDia === today) {
+      ['tv', 'estadio', 'arbitro'].forEach((k) => { if (previo.source[k]) match.source[k] = previo.source[k]; });
+      match.source.infoDia = today;
+    } else if (match._gameUrlName) {
+      const gameId = match.id.replace(/^promiedos_/, '');
+      try {
+        const data = await getJson(`${SITE}/_next/data/${buildId}/game/${encodeURIComponent(match._gameUrlName)}/${gameId}.json`);
+        ponerInfo(match, infoDeFicha(data?.pageProps?.initialData?.game));
+        match.source.infoDia = today;
+        const exacta = fichaHoraArgentina(data);
+        if (exacta) match.fechaHora = exacta;
+      } catch (error) {
+        console.warn(`No se pudo traer la ficha del partido ${match.id}:`, error.message || error);
+        if (previo && previo.source) ['tv', 'estadio', 'arbitro'].forEach((k) => { if (previo.source[k]) match.source[k] = previo.source[k]; });
+      }
+    }
     delete match._needsDetail;
     delete match._goles;
     delete match._gameUrlName;
@@ -232,6 +262,7 @@ async function enrichWithDetail(match, buildId) {
     if (exacta) match.fechaHora = exacta; // la ficha trae hora y zona en la misma respuesta
     const statistics = data?.pageProps?.initialData?.game?.statistics;
     match.stats = statsFromStatistics(statistics, match._goles);
+    ponerInfo(match, infoDeFicha(data?.pageProps?.initialData?.game));
   } catch (error) {
     console.warn(`No se pudieron traer estadisticas del partido ${match.id}:`, error.message || error);
     match.stats.goles = match._goles;
@@ -259,6 +290,7 @@ async function run() {
     : { matches: [], bets: [], capitalInicial: 0 };
   // Partidos ya terminados y guardados: no se vuelve a bajar su ficha (no cambian)
   const yaTerminados = new Map((existing.matches || []).filter((m) => m.finPartido).map((m) => [m.id, m]));
+  const previos = new Map((existing.matches || []).map((m) => [m.id, m]));
   let fichas = 0, reusados = 0;
 
   for (const league of leagues) {
@@ -270,7 +302,7 @@ async function run() {
         reusados++;
         continue;
       }
-      await enrichWithDetail(match, buildId);
+      await enrichWithDetail(match, buildId, previos.get(match.id), today);
       allMatches.push(match);
       fichas++;
       if (DELAY_MS > 0) await sleep(DELAY_MS);
