@@ -36463,23 +36463,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 2,
-          "v": 2
+          "l": 3,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -36490,7 +36490,7 @@
         "gameUrlName": "riestra-vs-talleres-cordoba",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "18'",
+        "minuto": "31'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Guillermo Laza",
@@ -36956,7 +36956,7 @@
         },
         "corners": {
           "l": 6,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 4,
@@ -36975,7 +36975,7 @@
         "gameUrlName": "deportivo-moron-vs-ciudad-de-bolivar",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "52'",
+        "minuto": "64'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
@@ -36988,7 +36988,7 @@
       "visitante": "Mitre SdE",
       "fechaHora": "2026-10-31T15:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -36996,7 +36996,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 5,
@@ -37017,13 +37017,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "los-andes-vs-mitre-sde",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "86'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio Eduardo Gallardón",
-        "arbitro": "Nicolás Agustín Mastroieni"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -37035,7 +37030,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -37043,16 +37038,16 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 4,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 3
         }
       },
       "source": {
@@ -37063,7 +37058,7 @@
         "gameUrlName": "chaco-for-ever-vs-racing-cordoba",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "14'",
+        "minuto": "26'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Juan Alberto García",
@@ -37437,7 +37432,7 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 0
         },
         "tirosArco": {
@@ -37457,7 +37452,7 @@
         "gameUrlName": "aston-villa-vs-fulham",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "17'",
+        "minuto": "29'",
         "ronda": "Fecha 9",
         "tv": "Disney+ Premium",
         "estadio": "Villa Park",
@@ -37602,19 +37597,19 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 0,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
@@ -37630,7 +37625,7 @@
         "gameUrlName": "barcelona-vs-alaves",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "16'",
+        "minuto": "28'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
@@ -37740,14 +37735,14 @@
         },
         "corners": {
           "l": 1,
-          "v": 6
+          "v": 7
         },
         "tirosArco": {
           "l": 2,
-          "v": 4
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
+          "l": 5,
           "v": 0
         }
       },
@@ -37759,7 +37754,7 @@
         "gameUrlName": "ac-milan-vs-inter-milan",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "29'",
+        "minuto": "41'",
         "ronda": "Fecha 10",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
