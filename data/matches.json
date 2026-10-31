@@ -36494,7 +36494,7 @@
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Guillermo Laza",
-        "arbitro": "Darío Herrera (Argentina)"
+        "arbitro": "Darío Herrera"
       }
     },
     {
@@ -36952,10 +36952,10 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "corners": {
-          "l": 6,
+          "l": 8,
           "v": 3
         },
         "tirosArco": {
@@ -36975,7 +36975,7 @@
         "gameUrlName": "deportivo-moron-vs-ciudad-de-bolivar",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "82'",
+        "minuto": "90'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
@@ -37026,7 +37026,7 @@
       "local": "Chaco For Ever",
       "visitante": "Racing de Córdoba",
       "fechaHora": "2026-10-31T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -37056,9 +37056,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "chaco-for-ever-vs-racing-cordoba",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "43'",
+        "minuto": "45'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Juan Alberto García",
@@ -37420,7 +37420,7 @@
       "local": "Aston Villa",
       "visitante": "Fulham",
       "fechaHora": "2026-10-31T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -37450,9 +37450,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "aston-villa-vs-fulham",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+2'",
+        "minuto": "45'",
         "ronda": "Fecha 9",
         "tv": "Disney+ Premium",
         "estadio": "Villa Park",
@@ -37593,16 +37593,16 @@
       "local": "FC Barcelona",
       "visitante": "Alavés",
       "fechaHora": "2026-10-31T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 3,
+          "l": 4,
           "v": 0
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 2,
@@ -37614,7 +37614,7 @@
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 1
         }
       },
       "source": {
@@ -37623,9 +37623,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "barcelona-vs-alaves",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+1'",
+        "minuto": "45'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
@@ -37730,7 +37730,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "corners": {
@@ -37752,9 +37752,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "ac-milan-vs-inter-milan",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "53'",
         "ronda": "Fecha 10",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
