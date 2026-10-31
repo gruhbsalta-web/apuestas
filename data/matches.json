@@ -37579,19 +37579,19 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 3,
-          "v": 2
+          "l": 4,
+          "v": 3
         },
         "tirosArco": {
-          "l": 7,
+          "l": 8,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -37602,7 +37602,7 @@
         "gameUrlName": "rayo-vallecano-vs-celta-vigo",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "82'",
+        "minuto": "90+4'",
         "ronda": "Fecha 11",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio de Vallecas",
@@ -37750,7 +37750,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -37761,12 +37761,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -37775,14 +37775,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "udinese-vs-as-roma",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "12'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Bluenergy Stadium",
-        "arbitro": "F. Maresca",
-        "infoDia": "2026-10-31"
+        "arbitro": "F. Maresca"
       }
     },
     {
