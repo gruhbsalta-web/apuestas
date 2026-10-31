@@ -37167,16 +37167,16 @@
           "v": 2
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
-          "v": 2
+          "l": 2,
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         }
       },
       "source": {
@@ -37187,7 +37187,7 @@
         "gameUrlName": "manchester-city-vs-brighton",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "48'",
+        "minuto": "60'",
         "ronda": "Fecha 9"
       }
     },
@@ -37200,15 +37200,15 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "tirosArco": {
@@ -37228,7 +37228,7 @@
         "gameUrlName": "hull-city-vs-ipswich",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "47'",
+        "minuto": "59'",
         "ronda": "Fecha 9"
       }
     },
@@ -37241,11 +37241,11 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "corners": {
@@ -37253,7 +37253,7 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "atajadas": {
@@ -37269,7 +37269,7 @@
         "gameUrlName": "coventry-vs-sunderland",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "49'",
+        "minuto": "61'",
         "ronda": "Fecha 9"
       }
     },
@@ -37310,7 +37310,7 @@
         "gameUrlName": "brentford-vs-nottingham-forest",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "50'",
+        "minuto": "62'",
         "ronda": "Fecha 9"
       }
     },
@@ -37331,7 +37331,7 @@
           "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
@@ -37351,7 +37351,7 @@
         "gameUrlName": "bournemouth-vs-leeds-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "46'",
+        "minuto": "58'",
         "ronda": "Fecha 9"
       }
     },
@@ -37483,7 +37483,7 @@
       "local": "Rayo Vallecano",
       "visitante": "Celta de Vigo",
       "fechaHora": "2026-10-31T12:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -37513,9 +37513,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "rayo-vallecano-vs-celta-vigo",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+3'",
+        "minuto": "45'",
         "ronda": "Fecha 11"
       }
     },
