@@ -37571,7 +37571,7 @@
       "visitante": "Celta de Vigo",
       "fechaHora": "2026-10-31T12:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -37600,9 +37600,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "rayo-vallecano-vs-celta-vigo",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+4'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio de Vallecas",
@@ -37757,7 +37757,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
@@ -37777,7 +37777,7 @@
         "gameUrlName": "udinese-vs-as-roma",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "12'",
+        "minuto": "18'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Bluenergy Stadium",
