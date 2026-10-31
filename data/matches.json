@@ -36470,8 +36470,8 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -36490,7 +36490,7 @@
         "gameUrlName": "riestra-vs-talleres-cordoba",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "1'",
+        "minuto": "12'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Guillermo Laza",
@@ -36593,15 +36593,15 @@
       "visitante": "Almirante Brown",
       "fechaHora": "2026-10-31T15:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tarjetas": {
           "l": 3,
-          "v": 1
+          "v": 3
         },
         "corners": {
           "l": 5,
@@ -36612,8 +36612,8 @@
           "v": 2
         },
         "atajadas": {
-          "l": 2,
-          "v": 3
+          "l": 1,
+          "v": 2
         }
       },
       "source": {
@@ -36622,13 +36622,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "godoy-cruz-vs-almirante-brown",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio Feliciano Gambarte",
-        "arbitro": "Adrián Franklin"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -36637,18 +36632,18 @@
       "visitante": "Deportivo Madryn",
       "fechaHora": "2026-10-31T15:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
           "v": 1
         },
         "tarjetas": {
-          "l": 3,
+          "l": 5,
           "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 2
         },
         "tirosArco": {
@@ -36666,13 +36661,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "ca-san-miguel-vs-dep.-madryn",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio Malvinas Argentinas",
-        "arbitro": "Lucas Cavallero"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -36720,7 +36710,7 @@
       "visitante": "Midland",
       "fechaHora": "2026-10-31T15:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -36749,13 +36739,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "atlanta-vs-ferrocarril-midland",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio Don León Kolbovski",
-        "arbitro": "Felipe Viola"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -36764,7 +36749,7 @@
       "visitante": "Ferro Carril Oeste",
       "fechaHora": "2026-10-31T15:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -36772,11 +36757,11 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 4,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 2,
@@ -36793,13 +36778,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "acassuso-vs-ferro-carril-oeste",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio La Quema",
-        "arbitro": "Pablo Giménez"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -36847,7 +36827,7 @@
       "visitante": "Deportivo Maipú",
       "fechaHora": "2026-10-31T15:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -36876,13 +36856,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "tristan-suarez-vs-deportivo-maipu",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio 20 de Octubre",
-        "arbitro": "M. Macheroni"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -36891,7 +36866,7 @@
       "visitante": "Temperley",
       "fechaHora": "2026-10-31T15:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -36920,13 +36895,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "club-atletico-guemes-vs-temperley",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio Arturo Jiya Miranda",
-        "arbitro": "Gonzalo Pereira"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -37003,9 +36973,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-moron-vs-ciudad-de-bolivar",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "46'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
@@ -37026,10 +36996,10 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 3
         },
         "tirosArco": {
@@ -37049,7 +37019,7 @@
         "gameUrlName": "los-andes-vs-mitre-sde",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "80'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Eduardo Gallardón",
@@ -37073,15 +37043,15 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -37091,14 +37061,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "chaco-for-ever-vs-racing-cordoba",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Juan Alberto García",
-        "arbitro": "Juan Nebbietti",
-        "infoDia": "2026-10-31"
+        "arbitro": "Juan Nebbietti"
       }
     },
     {
@@ -37468,7 +37437,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -37486,14 +37455,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "aston-villa-vs-fulham",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "11'",
         "ronda": "Fecha 9",
         "tv": "Disney+ Premium",
         "estadio": "Villa Park",
-        "arbitro": "Samuel Barrott",
-        "infoDia": "2026-10-31"
+        "arbitro": "Samuel Barrott"
       }
     },
     {
@@ -37634,7 +37602,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -37646,7 +37614,7 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -37660,14 +37628,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "barcelona-vs-alaves",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "10'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
-        "arbitro": "Adrián Cordero Vega",
-        "infoDia": "2026-10-31"
+        "arbitro": "Adrián Cordero Vega"
       }
     },
     {
@@ -37765,7 +37732,7 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -37773,14 +37740,14 @@
         },
         "corners": {
           "l": 1,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
           "l": 2,
-          "v": 0
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -37792,7 +37759,7 @@
         "gameUrlName": "ac-milan-vs-inter-milan",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "12'",
+        "minuto": "23'",
         "ronda": "Fecha 10",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
