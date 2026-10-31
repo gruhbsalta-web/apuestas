@@ -36597,7 +36597,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -36609,7 +36609,7 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -36625,7 +36625,7 @@
         "gameUrlName": "godoy-cruz-vs-almirante-brown",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "13'",
+        "minuto": "25'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Feliciano Gambarte",
@@ -36645,7 +36645,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -36653,12 +36653,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         }
       },
       "source": {
@@ -36669,7 +36669,7 @@
         "gameUrlName": "ca-san-miguel-vs-dep.-madryn",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "6'",
+        "minuto": "18'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Malvinas Argentinas",
@@ -36713,7 +36713,7 @@
         "gameUrlName": "san-telmo-vs-central-norte",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "27'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Dr. Osvaldo Francisco Baletto",
@@ -36757,7 +36757,7 @@
         "gameUrlName": "atlanta-vs-ferrocarril-midland",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "13'",
+        "minuto": "25'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
@@ -36777,7 +36777,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -36801,7 +36801,7 @@
         "gameUrlName": "acassuso-vs-ferro-carril-oeste",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "13'",
+        "minuto": "25'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio La Quema",
@@ -36845,7 +36845,7 @@
         "gameUrlName": "agropecuario-vs-almagro",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "16'",
+        "minuto": "28'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Ofelia Rosenzuaig",
@@ -36870,14 +36870,14 @@
         },
         "corners": {
           "l": 2,
-          "v": 0
+          "v": 2
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -36889,7 +36889,7 @@
         "gameUrlName": "tristan-suarez-vs-deportivo-maipu",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "13'",
+        "minuto": "25'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio 20 de Octubre",
@@ -36914,7 +36914,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 3
+          "v": 6
         },
         "tirosArco": {
           "l": 0,
@@ -36933,7 +36933,7 @@
         "gameUrlName": "club-atletico-guemes-vs-temperley",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "13'",
+        "minuto": "25'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Arturo Jiya Miranda",
@@ -36950,19 +36950,19 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
           "l": 4,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
           "l": 0,
@@ -36977,7 +36977,7 @@
         "gameUrlName": "san-martin-vs-gimnasia-jujuy",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "13'",
+        "minuto": "25'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Ingeniero Hilario Sánchez",
@@ -37604,11 +37604,11 @@
       "local": "Real Betis",
       "visitante": "Málaga CF",
       "fechaHora": "2026-10-31T14:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -37625,7 +37625,7 @@
         },
         "atajadas": {
           "l": 2,
-          "v": 5
+          "v": 4
         }
       },
       "source": {
@@ -37634,7 +37634,7 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-betis-vs-malaga",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Fecha 11",
@@ -37746,16 +37746,16 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
-          "v": 3
+          "l": 5,
+          "v": 4
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 7
         },
         "atajadas": {
           "l": 3,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -37766,7 +37766,7 @@
         "gameUrlName": "udinese-vs-as-roma",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "74'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Bluenergy Stadium",
