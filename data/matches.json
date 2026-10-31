@@ -37164,7 +37164,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 3,
@@ -37185,9 +37185,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "manchester-city-vs-brighton",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": "Fecha 9"
       }
     },
@@ -37226,9 +37226,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "hull-city-vs-ipswich",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Fecha 9"
       }
     },
@@ -37267,9 +37267,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "coventry-vs-sunderland",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 9"
       }
     },
@@ -37308,9 +37308,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "brentford-vs-nottingham-forest",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "50'",
         "ronda": "Fecha 9"
       }
     },
@@ -37349,9 +37349,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "bournemouth-vs-leeds-united",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "46'",
         "ronda": "Fecha 9"
       }
     },
@@ -37515,7 +37515,7 @@
         "gameUrlName": "rayo-vallecano-vs-celta-vigo",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "42'",
+        "minuto": "45+3'",
         "ronda": "Fecha 11"
       }
     },
