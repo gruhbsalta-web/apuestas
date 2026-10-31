@@ -2662,6 +2662,10 @@ function parseBetsFreeText(text){
 
 // ---------- Preview + confirmación (nunca se importa sin que el usuario lo revise) ----------
 let pendingImport = [];
+// Firma de una apuesta para detectar la misma cargada dos veces (ej. importar dos veces la misma captura)
+function firmaBet(b){
+  return JSON.stringify([b.matchId, b.tipo || "", b.pick || "", b.comparador || "", b.alcance || "", Number(b.linea) || 0, Number(b.monto) || 0, Number(b.cuota) || 0]);
+}
 
 function describeBetForPreview(bet){
   const m = state.matches.find(x=>x.id===bet.matchId);
@@ -2787,13 +2791,19 @@ function renderImportPreview(bets, errores){
         return;
       }
       if(elegidos.length === 0){ alert("No marcaste ninguna apuesta para importar."); return; }
+      // no se duplican apuestas que ya estaban cargadas
+      const ya = new Set(state.bets.map(firmaBet));
+      const nuevas = elegidos.filter(b=>{ const f = firmaBet(b); if(ya.has(f)) return false; ya.add(f); return true; });
+      const repetidas = elegidos.length - nuevas.length;
+      if(!nuevas.length){ alert(repetidas === 1 ? "Esa apuesta ya estaba cargada: no se duplicó." : `Esas ${repetidas} apuestas ya estaban cargadas: no se duplicaron.`); return; }
+      elegidos.length = 0; elegidos.push(...nuevas);
       state.bets.push(...elegidos);
       save();
       renderAll();
       pendingImport = [];
       wrap.innerHTML = "";
       document.getElementById("in-bets-csv").value = "";
-      alert(`Se importaron ${elegidos.length} apuesta(s).`);
+      alert(`Se importaron ${elegidos.length} apuesta(s).` + (repetidas ? ` ${repetidas} ya estaba(n) cargada(s) y no se duplicaron.` : ""));
     });
   }
 }
@@ -3945,6 +3955,23 @@ async function invitar(t){
   renderProde();
 }
 
+// Limpieza única: borra apuestas cargadas dos veces (idénticas en todo), dejando una.
+function limpiarApuestasDuplicadas(){
+  const CLAVE = "laFijaDedupe1";
+  try{ if(localStorage.getItem(CLAVE)) return; }catch(e){ return; }
+  const vistos = new Set(), borradas = [];
+  state.bets = state.bets.filter(b=>{
+    const f = firmaBet(b);
+    if(vistos.has(f)){ borradas.push(b); return false; }
+    vistos.add(f); return true;
+  });
+  try{ localStorage.setItem(CLAVE, "1"); }catch(e){}
+  if(!borradas.length) return;
+  save(); renderAll();
+  const nombres = borradas.map(b=>{ const m = state.matches.find(x=>x.id === b.matchId); return m ? `${m.local} - ${m.visitante}` : "partido"; });
+  setTimeout(()=> alert(`Se borró ${borradas.length === 1 ? "1 apuesta duplicada" : borradas.length + " apuestas duplicadas"}: ${nombres.join(", ")}.`), 300);
+}
+
 // ---------- Init ----------
 (async function init(){
   await loadTeams();
@@ -3953,6 +3980,7 @@ async function invitar(t){
     setUpdatedLabel('Actualizado ' + horaActual());
   }catch(e){ /* sin red o sin JSON: se usa lo que ya hay guardado */ }
   renderAll();
+  limpiarApuestasDuplicadas();
   // refresca minuto de juego y probabilidad estimada cada 60s
   setInterval(renderAll, 60000);
   // estado de la actualización automática: cuenta regresiva y aviso si se atrasa
