@@ -36262,7 +36262,7 @@
       "visitante": "Tigre",
       "fechaHora": "2026-10-30T19:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -36291,9 +36291,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "huracan-vs-tigre",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+8'",
+        "statusShort": "Final",
         "ronda": "Fecha 15"
       }
     },
