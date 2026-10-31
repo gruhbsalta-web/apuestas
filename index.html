@@ -592,6 +592,20 @@
   <!-- APUESTAS -->
   <section id="view-apuestas" class="view">
     <div id="avisos-card"></div>
+    <div class="card solo-apuestas" id="card-captura">
+      <h3>Cargar desde BetWarrior</h3>
+      <input type="file" id="in-bets-images" accept="image/*" multiple style="display:none">
+      <button class="primary" id="btn-ocr-images" style="margin-top:0">📷 Elegir captura(s)</button>
+      <div class="bet-sub" style="margin-top:8px">Más rápido: en BetWarrior o en la galería tocá <b>Compartir → La Fija</b> sobre la captura de la apuesta. La app la lee sola y te muestra la apuesta para confirmar. Si ya estaba cargada (mismo Id de BetWarrior), no se duplica.</div>
+      <div id="ocr-status" class="bet-sub" style="margin-top:8px"></div>
+      <div id="import-preview"></div>
+      <details class="edit-box" style="margin-top:10px">
+        <summary>Pegar texto o CSV</summary>
+        <textarea id="in-bets-csv" rows="6" style="width:100%;box-sizing:border-box;background:#0f1420;color:#e8ecf4;border:1px solid #2a3142;border-radius:8px;padding:10px;font-family:monospace;font-size:13px;margin-top:8px" placeholder="Pegá acá el texto de BetWarrior o tu CSV"></textarea>
+        <button class="btn-save" id="btn-preview-bets" style="margin-top:10px;width:100%">Previsualizar</button>
+        <div class="bet-sub" style="margin-top:8px"><b>CSV:</b> <code>local,visitante,tipo,comparador,linea,monto,cuota,alcance</code> · tipo: goles | tarjetas | corners | tirosArco | atajadas | ganador · comparador: mas | menos · alcance: combinado | cualquiera | local | visitante</div>
+      </details>
+    </div>
     <div class="card">
       <h3><span class="solo-apuestas">Nueva apuesta</span><span class="solo-stats">Análisis del partido</span></h3>
       <label for="sel-match">Partido</label>
@@ -726,22 +740,7 @@
       </div>
       <input type="file" id="in-import" accept="application/json" style="display:none">
     </div>
-    <div class="card">
-      <h3>Importar apuestas abiertas</h3>
-      <div class="bet-sub" style="margin-bottom:12px">
-        Subí una o varias capturas de "Mis apuestas" (BetWarrior) y la app les lee el texto sola (OCR, corre en el teléfono, no se sube a ningún lado). También podés pegar texto a mano o un CSV propio abajo. Nada se importa sin que lo confirmes: primero se arma una vista previa para que revises montos y cuotas antes de agregar nada.<br>
-        <b>CSV (en este orden, separadas por coma):</b> <code>local,visitante,tipo,comparador,linea,monto,cuota,alcance</code><br>
-        <b>tipo:</b> goles | tarjetas | corners | tirosArco | atajadas | ganador &middot; <b>comparador:</b> mas | menos (no aplica si tipo=ganador) &middot; <b>alcance</b>: combinado | cualquiera | local | visitante (si tipo=ganador: local | empate | visitante)<br>
-        Ejemplo CSV: <code>San Martín Tucumán,Gimnasia y Tiro,corners,mas,4,150,2.35,visitante</code><br>
-        El partido siempre se busca por nombre de equipo entre los que ya cargaste en Partidos — si no lo encuentra, esa apuesta queda listada como error en vez de importarse a medias.
-      </div>
-      <input type="file" id="in-bets-images" accept="image/*" multiple style="display:none">
-      <button class="btn-save" id="btn-ocr-images" style="width:100%;margin-bottom:10px">📷 Subir captura(s) de apuestas</button>
-      <div id="ocr-status" class="bet-sub"></div>
-      <textarea id="in-bets-csv" rows="6" style="width:100%;box-sizing:border-box;background:#0f1420;color:#e8ecf4;border:1px solid #2a3142;border-radius:8px;padding:10px;font-family:monospace;font-size:13px" placeholder="Pegá acá el texto de BetWarrior o tu CSV (o subí capturas arriba)"></textarea>
-      <button class="primary" id="btn-preview-bets" style="margin-top:10px">Previsualizar</button>
-      <div id="import-preview"></div>
-    </div>
+
   </section>
 
 </main>
@@ -944,7 +943,7 @@ document.querySelectorAll(".tab-btn").forEach(btn=>{
     document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));
     btn.classList.add("active");
     document.getElementById("view-"+btn.dataset.view).classList.add("active");
-    if(btn.dataset.view === "apuestas") renderMatchSelect();
+    if(btn.dataset.view === "apuestas"){ renderMatchSelect(); precargarLector(); }
     if(btn.dataset.view === "terminados") renderTerminados();
     if(btn.dataset.view === "resumen") renderResumen();
     if(btn.dataset.view === "planteles") renderPlantelesTab();
@@ -2572,7 +2571,8 @@ function parseMoney(str){
 function cuotaValida(c){ return typeof c === "number" && !isNaN(c) && c >= 1.01 && c <= 100; }
 
 function parseBetsFreeText(text){
-  const blocks = text.split(/(?=Sencilla\b)/i).map(b=>b.trim()).filter(b=>b.length>10);
+  // cada apuesta empieza en "Sencilla"; lo de antes (barra del celular, saldo) no tiene mercado y se ignora
+  const blocks = text.split(/(?=Sencilla\b)/i).map(b=>b.trim()).filter(b=>b.length>10 && /(m[aá]s|menos) de|resultado final|total de/i.test(b));
   const bets = [];
   const errores = [];
 
@@ -2582,6 +2582,9 @@ function parseBetsFreeText(text){
     if(!found){ errores.push(`${label}: no pude identificar el partido en este texto — cargalo primero en Partidos o usá el CSV.\n   "${block.slice(0,80).replace(/\n/g," ")}..."`); return; }
     if(found.ambiguo){ errores.push(`${label}: el texto menciona equipos de ${found.opciones.length} partidos cargados a la vez, no pude elegir uno solo.`); return; }
     const m = found.match;
+    // Id de la apuesta en BetWarrior: evita cargar dos veces la misma apuesta
+    const bwIdM = block.match(/\bId\s*[:#]?\s*(\d{8,})/i);
+    const bw = bwIdM ? {bwId: bwIdM[1]} : {};
 
     // Cuota y monto pueden no leerse bien (letra chica/numeros pegados); en vez
     // de descartar la apuesta entera, quedan "a completar" en la vista previa.
@@ -2625,7 +2628,7 @@ function parseBetsFreeText(text){
       const mejor = Math.max(idxLocal, idxVisit, idxEmpate);
       if(mejor === -1){ errores.push(`${label} (${m.local} vs ${m.visitante}): es una apuesta a "Resultado Final" pero no pude identificar el pick — cargala a mano.`); return; }
       const pick = mejor === idxEmpate ? "empate" : (mejor === idxLocal ? "local" : "visitante");
-      bets.push({id:uid(), matchId:m.id, tipo:"ganador", pick, monto, cuota, ...faltantes});
+      bets.push({id:uid(), matchId:m.id, tipo:"ganador", pick, monto, cuota, ...faltantes, ...bw});
       return;
     }
 
@@ -2639,7 +2642,7 @@ function parseBetsFreeText(text){
       // El OCR a veces pierde justo esta linea (gris, letra chica). En vez de
       // descartar la apuesta entera, queda "a revisar": en la vista previa se
       // completa a mano el tipo/alcance antes de poder confirmarla.
-      bets.push({id:uid(), matchId:m.id, comparador, linea, monto, cuota, necesitaTipo:true, ...faltantes});
+      bets.push({id:uid(), matchId:m.id, comparador, linea, monto, cuota, necesitaTipo:true, ...faltantes, ...bw});
       return;
     }
     const marketLabel = marketMatch[1].trim();
@@ -2662,7 +2665,7 @@ function parseBetsFreeText(text){
       }
     }
 
-    bets.push({id:uid(), matchId:m.id, tipo, comparador, alcance, linea, monto, cuota, ...faltantes});
+    bets.push({id:uid(), matchId:m.id, tipo, comparador, alcance, linea, monto, cuota, ...faltantes, ...bw});
   });
 
   return {bets, errores};
@@ -2671,7 +2674,11 @@ function parseBetsFreeText(text){
 // ---------- Preview + confirmación (nunca se importa sin que el usuario lo revise) ----------
 let pendingImport = [];
 // Firma de una apuesta para detectar la misma cargada dos veces (ej. importar dos veces la misma captura)
+function firmaContenido(b){
+  return JSON.stringify([b.matchId, b.tipo || "", b.pick || "", b.comparador || "", b.alcance || "", Number(b.linea) || 0, Number(b.monto) || 0, Number(b.cuota) || 0]);
+}
 function firmaBet(b){
+  if(b.bwId) return "bw:" + b.bwId;
   return JSON.stringify([b.matchId, b.tipo || "", b.pick || "", b.comparador || "", b.alcance || "", Number(b.linea) || 0, Number(b.monto) || 0, Number(b.cuota) || 0]);
 }
 
@@ -2800,8 +2807,8 @@ function renderImportPreview(bets, errores){
       }
       if(elegidos.length === 0){ alert("No marcaste ninguna apuesta para importar."); return; }
       // no se duplican apuestas que ya estaban cargadas
-      const ya = new Set(state.bets.map(firmaBet));
-      const nuevas = elegidos.filter(b=>{ const f = firmaBet(b); if(ya.has(f)) return false; ya.add(f); return true; });
+      const ya = new Set(state.bets.flatMap(x=>[firmaBet(x), firmaContenido(x)]));
+      const nuevas = elegidos.filter(b=>{ const f = [firmaBet(b), firmaContenido(b)]; if(f.some(x=>ya.has(x))) return false; f.forEach(x=>ya.add(x)); return true; });
       const repetidas = elegidos.length - nuevas.length;
       if(!nuevas.length){ alert(repetidas === 1 ? "Esa apuesta ya estaba cargada: no se duplicó." : `Esas ${repetidas} apuestas ya estaban cargadas: no se duplicaron.`); return; }
       elegidos.length = 0; elegidos.push(...nuevas);
@@ -2833,38 +2840,26 @@ document.getElementById("btn-ocr-images").addEventListener("click", ()=>{
 // - "oscura": la misma con gamma 2.2, que oscurece el texto gris claro (Valor, Cuotas,
 //   Ganancias potenciales), que con contraste común se borraba.
 // Antes se subía el contraste y eso perdía justo el mercado, la cuota y el monto.
-async function versionesParaOCR(file){
+// Una sola versión: escala de grises al doble con gamma 2.2 (oscurece el texto gris
+// claro: mercado, Valor, Fecha, Id) y el lector en modo "bloque de texto" (psm 6),
+// que en las capturas de BetWarrior lee todo de una pasada.
+async function versionParaOCR(file){
   const bitmap = await createImageBitmap(file);
-  const scale = Math.max(1, Math.min(3, 2000 / bitmap.width));
+  const scale = Math.max(1, Math.min(2.5, 2000 / bitmap.width));
   const w = Math.round(bitmap.width * scale), h = Math.round(bitmap.height * scale);
-  const base = document.createElement("canvas");
-  base.width = w; base.height = h;
-  const ctx = base.getContext("2d");
+  const c = document.createElement("canvas");
+  c.width = w; c.height = h;
+  const ctx = c.getContext("2d");
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = "high";
   ctx.drawImage(bitmap, 0, 0, w, h);
   const img = ctx.getImageData(0, 0, w, h);
-  const gris = new ImageData(w, h), oscura = new ImageData(w, h);
   for(let i=0; i<img.data.length; i+=4){
     const g = 0.299*img.data[i] + 0.587*img.data[i+1] + 0.114*img.data[i+2];
-    const o = 255 * Math.pow(g / 255, 2.2);
-    gris.data[i] = gris.data[i+1] = gris.data[i+2] = g; gris.data[i+3] = 255;
-    oscura.data[i] = oscura.data[i+1] = oscura.data[i+2] = o; oscura.data[i+3] = 255;
+    img.data[i] = img.data[i+1] = img.data[i+2] = 255 * Math.pow(g / 255, 2.2);
   }
-  const aCanvas = (data)=>{ const c = document.createElement("canvas"); c.width = w; c.height = h; c.getContext("2d").putImageData(data, 0, 0); return c; };
-  return [aCanvas(gris), aCanvas(oscura)];
-}
-
-// Une las dos lecturas: la primera completa y, de la segunda, solo las líneas nuevas
-// (sin repetir "Sencilla", que marca el comienzo de cada apuesta).
-function combinarLecturas(t1, t2){
-  const norm = l => l.toLowerCase().replace(/\s+/g, " ").trim();
-  const vistas = new Set(t1.split("\n").map(norm).filter(Boolean));
-  const extra = t2.split("\n").filter(l=>{
-    const n = norm(l);
-    return n && !vistas.has(n) && !/sencilla/i.test(l);
-  });
-  return t1.trim() + (extra.length ? "\n" + extra.join("\n") : "");
+  ctx.putImageData(img, 0, 0);
+  return c;
 }
 
 let ocrEnCurso = false;
@@ -2877,48 +2872,85 @@ function withTimeout(promise, ms, mensaje){
   return Promise.race([promise, timeout]).finally(()=> clearTimeout(timer));
 }
 
-document.getElementById("in-bets-images").addEventListener("change", async (e)=>{
-  const files = [...e.target.files];
-  e.target.value = "";
-  if(files.length === 0) return;
-  if(typeof Tesseract === "undefined"){
-    alert("No se pudo cargar el lector de imágenes (sin conexión a internet la primera vez). Probá de nuevo con internet, o pegá el texto a mano.");
-    return;
+// El lector se prepara una sola vez y queda listo (se precarga al abrir Apuestas)
+let ocrWorker = null, ocrWorkerCargando = null;
+function obtenerLector(){
+  if(ocrWorker) return Promise.resolve(ocrWorker);
+  if(typeof Tesseract === "undefined") return Promise.reject(new Error("No se pudo cargar el lector de imágenes (hace falta internet la primera vez)."));
+  if(!ocrWorkerCargando){
+    ocrWorkerCargando = (async()=>{
+      const w = await Tesseract.createWorker("spa");
+      await w.setParameters({tessedit_pageseg_mode: "6"});
+      ocrWorker = w;
+      return w;
+    })().catch(err=>{ ocrWorkerCargando = null; throw err; });
   }
+  return ocrWorkerCargando;
+}
+function precargarLector(){
+  if(ocrWorker || ocrWorkerCargando || typeof Tesseract === "undefined" || MODO_STATS) return;
+  const go = ()=> obtenerLector().catch(()=>{});
+  if("requestIdleCallback" in window) requestIdleCallback(go, {timeout: 4000}); else setTimeout(go, 1500);
+}
 
+// Lee las capturas y muestra directo la vista previa para confirmar
+async function leerCapturas(files){
+  if(!files.length) return;
   const status = document.getElementById("ocr-status");
   const btn = document.getElementById("btn-ocr-images");
   const btnPreview = document.getElementById("btn-preview-bets");
   ocrEnCurso = true;
   btn.disabled = true;
   btnPreview.disabled = true;
-  let worker;
   try{
-    status.textContent = "Preparando lector (puede tardar 1-2 minutos la primera vez: descarga el paquete de español, ~15-20MB. No cambies de pestaña.)";
-    worker = await withTimeout(Tesseract.createWorker("spa"), 120000, "El lector de imágenes tardó demasiado en prepararse (¿conexión lenta o inestable?). Probá de nuevo, o pegá el texto a mano.");
+    if(!ocrWorker) status.textContent = "Preparando el lector (la primera vez descarga el paquete de español, ~15 MB)…";
+    const worker = await withTimeout(obtenerLector(), 120000, "El lector tardó demasiado en prepararse (¿conexión lenta?). Probá de nuevo.");
     let textoTotal = "";
     for(let i=0; i<files.length; i++){
-      status.textContent = `Leyendo imagen ${i+1} de ${files.length} (puede tardar un rato)...`;
-      const [vGris, vOscura] = await versionesParaOCR(files[i]);
-      const msg = `La imagen ${i+1} tardó demasiado en leerse. Probá con menos imágenes a la vez.`;
-      const r1 = await withTimeout(worker.recognize(vGris), 90000, msg);
-      status.textContent = `Leyendo imagen ${i+1} de ${files.length} (segunda pasada)...`;
-      const r2 = await withTimeout(worker.recognize(vOscura), 90000, msg);
-      textoTotal += (textoTotal ? "\n\n" : "") + combinarLecturas(r1.data.text, r2.data.text);
+      status.textContent = files.length > 1 ? `Leyendo captura ${i+1} de ${files.length}…` : "Leyendo la captura…";
+      const r = await withTimeout(worker.recognize(await versionParaOCR(files[i])), 90000, `La captura ${i+1} tardó demasiado en leerse.`);
+      textoTotal += (textoTotal ? "\n\n" : "") + r.data.text;
     }
-    const textarea = document.getElementById("in-bets-csv");
-    textarea.value = textoTotal.trim();
-    status.textContent = `Listo, se leyeron ${files.length} imagen(es). Revisá el texto si hace falta y tocá "Previsualizar".`;
+    document.getElementById("in-bets-csv").value = textoTotal.trim();
+    status.textContent = "";
+    ocrEnCurso = false;
+    btnPreview.disabled = false;
+    btnPreview.click(); // vista previa directa: solo falta confirmar
+    const prev = document.getElementById("import-preview");
+    if(prev && prev.firstElementChild) prev.scrollIntoView({block:"start", behavior:"smooth"});
   }catch(err){
     status.textContent = "";
-    alert("No se pudo leer la imagen: " + (err.message || err));
+    alert("No se pudo leer la captura: " + (err.message || err));
   }finally{
-    if(worker) worker.terminate().catch(()=>{});
     ocrEnCurso = false;
     btn.disabled = false;
     btnPreview.disabled = false;
   }
+}
+
+document.getElementById("in-bets-images").addEventListener("change", (e)=>{
+  const files = [...e.target.files];
+  e.target.value = "";
+  leerCapturas(files);
 });
+
+// Capturas compartidas desde otra app (BetWarrior, galería) con "Compartir → La Fija":
+// el service worker las guarda y abre la app con ?compartido=1
+async function leerCompartidas(){
+  if(!new URLSearchParams(location.search).has("compartido")) return;
+  history.replaceState(null, "", location.pathname);
+  try{
+    const cache = await caches.open("la-fija-compartido");
+    const reqs = await cache.keys();
+    const files = [];
+    for(const r of reqs){ const res = await cache.match(r); const blob = await res.blob(); files.push(new File([blob], "captura", {type: blob.type || "image/png"})); await cache.delete(r); }
+    if(!files.length) return;
+    document.querySelector('.tab-btn[data-view="apuestas"]').click();
+    const card = document.getElementById("card-captura");
+    if(card) card.scrollIntoView({block:"start"});
+    leerCapturas(files);
+  }catch(e){ /* sin capturas */ }
+}
 
 document.getElementById("btn-preview-bets").addEventListener("click", ()=>{
   if(ocrEnCurso){ alert("Esperá a que termine de leer la(s) imagen(es)."); return; }
@@ -3989,6 +4021,7 @@ function limpiarApuestasDuplicadas(){
   }catch(e){ /* sin red o sin JSON: se usa lo que ya hay guardado */ }
   renderAll();
   limpiarApuestasDuplicadas();
+  leerCompartidas();
   // refresca minuto de juego y probabilidad estimada cada 60s
   setInterval(renderAll, 60000);
   // estado de la actualización automática: cuenta regresiva y aviso si se atrasa

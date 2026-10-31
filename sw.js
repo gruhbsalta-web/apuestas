@@ -1,4 +1,4 @@
-const CACHE_NAME = "apuestas-futbol-v49";
+const CACHE_NAME = "apuestas-futbol-v50";
 const ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
 
 self.addEventListener("install", (event) => {
@@ -11,7 +11,7 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)))
+      Promise.all(keys.filter((k) => k !== CACHE_NAME && k !== "la-fija-compartido").map((k) => caches.delete(k)))
     )
   );
   self.clients.claim();
@@ -25,6 +25,20 @@ self.addEventListener("activate", (event) => {
 // trabajo/memoria de mas justo en el momento en que el telefono ya esta
 // ocupado corriendo el OCR.
 self.addEventListener("fetch", (event) => {
+  // "Compartir → La Fija" desde BetWarrior o la galería: se guardan las capturas y se
+  // abre la app, que las lee y muestra la apuesta lista para confirmar.
+  if (event.request.method === "POST" && new URL(event.request.url).pathname.endsWith("/compartir")) {
+    event.respondWith((async () => {
+      try {
+        const datos = await event.request.formData();
+        const cache = await caches.open("la-fija-compartido");
+        const archivos = datos.getAll("capturas").filter((f) => f && f.size);
+        await Promise.all(archivos.map((f, i) => cache.put(`./compartido/${Date.now()}-${i}`, new Response(f, { headers: { "Content-Type": f.type || "image/png" } }))));
+      } catch (e) { /* sin archivos */ }
+      return Response.redirect("./index.html?compartido=1", 303);
+    })());
+    return;
+  }
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
