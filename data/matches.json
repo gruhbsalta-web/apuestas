@@ -36352,7 +36352,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 7
+          "v": 8
         },
         "tirosArco": {
           "l": 2,
@@ -36369,9 +36369,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "sarmiento-junin-vs-rosario-central",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 15"
       }
     },
@@ -36388,7 +36388,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "corners": {
@@ -36410,9 +36410,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "racing-club-vs-aldosivi",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "51'",
         "ronda": "Fecha 15"
       }
     },
