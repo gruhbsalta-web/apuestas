@@ -36506,7 +36506,7 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 7,
@@ -36529,7 +36529,7 @@
         "gameUrlName": "velez-sarsfield-vs-san-lorenzo",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "66'",
+        "minuto": "78'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Jose Amalfitani",
