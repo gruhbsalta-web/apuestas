@@ -36605,7 +36605,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -36623,14 +36623,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "godoy-cruz-vs-almirante-brown",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Feliciano Gambarte",
-        "arbitro": "Adrián Franklin",
-        "infoDia": "2026-10-31"
+        "arbitro": "Adrián Franklin"
       }
     },
     {
@@ -36713,14 +36712,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "san-telmo-vs-central-norte",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "9'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Dr. Osvaldo Francisco Baletto",
-        "arbitro": "Lucas Comesaña",
-        "infoDia": "2026-10-31"
+        "arbitro": "Lucas Comesaña"
       }
     },
     {
@@ -36740,7 +36738,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -36758,14 +36756,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "atlanta-vs-ferrocarril-midland",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
-        "arbitro": "Felipe Viola",
-        "infoDia": "2026-10-31"
+        "arbitro": "Felipe Viola"
       }
     },
     {
@@ -36803,14 +36800,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "acassuso-vs-ferro-carril-oeste",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio La Quema",
-        "arbitro": "Pablo Giménez",
-        "infoDia": "2026-10-31"
+        "arbitro": "Pablo Giménez"
       }
     },
     {
@@ -36822,7 +36818,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -36834,7 +36830,7 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -36848,14 +36844,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "agropecuario-vs-almagro",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "10'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Ofelia Rosenzuaig",
-        "arbitro": "A. Penel",
-        "infoDia": "2026-10-31"
+        "arbitro": "A. Penel"
       }
     },
     {
@@ -36893,14 +36888,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "tristan-suarez-vs-deportivo-maipu",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio 20 de Octubre",
-        "arbitro": "M. Macheroni",
-        "infoDia": "2026-10-31"
+        "arbitro": "M. Macheroni"
       }
     },
     {
@@ -36920,7 +36914,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -36938,14 +36932,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "club-atletico-guemes-vs-temperley",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Arturo Jiya Miranda",
-        "arbitro": "Gonzalo Pereira",
-        "infoDia": "2026-10-31"
+        "arbitro": "Gonzalo Pereira"
       }
     },
     {
@@ -36969,12 +36962,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -36983,14 +36976,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "san-martin-vs-gimnasia-jujuy",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Ingeniero Hilario Sánchez",
-        "arbitro": "Juan Cruz Robledo",
-        "infoDia": "2026-10-31"
+        "arbitro": "Juan Cruz Robledo"
       }
     },
     {
@@ -37451,16 +37443,16 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -37471,7 +37463,7 @@
         "gameUrlName": "tottenham-vs-crystal-palace",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "30'",
+        "minuto": "42'",
         "ronda": "Fecha 9",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Tottenham Hotspur Stadium",
@@ -37617,7 +37609,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -37629,11 +37621,11 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
-          "v": 1
+          "l": 4,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         }
       },
@@ -37645,7 +37637,7 @@
         "gameUrlName": "real-betis-vs-malaga",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "27'",
+        "minuto": "39'",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Estadio La Cartuja de Sevilla",
@@ -37747,7 +37739,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 4
         },
         "tarjetas": {
@@ -37759,12 +37751,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 6
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -37773,9 +37765,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "udinese-vs-as-roma",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "56'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Bluenergy Stadium",
