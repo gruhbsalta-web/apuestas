@@ -37451,15 +37451,15 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -37469,14 +37469,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "tottenham-vs-crystal-palace",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "12'",
         "ronda": "Fecha 9",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Tottenham Hotspur Stadium",
-        "arbitro": "Michael Oliver",
-        "infoDia": "2026-10-31"
+        "arbitro": "Michael Oliver"
       }
     },
     {
@@ -37626,16 +37625,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -37644,14 +37643,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-betis-vs-malaga",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "9'",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Estadio La Cartuja de Sevilla",
-        "arbitro": "Mateo Busquets",
-        "infoDia": "2026-10-31"
+        "arbitro": "Mateo Busquets"
       }
     },
     {
@@ -37750,23 +37748,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 4
         },
         "tarjetas": {
           "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 2,
-          "v": 0
+          "l": 3,
+          "v": 2
         },
         "tirosArco": {
-          "l": 2,
-          "v": 3
+          "l": 3,
+          "v": 6
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -37777,7 +37775,7 @@
         "gameUrlName": "udinese-vs-as-roma",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "30'",
+        "minuto": "42'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Bluenergy Stadium",
