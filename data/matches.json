@@ -36459,27 +36459,27 @@
       "visitante": "Talleres de Córdoba",
       "fechaHora": "2026-10-31T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 2
-        },
-        "tarjetas": {
-          "l": 2,
-          "v": 1
-        },
-        "corners": {
-          "l": 5,
           "v": 3
         },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 8,
+          "v": 4
+        },
         "tirosArco": {
-          "l": 2,
+          "l": 5,
           "v": 5
         },
         "atajadas": {
-          "l": 3,
-          "v": 2
+          "l": 2,
+          "v": 5
         }
       },
       "source": {
@@ -36488,13 +36488,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "riestra-vs-talleres-cordoba",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "73'",
-        "ronda": "Fecha 15",
-        "tv": "ESPN Premium",
-        "estadio": "Estadio Guillermo Laza",
-        "arbitro": "Darío Herrera (Argentina)"
+        "statusShort": "Final",
+        "ronda": "Fecha 15"
       }
     },
     {
@@ -37022,27 +37017,27 @@
       "visitante": "Racing de Córdoba",
       "fechaHora": "2026-10-31T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 1,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 1
         },
         "corners": {
-          "l": 7,
+          "l": 10,
           "v": 2
         },
         "tirosArco": {
-          "l": 6,
-          "v": 4
+          "l": 12,
+          "v": 5
         },
         "atajadas": {
           "l": 4,
-          "v": 5
+          "v": 9
         }
       },
       "source": {
@@ -37051,13 +37046,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "chaco-for-ever-vs-racing-cordoba",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "69'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio Juan Alberto García",
-        "arbitro": "Juan Nebbietti"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -37065,7 +37055,7 @@
       "local": "Colón",
       "visitante": "Defensores de Belgrano",
       "fechaHora": "2026-10-31T18:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -37077,7 +37067,7 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 6,
           "v": 3
         },
         "tirosArco": {
@@ -37095,9 +37085,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "colon-vs-defensores-de-belgrano",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "27'",
+        "minuto": "45'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
@@ -37422,19 +37412,19 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 2
+          "l": 1,
+          "v": 3
         },
         "corners": {
-          "l": 6,
-          "v": 6
+          "l": 7,
+          "v": 7
         },
         "tirosArco": {
           "l": 3,
-          "v": 3
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
+          "l": 4,
           "v": 2
         }
       },
@@ -37446,7 +37436,7 @@
         "gameUrlName": "aston-villa-vs-fulham",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "69'",
+        "minuto": "90+1'",
         "ronda": "Fecha 9",
         "tv": "Disney+ Premium",
         "estadio": "Villa Park",
@@ -37591,8 +37581,8 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 5,
-          "v": 0
+          "l": 6,
+          "v": 1
         },
         "tarjetas": {
           "l": 2,
@@ -37603,8 +37593,8 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 6,
-          "v": 2
+          "l": 7,
+          "v": 3
         },
         "atajadas": {
           "l": 2,
@@ -37619,7 +37609,7 @@
         "gameUrlName": "barcelona-vs-alaves",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "65'",
+        "minuto": "87'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
@@ -37717,7 +37707,7 @@
       "visitante": "Inter Milan",
       "fechaHora": "2026-10-31T16:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -37725,19 +37715,19 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 11
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 8
         },
         "atajadas": {
           "l": 7,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -37746,9 +37736,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "ac-milan-vs-inter-milan",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "82'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
