@@ -36343,23 +36343,23 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "corners": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         }
       },
@@ -36371,7 +36371,7 @@
         "gameUrlName": "sarmiento-junin-vs-rosario-central",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "15'",
         "ronda": "Fecha 15"
       }
     },
@@ -36388,20 +36388,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -36412,7 +36412,7 @@
         "gameUrlName": "racing-club-vs-aldosivi",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "7'",
+        "minuto": "16'",
         "ronda": "Fecha 15"
       }
     },
