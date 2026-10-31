@@ -36505,7 +36505,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "corners": {
@@ -36514,10 +36514,10 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         }
       },
@@ -36529,7 +36529,7 @@
         "gameUrlName": "velez-sarsfield-vs-san-lorenzo",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Jose Amalfitani",
@@ -37055,7 +37055,7 @@
       "visitante": "Defensores de Belgrano",
       "fechaHora": "2026-10-31T18:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -37084,13 +37084,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "colon-vs-defensores-de-belgrano",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio Brigadier General Estanislao López",
-        "arbitro": "Bruno Amiconi"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
