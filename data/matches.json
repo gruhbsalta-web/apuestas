@@ -37443,7 +37443,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -37451,11 +37451,11 @@
           "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "atajadas": {
@@ -37471,7 +37471,7 @@
         "gameUrlName": "tottenham-vs-crystal-palace",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "18'",
+        "minuto": "30'",
         "ronda": "Fecha 9",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Tottenham Hotspur Stadium",
@@ -37622,18 +37622,18 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 0
         },
         "tirosArco": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 3
         }
       },
@@ -37645,7 +37645,7 @@
         "gameUrlName": "real-betis-vs-malaga",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "27'",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Estadio La Cartuja de Sevilla",
