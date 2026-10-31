@@ -36344,7 +36344,7 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 6,
@@ -36356,10 +36356,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 4
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 1
         }
       },
@@ -36371,7 +36371,7 @@
         "gameUrlName": "sarmiento-junin-vs-rosario-central",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "85'",
+        "minuto": "90+7'",
         "ronda": "Fecha 15"
       }
     },
@@ -36381,7 +36381,7 @@
       "visitante": "Aldosivi",
       "fechaHora": "2026-10-30T21:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -36393,7 +36393,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 5
+          "v": 6
         },
         "tirosArco": {
           "l": 6,
@@ -36410,9 +36410,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "racing-club-vs-aldosivi",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
         "ronda": "Fecha 15"
       }
     },
