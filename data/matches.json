@@ -36347,12 +36347,12 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "corners": {
           "l": 1,
-          "v": 8
+          "v": 9
         },
         "tirosArco": {
           "l": 2,
@@ -36371,7 +36371,7 @@
         "gameUrlName": "sarmiento-junin-vs-rosario-central",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "49'",
+        "minuto": "55'",
         "ronda": "Fecha 15"
       }
     },
@@ -36389,19 +36389,19 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 0,
           "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -36412,7 +36412,7 @@
         "gameUrlName": "racing-club-vs-aldosivi",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "52'",
+        "minuto": "57'",
         "ronda": "Fecha 15"
       }
     },
