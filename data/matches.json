@@ -36471,7 +36471,7 @@
         },
         "corners": {
           "l": 2,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 0,
@@ -36490,11 +36490,11 @@
         "gameUrlName": "riestra-vs-talleres-cordoba",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "12'",
+        "minuto": "18'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Guillermo Laza",
-        "arbitro": "Darío Herrera"
+        "arbitro": "Darío Herrera (Argentina)"
       }
     },
     {
@@ -36951,7 +36951,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "corners": {
@@ -36975,7 +36975,7 @@
         "gameUrlName": "deportivo-moron-vs-ciudad-de-bolivar",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "46'",
+        "minuto": "52'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
@@ -37004,10 +37004,10 @@
         },
         "tirosArco": {
           "l": 3,
-          "v": 2
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
+          "l": 5,
           "v": 3
         }
       },
@@ -37019,7 +37019,7 @@
         "gameUrlName": "los-andes-vs-mitre-sde",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "80'",
+        "minuto": "86'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Eduardo Gallardón",
@@ -37040,19 +37040,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -37063,7 +37063,7 @@
         "gameUrlName": "chaco-for-ever-vs-racing-cordoba",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "8'",
+        "minuto": "14'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Juan Alberto García",
@@ -37437,16 +37437,16 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -37457,7 +37457,7 @@
         "gameUrlName": "aston-villa-vs-fulham",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "11'",
+        "minuto": "17'",
         "ronda": "Fecha 9",
         "tv": "Disney+ Premium",
         "estadio": "Villa Park",
@@ -37611,14 +37611,14 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -37630,7 +37630,7 @@
         "gameUrlName": "barcelona-vs-alaves",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "10'",
+        "minuto": "16'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
@@ -37740,14 +37740,14 @@
         },
         "corners": {
           "l": 1,
-          "v": 3
+          "v": 6
         },
         "tirosArco": {
           "l": 2,
-          "v": 2
+          "v": 4
         },
         "atajadas": {
-          "l": 1,
+          "l": 3,
           "v": 0
         }
       },
@@ -37759,7 +37759,7 @@
         "gameUrlName": "ac-milan-vs-inter-milan",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "23'",
+        "minuto": "29'",
         "ronda": "Fecha 10",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
