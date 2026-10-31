@@ -36637,7 +36637,7 @@
       "local": "San Miguel",
       "visitante": "Deportivo Madryn",
       "fechaHora": "2026-10-31T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -36667,7 +36667,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "ca-san-miguel-vs-dep.-madryn",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Fecha 36",
@@ -36711,9 +36711,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "san-telmo-vs-central-norte",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "50'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Dr. Osvaldo Francisco Baletto",
@@ -36826,7 +36826,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 1,
@@ -36843,9 +36843,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "agropecuario-vs-almagro",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Ofelia Rosenzuaig",
@@ -36949,7 +36949,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tarjetas": {
@@ -36961,7 +36961,7 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 2
         },
         "atajadas": {
@@ -36975,9 +36975,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "san-martin-vs-gimnasia-jujuy",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Ingeniero Hilario Sánchez",
@@ -37019,14 +37019,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-moron-vs-ciudad-de-bolivar",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
-        "arbitro": "F. Acita",
-        "infoDia": "2026-10-31"
+        "arbitro": "F. Acita"
       }
     },
     {
@@ -37050,12 +37049,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -37066,7 +37065,7 @@
         "gameUrlName": "los-andes-vs-mitre-sde",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "26'",
+        "minuto": "37'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Eduardo Gallardón",
@@ -37433,7 +37432,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -37441,16 +37440,16 @@
           "v": 2
         },
         "corners": {
-          "l": 13,
+          "l": 14,
           "v": 0
         },
         "tirosArco": {
-          "l": 6,
+          "l": 8,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 5
+          "v": 6
         }
       },
       "source": {
@@ -37461,7 +37460,7 @@
         "gameUrlName": "tottenham-vs-crystal-palace",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "72'",
+        "minuto": "84'",
         "ronda": "Fecha 9",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Tottenham Hotspur Stadium",
@@ -37608,19 +37607,19 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 2
         },
         "corners": {
-          "l": 7,
+          "l": 9,
           "v": 0
         },
         "tirosArco": {
           "l": 6,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
           "l": 3,
@@ -37635,7 +37634,7 @@
         "gameUrlName": "real-betis-vs-malaga",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "66'",
+        "minuto": "78'",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Estadio La Cartuja de Sevilla",
