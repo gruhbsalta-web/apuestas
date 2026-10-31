@@ -36501,15 +36501,15 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tarjetas": {
           "l": 2,
-          "v": 1
+          "v": 2
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 1
         },
         "tirosArco": {
@@ -36518,7 +36518,7 @@
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 1
         }
       },
       "source": {
@@ -36529,7 +36529,7 @@
         "gameUrlName": "velez-sarsfield-vs-san-lorenzo",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "48'",
+        "minuto": "54'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Jose Amalfitani",
