@@ -37114,28 +37114,28 @@
       "local": "Chelsea",
       "visitante": "Manchester United",
       "fechaHora": "2026-10-31T09:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 6
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 8,
+          "v": 7
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 9,
+          "v": 5
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 7
         }
       },
       "source": {
@@ -37144,8 +37144,8 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "chelsea-vs-manchester-united",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 9"
       }
@@ -37155,28 +37155,28 @@
       "local": "Manchester City",
       "visitante": "Brighton",
       "fechaHora": "2026-10-31T12:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -37185,9 +37185,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "manchester-city-vs-brighton",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "ET",
+        "statusEnum": 2,
+        "minuto": "45'",
         "ronda": "Fecha 9"
       }
     },
@@ -37196,27 +37196,27 @@
       "local": "Hull City",
       "visitante": "Ipswich",
       "fechaHora": "2026-10-31T12:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 3
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -37226,9 +37226,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "hull-city-vs-ipswich",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "ET",
+        "statusEnum": 2,
+        "minuto": "45'",
         "ronda": "Fecha 9"
       }
     },
@@ -37237,28 +37237,28 @@
       "local": "Coventry",
       "visitante": "Sunderland",
       "fechaHora": "2026-10-31T12:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -37267,9 +37267,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "coventry-vs-sunderland",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "ET",
+        "statusEnum": 2,
+        "minuto": "45'",
         "ronda": "Fecha 9"
       }
     },
@@ -37278,27 +37278,27 @@
       "local": "Brentford",
       "visitante": "Nottingham Forest",
       "fechaHora": "2026-10-31T12:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 2
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -37308,9 +37308,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "brentford-vs-nottingham-forest",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "ET",
+        "statusEnum": 2,
+        "minuto": "45'",
         "ronda": "Fecha 9"
       }
     },
@@ -37319,28 +37319,28 @@
       "local": "Bournemouth",
       "visitante": "Leeds United",
       "fechaHora": "2026-10-31T12:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -37349,9 +37349,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "bournemouth-vs-leeds-united",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "ET",
+        "statusEnum": 2,
+        "minuto": "45'",
         "ronda": "Fecha 9"
       }
     },
@@ -37442,28 +37442,28 @@
       "local": "Levante UD",
       "visitante": "Atlético de Madrid",
       "fechaHora": "2026-10-31T10:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 5
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 4
         }
       },
       "source": {
@@ -37472,8 +37472,8 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "levante-vs-atletico-madrid",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 11"
       }
@@ -37487,24 +37487,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 3,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -37513,9 +37513,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "rayo-vallecano-vs-celta-vigo",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "42'",
         "ronda": "Fecha 11"
       }
     },
@@ -37606,28 +37606,28 @@
       "local": "Bologna",
       "visitante": "Monza",
       "fechaHora": "2026-10-31T11:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 3
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 4
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 3
         }
       },
       "source": {
@@ -37636,8 +37636,8 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "bologna-vs-monza",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 10"
       }
