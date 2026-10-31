@@ -36494,7 +36494,7 @@
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Guillermo Laza",
-        "arbitro": "Darío Herrera"
+        "arbitro": "Darío Herrera (Argentina)"
       }
     },
     {
@@ -36951,7 +36951,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "corners": {
@@ -36959,12 +36959,12 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -37038,7 +37038,7 @@
           "v": 1
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 1
         },
         "tirosArco": {
@@ -37429,7 +37429,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 5,
@@ -37606,15 +37606,15 @@
         },
         "corners": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
