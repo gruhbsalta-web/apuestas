@@ -36593,7 +36593,7 @@
       "local": "Godoy Cruz",
       "visitante": "Almirante Brown",
       "fechaHora": "2026-10-31T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -36602,7 +36602,7 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 2,
@@ -36623,9 +36623,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "godoy-cruz-vs-almirante-brown",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "43'",
+        "minuto": "45'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Feliciano Gambarte",
@@ -36669,7 +36669,7 @@
         "gameUrlName": "ca-san-miguel-vs-dep.-madryn",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "36'",
+        "minuto": "45'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Malvinas Argentinas",
@@ -36681,7 +36681,7 @@
       "local": "San Telmo",
       "visitante": "Central Norte",
       "fechaHora": "2026-10-31T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -36711,7 +36711,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "san-telmo-vs-central-norte",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Fecha 36",
@@ -36725,7 +36725,7 @@
       "local": "Atlanta",
       "visitante": "Midland",
       "fechaHora": "2026-10-31T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -36755,9 +36755,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "atlanta-vs-ferrocarril-midland",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "43'",
+        "minuto": "45'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
@@ -36769,7 +36769,7 @@
       "local": "Acassuso",
       "visitante": "Ferro Carril Oeste",
       "fechaHora": "2026-10-31T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -36799,9 +36799,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "acassuso-vs-ferro-carril-oeste",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "43'",
+        "minuto": "45'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio La Quema",
@@ -36813,7 +36813,7 @@
       "local": "Agropecuario",
       "visitante": "Almagro",
       "fechaHora": "2026-10-31T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -36843,7 +36843,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "agropecuario-vs-almagro",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Fecha 36",
@@ -36857,7 +36857,7 @@
       "local": "Tristan Suárez",
       "visitante": "Deportivo Maipú",
       "fechaHora": "2026-10-31T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -36887,9 +36887,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "tristan-suarez-vs-deportivo-maipu",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "43'",
+        "minuto": "45'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio 20 de Octubre",
@@ -36901,12 +36901,12 @@
       "local": "Güemes",
       "visitante": "Temperley",
       "fechaHora": "2026-10-31T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
@@ -36914,14 +36914,14 @@
         },
         "corners": {
           "l": 5,
-          "v": 6
+          "v": 7
         },
         "tirosArco": {
           "l": 0,
           "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 0,
           "v": 0
         }
       },
@@ -36931,9 +36931,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "club-atletico-guemes-vs-temperley",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "43'",
+        "minuto": "45'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Arturo Jiya Miranda",
@@ -36945,7 +36945,7 @@
       "local": "San Martín San Juan",
       "visitante": "Gimnasia de Jujuy",
       "fechaHora": "2026-10-31T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -36975,9 +36975,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "san-martin-vs-gimnasia-jujuy",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "43'",
+        "minuto": "45'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Ingeniero Hilario Sánchez",
@@ -37066,7 +37066,7 @@
         "gameUrlName": "los-andes-vs-mitre-sde",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "13'",
+        "minuto": "26'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Eduardo Gallardón",
@@ -37441,16 +37441,16 @@
           "v": 2
         },
         "corners": {
-          "l": 11,
+          "l": 13,
           "v": 0
         },
         "tirosArco": {
-          "l": 4,
+          "l": 6,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 3
+          "v": 5
         }
       },
       "source": {
@@ -37461,7 +37461,7 @@
         "gameUrlName": "tottenham-vs-crystal-palace",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "60'",
+        "minuto": "72'",
         "ronda": "Fecha 9",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Tottenham Hotspur Stadium",
@@ -37615,7 +37615,7 @@
           "v": 2
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 0
         },
         "tirosArco": {
@@ -37635,7 +37635,7 @@
         "gameUrlName": "real-betis-vs-malaga",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "55'",
+        "minuto": "66'",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Estadio La Cartuja de Sevilla",
@@ -37734,11 +37734,11 @@
       "visitante": "AS Roma",
       "fechaHora": "2026-10-31T14:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
-          "v": 4
+          "v": 5
         },
         "tarjetas": {
           "l": 1,
@@ -37753,7 +37753,7 @@
           "v": 9
         },
         "atajadas": {
-          "l": 5,
+          "l": 4,
           "v": 5
         }
       },
@@ -37763,9 +37763,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "udinese-vs-as-roma",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+2'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Bluenergy Stadium",
