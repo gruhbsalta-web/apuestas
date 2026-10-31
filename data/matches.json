@@ -36466,7 +36466,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -36474,12 +36474,12 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -36490,11 +36490,11 @@
         "gameUrlName": "riestra-vs-talleres-cordoba",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "31'",
+        "minuto": "43'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Guillermo Laza",
-        "arbitro": "Darío Herrera (Argentina)"
+        "arbitro": "Darío Herrera"
       }
     },
     {
@@ -36956,7 +36956,7 @@
         },
         "corners": {
           "l": 6,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 4,
@@ -36975,7 +36975,7 @@
         "gameUrlName": "deportivo-moron-vs-ciudad-de-bolivar",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "64'",
+        "minuto": "76'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
@@ -37042,12 +37042,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 4,
-          "v": 1
+          "l": 6,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 5
         }
       },
       "source": {
@@ -37058,7 +37058,7 @@
         "gameUrlName": "chaco-for-ever-vs-racing-cordoba",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "26'",
+        "minuto": "38'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Juan Alberto García",
@@ -37424,23 +37424,23 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 5,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         }
       },
@@ -37452,7 +37452,7 @@
         "gameUrlName": "aston-villa-vs-fulham",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "29'",
+        "minuto": "41'",
         "ronda": "Fecha 9",
         "tv": "Disney+ Premium",
         "estadio": "Villa Park",
@@ -37605,16 +37605,16 @@
           "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 1
+          "l": 2,
+          "v": 2
         },
         "tirosArco": {
-          "l": 2,
-          "v": 1
+          "l": 3,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         }
       },
       "source": {
@@ -37625,7 +37625,7 @@
         "gameUrlName": "barcelona-vs-alaves",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "28'",
+        "minuto": "40'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
@@ -37722,11 +37722,11 @@
       "local": "AC Milan",
       "visitante": "Inter Milan",
       "fechaHora": "2026-10-31T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tarjetas": {
@@ -37738,7 +37738,7 @@
           "v": 7
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 6
         },
         "atajadas": {
@@ -37752,9 +37752,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "ac-milan-vs-inter-milan",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "41'",
+        "minuto": "45'",
         "ronda": "Fecha 10",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
