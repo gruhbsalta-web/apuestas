@@ -36467,7 +36467,7 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 4,
@@ -36490,7 +36490,7 @@
         "gameUrlName": "riestra-vs-talleres-cordoba",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "55'",
+        "minuto": "61'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Guillermo Laza",
@@ -37038,10 +37038,10 @@
         },
         "tirosArco": {
           "l": 6,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 5
         }
       },
@@ -37053,7 +37053,7 @@
         "gameUrlName": "chaco-for-ever-vs-racing-cordoba",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "51'",
+        "minuto": "57'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Juan Alberto García",
@@ -37078,7 +37078,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
           "l": 0,
@@ -37097,7 +37097,7 @@
         "gameUrlName": "colon-vs-defensores-de-belgrano",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "8'",
+        "minuto": "14'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
@@ -37427,7 +37427,7 @@
         },
         "corners": {
           "l": 5,
-          "v": 2
+          "v": 5
         },
         "tirosArco": {
           "l": 3,
@@ -37446,7 +37446,7 @@
         "gameUrlName": "aston-villa-vs-fulham",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "51'",
+        "minuto": "57'",
         "ronda": "Fecha 9",
         "tv": "Disney+ Premium",
         "estadio": "Villa Park",
@@ -37599,7 +37599,7 @@
           "v": 2
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 3
         },
         "tirosArco": {
@@ -37619,7 +37619,7 @@
         "gameUrlName": "barcelona-vs-alaves",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "47'",
+        "minuto": "53'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
@@ -37728,15 +37728,15 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 8
         },
         "tirosArco": {
           "l": 3,
-          "v": 7
+          "v": 8
         },
         "atajadas": {
-          "l": 6,
+          "l": 7,
           "v": 0
         }
       },
@@ -37748,7 +37748,7 @@
         "gameUrlName": "ac-milan-vs-inter-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "65'",
+        "minuto": "70'",
         "ronda": "Fecha 10",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
