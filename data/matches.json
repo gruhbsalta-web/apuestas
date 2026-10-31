@@ -36475,10 +36475,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         }
       },
@@ -36488,9 +36488,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "riestra-vs-talleres-cordoba",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "55'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Guillermo Laza",
@@ -36944,7 +36944,7 @@
       "visitante": "Ciudad De Bolivar",
       "fechaHora": "2026-10-31T16:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -36973,13 +36973,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-moron-vs-ciudad-de-bolivar",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio Nuevo Francisco Urbano",
-        "arbitro": "F. Acita"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -37039,7 +37034,7 @@
         },
         "corners": {
           "l": 6,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 6,
@@ -37056,9 +37051,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "chaco-for-ever-vs-racing-cordoba",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "51'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Juan Alberto García",
@@ -37083,7 +37078,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -37100,14 +37095,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "colon-vs-defensores-de-belgrano",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
-        "arbitro": "Bruno Amiconi",
-        "infoDia": "2026-10-31"
+        "arbitro": "Bruno Amiconi"
       }
     },
     {
@@ -37436,12 +37430,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -37450,9 +37444,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "aston-villa-vs-fulham",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "51'",
         "ronda": "Fecha 9",
         "tv": "Disney+ Premium",
         "estadio": "Villa Park",
@@ -37623,9 +37617,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "barcelona-vs-alaves",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
@@ -37735,14 +37729,14 @@
         },
         "corners": {
           "l": 1,
-          "v": 7
+          "v": 8
         },
         "tirosArco": {
           "l": 3,
-          "v": 6
+          "v": 7
         },
         "atajadas": {
-          "l": 5,
+          "l": 6,
           "v": 0
         }
       },
@@ -37754,7 +37748,7 @@
         "gameUrlName": "ac-milan-vs-inter-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "53'",
+        "minuto": "65'",
         "ronda": "Fecha 10",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
