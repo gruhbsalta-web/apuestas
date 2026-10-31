@@ -36266,11 +36266,11 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
-          "l": 4,
-          "v": 2
+          "l": 5,
+          "v": 3
         },
         "corners": {
           "l": 9,
@@ -36278,7 +36278,7 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
           "l": 2,
@@ -36293,7 +36293,7 @@
         "gameUrlName": "huracan-vs-tigre",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "90+2'",
+        "minuto": "90+8'",
         "ronda": "Fecha 15"
       }
     },
@@ -36303,7 +36303,7 @@
       "visitante": "Gimnasia La Plata",
       "fechaHora": "2026-10-30T19:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -36332,9 +36332,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "estudiantes-rio-cuarto-vs-gimnasia-la-plata",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+4'",
+        "statusShort": "Final",
         "ronda": "Fecha 15"
       }
     },
