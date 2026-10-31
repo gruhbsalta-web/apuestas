@@ -37167,16 +37167,16 @@
           "v": 2
         },
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 4
         }
       },
       "source": {
@@ -37187,7 +37187,7 @@
         "gameUrlName": "manchester-city-vs-brighton",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "60'",
+        "minuto": "72'",
         "ronda": "Fecha 9"
       }
     },
@@ -37200,11 +37200,11 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "corners": {
@@ -37212,7 +37212,7 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "atajadas": {
@@ -37228,7 +37228,7 @@
         "gameUrlName": "hull-city-vs-ipswich",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "59'",
+        "minuto": "70'",
         "ronda": "Fecha 9"
       }
     },
@@ -37242,7 +37242,7 @@
       "stats": {
         "goles": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 2,
@@ -37254,7 +37254,7 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 1,
@@ -37269,7 +37269,7 @@
         "gameUrlName": "coventry-vs-sunderland",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "73'",
         "ronda": "Fecha 9"
       }
     },
@@ -37286,12 +37286,12 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         },
         "corners": {
-          "l": 2,
-          "v": 2
+          "l": 3,
+          "v": 3
         },
         "tirosArco": {
           "l": 0,
@@ -37310,7 +37310,7 @@
         "gameUrlName": "brentford-vs-nottingham-forest",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "74'",
         "ronda": "Fecha 9"
       }
     },
@@ -37328,19 +37328,19 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 3,
           "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -37351,7 +37351,7 @@
         "gameUrlName": "bournemouth-vs-leeds-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "58'",
+        "minuto": "70'",
         "ronda": "Fecha 9"
       }
     },
@@ -37499,12 +37499,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -37513,9 +37513,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "rayo-vallecano-vs-celta-vigo",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Fecha 11"
       }
     },
