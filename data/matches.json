@@ -36509,7 +36509,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -36527,14 +36527,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "velez-sarsfield-vs-san-lorenzo",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "9'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Jose Amalfitani",
-        "arbitro": "Facundo Tello Figueroa",
-        "infoDia": "2026-10-31"
+        "arbitro": "Facundo Tello Figueroa"
       }
     },
     {
@@ -37067,8 +37066,8 @@
           "v": 0
         },
         "corners": {
-          "l": 6,
-          "v": 3
+          "l": 9,
+          "v": 4
         },
         "tirosArco": {
           "l": 0,
@@ -37085,9 +37084,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "colon-vs-defensores-de-belgrano",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "60'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
@@ -37405,7 +37404,7 @@
       "visitante": "Fulham",
       "fechaHora": "2026-10-31T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -37434,9 +37433,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "aston-villa-vs-fulham",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 9",
         "tv": "Disney+ Premium",
         "estadio": "Villa Park",
@@ -37578,7 +37577,7 @@
       "visitante": "Alavés",
       "fechaHora": "2026-10-31T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 6,
@@ -37607,9 +37606,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "barcelona-vs-alaves",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
