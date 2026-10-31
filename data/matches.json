@@ -37447,11 +37447,11 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
@@ -37471,7 +37471,7 @@
         "gameUrlName": "tottenham-vs-crystal-palace",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "12'",
+        "minuto": "18'",
         "ronda": "Fecha 9",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Tottenham Hotspur Stadium",
@@ -37629,12 +37629,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -37645,7 +37645,7 @@
         "gameUrlName": "real-betis-vs-malaga",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "9'",
+        "minuto": "15'",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Estadio La Cartuja de Sevilla",
@@ -37743,7 +37743,7 @@
       "local": "Udinese",
       "visitante": "AS Roma",
       "fechaHora": "2026-10-31T14:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -37773,9 +37773,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "udinese-vs-as-roma",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "42'",
+        "minuto": "45'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Bluenergy Stadium",
