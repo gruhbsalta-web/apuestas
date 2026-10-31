@@ -36340,7 +36340,7 @@
       "visitante": "Rosario Central",
       "fechaHora": "2026-10-30T21:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -36369,9 +36369,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "sarmiento-junin-vs-rosario-central",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+7'",
+        "statusShort": "Final",
         "ronda": "Fecha 15"
       }
     },
