@@ -37753,7 +37753,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -37761,12 +37761,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
-          "v": 1
+          "l": 2,
+          "v": 2
         }
       },
       "source": {
@@ -37777,7 +37777,7 @@
         "gameUrlName": "udinese-vs-as-roma",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "18'",
+        "minuto": "30'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Bluenergy Stadium",
