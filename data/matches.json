@@ -38173,15 +38173,15 @@
       "local": "Athletic Club",
       "visitante": "Real Sociedad",
       "fechaHora": "2026-11-01T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -38194,7 +38194,7 @@
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 0
         }
       },
       "source": {
@@ -38203,9 +38203,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "athletic-bilbao-vs-real-sociedad",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+2'",
+        "minuto": "45'",
         "ronda": "Fecha 11",
         "tv": "DSports, Flow Sports",
         "estadio": "Estadio de San Mamés",
@@ -38405,16 +38405,16 @@
           "v": 1
         },
         "corners": {
-          "l": 8,
+          "l": 9,
           "v": 2
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -38425,7 +38425,7 @@
         "gameUrlName": "juventus-vs-napoli",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "48'",
+        "minuto": "60'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Allianz Stadium",
