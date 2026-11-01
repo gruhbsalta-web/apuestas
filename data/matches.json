@@ -38177,7 +38177,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -38185,11 +38185,11 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -38205,7 +38205,7 @@
         "gameUrlName": "athletic-bilbao-vs-real-sociedad",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "6'",
+        "minuto": "17'",
         "ronda": "Fecha 11",
         "tv": "DSports, Flow Sports",
         "estadio": "Estadio de San Mamés",
@@ -38405,7 +38405,7 @@
           "v": 0
         },
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
@@ -38425,7 +38425,7 @@
         "gameUrlName": "juventus-vs-napoli",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "25'",
+        "minuto": "37'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Allianz Stadium",
