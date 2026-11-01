@@ -36545,18 +36545,18 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 1
+          "v": 3
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 3
         }
       },
@@ -36568,7 +36568,7 @@
         "gameUrlName": "estudiantes-de-la-plata-vs-instituto-ac-cordoba",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "28'",
+        "minuto": "40'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Jorge Luis Hirschi",
