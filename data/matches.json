@@ -37785,14 +37785,14 @@
         },
         "corners": {
           "l": 4,
-          "v": 0
+          "v": 3
         },
         "tirosArco": {
           "l": 3,
-          "v": 1
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 3,
           "v": 2
         }
       },
@@ -37804,7 +37804,7 @@
         "gameUrlName": "belgrano-vs-barracas-central",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "33'",
+        "minuto": "39'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Julio César Villagra",
@@ -37824,20 +37824,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
           "l": 1,
           "v": 0
         },
-        "atajadas": {
+        "tirosArco": {
           "l": 0,
-          "v": 1
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 0
         }
       },
       "source": {
@@ -37848,7 +37848,7 @@
         "gameUrlName": "newell's-old-boys-vs-union-santa-fe",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "34'",
+        "minuto": "40'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Marcelo Alberto Bielsa",
@@ -37922,10 +37922,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -37937,7 +37937,7 @@
         "gameUrlName": "san-martin-de-tucuman-vs-colegiales",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "29'",
+        "minuto": "35'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio La Ciudadela",
@@ -37962,14 +37962,14 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -37979,14 +37979,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-y-tiro-vs-quilmes",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "6'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio El Gigante del Norte",
-        "arbitro": "M. Billone",
-        "infoDia": "2026-11-01"
+        "arbitro": "M. Billone"
       }
     },
     {
