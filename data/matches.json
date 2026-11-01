@@ -37773,7 +37773,7 @@
       "visitante": "Barracas Central",
       "fechaHora": "2026-11-01T18:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -37802,13 +37802,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "belgrano-vs-barracas-central",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+8'",
-        "ronda": "Fecha 15",
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
-        "estadio": "Estadio Julio César Villagra",
-        "arbitro": "Bryan Gustavo Ferreyra"
+        "statusShort": "Final",
+        "ronda": "Fecha 15"
       }
     },
     {
@@ -37952,14 +37947,14 @@
         },
         "corners": {
           "l": 2,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         }
       },
@@ -37971,7 +37966,7 @@
         "gameUrlName": "gimnasia-y-tiro-vs-quilmes",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "66'",
+        "minuto": "78'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio El Gigante del Norte",
