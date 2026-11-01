@@ -37741,11 +37741,11 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
@@ -37765,7 +37765,7 @@
         "gameUrlName": "boca-juniors-vs-river-plate",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "9'",
+        "minuto": "21'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
@@ -38011,19 +38011,19 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 3
+          "v": 4
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 4
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -38034,7 +38034,7 @@
         "gameUrlName": "liverpool-vs-arsenal",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "90+2'",
         "ronda": "Fecha 9",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Anfield",
@@ -38134,7 +38134,7 @@
       "local": "Elche CF",
       "visitante": "Valencia CF",
       "fechaHora": "2026-11-01T14:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -38142,7 +38142,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "corners": {
@@ -38164,9 +38164,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "elche-vs-valencia",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "37'",
+        "minuto": "45'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
@@ -38363,20 +38363,20 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 5,
-          "v": 0
+          "l": 6,
+          "v": 1
         },
         "tirosArco": {
-          "l": 5,
+          "l": 7,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 4
+          "v": 6
         }
       },
       "source": {
@@ -38387,7 +38387,7 @@
         "gameUrlName": "lecce-vs-genoa",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "48'",
+        "minuto": "59'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Ettore Giardiniero - Via del Mare",
