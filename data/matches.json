@@ -38048,28 +38048,28 @@
       "local": "Getafe CF",
       "visitante": "Sevilla FC",
       "fechaHora": "2026-11-01T10:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 5
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 4
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 2
         }
       },
       "source": {
@@ -38078,14 +38078,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "getafe-vs-sevilla",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Estadio Coliseum",
-        "arbitro": "Víctor García Verdura",
-        "infoDia": "2026-11-01"
+        "arbitro": "Víctor García Verdura"
       }
     },
     {
@@ -38098,23 +38097,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -38123,14 +38122,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "racing-santander-vs-real-madrid",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "24'",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Campos de Sport de El Sardinero",
-        "arbitro": "José Luis Munuera Montero",
-        "infoDia": "2026-11-01"
+        "arbitro": "José Luis Munuera Montero"
       }
     },
     {
@@ -38228,28 +38226,28 @@
       "local": "Como",
       "visitante": "Venezia",
       "fechaHora": "2026-11-01T08:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "corners": {
-          "l": 5,
-          "v": 0
+          "l": 8,
+          "v": 1
         },
         "tirosArco": {
-          "l": 3,
-          "v": 0
+          "l": 4,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 2
+          "l": 1,
+          "v": 3
         }
       },
       "source": {
@@ -38258,9 +38256,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "como-vs-venezia",
-        "statusShort": "1°",
-        "statusEnum": 2,
-        "minuto": "45+2'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadio Giuseppe Sinigaglia",
@@ -38272,28 +38270,28 @@
       "local": "Lazio",
       "visitante": "Cagliari",
       "fechaHora": "2026-11-01T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 3
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 2
         }
       },
       "source": {
@@ -38302,14 +38300,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "lazio-vs-cagliari",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "2°",
+        "statusEnum": 2,
+        "minuto": "82'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico (Rome)",
-        "arbitro": "Andrea Colombo",
-        "infoDia": "2026-11-01"
+        "arbitro": "Andrea Colombo"
       }
     },
     {
@@ -38317,28 +38314,28 @@
       "local": "Frosinone",
       "visitante": "Torino",
       "fechaHora": "2026-11-01T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 3
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 6,
+          "v": 6
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 6,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 5
         }
       },
       "source": {
@@ -38347,14 +38344,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "frosinone-vs-torino",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "2°",
+        "statusEnum": 2,
+        "minuto": "80'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Benito Stirpe",
-        "arbitro": "Giuseppe Mucera",
-        "infoDia": "2026-11-01"
+        "arbitro": "Giuseppe Mucera"
       }
     },
     {
