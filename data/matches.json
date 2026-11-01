@@ -37742,19 +37742,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -37765,7 +37765,7 @@
         "gameUrlName": "boca-juniors-vs-river-plate",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "4'",
+        "minuto": "9'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
@@ -38010,8 +38010,8 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
-          "v": 2
+          "l": 3,
+          "v": 3
         },
         "corners": {
           "l": 6,
@@ -38034,7 +38034,7 @@
         "gameUrlName": "liverpool-vs-arsenal",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "75'",
+        "minuto": "81'",
         "ronda": "Fecha 9",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Anfield",
@@ -38142,11 +38142,11 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
@@ -38166,7 +38166,7 @@
         "gameUrlName": "elche-vs-valencia",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "32'",
+        "minuto": "37'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
@@ -38367,7 +38367,7 @@
           "v": 0
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 0
         },
         "tirosArco": {
@@ -38385,9 +38385,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "lecce-vs-genoa",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Ettore Giardiniero - Via del Mare",
