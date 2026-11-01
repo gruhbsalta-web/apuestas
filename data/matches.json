@@ -37772,7 +37772,7 @@
       "local": "Belgrano",
       "visitante": "Barracas Central",
       "fechaHora": "2026-11-01T18:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -37802,9 +37802,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "belgrano-vs-barracas-central",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "39'",
+        "minuto": "45'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Julio César Villagra",
@@ -37816,7 +37816,7 @@
       "local": "Newell's Old Boys",
       "visitante": "Unión de Santa Fe",
       "fechaHora": "2026-11-01T18:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -37828,7 +37828,7 @@
           "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
@@ -37846,9 +37846,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "newell's-old-boys-vs-union-santa-fe",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "40'",
+        "minuto": "45'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Marcelo Alberto Bielsa",
@@ -37905,7 +37905,7 @@
       "local": "San Martín Tucumán",
       "visitante": "Colegiales",
       "fechaHora": "2026-11-01T18:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -37921,12 +37921,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 0,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -37935,9 +37935,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "san-martin-de-tucuman-vs-colegiales",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "35'",
+        "minuto": "45'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio La Ciudadela",
@@ -37954,14 +37954,14 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "tirosArco": {
@@ -37969,7 +37969,7 @@
           "v": 1
         },
         "atajadas": {
-          "l": 1,
+          "l": 0,
           "v": 0
         }
       },
@@ -37981,7 +37981,7 @@
         "gameUrlName": "gimnasia-y-tiro-vs-quilmes",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "6'",
+        "minuto": "18'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio El Gigante del Norte",
