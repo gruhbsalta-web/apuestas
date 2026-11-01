@@ -37802,14 +37802,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "belgrano-vs-barracas-central",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "3'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Julio César Villagra",
-        "arbitro": "Bryan Gustavo Ferreyra",
-        "infoDia": "2026-11-01"
+        "arbitro": "Bryan Gustavo Ferreyra"
       }
     },
     {
@@ -37847,14 +37846,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "newell's-old-boys-vs-union-santa-fe",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Marcelo Alberto Bielsa",
-        "arbitro": "Edgardo Daniel Zamora",
-        "infoDia": "2026-11-01"
+        "arbitro": "Edgardo Daniel Zamora"
       }
     },
     {
@@ -38182,7 +38180,7 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 4,
@@ -38205,7 +38203,7 @@
         "gameUrlName": "athletic-bilbao-vs-real-sociedad",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "69'",
         "ronda": "Fecha 11",
         "tv": "DSports, Flow Sports",
         "estadio": "Estadio de San Mamés",
@@ -38397,7 +38395,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -38405,11 +38403,11 @@
           "v": 2
         },
         "corners": {
-          "l": 10,
+          "l": 12,
           "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "atajadas": {
@@ -38425,7 +38423,7 @@
         "gameUrlName": "juventus-vs-napoli",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "78'",
+        "minuto": "90'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Allianz Stadium",
