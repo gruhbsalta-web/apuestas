@@ -37777,7 +37777,7 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 1,
@@ -37789,10 +37789,10 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 4
+          "v": 6
         },
         "atajadas": {
-          "l": 4,
+          "l": 5,
           "v": 2
         }
       },
@@ -37804,7 +37804,7 @@
         "gameUrlName": "belgrano-vs-barracas-central",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "80'",
+        "minuto": "86'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Julio César Villagra",
@@ -37824,19 +37824,19 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 3,
           "v": 4
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 3
+          "l": 1,
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 0
         }
       },
@@ -37848,7 +37848,7 @@
         "gameUrlName": "newell's-old-boys-vs-union-santa-fe",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "80'",
+        "minuto": "86'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Marcelo Alberto Bielsa",
@@ -37937,7 +37937,7 @@
         "gameUrlName": "san-martin-de-tucuman-vs-colegiales",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "80'",
+        "minuto": "86'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio La Ciudadela",
@@ -37965,12 +37965,12 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -37981,7 +37981,7 @@
         "gameUrlName": "gimnasia-y-tiro-vs-quilmes",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "48'",
+        "minuto": "54'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio El Gigante del Norte",
