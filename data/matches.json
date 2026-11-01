@@ -37962,7 +37962,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 0,
@@ -37981,7 +37981,7 @@
         "gameUrlName": "gimnasia-y-tiro-vs-quilmes",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "18'",
+        "minuto": "30'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio El Gigante del Norte",
