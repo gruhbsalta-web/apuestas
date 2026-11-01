@@ -37733,7 +37733,7 @@
       "local": "Boca Juniors",
       "visitante": "River Plate",
       "fechaHora": "2026-11-01T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -37763,9 +37763,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "boca-juniors-vs-river-plate",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+6'",
+        "minuto": "45'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
@@ -38139,7 +38139,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 3,
@@ -38147,14 +38147,14 @@
         },
         "corners": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 2,
-          "v": 0
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 2
         }
       },
@@ -38166,7 +38166,7 @@
         "gameUrlName": "elche-vs-valencia",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "74'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
@@ -38356,7 +38356,7 @@
       "visitante": "Genoa",
       "fechaHora": "2026-11-01T14:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -38368,7 +38368,7 @@
         },
         "corners": {
           "l": 6,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 7,
@@ -38385,9 +38385,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "lecce-vs-genoa",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Ettore Giardiniero - Via del Mare",
