@@ -38008,22 +38008,22 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -38033,14 +38033,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "liverpool-vs-arsenal",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "34'",
         "ronda": "Fecha 9",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Anfield",
-        "arbitro": "Andy Madley",
-        "infoDia": "2026-11-01"
+        "arbitro": "Andy Madley"
       }
     },
     {
@@ -38104,15 +38103,15 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
-          "v": 5
+          "l": 2,
+          "v": 6
         },
         "tirosArco": {
           "l": 1,
-          "v": 6
+          "v": 7
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 1
         }
       },
@@ -38122,9 +38121,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "racing-santander-vs-real-madrid",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "85'",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Campos de Sport de El Sardinero",
@@ -38374,12 +38373,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -38388,14 +38387,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "lecce-vs-genoa",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "3'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Ettore Giardiniero - Via del Mare",
-        "arbitro": "Matteo Marchetti",
-        "infoDia": "2026-11-01"
+        "arbitro": "Matteo Marchetti"
       }
     },
     {
