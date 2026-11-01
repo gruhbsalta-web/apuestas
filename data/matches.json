@@ -38092,27 +38092,27 @@
       "local": "Racing de Santander",
       "visitante": "Real Madrid",
       "fechaHora": "2026-11-01T12:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "corners": {
           "l": 1,
-          "v": 2
+          "v": 5
         },
         "tirosArco": {
           "l": 1,
-          "v": 4
+          "v": 6
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         }
       },
@@ -38122,9 +38122,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "racing-santander-vs-real-madrid",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "25'",
+        "minuto": "45'",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Campos de Sport de El Sardinero",
@@ -38271,22 +38271,22 @@
       "visitante": "Cagliari",
       "fechaHora": "2026-11-01T11:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 3
+          "l": 1,
+          "v": 4
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "atajadas": {
@@ -38300,9 +38300,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "lazio-vs-cagliari",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "83'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico (Rome)",
@@ -38315,10 +38315,10 @@
       "visitante": "Torino",
       "fechaHora": "2026-11-01T11:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -38326,15 +38326,15 @@
           "v": 3
         },
         "corners": {
-          "l": 6,
-          "v": 6
+          "l": 7,
+          "v": 7
         },
         "tirosArco": {
-          "l": 7,
-          "v": 2
+          "l": 8,
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 6
         }
       },
@@ -38344,9 +38344,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "frosinone-vs-torino",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "80'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Benito Stirpe",
