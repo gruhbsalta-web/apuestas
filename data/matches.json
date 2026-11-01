@@ -37784,16 +37784,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -37804,7 +37804,7 @@
         "gameUrlName": "belgrano-vs-barracas-central",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "3'",
+        "minuto": "9'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Julio César Villagra",
@@ -37848,7 +37848,7 @@
         "gameUrlName": "newell's-old-boys-vs-union-santa-fe",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "4'",
+        "minuto": "10'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Marcelo Alberto Bielsa",
@@ -37918,7 +37918,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -37935,14 +37935,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "san-martin-de-tucuman-vs-colegiales",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio La Ciudadela",
-        "arbitro": "Federico Benítez",
-        "infoDia": "2026-11-01"
+        "arbitro": "Federico Benítez"
       }
     },
     {
@@ -38180,18 +38179,18 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "corners": {
-          "l": 4,
-          "v": 4
+          "l": 5,
+          "v": 5
         },
         "tirosArco": {
           "l": 3,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         }
       },
@@ -38203,7 +38202,7 @@
         "gameUrlName": "athletic-bilbao-vs-real-sociedad",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "69'",
+        "minuto": "75'",
         "ronda": "Fecha 11",
         "tv": "DSports, Flow Sports",
         "estadio": "Estadio de San Mamés",
@@ -38392,7 +38391,7 @@
       "visitante": "Napoli",
       "fechaHora": "2026-11-01T16:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -38400,11 +38399,11 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "corners": {
-          "l": 12,
-          "v": 2
+          "l": 13,
+          "v": 4
         },
         "tirosArco": {
           "l": 4,
@@ -38421,9 +38420,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "juventus-vs-napoli",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Allianz Stadium",
