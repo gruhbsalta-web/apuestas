@@ -36537,10 +36537,10 @@
       "visitante": "Instituto",
       "fechaHora": "2026-10-31T21:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 4,
+          "l": 3,
           "v": 3
         },
         "tarjetas": {
@@ -36553,11 +36553,11 @@
         },
         "tirosArco": {
           "l": 8,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
-          "l": 1,
-          "v": 4
+          "l": 2,
+          "v": 5
         }
       },
       "source": {
@@ -36566,13 +36566,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "estudiantes-de-la-plata-vs-instituto-ac-cordoba",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+2'",
-        "ronda": "Fecha 15",
-        "tv": "ESPN Premium",
-        "estadio": "Jorge Luis Hirschi",
-        "arbitro": "Hernán Mastrángelo"
+        "statusShort": "Final",
+        "ronda": "Fecha 15"
       }
     },
     {
