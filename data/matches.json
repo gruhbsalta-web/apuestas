@@ -36541,23 +36541,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -36566,14 +36566,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "estudiantes-de-la-plata-vs-instituto-ac-cordoba",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "10'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Jorge Luis Hirschi",
-        "arbitro": "Hernán Mastrángelo",
-        "infoDia": "2026-10-31"
+        "arbitro": "Hernán Mastrángelo"
       }
     },
     {
