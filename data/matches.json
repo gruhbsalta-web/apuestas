@@ -37745,7 +37745,7 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 0
         },
         "tirosArco": {
@@ -37765,7 +37765,7 @@
         "gameUrlName": "boca-juniors-vs-river-plate",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "33'",
+        "minuto": "39'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
@@ -38146,16 +38146,16 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -38164,9 +38164,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "elche-vs-valencia",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "50'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
@@ -38363,7 +38363,7 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "corners": {
@@ -38371,12 +38371,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 5
+          "v": 6
         }
       },
       "source": {
@@ -38387,7 +38387,7 @@
         "gameUrlName": "lecce-vs-genoa",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "71'",
+        "minuto": "77'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Ettore Giardiniero - Via del Mare",
