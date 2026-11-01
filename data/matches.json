@@ -38178,7 +38178,7 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -38186,14 +38186,14 @@
         },
         "corners": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 1,
-          "v": 0
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         }
       },
@@ -38205,7 +38205,7 @@
         "gameUrlName": "athletic-bilbao-vs-real-sociedad",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "29'",
+        "minuto": "35'",
         "ronda": "Fecha 11",
         "tv": "DSports, Flow Sports",
         "estadio": "Estadio de San Mamés",
