@@ -37776,23 +37776,23 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 0
         },
         "tirosArco": {
-          "l": 2,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         }
       },
@@ -37804,7 +37804,7 @@
         "gameUrlName": "belgrano-vs-barracas-central",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "21'",
+        "minuto": "33'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Julio César Villagra",
@@ -37848,7 +37848,7 @@
         "gameUrlName": "newell's-old-boys-vs-union-santa-fe",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "22'",
+        "minuto": "34'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Marcelo Alberto Bielsa",
@@ -37917,7 +37917,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "tirosArco": {
@@ -37937,7 +37937,7 @@
         "gameUrlName": "san-martin-de-tucuman-vs-colegiales",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "17'",
+        "minuto": "29'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio La Ciudadela",
@@ -38171,7 +38171,7 @@
       "visitante": "Real Sociedad",
       "fechaHora": "2026-11-01T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -38183,14 +38183,14 @@
         },
         "corners": {
           "l": 5,
-          "v": 7
+          "v": 8
         },
         "tirosArco": {
           "l": 3,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 1
         }
       },
@@ -38200,9 +38200,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "athletic-bilbao-vs-real-sociedad",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
         "tv": "DSports, Flow Sports",
         "estadio": "Estadio de San Mamés",
