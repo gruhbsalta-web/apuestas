@@ -37741,8 +37741,8 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 5,
-          "v": 2
+          "l": 6,
+          "v": 3
         },
         "corners": {
           "l": 9,
@@ -37765,7 +37765,7 @@
         "gameUrlName": "boca-juniors-vs-river-plate",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "73'",
+        "minuto": "85'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
@@ -38412,14 +38412,14 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -38429,14 +38429,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "juventus-vs-napoli",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Allianz Stadium",
-        "arbitro": "Simone Sozza",
-        "infoDia": "2026-11-01"
+        "arbitro": "Simone Sozza"
       }
     },
     {
