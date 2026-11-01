@@ -38185,8 +38185,8 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "tirosArco": {
           "l": 1,
@@ -38205,7 +38205,7 @@
         "gameUrlName": "athletic-bilbao-vs-real-sociedad",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "17'",
+        "minuto": "29'",
         "ronda": "Fecha 11",
         "tv": "DSports, Flow Sports",
         "estadio": "Estadio de San Mamés",
@@ -38393,7 +38393,7 @@
       "local": "Juventus",
       "visitante": "Napoli",
       "fechaHora": "2026-11-01T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -38402,19 +38402,19 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 2
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -38423,9 +38423,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "juventus-vs-napoli",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "37'",
+        "minuto": "45'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Allianz Stadium",
