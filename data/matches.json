@@ -38405,7 +38405,7 @@
           "v": 1
         },
         "corners": {
-          "l": 9,
+          "l": 10,
           "v": 2
         },
         "tirosArco": {
@@ -38425,7 +38425,7 @@
         "gameUrlName": "juventus-vs-napoli",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "60'",
+        "minuto": "66'",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Allianz Stadium",
