@@ -37777,23 +37777,23 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 1,
           "v": 2
         },
         "corners": {
-          "l": 4,
-          "v": 11
+          "l": 5,
+          "v": 14
         },
         "tirosArco": {
-          "l": 4,
-          "v": 6
+          "l": 6,
+          "v": 9
         },
         "atajadas": {
-          "l": 5,
-          "v": 2
+          "l": 7,
+          "v": 4
         }
       },
       "source": {
@@ -37804,7 +37804,7 @@
         "gameUrlName": "belgrano-vs-barracas-central",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "86'",
+        "minuto": "90+8'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Julio César Villagra",
@@ -37817,27 +37817,27 @@
       "visitante": "Unión de Santa Fe",
       "fechaHora": "2026-11-01T18:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
           "v": 1
         },
         "tarjetas": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "corners": {
-          "l": 3,
-          "v": 2
+          "l": 4,
+          "v": 3
         },
         "tirosArco": {
-          "l": 1,
-          "v": 4
+          "l": 2,
+          "v": 5
         },
         "atajadas": {
-          "l": 3,
-          "v": 0
+          "l": 4,
+          "v": 1
         }
       },
       "source": {
@@ -37846,13 +37846,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "newell's-old-boys-vs-union-santa-fe",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "86'",
-        "ronda": "Fecha 15",
-        "tv": "ESPN Premium",
-        "estadio": "Estadio Marcelo Alberto Bielsa",
-        "arbitro": "Edgardo Daniel Zamora"
+        "statusShort": "Final",
+        "ronda": "Fecha 15"
       }
     },
     {
@@ -37906,7 +37901,7 @@
       "visitante": "Colegiales",
       "fechaHora": "2026-11-01T18:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -37917,7 +37912,7 @@
           "v": 1
         },
         "corners": {
-          "l": 5,
+          "l": 7,
           "v": 5
         },
         "tirosArco": {
@@ -37935,13 +37930,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "san-martin-de-tucuman-vs-colegiales",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "86'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio La Ciudadela",
-        "arbitro": "Federico Benítez"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -37966,10 +37956,10 @@
         },
         "tirosArco": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 3
         }
       },
@@ -37981,7 +37971,7 @@
         "gameUrlName": "gimnasia-y-tiro-vs-quilmes",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "54'",
+        "minuto": "66'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio El Gigante del Norte",
