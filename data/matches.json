@@ -37781,11 +37781,11 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 4,
-          "v": 8
+          "v": 11
         },
         "tirosArco": {
           "l": 4,
@@ -37804,7 +37804,7 @@
         "gameUrlName": "belgrano-vs-barracas-central",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "80'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Julio César Villagra",
@@ -37820,12 +37820,12 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 4
         },
         "corners": {
           "l": 2,
@@ -37848,7 +37848,7 @@
         "gameUrlName": "newell's-old-boys-vs-union-santa-fe",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "80'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Marcelo Alberto Bielsa",
@@ -37918,14 +37918,14 @@
         },
         "corners": {
           "l": 5,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
           "l": 5,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 5
         }
       },
@@ -37937,7 +37937,7 @@
         "gameUrlName": "san-martin-de-tucuman-vs-colegiales",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "80'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio La Ciudadela",
@@ -37979,9 +37979,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-y-tiro-vs-quilmes",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": "Fecha 36",
         "tv": "LPF Premium",
         "estadio": "Estadio El Gigante del Norte",
