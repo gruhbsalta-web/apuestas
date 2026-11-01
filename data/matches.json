@@ -38109,10 +38109,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         }
       },
@@ -38124,7 +38124,7 @@
         "gameUrlName": "racing-santander-vs-real-madrid",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "24'",
+        "minuto": "25'",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Campos de Sport de El Sardinero",
@@ -38302,7 +38302,7 @@
         "gameUrlName": "lazio-vs-cagliari",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "82'",
+        "minuto": "83'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico (Rome)",
@@ -38330,12 +38330,12 @@
           "v": 6
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 5
+          "v": 6
         }
       },
       "source": {
