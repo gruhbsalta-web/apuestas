@@ -38143,10 +38143,10 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
@@ -38166,7 +38166,7 @@
         "gameUrlName": "elche-vs-valencia",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "74'",
+        "minuto": "80'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
