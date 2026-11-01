@@ -38012,7 +38012,7 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 6,
@@ -38035,7 +38035,7 @@
         "gameUrlName": "liverpool-vs-arsenal",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "51'",
+        "minuto": "63'",
         "ronda": "Fecha 9",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Anfield",
@@ -38167,7 +38167,7 @@
         "gameUrlName": "elche-vs-valencia",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "8'",
+        "minuto": "19'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
@@ -38356,11 +38356,11 @@
       "local": "Lecce",
       "visitante": "Genoa",
       "fechaHora": "2026-11-01T14:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "tarjetas": {
@@ -38368,16 +38368,16 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -38386,9 +38386,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "lecce-vs-genoa",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "39'",
+        "minuto": "45'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Ettore Giardiniero - Via del Mare",
