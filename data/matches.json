@@ -38003,7 +38003,7 @@
       "local": "Liverpool",
       "visitante": "Arsenal",
       "fechaHora": "2026-11-01T13:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -38011,7 +38011,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -38033,9 +38033,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "liverpool-vs-arsenal",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "40'",
+        "minuto": "45'",
         "ronda": "Fecha 9",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Anfield",
@@ -38092,18 +38092,18 @@
       "visitante": "Real Madrid",
       "fechaHora": "2026-11-01T12:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 4
+          "v": 3
         },
         "tarjetas": {
           "l": 2,
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 6
         },
         "tirosArco": {
@@ -38111,7 +38111,7 @@
           "v": 7
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 1
         }
       },
@@ -38121,9 +38121,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "racing-santander-vs-real-madrid",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
         "tv": "DSports",
         "estadio": "Campos de Sport de El Sardinero",
@@ -38362,7 +38362,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -38373,12 +38373,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
-          "l": 1,
-          "v": 1
+          "l": 0,
+          "v": 2
         }
       },
       "source": {
@@ -38389,7 +38389,7 @@
         "gameUrlName": "lecce-vs-genoa",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "9'",
+        "minuto": "21'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Ettore Giardiniero - Via del Mare",
