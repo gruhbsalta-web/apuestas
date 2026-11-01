@@ -38165,14 +38165,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "elche-vs-valencia",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
-        "arbitro": "Lluís Bestard",
-        "infoDia": "2026-11-01"
+        "arbitro": "Lluís Bestard"
       }
     },
     {
@@ -38362,19 +38361,19 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
           "l": 2,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 0,
@@ -38389,7 +38388,7 @@
         "gameUrlName": "lecce-vs-genoa",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "21'",
+        "minuto": "33'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Ettore Giardiniero - Via del Mare",
