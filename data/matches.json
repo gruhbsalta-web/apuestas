@@ -38587,23 +38587,23 @@
       "local": "All Boys",
       "visitante": "Estudiantes",
       "fechaHora": "2026-11-02T13:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 4
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -38617,14 +38617,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "all-boys-vs-estudiantes-buenos-aires",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio Islas Malvinas",
-        "arbitro": "Wenceslao Meneses",
-        "infoDia": "2026-11-02"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -38632,28 +38626,28 @@
       "local": "Atlético Rafaela",
       "visitante": "Patronato",
       "fechaHora": "2026-11-02T15:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 6,
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 1
         }
       },
       "source": {
@@ -38662,14 +38656,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "atletico-rafaela-vs-patronato",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio Nuevo Monumental",
-        "arbitro": "Luis Lobo Medina",
-        "infoDia": "2026-11-02"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -38677,28 +38665,28 @@
       "local": "Chacarita Juniors",
       "visitante": "Nueva Chicago",
       "fechaHora": "2026-11-02T15:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 3
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 7,
+          "v": 6
         },
         "tirosArco": {
-          "l": 0,
+          "l": 5,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 3
         }
       },
       "source": {
@@ -38707,14 +38695,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "chacarita-juniors-vs-nueva-chicago",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio de Chacarita Juniors",
-        "arbitro": "Sebastían Zunino",
-        "infoDia": "2026-11-02"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
@@ -38730,19 +38712,19 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -38752,14 +38734,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "newcastle-united-vs-everton",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "42'",
         "ronda": "Fecha 9",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "St. James' Park",
-        "arbitro": "John Brooks",
-        "infoDia": "2026-11-02"
+        "arbitro": "John Brooks"
       }
     },
     {
@@ -38772,23 +38753,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         }
       },
       "source": {
@@ -38797,14 +38778,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "deportivo-la-coruna-vs-osasuna",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "40'",
         "ronda": "Fecha 11",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio Abanca-Riazor",
-        "arbitro": "Jon Ander González Esteban",
-        "infoDia": "2026-11-02"
+        "arbitro": "Jon Ander González Esteban"
       }
     },
     {
@@ -38812,27 +38792,27 @@
       "local": "Sassuolo",
       "visitante": "Fiorentina",
       "fechaHora": "2026-11-02T14:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 4
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 3
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 6
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         }
       },
@@ -38842,14 +38822,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "sassuolo-vs-fiorentina",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 10",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "MAPEI Stadium - Città del Tricolore",
-        "arbitro": "Matteo Marcenaro",
-        "infoDia": "2026-11-02"
+        "arbitro": "Matteo Marcenaro"
       }
     },
     {
@@ -38857,28 +38836,28 @@
       "local": "Atalanta",
       "visitante": "Parma",
       "fechaHora": "2026-11-02T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -38887,14 +38866,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "atalanta-vs-parma",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "ET",
+        "statusEnum": 2,
+        "minuto": "45'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
-        "estadio": "Gewiss Stadium",
-        "arbitro": "Valerio Crezzini",
-        "infoDia": "2026-11-02"
+        "estadio": "New Balance Arena",
+        "arbitro": "Valerio Crezzini"
       }
     },
     {
