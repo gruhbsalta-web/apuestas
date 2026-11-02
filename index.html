@@ -2618,6 +2618,20 @@ function findMatchBySubstring(blockText){
     if(dist(elegido) < 3 * 86400000) return {match:elegido, ambiguo:false};
     return {match:null, ambiguo:true, opciones:candidatos};
   }
+  // Segunda pasada, más flexible, solo con partidos cercanos (±3 días) y sin terminar:
+  // BetWarrior a veces abrevia ("Inter" por "Inter Milan", "Atlético" por "Atlético de Madrid").
+  const ahora = Date.now();
+  const genericas = new Set(["club","united","city","real","atletico","sporting","deportivo","fc","cf","sc","ac","as","de","del","la","el","sport","athletic","football","calcio","milan"]);
+  const palabra = (t)=> new RegExp(`(^|[^a-z0-9])${t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}([^a-z0-9]|$)`).test(b);
+  const suelto = nombre=>{
+    const toks = teamTokens(nombre);
+    const fuertes = toks.filter(t=> t.length >= 4 && !genericas.has(t));
+    return (fuertes.length ? fuertes : toks).some(palabra);
+  };
+  const cerca = state.matches.filter(m=> !m.finPartido && m.fechaHora && Math.abs(new Date(m.fechaHora).getTime() - ahora) < 3 * 86400000);
+  const sueltos = cerca.filter(m=> suelto(m.local) && suelto(m.visitante));
+  if(sueltos.length === 1) return {match:sueltos[0], ambiguo:false};
+  if(sueltos.length > 1) return {match:null, ambiguo:true, opciones:sueltos};
   return null;
 }
 
@@ -2656,7 +2670,10 @@ function parseBetsFreeText(text){
     let cuota = cuotaMatch ? parseNum(cuotaMatch[1]) : null;
     if(!cuotaValida(cuota)) cuota = null;
 
-    const montoMatch = block.match(/(?:Apuesta|Valor|Importe)[:\s]*[\s\S]{0,25}?(?:ARS)?\s*\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2}|\d+[.,]\d{2})/i);
+    // monto: primero "Valor"/"Importe" (pantalla de BetWarrior); "Apuesta" solo como respaldo
+    // y nunca el de "Compartir apuesta" (al lado está la cuota, no el monto)
+    const reMonto = (et)=> new RegExp(`(?:${et})[:\\s]*[\\s\\S]{0,25}?(?:ARS)?\\s*\\$?\\s*(\\d{1,3}(?:\\.\\d{3})*,\\d{2}|\\d+[.,]\\d{2})`, "i");
+    const montoMatch = block.match(reMonto("Valor|Importe")) || block.replace(/compartir apuesta/ig, "").match(reMonto("Apuesta"));
     let monto = montoMatch ? parseMoney(montoMatch[1]) : null;
     if(monto !== null && (isNaN(monto) || monto <= 0)) monto = null;
 
