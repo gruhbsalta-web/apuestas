@@ -1196,11 +1196,19 @@ function renderMatches(){
   root.innerHTML = "";
   refreshEquiposDatalist();
 
+  // Países y ligas aparecen solo cuando tienen partidos por jugarse o en juego
+  // (ej. la Champions aparece los días de fecha y desaparece después)
+  const pend0 = state.matches.filter(m=>!m.finPartido);
+  const conPartidos = id=> pend0.some(m=>ligaDe(m) === id);
+  const paisesVis = PAISES.filter(p=> p.ligas.some(l=>conPartidos(l.id)));
+  if(!paisesVis.length) paisesVis.push(PAISES[0]);
+  if(!paisesVis.some(p=>p.id === ui.pais)) ui.pais = paisesVis[0].id;
+
   // Nivel 1: país (solo se muestran las pestañas si hay más de uno)
-  if(PAISES.length > 1){
+  if(paisesVis.length > 1){
     const row = document.createElement("div");
     row.className = "chips paises";
-    PAISES.forEach(p=>{
+    paisesVis.forEach(p=>{
       const b = document.createElement("button");
       b.className = "chip" + (p.id === ui.pais ? " active" : "");
       b.textContent = p.id;
@@ -1230,7 +1238,8 @@ function renderMatches(){
   // Nivel 2: ligas del país (cada chip muestra u oculta esa liga)
   const chips = document.createElement("div");
   chips.className = "chips";
-  pais.ligas.forEach(l=>{
+  const ligasVis = pais.ligas.filter(l=>conPartidos(l.id));
+  (ligasVis.length ? ligasVis : pais.ligas).forEach(l=>{
     const oculta = ui.ligasOcultas.includes(l.id);
     const b = document.createElement("button");
     b.className = "chip" + (oculta ? " off" : " active");
@@ -1246,7 +1255,7 @@ function renderMatches(){
   filtros.appendChild(chips);
   filtros.appendChild(diaRow);
 
-  pais.ligas.forEach(l=>{
+  (ligasVis.length ? ligasVis : pais.ligas).forEach(l=>{
     if(ui.ligasOcultas.includes(l.id)) return;
     root.appendChild(buildLigaSection(l.id, l.nombre, activos.filter(m=>ligaDe(m) === l.id)));
   });
