@@ -37866,12 +37866,12 @@
           "v": 5
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 3
         }
       },
       "source": {
@@ -37882,7 +37882,7 @@
         "gameUrlName": "lanus-vs-gimnasia-mendoza",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "65'",
+        "minuto": "71'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Ciudad de Lanús",
