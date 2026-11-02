@@ -38709,11 +38709,11 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 2,
@@ -38721,7 +38721,7 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 1,
@@ -38734,9 +38734,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "newcastle-united-vs-everton",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "54'",
         "ronda": "Fecha 9",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "St. James' Park",
@@ -38760,7 +38760,7 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 1
         },
         "tirosArco": {
@@ -38778,9 +38778,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "deportivo-la-coruna-vs-osasuna",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "51'",
         "ronda": "Fecha 11",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio Abanca-Riazor",
@@ -38841,23 +38841,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 4
         },
         "tirosArco": {
-          "l": 2,
-          "v": 1
+          "l": 3,
+          "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -38868,7 +38868,7 @@
         "gameUrlName": "atalanta-vs-parma",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "69'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "New Balance Arena",
