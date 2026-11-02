@@ -38411,7 +38411,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -38419,11 +38419,11 @@
           "v": 0
         },
         "corners": {
-          "l": 10,
-          "v": 5
+          "l": 11,
+          "v": 6
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 2
         },
         "atajadas": {
@@ -38439,7 +38439,7 @@
         "gameUrlName": "platense-vs-central-cordoba-sde",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "73'",
+        "minuto": "85'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Ciudad de Vicente Lopez",
@@ -38459,20 +38459,20 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 3
+          "l": 1,
+          "v": 4
         },
         "corners": {
           "l": 3,
-          "v": 2
-        },
-        "tirosArco": {
-          "l": 5,
           "v": 5
         },
+        "tirosArco": {
+          "l": 6,
+          "v": 6
+        },
         "atajadas": {
-          "l": 4,
-          "v": 4
+          "l": 5,
+          "v": 5
         }
       },
       "source": {
@@ -38483,7 +38483,7 @@
         "gameUrlName": "defensa-y-justicia-vs-independiente",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "66'",
+        "minuto": "78'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Norberto Tito Tomaghello",
