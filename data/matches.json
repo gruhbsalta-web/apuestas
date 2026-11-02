@@ -38748,7 +38748,7 @@
       "local": "RC Deportivo",
       "visitante": "Osasuna",
       "fechaHora": "2026-11-02T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -38778,9 +38778,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "deportivo-la-coruna-vs-osasuna",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+1'",
+        "minuto": "45'",
         "ronda": "Fecha 11",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio Abanca-Riazor",
@@ -38841,15 +38841,15 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 5,
-          "v": 3
+          "l": 6,
+          "v": 4
         },
         "tirosArco": {
           "l": 2,
@@ -38866,9 +38866,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "atalanta-vs-parma",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "57'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "New Balance Arena",
