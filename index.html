@@ -4072,6 +4072,37 @@ async function invitar(t){
   renderProde();
 }
 
+// Link de carga de apuestas: ...#importar=<base64 de una lista de apuestas>. El dato va
+// después del "#", así que nunca sale del celular (no llega a ningún servidor).
+// Muestra la vista previa para confirmar; las que ya están cargadas (mismo Id) no se repiten.
+function leerLinkImportacion(){
+  const h = location.hash || "";
+  if(!h.startsWith("#importar=")) return;
+  history.replaceState(null, "", location.pathname + location.search);
+  let lista;
+  try{
+    const b64 = h.slice(10).replace(/-/g, "+").replace(/_/g, "/");
+    lista = JSON.parse(decodeURIComponent(escape(atob(b64))));
+  }catch(e){ alert("El link de carga de apuestas no es válido."); return; }
+  const ya = new Set(state.bets.flatMap(x=>[firmaBet(x), firmaContenido(x)]));
+  const errores = [];
+  const bets = (Array.isArray(lista) ? lista : []).map(x=>{
+    if(!state.matches.some(m=>m.id === x.matchId)){ errores.push(`No encontré el partido ${x.partido || x.matchId}.`); return null; }
+    const b = {id: uid(), matchId: x.matchId, tipo: x.tipo, comparador: x.comparador, alcance: x.alcance || "combinado",
+      linea: Number(x.linea), monto: Number(x.monto), cuota: Number(x.cuota), ...(x.pick ? {pick: x.pick} : {}), ...(x.bwId ? {bwId: String(x.bwId)} : {})};
+    return (ya.has(firmaBet(b)) || ya.has(firmaContenido(b))) ? null : b;
+  }).filter(Boolean);
+  const repetidas = (Array.isArray(lista) ? lista.length : 0) - bets.length - errores.length;
+  document.querySelector('.tab-btn[data-view="apuestas"]').click();
+  if(!bets.length){ alert(repetidas ? "Esas apuestas ya estaban todas cargadas." : "No hay apuestas para cargar en el link."); return; }
+  pendingImport = bets;
+  renderImportPreview(bets, errores);
+  const st = document.getElementById("ocr-status");
+  if(st) st.textContent = repetidas ? `${repetidas} ya estaban cargadas y no se repiten.` : "";
+  const card = document.getElementById("card-captura");
+  if(card) card.scrollIntoView({block:"start"});
+}
+
 // Limpieza única: borra apuestas cargadas dos veces (idénticas en todo), dejando una.
 function limpiarApuestasDuplicadas(){
   const CLAVE = "laFijaDedupe1";
@@ -4099,6 +4130,8 @@ function limpiarApuestasDuplicadas(){
   renderAll();
   limpiarApuestasDuplicadas();
   leerCompartidas();
+  leerLinkImportacion();
+  window.addEventListener("hashchange", leerLinkImportacion);
   // refresca minuto de juego y probabilidad estimada cada 60s
   setInterval(renderAll, 60000);
   // estado de la actualización automática: cuenta regresiva y aviso si se atrasa
