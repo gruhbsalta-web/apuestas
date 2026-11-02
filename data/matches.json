@@ -37863,15 +37863,15 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -37882,7 +37882,7 @@
         "gameUrlName": "lanus-vs-gimnasia-mendoza",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "4'",
+        "minuto": "16'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Ciudad de Lanús",
@@ -37934,7 +37934,7 @@
       "visitante": "Quilmes",
       "fechaHora": "2026-11-01T19:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -37945,7 +37945,7 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "tirosArco": {
@@ -37963,13 +37963,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-y-tiro-vs-quilmes",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "84'",
-        "ronda": "Fecha 36",
-        "tv": "LPF Premium",
-        "estadio": "Estadio El Gigante del Norte",
-        "arbitro": "M. Billone"
+        "statusShort": "Final",
+        "ronda": "Fecha 36"
       }
     },
     {
