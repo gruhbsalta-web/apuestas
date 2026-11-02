@@ -1188,6 +1188,14 @@ function buildLigaSection(key, titulo, lista){
 }
 
 let partidosFiltroDia = "todos";
+const SOLO_SEMANA = new Set(["fhc"]); // ligas que se muestran solo la semana en que juegan
+function semanaActual(){
+  const hoy = new Date(new Date().toLocaleString("en-US", {timeZone:"America/Argentina/Buenos_Aires"}));
+  const lunes = new Date(hoy); lunes.setDate(hoy.getDate() - ((hoy.getDay() + 6) % 7));
+  const domingo = new Date(lunes); domingo.setDate(lunes.getDate() + 6);
+  const f = d=> `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+  return [f(lunes), f(domingo)];
+}
 function renderMatches(){
   const ui = uiState();
   const filtros = document.getElementById("partidos-filtros");
@@ -1196,10 +1204,11 @@ function renderMatches(){
   root.innerHTML = "";
   refreshEquiposDatalist();
 
-  // Países y ligas aparecen solo cuando tienen partidos por jugarse o en juego
-  // (ej. la Champions aparece los días de fecha y desaparece después)
-  const pend0 = state.matches.filter(m=>!m.finPartido);
-  const conPartidos = id=> pend0.some(m=>ligaDe(m) === id);
+  // La Champions (Internacional) aparece solo la semana en que se juega una fecha:
+  // de lunes a domingo, con los partidos por jugar y los ya jugados esa semana.
+  const semana = semanaActual();
+  const deSemana = m=> m.fechaHora && m.fechaHora.slice(0,10) >= semana[0] && m.fechaHora.slice(0,10) <= semana[1];
+  const conPartidos = id=> !SOLO_SEMANA.has(id) || state.matches.some(m=>ligaDe(m) === id && (deSemana(m) || !m.finPartido));
   const paisesVis = PAISES.filter(p=> p.ligas.some(l=>conPartidos(l.id)));
   if(!paisesVis.length) paisesVis.push(PAISES[0]);
   if(!paisesVis.some(p=>p.id === ui.pais)) ui.pais = paisesVis[0].id;
@@ -1219,7 +1228,7 @@ function renderMatches(){
   }
 
   const pais = PAISES.find(p=>p.id === ui.pais);
-  const pendientes = state.matches.filter(m=>!m.finPartido);
+  const pendientes = state.matches.filter(m=>!m.finPartido || (SOLO_SEMANA.has(ligaDe(m)) && deSemana(m)));
 
   // Filtro por día: Todos / Hoy / Mañana / cada día con partidos
   const dias = Array.from(new Set(pendientes.map(matchDay))).sort((a,b)=>(a||"9999").localeCompare(b||"9999"));
