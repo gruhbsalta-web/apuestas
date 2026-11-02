@@ -37851,7 +37851,7 @@
       "visitante": "Gimnasia de Mendoza",
       "fechaHora": "2026-11-01T20:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -37863,14 +37863,14 @@
         },
         "corners": {
           "l": 4,
-          "v": 5
+          "v": 6
         },
         "tirosArco": {
           "l": 4,
-          "v": 4
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
+          "l": 5,
           "v": 3
         }
       },
@@ -37880,13 +37880,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "lanus-vs-gimnasia-mendoza",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "83'",
-        "ronda": "Fecha 15",
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
-        "estadio": "Estadio Ciudad de Lanús",
-        "arbitro": "Pablo Echavarría"
+        "statusShort": "Final",
+        "ronda": "Fecha 15"
       }
     },
     {
