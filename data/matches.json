@@ -38716,8 +38716,8 @@
           "v": 1
         },
         "corners": {
-          "l": 2,
-          "v": 2
+          "l": 3,
+          "v": 4
         },
         "tirosArco": {
           "l": 0,
@@ -38736,7 +38736,7 @@
         "gameUrlName": "newcastle-united-vs-everton",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "60'",
+        "minuto": "72'",
         "ronda": "Fecha 9",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "St. James' Park",
@@ -38752,19 +38752,19 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
-          "l": 7,
+          "l": 8,
           "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
@@ -38780,7 +38780,7 @@
         "gameUrlName": "deportivo-la-coruna-vs-osasuna",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "69'",
         "ronda": "Fecha 11",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio Abanca-Riazor",
@@ -38848,16 +38848,16 @@
           "v": 0
         },
         "corners": {
-          "l": 7,
+          "l": 8,
           "v": 4
         },
         "tirosArco": {
-          "l": 4,
+          "l": 7,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 4
+          "v": 7
         }
       },
       "source": {
@@ -38868,7 +38868,7 @@
         "gameUrlName": "atalanta-vs-parma",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "75'",
+        "minuto": "87'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "New Balance Arena",
