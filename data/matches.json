@@ -38419,16 +38419,16 @@
           "v": 0
         },
         "corners": {
-          "l": 8,
+          "l": 10,
           "v": 5
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -38439,7 +38439,7 @@
         "gameUrlName": "platense-vs-central-cordoba-sde",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "73'",
         "ronda": "Fecha 15",
         "tv": "ESPN Premium",
         "estadio": "Estadio Ciudad de Vicente Lopez",
@@ -38460,7 +38460,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 3,
@@ -38483,7 +38483,7 @@
         "gameUrlName": "defensa-y-justicia-vs-independiente",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "54'",
+        "minuto": "66'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Norberto Tito Tomaghello",
