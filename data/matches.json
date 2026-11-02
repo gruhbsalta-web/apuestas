@@ -37850,11 +37850,11 @@
       "local": "Lanús",
       "visitante": "Gimnasia de Mendoza",
       "fechaHora": "2026-11-01T20:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -37862,11 +37862,11 @@
           "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
@@ -37880,9 +37880,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "lanus-vs-gimnasia-mendoza",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+1'",
+        "minuto": "45'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Ciudad de Lanús",
