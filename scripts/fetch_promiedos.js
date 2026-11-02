@@ -23,10 +23,12 @@ const COUNTRY_WHITELIST = ['Argentina', 'Inglaterra', 'España', 'Italia', 'Inte
 // con agregar su id de Promiedos aca (y el pais en COUNTRY_BY_LEAGUE).
 // Argentina: Liga Profesional, Primera Nacional y Copa Argentina.
 // Europa (solo partidos, sin planteles): Premier League, La Liga y Serie A.
-const LEAGUE_ID_INCLUDE = new Set(['hc', 'ebj', 'gea', 'h', 'bb', 'bh']);
+// Internacional: Champions League.
+const LEAGUE_ID_INCLUDE = new Set(['hc', 'ebj', 'gea', 'h', 'bb', 'bh', 'fhc']);
 const COUNTRY_BY_LEAGUE = {
   hc: 'Argentina', ebj: 'Argentina', gea: 'Argentina',
-  h: 'Inglaterra', bb: 'España', bh: 'Italia'
+  h: 'Inglaterra', bb: 'España', bh: 'Italia',
+  fhc: 'Internacional'
 };
 // Ligas puntuales que no queremos aunque su pais/categoria este en la
 // whitelist: reserva/amateur argentino (no estan en las listas de equipos

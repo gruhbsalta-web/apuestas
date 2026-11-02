@@ -13,7 +13,8 @@ const LIGAS_TABLA = [
   { id: 'ebj', slug: 'primera-nacional', nombre: 'Primera Nacional', pais: 'Argentina' },
   { id: 'bb', slug: 'laliga', nombre: 'La Liga', pais: 'España' },
   { id: 'h', slug: 'premier-league', nombre: 'Premier League', pais: 'Inglaterra' },
-  { id: 'bh', slug: 'serie-a', nombre: 'Serie A', pais: 'Italia' }
+  { id: 'bh', slug: 'serie-a', nombre: 'Serie A', pais: 'Italia' },
+  { id: 'fhc', slug: 'uefa-champions-league', nombre: 'Champions League', pais: 'Internacional' }
 ];
 
 // "Promedios - Relegation" -> "Promedios"; "Tabla Anual - Tabla Anual" -> "Tabla Anual"

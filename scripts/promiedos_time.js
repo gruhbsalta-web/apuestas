@@ -94,7 +94,7 @@ function fichaHoraArgentina(fichaJson) {
 // Promiedos no dice en que zona da los horarios, y deducirla de la ubicacion del
 // servidor fallaba por una hora segun el servidor que tocara. ESPN da el horario
 // en UTC: se busca el mismo partido y se mide el corrimiento real.
-const ESPN_LIGA = { hc: 'arg.1', ebj: 'arg.2', gea: 'arg.copa', h: 'eng.1', bb: 'esp.1', bh: 'ita.1' };
+const ESPN_LIGA = { hc: 'arg.1', ebj: 'arg.2', gea: 'arg.copa', h: 'eng.1', bb: 'esp.1', bh: 'ita.1', fhc: 'uefa.champions' };
 const ZONAS_CANDIDATAS = ['America/New_York', 'America/Chicago', 'America/Denver', 'America/Phoenix',
   'America/Los_Angeles', 'America/Anchorage', 'Pacific/Honolulu', AR_TZ, 'Europe/London', 'Europe/Dublin',
   'Europe/Amsterdam', 'Europe/Madrid', 'Asia/Singapore', 'Asia/Tokyo', 'Australia/Sydney', 'Asia/Kolkata', 'UTC'];
