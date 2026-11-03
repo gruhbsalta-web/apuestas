@@ -38515,14 +38515,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "independiente-rivadavia-vs-banfield",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Bautista Gargantini",
-        "arbitro": "Álvaro Carranza",
-        "infoDia": "2026-11-02"
+        "arbitro": "Álvaro Carranza"
       }
     },
     {
@@ -38560,14 +38559,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "atletico-tucuman-vs-argentinos-juniors",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 15",
         "tv": "ESPN, ESPN Premium",
         "estadio": "Estadio Monumental Presidente José Fierro",
-        "arbitro": "Yael Falcón",
-        "infoDia": "2026-11-02"
+        "arbitro": "Yael Falcón"
       }
     },
     {
