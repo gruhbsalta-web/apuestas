@@ -38490,14 +38490,14 @@
       "stats": {
         "goles": {
           "l": 3,
-          "v": 2
+          "v": 1
         },
         "tarjetas": {
           "l": 2,
           "v": 0
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 4
         },
         "tirosArco": {
@@ -38505,7 +38505,7 @@
           "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -38517,7 +38517,7 @@
         "gameUrlName": "independiente-rivadavia-vs-banfield",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "82'",
+        "minuto": "90+4'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Bautista Gargantini",
@@ -38530,14 +38530,14 @@
       "visitante": "Argentinos Juniors",
       "fechaHora": "2026-11-02T21:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
           "v": 2
         },
         "tarjetas": {
-          "l": 3,
+          "l": 5,
           "v": 5
         },
         "corners": {
@@ -38546,7 +38546,7 @@
         },
         "tirosArco": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 0,
@@ -38559,13 +38559,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "atletico-tucuman-vs-argentinos-juniors",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "86'",
-        "ronda": "Fecha 15",
-        "tv": "ESPN, ESPN Premium",
-        "estadio": "Estadio Monumental Presidente José Fierro",
-        "arbitro": "Yael Falcón"
+        "statusShort": "Final",
+        "ronda": "Fecha 15"
       }
     },
     {
