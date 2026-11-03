@@ -39173,18 +39173,18 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -39194,14 +39194,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "feyenoord-vs-inter-milan",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 4",
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Stadion Feijenoord",
-        "arbitro": "Glenn Nyberg",
-        "infoDia": "2026-11-03"
+        "arbitro": "Glenn Nyberg (Suecia)"
       }
     },
     {
@@ -39239,14 +39238,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "manchester-united-vs-as-roma",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": "Fecha 4",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Old Trafford",
-        "arbitro": "Gil Manzano",
-        "infoDia": "2026-11-03"
+        "arbitro": "Gil Manzano"
       }
     },
     {
@@ -39284,14 +39282,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "bodo-glimt-vs-lille",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": "Fecha 4",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Aspmyra Stadion",
-        "arbitro": "João Pinheiro",
-        "infoDia": "2026-11-03"
+        "arbitro": "João Pinheiro"
       }
     },
     {
@@ -39312,7 +39309,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -39329,14 +39326,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "lask-linz-vs-slovan-bratislava",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": "Fecha 4",
         "tv": "Disney+ Premium",
         "estadio": "ראיפייסן ארנה",
-        "arbitro": "Donatas Rumšas",
-        "infoDia": "2026-11-03"
+        "arbitro": "Donatas Rumšas"
       }
     },
     {
@@ -39374,14 +39370,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "atletico-madrid-vs-bayern-munich",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
-        "arbitro": "Francois Letexier",
-        "infoDia": "2026-11-03"
+        "arbitro": "Francois Letexier"
       }
     },
     {
@@ -39405,12 +39400,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -39419,14 +39414,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "barcelona-vs-aston-villa",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 4",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
-        "arbitro": "Davide Massa",
-        "infoDia": "2026-11-03"
+        "arbitro": "Davide Massa"
       }
     },
     {
@@ -39446,15 +39440,15 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -39464,14 +39458,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "villarreal-vs-psg",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": "Fecha 4",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio de la Cerámica",
-        "arbitro": "Felix Zwayer",
-        "infoDia": "2026-11-03"
+        "arbitro": "Felix Zwayer"
       }
     },
     {
