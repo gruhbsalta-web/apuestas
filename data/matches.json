@@ -39200,7 +39200,7 @@
         "ronda": "Fecha 4",
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Stadion Feijenoord",
-        "arbitro": "Glenn Nyberg (Suecia)"
+        "arbitro": "Glenn Nyberg"
       }
     },
     {
@@ -39225,10 +39225,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         }
       },
@@ -39288,7 +39288,7 @@
         "ronda": "Fecha 4",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Aspmyra Stadion",
-        "arbitro": "João Pinheiro"
+        "arbitro": "João Pinheiro (Portugal)"
       }
     },
     {
@@ -39312,12 +39312,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
