@@ -38489,7 +38489,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tarjetas": {
@@ -38497,7 +38497,7 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
@@ -38506,7 +38506,7 @@
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 0
         }
       },
       "source": {
@@ -38517,7 +38517,7 @@
         "gameUrlName": "independiente-rivadavia-vs-banfield",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "14'",
+        "minuto": "26'",
         "ronda": "Fecha 15",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Bautista Gargantini",
@@ -38541,7 +38541,7 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
@@ -38561,7 +38561,7 @@
         "gameUrlName": "atletico-tucuman-vs-argentinos-juniors",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "14'",
+        "minuto": "26'",
         "ronda": "Fecha 15",
         "tv": "ESPN, ESPN Premium",
         "estadio": "Estadio Monumental Presidente José Fierro",
