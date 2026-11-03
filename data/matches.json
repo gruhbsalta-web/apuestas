@@ -39165,7 +39165,7 @@
       "visitante": "Inter Milan",
       "fechaHora": "2026-11-03T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -39194,9 +39194,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "feyenoord-vs-inter-milan",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 4",
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Stadion Feijenoord",
@@ -39209,7 +39209,7 @@
       "visitante": "AS Roma",
       "fechaHora": "2026-11-03T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -39238,9 +39238,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "manchester-united-vs-as-roma",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+2'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 4",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Old Trafford",
@@ -39297,7 +39297,7 @@
       "visitante": "Slovan Bratislava",
       "fechaHora": "2026-11-03T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 4,
@@ -39308,7 +39308,7 @@
           "v": 2
         },
         "corners": {
-          "l": 7,
+          "l": 8,
           "v": 2
         },
         "tirosArco": {
@@ -39326,9 +39326,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "lask-linz-vs-slovan-bratislava",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+2'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 4",
         "tv": "Disney+ Premium",
         "estadio": "ראיפייסן ארנה",
@@ -39341,7 +39341,7 @@
       "visitante": "Bayern Munich",
       "fechaHora": "2026-11-03T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -39356,12 +39356,12 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 5
         },
         "atajadas": {
           "l": 3,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -39370,9 +39370,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "atletico-madrid-vs-bayern-munich",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+3'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
@@ -39385,7 +39385,7 @@
       "visitante": "Aston Villa",
       "fechaHora": "2026-11-03T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -39400,12 +39400,12 @@
           "v": 8
         },
         "tirosArco": {
-          "l": 7,
+          "l": 8,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -39414,9 +39414,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "barcelona-vs-aston-villa",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 4",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
@@ -39429,7 +39429,7 @@
       "visitante": "PSG",
       "fechaHora": "2026-11-03T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -39458,9 +39458,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "villarreal-vs-psg",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+2'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 4",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio de la Cerámica",
