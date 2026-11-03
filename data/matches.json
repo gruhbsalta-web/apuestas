@@ -38486,14 +38486,14 @@
       "visitante": "Banfield",
       "fechaHora": "2026-11-02T21:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "corners": {
@@ -38515,13 +38515,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "independiente-rivadavia-vs-banfield",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+4'",
-        "ronda": "Fecha 15",
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
-        "estadio": "Estadio Bautista Gargantini",
-        "arbitro": "Álvaro Carranza"
+        "statusShort": "Final",
+        "ronda": "Fecha 15"
       }
     },
     {
