@@ -39169,7 +39169,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 3
+          "v": 4
         },
         "tarjetas": {
           "l": 1,
@@ -39180,12 +39180,12 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 6
         },
         "atajadas": {
-          "l": 3,
-          "v": 1
+          "l": 2,
+          "v": 2
         }
       },
       "source": {
@@ -39196,7 +39196,7 @@
         "gameUrlName": "feyenoord-vs-inter-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "67'",
         "ronda": "Fecha 4",
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Stadion Feijenoord",
@@ -39216,20 +39216,20 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "corners": {
-          "l": 0,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -39240,7 +39240,7 @@
         "gameUrlName": "manchester-united-vs-as-roma",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "68'",
         "ronda": "Fecha 4",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Old Trafford",
@@ -39264,16 +39264,16 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 3,
           "v": 4
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -39284,7 +39284,7 @@
         "gameUrlName": "bodo-glimt-vs-lille",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "66'",
+        "minuto": "72'",
         "ronda": "Fecha 4",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Aspmyra Stadion",
@@ -39312,12 +39312,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 7,
+          "l": 10,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 6
         }
       },
       "source": {
@@ -39328,7 +39328,7 @@
         "gameUrlName": "lask-linz-vs-slovan-bratislava",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "68'",
         "ronda": "Fecha 4",
         "tv": "Disney+ Premium",
         "estadio": "ראיפייסן ארנה",
@@ -39353,15 +39353,15 @@
         },
         "corners": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -39372,7 +39372,7 @@
         "gameUrlName": "atletico-madrid-vs-bayern-munich",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "63'",
+        "minuto": "69'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
@@ -39388,7 +39388,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tarjetas": {
@@ -39396,16 +39396,16 @@
           "v": 3
         },
         "corners": {
-          "l": 3,
-          "v": 4
+          "l": 4,
+          "v": 6
         },
         "tirosArco": {
-          "l": 5,
+          "l": 7,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -39416,7 +39416,7 @@
         "gameUrlName": "barcelona-vs-aston-villa",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "67'",
         "ronda": "Fecha 4",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Spotify Camp Nou",
@@ -39436,7 +39436,7 @@
           "v": 5
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "corners": {
@@ -39444,12 +39444,12 @@
           "v": 7
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 11
         },
         "atajadas": {
           "l": 6,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -39460,7 +39460,7 @@
         "gameUrlName": "villarreal-vs-psg",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "68'",
         "ronda": "Fecha 4",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio de la Cerámica",
