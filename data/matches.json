@@ -39077,7 +39077,7 @@
       "visitante": "Sporting CP",
       "fechaHora": "2026-11-03T14:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -39092,12 +39092,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -39106,9 +39106,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "shakhtar-donetsk-vs-sporting-cp",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "84'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 4",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stamford Bridge",
@@ -39128,7 +39128,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 5
         },
         "corners": {
@@ -39137,10 +39137,10 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 3
+          "v": 5
         },
         "atajadas": {
-          "l": 3,
+          "l": 5,
           "v": 2
         }
       },
@@ -39152,7 +39152,7 @@
         "gameUrlName": "galatasaray-vs-stuttgart",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "90+3'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "T&#252;rk Telekom Arena",
