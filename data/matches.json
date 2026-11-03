@@ -39106,14 +39106,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "shakhtar-donetsk-vs-sporting-cp",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 4",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stamford Bridge",
-        "arbitro": "Ivan Kružliak",
-        "infoDia": "2026-11-03"
+        "arbitro": "Ivan Kružliak"
       }
     },
     {
@@ -39130,7 +39129,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 0,
@@ -39151,14 +39150,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "galatasaray-vs-stuttgart",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "T&#252;rk Telekom Arena",
-        "arbitro": "Chris Kavanagh",
-        "infoDia": "2026-11-03"
+        "arbitro": "Chris Kavanagh"
       }
     },
     {
@@ -39878,6 +39876,92 @@
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Red Bull Arena (Wals-Siezenheim)",
         "arbitro": "M. Guida",
+        "infoDia": "2026-11-03"
+      }
+    },
+    {
+      "id": "promiedos_egddcaa",
+      "local": "Aldosivi",
+      "visitante": "River Plate",
+      "fechaHora": "2026-11-05T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "aldosivi-vs-river-plate",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 16",
+        "estadio": "Estadio José María Minella",
+        "infoDia": "2026-11-03"
+      }
+    },
+    {
+      "id": "promiedos_egddbjj",
+      "local": "Gimnasia La Plata",
+      "visitante": "Belgrano",
+      "fechaHora": "2026-11-05T19:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "gimnasia-la-plata-vs-belgrano",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 16",
+        "estadio": "Estadio Juan Carmelo Zerillo",
         "infoDia": "2026-11-03"
       }
     }
