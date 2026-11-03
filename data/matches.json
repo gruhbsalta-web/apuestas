@@ -39088,16 +39088,16 @@
           "v": 0
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -39108,7 +39108,7 @@
         "gameUrlName": "shakhtar-donetsk-vs-sporting-cp",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "48'",
+        "minuto": "54'",
         "ronda": "Fecha 4",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stamford Bridge",
@@ -39132,7 +39132,7 @@
           "v": 3
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 2
         },
         "tirosArco": {
@@ -39150,9 +39150,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "galatasaray-vs-stuttgart",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "51'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "T&#252;rk Telekom Arena",
