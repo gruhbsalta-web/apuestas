@@ -39569,19 +39569,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -39592,7 +39592,7 @@
         "gameUrlName": "fc-porto-vs-napoli",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "1'",
+        "minuto": "7'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Estadio do Dragao (Porto)",
@@ -39612,19 +39612,19 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -39636,7 +39636,7 @@
         "gameUrlName": "viking-vs-sabah",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "2'",
+        "minuto": "8'",
         "ronda": "Fecha 4",
         "tv": "Disney+ Premium",
         "estadio": "SR-Bank Arena",
@@ -39660,16 +39660,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -39680,7 +39680,7 @@
         "gameUrlName": "psv-eindhoven-vs-club-brugge",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "2'",
+        "minuto": "8'",
         "ronda": "Fecha 4",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Philips Stadium",
@@ -39709,10 +39709,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -39724,7 +39724,7 @@
         "gameUrlName": "slavia-praha-vs-arsenal",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "2'",
+        "minuto": "8'",
         "ronda": "Fecha 4",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Fortuna Arena",
@@ -39748,16 +39748,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -39766,14 +39766,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "borussia-dortmund-vs-real-betis",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "6'",
         "ronda": "Fecha 4",
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Signal Iduna Park",
-        "arbitro": "Serdar Gozubuyuk",
-        "infoDia": "2026-11-04"
+        "arbitro": "Serdar Gozubuyuk"
       }
     },
     {
@@ -39794,15 +39793,15 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -39813,7 +39812,7 @@
         "gameUrlName": "lens-vs-como",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "1'",
+        "minuto": "7'",
         "ronda": "Fecha 4",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stade Bollaert-Delelis",
@@ -39855,14 +39854,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "rb-leipzig-vs-manchester-city",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 4",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Red Bull Arena (Wals-Siezenheim)",
-        "arbitro": "M. Guida",
-        "infoDia": "2026-11-04"
+        "arbitro": "M. Guida"
       }
     },
     {
