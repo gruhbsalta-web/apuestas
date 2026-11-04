@@ -39572,15 +39572,15 @@
           "v": 4
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "tirosArco": {
           "l": 3,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 2
         }
       },
@@ -39592,7 +39592,7 @@
         "gameUrlName": "fc-porto-vs-napoli",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "49'",
+        "minuto": "61'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Estadio do Dragao (Porto)",
@@ -39616,8 +39616,8 @@
           "v": 1
         },
         "corners": {
-          "l": 5,
-          "v": 3
+          "l": 7,
+          "v": 5
         },
         "tirosArco": {
           "l": 3,
@@ -39636,7 +39636,7 @@
         "gameUrlName": "viking-vs-sabah",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "50'",
+        "minuto": "62'",
         "ronda": "Fecha 4",
         "tv": "Disney+ Premium",
         "estadio": "SR-Bank Arena",
@@ -39652,7 +39652,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
@@ -39660,11 +39660,11 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 4
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 2
         },
         "atajadas": {
@@ -39680,7 +39680,7 @@
         "gameUrlName": "psv-eindhoven-vs-club-brugge",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "48'",
+        "minuto": "60'",
         "ronda": "Fecha 4",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Philips Stadium",
@@ -39704,7 +39704,7 @@
           "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "tirosArco": {
@@ -39724,7 +39724,7 @@
         "gameUrlName": "slavia-praha-vs-arsenal",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "51'",
+        "minuto": "63'",
         "ronda": "Fecha 4",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Fortuna Arena",
@@ -39740,7 +39740,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -39752,12 +39752,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -39768,7 +39768,7 @@
         "gameUrlName": "borussia-dortmund-vs-real-betis",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "58'",
         "ronda": "Fecha 4",
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Signal Iduna Park",
@@ -39785,7 +39785,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 4
+          "v": 6
         },
         "tarjetas": {
           "l": 1,
@@ -39793,14 +39793,14 @@
         },
         "corners": {
           "l": 2,
-          "v": 3
+          "v": 5
         },
         "tirosArco": {
           "l": 2,
-          "v": 5
+          "v": 8
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         }
       },
@@ -39812,7 +39812,7 @@
         "gameUrlName": "lens-vs-como",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "47'",
+        "minuto": "59'",
         "ronda": "Fecha 4",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stade Bollaert-Delelis",
@@ -39828,8 +39828,8 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         },
         "tarjetas": {
           "l": 3,
@@ -39840,12 +39840,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 4,
-          "v": 2
+          "l": 6,
+          "v": 3
         },
         "atajadas": {
           "l": 1,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -39856,7 +39856,7 @@
         "gameUrlName": "rb-leipzig-vs-manchester-city",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "49'",
+        "minuto": "61'",
         "ronda": "Fecha 4",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Red Bull Arena (Wals-Siezenheim)",
