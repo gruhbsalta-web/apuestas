@@ -39517,7 +39517,7 @@
       "visitante": "Real Madrid",
       "fechaHora": "2026-11-04T14:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -39546,9 +39546,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "aek-athens-vs-real-madrid",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+5'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "OPAP Arena",
