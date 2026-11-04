@@ -39560,15 +39560,15 @@
       "local": "FC Porto",
       "visitante": "Napoli",
       "fechaHora": "2026-11-04T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 4
         },
         "corners": {
@@ -39577,10 +39577,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 0
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         }
       },
@@ -39590,9 +39590,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "fc-porto-vs-napoli",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Estadio do Dragao (Porto)",
@@ -39604,7 +39604,7 @@
       "local": "Viking",
       "visitante": "Sabah",
       "fechaHora": "2026-11-04T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -39617,7 +39617,7 @@
         },
         "corners": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 2,
@@ -39634,9 +39634,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "viking-vs-sabah",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 4",
         "tv": "Disney+ Premium",
         "estadio": "SR-Bank Arena",
@@ -39648,7 +39648,7 @@
       "local": "PSV Eindhoven",
       "visitante": "Brujas",
       "fechaHora": "2026-11-04T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -39664,12 +39664,12 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -39678,9 +39678,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "psv-eindhoven-vs-club-brugge",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 4",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Philips Stadium",
@@ -39692,7 +39692,7 @@
       "local": "Slavia Praga",
       "visitante": "Arsenal",
       "fechaHora": "2026-11-04T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -39705,7 +39705,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 0,
@@ -39722,9 +39722,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "slavia-praha-vs-arsenal",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 4",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Fortuna Arena",
@@ -39745,7 +39745,7 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 2,
@@ -39768,7 +39768,7 @@
         "gameUrlName": "borussia-dortmund-vs-real-betis",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "36'",
+        "minuto": "45+3'",
         "ronda": "Fecha 4",
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Signal Iduna Park",
@@ -39785,7 +39785,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
           "l": 1,
@@ -39800,7 +39800,7 @@
           "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 1,
           "v": 2
         }
       },
@@ -39812,7 +39812,7 @@
         "gameUrlName": "lens-vs-como",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45+5'",
         "ronda": "Fecha 4",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stade Bollaert-Delelis",
@@ -39824,12 +39824,12 @@
       "local": "RB Leipzig",
       "visitante": "Manchester City",
       "fechaHora": "2026-11-04T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 2,
@@ -39840,12 +39840,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
-          "l": 1,
-          "v": 1
+          "l": 0,
+          "v": 2
         }
       },
       "source": {
@@ -39854,9 +39854,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "rb-leipzig-vs-manchester-city",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "36'",
+        "minuto": "45'",
         "ronda": "Fecha 4",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Red Bull Arena (Wals-Siezenheim)",
