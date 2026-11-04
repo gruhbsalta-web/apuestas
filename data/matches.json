@@ -39509,7 +39509,7 @@
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Chobani Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
         "arbitro": "Clement Turpin",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
       }
     },
     {
@@ -39554,7 +39554,7 @@
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "OPAP Arena",
         "arbitro": "Maurizio Mariani",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
       }
     },
     {
@@ -39599,7 +39599,7 @@
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Estadio do Dragao (Porto)",
         "arbitro": "Michael Oliver",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
       }
     },
     {
@@ -39644,7 +39644,7 @@
         "tv": "Disney+ Premium",
         "estadio": "SR-Bank Arena",
         "arbitro": "Sander van der Eijk",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
       }
     },
     {
@@ -39689,7 +39689,7 @@
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Philips Stadium",
         "arbitro": "Senad Ibrišimbegović",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
       }
     },
     {
@@ -39731,10 +39731,10 @@
         "statusEnum": 1,
         "minuto": "",
         "ronda": "Fecha 4",
-        "tv": "ESPN 3, Disney+ Premium",
+        "tv": "ESPN3 Sudamérica, Disney+ Premium",
         "estadio": "Fortuna Arena",
         "arbitro": "T. Stieler",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
       }
     },
     {
@@ -39779,7 +39779,7 @@
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Signal Iduna Park",
         "arbitro": "Serdar Gozubuyuk",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
       }
     },
     {
@@ -39824,7 +39824,7 @@
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stade Bollaert-Delelis",
         "arbitro": "Morten Jensen",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
       }
     },
     {
@@ -39869,7 +39869,7 @@
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Red Bull Arena (Wals-Siezenheim)",
         "arbitro": "M. Guida",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
       }
     },
     {
@@ -39911,8 +39911,9 @@
         "statusEnum": 1,
         "minuto": "",
         "ronda": "Fecha 16",
+        "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio José María Minella",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
       }
     },
     {
@@ -39954,8 +39955,412 @@
         "statusEnum": 1,
         "minuto": "",
         "ronda": "Fecha 16",
+        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Juan Carmelo Zerillo",
-        "infoDia": "2026-11-03"
+        "infoDia": "2026-11-04"
+      }
+    },
+    {
+      "id": "promiedos_egddcab",
+      "local": "Barracas Central",
+      "visitante": "Racing Club",
+      "fechaHora": "2026-11-06T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "barracas-central-vs-racing-club",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 16",
+        "tv": "ESPN Premium",
+        "estadio": "Estadio Claudio Fabián Tapia",
+        "arbitro": "Darío Herrera",
+        "infoDia": "2026-11-04"
+      }
+    },
+    {
+      "id": "promiedos_egddcag",
+      "local": "Independiente",
+      "visitante": "Deportivo Riestra",
+      "fechaHora": "2026-11-06T19:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "independiente-vs-riestra",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 16",
+        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
+        "estadio": "Estadio Libertadores de América",
+        "arbitro": "Juan Pafundi",
+        "infoDia": "2026-11-04"
+      }
+    },
+    {
+      "id": "promiedos_egddcaj",
+      "local": "Unión de Santa Fe",
+      "visitante": "Vélez Sarsfield",
+      "fechaHora": "2026-11-06T19:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "union-santa-fe-vs-velez-sarsfield",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 16",
+        "tv": "ESPN",
+        "estadio": "15 de Abril",
+        "arbitro": "C. Gareano",
+        "infoDia": "2026-11-04"
+      }
+    },
+    {
+      "id": "promiedos_egddcba",
+      "local": "San Lorenzo",
+      "visitante": "Platense",
+      "fechaHora": "2026-11-06T19:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "san-lorenzo-vs-platense",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 16",
+        "tv": "ESPN Premium",
+        "estadio": "Estadio Pedro Bidegain",
+        "arbitro": "Felipe Viola",
+        "infoDia": "2026-11-04"
+      }
+    },
+    {
+      "id": "promiedos_egddcac",
+      "local": "Tigre",
+      "visitante": "Sarmiento Junín",
+      "fechaHora": "2026-11-06T22:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "tigre-vs-sarmiento-junin",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 16",
+        "tv": "ESPN Premium",
+        "estadio": "Estadio Jose Dellagiovanna",
+        "arbitro": "Gonzalo Pereira",
+        "infoDia": "2026-11-04"
+      }
+    },
+    {
+      "id": "promiedos_egddcae",
+      "local": "Banfield",
+      "visitante": "Atlético Tucumán",
+      "fechaHora": "2026-11-06T22:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "banfield-vs-atletico-tucuman",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 16",
+        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
+        "estadio": "Estadio Florencio Sola",
+        "arbitro": "Maximiliano Manduca",
+        "infoDia": "2026-11-04"
+      }
+    },
+    {
+      "id": "promiedos_ehecaai",
+      "local": "Everton",
+      "visitante": "Coventry",
+      "fechaHora": "2026-11-06T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "everton-vs-coventry",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 10",
+        "tv": "Disney+ Premium",
+        "estadio": "Hill Dickinson Stadium",
+        "arbitro": "Stuart Attwell",
+        "infoDia": "2026-11-04"
+      }
+    },
+    {
+      "id": "promiedos_ehfahje",
+      "local": "Sevilla FC",
+      "visitante": "Alavés",
+      "fechaHora": "2026-11-06T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "sevilla-vs-alaves",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 12",
+        "tv": "DSports",
+        "estadio": "Estadio Ramón Sánchez Pizjuán",
+        "infoDia": "2026-11-04"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgdb",
+      "local": "Venezia",
+      "visitante": "Udinese",
+      "fechaHora": "2026-11-06T16:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "venezia-vs-udinese",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Stadio Pierluigi Penzo",
+        "infoDia": "2026-11-04"
       }
     }
   ],
