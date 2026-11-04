@@ -39476,24 +39476,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 6
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -39502,14 +39502,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "fenerbahce-sk-vs-liverpool",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "45+1'",
         "ronda": "Fecha 4",
         "tv": "ESPN, Disney+ Premium",
-        "estadio": "Chobani Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
-        "arbitro": "Clement Turpin",
-        "infoDia": "2026-11-04"
+        "estadio": "Şükrü Saracoğlu Stadium",
+        "arbitro": "Clement Turpin"
       }
     },
     {
@@ -39521,24 +39520,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 3
         }
       },
       "source": {
@@ -39547,14 +39546,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "aek-athens-vs-real-madrid",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "45+1'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "OPAP Arena",
-        "arbitro": "Maurizio Mariani",
-        "infoDia": "2026-11-04"
+        "arbitro": "Maurizio Mariani"
       }
     },
     {
