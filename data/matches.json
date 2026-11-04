@@ -39476,20 +39476,20 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         },
         "tarjetas": {
           "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 10
         },
         "tirosArco": {
-          "l": 4,
-          "v": 4
+          "l": 5,
+          "v": 5
         },
         "atajadas": {
           "l": 3,
@@ -39504,7 +39504,7 @@
         "gameUrlName": "fenerbahce-sk-vs-liverpool",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "64'",
+        "minuto": "76'",
         "ronda": "Fecha 4",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Şükrü Saracoğlu Stadium",
@@ -39520,7 +39520,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tarjetas": {
@@ -39532,11 +39532,11 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 4,
-          "v": 4
+          "l": 5,
+          "v": 5
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 3
         }
       },
@@ -39548,7 +39548,7 @@
         "gameUrlName": "aek-athens-vs-real-madrid",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "64'",
+        "minuto": "76'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "OPAP Arena",
