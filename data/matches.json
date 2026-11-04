@@ -39590,14 +39590,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "fc-porto-vs-napoli",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "1'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Estadio do Dragao (Porto)",
-        "arbitro": "Michael Oliver",
-        "infoDia": "2026-11-04"
+        "arbitro": "Michael Oliver"
       }
     },
     {
@@ -39635,14 +39634,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "viking-vs-sabah",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 4",
         "tv": "Disney+ Premium",
         "estadio": "SR-Bank Arena",
-        "arbitro": "Sander van der Eijk",
-        "infoDia": "2026-11-04"
+        "arbitro": "Sander van der Eijk"
       }
     },
     {
@@ -39680,14 +39678,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "psv-eindhoven-vs-club-brugge",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 4",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Philips Stadium",
-        "arbitro": "Senad Ibrišimbegović",
-        "infoDia": "2026-11-04"
+        "arbitro": "Senad Ibrišimbegović"
       }
     },
     {
@@ -39725,14 +39722,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "slavia-praha-vs-arsenal",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 4",
-        "tv": "ESPN3 Sudamérica, Disney+ Premium",
+        "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Fortuna Arena",
-        "arbitro": "T. Stieler",
-        "infoDia": "2026-11-04"
+        "arbitro": "T. Stieler"
       }
     },
     {
@@ -39815,14 +39811,13 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "lens-vs-como",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "1'",
         "ronda": "Fecha 4",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stade Bollaert-Delelis",
-        "arbitro": "Morten Jensen",
-        "infoDia": "2026-11-04"
+        "arbitro": "Morten Jensen"
       }
     },
     {
