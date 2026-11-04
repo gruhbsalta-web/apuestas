@@ -39473,7 +39473,7 @@
       "visitante": "Liverpool",
       "fechaHora": "2026-11-04T14:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -39485,7 +39485,7 @@
         },
         "corners": {
           "l": 4,
-          "v": 11
+          "v": 12
         },
         "tirosArco": {
           "l": 6,
@@ -39502,9 +39502,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "fenerbahce-sk-vs-liverpool",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "88'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 4",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Şükrü Saracoğlu Stadium",
@@ -39521,19 +39521,19 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "corners": {
           "l": 0,
-          "v": 5
+          "v": 7
         },
         "tirosArco": {
           "l": 5,
-          "v": 7
+          "v": 8
         },
         "atajadas": {
           "l": 5,
@@ -39548,7 +39548,7 @@
         "gameUrlName": "aek-athens-vs-real-madrid",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "89'",
+        "minuto": "90+5'",
         "ronda": "Fecha 4",
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "OPAP Arena",
