@@ -39881,15 +39881,15 @@
         },
         "corners": {
           "l": 1,
-          "v": 5
-        },
-        "tirosArco": {
-          "l": 1,
           "v": 6
         },
+        "tirosArco": {
+          "l": 0,
+          "v": 7
+        },
         "atajadas": {
-          "l": 6,
-          "v": 1
+          "l": 7,
+          "v": 0
         }
       },
       "source": {
@@ -39900,7 +39900,7 @@
         "gameUrlName": "aldosivi-vs-river-plate",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "69'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio José María Minella",
