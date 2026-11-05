@@ -39907,7 +39907,7 @@
       "local": "Gimnasia La Plata",
       "visitante": "Belgrano",
       "fechaHora": "2026-11-05T19:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -39920,7 +39920,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 2,
@@ -39937,9 +39937,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-la-plata-vs-belgrano",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+2'",
+        "minuto": "45'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Juan Carmelo Zerillo",
