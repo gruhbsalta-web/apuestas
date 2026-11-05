@@ -39868,7 +39868,7 @@
       "local": "Aldosivi",
       "visitante": "River Plate",
       "fechaHora": "2026-11-05T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -39898,7 +39898,7 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "aldosivi-vs-river-plate",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Fecha 16",
