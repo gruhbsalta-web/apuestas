@@ -39876,19 +39876,19 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 3,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 3
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 4
         },
         "atajadas": {
-          "l": 0,
+          "l": 4,
           "v": 0
         }
       },
@@ -39898,14 +39898,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "aldosivi-vs-river-plate",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "39'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio José María Minella",
-        "arbitro": "Bryan Gustavo Ferreyra",
-        "infoDia": "2026-11-05"
+        "arbitro": "Bryan Gustavo Ferreyra"
       }
     },
     {
