@@ -39912,7 +39912,7 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -39924,10 +39924,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 2
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 0
         }
       },
@@ -39939,7 +39939,7 @@
         "gameUrlName": "gimnasia-la-plata-vs-belgrano",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "35'",
+        "minuto": "45+2'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Juan Carmelo Zerillo",
