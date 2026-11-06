@@ -39908,14 +39908,14 @@
       "visitante": "Belgrano",
       "fechaHora": "2026-11-05T19:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "corners": {
@@ -39937,13 +39937,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-la-plata-vs-belgrano",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
-        "ronda": "Fecha 16",
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
-        "estadio": "Estadio Juan Carmelo Zerillo",
-        "arbitro": "Luis Lobo Medina"
+        "statusShort": "Final",
+        "ronda": "Fecha 16"
       }
     },
     {
