@@ -40210,7 +40210,7 @@
       "local": "Everton",
       "visitante": "Coventry",
       "fechaHora": "2026-11-06T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -40227,10 +40227,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         }
       },
@@ -40240,9 +40240,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "everton-vs-coventry",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "39'",
+        "minuto": "45'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Hill Dickinson Stadium",
@@ -40271,10 +40271,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         }
       },
@@ -40286,7 +40286,7 @@
         "gameUrlName": "sevilla-vs-alaves",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "41'",
+        "minuto": "45+2'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
@@ -40311,14 +40311,14 @@
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 2
         },
         "tirosArco": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         }
       },
@@ -40328,9 +40328,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "venezia-vs-udinese",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Pierluigi Penzo",
