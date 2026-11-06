@@ -39985,7 +39985,7 @@
       "local": "Independiente",
       "visitante": "Deportivo Riestra",
       "fechaHora": "2026-11-06T19:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -39993,7 +39993,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "corners": {
@@ -40002,10 +40002,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 0
         }
       },
@@ -40015,9 +40015,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "independiente-vs-riestra",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "44'",
+        "minuto": "45'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Libertadores de América",
@@ -40029,7 +40029,7 @@
       "local": "Unión de Santa Fe",
       "visitante": "Vélez Sarsfield",
       "fechaHora": "2026-11-06T19:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -40037,7 +40037,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "corners": {
@@ -40059,9 +40059,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "union-santa-fe-vs-velez-sarsfield",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "44'",
+        "minuto": "45'",
         "ronda": "Fecha 16",
         "tv": "ESPN",
         "estadio": "15 de Abril",
@@ -40073,7 +40073,7 @@
       "local": "San Lorenzo",
       "visitante": "Platense",
       "fechaHora": "2026-11-06T19:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -40103,9 +40103,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "san-lorenzo-vs-platense",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "44'",
+        "minuto": "45'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Pedro Bidegain",
