@@ -40214,7 +40214,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tarjetas": {
@@ -40226,7 +40226,7 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 4
         },
         "atajadas": {
@@ -40242,7 +40242,7 @@
         "gameUrlName": "everton-vs-coventry",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "69'",
+        "minuto": "81'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Hill Dickinson Stadium",
@@ -40267,7 +40267,7 @@
         },
         "corners": {
           "l": 5,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 3,
@@ -40286,7 +40286,7 @@
         "gameUrlName": "sevilla-vs-alaves",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "80'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
@@ -40299,7 +40299,7 @@
       "visitante": "Udinese",
       "fechaHora": "2026-11-06T16:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -40307,11 +40307,11 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 2,
-          "v": 5
+          "l": 3,
+          "v": 7
         },
         "tirosArco": {
           "l": 4,
@@ -40328,9 +40328,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "venezia-vs-udinese",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "85'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Pierluigi Penzo",
