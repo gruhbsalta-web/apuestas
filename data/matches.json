@@ -39946,11 +39946,11 @@
       "local": "Barracas Central",
       "visitante": "Racing Club",
       "fechaHora": "2026-11-06T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -39962,11 +39962,11 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         }
       },
@@ -39976,9 +39976,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "barracas-central-vs-racing-club",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "40'",
+        "minuto": "45'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Claudio Fabián Tapia",
