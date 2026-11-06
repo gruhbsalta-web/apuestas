@@ -39994,19 +39994,19 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 7,
           "v": 3
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "atajadas": {
           "l": 3,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -40017,7 +40017,7 @@
         "gameUrlName": "independiente-vs-riestra",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "63'",
+        "minuto": "69'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Libertadores de América",
@@ -40038,7 +40038,7 @@
         },
         "tarjetas": {
           "l": 4,
-          "v": 3
+          "v": 4
         },
         "corners": {
           "l": 2,
@@ -40061,7 +40061,7 @@
         "gameUrlName": "union-santa-fe-vs-velez-sarsfield",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "63'",
+        "minuto": "69'",
         "ronda": "Fecha 16",
         "tv": "ESPN",
         "estadio": "15 de Abril",
@@ -40085,7 +40085,7 @@
           "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "tirosArco": {
@@ -40105,7 +40105,7 @@
         "gameUrlName": "san-lorenzo-vs-platense",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "63'",
+        "minuto": "69'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Pedro Bidegain",
