@@ -40226,12 +40226,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -40240,14 +40240,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "everton-vs-coventry",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Hill Dickinson Stadium",
-        "arbitro": "Stuart Attwell",
-        "infoDia": "2026-11-06"
+        "arbitro": "Stuart Attwell"
       }
     },
     {
@@ -40285,14 +40284,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "sevilla-vs-alaves",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "9'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
-        "arbitro": "Lluís Bestard",
-        "infoDia": "2026-11-06"
+        "arbitro": "Lluís Bestard"
       }
     },
     {
@@ -40312,7 +40310,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -40332,7 +40330,7 @@
         "gameUrlName": "venezia-vs-udinese",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "11'",
+        "minuto": "23'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Pierluigi Penzo",
