@@ -40222,7 +40222,7 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "tirosArco": {
@@ -40242,7 +40242,7 @@
         "gameUrlName": "everton-vs-coventry",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "63'",
+        "minuto": "69'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Hill Dickinson Stadium",
@@ -40263,19 +40263,19 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 3
         },
         "corners": {
           "l": 5,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -40286,7 +40286,7 @@
         "gameUrlName": "sevilla-vs-alaves",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "56'",
+        "minuto": "68'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
@@ -40302,7 +40302,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 3,
+          "l": 2,
           "v": 1
         },
         "tarjetas": {
@@ -40311,7 +40311,7 @@
         },
         "corners": {
           "l": 2,
-          "v": 3
+          "v": 5
         },
         "tirosArco": {
           "l": 4,
@@ -40319,7 +40319,7 @@
         },
         "atajadas": {
           "l": 4,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -40330,7 +40330,7 @@
         "gameUrlName": "venezia-vs-udinese",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "79'",
+        "minuto": "85'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Pierluigi Penzo",
