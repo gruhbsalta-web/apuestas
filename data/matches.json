@@ -40254,7 +40254,7 @@
       "local": "Sevilla FC",
       "visitante": "Alavés",
       "fechaHora": "2026-11-06T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -40284,9 +40284,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "sevilla-vs-alaves",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+2'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
@@ -40302,24 +40302,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
-          "l": 1,
-          "v": 2
+          "l": 3,
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
-          "v": 1
+          "l": 4,
+          "v": 2
         }
       },
       "source": {
@@ -40330,7 +40330,7 @@
         "gameUrlName": "venezia-vs-udinese",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "49'",
+        "minuto": "55'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Pierluigi Penzo",
