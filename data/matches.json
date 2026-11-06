@@ -39947,7 +39947,7 @@
       "visitante": "Racing Club",
       "fechaHora": "2026-11-06T15:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -39955,7 +39955,7 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 2
         },
         "corners": {
           "l": 1,
@@ -39963,10 +39963,10 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         }
       },
@@ -39976,13 +39976,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "barracas-central-vs-racing-club",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Fecha 16",
-        "tv": "ESPN Premium",
-        "estadio": "Estadio Claudio Fabián Tapia",
-        "arbitro": "Darío Herrera"
+        "statusShort": "Final",
+        "ronda": "Fecha 16"
       }
     },
     {
@@ -40321,12 +40316,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -40337,7 +40332,7 @@
         "gameUrlName": "venezia-vs-udinese",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "11'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Pierluigi Penzo",
