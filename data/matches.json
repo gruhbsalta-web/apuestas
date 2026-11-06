@@ -40211,7 +40211,7 @@
       "visitante": "Coventry",
       "fechaHora": "2026-11-06T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -40226,12 +40226,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -40240,9 +40240,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "everton-vs-coventry",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+3'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Hill Dickinson Stadium",
@@ -40255,7 +40255,7 @@
       "visitante": "Alavés",
       "fechaHora": "2026-11-06T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -40267,7 +40267,7 @@
         },
         "corners": {
           "l": 5,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 3,
@@ -40284,9 +40284,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "sevilla-vs-alaves",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "86'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
