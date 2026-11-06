@@ -39950,7 +39950,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -39962,12 +39962,12 @@
           "v": 7
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -39978,7 +39978,7 @@
         "gameUrlName": "barracas-central-vs-racing-club",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "66'",
+        "minuto": "78'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Claudio Fabián Tapia",
