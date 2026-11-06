@@ -40218,20 +40218,20 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
           "l": 2,
           "v": 2
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -40242,7 +40242,7 @@
         "gameUrlName": "everton-vs-coventry",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "90+3'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Hill Dickinson Stadium",
@@ -40286,7 +40286,7 @@
         "gameUrlName": "sevilla-vs-alaves",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "80'",
+        "minuto": "86'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
