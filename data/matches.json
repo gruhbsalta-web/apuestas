@@ -39959,7 +39959,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 6
+          "v": 7
         },
         "tirosArco": {
           "l": 2,
@@ -39978,7 +39978,7 @@
         "gameUrlName": "barracas-central-vs-racing-club",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "60'",
+        "minuto": "66'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Claudio Fabián Tapia",
