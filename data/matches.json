@@ -40242,7 +40242,7 @@
         "gameUrlName": "everton-vs-coventry",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "21'",
+        "minuto": "27'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Hill Dickinson Stadium",
@@ -40263,7 +40263,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 0,
@@ -40286,7 +40286,7 @@
         "gameUrlName": "sevilla-vs-alaves",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "17'",
+        "minuto": "29'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
@@ -40330,7 +40330,7 @@
         "gameUrlName": "venezia-vs-udinese",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "35'",
+        "minuto": "41'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Pierluigi Penzo",
