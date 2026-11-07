@@ -40325,15 +40325,15 @@
         },
         "corners": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -40344,7 +40344,7 @@
         "gameUrlName": "talleres-cordoba-vs-estudiantes-de-la-plata",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "58'",
+        "minuto": "64'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Mario Alberto Kempes",
@@ -40364,20 +40364,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
-          "v": 3
+          "l": 4,
+          "v": 4
         },
         "corners": {
           "l": 3,
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -40388,7 +40388,7 @@
         "gameUrlName": "gimnasia-mendoza-vs-independiente-rivadavia",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "63'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Víctor Antonio Legrotaglie",
@@ -40720,7 +40720,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
+          "l": 4,
           "v": 0
         },
         "corners": {
@@ -40744,7 +40744,7 @@
         "gameUrlName": "nottingham-forest-vs-manchester-city",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "87'",
+        "minuto": "90+3'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "The City Ground",
@@ -40848,19 +40848,19 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "corners": {
-          "l": 5,
-          "v": 2
+          "l": 6,
+          "v": 4
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 4
         },
         "atajadas": {
@@ -40876,7 +40876,7 @@
         "gameUrlName": "osasuna-vs-athletic-bilbao",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "87'",
+        "minuto": "90+3'",
         "ronda": "Fecha 12",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio El Sadar",
