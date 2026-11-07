@@ -40399,19 +40399,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
-          "l": 11,
+          "l": 12,
           "v": 1
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -40422,7 +40422,7 @@
         "gameUrlName": "rosario-central-vs-estudiantes-rio-cuarto",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "55'",
+        "minuto": "61'",
         "ronda": "Fecha 16",
         "tv": "ESPN 2",
         "estadio": "Estadio Gigante de Arroyito",
@@ -40451,10 +40451,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         }
       },
@@ -40466,7 +40466,7 @@
         "gameUrlName": "argentinos-juniors-vs-huracan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "55'",
+        "minuto": "61'",
         "ronda": "Fecha 16",
         "tv": "TNT, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Diego Armando Maradona",
@@ -40486,11 +40486,11 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 1
         },
         "tirosArco": {
@@ -40510,7 +40510,7 @@
         "gameUrlName": "boca-juniors-vs-defensa-y-justicia",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "55'",
+        "minuto": "61'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
@@ -40892,10 +40892,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 10
+          "v": 11
         },
         "atajadas": {
-          "l": 7,
+          "l": 8,
           "v": 2
         }
       },
@@ -40907,7 +40907,7 @@
         "gameUrlName": "valencia-vs-real-madrid",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "84'",
+        "minuto": "90'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de Mestalla",
