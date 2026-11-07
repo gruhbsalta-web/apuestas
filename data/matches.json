@@ -40730,12 +40730,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -40744,14 +40744,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "nottingham-forest-vs-manchester-city",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "3'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "The City Ground",
-        "arbitro": "Samuel Barrott",
-        "infoDia": "2026-11-07"
+        "arbitro": "Samuel Barrott"
       }
     },
     {
@@ -40860,7 +40859,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -40877,14 +40876,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "osasuna-vs-athletic-bilbao",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 12",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio El Sadar",
-        "arbitro": "Miguel Sesma",
-        "infoDia": "2026-11-07"
+        "arbitro": "Miguel Sesma"
       }
     },
     {
@@ -41038,14 +41036,14 @@
         },
         "corners": {
           "l": 0,
-          "v": 3
+          "v": 6
         },
         "tirosArco": {
           "l": 0,
-          "v": 1
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 3,
           "v": 0
         }
       },
@@ -41057,7 +41055,7 @@
         "gameUrlName": "parma-vs-bologna",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "22'",
+        "minuto": "34'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stadio Ennio Tardini",
