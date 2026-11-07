@@ -1938,7 +1938,7 @@ async function renderTablas(){
     ? liga.grupos.map((g,i)=>chip("data-tb-grupo", i, g.nombre || g.tablas[0].nombre, i === tbGrupo)).join("") : "";
 
   const grupo = liga.grupos[tbGrupo];
-  cont.innerHTML = (tbLiga === "ebj" ? cruceNacional(grupo) : "") + grupo.tablas.map(t=>{
+  cont.innerHTML = (tbLiga === "ebj" ? cruceNacional(grupo) : tbLiga === "hc" ? crucePrimera(grupo) : "") + grupo.tablas.map(t=>{
     const cols = t.columnas.filter(c=>c.key !== "{trend}");
     const conTend = t.columnas.some(c=>c.key === "{trend}");
     // en celulares angostos se ocultan G/E/P (quedan en la ficha del equipo)
@@ -1968,6 +1968,30 @@ async function renderTablas(){
 // según la tabla actual (se arman solos con cada actualización de las zonas).
 // Formato 2026: final 1ºA vs 1ºB; octavos a partido único 2º-8º, 3º-7º, 4º-6º entre
 // zonas y los dos 5º; local y ventaja deportiva para el mejor ubicado.
+// Liga Profesional: octavos de final con la tabla actual (8 mejores de cada zona, cruzados).
+function crucePrimera(grupo){
+  const zA = grupo.tablas.find(t=>/(grupo|zona) a\b/i.test(t.nombre)), zB = grupo.tablas.find(t=>/(grupo|zona) b\b/i.test(t.nombre));
+  if(!zA || !zB) return "";
+  const ord = t=> t.filas.slice().sort((a,b)=>a.pos - b.pos);
+  const A = ord(zA), B = ord(zB);
+  if(A.length < 8 || B.length < 8) return "";
+  const pj = f=> Number(f.valores.GamePlayed) || 0;
+  const definido = A.concat(B).every(f=> pj(f) >= 16);
+  const eq = (f, z, der)=> `<span class="cz-eq${der ? " der" : ""}">${der ? "" : crest(f.equipo)}<span class="cz-n">${escH(f.equipo)}<small>${f.pos}º Zona ${z}</small></span>${der ? crest(f.equipo) : ""}</span>`;
+  const cruce = (loc, zl, vis, zv)=> `<div class="cz-cruce">${eq(loc, zl)}<span class="cz-vs">vs</span>${eq(vis, zv, true)}</div>`;
+  return `<div class="card cz">
+    <h3>Octavos de final</h3>
+    <p class="bet-sub" style="margin-top:-4px">${definido ? "Cruces definidos con la tabla final." : "Provisorio: así quedarían los cruces con la tabla de este momento (falta terminar la fase regular)."}</p>
+    <div class="cz-t">Llave 1 · partido único</div>
+    ${cruce(A[0], "A", B[7], "B")}${cruce(B[0], "B", A[7], "A")}
+    ${cruce(A[1], "A", B[6], "B")}${cruce(B[1], "B", A[6], "A")}
+    <div class="cz-t">Llave 2 · partido único</div>
+    ${cruce(A[2], "A", B[5], "B")}${cruce(B[2], "B", A[5], "A")}
+    ${cruce(A[3], "A", B[4], "B")}${cruce(B[3], "B", A[4], "A")}
+    <div class="cz-nota">Clasifican los 8 mejores de cada zona y se cruzan con la otra. Local el mejor ubicado hasta semifinales; la final, en cancha neutral.</div>
+  </div>`;
+}
+
 function cruceNacional(grupo){
   const zA = grupo.tablas.find(t=>/zona a/i.test(t.nombre)), zB = grupo.tablas.find(t=>/zona b/i.test(t.nombre));
   if(!zA || !zB) return "";
