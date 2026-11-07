@@ -40325,7 +40325,7 @@
         },
         "corners": {
           "l": 2,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 6,
@@ -40344,7 +40344,7 @@
         "gameUrlName": "talleres-cordoba-vs-estudiantes-de-la-plata",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "76'",
+        "minuto": "88'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Mario Alberto Kempes",
@@ -40364,19 +40364,19 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 4,
+          "l": 5,
           "v": 4
         },
         "corners": {
           "l": 3,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
           "l": 5,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 4
         }
       },
@@ -40388,7 +40388,7 @@
         "gameUrlName": "gimnasia-mendoza-vs-independiente-rivadavia",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "75'",
+        "minuto": "87'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Víctor Antonio Legrotaglie",
@@ -41095,14 +41095,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "as-roma-vs-sassuolo",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "1'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico (Rome)",
-        "arbitro": "Marco Di Bello",
-        "infoDia": "2026-11-07"
+        "arbitro": "Marco Di Bello"
       }
     },
     {
