@@ -40582,28 +40582,28 @@
       "local": "Leeds United",
       "visitante": "Tottenham",
       "fechaHora": "2026-11-07T09:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 3
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 6,
+          "v": 4
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 4
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 3
         }
       },
       "source": {
@@ -40612,14 +40612,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "leeds-united-vs-tottenham",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Elland Road",
-        "arbitro": "John Brooks",
-        "infoDia": "2026-11-07"
+        "arbitro": "John Brooks"
       }
     },
     {
@@ -40627,28 +40626,28 @@
       "local": "Fulham",
       "visitante": "Newcastle United",
       "fechaHora": "2026-11-07T12:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 5
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 3
         }
       },
       "source": {
@@ -40657,14 +40656,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "fulham-vs-newcastle-united",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "2°",
+        "statusEnum": 2,
+        "minuto": "88'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Craven Cottage",
-        "arbitro": "Robert Jones",
-        "infoDia": "2026-11-07"
+        "arbitro": "Robert Jones"
       }
     },
     {
@@ -40672,28 +40670,28 @@
       "local": "Arsenal",
       "visitante": "Hull City",
       "fechaHora": "2026-11-07T12:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 4
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 7,
+          "v": 4
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 9,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 8
         }
       },
       "source": {
@@ -40702,14 +40700,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "arsenal-vs-hull-city",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "2°",
+        "statusEnum": 2,
+        "minuto": "87'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Emirates Stadium",
-        "arbitro": "Farai Hallam",
-        "infoDia": "2026-11-07"
+        "arbitro": "Farai Hallam"
       }
     },
     {
@@ -40762,28 +40759,28 @@
       "local": "Málaga CF",
       "visitante": "Racing de Santander",
       "fechaHora": "2026-11-07T10:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 6,
+          "v": 2
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 6,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 8,
+          "v": 7
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 7
         }
       },
       "source": {
@@ -40792,14 +40789,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "malaga-vs-racing-santander",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio La Rosaleda",
-        "arbitro": "Isidro Díaz de Mera Escuderos",
-        "infoDia": "2026-11-07"
+        "arbitro": "Isidro Díaz de Mera Escuderos"
       }
     },
     {
@@ -40807,7 +40803,7 @@
       "local": "RCD Espanyol",
       "visitante": "RC Deportivo",
       "fechaHora": "2026-11-07T12:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -40815,20 +40811,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 5
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 3
         }
       },
       "source": {
@@ -40837,14 +40833,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "espanyol-vs-deportivo-la-coruna",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "2°",
+        "statusEnum": 2,
+        "minuto": "71'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "RCDE Stadium",
-        "arbitro": "Alejandro Quintero",
-        "infoDia": "2026-11-07"
+        "arbitro": "Alejandro Quintero"
       }
     },
     {
@@ -40942,28 +40937,28 @@
       "local": "Torino",
       "visitante": "Lecce",
       "fechaHora": "2026-11-07T11:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 5
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         }
       },
       "source": {
@@ -40972,14 +40967,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "torino-vs-lecce",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico Grande Torino",
-        "arbitro": "Ermanno Feliciani",
-        "infoDia": "2026-11-07"
+        "arbitro": "Ermanno Feliciani"
       }
     },
     {
@@ -40987,28 +40981,28 @@
       "local": "Cagliari",
       "visitante": "Frosinone",
       "fechaHora": "2026-11-07T11:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 3
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 13
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 9
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 9,
+          "v": 3
         }
       },
       "source": {
@@ -41017,14 +41011,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "cagliari-vs-frosinone",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Unipol Domus",
-        "arbitro": "G. Ayroldi",
-        "infoDia": "2026-11-07"
+        "arbitro": "G. Ayroldi"
       }
     },
     {
