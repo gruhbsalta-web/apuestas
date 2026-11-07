@@ -40402,7 +40402,7 @@
           "v": 1
         },
         "corners": {
-          "l": 5,
+          "l": 7,
           "v": 0
         },
         "tirosArco": {
@@ -40422,7 +40422,7 @@
         "gameUrlName": "rosario-central-vs-estudiantes-rio-cuarto",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "22'",
+        "minuto": "34'",
         "ronda": "Fecha 16",
         "tv": "ESPN 2",
         "estadio": "Estadio Gigante de Arroyito",
@@ -40439,19 +40439,19 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 1,
           "v": 2
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 0,
@@ -40466,7 +40466,7 @@
         "gameUrlName": "argentinos-juniors-vs-huracan",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "22'",
+        "minuto": "34'",
         "ronda": "Fecha 16",
         "tv": "TNT, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Diego Armando Maradona",
@@ -40510,7 +40510,7 @@
         "gameUrlName": "boca-juniors-vs-defensa-y-justicia",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "22'",
+        "minuto": "34'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
@@ -41055,7 +41055,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tarjetas": {
@@ -41063,16 +41063,16 @@
           "v": 0
         },
         "corners": {
-          "l": 7,
+          "l": 8,
           "v": 1
         },
         "tirosArco": {
-          "l": 5,
+          "l": 7,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -41083,7 +41083,7 @@
         "gameUrlName": "as-roma-vs-sassuolo",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "50'",
+        "minuto": "62'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico (Rome)",
