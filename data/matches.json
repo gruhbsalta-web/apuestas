@@ -40103,7 +40103,7 @@
       "visitante": "Sarmiento Junín",
       "fechaHora": "2026-11-06T22:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -40132,13 +40132,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "tigre-vs-sarmiento-junin",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
-        "ronda": "Fecha 16",
-        "tv": "ESPN Premium",
-        "estadio": "Estadio Jose Dellagiovanna",
-        "arbitro": "Gonzalo Pereira"
+        "statusShort": "Final",
+        "ronda": "Fecha 16"
       }
     },
     {
@@ -40147,7 +40142,7 @@
       "visitante": "Atlético Tucumán",
       "fechaHora": "2026-11-06T22:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -40158,7 +40153,7 @@
           "v": 1
         },
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 4
         },
         "tirosArco": {
@@ -40176,13 +40171,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "banfield-vs-atletico-tucuman",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Fecha 16",
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
-        "estadio": "Estadio Florencio Sola",
-        "arbitro": "Maximiliano Manduca"
+        "statusShort": "Final",
+        "ronda": "Fecha 16"
       }
     },
     {
