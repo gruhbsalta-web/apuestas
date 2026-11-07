@@ -40635,19 +40635,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "corners": {
           "l": 3,
           "v": 3
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 5
         },
         "atajadas": {
           "l": 4,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -40658,7 +40658,7 @@
         "gameUrlName": "fulham-vs-newcastle-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "88'",
+        "minuto": "90+4'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Craven Cottage",
@@ -40679,19 +40679,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 4
+          "v": 5
         },
         "corners": {
           "l": 7,
           "v": 4
         },
         "tirosArco": {
-          "l": 9,
+          "l": 10,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 8
+          "v": 9
         }
       },
       "source": {
@@ -40702,7 +40702,7 @@
         "gameUrlName": "arsenal-vs-hull-city",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "87'",
+        "minuto": "90+2'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Emirates Stadium",
@@ -40811,11 +40811,11 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 3,
           "v": 1
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 5
         },
         "tirosArco": {
@@ -40835,7 +40835,7 @@
         "gameUrlName": "espanyol-vs-deportivo-la-coruna",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "71'",
+        "minuto": "77'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "RCDE Stadium",
