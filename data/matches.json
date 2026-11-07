@@ -39986,7 +39986,7 @@
       "visitante": "Deportivo Riestra",
       "fechaHora": "2026-11-06T19:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -40015,13 +40015,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "independiente-vs-riestra",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+3'",
-        "ronda": "Fecha 16",
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
-        "estadio": "Estadio Libertadores de América",
-        "arbitro": "Juan Pafundi"
+        "statusShort": "Final",
+        "ronda": "Fecha 16"
       }
     },
     {
@@ -40030,7 +40025,7 @@
       "visitante": "Vélez Sarsfield",
       "fechaHora": "2026-11-06T19:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -40059,13 +40054,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "union-santa-fe-vs-velez-sarsfield",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+3'",
-        "ronda": "Fecha 16",
-        "tv": "ESPN",
-        "estadio": "15 de Abril",
-        "arbitro": "C. Gareano"
+        "statusShort": "Final",
+        "ronda": "Fecha 16"
       }
     },
     {
@@ -40074,7 +40064,7 @@
       "visitante": "Platense",
       "fechaHora": "2026-11-06T19:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -40082,7 +40072,7 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 3,
@@ -40090,10 +40080,10 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 4
         }
       },
@@ -40103,13 +40093,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "san-lorenzo-vs-platense",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+3'",
-        "ronda": "Fecha 16",
-        "tv": "ESPN Premium",
-        "estadio": "Estadio Pedro Bidegain",
-        "arbitro": "Felipe Viola"
+        "statusShort": "Final",
+        "ronda": "Fecha 16"
       }
     },
     {
