@@ -1982,12 +1982,10 @@ function crucePrimera(grupo){
   return `<div class="card cz">
     <h3>Octavos de final</h3>
     <p class="bet-sub" style="margin-top:-4px">${definido ? "Cruces definidos con la tabla final." : "Provisorio: así quedarían los cruces con la tabla de este momento (falta terminar la fase regular)."}</p>
-    <div class="cz-t">Llave 1 · partido único</div>
-    ${cruce(A[0], "A", B[7], "B")}${cruce(B[0], "B", A[7], "A")}
-    ${cruce(A[1], "A", B[6], "B")}${cruce(B[1], "B", A[6], "A")}
-    <div class="cz-t">Llave 2 · partido único</div>
-    ${cruce(A[2], "A", B[5], "B")}${cruce(B[2], "B", A[5], "A")}
-    ${cruce(A[3], "A", B[4], "B")}${cruce(B[3], "B", A[4], "A")}
+    <div class="cz-t">Zona A vs Zona B · partido único</div>
+    ${[0,1,2,3].map(i=>cruce(A[i], "A", B[7-i], "B")).join("")}
+    <div class="cz-t">Zona B vs Zona A · partido único</div>
+    ${[0,1,2,3].map(i=>cruce(B[i], "B", A[7-i], "A")).join("")}
     <div class="cz-nota">Clasifican los 8 mejores de cada zona y se cruzan con la otra. Local el mejor ubicado hasta semifinales; la final, en cancha neutral.</div>
   </div>`;
 }
