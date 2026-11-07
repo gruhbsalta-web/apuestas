@@ -40313,7 +40313,7 @@
       "visitante": "Estudiantes de La Plata",
       "fechaHora": "2026-11-07T15:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -40325,7 +40325,7 @@
         },
         "corners": {
           "l": 2,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
           "l": 6,
@@ -40342,13 +40342,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "talleres-cordoba-vs-estudiantes-de-la-plata",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "88'",
-        "ronda": "Fecha 16",
-        "tv": "ESPN Premium",
-        "estadio": "Estadio Mario Alberto Kempes",
-        "arbitro": "M. Macheroni"
+        "statusShort": "Final",
+        "ronda": "Fecha 16"
       }
     },
     {
@@ -40364,7 +40359,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 5,
+          "l": 6,
           "v": 4
         },
         "corners": {
@@ -40373,10 +40368,10 @@
         },
         "tirosArco": {
           "l": 5,
-          "v": 2
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 4,
           "v": 4
         }
       },
@@ -40388,7 +40383,7 @@
         "gameUrlName": "gimnasia-mendoza-vs-independiente-rivadavia",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "87'",
+        "minuto": "90+3'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Víctor Antonio Legrotaglie",
@@ -41077,15 +41072,15 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -41097,7 +41092,7 @@
         "gameUrlName": "as-roma-vs-sassuolo",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "1'",
+        "minuto": "8'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico (Rome)",
