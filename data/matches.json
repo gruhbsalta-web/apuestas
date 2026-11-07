@@ -40718,7 +40718,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -40726,11 +40726,11 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 0
         },
         "atajadas": {
@@ -40746,7 +40746,7 @@
         "gameUrlName": "nottingham-forest-vs-manchester-city",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "21'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "The City Ground",
@@ -40862,12 +40862,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -40878,7 +40878,7 @@
         "gameUrlName": "osasuna-vs-athletic-bilbao",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "17'",
+        "minuto": "23'",
         "ronda": "Fecha 12",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio El Sadar",
@@ -41023,7 +41023,7 @@
       "local": "Parma",
       "visitante": "Bologna",
       "fechaHora": "2026-11-07T14:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -41053,9 +41053,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "parma-vs-bologna",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+1'",
+        "minuto": "45'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stadio Ennio Tardini",
