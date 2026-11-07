@@ -40434,7 +40434,7 @@
       "local": "Argentinos Juniors",
       "visitante": "Huracán",
       "fechaHora": "2026-11-07T17:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -40443,7 +40443,7 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 2,
@@ -40451,10 +40451,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 2
+          "v": 4
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         }
       },
@@ -40464,9 +40464,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "argentinos-juniors-vs-huracan",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+2'",
+        "minuto": "45'",
         "ronda": "Fecha 16",
         "tv": "TNT, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Diego Armando Maradona",
@@ -40478,7 +40478,7 @@
       "local": "Boca Juniors",
       "visitante": "Defensa y Justicia",
       "fechaHora": "2026-11-07T17:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -40490,7 +40490,7 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
@@ -40508,9 +40508,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "boca-juniors-vs-defensa-y-justicia",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+2'",
+        "minuto": "45'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
@@ -40888,14 +40888,14 @@
         },
         "corners": {
           "l": 1,
-          "v": 3
+          "v": 5
         },
         "tirosArco": {
           "l": 1,
-          "v": 4
+          "v": 6
         },
         "atajadas": {
-          "l": 2,
+          "l": 4,
           "v": 1
         }
       },
@@ -40907,7 +40907,7 @@
         "gameUrlName": "valencia-vs-real-madrid",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "55'",
+        "minuto": "60'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de Mestalla",
@@ -41063,16 +41063,16 @@
           "v": 0
         },
         "corners": {
-          "l": 8,
+          "l": 10,
           "v": 1
         },
         "tirosArco": {
-          "l": 8,
+          "l": 9,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 5
+          "v": 6
         }
       },
       "source": {
@@ -41083,7 +41083,7 @@
         "gameUrlName": "as-roma-vs-sassuolo",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "75'",
+        "minuto": "80'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico (Rome)",
