@@ -40114,7 +40114,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -40134,7 +40134,7 @@
         "gameUrlName": "tigre-vs-sarmiento-junin",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "2'",
+        "minuto": "7'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Jose Dellagiovanna",
@@ -40178,7 +40178,7 @@
         "gameUrlName": "banfield-vs-atletico-tucuman",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "2'",
+        "minuto": "8'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Florencio Sola",
