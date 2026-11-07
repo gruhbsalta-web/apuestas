@@ -40342,14 +40342,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "talleres-cordoba-vs-estudiantes-de-la-plata",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "6'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Mario Alberto Kempes",
-        "arbitro": "M. Macheroni",
-        "infoDia": "2026-11-07"
+        "arbitro": "M. Macheroni"
       }
     },
     {
@@ -40387,14 +40386,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-mendoza-vs-independiente-rivadavia",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "6'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Víctor Antonio Legrotaglie",
-        "arbitro": "Facundo Tello Figueroa",
-        "infoDia": "2026-11-07"
+        "arbitro": "Facundo Tello Figueroa"
       }
     },
     {
@@ -40731,10 +40729,10 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         }
       },
@@ -40746,7 +40744,7 @@
         "gameUrlName": "nottingham-forest-vs-manchester-city",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "21'",
+        "minuto": "33'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "The City Ground",
@@ -40858,7 +40856,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 1
         },
         "tirosArco": {
@@ -40878,7 +40876,7 @@
         "gameUrlName": "osasuna-vs-athletic-bilbao",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "23'",
+        "minuto": "35'",
         "ronda": "Fecha 12",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio El Sadar",
