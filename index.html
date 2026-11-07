@@ -229,8 +229,10 @@
   .mr-team{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:600;min-width:0;}
   .mr-team span.nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .mr-team.lose{color:var(--muted);font-weight:500;}
+  .mr-team{min-height:26px;}
   .mr-team .crest{width:26px;height:26px;font-size:9px;letter-spacing:0;}
-  .mr-score{display:flex;flex-direction:column;gap:6px;font-family:var(--ff-num);font-size:20px;font-weight:700;text-align:right;min-width:20px;}
+  .mr-score{display:flex;flex-direction:column;gap:6px;font-family:var(--ff-num);font-size:20px;font-weight:700;text-align:right;min-width:20px;align-self:start;}
+  .mr-score span{height:26px;line-height:26px;display:block;}
   .mr-score .lose{color:var(--muted);}
   .mr-bets{font-size:12px;font-weight:700;color:#1D1600;background:var(--accent);border-radius:999px;padding:2px 8px;margin-top:4px;display:inline-block;}
   .match-detail{padding:4px 14px 16px;background:var(--surface-2);}
