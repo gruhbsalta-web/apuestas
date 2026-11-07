@@ -40420,14 +40420,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "rosario-central-vs-estudiantes-rio-cuarto",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 16",
         "tv": "ESPN 2",
         "estadio": "Estadio Gigante de Arroyito",
-        "arbitro": "Hernán Mastrángelo",
-        "infoDia": "2026-11-07"
+        "arbitro": "Hernán Mastrángelo"
       }
     },
     {
@@ -40465,14 +40464,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "argentinos-juniors-vs-huracan",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 16",
         "tv": "TNT, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Diego Armando Maradona",
-        "arbitro": "Pablo Dóvalo",
-        "infoDia": "2026-11-07"
+        "arbitro": "Pablo Dóvalo"
       }
     },
     {
@@ -40510,14 +40508,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "boca-juniors-vs-defensa-y-justicia",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
-        "arbitro": "Sebastían Zunino",
-        "infoDia": "2026-11-07"
+        "arbitro": "Sebastían Zunino"
       }
     },
     {
@@ -40883,10 +40880,10 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -40895,7 +40892,7 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
           "l": 0,
@@ -40910,7 +40907,7 @@
         "gameUrlName": "valencia-vs-real-madrid",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "21'",
+        "minuto": "33'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de Mestalla",
@@ -41054,7 +41051,7 @@
       "local": "AS Roma",
       "visitante": "Sassuolo",
       "fechaHora": "2026-11-07T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -41070,12 +41067,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -41084,9 +41081,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "as-roma-vs-sassuolo",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "37'",
+        "minuto": "45'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico (Rome)",
