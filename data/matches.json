@@ -40804,7 +40804,7 @@
       "visitante": "RC Deportivo",
       "fechaHora": "2026-11-07T12:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -40815,7 +40815,7 @@
           "v": 4
         },
         "corners": {
-          "l": 8,
+          "l": 9,
           "v": 5
         },
         "tirosArco": {
@@ -40833,9 +40833,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "espanyol-vs-deportivo-la-coruna",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "RCDE Stadium",
@@ -41033,19 +41033,19 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "corners": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -41057,7 +41057,7 @@
         "gameUrlName": "parma-vs-bologna",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "4'",
+        "minuto": "16'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stadio Ennio Tardini",
