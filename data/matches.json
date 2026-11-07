@@ -40890,16 +40890,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 3
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -40910,7 +40910,7 @@
         "gameUrlName": "valencia-vs-real-madrid",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "21'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de Mestalla",
@@ -41066,16 +41066,16 @@
           "v": 0
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -41086,7 +41086,7 @@
         "gameUrlName": "as-roma-vs-sassuolo",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "31'",
+        "minuto": "37'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico (Rome)",
