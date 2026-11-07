@@ -40718,7 +40718,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -40727,15 +40727,15 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 3,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -40746,7 +40746,7 @@
         "gameUrlName": "nottingham-forest-vs-manchester-city",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "3'",
+        "minuto": "15'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "The City Ground",
@@ -40878,7 +40878,7 @@
         "gameUrlName": "osasuna-vs-athletic-bilbao",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "17'",
         "ronda": "Fecha 12",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio El Sadar",
@@ -41031,12 +41031,12 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "corners": {
           "l": 0,
-          "v": 6
+          "v": 8
         },
         "tirosArco": {
           "l": 0,
@@ -41055,7 +41055,7 @@
         "gameUrlName": "parma-vs-bologna",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "34'",
+        "minuto": "45+1'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stadio Ennio Tardini",
