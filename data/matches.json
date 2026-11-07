@@ -41034,11 +41034,11 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 0,
@@ -41057,7 +41057,7 @@
         "gameUrlName": "parma-vs-bologna",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "16'",
+        "minuto": "22'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stadio Ennio Tardini",
