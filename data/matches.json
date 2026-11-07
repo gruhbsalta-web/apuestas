@@ -40317,7 +40317,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -40328,12 +40328,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -40344,7 +40344,7 @@
         "gameUrlName": "talleres-cordoba-vs-estudiantes-de-la-plata",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "36'",
+        "minuto": "45+3'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Mario Alberto Kempes",
@@ -40360,7 +40360,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -40368,7 +40368,7 @@
           "v": 3
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tirosArco": {
@@ -40377,7 +40377,7 @@
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 0
         }
       },
       "source": {
@@ -40388,7 +40388,7 @@
         "gameUrlName": "gimnasia-mendoza-vs-independiente-rivadavia",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "36'",
+        "minuto": "45+3'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Víctor Antonio Legrotaglie",
@@ -40717,7 +40717,7 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -40725,15 +40725,15 @@
         },
         "corners": {
           "l": 2,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
-          "l": 5,
-          "v": 2
+          "l": 4,
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
-          "v": 3
+          "l": 3,
+          "v": 2
         }
       },
       "source": {
@@ -40742,9 +40742,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "nottingham-forest-vs-manchester-city",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "57'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "The City Ground",
@@ -40852,7 +40852,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "corners": {
@@ -40861,10 +40861,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         }
       },
@@ -40874,9 +40874,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "osasuna-vs-athletic-bilbao",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "57'",
         "ronda": "Fecha 12",
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio El Sadar",
@@ -41025,19 +41025,19 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "tarjetas": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 0,
           "v": 13
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 9
         },
         "atajadas": {
@@ -41053,7 +41053,7 @@
         "gameUrlName": "parma-vs-bologna",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "74'",
+        "minuto": "85'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stadio Ennio Tardini",
