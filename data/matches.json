@@ -40324,16 +40324,16 @@
           "v": 0
         },
         "corners": {
+          "l": 2,
+          "v": 2
+        },
+        "tirosArco": {
           "l": 1,
           "v": 1
         },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -40344,7 +40344,7 @@
         "gameUrlName": "talleres-cordoba-vs-estudiantes-de-la-plata",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "24'",
+        "minuto": "36'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Mario Alberto Kempes",
@@ -40388,7 +40388,7 @@
         "gameUrlName": "gimnasia-mendoza-vs-independiente-rivadavia",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "24'",
+        "minuto": "36'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Víctor Antonio Legrotaglie",
@@ -40728,12 +40728,12 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 4,
-          "v": 3
+          "l": 5,
+          "v": 2
         },
         "atajadas": {
-          "l": 3,
-          "v": 2
+          "l": 2,
+          "v": 3
         }
       },
       "source": {
@@ -41026,22 +41026,22 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "corners": {
           "l": 0,
-          "v": 12
+          "v": 13
         },
         "tirosArco": {
           "l": 1,
-          "v": 7
+          "v": 9
         },
         "atajadas": {
-          "l": 6,
+          "l": 7,
           "v": 1
         }
       },
@@ -41053,7 +41053,7 @@
         "gameUrlName": "parma-vs-bologna",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "74'",
         "ronda": "Fecha 11",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stadio Ennio Tardini",
