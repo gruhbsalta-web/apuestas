@@ -41296,7 +41296,7 @@
       "visitante": "Aston Villa",
       "fechaHora": "2026-11-08T13:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 4,
@@ -41304,7 +41304,7 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 8,
@@ -41325,9 +41325,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "manchester-united-vs-aston-villa",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+7'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Old Trafford",
@@ -41457,9 +41457,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "villarreal-vs-getafe",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "46'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
@@ -41700,7 +41700,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -41724,7 +41724,7 @@
         "gameUrlName": "inter-milan-vs-como",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "60'",
+        "minuto": "72'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
