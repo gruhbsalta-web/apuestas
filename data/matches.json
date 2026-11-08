@@ -41574,23 +41574,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 5
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         }
       },
       "source": {
@@ -41599,14 +41599,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "napoli-vs-lazio",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "35'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadio Diego Armando Maradona",
-        "arbitro": "L. Pairetto",
-        "infoDia": "2026-11-08"
+        "arbitro": "L. Pairetto"
       }
     },
     {
