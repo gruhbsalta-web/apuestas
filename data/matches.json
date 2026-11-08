@@ -41300,7 +41300,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -41312,10 +41312,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         }
       },
@@ -41325,14 +41325,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "manchester-united-vs-aston-villa",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "3'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Old Trafford",
-        "arbitro": "Chris Kavanagh",
-        "infoDia": "2026-11-08"
+        "arbitro": "Chris Kavanagh"
       }
     },
     {
@@ -41396,16 +41395,16 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         }
       },
       "source": {
@@ -41416,7 +41415,7 @@
         "gameUrlName": "real-sociedad-vs-rayo-vallecano",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "52'",
+        "minuto": "58'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Municipal de Anoeta",
