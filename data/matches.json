@@ -41435,20 +41435,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         },
         "corners": {
-          "l": 4,
+          "l": 7,
           "v": 3
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 4
         }
       },
       "source": {
@@ -41459,7 +41459,7 @@
         "gameUrlName": "villarreal-vs-getafe",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "58'",
+        "minuto": "70'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
@@ -41480,19 +41480,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 4
         }
       },
       "source": {
@@ -41503,7 +41503,7 @@
         "gameUrlName": "celta-vigo-vs-levante",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "53'",
+        "minuto": "65'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Abanca-Balaídos",
@@ -41704,8 +41704,8 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
-          "v": 1
+          "l": 4,
+          "v": 2
         },
         "tirosArco": {
           "l": 4,
@@ -41724,7 +41724,7 @@
         "gameUrlName": "inter-milan-vs-como",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "84'",
+        "minuto": "90'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
