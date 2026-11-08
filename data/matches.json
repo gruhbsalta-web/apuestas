@@ -41087,7 +41087,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -41106,7 +41106,7 @@
         "gameUrlName": "central-cordoba-sde-vs-lanus",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "9'",
+        "minuto": "21'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alfredo Terrera",
