@@ -937,37 +937,10 @@ function baseLiga(liga){
   });
   return _probBase.ligas[liga] = out;
 }
-// Temporada anterior (Premier, La Liga, Serie A): solo se usa como punto de partida de la
-// fuerza de cada equipo, en lugar del promedio de la liga. Los ascendidos no la tienen.
-let ANTERIOR = null, PROB_W_ANT = 0, _previa = {}; // 0 = apagado hasta probarlo contra los partidos ya jugados
-function cargarAnterior(){
-  return fetchDato("data/temporada_anterior.json").then(r=>r.ok ? r.json() : null).then(d=>{
-    if(d && Array.isArray(d.partidos) && d.partidos.length){ ANTERIOR = d; _previa = {}; renderAll(); }
-  }).catch(()=>{});
-}
-function fuerzaPrevia(equipo, liga, k){
-  if(!ANTERIOR || !ANTERIOR.ligas || !ANTERIOR.ligas[liga]) return null;
-  const clave = liga + "|" + k;
-  if(!_previa[clave]){
-    const ps = ANTERIOR.partidos.filter(p=>p.liga === liga && p.stats && p.stats[k]);
-    const ml = ps.reduce((a,p)=>a + p.stats[k][0], 0) / (ps.length || 1), mv = ps.reduce((a,p)=>a + p.stats[k][1], 0) / (ps.length || 1);
-    const eq = {};
-    ps.forEach(p=>{
-      const [l, v] = p.stats[k];
-      const L = eq[p.local] = eq[p.local] || {n:0, f:0, c:0}, V = eq[p.visitante] = eq[p.visitante] || {n:0, f:0, c:0};
-      L.n++; L.f += l / (ml || 1); L.c += v / (mv || 1);
-      V.n++; V.f += v / (mv || 1); V.c += l / (ml || 1);
-    });
-    _previa[clave] = eq;
-  }
-  const e = _previa[clave][equipo];
-  return e && e.n >= 10 ? {at: (e.f + 5) / (e.n + 5), de: (e.c + 5) / (e.n + 5)} : null;
-}
 // Fuerza de ataque y defensa del equipo en esa estadística (1 = promedio de la liga),
 // relativa a lo esperable según haya jugado de local o de visitante. Con pocos partidos
-// se completa con la temporada anterior (peso PROB_W_ANT) o, si no hay, con el promedio de
-// la liga (peso PROB_K).
-function fuerza(equipo, k, antesDe, b, liga){
+// se completa con el promedio de la liga (peso PROB_K).
+function fuerza(equipo, k, antesDe, b){
   let n = 0, f = 0, c = 0;
   state.matches.forEach(m=>{
     if(!m.finPartido || !m.stats || (m.local !== equipo && m.visitante !== equipo)) return;
@@ -977,15 +950,12 @@ function fuerza(equipo, k, antesDe, b, liga){
     if(m.local === equipo){ f += l / (b.ml || 1); c += v / (b.mv || 1); }
     else { f += v / (b.mv || 1); c += l / (b.ml || 1); }
   });
-  const pr = PROB_W_ANT > 0 ? fuerzaPrevia(equipo, liga, k) : null;
-  if(pr) return {n, at: (f + PROB_W_ANT * pr.at) / (n + PROB_W_ANT), de: (c + PROB_W_ANT * pr.de) / (n + PROB_W_ANT), previa: true};
   return {n, at: (f + PROB_K) / (n + PROB_K), de: (c + PROB_K) / (n + PROB_K)};
 }
 function esperados(m, k){
   const b = baseLiga(ligaDe(m))[k];
-  const liga = ligaDe(m);
-  const L = fuerza(m.local, k, m.fechaHora, b, liga), V = fuerza(m.visitante, k, m.fechaHora, b, liga);
-  return {l: b.ml * L.at * V.de, v: b.mv * V.at * L.de, r: b.r, nl: L.n, nv: V.n, pl: !!L.previa, pv: !!V.previa};
+  const L = fuerza(m.local, k, m.fechaHora, b), V = fuerza(m.visitante, k, m.fechaHora, b);
+  return {l: b.ml * L.at * V.de, v: b.mv * V.at * L.de, r: b.r, nl: L.n, nv: V.n};
 }
 function distrib(lam, r, max){
   const p = new Array(max + 1).fill(0);
@@ -1007,7 +977,7 @@ function probEstadistica(bet, m, previo){
     let gana = 0, emp = 0, pierde = 0;
     pl.forEach((a,i)=>pv.forEach((b,j)=>{ const d = (gl+i) - (gv+j); if(d > 0) gana += a*b; else if(d === 0) emp += a*b; else pierde += a*b; }));
     const p = bet.pick === "local" ? gana : bet.pick === "empate" ? emp : bet.pick === "visitante" ? pierde : null;
-    return p == null ? null : {p, nl: x.nl, nv: x.nv, pl: x.pl, pv: x.pv};
+    return p == null ? null : {p, nl: x.nl, nv: x.nv};
   }
   if(!TIPO_LABEL[bet.tipo] || !isFinite(bet.linea)) return null;
   const x = esperados(m, bet.tipo), s = m.stats[bet.tipo] || {l:0, v:0};
@@ -1020,7 +990,7 @@ function probEstadistica(bet, m, previo){
   else if(bet.alcance === "cualquiera") pMas = 1 - (1 - masDe(sl, pl)) * (1 - masDe(sv, pv));
   else { pMas = 0; pl.forEach((a,i)=>pv.forEach((b,j)=>{ if(sl+i+sv+j > lin) pMas += a*b; })); }
   const p = bet.comparador === "menos" ? 1 - pMas : pMas;
-  return {p: Math.min(1, Math.max(0, p)), nl: x.nl, nv: x.nv, pl: x.pl, pv: x.pv};
+  return {p: Math.min(1, Math.max(0, p)), nl: x.nl, nv: x.nv};
 }
 function pctTxt(p){ const v = Math.round(p * 100); return (v >= 100 && p < 1 ? 99 : v <= 0 && p > 0 ? 1 : v) + "%"; }
 // Guarda en cada apuesta el % que tenía al cargarla (para comparar después).
@@ -1080,7 +1050,7 @@ function renderProbForm(){
   box.hidden = false;
   box.innerHTML = `<b class="pct">${pctTxt(r.p)}</b> La Fija (estadísticas${empezo ? " + lo que va del partido" : ""}) · cuota justa ${(1/Math.max(r.p, 0.001)).toFixed(2)}
     ${casa ? `<br><b class="pct">${pctTxt(casa.p)}</b> BetWarrior sin su margen (${Math.round(casa.margen*100)}% ${casa.como})<br>${comparaTxt(r.p, casa.p)}` : ""}
-    <br><small>Base: ${r.nl} partidos de ${escH(m.local)} y ${r.nv} de ${escH(m.visitante)} esta temporada${r.pl || r.pv ? ` + la temporada anterior de ${r.pl && r.pv ? "los dos" : escH(r.pl ? m.local : m.visitante)}` : ""}${Math.min(r.nl, r.nv) < 5 && !(r.pl && r.pv) ? " (pocos datos, tomalo con cuidado)" : ""}.</small>`;
+    <br><small>Base: ${r.nl} partidos de ${escH(m.local)} y ${r.nv} de ${escH(m.visitante)} esta temporada${Math.min(r.nl, r.nv) < 5 ? " (pocos datos, tomalo con cuidado)" : ""}.</small>`;
 }
 ["sel-tipo","sel-comp","sel-alcance","sel-match"].forEach(id=>document.getElementById(id).addEventListener("change", ()=>setTimeout(renderProbForm, 0)));
 ["in-linea","in-cuota","in-cuota2"].forEach(id=>document.getElementById(id).addEventListener("input", renderProbForm));
@@ -4395,7 +4365,6 @@ function limpiarApuestasDuplicadas(){
   leerCompartidas();
   leerLinkImportacion();
   window.addEventListener("hashchange", leerLinkImportacion);
-  cargarAnterior();
   // refresca minuto de juego y probabilidad estimada cada 60s
   setInterval(renderAll, 60000);
   // estado de la actualización automática: cuenta regresiva y aviso si se atrasa
