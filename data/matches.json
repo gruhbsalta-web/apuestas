@@ -41523,7 +41523,7 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 1,
+          "l": 3,
           "v": 1
         },
         "corners": {
@@ -41547,7 +41547,7 @@
         "gameUrlName": "atletico-madrid-vs-barcelona",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "77'",
+        "minuto": "89'",
         "ronda": "Fecha 12",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
@@ -41736,7 +41736,7 @@
       "visitante": "Juventus",
       "fechaHora": "2026-11-08T16:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -41751,12 +41751,12 @@
           "v": 12
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 6
         },
         "atajadas": {
           "l": 4,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -41765,9 +41765,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "fiorentina-vs-juventus",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Artemio Franchi",
