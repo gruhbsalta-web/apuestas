@@ -41440,7 +41440,7 @@
         },
         "corners": {
           "l": 4,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
           "l": 2,
@@ -41459,7 +41459,7 @@
         "gameUrlName": "villarreal-vs-getafe",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "46'",
+        "minuto": "58'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
@@ -41487,12 +41487,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -41501,9 +41501,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "celta-vigo-vs-levante",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "53'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Abanca-Balaídos",
@@ -41704,15 +41704,15 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "tirosArco": {
           "l": 4,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         }
       },
@@ -41724,7 +41724,7 @@
         "gameUrlName": "inter-milan-vs-como",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "72'",
+        "minuto": "84'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
