@@ -74,6 +74,10 @@ jobs:
             git fetch -q origin master && git reset -q --hard origin/master
             # los datos mas nuevos estan en la rama "datos" (si existe)
             if git fetch -q origin datos 2>/dev/null; then git checkout FETCH_HEAD -- data/ 2>/dev/null || true; fi
+            # temporada anterior: queda la versión con más partidos (la corrida aparte la guarda en master)
+            if git show origin/master:data/temporada_anterior.json > /tmp/ta_m.json 2>/dev/null; then
+              node -e 'const fs=require("fs");const n=f=>{try{return JSON.parse(fs.readFileSync(f)).partidos.length}catch(e){return -1}};if(n("/tmp/ta_m.json")>n("data/temporada_anterior.json"))fs.copyFileSync("/tmp/ta_m.json","data/temporada_anterior.json")' || true
+            fi
             if [ "$(ritmo vivo)" = "true" ] && [ $((vuelta_ini - ultimo_completo)) -lt 1800 ] && [ "$UNA_VEZ" != "true" ]; then
               export RAPIDO=1
             else
