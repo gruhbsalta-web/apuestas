@@ -41111,7 +41111,7 @@
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alfredo Terrera",
         "arbitro": "Álvaro Carranza",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41156,7 +41156,7 @@
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadium of Light",
         "arbitro": "Jarred Gillett",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41201,7 +41201,7 @@
         "tv": "Disney+ Premium",
         "estadio": "Portman Road",
         "arbitro": "Simon Hooper",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41246,7 +41246,7 @@
         "tv": "Disney+ Premium",
         "estadio": "Selhurst Park",
         "arbitro": "Tony Harrington",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41291,7 +41291,7 @@
         "tv": "Disney+ Premium",
         "estadio": "American Express Community Stadium",
         "arbitro": "Michael Oliver",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41336,7 +41336,7 @@
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Old Trafford",
         "arbitro": "Chris Kavanagh",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41380,7 +41380,8 @@
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
-        "infoDia": "2026-11-07"
+        "arbitro": "César Soto",
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41424,7 +41425,8 @@
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Municipal de Anoeta",
-        "infoDia": "2026-11-07"
+        "arbitro": "Juan Martínez",
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41468,7 +41470,8 @@
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
-        "infoDia": "2026-11-07"
+        "arbitro": "Carlos Muñiz",
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41512,7 +41515,8 @@
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Abanca-Balaídos",
-        "infoDia": "2026-11-07"
+        "arbitro": "Miguel Ortiz",
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41556,7 +41560,8 @@
         "ronda": "Fecha 12",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
-        "infoDia": "2026-11-07"
+        "arbitro": "Javier Alberola Rojas",
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41601,7 +41606,7 @@
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadio Diego Armando Maradona",
         "arbitro": "L. Pairetto",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41646,7 +41651,7 @@
         "tv": "Disney+ Premium",
         "estadio": "U-Power Stadium",
         "arbitro": "Claudio Giuseppe Allegretta",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41691,7 +41696,7 @@
         "tv": "Disney+ Premium",
         "estadio": "Stadio Comunale Luigi Ferraris",
         "arbitro": "Davide Massa",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41736,7 +41741,7 @@
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
         "arbitro": "Daniele Chiffi",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     },
     {
@@ -41781,7 +41786,7 @@
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Artemio Franchi",
         "arbitro": "Andrea Colombo",
-        "infoDia": "2026-11-07"
+        "infoDia": "2026-11-08"
       }
     }
   ],
