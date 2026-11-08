@@ -41428,7 +41428,7 @@
       "visitante": "Getafe CF",
       "fechaHora": "2026-11-08T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -41457,9 +41457,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "villarreal-vs-getafe",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+2'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
@@ -41472,14 +41472,14 @@
       "visitante": "Levante UD",
       "fechaHora": "2026-11-08T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "corners": {
@@ -41487,12 +41487,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 7,
+          "l": 8,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 7
+          "v": 8
         }
       },
       "source": {
@@ -41501,9 +41501,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "celta-vigo-vs-levante",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Abanca-Balaídos",
