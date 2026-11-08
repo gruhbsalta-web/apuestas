@@ -275,6 +275,50 @@ async function enrichWithDetail(match, buildId, previo, today) {
   return match;
 }
 
+
+// ---------- Temporada completa de las ligas europeas (para los % de las apuestas) ----------
+// La vuelta normal solo ve la fecha en curso ('latest'). Esto recorre todas las fechas
+// de la temporada y agrega los partidos terminados que falten, con sus estadísticas.
+// Corre en las vueltas completas, con tope de fichas por vuelta; cuando una liga queda
+// completa no se vuelve a revisar hasta el día siguiente.
+const HISTORICO_LIGAS = ['h', 'bb', 'bh', 'fhc'];
+const HISTORICO_MAX = Number(process.env.HISTORICO_MAX || 120);
+async function completarTemporada(leagues, buildId, byId, existing, today) {
+  const estado = Object.assign({}, existing.historico || {});
+  let fichas = 0;
+  for (const league of leagues) {
+    if (!HISTORICO_LIGAS.includes(league.id) || !league.url_name) continue;
+    if (estado[league.id] === today) continue;
+    if (fichas >= HISTORICO_MAX) break;
+    let page;
+    try {
+      page = await getJson(`${SITE}/_next/data/${buildId}/league/${encodeURIComponent(league.url_name)}/${league.id}.json`);
+    } catch (e) { console.warn(`Histórico ${league.id}: no se pudo leer la página de la liga`, e.message || e); continue; }
+    const filtros = (page?.pageProps?.data?.games?.filters || []).filter((f) => f.key && f.key !== 'latest' && /^\d+_\d+_\d+_-?\d+$/.test(f.key));
+    let faltan = 0, agregados = 0;
+    for (const f of filtros) {
+      if (fichas >= HISTORICO_MAX) { faltan++; continue; }
+      let games;
+      try { games = (await getJson(`${API}/league/games/${league.id}/${encodeURIComponent(f.key)}`))?.games || []; }
+      catch (e) { faltan++; continue; }
+      collectTeams(games, EQUIPOS);
+      for (const g of games) {
+        if (g?.status?.enum !== 3 || byId.has(`promiedos_${g.id}`)) continue;
+        if (fichas >= HISTORICO_MAX) { faltan++; break; }
+        const m = normalizeMatch(g, league);
+        await enrichWithDetail(m, buildId, null, today);
+        byId.set(m.id, m);
+        fichas++; agregados++;
+        if (DELAY_MS > 0) await sleep(DELAY_MS);
+      }
+      if (DELAY_MS > 0) await sleep(DELAY_MS);
+    }
+    if (!faltan && filtros.length) estado[league.id] = today;
+    console.log(`Histórico ${league.name || league.id}: ${filtros.length} fechas, ${agregados} partidos agregados${faltan ? ' (sigue en la próxima vuelta)' : ' (completo)'}`);
+  }
+  return estado;
+}
+
 async function run() {
   const buildId = await resolveBuildId();
   BUILD_ID = buildId;
@@ -327,8 +371,15 @@ async function run() {
   const byId = new Map(keptExisting.map((m) => [m.id, m]));
   allMatches.forEach((m) => byId.set(m.id, m));
 
+  let historico = existing.historico;
+  if (process.env.RAPIDO !== '1') {
+    try { historico = await completarTemporada(leagues, buildId, byId, existing, today); }
+    catch (err) { console.warn('Falló el histórico de las ligas europeas:', err.message || err); }
+  }
+
   const out = {
     ...existing,
+    historico,
     matches: [...byId.values()]
   };
 
