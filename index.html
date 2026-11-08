@@ -673,6 +673,10 @@
           <input type="text" id="in-cuota" placeholder="2.35" inputmode="decimal">
         </div>
       </div>
+      <div id="wrap-cuota2">
+        <label for="in-cuota2">Cuota del lado contrario (opcional, para el margen exacto)</label>
+        <input type="text" id="in-cuota2" placeholder="ej. la de &quot;Menos de&quot;" inputmode="decimal">
+      </div>
 
       <div id="prob-form" class="prob-form" hidden></div>
       <button class="primary" id="btn-add-bet">Agregar apuesta</button>
@@ -739,6 +743,7 @@
   <!-- RESUMEN -->
   <section id="view-resumen" class="view">
     <div id="resumen-general"></div>
+    <div class="card" id="resumen-quien"></div>
     <div class="card">
       <h3>Por categoría</h3>
       <div id="resumen-categorias"></div>
@@ -986,40 +991,60 @@ function pctTxt(p){ const v = Math.round(p * 100); return (v >= 100 && p < 1 ? 9
 function asegurarProbCarga(){
   let cambio = false;
   state.bets.forEach(b=>{
-    if(b.probCarga != null) return;
+    if(b.probCarga != null && b.probCasa != null) return;
     const m = state.matches.find(x=>x.id === b.matchId);
     if(!m || m.finPartido) return;
-    const r = probEstadistica(b, m);
-    if(r){ b.probCarga = Math.round(r.p * 1000) / 1000; cambio = true; }
+    if(b.probCarga == null){ const r = probEstadistica(b, m); if(r){ b.probCarga = Math.round(r.p * 1000) / 1000; cambio = true; } }
+    if(b.probCasa == null){ const c = probCasa(b); if(c){ b.probCasa = Math.round(c.p * 1000) / 1000; cambio = true; } }
   });
   if(cambio) save();
 }
-// Recuadro del formulario: % según estadísticas y si la cuota paga más de lo que "vale".
+// ---------- Probabilidad de la casa (BetWarrior) sin su margen ----------
+// La cuota trae la ganancia de la casa: 1/cuota de todos los resultados suma más de 100%.
+// Si está la cuota del lado contrario, el margen se calcula exacto; si no, se usa el
+// promedio medido en tus apuestas que la tienen (con 3 o más) o uno estimado por mercado.
+const MARGEN_EST = {ganador:0.07, goles:0.06, corners:0.09, tarjetas:0.09, tirosArco:0.10, atajadas:0.10};
+function margenMedido(tipo){
+  const xs = state.bets.filter(b=>b.tipo === tipo && b.cuota > 1 && b.cuotaContra > 1).map(b=>1/b.cuota + 1/b.cuotaContra - 1).filter(x=>x > 0 && x < 0.3);
+  return xs.length >= 3 ? {m: xs.reduce((a,b)=>a+b, 0) / xs.length, n: xs.length} : null;
+}
+function probCasa(bet){
+  if(!(bet.cuota > 1)) return null;
+  if(bet.cuotaContra > 1 && bet.tipo !== "ganador"){
+    const a = 1/bet.cuota, b = 1/bet.cuotaContra;
+    return {p: a/(a+b), margen: a + b - 1, como: "exacto"};
+  }
+  const med = margenMedido(bet.tipo);
+  const margen = med ? med.m : (MARGEN_EST[bet.tipo] ?? 0.08);
+  return {p: Math.min(0.99, (1/bet.cuota) / (1 + margen)), margen, como: med ? `medido en ${med.n} apuestas` : "estimado"};
+}
+function comparaTxt(pApp, pCasa){
+  const d = pApp - pCasa;
+  return d > 0.03 ? `<span class="valor">La Fija ve ${Math.round(d*100)} pts más que la casa: tiene valor</span>`
+    : d < -0.03 ? `<span class="sinvalor">La casa la ve ${Math.round(-d*100)} pts más probable: no tiene valor</span>`
+    : `Coinciden (diferencia menor a 3 pts)`;
+}
+// Recuadro del formulario: % de La Fija, % de la casa sin margen y si hay valor.
 function renderProbForm(){
   const box = document.getElementById("prob-form");
   if(!box) return;
   const m = state.matches.find(x=>x.id === document.getElementById("sel-match").value);
   const tipo = document.getElementById("sel-tipo").value;
+  const w2 = document.getElementById("wrap-cuota2"); if(w2) w2.hidden = tipo === "ganador";
   const bet = {tipo, comparador: document.getElementById("sel-comp").value, alcance: document.getElementById("sel-alcance").value,
-    pick: document.getElementById("sel-alcance").value, linea: parseNum(document.getElementById("in-linea").value)};
+    pick: document.getElementById("sel-alcance").value, linea: parseNum(document.getElementById("in-linea").value),
+    cuota: parseNum(document.getElementById("in-cuota").value), cuotaContra: parseNum(document.getElementById("in-cuota2").value)};
   const r = (m && !m.finPartido && (tipo === "ganador" || isFinite(bet.linea))) ? probEstadistica(bet, m) : null;
   if(!r){ box.hidden = true; box.innerHTML = ""; return; }
-  const cuota = parseNum(document.getElementById("in-cuota").value);
-  const justa = r.p > 0 ? 1 / r.p : null;
-  let valor = "";
-  if(isFinite(cuota) && cuota > 1 && justa){
-    valor = cuota > justa * 1.03 ? `<br><span class="valor">Cuota ${cuota} &gt; justa: tiene valor</span>`
-      : cuota < justa * 0.97 ? `<br><span class="sinvalor">Cuota ${cuota} &lt; justa: paga menos de lo que vale</span>`
-      : `<br>Cuota ${cuota} ≈ justa`;
-  }
+  const casa = probCasa(bet);
   const empezo = matchStatus(m).frac > 0;
   box.hidden = false;
-  box.innerHTML = `<b class="pct">${pctTxt(r.p)}</b> probabilidad según estadísticas${empezo ? " (con lo que va del partido)" : ""}
-    ${justa ? ` · cuota justa ${justa.toFixed(2)}` : ""}${valor}
+  box.innerHTML = `<b class="pct">${pctTxt(r.p)}</b> La Fija (estadísticas${empezo ? " + lo que va del partido" : ""}) · cuota justa ${(1/Math.max(r.p, 0.001)).toFixed(2)}
+    ${casa ? `<br><b class="pct">${pctTxt(casa.p)}</b> BetWarrior sin su margen (${Math.round(casa.margen*100)}% ${casa.como})<br>${comparaTxt(r.p, casa.p)}` : ""}
     <br><small>Base: ${r.nl} partidos de ${escH(m.local)} y ${r.nv} de ${escH(m.visitante)}${Math.min(r.nl, r.nv) < 5 ? " (pocos datos, tomalo con cuidado)" : ""}.</small>`;
 }
 ["sel-tipo","sel-comp","sel-alcance","sel-match"].forEach(id=>document.getElementById(id).addEventListener("change", ()=>setTimeout(renderProbForm, 0)));
-["in-linea","in-cuota"].forEach(id=>document.getElementById(id).addEventListener("input", renderProbForm));
+["in-linea","in-cuota","in-cuota2"].forEach(id=>document.getElementById(id).addEventListener("input", renderProbForm));
 
 function emptyStats(){
   return {
@@ -2161,12 +2186,14 @@ document.getElementById("btn-add-bet").addEventListener("click", ()=>{
     const alcance = document.getElementById("sel-alcance").value;
     const linea = parseNum(document.getElementById("in-linea").value);
     if(isNaN(linea) || isNaN(monto) || isNaN(cuota)){ alert("Completá línea, monto y cuota."); return; }
-    state.bets.push({id:uid(), matchId, tipo, comparador, alcance, linea, monto, cuota});
+    const cuotaContra = parseNum(document.getElementById("in-cuota2").value);
+    state.bets.push({id:uid(), matchId, tipo, comparador, alcance, linea, monto, cuota, ...(cuotaContra > 1 ? {cuotaContra} : {})});
   }
   save();
   document.getElementById("in-linea").value = "";
   document.getElementById("in-monto").value = "";
   document.getElementById("in-cuota").value = "";
+  document.getElementById("in-cuota2").value = "";
   renderAll();
 });
 
@@ -2262,7 +2289,7 @@ function renderBets(){
         <div>Ganancia<b class="bet-ganancia ${r.ganancia>0?'pos':'neu'}">$${r.ganancia.toFixed(2)}</b></div>
       </div>
       ${subTxt ? `<div class="bet-sub">${subTxt}</div>` : ""}
-      ${bet.probCarga != null && r.estado !== "G" && r.estado !== "P" ? `<div class="bet-sub">Probabilidad al cargarla: ${pctTxt(bet.probCarga)}${bet.cuota > 1 ? ` · cuota justa ${(1/Math.max(bet.probCarga, 0.001)).toFixed(2)} vs ${bet.cuota}` : ""}</div>` : ""}
+      ${bet.probCarga != null && r.estado !== "G" && r.estado !== "P" ? `<div class="bet-sub">Al cargarla: La Fija ${pctTxt(bet.probCarga)}${bet.probCasa != null ? ` · BetWarrior ${pctTxt(bet.probCasa)} → ${comparaTxt(bet.probCarga, bet.probCasa)}` : ""}</div>` : ""}
     `;
     wrap.appendChild(card);
   });
@@ -2417,6 +2444,33 @@ function renderTerminados(){
 
 // ---------- Resumen: efectividad general y por categoría ----------
 // Sólo cuenta apuestas ya decididas (G o P); las pendientes todavía no definen nada.
+// ---------- Resumen: quién acierta más, La Fija o BetWarrior ----------
+// Error cuadrático medio (Brier): 0 es perfecto; 0.25 es lo mismo que tirar una moneda.
+function renderQuienAcierta(decididas){
+  const box = document.getElementById("resumen-quien");
+  if(!box) return;
+  const xs = decididas.filter(({bet})=>bet.probCarga != null && bet.probCasa != null).map(({bet, r})=>({a: bet.probCarga, c: bet.probCasa, y: r.estado === "G" ? 1 : 0, tipo: bet.tipo}));
+  const conContra = state.bets.filter(b=>b.cuotaContra > 1);
+  const margenes = [...new Set(state.bets.map(b=>b.tipo))].map(t=>{ const m = margenMedido(t); return m ? `${t === "ganador" ? "Ganador" : TIPO_LABEL[t]} ${Math.round(m.m*100)}% (${m.n})` : null; }).filter(Boolean);
+  let cuerpo;
+  if(xs.length < 5){
+    cuerpo = `<div class="bet-sub">Se completa a medida que se definan apuestas cargadas desde ahora (va ${xs.length} de 5 mínimo). Cada apuesta guarda al cargarla el % de La Fija y el de BetWarrior sin margen.</div>`;
+  } else {
+    const n = xs.length, prom = f=> xs.reduce((s,x)=>s + f(x), 0) / n;
+    const bA = prom(x=>(x.a - x.y)**2), bC = prom(x=>(x.c - x.y)**2);
+    const conValor = xs.filter(x=>x.a - x.c > 0.03), gv = conValor.filter(x=>x.y).length;
+    cuerpo = `<div class="stats-mini">
+        <div class="box"><div class="lbl">Salieron</div><div class="val">${Math.round(prom(x=>x.y)*100)}%</div></div>
+        <div class="box"><div class="lbl">La Fija decía</div><div class="val">${Math.round(prom(x=>x.a)*100)}%</div></div>
+        <div class="box"><div class="lbl">BetWarrior decía</div><div class="val">${Math.round(prom(x=>x.c)*100)}%</div></div>
+      </div>
+      <div class="bet-sub" style="margin-top:8px">Error (0 perfecto, 0.25 moneda): La Fija <b>${bA.toFixed(3)}</b> · BetWarrior <b>${bC.toFixed(3)}</b> → ${bA < bC ? "acierta más <b>La Fija</b>" : bA > bC ? "acierta más <b>BetWarrior</b>" : "empatan"} (${n} apuestas).
+      ${conValor.length ? `<br>Apuestas donde La Fija veía valor: ${conValor.length}, salieron ${gv} (${Math.round(gv/conValor.length*100)}%).` : ""}</div>`;
+  }
+  box.innerHTML = `<h3>¿Quién acierta más?</h3>${cuerpo}
+    <div class="bet-sub" style="margin-top:8px">Margen de BetWarrior ${margenes.length ? "medido: " + margenes.join(" · ") : "estimado por mercado (se mide solo cuando cargues 3 o más apuestas de un tipo con la cuota del lado contrario)"}.${conContra.length && !margenes.length ? ` Van ${conContra.length}.` : ""}</div>`;
+}
+
 function renderResumen(){
   const decididas = state.bets.map(bet=>({bet, r:evalBet(bet)})).filter(x=>x.r.estado !== "pendiente");
   const totalDecididas = decididas.length;
@@ -2430,6 +2484,8 @@ function renderResumen(){
       <div class="box"><div class="lbl">Exitosas</div><div class="val" style="color:var(--accent)">${totalGanadas}</div></div>
       <div class="box"><div class="lbl">Efectividad</div><div class="val">${totalDecididas ? pctGlobal.toFixed(0)+"%" : "-"}</div></div>
     </div>`;
+
+  renderQuienAcierta(decididas);
 
   // "ganador" no es una categoria de m.stats (TIPO_LABEL), es un mercado
   // aparte -- se suma al desglose del Resumen con su propia etiqueta.
@@ -2942,7 +2998,7 @@ function renderFlexibleRow(bet, i, m){
       <input type="checkbox" class="chk-preview" data-idx="${i}" checked>
       <span style="flex:1">
         <b>${d.partido}</b><br>
-        <span class="bet-sub">${d.condicion} · $${d.monto} @${d.cuota}${(()=>{ const pe = m && !m.finPartido ? probEstadistica(bet, m) : null; return pe ? ` · <b>${pctTxt(pe.p)}</b> según estadísticas` : ""; })()}</span>
+        <span class="bet-sub">${d.condicion} · $${d.monto} @${d.cuota}${(()=>{ const pe = m && !m.finPartido ? probEstadistica(bet, m) : null; const pc = probCasa(bet); return pe ? ` · La Fija <b>${pctTxt(pe.p)}</b>${pc ? ` · casa ${pctTxt(pc.p)}${pe.p - pc.p > 0.03 ? " ✅" : ""}` : ""}` : ""; })()}</span>
       </span>
     </label>`;
   }
@@ -4247,7 +4303,7 @@ function leerLinkImportacion(){
   const bets = (Array.isArray(lista) ? lista : []).map(x=>{
     if(!state.matches.some(m=>m.id === x.matchId)){ errores.push(`No encontré el partido ${x.partido || x.matchId}.`); return null; }
     const b = {id: uid(), matchId: x.matchId, tipo: x.tipo, comparador: x.comparador, alcance: x.alcance || "combinado",
-      linea: Number(x.linea), monto: Number(x.monto), cuota: Number(x.cuota), ...(x.pick ? {pick: x.pick} : {}), ...(x.bwId ? {bwId: String(x.bwId)} : {})};
+      linea: Number(x.linea), monto: Number(x.monto), cuota: Number(x.cuota), ...(x.pick ? {pick: x.pick} : {}), ...(x.bwId ? {bwId: String(x.bwId)} : {}), ...(Number(x.cuotaContra) > 1 ? {cuotaContra: Number(x.cuotaContra)} : {})};
     return (ya.has(firmaBet(b)) || ya.has(firmaContenido(b))) ? null : b;
   }).filter(Boolean);
   const repetidas = (Array.isArray(lista) ? lista.length : 0) - bets.length - errores.length;
