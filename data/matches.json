@@ -41585,12 +41585,12 @@
           "v": 5
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -41599,9 +41599,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "napoli-vs-lazio",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadio Diego Armando Maradona",
