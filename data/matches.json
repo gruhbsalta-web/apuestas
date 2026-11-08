@@ -41168,7 +41168,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 1,
@@ -41176,14 +41176,14 @@
         },
         "corners": {
           "l": 0,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
           "l": 1,
           "v": 3
         },
         "atajadas": {
-          "l": 2,
+          "l": 1,
           "v": 1
         }
       },
@@ -41193,9 +41193,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "ipswich-vs-bournemouth",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Portman Road",
@@ -41638,9 +41638,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "monza-vs-atalanta",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "46'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "U-Power Stadium",
