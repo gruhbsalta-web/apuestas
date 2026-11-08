@@ -41128,19 +41128,19 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "corners": {
-          "l": 1,
-          "v": 1
-        },
-        "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
-        "atajadas": {
+        "tirosArco": {
           "l": 2,
-          "v": 0
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
         }
       },
       "source": {
@@ -41151,7 +41151,7 @@
         "gameUrlName": "sunderland-vs-chelsea",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "70'",
+        "minuto": "82'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadium of Light",
@@ -41175,7 +41175,7 @@
           "v": 2
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 7
         },
         "tirosArco": {
@@ -41195,7 +41195,7 @@
         "gameUrlName": "ipswich-vs-bournemouth",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "78'",
+        "minuto": "90'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Portman Road",
@@ -41215,19 +41215,19 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 1,
-          "v": 2
+          "l": 2,
+          "v": 4
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 7
         },
         "tirosArco": {
           "l": 6,
-          "v": 4
+          "v": 6
         },
         "atajadas": {
-          "l": 2,
+          "l": 4,
           "v": 6
         }
       },
@@ -41239,7 +41239,7 @@
         "gameUrlName": "crystal-palace-vs-liverpool",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "74'",
+        "minuto": "86'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Selhurst Park",
@@ -41283,7 +41283,7 @@
         "gameUrlName": "brighton-vs-brentford",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "74'",
+        "minuto": "85'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "American Express Community Stadium",
@@ -41396,7 +41396,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tirosArco": {
@@ -41416,7 +41416,7 @@
         "gameUrlName": "real-sociedad-vs-rayo-vallecano",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "16'",
+        "minuto": "28'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Municipal de Anoeta",
@@ -41616,19 +41616,19 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 2
         },
         "tirosArco": {
-          "l": 6,
-          "v": 5
+          "l": 7,
+          "v": 6
         },
         "atajadas": {
-          "l": 4,
-          "v": 6
+          "l": 5,
+          "v": 7
         }
       },
       "source": {
@@ -41639,7 +41639,7 @@
         "gameUrlName": "monza-vs-atalanta",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "75'",
+        "minuto": "87'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "U-Power Stadium",
@@ -41660,19 +41660,19 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 3
+          "v": 4
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 3
+          "v": 5
         }
       },
       "source": {
@@ -41683,7 +41683,7 @@
         "gameUrlName": "genoa-vs-ac-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "75'",
+        "minuto": "87'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Comunale Luigi Ferraris",
