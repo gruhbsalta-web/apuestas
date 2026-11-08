@@ -40511,7 +40511,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -40523,11 +40523,11 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -40537,14 +40537,13 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "instituto-ac-cordoba-vs-newell's-old-boys",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "10'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Juan Domingo Perón",
-        "arbitro": "Leandro Rey Hilfer",
-        "infoDia": "2026-11-07"
+        "arbitro": "Leandro Rey Hilfer"
       }
     },
     {
