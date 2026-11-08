@@ -41127,7 +41127,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 3,
           "v": 1
         },
         "corners": {
@@ -41149,9 +41149,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "sunderland-vs-chelsea",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadium of Light",
@@ -41195,7 +41195,7 @@
         "gameUrlName": "ipswich-vs-bournemouth",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "47'",
+        "minuto": "60'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Portman Road",
@@ -41212,7 +41212,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
@@ -41224,7 +41224,7 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
           "l": 2,
@@ -41237,9 +41237,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "crystal-palace-vs-liverpool",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "56'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Selhurst Park",
@@ -41259,20 +41259,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 1
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -41281,9 +41281,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "brighton-vs-brentford",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "56'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "American Express Community Stadium",
@@ -41613,23 +41613,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "corners": {
           "l": 6,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 5,
-          "v": 1
+          "l": 6,
+          "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 5
+          "v": 6
         }
       },
       "source": {
@@ -41640,7 +41640,7 @@
         "gameUrlName": "monza-vs-atalanta",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "46'",
+        "minuto": "57'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "U-Power Stadium",
@@ -41660,8 +41660,8 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 0,
-          "v": 2
+          "l": 1,
+          "v": 3
         },
         "corners": {
           "l": 1,
@@ -41682,9 +41682,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "genoa-vs-ac-milan",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "57'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Comunale Luigi Ferraris",
