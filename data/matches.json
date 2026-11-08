@@ -41516,7 +41516,7 @@
       "visitante": "FC Barcelona",
       "fechaHora": "2026-11-08T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -41545,9 +41545,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "atletico-madrid-vs-barcelona",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
