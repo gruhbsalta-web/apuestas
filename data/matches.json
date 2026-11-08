@@ -40508,10 +40508,10 @@
       "visitante": "Newell's Old Boys",
       "fechaHora": "2026-11-07T22:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "tarjetas": {
@@ -40523,7 +40523,7 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "atajadas": {
@@ -40537,13 +40537,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "instituto-ac-cordoba-vs-newell's-old-boys",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "86'",
-        "ronda": "Fecha 16",
-        "tv": "ESPN Premium",
-        "estadio": "Estadio Juan Domingo Perón",
-        "arbitro": "Leandro Rey Hilfer"
+        "statusShort": "Final",
+        "ronda": "Fecha 16"
       }
     },
     {
