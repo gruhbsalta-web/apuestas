@@ -479,6 +479,10 @@
   .badge.media{background:#173B4D;color:var(--live);}
   .badge.mediabaja{background:#3D3416;color:var(--accent);}
   .badge.baja{background:#4A2220;color:#F0A39D;}
+  .prob-form{margin:4px 0 12px;padding:10px 12px;border-radius:12px;background:var(--surface-2);font-size:13px;color:var(--muted);line-height:1.45;}
+  .prob-form b.pct{font-family:var(--ff-num);font-size:20px;color:var(--text);margin-right:4px;}
+  .prob-form .valor{color:var(--good);font-weight:700;}
+  .prob-form .sinvalor{color:#F0A39D;font-weight:700;}
   .badge.neutral{background:var(--surface-2);color:var(--muted);}
   .mini-bet{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:9px 0;border-top:1px solid var(--line);font-size:14px;margin-top:4px;}
 
@@ -670,6 +674,7 @@
         </div>
       </div>
 
+      <div id="prob-form" class="prob-form" hidden></div>
       <button class="primary" id="btn-add-bet">Agregar apuesta</button>
       </div>
     </div>
@@ -895,6 +900,126 @@ function estimateProb(bet, m){
   else { level="baja"; label="Poco probable"; }
   return {label, level, proyeccion, acumulado};
 }
+
+// ---------- Probabilidad según las estadísticas acumuladas en la app ----------
+// Para cada equipo: promedio a favor y en contra de esa estadística en sus partidos
+// terminados, suavizado con el promedio de la liga (PROB_K = 30 partidos "virtuales", medido contra los partidos ya jugados) para
+// que con pocos partidos no se dispare. Esperado = ataque propio × defensa rival ÷ media.
+// Distribución: Poisson, o binomial negativa si la liga muestra más dispersión (corners).
+// En vivo suma lo que ya pasó + lo esperado para los minutos que faltan.
+let PROB_K = 30;
+let _probBase = {key:"", ligas:{}};
+function ligaDe(m){ return (m.source && m.source.leagueId) || "?"; }
+// Media de la liga por estadística, separada para el local y el visitante, y dispersión.
+function baseLiga(liga){
+  const key = state.matches.length + ":" + state.matches.reduce((a,m)=>a + (m.finPartido ? 1 : 0), 0) + ":" + PROB_K;
+  if(_probBase.key !== key) _probBase = {key, ligas:{}};
+  if(_probBase.ligas[liga]) return _probBase.ligas[liga];
+  let fin = state.matches.filter(m=>m.finPartido && m.stats && ligaDe(m) === liga);
+  if(fin.length < 10) fin = state.matches.filter(m=>m.finPartido && m.stats);
+  const out = {};
+  Object.keys(TIPO_LABEL).forEach(k=>{
+    const ls = fin.map(m=>(m.stats[k] && m.stats[k].l) || 0), vs = fin.map(m=>(m.stats[k] && m.stats[k].v) || 0);
+    const prom = xs=> xs.length ? xs.reduce((a,b)=>a+b, 0) / xs.length : 0;
+    const ml = prom(ls), mv = prom(vs);
+    const res = ls.map(x=>[x, ml]).concat(vs.map(x=>[x, mv]));
+    const mu = (ml + mv) / 2;
+    const va = res.length ? res.reduce((a,[x,m])=>a + (x-m)*(x-m), 0) / res.length : mu;
+    out[k] = {ml, mv, mu, r: (mu > 0 && va > mu * 1.05) ? mu*mu / (va - mu) : Infinity};
+  });
+  return _probBase.ligas[liga] = out;
+}
+// Fuerza de ataque y defensa del equipo en esa estadística (1 = promedio de la liga),
+// relativa a lo esperable según haya jugado de local o de visitante.
+function fuerza(equipo, k, antesDe, b){
+  let n = 0, f = 0, c = 0;
+  state.matches.forEach(m=>{
+    if(!m.finPartido || !m.stats || (m.local !== equipo && m.visitante !== equipo)) return;
+    if(antesDe && m.fechaHora && m.fechaHora >= antesDe) return;
+    const s = m.stats[k] || {}, l = s.l || 0, v = s.v || 0;
+    n++;
+    if(m.local === equipo){ f += l / (b.ml || 1); c += v / (b.mv || 1); }
+    else { f += v / (b.mv || 1); c += l / (b.ml || 1); }
+  });
+  return {n, at: (f + PROB_K) / (n + PROB_K), de: (c + PROB_K) / (n + PROB_K)};
+}
+function esperados(m, k){
+  const b = baseLiga(ligaDe(m))[k];
+  const L = fuerza(m.local, k, m.fechaHora, b), V = fuerza(m.visitante, k, m.fechaHora, b);
+  return {l: b.ml * L.at * V.de, v: b.mv * V.at * L.de, r: b.r, nl: L.n, nv: V.n};
+}
+function distrib(lam, r, max){
+  const p = new Array(max + 1).fill(0);
+  if(!(lam > 0)){ p[0] = 1; return p; }
+  if(!isFinite(r)){ p[0] = Math.exp(-lam); for(let i=1;i<=max;i++) p[i] = p[i-1] * lam / i; }
+  else { const q = r / (r + lam); p[0] = Math.pow(q, r); for(let i=1;i<=max;i++) p[i] = p[i-1] * (i - 1 + r) / i * (1 - q); }
+  return p;
+}
+function probEstadistica(bet, m){
+  if(!m || !m.stats || !bet) return null;
+  const st = matchStatus(m);
+  const resta = m.finPartido ? 0 : Math.max(0, 1 - (st.frac || 0));
+  if(bet.tipo === "ganador"){
+    const x = esperados(m, "goles");
+    const gl = m.stats.goles.l || 0, gv = m.stats.goles.v || 0;
+    const pl = distrib(x.l * resta, x.r, 15), pv = distrib(x.v * resta, x.r, 15);
+    let gana = 0, emp = 0, pierde = 0;
+    pl.forEach((a,i)=>pv.forEach((b,j)=>{ const d = (gl+i) - (gv+j); if(d > 0) gana += a*b; else if(d === 0) emp += a*b; else pierde += a*b; }));
+    const p = bet.pick === "local" ? gana : bet.pick === "empate" ? emp : bet.pick === "visitante" ? pierde : null;
+    return p == null ? null : {p, nl: x.nl, nv: x.nv};
+  }
+  if(!TIPO_LABEL[bet.tipo] || !isFinite(bet.linea)) return null;
+  const x = esperados(m, bet.tipo), s = m.stats[bet.tipo] || {l:0, v:0};
+  const MAX = 45, sl = s.l || 0, sv = s.v || 0, lin = bet.linea;
+  const pl = distrib(x.l * resta, x.r, MAX), pv = distrib(x.v * resta, x.r, MAX);
+  const masDe = (base, arr)=> arr.reduce((a,p,i)=> a + (base + i > lin ? p : 0), 0);
+  let pMas;
+  if(bet.alcance === "local") pMas = masDe(sl, pl);
+  else if(bet.alcance === "visitante") pMas = masDe(sv, pv);
+  else if(bet.alcance === "cualquiera") pMas = 1 - (1 - masDe(sl, pl)) * (1 - masDe(sv, pv));
+  else { pMas = 0; pl.forEach((a,i)=>pv.forEach((b,j)=>{ if(sl+i+sv+j > lin) pMas += a*b; })); }
+  const p = bet.comparador === "menos" ? 1 - pMas : pMas;
+  return {p: Math.min(1, Math.max(0, p)), nl: x.nl, nv: x.nv};
+}
+function pctTxt(p){ const v = Math.round(p * 100); return (v >= 100 && p < 1 ? 99 : v <= 0 && p > 0 ? 1 : v) + "%"; }
+// Guarda en cada apuesta el % que tenía al cargarla (para comparar después).
+function asegurarProbCarga(){
+  let cambio = false;
+  state.bets.forEach(b=>{
+    if(b.probCarga != null) return;
+    const m = state.matches.find(x=>x.id === b.matchId);
+    if(!m || m.finPartido) return;
+    const r = probEstadistica(b, m);
+    if(r){ b.probCarga = Math.round(r.p * 1000) / 1000; cambio = true; }
+  });
+  if(cambio) save();
+}
+// Recuadro del formulario: % según estadísticas y si la cuota paga más de lo que "vale".
+function renderProbForm(){
+  const box = document.getElementById("prob-form");
+  if(!box) return;
+  const m = state.matches.find(x=>x.id === document.getElementById("sel-match").value);
+  const tipo = document.getElementById("sel-tipo").value;
+  const bet = {tipo, comparador: document.getElementById("sel-comp").value, alcance: document.getElementById("sel-alcance").value,
+    pick: document.getElementById("sel-alcance").value, linea: parseNum(document.getElementById("in-linea").value)};
+  const r = (m && !m.finPartido && (tipo === "ganador" || isFinite(bet.linea))) ? probEstadistica(bet, m) : null;
+  if(!r){ box.hidden = true; box.innerHTML = ""; return; }
+  const cuota = parseNum(document.getElementById("in-cuota").value);
+  const justa = r.p > 0 ? 1 / r.p : null;
+  let valor = "";
+  if(isFinite(cuota) && cuota > 1 && justa){
+    valor = cuota > justa * 1.03 ? `<br><span class="valor">Cuota ${cuota} &gt; justa: tiene valor</span>`
+      : cuota < justa * 0.97 ? `<br><span class="sinvalor">Cuota ${cuota} &lt; justa: paga menos de lo que vale</span>`
+      : `<br>Cuota ${cuota} ≈ justa`;
+  }
+  const empezo = matchStatus(m).frac > 0;
+  box.hidden = false;
+  box.innerHTML = `<b class="pct">${pctTxt(r.p)}</b> probabilidad según estadísticas${empezo ? " (con lo que va del partido)" : ""}
+    ${justa ? ` · cuota justa ${justa.toFixed(2)}` : ""}${valor}
+    <br><small>Base: ${r.nl} partidos de ${escH(m.local)} y ${r.nv} de ${escH(m.visitante)}${Math.min(r.nl, r.nv) < 5 ? " (pocos datos, tomalo con cuidado)" : ""}.</small>`;
+}
+["sel-tipo","sel-comp","sel-alcance","sel-match"].forEach(id=>document.getElementById(id).addEventListener("change", ()=>setTimeout(renderProbForm, 0)));
+["in-linea","in-cuota"].forEach(id=>document.getElementById(id).addEventListener("input", renderProbForm));
 
 function emptyStats(){
   return {
@@ -2106,9 +2231,15 @@ function renderBets(){
     else if(r.estado === "P"){ badgeCls="P"; badgeTxt="Perdida"; }
     else if(bet.tipo === "ganador"){
       badgeCls = "neutral"; badgeTxt = "Pendiente"; totalLabel = "Resultado"; totalVal = "A definir";
+      const pe = m ? probEstadistica(bet, m) : null;
+      if(pe){ badgeCls = pe.p >= 0.7 ? "alta" : pe.p >= 0.5 ? "media" : pe.p >= 0.3 ? "mediabaja" : "baja"; badgeTxt = pctTxt(pe.p); }
     } else if(m){
       const prob = estimateProb(bet, m);
-      badgeCls = prob.level; badgeTxt = prob.label;
+      const pe = probEstadistica(bet, m);
+      if(pe){
+        badgeCls = pe.p >= 0.7 ? "alta" : pe.p >= 0.5 ? "media" : pe.p >= 0.3 ? "mediabaja" : "baja";
+        badgeTxt = pctTxt(pe.p);
+      } else { badgeCls = prob.level; badgeTxt = prob.label; }
       totalLabel = "Acumulado"; totalVal = prob.acumulado;
       if(prob.proyeccion !== undefined) subTxt = `Proyección a los 90': ${prob.proyeccion.toFixed(1)} (estimado)`;
     } else { badgeCls="pendiente"; badgeTxt="Pendiente"; totalVal="-"; }
@@ -2131,6 +2262,7 @@ function renderBets(){
         <div>Ganancia<b class="bet-ganancia ${r.ganancia>0?'pos':'neu'}">$${r.ganancia.toFixed(2)}</b></div>
       </div>
       ${subTxt ? `<div class="bet-sub">${subTxt}</div>` : ""}
+      ${bet.probCarga != null && r.estado !== "G" && r.estado !== "P" ? `<div class="bet-sub">Probabilidad al cargarla: ${pctTxt(bet.probCarga)}${bet.cuota > 1 ? ` · cuota justa ${(1/Math.max(bet.probCarga, 0.001)).toFixed(2)} vs ${bet.cuota}` : ""}</div>` : ""}
     `;
     wrap.appendChild(card);
   });
@@ -2330,9 +2462,11 @@ function renderResumen(){
 }
 
 function renderAll(){
+  asegurarProbCarga();
   renderMatches();
   renderMatchSelect();
   renderBets();
+  renderProbForm();
   renderTerminados();
   renderResumen();
   renderFooter();
@@ -2808,7 +2942,7 @@ function renderFlexibleRow(bet, i, m){
       <input type="checkbox" class="chk-preview" data-idx="${i}" checked>
       <span style="flex:1">
         <b>${d.partido}</b><br>
-        <span class="bet-sub">${d.condicion} · $${d.monto} @${d.cuota}</span>
+        <span class="bet-sub">${d.condicion} · $${d.monto} @${d.cuota}${(()=>{ const pe = m && !m.finPartido ? probEstadistica(bet, m) : null; return pe ? ` · <b>${pctTxt(pe.p)}</b> según estadísticas` : ""; })()}</span>
       </span>
     </label>`;
   }
