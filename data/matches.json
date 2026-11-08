@@ -41074,12 +41074,12 @@
       "local": "Central Córdoba SdE",
       "visitante": "Lanús",
       "fechaHora": "2026-11-08T19:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -41094,7 +41094,7 @@
           "v": 2
         },
         "atajadas": {
-          "l": 2,
+          "l": 1,
           "v": 0
         }
       },
@@ -41104,9 +41104,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "central-cordoba-sde-vs-lanus",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "39'",
+        "minuto": "45'",
         "ronda": "Fecha 16",
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alfredo Terrera",
