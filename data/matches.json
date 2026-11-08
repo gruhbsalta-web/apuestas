@@ -41443,12 +41443,12 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -41459,7 +41459,7 @@
         "gameUrlName": "villarreal-vs-getafe",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "72'",
+        "minuto": "74'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
@@ -41503,7 +41503,7 @@
         "gameUrlName": "celta-vigo-vs-levante",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "67'",
+        "minuto": "69'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Abanca-Balaídos",
