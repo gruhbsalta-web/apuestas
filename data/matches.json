@@ -41127,7 +41127,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -41151,7 +41151,7 @@
         "gameUrlName": "sunderland-vs-chelsea",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "27'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadium of Light",
@@ -41176,7 +41176,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 1,
@@ -41195,7 +41195,7 @@
         "gameUrlName": "ipswich-vs-bournemouth",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "17'",
+        "minuto": "28'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Portman Road",
@@ -41216,19 +41216,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -41239,7 +41239,7 @@
         "gameUrlName": "crystal-palace-vs-liverpool",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "16'",
+        "minuto": "28'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Selhurst Park",
@@ -41259,20 +41259,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 1
+          "l": 2,
+          "v": 2
         },
         "corners": {
           "l": 1,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -41283,7 +41283,7 @@
         "gameUrlName": "brighton-vs-brentford",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "16'",
+        "minuto": "28'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "American Express Community Stadium",
@@ -41348,19 +41348,19 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "corners": {
-          "l": 5,
-          "v": 5
+          "l": 7,
+          "v": 6
         },
         "tirosArco": {
           "l": 1,
-          "v": 3
+          "v": 5
         },
         "atajadas": {
-          "l": 3,
+          "l": 5,
           "v": 1
         }
       },
@@ -41372,7 +41372,7 @@
         "gameUrlName": "elche-vs-real-betis",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "59'",
+        "minuto": "71'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
@@ -41620,16 +41620,16 @@
           "v": 0
         },
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 4,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 4
         }
       },
       "source": {
@@ -41640,7 +41640,7 @@
         "gameUrlName": "monza-vs-atalanta",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "14'",
+        "minuto": "26'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "U-Power Stadium",
@@ -41657,7 +41657,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
@@ -41669,7 +41669,7 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 0,
@@ -41684,7 +41684,7 @@
         "gameUrlName": "genoa-vs-ac-milan",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "26'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Comunale Luigi Ferraris",
@@ -52338,6 +52338,1194 @@
         "estadio": "Stadio Renato Dall'Ara",
         "arbitro": "M. Guida"
       }
+    },
+    {
+      "id": "promiedos_ehdcgjd",
+      "local": "AS Roma",
+      "visitante": "Inter Milan",
+      "fechaHora": "2026-09-19T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "as-roma-vs-inter-milan",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stadio Olimpico (Rome)",
+        "arbitro": "Davide Massa"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgjc",
+      "local": "Venezia",
+      "visitante": "Lazio",
+      "fechaHora": "2026-09-19T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 6,
+          "v": 0
+        },
+        "corners": {
+          "l": 7,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "venezia-vs-lazio",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Stadio Pierluigi Penzo",
+        "arbitro": "Simone Sozza"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgjj",
+      "local": "Fiorentina",
+      "visitante": "Napoli",
+      "fechaHora": "2026-09-20T07:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 0
+        },
+        "corners": {
+          "l": 4,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "fiorentina-vs-napoli",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stadio Artemio Franchi",
+        "arbitro": "D. Doveri"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgje",
+      "local": "Parma",
+      "visitante": "Genoa",
+      "fechaHora": "2026-09-20T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "parma-vs-genoa",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Ennio Tardini",
+        "arbitro": "Maurizio Mariani"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgji",
+      "local": "Frosinone",
+      "visitante": "Como",
+      "fechaHora": "2026-09-20T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 8,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "frosinone-vs-como",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Benito Stirpe",
+        "arbitro": "Daniele Chiffi"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgjh",
+      "local": "Juventus",
+      "visitante": "Atalanta",
+      "fechaHora": "2026-09-20T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "juventus-vs-atalanta",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "Disney+ Premium",
+        "estadio": "Allianz Stadium",
+        "arbitro": "Luca Zufferli"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgjg",
+      "local": "AC Milan",
+      "visitante": "Lecce",
+      "fechaHora": "2026-09-20T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "ac-milan-vs-lecce",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Meazza",
+        "arbitro": "Federico La Penna"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgih",
+      "local": "Genoa",
+      "visitante": "Fiorentina",
+      "fechaHora": "2026-10-10T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "genoa-vs-fiorentina",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Comunale Luigi Ferraris",
+        "arbitro": "F. Maresca"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgig",
+      "local": "Inter Milan",
+      "visitante": "Parma",
+      "fechaHora": "2026-10-10T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 3,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "inter-milan-vs-parma",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Giuseppe Meazza",
+        "arbitro": "Kevin Bonacina"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgid",
+      "local": "Napoli",
+      "visitante": "Frosinone",
+      "fechaHora": "2026-10-10T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 6,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "napoli-vs-frosinone",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Stadio Diego Armando Maradona",
+        "arbitro": "Ermanno Feliciani"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgii",
+      "local": "Como",
+      "visitante": "AS Roma",
+      "fechaHora": "2026-10-11T07:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 6,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "como-vs-as-roma",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Sinigaglia",
+        "arbitro": "Michael Fabbri"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgie",
+      "local": "Lecce",
+      "visitante": "Bologna",
+      "fechaHora": "2026-10-11T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 10,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "lecce-vs-bologna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Ettore Giardiniero - Via del Mare",
+        "arbitro": "L. Pairetto"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgif",
+      "local": "Lazio",
+      "visitante": "Monza",
+      "fechaHora": "2026-10-11T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "lazio-vs-monza",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Olimpico (Rome)",
+        "arbitro": "Giuseppe Collu"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgic",
+      "local": "Sassuolo",
+      "visitante": "AC Milan",
+      "fechaHora": "2026-10-11T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "sassuolo-vs-ac-milan",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "MAPEI Stadium - Città del Tricolore",
+        "arbitro": "Francesco Fourneau"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgij",
+      "local": "Cagliari",
+      "visitante": "Juventus",
+      "fechaHora": "2026-10-11T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 1,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 10
+        },
+        "atajadas": {
+          "l": 9,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "cagliari-vs-juventus",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Unipol Domus",
+        "arbitro": "Matteo Marcenaro"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgja",
+      "local": "Atalanta",
+      "visitante": "Venezia",
+      "fechaHora": "2026-10-12T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 8,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 8
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "atalanta-vs-venezia",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "New Balance Arena",
+        "arbitro": "Paride Tremolada"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgib",
+      "local": "Torino",
+      "visitante": "Udinese",
+      "fechaHora": "2026-10-12T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 4,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "torino-vs-udinese",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Olimpico Grande Torino",
+        "arbitro": "Valerio Crezzini"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghi",
+      "local": "Frosinone",
+      "visitante": "Sassuolo",
+      "fechaHora": "2026-10-16T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "frosinone-vs-sassuolo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Benito Stirpe",
+        "arbitro": "Matteo Marchetti"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghb",
+      "local": "Venezia",
+      "visitante": "Napoli",
+      "fechaHora": "2026-10-17T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 12
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 10
+        },
+        "atajadas": {
+          "l": 10,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "venezia-vs-napoli",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Stadio Pierluigi Penzo",
+        "arbitro": "Juan Luca Sacchi"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgia",
+      "local": "Bologna",
+      "visitante": "Inter Milan",
+      "fechaHora": "2026-10-17T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "bologna-vs-inter-milan",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Stadio Renato Dall'Ara",
+        "arbitro": "D. Doveri"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghd",
+      "local": "AS Roma",
+      "visitante": "Genoa",
+      "fechaHora": "2026-10-17T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "as-roma-vs-genoa",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Olimpico (Rome)",
+        "arbitro": "Rosario Abisso"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghc",
+      "local": "Udinese",
+      "visitante": "Lecce",
+      "fechaHora": "2026-10-18T07:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 1,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 11
+        },
+        "atajadas": {
+          "l": 8,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "udinese-vs-lecce",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Bluenergy Stadium",
+        "arbitro": "M. Guida"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghj",
+      "local": "Fiorentina",
+      "visitante": "Como",
+      "fechaHora": "2026-10-18T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 11,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "fiorentina-vs-como",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stadio Artemio Franchi",
+        "arbitro": "Marco Di Bello"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghg",
+      "local": "AC Milan",
+      "visitante": "Atalanta",
+      "fechaHora": "2026-10-18T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "ac-milan-vs-atalanta",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Meazza",
+        "arbitro": "Daniele Chiffi"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghh",
+      "local": "Juventus",
+      "visitante": "Lazio",
+      "fechaHora": "2026-10-18T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "juventus-vs-lazio",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "Disney+ Premium",
+        "estadio": "Allianz Stadium",
+        "arbitro": "Davide Massa"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghf",
+      "local": "Monza",
+      "visitante": "Cagliari",
+      "fechaHora": "2026-10-19T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "monza-vs-cagliari",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "U-Power Stadium",
+        "arbitro": "Andrea Calzavara"
+      }
+    },
+    {
+      "id": "promiedos_ehdcghe",
+      "local": "Parma",
+      "visitante": "Torino",
+      "fechaHora": "2026-10-19T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 8
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "parma-vs-torino",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Ennio Tardini",
+        "arbitro": "G. Ayroldi"
+      }
     }
   ],
   "bets": [],
@@ -52345,6 +53533,7 @@
   "historico": {
     "fhc": "2026-11-08",
     "h": "2026-11-08",
-    "bb": "2026-11-08"
+    "bb": "2026-11-08",
+    "bh": "2026-11-08"
   }
 }
