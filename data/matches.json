@@ -41149,14 +41149,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "sunderland-vs-chelsea",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "3'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadium of Light",
-        "arbitro": "Jarred Gillett",
-        "infoDia": "2026-11-08"
+        "arbitro": "Jarred Gillett"
       }
     },
     {
@@ -41181,10 +41180,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -41194,14 +41193,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "ipswich-vs-bournemouth",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Portman Road",
-        "arbitro": "Simon Hooper",
-        "infoDia": "2026-11-08"
+        "arbitro": "Simon Hooper"
       }
     },
     {
@@ -41222,14 +41220,14 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -41239,14 +41237,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "crystal-palace-vs-liverpool",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Selhurst Park",
-        "arbitro": "Tony Harrington",
-        "infoDia": "2026-11-08"
+        "arbitro": "Tony Harrington"
       }
     },
     {
@@ -41263,10 +41260,10 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -41284,14 +41281,13 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "brighton-vs-brentford",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "American Express Community Stadium",
-        "arbitro": "Michael Oliver",
-        "infoDia": "2026-11-08"
+        "arbitro": "Michael Oliver"
       }
     },
     {
@@ -41357,14 +41353,14 @@
         },
         "corners": {
           "l": 5,
-          "v": 3
+          "v": 5
         },
         "tirosArco": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         }
       },
@@ -41374,9 +41370,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "elche-vs-real-betis",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
@@ -41642,14 +41638,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "monza-vs-atalanta",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "U-Power Stadium",
-        "arbitro": "Claudio Giuseppe Allegretta",
-        "infoDia": "2026-11-08"
+        "arbitro": "Claudio Giuseppe Allegretta"
       }
     },
     {
@@ -41673,12 +41668,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -41687,14 +41682,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "genoa-vs-ac-milan",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "3'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Comunale Luigi Ferraris",
-        "arbitro": "Davide Massa",
-        "infoDia": "2026-11-08"
+        "arbitro": "Davide Massa"
       }
     },
     {
