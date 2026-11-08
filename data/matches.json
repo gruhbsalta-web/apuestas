@@ -41299,7 +41299,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "tarjetas": {
@@ -41307,11 +41307,11 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "atajadas": {
@@ -41327,7 +41327,7 @@
         "gameUrlName": "manchester-united-vs-aston-villa",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "27'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Old Trafford",
@@ -41396,14 +41396,14 @@
         },
         "corners": {
           "l": 6,
-          "v": 3
+          "v": 5
         },
         "tirosArco": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         }
       },
@@ -41415,7 +41415,7 @@
         "gameUrlName": "real-sociedad-vs-rayo-vallecano",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "70'",
+        "minuto": "82'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Municipal de Anoeta",
