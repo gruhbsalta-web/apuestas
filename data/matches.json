@@ -41569,7 +41569,7 @@
       "local": "Napoli",
       "visitante": "Lazio",
       "fechaHora": "2026-11-08T08:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -41577,20 +41577,20 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 5
         },
         "tirosArco": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
-          "v": 1
+          "l": 3,
+          "v": 2
         }
       },
       "source": {
@@ -41599,9 +41599,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "napoli-vs-lazio",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "35'",
+        "minuto": "45'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadio Diego Armando Maradona",
@@ -41787,8 +41787,5290 @@
         "arbitro": "Andrea Colombo",
         "infoDia": "2026-11-08"
       }
+    },
+    {
+      "id": "promiedos_eicifab",
+      "local": "Brujas",
+      "visitante": "Aston Villa",
+      "fechaHora": "2026-09-08T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "club-brugge-vs-aston-villa",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Jan Breydel Stadium",
+        "arbitro": "Sandro Schärer"
+      }
+    },
+    {
+      "id": "promiedos_eicifac",
+      "local": "AEK Atenas",
+      "visitante": "LASK Linz",
+      "fechaHora": "2026-09-08T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "aek-athens-vs-lask-linz",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "OPAP Arena",
+        "arbitro": "Luís Godinho"
+      }
+    },
+    {
+      "id": "promiedos_eiciejh",
+      "local": "FC Porto",
+      "visitante": "Manchester City",
+      "fechaHora": "2026-09-08T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 10
+        },
+        "atajadas": {
+          "l": 8,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "fc-porto-vs-manchester-city",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Estadio do Dragao (Porto)",
+        "arbitro": "Szymon Marciniak"
+      }
+    },
+    {
+      "id": "promiedos_eicieji",
+      "local": "Borussia Dortmund",
+      "visitante": "Villarreal CF",
+      "fechaHora": "2026-09-08T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 9,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "borussia-dortmund-vs-villarreal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Signal Iduna Park",
+        "arbitro": "Simone Sozza"
+      }
+    },
+    {
+      "id": "promiedos_eiciejj",
+      "local": "Lille",
+      "visitante": "Real Betis",
+      "fechaHora": "2026-09-08T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 5,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "lille-vs-real-betis",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Stade Pierre-Mauroy",
+        "arbitro": "Georgi Kabakov"
+      }
+    },
+    {
+      "id": "promiedos_eicifaa",
+      "local": "Real Madrid",
+      "visitante": "Inter Milan",
+      "fechaHora": "2026-09-08T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 11
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "real-madrid-vs-inter-milan",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Santiago Bernabéu",
+        "arbitro": "Michael Oliver"
+      }
+    },
+    {
+      "id": "promiedos_eiciejf",
+      "local": "Stuttgart",
+      "visitante": "Viking",
+      "fechaHora": "2026-09-09T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "stuttgart-vs-viking",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "MHP Arena",
+        "arbitro": "Nenad Minakovic"
+      }
+    },
+    {
+      "id": "promiedos_eiciejg",
+      "local": "FC Barcelona",
+      "visitante": "Feyenoord",
+      "fechaHora": "2026-09-09T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 4,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "barcelona-vs-feyenoord",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Spotify Camp Nou",
+        "arbitro": "Sven Jablonski"
+      }
+    },
+    {
+      "id": "promiedos_eiciejb",
+      "local": "PSG",
+      "visitante": "Slovan Bratislava",
+      "fechaHora": "2026-09-09T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 6,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 14,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 8
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "psg-vs-slovan-bratislava",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "FOX Sports 3, Disney+ Premium",
+        "estadio": "Parc des Princes",
+        "arbitro": "Mykola Balakin"
+      }
+    },
+    {
+      "id": "promiedos_eiciejc",
+      "local": "Napoli",
+      "visitante": "Arsenal",
+      "fechaHora": "2026-09-09T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 0,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 7,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "napoli-vs-arsenal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stadio Diego Armando Maradona",
+        "arbitro": "Glenn Nyberg"
+      }
+    },
+    {
+      "id": "promiedos_eiciejd",
+      "local": "Liverpool",
+      "visitante": "Atlético de Madrid",
+      "fechaHora": "2026-09-09T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "liverpool-vs-atletico-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Anfield",
+        "arbitro": "Davide Massa"
+      }
+    },
+    {
+      "id": "promiedos_eicieje",
+      "local": "Sporting CP",
+      "visitante": "Galatasaray",
+      "fechaHora": "2026-09-09T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 1,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "sporting-cp-vs-galatasaray",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Jose Alvalade",
+        "arbitro": "Espen Eskås"
+      }
+    },
+    {
+      "id": "promiedos_eicieij",
+      "local": "Fenerbahce",
+      "visitante": "AS Roma",
+      "fechaHora": "2026-09-10T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 1,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "fenerbahce-sk-vs-as-roma",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Chobani Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
+        "arbitro": "Gil Manzano"
+      }
+    },
+    {
+      "id": "promiedos_eicieja",
+      "local": "PSV Eindhoven",
+      "visitante": "Shakhtar Donetsk",
+      "fechaHora": "2026-09-10T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 6
+        },
+        "corners": {
+          "l": 3,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "psv-eindhoven-vs-shakhtar-donetsk",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Philips Stadium",
+        "arbitro": "Halil Umut Meler"
+      }
+    },
+    {
+      "id": "promiedos_eicieif",
+      "local": "Slavia Praga",
+      "visitante": "Lens",
+      "fechaHora": "2026-09-10T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 6,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "slavia-praha-vs-lens",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Fortuna Arena",
+        "arbitro": "Vassilios Fotias"
+      }
+    },
+    {
+      "id": "promiedos_eicieig",
+      "local": "Como",
+      "visitante": "RB Leipzig",
+      "fechaHora": "2026-09-10T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 1,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "como-vs-rb-leipzig",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Sinigaglia",
+        "arbitro": "Serdar Gozubuyuk"
+      }
+    },
+    {
+      "id": "promiedos_eicieih",
+      "local": "Manchester United",
+      "visitante": "Sabah",
+      "fechaHora": "2026-09-10T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "manchester-united-vs-sabah",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Old Trafford",
+        "arbitro": "W. Delajod"
+      }
+    },
+    {
+      "id": "promiedos_eicieii",
+      "local": "Bayern Munich",
+      "visitante": "Bodo Glimt",
+      "fechaHora": "2026-09-10T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 12,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "bayern-munich-vs-bodo-glimt",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Allianz Arena",
+        "arbitro": "Rade Obrenović"
+      }
+    },
+    {
+      "id": "promiedos_eicieid",
+      "local": "Sabah",
+      "visitante": "Slavia Praga",
+      "fechaHora": "2026-10-13T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 8,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "sabah-vs-slavia-praha",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Bakı Olimpiya Stadionu",
+        "arbitro": "Sebastian Gishamer"
+      }
+    },
+    {
+      "id": "promiedos_eicieie",
+      "local": "Lens",
+      "visitante": "Sporting CP",
+      "fechaHora": "2026-10-13T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 6,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "lens-vs-sporting-cp",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Stade Bollaert-Delelis",
+        "arbitro": "Igor Pajac"
+      }
+    },
+    {
+      "id": "promiedos_eiciehg",
+      "local": "Villarreal CF",
+      "visitante": "Napoli",
+      "fechaHora": "2026-10-13T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "villarreal-vs-napoli",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
+        "estadio": "Estadio de la Cerámica",
+        "arbitro": "Jan Seidel"
+      }
+    },
+    {
+      "id": "promiedos_eiciehh",
+      "local": "Viking",
+      "visitante": "Bayern Munich",
+      "fechaHora": "2026-10-13T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 7,
+          "v": 15
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "viking-vs-bayern-munich",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "SR-Bank Arena",
+        "arbitro": "Georgi Kabakov"
+      }
+    },
+    {
+      "id": "promiedos_eiciehi",
+      "local": "Atlético de Madrid",
+      "visitante": "Manchester United",
+      "fechaHora": "2026-10-13T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "atletico-madrid-vs-manchester-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Riyadh Air Metropolitano",
+        "arbitro": "Glenn Nyberg"
+      }
+    },
+    {
+      "id": "promiedos_eiciehj",
+      "local": "Inter Milan",
+      "visitante": "Brujas",
+      "fechaHora": "2026-10-13T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 4,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 12,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 9
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "inter-milan-vs-club-brugge",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Meazza",
+        "arbitro": "Rohit Saggi"
+      }
+    },
+    {
+      "id": "promiedos_eicieia",
+      "local": "RB Leipzig",
+      "visitante": "PSV Eindhoven",
+      "fechaHora": "2026-10-13T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 12
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "rb-leipzig-vs-psv-eindhoven",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium, Flow Sports",
+        "estadio": "Red Bull Arena (Wals-Siezenheim)",
+        "arbitro": "Nick Walsh"
+      }
+    },
+    {
+      "id": "promiedos_eicieib",
+      "local": "Galatasaray",
+      "visitante": "FC Barcelona",
+      "fechaHora": "2026-10-13T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 1,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 11
+        },
+        "atajadas": {
+          "l": 7,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "galatasaray-vs-barcelona",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "T&#252;rk Telekom Arena",
+        "arbitro": "M. Guida"
+      }
+    },
+    {
+      "id": "promiedos_eicieic",
+      "local": "Arsenal",
+      "visitante": "Lille",
+      "fechaHora": "2026-10-13T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "arsenal-vs-lille",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Emirates Stadium",
+        "arbitro": "Felix Zwayer"
+      }
+    },
+    {
+      "id": "promiedos_eiciehe",
+      "local": "LASK Linz",
+      "visitante": "Liverpool",
+      "fechaHora": "2026-10-14T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 6
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 3,
+          "v": 11
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "lask-linz-vs-liverpool",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "ראיפייסן ארנה",
+        "arbitro": "T. Stieler"
+      }
+    },
+    {
+      "id": "promiedos_eiciehf",
+      "local": "Feyenoord",
+      "visitante": "Como",
+      "fechaHora": "2026-10-14T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "feyenoord-vs-como",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Stadion Feijenoord",
+        "arbitro": "Donatas Rumšas"
+      }
+    },
+    {
+      "id": "promiedos_eiciegh",
+      "local": "Slovan Bratislava",
+      "visitante": "Stuttgart",
+      "fechaHora": "2026-10-14T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 1,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "slovan-bratislava-vs-stuttgart",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Tehelne Pole Stadion",
+        "arbitro": "Irfan Peljto"
+      }
+    },
+    {
+      "id": "promiedos_eiciegi",
+      "local": "Bodo Glimt",
+      "visitante": "Borussia Dortmund",
+      "fechaHora": "2026-10-14T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "bodo-glimt-vs-borussia-dortmund",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Aspmyra Stadion",
+        "arbitro": "Urs Schnyder"
+      }
+    },
+    {
+      "id": "promiedos_eiciegj",
+      "local": "Shakhtar Donetsk",
+      "visitante": "AEK Atenas",
+      "fechaHora": "2026-10-14T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 4
+        },
+        "corners": {
+          "l": 5,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "shakhtar-donetsk-vs-aek-athens",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "Stamford Bridge",
+        "arbitro": "Chris Kavanagh"
+      }
+    },
+    {
+      "id": "promiedos_eicieha",
+      "local": "Manchester City",
+      "visitante": "PSG",
+      "fechaHora": "2026-10-14T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 11,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 10
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "manchester-city-vs-psg",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Etihad Stadium",
+        "arbitro": "Sven Jablonski"
+      }
+    },
+    {
+      "id": "promiedos_eiciehb",
+      "local": "AS Roma",
+      "visitante": "Real Madrid",
+      "fechaHora": "2026-10-14T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "as-roma-vs-real-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stadio Olimpico (Rome)",
+        "arbitro": "Francois Letexier"
+      }
+    },
+    {
+      "id": "promiedos_eiciehc",
+      "local": "Real Betis",
+      "visitante": "FC Porto",
+      "fechaHora": "2026-10-14T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 3
+        },
+        "corners": {
+          "l": 5,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "real-betis-vs-fc-porto",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
+        "estadio": "Benito Villamarin",
+        "arbitro": "Clement Turpin"
+      }
+    },
+    {
+      "id": "promiedos_eiciehd",
+      "local": "Aston Villa",
+      "visitante": "Fenerbahce",
+      "fechaHora": "2026-10-14T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 6,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "aston-villa-vs-fenerbahce-sk",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Villa Park",
+        "arbitro": "Ivan Kružliak"
+      }
+    },
+    {
+      "id": "promiedos_eiciegf",
+      "local": "Fenerbahce",
+      "visitante": "Slavia Praga",
+      "fechaHora": "2026-10-20T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "fenerbahce-sk-vs-slavia-praha",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Chobani Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
+        "arbitro": "Ricardo De Burgos Bengoetxea"
+      }
+    },
+    {
+      "id": "promiedos_eiciegg",
+      "local": "Sabah",
+      "visitante": "Borussia Dortmund",
+      "fechaHora": "2026-10-20T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 0
+        },
+        "corners": {
+          "l": 4,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 7,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "sabah-vs-borussia-dortmund",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Bakı Olimpiya Stadionu",
+        "arbitro": "Javier Alberola Rojas"
+      }
+    },
+    {
+      "id": "promiedos_eiciefi",
+      "local": "Liverpool",
+      "visitante": "Villarreal CF",
+      "fechaHora": "2026-10-20T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "liverpool-vs-villarreal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Anfield",
+        "arbitro": "Szymon Marciniak"
+      }
+    },
+    {
+      "id": "promiedos_eiciefj",
+      "local": "FC Porto",
+      "visitante": "PSV Eindhoven",
+      "fechaHora": "2026-10-20T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "fc-porto-vs-psv-eindhoven",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Estadio do Dragao (Porto)",
+        "arbitro": "Jan Seidel"
+      }
+    },
+    {
+      "id": "promiedos_eiciega",
+      "local": "Stuttgart",
+      "visitante": "Atlético de Madrid",
+      "fechaHora": "2026-10-20T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 9,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "stuttgart-vs-atletico-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
+        "estadio": "MHP Arena",
+        "arbitro": "Serdar Gozubuyuk"
+      }
+    },
+    {
+      "id": "promiedos_eiciegb",
+      "local": "PSG",
+      "visitante": "FC Barcelona",
+      "fechaHora": "2026-10-20T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 14,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 10
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "psg-vs-barcelona",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Parc des Princes",
+        "arbitro": "Michael Oliver"
+      }
+    },
+    {
+      "id": "promiedos_eiciegc",
+      "local": "Napoli",
+      "visitante": "Bodo Glimt",
+      "fechaHora": "2026-10-20T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 0
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "napoli-vs-bodo-glimt",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Stadio Diego Armando Maradona",
+        "arbitro": "José Sánchez"
+      }
+    },
+    {
+      "id": "promiedos_eiciegd",
+      "local": "Manchester City",
+      "visitante": "AEK Atenas",
+      "fechaHora": "2026-10-20T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 8,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "manchester-city-vs-aek-athens",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Etihad Stadium",
+        "arbitro": "W. Delajod"
+      }
+    },
+    {
+      "id": "promiedos_eiciege",
+      "local": "AS Roma",
+      "visitante": "Slovan Bratislava",
+      "fechaHora": "2026-10-20T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 3
+        },
+        "corners": {
+          "l": 8,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "as-roma-vs-slovan-bratislava",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Stadio Olimpico (Rome)",
+        "arbitro": "Sandro Schärer"
+      }
+    },
+    {
+      "id": "promiedos_eicieff",
+      "local": "Como",
+      "visitante": "Manchester United",
+      "fechaHora": "2026-10-21T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 1,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "como-vs-manchester-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Sinigaglia",
+        "arbitro": "Sven Jablonski"
+      }
+    },
+    {
+      "id": "promiedos_eiciefh",
+      "local": "Lille",
+      "visitante": "Galatasaray",
+      "fechaHora": "2026-10-21T13:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "lille-vs-galatasaray",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Stade Pierre-Mauroy",
+        "arbitro": "Rade Obrenović"
+      }
+    },
+    {
+      "id": "promiedos_eicieej",
+      "local": "Brujas",
+      "visitante": "Lens",
+      "fechaHora": "2026-10-21T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 1,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 7,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "club-brugge-vs-lens",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Jan Breydel Stadium",
+        "arbitro": "Luís Godinho (Portugal)"
+      }
+    },
+    {
+      "id": "promiedos_eiciefa",
+      "local": "Bayern Munich",
+      "visitante": "Arsenal",
+      "fechaHora": "2026-10-21T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "bayern-munich-vs-arsenal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Fox Sports, Disney+ Premium",
+        "estadio": "Allianz Arena",
+        "arbitro": "Davide Massa"
+      }
+    },
+    {
+      "id": "promiedos_eiciefb",
+      "local": "Real Madrid",
+      "visitante": "RB Leipzig",
+      "fechaHora": "2026-10-21T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "real-madrid-vs-rb-leipzig",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Santiago Bernabéu",
+        "arbitro": "István Kovács"
+      }
+    },
+    {
+      "id": "promiedos_eiciefc",
+      "local": "Real Betis",
+      "visitante": "Feyenoord",
+      "fechaHora": "2026-10-21T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 9
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "real-betis-vs-feyenoord",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio La Cartuja de Sevilla",
+        "arbitro": "Simone Sozza"
+      }
+    },
+    {
+      "id": "promiedos_eiciefd",
+      "local": "Inter Milan",
+      "visitante": "Shakhtar Donetsk",
+      "fechaHora": "2026-10-21T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "inter-milan-vs-shakhtar-donetsk",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Meazza",
+        "arbitro": "Harm Osmers"
+      }
+    },
+    {
+      "id": "promiedos_eiciefe",
+      "local": "Aston Villa",
+      "visitante": "Viking",
+      "fechaHora": "2026-10-21T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 8,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "aston-villa-vs-viking",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Villa Park",
+        "arbitro": "Sebastian Gishamer"
+      }
+    },
+    {
+      "id": "promiedos_eiciefg",
+      "local": "Sporting CP",
+      "visitante": "LASK Linz",
+      "fechaHora": "2026-10-21T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 5
+        },
+        "corners": {
+          "l": 7,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "sporting-cp-vs-lask-linz",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Estadio Jose Alvalade",
+        "arbitro": "Nick Walsh"
+      }
+    },
+    {
+      "id": "promiedos_ehebhbc",
+      "local": "Arsenal",
+      "visitante": "Coventry",
+      "fechaHora": "2026-08-21T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 8,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "arsenal-vs-coventry",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Emirates Stadium",
+        "arbitro": "Thomas Bramall"
+      }
+    },
+    {
+      "id": "promiedos_ehebhbd",
+      "local": "Hull City",
+      "visitante": "Manchester United",
+      "fechaHora": "2026-08-22T08:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 1,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "hull-city-vs-manchester-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "MKM Stadium",
+        "arbitro": "Darren England"
+      }
+    },
+    {
+      "id": "promiedos_ehebhbe",
+      "local": "Everton",
+      "visitante": "Crystal Palace",
+      "fechaHora": "2026-08-22T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 4,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "everton-vs-crystal-palace",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Hill Dickinson Stadium",
+        "arbitro": "Paul Tierney"
+      }
+    },
+    {
+      "id": "promiedos_ehebhbf",
+      "local": "Ipswich",
+      "visitante": "Sunderland",
+      "fechaHora": "2026-08-22T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "ipswich-vs-sunderland",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "Portman Road",
+        "arbitro": "Farai Hallam"
+      }
+    },
+    {
+      "id": "promiedos_ehebhbg",
+      "local": "Nottingham Forest",
+      "visitante": "Leeds United",
+      "fechaHora": "2026-08-22T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "nottingham-forest-vs-leeds-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "The City Ground",
+        "arbitro": "Robert Jones"
+      }
+    },
+    {
+      "id": "promiedos_ehebhbh",
+      "local": "Brentford",
+      "visitante": "Tottenham",
+      "fechaHora": "2026-08-22T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "brentford-vs-tottenham",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Gtech Community Stadium",
+        "arbitro": "Michael Oliver"
+      }
+    },
+    {
+      "id": "promiedos_ehebhbi",
+      "local": "Brighton",
+      "visitante": "Aston Villa",
+      "fechaHora": "2026-08-23T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 5,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "brighton-vs-aston-villa",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "American Express Community Stadium",
+        "arbitro": "Peter Bankes"
+      }
+    },
+    {
+      "id": "promiedos_ehebhbj",
+      "local": "Manchester City",
+      "visitante": "Bournemouth",
+      "fechaHora": "2026-08-23T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 8,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "manchester-city-vs-bournemouth",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "Etihad Stadium",
+        "arbitro": "Jarred Gillett"
+      }
+    },
+    {
+      "id": "promiedos_ehebhca",
+      "local": "Newcastle United",
+      "visitante": "Liverpool",
+      "fechaHora": "2026-08-23T12:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "newcastle-united-vs-liverpool",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "St. James' Park",
+        "arbitro": "Stuart Attwell"
+      }
+    },
+    {
+      "id": "promiedos_ehebhcb",
+      "local": "Fulham",
+      "visitante": "Chelsea",
+      "fechaHora": "2026-08-24T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 6,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "fulham-vs-chelsea",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Craven Cottage",
+        "arbitro": "John Brooks"
+      }
+    },
+    {
+      "id": "promiedos_ehecaih",
+      "local": "Crystal Palace",
+      "visitante": "Manchester City",
+      "fechaHora": "2026-08-28T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "crystal-palace-vs-manchester-city",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "Selhurst Park",
+        "arbitro": "Andy Madley"
+      }
+    },
+    {
+      "id": "promiedos_ehecaif",
+      "local": "Liverpool",
+      "visitante": "Nottingham Forest",
+      "fechaHora": "2026-08-29T08:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "liverpool-vs-nottingham-forest",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Anfield",
+        "arbitro": "Samuel Barrott"
+      }
+    },
+    {
+      "id": "promiedos_ehecaii",
+      "local": "Coventry",
+      "visitante": "Hull City",
+      "fechaHora": "2026-08-29T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 4
+        },
+        "corners": {
+          "l": 6,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "coventry-vs-hull-city",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "The Coventry Building Society Arena",
+        "arbitro": "Joshua Smith"
+      }
+    },
+    {
+      "id": "promiedos_ehecajb",
+      "local": "Bournemouth",
+      "visitante": "Everton",
+      "fechaHora": "2026-08-29T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 10,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "bournemouth-vs-everton",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Vitality Stadium",
+        "arbitro": "Chris Kavanagh"
+      }
+    },
+    {
+      "id": "promiedos_ehecaic",
+      "local": "Tottenham",
+      "visitante": "Newcastle United",
+      "fechaHora": "2026-08-29T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "tottenham-vs-newcastle-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Tottenham Hotspur Stadium",
+        "arbitro": "Peter Bankes"
+      }
+    },
+    {
+      "id": "promiedos_ehecaie",
+      "local": "Sunderland",
+      "visitante": "Fulham",
+      "fechaHora": "2026-08-30T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "sunderland-vs-fulham",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadium of Light",
+        "arbitro": "Michael Salisbury"
+      }
+    },
+    {
+      "id": "promiedos_ehecaig",
+      "local": "Leeds United",
+      "visitante": "Brentford",
+      "fechaHora": "2026-08-30T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 4
+        },
+        "corners": {
+          "l": 5,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "leeds-united-vs-brentford",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "Elland Road",
+        "arbitro": "Tony Harrington"
+      }
+    },
+    {
+      "id": "promiedos_ehecaij",
+      "local": "Chelsea",
+      "visitante": "Brighton",
+      "fechaHora": "2026-08-30T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "chelsea-vs-brighton",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stamford Bridge",
+        "arbitro": "Michael Oliver"
+      }
+    },
+    {
+      "id": "promiedos_ehecaid",
+      "local": "Manchester United",
+      "visitante": "Ipswich",
+      "fechaHora": "2026-08-30T12:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 8,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "manchester-united-vs-ipswich",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Old Trafford",
+        "arbitro": "Craig Pawson"
+      }
+    },
+    {
+      "id": "promiedos_ehecaja",
+      "local": "Aston Villa",
+      "visitante": "Arsenal",
+      "fechaHora": "2026-08-31T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "aston-villa-vs-arsenal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "Villa Park",
+        "arbitro": "Jarred Gillett"
+      }
+    },
+    {
+      "id": "promiedos_ehecahf",
+      "local": "Ipswich",
+      "visitante": "Liverpool",
+      "fechaHora": "2026-09-04T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "ipswich-vs-liverpool",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Portman Road",
+        "arbitro": "Darren England"
+      }
+    },
+    {
+      "id": "promiedos_ehecahd",
+      "local": "Newcastle United",
+      "visitante": "Bournemouth",
+      "fechaHora": "2026-09-05T08:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "newcastle-united-vs-bournemouth",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "St. James' Park",
+        "arbitro": "Robert Jones"
+      }
+    },
+    {
+      "id": "promiedos_ehecahc",
+      "local": "Nottingham Forest",
+      "visitante": "Tottenham",
+      "fechaHora": "2026-09-05T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "nottingham-forest-vs-tottenham",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "The City Ground",
+        "arbitro": "Craig Pawson"
+      }
+    },
+    {
+      "id": "promiedos_ehecahe",
+      "local": "Manchester City",
+      "visitante": "Coventry",
+      "fechaHora": "2026-09-05T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "manchester-city-vs-coventry",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Etihad Stadium",
+        "arbitro": "Paul Tierney"
+      }
+    },
+    {
+      "id": "promiedos_ehecahh",
+      "local": "Fulham",
+      "visitante": "Crystal Palace",
+      "fechaHora": "2026-09-05T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 7,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "fulham-vs-crystal-palace",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Craven Cottage",
+        "arbitro": "Samuel Barrott"
+      }
+    },
+    {
+      "id": "promiedos_ehecahj",
+      "local": "Brighton",
+      "visitante": "Leeds United",
+      "fechaHora": "2026-09-05T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 7,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "brighton-vs-leeds-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "American Express Community Stadium",
+        "arbitro": "Stuart Attwell"
+      }
+    },
+    {
+      "id": "promiedos_ehecaia",
+      "local": "Brentford",
+      "visitante": "Sunderland",
+      "fechaHora": "2026-09-05T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "brentford-vs-sunderland",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Gtech Community Stadium",
+        "arbitro": "Thomas Bramall"
+      }
+    },
+    {
+      "id": "promiedos_ehecahg",
+      "local": "Hull City",
+      "visitante": "Aston Villa",
+      "fechaHora": "2026-09-05T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 3,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "hull-city-vs-aston-villa",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "MKM Stadium",
+        "arbitro": "Michael Oliver"
+      }
+    },
+    {
+      "id": "promiedos_ehecahi",
+      "local": "Everton",
+      "visitante": "Manchester United",
+      "fechaHora": "2026-09-06T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "everton-vs-manchester-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Hill Dickinson Stadium",
+        "arbitro": "John Brooks"
+      }
+    },
+    {
+      "id": "promiedos_ehecaib",
+      "local": "Arsenal",
+      "visitante": "Chelsea",
+      "fechaHora": "2026-09-06T12:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "arsenal-vs-chelsea",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Emirates Stadium",
+        "arbitro": "Chris Kavanagh"
+      }
+    },
+    {
+      "id": "promiedos_ehecagf",
+      "local": "Liverpool",
+      "visitante": "Fulham",
+      "fechaHora": "2026-09-12T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "liverpool-vs-fulham",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "Disney+ Premium",
+        "estadio": "Anfield",
+        "arbitro": "Thomas Bramall"
+      }
+    },
+    {
+      "id": "promiedos_ehecagh",
+      "local": "Crystal Palace",
+      "visitante": "Ipswich",
+      "fechaHora": "2026-09-12T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 6,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "crystal-palace-vs-ipswich",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "Disney+ Premium",
+        "estadio": "Selhurst Park",
+        "arbitro": "Chris Kavanagh"
+      }
+    },
+    {
+      "id": "promiedos_ehecagj",
+      "local": "Chelsea",
+      "visitante": "Hull City",
+      "fechaHora": "2026-09-12T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 5
+        },
+        "corners": {
+          "l": 10,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "chelsea-vs-hull-city",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stamford Bridge",
+        "arbitro": "Farai Hallam"
+      }
+    },
+    {
+      "id": "promiedos_ehecaha",
+      "local": "Aston Villa",
+      "visitante": "Nottingham Forest",
+      "fechaHora": "2026-09-12T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 5
+        },
+        "corners": {
+          "l": 6,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "aston-villa-vs-nottingham-forest",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "Disney+ Premium",
+        "estadio": "Villa Park",
+        "arbitro": "Andy Madley"
+      }
+    },
+    {
+      "id": "promiedos_ehecahb",
+      "local": "Bournemouth",
+      "visitante": "Brentford",
+      "fechaHora": "2026-09-12T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 8
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "bournemouth-vs-brentford",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "Disney+ Premium",
+        "estadio": "Vitality Stadium",
+        "arbitro": "Jarred Gillett"
+      }
+    },
+    {
+      "id": "promiedos_ehecagc",
+      "local": "Tottenham",
+      "visitante": "Everton",
+      "fechaHora": "2026-09-12T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "tottenham-vs-everton",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Tottenham Hotspur Stadium",
+        "arbitro": "Darren England"
+      }
+    },
+    {
+      "id": "promiedos_ehecagd",
+      "local": "Sunderland",
+      "visitante": "Arsenal",
+      "fechaHora": "2026-09-12T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 6,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "sunderland-vs-arsenal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadium of Light",
+        "arbitro": "John Brooks"
+      }
+    },
+    {
+      "id": "promiedos_ehecagi",
+      "local": "Coventry",
+      "visitante": "Brighton",
+      "fechaHora": "2026-09-13T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 5
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "coventry-vs-brighton",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "The Coventry Building Society Arena",
+        "arbitro": "Tony Harrington"
+      }
+    },
+    {
+      "id": "promiedos_ehecage",
+      "local": "Manchester United",
+      "visitante": "Manchester City",
+      "fechaHora": "2026-09-13T12:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 6,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "manchester-united-vs-manchester-city",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Old Trafford",
+        "arbitro": "Michael Oliver"
+      }
+    },
+    {
+      "id": "promiedos_ehecagg",
+      "local": "Leeds United",
+      "visitante": "Newcastle United",
+      "fechaHora": "2026-09-14T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "leeds-united-vs-newcastle-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Elland Road",
+        "arbitro": "Michael Salisbury"
+      }
+    },
+    {
+      "id": "promiedos_ehecaga",
+      "local": "Brentford",
+      "visitante": "Chelsea",
+      "fechaHora": "2026-09-18T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 4,
+          "v": 12
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "brentford-vs-chelsea",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Gtech Community Stadium",
+        "arbitro": "Andy Madley"
+      }
+    },
+    {
+      "id": "promiedos_ehecafe",
+      "local": "Tottenham",
+      "visitante": "Aston Villa",
+      "fechaHora": "2026-09-19T08:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 11,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "tottenham-vs-aston-villa",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Tottenham Hotspur Stadium",
+        "arbitro": "Samuel Barrott"
+      }
+    },
+    {
+      "id": "promiedos_ehecafc",
+      "local": "Newcastle United",
+      "visitante": "Hull City",
+      "fechaHora": "2026-09-19T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 5
+        },
+        "corners": {
+          "l": 4,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "newcastle-united-vs-hull-city",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "St. James' Park",
+        "arbitro": "Tony Harrington"
+      }
+    },
+    {
+      "id": "promiedos_ehecafi",
+      "local": "Everton",
+      "visitante": "Ipswich",
+      "fechaHora": "2026-09-19T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "everton-vs-ipswich",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "Disney+ Premium",
+        "estadio": "Hill Dickinson Stadium",
+        "arbitro": "Stuart Attwell"
+      }
+    },
+    {
+      "id": "promiedos_ehecafj",
+      "local": "Brighton",
+      "visitante": "Arsenal",
+      "fechaHora": "2026-09-19T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "brighton-vs-arsenal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "American Express Community Stadium",
+        "arbitro": "Darren England"
+      }
+    },
+    {
+      "id": "promiedos_ehecafd",
+      "local": "Nottingham Forest",
+      "visitante": "Coventry",
+      "fechaHora": "2026-09-19T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 6,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "nottingham-forest-vs-coventry",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "The City Ground",
+        "arbitro": "Jarred Gillett"
+      }
+    },
+    {
+      "id": "promiedos_ehecaff",
+      "local": "Manchester City",
+      "visitante": "Sunderland",
+      "fechaHora": "2026-09-20T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 6,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "manchester-city-vs-sunderland",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "Disney+ Premium",
+        "estadio": "Etihad Stadium",
+        "arbitro": "Robert Jones"
+      }
+    },
+    {
+      "id": "promiedos_ehecafg",
+      "local": "Leeds United",
+      "visitante": "Crystal Palace",
+      "fechaHora": "2026-09-20T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "leeds-united-vs-crystal-palace",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "Disney+ Premium",
+        "estadio": "Elland Road",
+        "arbitro": "Adam Herczeg"
+      }
+    },
+    {
+      "id": "promiedos_ehecagb",
+      "local": "Bournemouth",
+      "visitante": "Liverpool",
+      "fechaHora": "2026-09-20T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "bournemouth-vs-liverpool",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "Disney+ Premium",
+        "estadio": "Vitality Stadium",
+        "arbitro": "Michael Oliver"
+      }
+    },
+    {
+      "id": "promiedos_ehecafh",
+      "local": "Fulham",
+      "visitante": "Manchester United",
+      "fechaHora": "2026-09-20T12:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 0
+        },
+        "corners": {
+          "l": 3,
+          "v": 13
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "fulham-vs-manchester-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "Disney+ Premium",
+        "estadio": "Craven Cottage",
+        "arbitro": "Peter Bankes"
+      }
+    },
+    {
+      "id": "promiedos_ehecafb",
+      "local": "Arsenal",
+      "visitante": "Leeds United",
+      "fechaHora": "2026-10-10T08:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 4
+        },
+        "corners": {
+          "l": 2,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "arsenal-vs-leeds-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Emirates Stadium",
+        "arbitro": "Paul Tierney"
+      }
+    },
+    {
+      "id": "promiedos_ehecaea",
+      "local": "Sunderland",
+      "visitante": "Brighton",
+      "fechaHora": "2026-10-10T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "sunderland-vs-brighton",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadium of Light",
+        "arbitro": "Thomas Bramall"
+      }
+    },
+    {
+      "id": "promiedos_ehecaee",
+      "local": "Ipswich",
+      "visitante": "Fulham",
+      "fechaHora": "2026-10-10T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "ipswich-vs-fulham",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "Disney+ Premium",
+        "estadio": "Portman Road",
+        "arbitro": "Lewis Smith"
+      }
+    },
+    {
+      "id": "promiedos_ehecaei",
+      "local": "Chelsea",
+      "visitante": "Bournemouth",
+      "fechaHora": "2026-10-10T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 4
+        },
+        "corners": {
+          "l": 1,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "chelsea-vs-bournemouth",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stamford Bridge",
+        "arbitro": "Samuel Barrott"
+      }
+    },
+    {
+      "id": "promiedos_ehecaej",
+      "local": "Aston Villa",
+      "visitante": "Brentford",
+      "fechaHora": "2026-10-10T11:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 5
+        },
+        "corners": {
+          "l": 2,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "aston-villa-vs-brentford",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "Disney+ Premium",
+        "estadio": "Villa Park",
+        "arbitro": "Craig Pawson"
+      }
+    },
+    {
+      "id": "promiedos_ehecaeb",
+      "local": "Manchester United",
+      "visitante": "Tottenham",
+      "fechaHora": "2026-10-10T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 4
+        },
+        "corners": {
+          "l": 4,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "manchester-united-vs-tottenham",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Old Trafford",
+        "arbitro": "Stuart Attwell"
+      }
+    },
+    {
+      "id": "promiedos_ehecaef",
+      "local": "Hull City",
+      "visitante": "Everton",
+      "fechaHora": "2026-10-11T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 7,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "hull-city-vs-everton",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "Disney+ Premium",
+        "estadio": "MKM Stadium",
+        "arbitro": "Michael Salisbury"
+      }
+    },
+    {
+      "id": "promiedos_ehecaeg",
+      "local": "Crystal Palace",
+      "visitante": "Nottingham Forest",
+      "fechaHora": "2026-10-11T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "crystal-palace-vs-nottingham-forest",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Selhurst Park",
+        "arbitro": "Peter Bankes"
+      }
+    },
+    {
+      "id": "promiedos_ehecaec",
+      "local": "Liverpool",
+      "visitante": "Manchester City",
+      "fechaHora": "2026-10-11T12:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "liverpool-vs-manchester-city",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Anfield",
+        "arbitro": "Chris Kavanagh"
+      }
+    },
+    {
+      "id": "promiedos_ehecaeh",
+      "local": "Coventry",
+      "visitante": "Newcastle United",
+      "fechaHora": "2026-10-12T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "coventry-vs-newcastle-united",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "The Coventry Building Society Arena",
+        "arbitro": "John Brooks"
+      }
+    },
+    {
+      "id": "promiedos_ehfafaj",
+      "local": "Alavés",
+      "visitante": "Getafe CF",
+      "fechaHora": "2026-08-15T14:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 4
+        },
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "alaves-vs-getafe",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "Estadio de Mendizorroza",
+        "arbitro": "Manuel Orellana"
+      }
+    },
+    {
+      "id": "promiedos_ehfafcc",
+      "local": "Sevilla FC",
+      "visitante": "Rayo Vallecano",
+      "fechaHora": "2026-08-15T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 4
+        },
+        "corners": {
+          "l": 1,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "sevilla-vs-rayo-vallecano",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "Estadio Ramón Sánchez Pizjuán",
+        "arbitro": "Ricardo De Burgos Bengoetxea"
+      }
+    },
+    {
+      "id": "promiedos_ehfafca",
+      "local": "Racing de Santander",
+      "visitante": "Villarreal CF",
+      "fechaHora": "2026-08-16T12:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 6,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "racing-santander-vs-villarreal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "estadio": "Campos de Sport de El Sardinero",
+        "arbitro": "Miguel Sesma"
+      }
+    },
+    {
+      "id": "promiedos_ehfafbd",
+      "local": "RCD Espanyol",
+      "visitante": "Levante UD",
+      "fechaHora": "2026-08-16T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "espanyol-vs-levante",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "estadio": "RCDE Stadium",
+        "arbitro": "Carlos Muñiz"
+      }
+    },
+    {
+      "id": "promiedos_ehfafbc",
+      "local": "RC Deportivo",
+      "visitante": "Elche CF",
+      "fechaHora": "2026-08-17T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "deportivo-la-coruna-vs-elche",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": " , DSports",
+        "estadio": "Estadio Abanca-Riazor",
+        "arbitro": "Francisco Hernández"
+      }
+    },
+    {
+      "id": "promiedos_ehfafba",
+      "local": "Atlético de Madrid",
+      "visitante": "Málaga CF",
+      "fechaHora": "2026-08-19T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 6,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "atletico-madrid-vs-malaga",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": " , DSports",
+        "estadio": "Riyadh Air Metropolitano",
+        "arbitro": "Adrián Cordero Vega"
+      }
     }
   ],
   "bets": [],
-  "capitalInicial": 0
+  "capitalInicial": 0,
+  "historico": {
+    "fhc": "2026-11-08",
+    "h": "2026-11-08"
+  }
 }
