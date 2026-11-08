@@ -41545,14 +41545,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "atletico-madrid-vs-barcelona",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 12",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
-        "arbitro": "Javier Alberola Rojas",
-        "infoDia": "2026-11-08"
+        "arbitro": "Javier Alberola Rojas"
       }
     },
     {
@@ -41740,7 +41739,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -41748,11 +41747,11 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 2
+          "l": 1,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -41768,11 +41767,11 @@
         "gameUrlName": "fiorentina-vs-juventus",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "2'",
+        "minuto": "14'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Artemio Franchi",
-        "arbitro": "A. Colombo"
+        "arbitro": "Andrea Colombo"
       }
     },
     {
