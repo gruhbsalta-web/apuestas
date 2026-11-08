@@ -328,7 +328,7 @@ const ANTERIOR_LIGAS = ['h', 'bb', 'bh'];
 const ANTERIOR_PATH = path.join(__dirname, '..', 'data', 'temporada_anterior.json');
 const ANTERIOR_MAX = Number(process.env.ANTERIOR_MAX || 400);
 // Tiempo máximo por vuelta para las cargas históricas (no deben frenar la actualización en vivo)
-const HIST_SEGUNDOS = Number(process.env.HIST_SEGUNDOS || 75);
+const HIST_SEGUNDOS = Number(process.env.HIST_SEGUNDOS || 120);
 let HIST_FIN = 0;
 const sinTiempo = () => Date.now() > HIST_FIN;
 async function completarTemporadaAnterior(leagues, buildId, soloLigas) {
@@ -351,7 +351,7 @@ async function completarTemporadaAnterior(leagues, buildId, soloLigas) {
     if (!filtros.length) continue;
     const [torneo, temp, etapa] = filtros[0].key.split('_').map(Number);
     const tempAnt = temp - 1;
-    let faltan = 0, agregados = 0, rondas = 0;
+    let faltan = 0, agregados = 0, rondas = 0, fallas = 0;
     for (let ronda = 1; ronda <= 38; ronda++) {
       if (fichas >= maximo || sinTiempo()) { faltan++; continue; }
       let games;
@@ -368,7 +368,7 @@ async function completarTemporadaAnterior(leagues, buildId, soloLigas) {
         try {
           const data = await getJson(`${SITE}/_next/data/${buildId}/game/${encodeURIComponent(g.url_name)}/${g.id}.json`);
           stats = statsFromStatistics(data?.pageProps?.initialData?.game?.statistics, goles);
-        } catch (e) { faltan++; continue; }
+        } catch (e) { fallas++; continue; }
         const st = {};
         Object.keys(stats).forEach((k) => { st[k] = [stats[k].l || 0, stats[k].v || 0]; });
         arch.partidos.push({ id, liga: league.id, fecha: parseFechaHora(g.start_time), local: g?.teams?.[0]?.name, visitante: g?.teams?.[1]?.name, stats: st });
@@ -377,7 +377,8 @@ async function completarTemporadaAnterior(leagues, buildId, soloLigas) {
       }
       if (DELAY_MS > 0) await sleep(DELAY_MS);
     }
-    arch.ligas[league.id] = { temporada: tempAnt, completo: !faltan && rondas >= 38 };
+    // completa si se recorrieron las 38 fechas sin cortar por tiempo (las fichas que fallan se dan por perdidas)
+    arch.ligas[league.id] = { temporada: tempAnt, completo: !faltan && rondas >= 38, sinDatos: fallas };
     cambios = true;
     console.log(`Temporada anterior ${league.name || league.id}: ${agregados} partidos agregados${faltan ? ' (sigue en la próxima vuelta)' : ' (completa)'}`);
   }
@@ -446,10 +447,10 @@ async function run() {
   // las cargas históricas van solo en las vueltas completas del bucle (no en el pedido manual)
   HIST_FIN = Date.now() + HIST_SEGUNDOS * 1000;
   if (process.env.RAPIDO !== '1' && process.env.UNA_VEZ !== 'true') {
-    try { await completarTemporadaAnterior(leagues, buildId); }
-    catch (err) { console.warn('Falló la temporada anterior:', err.message || err); }
     try { historico = await completarTemporada(leagues, buildId, byId, existing, today); }
     catch (err) { console.warn('Falló el histórico de las ligas europeas:', err.message || err); }
+    try { await completarTemporadaAnterior(leagues, buildId); }
+    catch (err) { console.warn('Falló la temporada anterior:', err.message || err); }
   }
 
   const out = {
