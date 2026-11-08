@@ -41443,12 +41443,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -41457,14 +41457,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "villarreal-vs-getafe",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
-        "arbitro": "Carlos Muñiz",
-        "infoDia": "2026-11-08"
+        "arbitro": "Carlos Muñiz"
       }
     },
     {
@@ -41488,12 +41487,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -41502,14 +41501,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "celta-vigo-vs-levante",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "1'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Abanca-Balaídos",
-        "arbitro": "Miguel Ortiz",
-        "infoDia": "2026-11-08"
+        "arbitro": "Miguel Ortiz"
       }
     },
     {
@@ -41710,12 +41708,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -41726,7 +41724,7 @@
         "gameUrlName": "inter-milan-vs-como",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "20'",
+        "minuto": "32'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
