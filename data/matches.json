@@ -41299,7 +41299,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 4,
           "v": 4
         },
         "tarjetas": {
@@ -41307,11 +41307,11 @@
           "v": 0
         },
         "corners": {
-          "l": 7,
+          "l": 8,
           "v": 1
         },
         "tirosArco": {
-          "l": 7,
+          "l": 9,
           "v": 6
         },
         "atajadas": {
@@ -41327,7 +41327,7 @@
         "gameUrlName": "manchester-united-vs-aston-villa",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "86'",
+        "minuto": "90+7'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Old Trafford",
@@ -41427,7 +41427,7 @@
       "local": "Villarreal CF",
       "visitante": "Getafe CF",
       "fechaHora": "2026-11-08T14:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -41439,7 +41439,7 @@
           "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
@@ -41457,9 +41457,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "villarreal-vs-getafe",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+1'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
@@ -41471,7 +41471,7 @@
       "local": "Celta de Vigo",
       "visitante": "Levante UD",
       "fechaHora": "2026-11-08T14:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -41501,9 +41501,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "celta-vigo-vs-levante",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "43'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Abanca-Balaídos",
@@ -41724,7 +41724,7 @@
         "gameUrlName": "inter-milan-vs-como",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "54'",
+        "minuto": "60'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
