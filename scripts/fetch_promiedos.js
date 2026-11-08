@@ -57,7 +57,8 @@ function sleep(ms) {
 
 async function getText(url) {
   if (!fetchImpl) throw new Error('No hay un fetch disponible en este entorno.');
-  const res = await fetchImpl(url, { headers: HEADERS });
+  // tope de 20 s por pedido: si Promiedos no responde, se sigue (antes podía quedar colgado)
+  const res = await fetchImpl(url, { headers: HEADERS, signal: AbortSignal.timeout(20000) });
   if (!res.ok) throw new Error(`Fetch failed ${res.status} for ${url}`);
   return res.text();
 }
@@ -289,7 +290,7 @@ async function completarTemporada(leagues, buildId, byId, existing, today) {
   for (const league of leagues) {
     if (!HISTORICO_LIGAS.includes(league.id) || !league.url_name) continue;
     if (estado[league.id] === today) continue;
-    if (fichas >= HISTORICO_MAX) break;
+    if (fichas >= HISTORICO_MAX || sinTiempo()) break;
     let page;
     try {
       page = await getJson(`${SITE}/_next/data/${buildId}/league/${encodeURIComponent(league.url_name)}/${league.id}.json`);
@@ -297,14 +298,14 @@ async function completarTemporada(leagues, buildId, byId, existing, today) {
     const filtros = (page?.pageProps?.data?.games?.filters || []).filter((f) => f.key && f.key !== 'latest' && /^\d+_\d+_\d+_-?\d+$/.test(f.key));
     let faltan = 0, agregados = 0;
     for (const f of filtros) {
-      if (fichas >= HISTORICO_MAX) { faltan++; continue; }
+      if (fichas >= HISTORICO_MAX || sinTiempo()) { faltan++; continue; }
       let games;
       try { games = (await getJson(`${API}/league/games/${league.id}/${encodeURIComponent(f.key)}`))?.games || []; }
       catch (e) { faltan++; continue; }
       collectTeams(games, EQUIPOS);
       for (const g of games) {
         if (g?.status?.enum !== 3 || byId.has(`promiedos_${g.id}`)) continue;
-        if (fichas >= HISTORICO_MAX) { faltan++; break; }
+        if (fichas >= HISTORICO_MAX || sinTiempo()) { faltan++; break; }
         const m = normalizeMatch(g, league);
         await enrichWithDetail(m, buildId, null, today);
         byId.set(m.id, m);
@@ -326,6 +327,10 @@ async function completarTemporada(leagues, buildId, byId, existing, today) {
 const ANTERIOR_LIGAS = ['h', 'bb', 'bh'];
 const ANTERIOR_PATH = path.join(__dirname, '..', 'data', 'temporada_anterior.json');
 const ANTERIOR_MAX = Number(process.env.ANTERIOR_MAX || 400);
+// Tiempo máximo por vuelta para las cargas históricas (no deben frenar la actualización en vivo)
+const HIST_SEGUNDOS = Number(process.env.HIST_SEGUNDOS || 75);
+let HIST_FIN = 0;
+const sinTiempo = () => Date.now() > HIST_FIN;
 async function completarTemporadaAnterior(leagues, buildId) {
   const arch = fs.existsSync(ANTERIOR_PATH) ? JSON.parse(fs.readFileSync(ANTERIOR_PATH, 'utf8')) : { ligas: {}, partidos: [] };
   const ya = new Set(arch.partidos.map((p) => p.id));
@@ -336,7 +341,7 @@ async function completarTemporadaAnterior(leagues, buildId) {
     if (!league.url_name) continue;
     const info = arch.ligas[league.id] || {};
     if (info.completo) continue;
-    if (fichas >= ANTERIOR_MAX) break;
+    if (fichas >= ANTERIOR_MAX || sinTiempo()) break;
     let filtros;
     try {
       const page = await getJson(`${SITE}/_next/data/${buildId}/league/${encodeURIComponent(league.url_name)}/${league.id}.json`);
@@ -347,7 +352,7 @@ async function completarTemporadaAnterior(leagues, buildId) {
     const tempAnt = temp - 1;
     let faltan = 0, agregados = 0, rondas = 0;
     for (let ronda = 1; ronda <= 38; ronda++) {
-      if (fichas >= ANTERIOR_MAX) { faltan++; continue; }
+      if (fichas >= ANTERIOR_MAX || sinTiempo()) { faltan++; continue; }
       let games;
       try { games = (await getJson(`${API}/league/games/${league.id}/${torneo}_${tempAnt}_${etapa}_${ronda}`))?.games || []; }
       catch (e) { faltan++; continue; }
@@ -355,7 +360,7 @@ async function completarTemporadaAnterior(leagues, buildId) {
       for (const g of games) {
         const id = `promiedos_${g.id}`;
         if (g?.status?.enum !== 3 || ya.has(id)) continue;
-        if (fichas >= ANTERIOR_MAX) { faltan++; break; }
+        if (fichas >= ANTERIOR_MAX || sinTiempo()) { faltan++; break; }
         const sc = Array.isArray(g.scores) ? g.scores : [0, 0];
         const goles = { l: sc[0] || 0, v: sc[1] || 0 };
         let stats;
@@ -431,7 +436,9 @@ async function run() {
   allMatches.forEach((m) => byId.set(m.id, m));
 
   let historico = existing.historico;
-  if (process.env.RAPIDO !== '1') {
+  // las cargas históricas van solo en las vueltas completas del bucle (no en el pedido manual)
+  HIST_FIN = Date.now() + HIST_SEGUNDOS * 1000;
+  if (process.env.RAPIDO !== '1' && process.env.UNA_VEZ !== 'true') {
     try { historico = await completarTemporada(leagues, buildId, byId, existing, today); }
     catch (err) { console.warn('Falló el histórico de las ligas europeas:', err.message || err); }
     try { await completarTemporadaAnterior(leagues, buildId); }
