@@ -41573,7 +41573,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
@@ -41581,11 +41581,11 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 5
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "atajadas": {
@@ -41601,7 +41601,7 @@
         "gameUrlName": "napoli-vs-lazio",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "48'",
+        "minuto": "60'",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadio Diego Armando Maradona",
