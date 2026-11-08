@@ -41520,7 +41520,7 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 1,
@@ -41532,10 +41532,10 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 2
+          "v": 4
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         }
       },
@@ -41547,7 +41547,7 @@
         "gameUrlName": "atletico-madrid-vs-barcelona",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "59'",
+        "minuto": "71'",
         "ronda": "Fecha 12",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
@@ -41744,18 +41744,18 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "corners": {
-          "l": 1,
-          "v": 10
+          "l": 3,
+          "v": 12
         },
         "tirosArco": {
           "l": 4,
-          "v": 5
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 2
         }
       },
@@ -41767,7 +41767,7 @@
         "gameUrlName": "fiorentina-vs-juventus",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "71'",
+        "minuto": "83'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Artemio Franchi",
