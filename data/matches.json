@@ -41356,15 +41356,15 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 3
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -41374,14 +41374,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "elche-vs-real-betis",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "35'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
-        "arbitro": "César Soto",
-        "infoDia": "2026-11-08"
+        "arbitro": "César Soto"
       }
     },
     {
@@ -41570,7 +41569,7 @@
       "visitante": "Lazio",
       "fechaHora": "2026-11-08T08:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -41578,19 +41577,19 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 4,
-          "v": 5
+          "l": 6,
+          "v": 6
         },
         "tirosArco": {
-          "l": 5,
-          "v": 4
+          "l": 6,
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
-          "v": 4
+          "l": 5,
+          "v": 5
         }
       },
       "source": {
@@ -41599,9 +41598,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "napoli-vs-lazio",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "66'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadio Diego Armando Maradona",
