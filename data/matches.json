@@ -41431,11 +41431,11 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "corners": {
@@ -41443,7 +41443,7 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 0
         },
         "atajadas": {
@@ -41459,7 +41459,7 @@
         "gameUrlName": "villarreal-vs-getafe",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "74'",
+        "minuto": "80'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
@@ -41483,7 +41483,7 @@
           "v": 2
         },
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 1
         },
         "tirosArco": {
@@ -41503,7 +41503,7 @@
         "gameUrlName": "celta-vigo-vs-levante",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "69'",
+        "minuto": "75'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Abanca-Balaídos",
