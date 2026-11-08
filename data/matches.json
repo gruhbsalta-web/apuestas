@@ -41749,7 +41749,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "tirosArco": {
           "l": 0,
@@ -41766,14 +41766,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "fiorentina-vs-juventus",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Artemio Franchi",
-        "arbitro": "Andrea Colombo",
-        "infoDia": "2026-11-08"
+        "arbitro": "A. Colombo"
       }
     },
     {
