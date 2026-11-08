@@ -12,11 +12,11 @@ name: Update matches from Promiedos
 # Los datos se guardan en cada vuelta en la rama "datos" (la app con llave los lee
 # de ahi al instante). La pagina publicada (master) se actualiza cada 10 min con
 # partidos en juego, para no pasar el tope de publicaciones por hora de GitHub.
-# Se lanza 4 veces por dia como respaldo (08, 12, 16 y 20 hs Argentina); si ya
+# Se lanza cada 2 h como respaldo (de 08 a 22 hs Argentina); si ya
 # hay una corriendo, la nueva espera en cola y sigue cuando termina la anterior.
 on:
   schedule:
-    - cron: '0 11,15,19,23 * * *'
+    - cron: '0 11,13,15,17,19,21,23,1 * * *'
   workflow_dispatch:
     inputs:
       una_vez:
