@@ -325,13 +325,15 @@ async function completarTemporada(leagues, buildId, byId, existing, today) {
 // data/temporada_anterior.json (la app no la muestra como partidos, solo la usa para el cálculo).
 const ANTERIOR_LIGAS = ['h', 'bb', 'bh'];
 const ANTERIOR_PATH = path.join(__dirname, '..', 'data', 'temporada_anterior.json');
-const ANTERIOR_MAX = Number(process.env.ANTERIOR_MAX || 150);
+const ANTERIOR_MAX = Number(process.env.ANTERIOR_MAX || 400);
 async function completarTemporadaAnterior(leagues, buildId) {
   const arch = fs.existsSync(ANTERIOR_PATH) ? JSON.parse(fs.readFileSync(ANTERIOR_PATH, 'utf8')) : { ligas: {}, partidos: [] };
   const ya = new Set(arch.partidos.map((p) => p.id));
   let fichas = 0, cambios = false;
-  for (const league of leagues) {
-    if (!ANTERIOR_LIGAS.includes(league.id) || !league.url_name) continue;
+  // en el orden de ANTERIOR_LIGAS (Premier primero)
+  const orden = ANTERIOR_LIGAS.map((id) => leagues.find((l) => l.id === id)).filter(Boolean);
+  for (const league of orden) {
+    if (!league.url_name) continue;
     const info = arch.ligas[league.id] || {};
     if (info.completo) continue;
     if (fichas >= ANTERIOR_MAX) break;
