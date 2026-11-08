@@ -479,6 +479,9 @@
   .badge.media{background:#173B4D;color:var(--live);}
   .badge.mediabaja{background:#3D3416;color:var(--accent);}
   .badge.baja{background:#4A2220;color:#F0A39D;}
+  .tabla-quien{width:100%;margin-top:10px;border-collapse:collapse;font-size:13px;}
+  .tabla-quien th,.tabla-quien td{padding:5px 4px;text-align:right;border-bottom:1px solid var(--line, #2a3a33);}
+  .tabla-quien th:first-child,.tabla-quien td:first-child{text-align:left;}
   .prob-form{margin:4px 0 12px;padding:10px 12px;border-radius:12px;background:var(--surface-2);font-size:13px;color:var(--muted);line-height:1.45;}
   .prob-form b.pct{font-family:var(--ff-num);font-size:20px;color:var(--text);margin-right:4px;}
   .prob-form .valor{color:var(--good);font-weight:700;}
@@ -960,9 +963,11 @@ function distrib(lam, r, max){
   else { const q = r / (r + lam); p[0] = Math.pow(q, r); for(let i=1;i<=max;i++) p[i] = p[i-1] * (i - 1 + r) / i * (1 - q); }
   return p;
 }
-function probEstadistica(bet, m){
+function probEstadistica(bet, m, previo){
   if(!m || !m.stats || !bet) return null;
-  const st = matchStatus(m);
+  // previo: como se veía antes del partido (para apuestas ya definidas, cargadas antes de esto)
+  if(previo) m = Object.assign({}, m, {stats: emptyStats(), finPartido: false});
+  const st = previo ? {frac: 0} : matchStatus(m);
   const resta = m.finPartido ? 0 : Math.max(0, 1 - (st.frac || 0));
   if(bet.tipo === "ganador"){
     const x = esperados(m, "goles");
@@ -993,8 +998,11 @@ function asegurarProbCarga(){
   state.bets.forEach(b=>{
     if(b.probCarga != null && b.probCasa != null) return;
     const m = state.matches.find(x=>x.id === b.matchId);
-    if(!m || m.finPartido) return;
-    if(b.probCarga == null){ const r = probEstadistica(b, m); if(r){ b.probCarga = Math.round(r.p * 1000) / 1000; cambio = true; } }
+    if(!m) return;
+    // apuestas ya definidas de antes: se calcula como estaba antes del partido
+    const previo = !!m.finPartido;
+    if(previo) b.probPrevia = true;
+    if(b.probCarga == null){ const r = probEstadistica(b, m, previo); if(r){ b.probCarga = Math.round(r.p * 1000) / 1000; cambio = true; } }
     if(b.probCasa == null){ const c = probCasa(b); if(c){ b.probCasa = Math.round(c.p * 1000) / 1000; cambio = true; } }
   });
   if(cambio) save();
@@ -2446,15 +2454,23 @@ function renderTerminados(){
 // Sólo cuenta apuestas ya decididas (G o P); las pendientes todavía no definen nada.
 // ---------- Resumen: quién acierta más, La Fija o BetWarrior ----------
 // Error cuadrático medio (Brier): 0 es perfecto; 0.25 es lo mismo que tirar una moneda.
+function porTipoQuien(xs){
+  const tipos = [...new Set(xs.map(x=>x.tipo))];
+  const filas = tipos.map(t=>{
+    const ys = xs.filter(x=>x.tipo === t), n = ys.length, prom = f=> ys.reduce((s,x)=>s + f(x), 0) / n;
+    return `<tr><td>${t === "ganador" ? "Ganador" : TIPO_LABEL[t]}</td><td>${n}</td><td>${Math.round(prom(x=>x.y)*100)}%</td><td>${Math.round(prom(x=>x.a)*100)}%</td><td>${Math.round(prom(x=>x.c)*100)}%</td></tr>`;
+  }).join("");
+  return `<table class="tabla-quien"><thead><tr><th>Mercado</th><th>N</th><th>Salieron</th><th>La Fija</th><th>Casa</th></tr></thead><tbody>${filas}</tbody></table>`;
+}
 function renderQuienAcierta(decididas){
   const box = document.getElementById("resumen-quien");
   if(!box) return;
-  const xs = decididas.filter(({bet})=>bet.probCarga != null && bet.probCasa != null).map(({bet, r})=>({a: bet.probCarga, c: bet.probCasa, y: r.estado === "G" ? 1 : 0, tipo: bet.tipo}));
+  const xs = decididas.filter(({bet})=>bet.probCarga != null && bet.probCasa != null).map(({bet, r})=>({a: bet.probCarga, c: bet.probCasa, y: r.estado === "G" ? 1 : 0, tipo: bet.tipo, previa: !!bet.probPrevia}));
   const conContra = state.bets.filter(b=>b.cuotaContra > 1);
   const margenes = [...new Set(state.bets.map(b=>b.tipo))].map(t=>{ const m = margenMedido(t); return m ? `${t === "ganador" ? "Ganador" : TIPO_LABEL[t]} ${Math.round(m.m*100)}% (${m.n})` : null; }).filter(Boolean);
   let cuerpo;
   if(xs.length < 5){
-    cuerpo = `<div class="bet-sub">Se completa a medida que se definan apuestas cargadas desde ahora (va ${xs.length} de 5 mínimo). Cada apuesta guarda al cargarla el % de La Fija y el de BetWarrior sin margen.</div>`;
+    cuerpo = `<div class="bet-sub">Hacen falta al menos 5 apuestas definidas (van ${xs.length}).</div>`;
   } else {
     const n = xs.length, prom = f=> xs.reduce((s,x)=>s + f(x), 0) / n;
     const bA = prom(x=>(x.a - x.y)**2), bC = prom(x=>(x.c - x.y)**2);
@@ -2465,7 +2481,9 @@ function renderQuienAcierta(decididas){
         <div class="box"><div class="lbl">BetWarrior decía</div><div class="val">${Math.round(prom(x=>x.c)*100)}%</div></div>
       </div>
       <div class="bet-sub" style="margin-top:8px">Error (0 perfecto, 0.25 moneda): La Fija <b>${bA.toFixed(3)}</b> · BetWarrior <b>${bC.toFixed(3)}</b> → ${bA < bC ? "acierta más <b>La Fija</b>" : bA > bC ? "acierta más <b>BetWarrior</b>" : "empatan"} (${n} apuestas).
-      ${conValor.length ? `<br>Apuestas donde La Fija veía valor: ${conValor.length}, salieron ${gv} (${Math.round(gv/conValor.length*100)}%).` : ""}</div>`;
+      ${xs.some(x=>x.previa) ? `<br>Las apuestas cargadas antes de este cálculo se evaluaron con lo que se sabía antes de cada partido (si la hiciste en vivo, no cuenta lo que ya había pasado).` : ""}
+      ${conValor.length ? `<br>Apuestas donde La Fija veía valor: ${conValor.length}, salieron ${gv} (${Math.round(gv/conValor.length*100)}%).` : ""}</div>
+      ${porTipoQuien(xs)}`;
   }
   box.innerHTML = `<h3>¿Quién acierta más?</h3>${cuerpo}
     <div class="bet-sub" style="margin-top:8px">Margen de BetWarrior ${margenes.length ? "medido: " + margenes.join(" · ") : "estimado por mercado (se mide solo cuando cargues 3 o más apuestas de un tipo con la cuota del lado contrario)"}.${conContra.length && !margenes.length ? ` Van ${conContra.length}.` : ""}</div>`;
