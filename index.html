@@ -964,16 +964,28 @@ function distrib(lam, r, max){
   else { const q = r / (r + lam); p[0] = Math.pow(q, r); for(let i=1;i<=max;i++) p[i] = p[i-1] * (i - 1 + r) / i * (1 - q); }
   return p;
 }
+// Parte del partido que falta según cuánto se jugó, con el reparto real entre tiempos
+// (medido en 134 partidos con foto del entretiempo): en el 2do tiempo hay más tarjetas
+// (63%) y tiros al arco (55%; las atajadas salen de los tiros). Goles (53%) y corners (52%)
+// están casi parejos y se dejan en 50%. Dentro de cada tiempo se reparte parejo.
+const SEGUNDO_T = {tarjetas:0.63, tirosArco:0.55, atajadas:0.55};
+function restaDe(k, frac){
+  const s2 = SEGUNDO_T[k] ?? 0.5;
+  if(frac >= 1) return 0;
+  if(frac <= 0.5) return s2 + (1 - s2) * (0.5 - frac) / 0.5;
+  return s2 * (1 - frac) / 0.5;
+}
 function probEstadistica(bet, m, previo){
   if(!m || !m.stats || !bet) return null;
   // previo: como se veía antes del partido (para apuestas ya definidas, cargadas antes de esto)
   if(previo) m = Object.assign({}, m, {stats: emptyStats(), finPartido: false});
   const st = previo ? {frac: 0} : matchStatus(m);
-  const resta = m.finPartido ? 0 : Math.max(0, 1 - (st.frac || 0));
+  const fr = Math.min(1, Math.max(0, st.frac || 0));
+  const resta = k => m.finPartido ? 0 : restaDe(k, fr);
   if(bet.tipo === "ganador"){
     const x = esperados(m, "goles");
     const gl = m.stats.goles.l || 0, gv = m.stats.goles.v || 0;
-    const pl = distrib(x.l * resta, x.r, 15), pv = distrib(x.v * resta, x.r, 15);
+    const pl = distrib(x.l * resta("goles"), x.r, 15), pv = distrib(x.v * resta("goles"), x.r, 15);
     let gana = 0, emp = 0, pierde = 0;
     pl.forEach((a,i)=>pv.forEach((b,j)=>{ const d = (gl+i) - (gv+j); if(d > 0) gana += a*b; else if(d === 0) emp += a*b; else pierde += a*b; }));
     const p = bet.pick === "local" ? gana : bet.pick === "empate" ? emp : bet.pick === "visitante" ? pierde : null;
@@ -982,7 +994,7 @@ function probEstadistica(bet, m, previo){
   if(!TIPO_LABEL[bet.tipo] || !isFinite(bet.linea)) return null;
   const x = esperados(m, bet.tipo), s = m.stats[bet.tipo] || {l:0, v:0};
   const MAX = 45, sl = s.l || 0, sv = s.v || 0, lin = bet.linea;
-  const pl = distrib(x.l * resta, x.r, MAX), pv = distrib(x.v * resta, x.r, MAX);
+  const pl = distrib(x.l * resta(bet.tipo), x.r, MAX), pv = distrib(x.v * resta(bet.tipo), x.r, MAX);
   const masDe = (base, arr)=> arr.reduce((a,p,i)=> a + (base + i > lin ? p : 0), 0);
   let pMas;
   if(bet.alcance === "local") pMas = masDe(sl, pl);
