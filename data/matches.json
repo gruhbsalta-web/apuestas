@@ -41392,7 +41392,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "corners": {
@@ -41414,9 +41414,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-sociedad-vs-rayo-vallecano",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Municipal de Anoeta",
