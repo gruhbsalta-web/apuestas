@@ -439,10 +439,10 @@ async function run() {
   // las cargas históricas van solo en las vueltas completas del bucle (no en el pedido manual)
   HIST_FIN = Date.now() + HIST_SEGUNDOS * 1000;
   if (process.env.RAPIDO !== '1' && process.env.UNA_VEZ !== 'true') {
-    try { historico = await completarTemporada(leagues, buildId, byId, existing, today); }
-    catch (err) { console.warn('Falló el histórico de las ligas europeas:', err.message || err); }
     try { await completarTemporadaAnterior(leagues, buildId); }
     catch (err) { console.warn('Falló la temporada anterior:', err.message || err); }
+    try { historico = await completarTemporada(leagues, buildId, byId, existing, today); }
+    catch (err) { console.warn('Falló el histórico de las ligas europeas:', err.message || err); }
   }
 
   const out = {
