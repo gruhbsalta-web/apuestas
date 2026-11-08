@@ -40512,19 +40512,19 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "tirosArco": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
           "l": 2,
@@ -40539,7 +40539,7 @@
         "gameUrlName": "instituto-ac-cordoba-vs-newell's-old-boys",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "56'",
+        "minuto": "68'",
         "ronda": "Fecha 16",
         "tv": "ESPN Premium",
         "estadio": "Estadio Juan Domingo Perón",
