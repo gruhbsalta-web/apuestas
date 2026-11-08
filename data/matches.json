@@ -41300,7 +41300,7 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
           "l": 0,
@@ -41312,7 +41312,7 @@
         },
         "tirosArco": {
           "l": 5,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
           "l": 1,
@@ -41325,9 +41325,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "manchester-united-vs-aston-villa",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "53'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Old Trafford",
@@ -41459,7 +41459,7 @@
         "gameUrlName": "villarreal-vs-getafe",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "4'",
+        "minuto": "13'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
@@ -41503,7 +41503,7 @@
         "gameUrlName": "celta-vigo-vs-levante",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "1'",
+        "minuto": "10'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Abanca-Balaídos",
@@ -41724,7 +41724,7 @@
         "gameUrlName": "inter-milan-vs-como",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "32'",
+        "minuto": "44'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
