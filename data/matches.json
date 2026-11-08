@@ -41128,7 +41128,7 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 0,
@@ -41151,7 +41151,7 @@
         "gameUrlName": "sunderland-vs-chelsea",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "52'",
+        "minuto": "57'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stadium of Light",
@@ -41175,8 +41175,8 @@
           "v": 2
         },
         "corners": {
-          "l": 0,
-          "v": 5
+          "l": 1,
+          "v": 6
         },
         "tirosArco": {
           "l": 1,
@@ -41195,7 +41195,7 @@
         "gameUrlName": "ipswich-vs-bournemouth",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "60'",
+        "minuto": "65'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Portman Road",
@@ -41216,11 +41216,11 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 2,
-          "v": 5
+          "v": 6
         },
         "tirosArco": {
           "l": 4,
@@ -41239,7 +41239,7 @@
         "gameUrlName": "crystal-palace-vs-liverpool",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "56'",
+        "minuto": "61'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "Selhurst Park",
@@ -41283,7 +41283,7 @@
         "gameUrlName": "brighton-vs-brentford",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "56'",
+        "minuto": "61'",
         "ronda": "Fecha 10",
         "tv": "Disney+ Premium",
         "estadio": "American Express Community Stadium",
@@ -41414,14 +41414,13 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-sociedad-vs-rayo-vallecano",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "4'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Municipal de Anoeta",
-        "arbitro": "Juan Martínez",
-        "infoDia": "2026-11-08"
+        "arbitro": "Juan Martínez"
       }
     },
     {
@@ -41621,14 +41620,14 @@
         },
         "corners": {
           "l": 6,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 6,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 6
         }
       },
@@ -41640,7 +41639,7 @@
         "gameUrlName": "monza-vs-atalanta",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "63'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "U-Power Stadium",
@@ -41684,7 +41683,7 @@
         "gameUrlName": "genoa-vs-ac-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "62'",
         "ronda": "Fecha 11",
         "tv": "Disney+ Premium",
         "estadio": "Stadio Comunale Luigi Ferraris",
