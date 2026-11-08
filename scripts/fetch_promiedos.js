@@ -319,6 +319,63 @@ async function completarTemporada(leagues, buildId, byId, existing, today) {
   return estado;
 }
 
+// ---------- Temporada anterior de Premier, La Liga y Serie A (solo para afinar los %) ----------
+// Promiedos arma la clave de cada fecha como <torneo>_<temporada>_<etapa>_<fecha>; la temporada
+// anterior es la misma clave con temporada - 1. Se guarda aparte, compacta, en
+// data/temporada_anterior.json (la app no la muestra como partidos, solo la usa para el cálculo).
+const ANTERIOR_LIGAS = ['h', 'bb', 'bh'];
+const ANTERIOR_PATH = path.join(__dirname, '..', 'data', 'temporada_anterior.json');
+const ANTERIOR_MAX = Number(process.env.ANTERIOR_MAX || 150);
+async function completarTemporadaAnterior(leagues, buildId) {
+  const arch = fs.existsSync(ANTERIOR_PATH) ? JSON.parse(fs.readFileSync(ANTERIOR_PATH, 'utf8')) : { ligas: {}, partidos: [] };
+  const ya = new Set(arch.partidos.map((p) => p.id));
+  let fichas = 0, cambios = false;
+  for (const league of leagues) {
+    if (!ANTERIOR_LIGAS.includes(league.id) || !league.url_name) continue;
+    const info = arch.ligas[league.id] || {};
+    if (info.completo) continue;
+    if (fichas >= ANTERIOR_MAX) break;
+    let filtros;
+    try {
+      const page = await getJson(`${SITE}/_next/data/${buildId}/league/${encodeURIComponent(league.url_name)}/${league.id}.json`);
+      filtros = (page?.pageProps?.data?.games?.filters || []).filter((f) => /^\d+_\d+_\d+_\d+$/.test(f.key || ''));
+    } catch (e) { console.warn(`Temporada anterior ${league.id}: no se pudo leer la liga`, e.message || e); continue; }
+    if (!filtros.length) continue;
+    const [torneo, temp, etapa] = filtros[0].key.split('_').map(Number);
+    const tempAnt = temp - 1;
+    let faltan = 0, agregados = 0, rondas = 0;
+    for (let ronda = 1; ronda <= 38; ronda++) {
+      if (fichas >= ANTERIOR_MAX) { faltan++; continue; }
+      let games;
+      try { games = (await getJson(`${API}/league/games/${league.id}/${torneo}_${tempAnt}_${etapa}_${ronda}`))?.games || []; }
+      catch (e) { faltan++; continue; }
+      if (games.length) rondas++;
+      for (const g of games) {
+        const id = `promiedos_${g.id}`;
+        if (g?.status?.enum !== 3 || ya.has(id)) continue;
+        if (fichas >= ANTERIOR_MAX) { faltan++; break; }
+        const sc = Array.isArray(g.scores) ? g.scores : [0, 0];
+        const goles = { l: sc[0] || 0, v: sc[1] || 0 };
+        let stats;
+        try {
+          const data = await getJson(`${SITE}/_next/data/${buildId}/game/${encodeURIComponent(g.url_name)}/${g.id}.json`);
+          stats = statsFromStatistics(data?.pageProps?.initialData?.game?.statistics, goles);
+        } catch (e) { faltan++; continue; }
+        const st = {};
+        Object.keys(stats).forEach((k) => { st[k] = [stats[k].l || 0, stats[k].v || 0]; });
+        arch.partidos.push({ id, liga: league.id, fecha: parseFechaHora(g.start_time), local: g?.teams?.[0]?.name, visitante: g?.teams?.[1]?.name, stats: st });
+        ya.add(id); fichas++; agregados++; cambios = true;
+        if (DELAY_MS > 0) await sleep(DELAY_MS);
+      }
+      if (DELAY_MS > 0) await sleep(DELAY_MS);
+    }
+    arch.ligas[league.id] = { temporada: tempAnt, completo: !faltan && rondas >= 38 };
+    cambios = true;
+    console.log(`Temporada anterior ${league.name || league.id}: ${agregados} partidos agregados${faltan ? ' (sigue en la próxima vuelta)' : ' (completa)'}`);
+  }
+  if (cambios) fs.writeFileSync(ANTERIOR_PATH, JSON.stringify(arch), 'utf8');
+}
+
 async function run() {
   const buildId = await resolveBuildId();
   BUILD_ID = buildId;
@@ -375,6 +432,8 @@ async function run() {
   if (process.env.RAPIDO !== '1') {
     try { historico = await completarTemporada(leagues, buildId, byId, existing, today); }
     catch (err) { console.warn('Falló el histórico de las ligas europeas:', err.message || err); }
+    try { await completarTemporadaAnterior(leagues, buildId); }
+    catch (err) { console.warn('Falló la temporada anterior:', err.message || err); }
   }
 
   const out = {
