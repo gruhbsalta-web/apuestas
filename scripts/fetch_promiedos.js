@@ -331,17 +331,18 @@ const ANTERIOR_MAX = Number(process.env.ANTERIOR_MAX || 400);
 const HIST_SEGUNDOS = Number(process.env.HIST_SEGUNDOS || 75);
 let HIST_FIN = 0;
 const sinTiempo = () => Date.now() > HIST_FIN;
-async function completarTemporadaAnterior(leagues, buildId) {
+async function completarTemporadaAnterior(leagues, buildId, soloLigas) {
+  const maximo = process.env.SOLO_ANTERIOR === '1' ? Infinity : ANTERIOR_MAX;
   const arch = fs.existsSync(ANTERIOR_PATH) ? JSON.parse(fs.readFileSync(ANTERIOR_PATH, 'utf8')) : { ligas: {}, partidos: [] };
   const ya = new Set(arch.partidos.map((p) => p.id));
   let fichas = 0, cambios = false;
   // en el orden de ANTERIOR_LIGAS (Premier primero)
-  const orden = ANTERIOR_LIGAS.map((id) => leagues.find((l) => l.id === id)).filter(Boolean);
+  const orden = (soloLigas && soloLigas.length ? soloLigas : ANTERIOR_LIGAS).map((id) => leagues.find((l) => l.id === id)).filter(Boolean);
   for (const league of orden) {
     if (!league.url_name) continue;
     const info = arch.ligas[league.id] || {};
     if (info.completo) continue;
-    if (fichas >= ANTERIOR_MAX || sinTiempo()) break;
+    if (fichas >= maximo || sinTiempo()) break;
     let filtros;
     try {
       const page = await getJson(`${SITE}/_next/data/${buildId}/league/${encodeURIComponent(league.url_name)}/${league.id}.json`);
@@ -352,7 +353,7 @@ async function completarTemporadaAnterior(leagues, buildId) {
     const tempAnt = temp - 1;
     let faltan = 0, agregados = 0, rondas = 0;
     for (let ronda = 1; ronda <= 38; ronda++) {
-      if (fichas >= ANTERIOR_MAX || sinTiempo()) { faltan++; continue; }
+      if (fichas >= maximo || sinTiempo()) { faltan++; continue; }
       let games;
       try { games = (await getJson(`${API}/league/games/${league.id}/${torneo}_${tempAnt}_${etapa}_${ronda}`))?.games || []; }
       catch (e) { faltan++; continue; }
@@ -360,7 +361,7 @@ async function completarTemporadaAnterior(leagues, buildId) {
       for (const g of games) {
         const id = `promiedos_${g.id}`;
         if (g?.status?.enum !== 3 || ya.has(id)) continue;
-        if (fichas >= ANTERIOR_MAX || sinTiempo()) { faltan++; break; }
+        if (fichas >= maximo || sinTiempo()) { faltan++; break; }
         const sc = Array.isArray(g.scores) ? g.scores : [0, 0];
         const goles = { l: sc[0] || 0, v: sc[1] || 0 };
         let stats;
@@ -389,6 +390,12 @@ async function run() {
   console.log('buildId:', buildId);
 
   const leagues = await resolveLeagues(buildId);
+  // Corrida aparte (workflow "Cargar temporada anterior"): solo baja la temporada anterior, sin tope de tiempo
+  if (process.env.SOLO_ANTERIOR === '1') {
+    HIST_FIN = Date.now() + 5 * 3600 * 1000;
+    await completarTemporadaAnterior(leagues, buildId, (process.env.LIGAS || '').split(',').filter(Boolean));
+    return;
+  }
   console.log(`Ligas a recorrer: ${leagues.length}`);
 
   const today = todayInArgentina();
