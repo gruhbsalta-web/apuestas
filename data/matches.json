@@ -41299,7 +41299,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "tarjetas": {
@@ -41311,12 +41311,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 3
         },
         "atajadas": {
           "l": 1,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -41327,7 +41327,7 @@
         "gameUrlName": "manchester-united-vs-aston-villa",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "33'",
+        "minuto": "45'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Old Trafford",
@@ -41384,7 +41384,7 @@
       "visitante": "Rayo Vallecano",
       "fechaHora": "2026-11-08T12:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -41396,7 +41396,7 @@
         },
         "corners": {
           "l": 7,
-          "v": 5
+          "v": 6
         },
         "tirosArco": {
           "l": 3,
@@ -41413,9 +41413,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-sociedad-vs-rayo-vallecano",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "88'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Municipal de Anoeta",
@@ -41698,7 +41698,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -41710,7 +41710,7 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -41724,14 +41724,13 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "inter-milan-vs-como",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "14'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
-        "arbitro": "Daniele Chiffi",
-        "infoDia": "2026-11-08"
+        "arbitro": "Daniele Chiffi"
       }
     },
     {
