@@ -41344,7 +41344,7 @@
       "local": "Elche CF",
       "visitante": "Real Betis",
       "fechaHora": "2026-11-08T10:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -41374,9 +41374,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "elche-vs-real-betis",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "44'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Manuel Martínez Valero",
@@ -47064,12 +47064,5293 @@
         "estadio": "Riyadh Air Metropolitano",
         "arbitro": "Adrián Cordero Vega"
       }
+    },
+    {
+      "id": "promiedos_ehfafcd",
+      "local": "Valencia CF",
+      "visitante": "Real Betis",
+      "fechaHora": "2026-08-25T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 8,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "valencia-vs-real-betis",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio de Mestalla",
+        "arbitro": "Jon Ander González Esteban"
+      }
+    },
+    {
+      "id": "promiedos_ehfafcb",
+      "local": "Real Madrid",
+      "visitante": "Real Sociedad",
+      "fechaHora": "2026-08-26T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-madrid-vs-real-sociedad",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Santiago Bernabéu",
+        "arbitro": "Mateo Busquets"
+      }
+    },
+    {
+      "id": "promiedos_ehfafbb",
+      "local": "Celta de Vigo",
+      "visitante": "Osasuna",
+      "fechaHora": "2026-08-27T15:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "celta-vigo-vs-osasuna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "DSports",
+        "estadio": "Estadio Abanca-Balaídos",
+        "arbitro": "Miguel Sesma"
+      }
+    },
+    {
+      "id": "promiedos_ehfafbj",
+      "local": "FC Barcelona",
+      "visitante": "Athletic Club",
+      "fechaHora": "2026-08-27T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 12,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 8
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "barcelona-vs-athletic-bilbao",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "DSports",
+        "estadio": "Spotify Camp Nou",
+        "arbitro": "Miguel Ortiz"
+      }
+    },
+    {
+      "id": "promiedos_ehfaijc",
+      "local": "Rayo Vallecano",
+      "visitante": "Alavés",
+      "fechaHora": "2026-08-20T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "rayo-vallecano-vs-alaves",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Ontime Butarque",
+        "arbitro": "José Luis Munuera Montero"
+      }
+    },
+    {
+      "id": "promiedos_ehfaijh",
+      "local": "Real Betis",
+      "visitante": "Real Sociedad",
+      "fechaHora": "2026-08-21T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-betis-vs-real-sociedad",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": " , DSports",
+        "estadio": "Estadio La Cartuja de Sevilla",
+        "arbitro": "Isidro Díaz de Mera Escuderos"
+      }
+    },
+    {
+      "id": "promiedos_ehfajaa",
+      "local": "Athletic Club",
+      "visitante": "Sevilla FC",
+      "fechaHora": "2026-08-22T12:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 4
+        },
+        "corners": {
+          "l": 10,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "athletic-bilbao-vs-sevilla",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": " , DSports",
+        "estadio": "Estadio de San Mamés",
+        "arbitro": "César Soto"
+      }
+    },
+    {
+      "id": "promiedos_ehfaijb",
+      "local": "Valencia CF",
+      "visitante": "Celta de Vigo",
+      "fechaHora": "2026-08-22T14:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 1,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "valencia-vs-celta-vigo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": " , DSports",
+        "estadio": "Estadio de Mestalla",
+        "arbitro": "Gil Manzano"
+      }
+    },
+    {
+      "id": "promiedos_ehfaijg",
+      "local": "RCD Espanyol",
+      "visitante": "Real Madrid",
+      "fechaHora": "2026-08-22T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 1
+        },
+        "corners": {
+          "l": 0,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "espanyol-vs-real-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": " , DSports",
+        "estadio": "RCDE Stadium",
+        "arbitro": "José Sánchez"
+      }
+    },
+    {
+      "id": "promiedos_ehfaijj",
+      "local": "Atlético de Madrid",
+      "visitante": "Villarreal CF",
+      "fechaHora": "2026-08-23T12:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "atletico-madrid-vs-villarreal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Riyadh Air Metropolitano",
+        "arbitro": "Alejandro Hernández"
+      }
+    },
+    {
+      "id": "promiedos_ehfaijf",
+      "local": "Getafe CF",
+      "visitante": "Racing de Santander",
+      "fechaHora": "2026-08-23T14:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 8,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "getafe-vs-racing-santander",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Coliseum",
+        "arbitro": "Juan Martínez"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiji",
+      "local": "Elche CF",
+      "visitante": "FC Barcelona",
+      "fechaHora": "2026-08-23T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 5
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 3,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "elche-vs-barcelona",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio Manuel Martínez Valero",
+        "arbitro": "Alejandro Quintero"
+      }
+    },
+    {
+      "id": "promiedos_ehfaijd",
+      "local": "Osasuna",
+      "visitante": "Levante UD",
+      "fechaHora": "2026-08-24T14:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 9,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "osasuna-vs-levante",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio El Sadar",
+        "arbitro": "Víctor García Verdura"
+      }
+    },
+    {
+      "id": "promiedos_ehfaije",
+      "local": "Málaga CF",
+      "visitante": "RC Deportivo",
+      "fechaHora": "2026-08-24T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 4
+        },
+        "corners": {
+          "l": 7,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "malaga-vs-deportivo-la-coruna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": " , DSports",
+        "estadio": "Estadio La Rosaleda",
+        "arbitro": "Javier Alberola Rojas"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiie",
+      "local": "Racing de Santander",
+      "visitante": "Elche CF",
+      "fechaHora": "2026-08-28T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "racing-santander-vs-elche",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Campos de Sport de El Sardinero",
+        "arbitro": "Carlos Muñiz"
+      }
+    },
+    {
+      "id": "promiedos_ehfaija",
+      "local": "Alavés",
+      "visitante": "Villarreal CF",
+      "fechaHora": "2026-08-28T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "alaves-vs-villarreal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio de Mendizorroza",
+        "arbitro": "Isidro Díaz de Mera Escuderos"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiig",
+      "local": "Levante UD",
+      "visitante": "Real Betis",
+      "fechaHora": "2026-08-29T12:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "levante-vs-real-betis",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Estadio Ciudad de Valencia",
+        "arbitro": "Ricardo De Burgos Bengoetxea"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiic",
+      "local": "Real Sociedad",
+      "visitante": "RCD Espanyol",
+      "fechaHora": "2026-08-29T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 7,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 8
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-sociedad-vs-espanyol",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "DSports",
+        "estadio": "Estadio Municipal de Anoeta",
+        "arbitro": "Manuel Orellana"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiib",
+      "local": "Sevilla FC",
+      "visitante": "Atlético de Madrid",
+      "fechaHora": "2026-08-29T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "sevilla-vs-atletico-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "DSports",
+        "estadio": "Estadio Ramón Sánchez Pizjuán",
+        "arbitro": "Javier Alberola Rojas"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiid",
+      "local": "Real Madrid",
+      "visitante": "Málaga CF",
+      "fechaHora": "2026-08-30T12:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-madrid-vs-malaga",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "DSports",
+        "estadio": "Santiago Bernabéu",
+        "arbitro": "Juan Martínez"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiii",
+      "local": "RC Deportivo",
+      "visitante": "Valencia CF",
+      "fechaHora": "2026-08-30T14:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "deportivo-la-coruna-vs-valencia",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "DSports",
+        "estadio": "Estadio Abanca-Riazor",
+        "arbitro": "Miguel Ortiz"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiij",
+      "local": "Celta de Vigo",
+      "visitante": "Athletic Club",
+      "fechaHora": "2026-08-30T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "celta-vigo-vs-athletic-bilbao",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium, Flow Sports 2",
+        "estadio": "Estadio Abanca-Balaídos",
+        "arbitro": "Mateo Busquets"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiif",
+      "local": "Osasuna",
+      "visitante": "Getafe CF",
+      "fechaHora": "2026-08-31T14:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 4
+        },
+        "corners": {
+          "l": 1,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "osasuna-vs-getafe",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "DSports",
+        "estadio": "Estadio El Sadar",
+        "arbitro": "Jon Ander González Esteban"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiih",
+      "local": "FC Barcelona",
+      "visitante": "Rayo Vallecano",
+      "fechaHora": "2026-08-31T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 9,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "barcelona-vs-rayo-vallecano",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Spotify Camp Nou",
+        "arbitro": "Francisco Hernández"
+      }
+    },
+    {
+      "id": "promiedos_ehfaihi",
+      "local": "Real Betis",
+      "visitante": "Real Madrid",
+      "fechaHora": "2026-09-04T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 4
+        },
+        "corners": {
+          "l": 6,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 8,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-betis-vs-real-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio La Cartuja de Sevilla",
+        "arbitro": "Alejandro Hernández"
+      }
+    },
+    {
+      "id": "promiedos_ehfaihj",
+      "local": "Athletic Club",
+      "visitante": "Atlético de Madrid",
+      "fechaHora": "2026-09-05T11:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "athletic-bilbao-vs-atletico-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio de San Mamés",
+        "arbitro": "José Luis Munuera Montero"
+      }
+    },
+    {
+      "id": "promiedos_ehfaihd",
+      "local": "Rayo Vallecano",
+      "visitante": "Racing de Santander",
+      "fechaHora": "2026-09-05T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "rayo-vallecano-vs-racing-santander",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "DSports",
+        "estadio": "Estadio Municipal de Butarquel",
+        "arbitro": "Alejandro Quintero"
+      }
+    },
+    {
+      "id": "promiedos_ehfaihb",
+      "local": "Villarreal CF",
+      "visitante": "RC Deportivo",
+      "fechaHora": "2026-09-05T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "villarreal-vs-deportivo-la-coruna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "DSports",
+        "estadio": "Estadio de la Cerámica",
+        "arbitro": "Gil Manzano"
+      }
+    },
+    {
+      "id": "promiedos_ehfaihc",
+      "local": "Valencia CF",
+      "visitante": "FC Barcelona",
+      "fechaHora": "2026-09-06T11:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 5
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 1,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 10
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "valencia-vs-barcelona",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "DSports",
+        "estadio": "Estadio de Mestalla",
+        "arbitro": "Isidro Díaz de Mera Escuderos"
+      }
+    },
+    {
+      "id": "promiedos_ehfaihe",
+      "local": "Málaga CF",
+      "visitante": "Levante UD",
+      "fechaHora": "2026-09-06T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "malaga-vs-levante",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio La Rosaleda",
+        "arbitro": "Lluís Bestard"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiia",
+      "local": "Alavés",
+      "visitante": "Osasuna",
+      "fechaHora": "2026-09-06T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "alaves-vs-osasuna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "DSports",
+        "estadio": "Estadio de Mendizorroza",
+        "arbitro": "José Sánchez"
+      }
+    },
+    {
+      "id": "promiedos_ehfaihg",
+      "local": "RCD Espanyol",
+      "visitante": "Sevilla FC",
+      "fechaHora": "2026-09-06T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 0,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "espanyol-vs-sevilla",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "DSports",
+        "estadio": "RCDE Stadium",
+        "arbitro": "Miguel Sesma"
+      }
+    },
+    {
+      "id": "promiedos_ehfaihf",
+      "local": "Getafe CF",
+      "visitante": "Celta de Vigo",
+      "fechaHora": "2026-09-07T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "getafe-vs-celta-vigo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Coliseum",
+        "arbitro": "César Soto"
+      }
+    },
+    {
+      "id": "promiedos_ehfaihh",
+      "local": "Elche CF",
+      "visitante": "Real Sociedad",
+      "fechaHora": "2026-09-07T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 8
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "elche-vs-real-sociedad",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Manuel Martínez Valero",
+        "arbitro": "Miguel Ortiz"
+      }
+    },
+    {
+      "id": "promiedos_ehfaigd",
+      "local": "Sevilla FC",
+      "visitante": "Valencia CF",
+      "fechaHora": "2026-09-11T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "sevilla-vs-valencia",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Estadio Ramón Sánchez Pizjuán",
+        "arbitro": "Mateo Busquets"
+      }
+    },
+    {
+      "id": "promiedos_ehfaigf",
+      "local": "Racing de Santander",
+      "visitante": "Alavés",
+      "fechaHora": "2026-09-12T09:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 4,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 7,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "racing-santander-vs-alaves",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "DSports",
+        "estadio": "Campos de Sport de El Sardinero",
+        "arbitro": "Javier Alberola Rojas"
+      }
+    },
+    {
+      "id": "promiedos_ehfaigg",
+      "local": "Osasuna",
+      "visitante": "RCD Espanyol",
+      "fechaHora": "2026-09-12T11:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "osasuna-vs-espanyol",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "DSports",
+        "estadio": "Estadio El Sadar",
+        "arbitro": "Lluís Bestard"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiha",
+      "local": "Athletic Club",
+      "visitante": "Elche CF",
+      "fechaHora": "2026-09-12T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 7,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "athletic-bilbao-vs-elche",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio de San Mamés",
+        "arbitro": "Manuel Orellana"
+      }
+    },
+    {
+      "id": "promiedos_ehfaige",
+      "local": "Real Madrid",
+      "visitante": "Rayo Vallecano",
+      "fechaHora": "2026-09-12T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 11,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-madrid-vs-rayo-vallecano",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Santiago Bernabéu",
+        "arbitro": "Víctor García Verdura"
+      }
+    },
+    {
+      "id": "promiedos_ehfaigi",
+      "local": "Celta de Vigo",
+      "visitante": "Málaga CF",
+      "fechaHora": "2026-09-13T09:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 1,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "celta-vigo-vs-malaga",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Abanca-Balaídos",
+        "arbitro": "Carlos Muñiz"
+      }
+    },
+    {
+      "id": "promiedos_ehfaigh",
+      "local": "Levante UD",
+      "visitante": "FC Barcelona",
+      "fechaHora": "2026-09-13T11:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "levante-vs-barcelona",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "DSports",
+        "estadio": "Estadio Ciudad de Valencia",
+        "arbitro": "Jon Ander González Esteban"
+      }
+    },
+    {
+      "id": "promiedos_ehfaigj",
+      "local": "Getafe CF",
+      "visitante": "RC Deportivo",
+      "fechaHora": "2026-09-13T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "getafe-vs-deportivo-la-coruna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "DSports",
+        "estadio": "Estadio Coliseum",
+        "arbitro": "Ricardo De Burgos Bengoetxea"
+      }
+    },
+    {
+      "id": "promiedos_ehfaigc",
+      "local": "Real Sociedad",
+      "visitante": "Atlético de Madrid",
+      "fechaHora": "2026-09-13T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 9,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-sociedad-vs-atletico-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "DSports",
+        "estadio": "Estadio Municipal de Anoeta",
+        "arbitro": "Juan Martínez"
+      }
+    },
+    {
+      "id": "promiedos_ehfaigb",
+      "local": "Villarreal CF",
+      "visitante": "Real Betis",
+      "fechaHora": "2026-09-14T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 7,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 12
+        },
+        "atajadas": {
+          "l": 10,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "villarreal-vs-real-betis",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Estadio de la Cerámica",
+        "arbitro": "Francisco Hernández"
+      }
+    },
+    {
+      "id": "promiedos_ehfaifb",
+      "local": "Real Sociedad",
+      "visitante": "Celta de Vigo",
+      "fechaHora": "2026-09-03T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 11,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-sociedad-vs-celta-vigo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "DSports",
+        "estadio": "Estadio Municipal de Anoeta",
+        "arbitro": "Víctor García Verdura"
+      }
+    },
+    {
+      "id": "promiedos_ehfaifc",
+      "local": "Rayo Vallecano",
+      "visitante": "RCD Espanyol",
+      "fechaHora": "2026-09-15T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "rayo-vallecano-vs-espanyol",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio Municipal de Butarquel",
+        "arbitro": "Isidro Díaz de Mera Escuderos"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiga",
+      "local": "Alavés",
+      "visitante": "Valencia CF",
+      "fechaHora": "2026-09-15T15:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 4
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "alaves-vs-valencia",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "DSports",
+        "estadio": "Estadio de Mendizorroza",
+        "arbitro": "Miguel Sesma"
+      }
+    },
+    {
+      "id": "promiedos_ehfaifg",
+      "local": "Elche CF",
+      "visitante": "Real Madrid",
+      "fechaHora": "2026-09-15T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "elche-vs-real-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "DSports",
+        "estadio": "Estadio Manuel Martínez Valero",
+        "arbitro": "Gil Manzano"
+      }
+    },
+    {
+      "id": "promiedos_ehfaifh",
+      "local": "RC Deportivo",
+      "visitante": "Sevilla FC",
+      "fechaHora": "2026-09-16T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 4,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "deportivo-la-coruna-vs-sevilla",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Abanca-Riazor",
+        "arbitro": "Alejandro Hernández"
+      }
+    },
+    {
+      "id": "promiedos_ehfaifj",
+      "local": "Atlético de Madrid",
+      "visitante": "Osasuna",
+      "fechaHora": "2026-09-16T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 8,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "atletico-madrid-vs-osasuna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Riyadh Air Metropolitano",
+        "arbitro": "Francisco Hernández"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiff",
+      "local": "FC Barcelona",
+      "visitante": "Racing de Santander",
+      "fechaHora": "2026-09-16T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 7,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 18,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "barcelona-vs-racing-santander",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "Disney+ Premium",
+        "estadio": "Spotify Camp Nou",
+        "arbitro": "José Luis Munuera Montero"
+      }
+    },
+    {
+      "id": "promiedos_ehfaifi",
+      "local": "Real Betis",
+      "visitante": "Getafe CF",
+      "fechaHora": "2026-09-17T14:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 5
+        },
+        "corners": {
+          "l": 4,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-betis-vs-getafe",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "DSports",
+        "estadio": "Estadio Benito Villamarín",
+        "arbitro": "José Sánchez"
+      }
+    },
+    {
+      "id": "promiedos_ehfaifd",
+      "local": "Málaga CF",
+      "visitante": "Villarreal CF",
+      "fechaHora": "2026-09-17T16:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 1
+        },
+        "corners": {
+          "l": 4,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "malaga-vs-villarreal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio La Rosaleda",
+        "arbitro": "M. Chua"
+      }
+    },
+    {
+      "id": "promiedos_ehfaieg",
+      "local": "RCD Espanyol",
+      "visitante": "Elche CF",
+      "fechaHora": "2026-09-18T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "espanyol-vs-elche",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "DSports",
+        "estadio": "RCDE Stadium",
+        "arbitro": "Jon Ander González Esteban"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiee",
+      "local": "Osasuna",
+      "visitante": "Rayo Vallecano",
+      "fechaHora": "2026-09-19T09:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "osasuna-vs-rayo-vallecano",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio El Sadar",
+        "arbitro": "Manuel Orellana"
+      }
+    },
+    {
+      "id": "promiedos_ehfaifa",
+      "local": "Athletic Club",
+      "visitante": "Alavés",
+      "fechaHora": "2026-09-19T11:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 5,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "athletic-bilbao-vs-alaves",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "DSports",
+        "estadio": "Estadio de San Mamés",
+        "arbitro": "Víctor García Verdura"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiei",
+      "local": "Celta de Vigo",
+      "visitante": "Racing de Santander",
+      "fechaHora": "2026-09-19T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 5
+        },
+        "corners": {
+          "l": 3,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "celta-vigo-vs-racing-santander",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Abanca-Balaídos",
+        "arbitro": "Ricardo De Burgos Bengoetxea"
+      }
+    },
+    {
+      "id": "promiedos_ehfaied",
+      "local": "Sevilla FC",
+      "visitante": "FC Barcelona",
+      "fechaHora": "2026-09-19T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 1,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "sevilla-vs-barcelona",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "DSports",
+        "estadio": "Estadio Ramón Sánchez Pizjuán",
+        "arbitro": "Juan Martínez"
+      }
+    },
+    {
+      "id": "promiedos_ehfaief",
+      "local": "Getafe CF",
+      "visitante": "Málaga CF",
+      "fechaHora": "2026-09-20T09:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "getafe-vs-malaga",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Coliseum",
+        "arbitro": "Javier Alberola Rojas"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiej",
+      "local": "Atlético de Madrid",
+      "visitante": "Real Madrid",
+      "fechaHora": "2026-09-20T11:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "atletico-madrid-vs-real-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio Metropolitano Madrid",
+        "arbitro": "Miguel Ortiz"
+      }
+    },
+    {
+      "id": "promiedos_ehfaieb",
+      "local": "Villarreal CF",
+      "visitante": "Levante UD",
+      "fechaHora": "2026-09-20T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "villarreal-vs-levante",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio de la Cerámica",
+        "arbitro": "Mateo Busquets"
+      }
+    },
+    {
+      "id": "promiedos_ehfaieh",
+      "local": "RC Deportivo",
+      "visitante": "Real Betis",
+      "fechaHora": "2026-09-20T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 11,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "deportivo-la-coruna-vs-real-betis",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "DSports",
+        "estadio": "Estadio Abanca-Riazor",
+        "arbitro": "César Soto"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiec",
+      "local": "Valencia CF",
+      "visitante": "Real Sociedad",
+      "fechaHora": "2026-09-20T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 7,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "valencia-vs-real-sociedad",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 7",
+        "tv": "DSports",
+        "estadio": "Estadio de Mestalla",
+        "arbitro": "José Luis Munuera Montero"
+      }
+    },
+    {
+      "id": "promiedos_ehfaidf",
+      "local": "Málaga CF",
+      "visitante": "RCD Espanyol",
+      "fechaHora": "2026-10-09T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 5
+        },
+        "corners": {
+          "l": 8,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "malaga-vs-espanyol",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 8",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio La Rosaleda",
+        "arbitro": "Francisco Hernández"
+      }
+    },
+    {
+      "id": "promiedos_ehfaiea",
+      "local": "Alavés",
+      "visitante": "Atlético de Madrid",
+      "fechaHora": "2026-10-10T11:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 0,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "alaves-vs-atletico-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 8",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio de Mendizorroza",
+        "arbitro": "Alejandro Quintero"
+      }
+    },
+    {
+      "id": "promiedos_ehfaidh",
+      "local": "FC Barcelona",
+      "visitante": "Getafe CF",
+      "fechaHora": "2026-10-10T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 9,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "barcelona-vs-getafe",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 8",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Spotify Camp Nou",
+        "arbitro": "Gil Manzano"
+      }
+    },
+    {
+      "id": "promiedos_ehfaidc",
+      "local": "Real Madrid",
+      "visitante": "Villarreal CF",
+      "fechaHora": "2026-10-10T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-madrid-vs-villarreal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 8",
+        "tv": "DSports",
+        "estadio": "Santiago Bernabéu",
+        "arbitro": "Isidro Díaz de Mera Escuderos"
+      }
+    },
+    {
+      "id": "promiedos_ehfaidi",
+      "local": "Elche CF",
+      "visitante": "Celta de Vigo",
+      "fechaHora": "2026-10-11T09:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 5,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "elche-vs-celta-vigo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 8",
+        "tv": "DSports",
+        "estadio": "Estadio Manuel Martínez Valero",
+        "arbitro": "Javier Alberola Rojas"
+      }
+    },
+    {
+      "id": "promiedos_ehfaidb",
+      "local": "Real Sociedad",
+      "visitante": "RC Deportivo",
+      "fechaHora": "2026-10-11T11:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 7,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-sociedad-vs-deportivo-la-coruna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 8",
+        "tv": "DSports",
+        "estadio": "Estadio Municipal de Anoeta",
+        "arbitro": "Miguel Sesma"
+      }
+    },
+    {
+      "id": "promiedos_ehfaidj",
+      "local": "Real Betis",
+      "visitante": "Osasuna",
+      "fechaHora": "2026-10-11T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 5
+        },
+        "corners": {
+          "l": 8,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-betis-vs-osasuna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 8",
+        "tv": "DSports",
+        "estadio": "Estadio La Cartuja de Sevilla",
+        "arbitro": "Carlos Muñiz"
+      }
+    },
+    {
+      "id": "promiedos_ehfaide",
+      "local": "Racing de Santander",
+      "visitante": "Valencia CF",
+      "fechaHora": "2026-10-11T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 8,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 9
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "racing-santander-vs-valencia",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 8",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Campos de Sport de El Sardinero",
+        "arbitro": "Lluís Bestard"
+      }
+    },
+    {
+      "id": "promiedos_ehfaidg",
+      "local": "Levante UD",
+      "visitante": "Sevilla FC",
+      "fechaHora": "2026-10-12T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 6
+        },
+        "corners": {
+          "l": 5,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "levante-vs-sevilla",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 8",
+        "tv": "DSports",
+        "estadio": "Estadio Ciudad de Valencia",
+        "arbitro": "Adrián Cordero Vega"
+      }
+    },
+    {
+      "id": "promiedos_ehfaici",
+      "local": "RC Deportivo",
+      "visitante": "Levante UD",
+      "fechaHora": "2026-10-16T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "deportivo-la-coruna-vs-levante",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 9",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio Abanca-Riazor",
+        "arbitro": "Manuel Orellana"
+      }
+    },
+    {
+      "id": "promiedos_ehfaich",
+      "local": "RCD Espanyol",
+      "visitante": "Atlético de Madrid",
+      "fechaHora": "2026-10-17T09:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 5
+        },
+        "corners": {
+          "l": 4,
+          "v": 12
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "espanyol-vs-atletico-madrid",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 9",
+        "tv": "DSports",
+        "estadio": "RCDE Stadium",
+        "arbitro": "Alejandro Hernández"
+      }
+    },
+    {
+      "id": "promiedos_ehfaicb",
+      "local": "Villarreal CF",
+      "visitante": "Elche CF",
+      "fechaHora": "2026-10-17T11:15",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 10,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "villarreal-vs-elche",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 9",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio de la Cerámica",
+        "arbitro": "Víctor García Verdura"
+      }
+    },
+    {
+      "id": "promiedos_ehfaida",
+      "local": "Real Betis",
+      "visitante": "FC Barcelona",
+      "fechaHora": "2026-10-17T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 5
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 10
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-betis-vs-barcelona",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 9",
+        "tv": "DSports",
+        "estadio": "Estadio La Cartuja de Sevilla",
+        "arbitro": "Ricardo De Burgos Bengoetxea"
+      }
+    },
+    {
+      "id": "promiedos_ehfaicc",
+      "local": "Valencia CF",
+      "visitante": "Athletic Club",
+      "fechaHora": "2026-10-17T16:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "valencia-vs-athletic-bilbao",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 9",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Estadio de Mestalla",
+        "arbitro": "Adrián Cordero Vega"
+      }
+    },
+    {
+      "id": "promiedos_ehdcdfe",
+      "local": "Inter Milan",
+      "visitante": "Monza",
+      "fechaHora": "2026-08-22T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "inter-milan-vs-monza",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Meazza",
+        "arbitro": "Livio Marinelli"
+      }
+    },
+    {
+      "id": "promiedos_ehdcdfi",
+      "local": "Udinese",
+      "visitante": "Como",
+      "fechaHora": "2026-08-22T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 0
+        },
+        "corners": {
+          "l": 1,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "udinese-vs-como",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "Bluenergy Stadium",
+        "arbitro": "Marco Croce"
+      }
+    },
+    {
+      "id": "promiedos_ehdcdfd",
+      "local": "Genoa",
+      "visitante": "Napoli",
+      "fechaHora": "2026-08-22T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "genoa-vs-napoli",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Comunale Luigi Ferraris",
+        "arbitro": "Marco Di Bello"
+      }
+    },
+    {
+      "id": "promiedos_ehdcdff",
+      "local": "Parma",
+      "visitante": "Cagliari",
+      "fechaHora": "2026-08-22T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "parma-vs-cagliari",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Ennio Tardini",
+        "arbitro": "Daniele Perenzoni"
+      }
+    },
+    {
+      "id": "promiedos_ehdcdfc",
+      "local": "Frosinone",
+      "visitante": "Juventus",
+      "fechaHora": "2026-08-23T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 12
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "frosinone-vs-juventus",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Benito Stirpe",
+        "arbitro": "G. Ayroldi"
+      }
+    },
+    {
+      "id": "promiedos_ehdcdfj",
+      "local": "Venezia",
+      "visitante": "Lecce",
+      "fechaHora": "2026-08-23T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "venezia-vs-lecce",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Pierluigi Penzo",
+        "arbitro": "A. Rapuano"
+      }
+    },
+    {
+      "id": "promiedos_ehdcdfa",
+      "local": "Atalanta",
+      "visitante": "Sassuolo",
+      "fechaHora": "2026-08-23T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 4,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 7,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "atalanta-vs-sassuolo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "Disney+ Premium",
+        "estadio": "New Balance Arena",
+        "arbitro": "Valerio Crezzini"
+      }
+    },
+    {
+      "id": "promiedos_ehdcdfh",
+      "local": "Torino",
+      "visitante": "AC Milan",
+      "fechaHora": "2026-08-23T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "torino-vs-ac-milan",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Olimpico Grande Torino",
+        "arbitro": "Luca Zufferli"
+      }
+    },
+    {
+      "id": "promiedos_ehdcdfb",
+      "local": "Bologna",
+      "visitante": "Lazio",
+      "fechaHora": "2026-08-24T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 4
+        },
+        "corners": {
+          "l": 8,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "bologna-vs-lazio",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Stadio Renato Dall'Ara",
+        "arbitro": "F. Maresca"
+      }
+    },
+    {
+      "id": "promiedos_ehdcdfg",
+      "local": "AS Roma",
+      "visitante": "Fiorentina",
+      "fechaHora": "2026-08-24T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "as-roma-vs-fiorentina",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 1",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Stadio Olimpico (Rome)",
+        "arbitro": "Matteo Marcenaro"
+      }
+    },
+    {
+      "id": "promiedos_ehdchce",
+      "local": "AC Milan",
+      "visitante": "Venezia",
+      "fechaHora": "2026-08-28T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "ac-milan-vs-venezia",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Meazza",
+        "arbitro": "Gianluca Manganiello"
+      }
+    },
+    {
+      "id": "promiedos_ehdchcb",
+      "local": "Sassuolo",
+      "visitante": "Torino",
+      "fechaHora": "2026-08-29T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 4,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "sassuolo-vs-torino",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "MAPEI Stadium - Città del Tricolore",
+        "arbitro": "Davide Di Marco"
+      }
+    },
+    {
+      "id": "promiedos_ehdchcd",
+      "local": "Monza",
+      "visitante": "Udinese",
+      "fechaHora": "2026-08-29T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 3,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "monza-vs-udinese",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "U-Power Stadium",
+        "arbitro": "Claudio Giuseppe Allegretta"
+      }
+    },
+    {
+      "id": "promiedos_ehdchci",
+      "local": "Fiorentina",
+      "visitante": "Frosinone",
+      "fechaHora": "2026-08-29T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 8,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "fiorentina-vs-frosinone",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Artemio Franchi",
+        "arbitro": "Giuseppe Collu"
+      }
+    },
+    {
+      "id": "promiedos_ehdchch",
+      "local": "Juventus",
+      "visitante": "Parma",
+      "fechaHora": "2026-08-29T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 10,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "juventus-vs-parma",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Allianz Stadium",
+        "arbitro": "Francesco Fourneau"
+      }
+    },
+    {
+      "id": "promiedos_ehdchcc",
+      "local": "Napoli",
+      "visitante": "Como",
+      "fechaHora": "2026-08-30T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 2,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "napoli-vs-como",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Diego Armando Maradona",
+        "arbitro": "L. Pairetto"
+      }
+    },
+    {
+      "id": "promiedos_ehdchcg",
+      "local": "Lazio",
+      "visitante": "Genoa",
+      "fechaHora": "2026-08-30T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "lazio-vs-genoa",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Olimpico (Rome)",
+        "arbitro": "Ermanno Feliciani"
+      }
+    },
+    {
+      "id": "promiedos_ehdchcj",
+      "local": "Cagliari",
+      "visitante": "Inter Milan",
+      "fechaHora": "2026-08-30T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 8,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "cagliari-vs-inter-milan",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "Disney+ Premium",
+        "estadio": "Unipol Domus",
+        "arbitro": "Michael Fabbri"
+      }
+    },
+    {
+      "id": "promiedos_ehdchcf",
+      "local": "Lecce",
+      "visitante": "AS Roma",
+      "fechaHora": "2026-08-31T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "lecce-vs-as-roma",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN3 Sudamérica, Disney+ Premium",
+        "estadio": "Stadio Ettore Giardiniero - Via del Mare",
+        "arbitro": "Daniele Chiffi"
+      }
+    },
+    {
+      "id": "promiedos_ehdchda",
+      "local": "Atalanta",
+      "visitante": "Bologna",
+      "fechaHora": "2026-08-31T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 1,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "atalanta-vs-bologna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 2",
+        "tv": "ESPN3 Sudamérica, Disney+ Premium",
+        "estadio": "New Balance Arena",
+        "arbitro": "D. Doveri"
+      }
+    },
+    {
+      "id": "promiedos_ehdchbg",
+      "local": "Genoa",
+      "visitante": "Como",
+      "fechaHora": "2026-09-04T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "genoa-vs-como",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Comunale Luigi Ferraris",
+        "arbitro": "M. Guida"
+      }
+    },
+    {
+      "id": "promiedos_ehdchbi",
+      "local": "Fiorentina",
+      "visitante": "Torino",
+      "fechaHora": "2026-09-05T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "fiorentina-vs-torino",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Stadio Artemio Franchi",
+        "arbitro": "Davide Massa"
+      }
+    },
+    {
+      "id": "promiedos_ehdchbf",
+      "local": "Inter Milan",
+      "visitante": "Napoli",
+      "fechaHora": "2026-09-05T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 10,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "inter-milan-vs-napoli",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Meazza",
+        "arbitro": "Simone Sozza"
+      }
+    },
+    {
+      "id": "promiedos_ehdchbc",
+      "local": "AS Roma",
+      "visitante": "Atalanta",
+      "fechaHora": "2026-09-05T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 14,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 8
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "as-roma-vs-atalanta",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Olimpico (Rome)",
+        "arbitro": "Andrea Colombo"
+      }
+    },
+    {
+      "id": "promiedos_ehdchbd",
+      "local": "Parma",
+      "visitante": "Monza",
+      "fechaHora": "2026-09-06T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "parma-vs-monza",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Ennio Tardini",
+        "arbitro": "Federico La Penna"
+      }
+    },
+    {
+      "id": "promiedos_ehdchbh",
+      "local": "Frosinone",
+      "visitante": "Venezia",
+      "fechaHora": "2026-09-06T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 5,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "frosinone-vs-venezia",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Stadio Benito Stirpe",
+        "arbitro": "Mario Perri"
+      }
+    },
+    {
+      "id": "promiedos_ehdchca",
+      "local": "Bologna",
+      "visitante": "Sassuolo",
+      "fechaHora": "2026-09-06T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 10,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "bologna-vs-sassuolo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Renato Dall'Ara",
+        "arbitro": "Marco Di Bello"
+      }
+    },
+    {
+      "id": "promiedos_ehdchbe",
+      "local": "Juventus",
+      "visitante": "AC Milan",
+      "fechaHora": "2026-09-06T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 7,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "juventus-vs-ac-milan",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Allianz Stadium",
+        "arbitro": "Maurizio Mariani"
+      }
+    },
+    {
+      "id": "promiedos_ehdchbj",
+      "local": "Cagliari",
+      "visitante": "Lecce",
+      "fechaHora": "2026-09-07T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 7,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 8
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "cagliari-vs-lecce",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Unipol Domus",
+        "arbitro": "Juan Luca Sacchi"
+      }
+    },
+    {
+      "id": "promiedos_ehdchbb",
+      "local": "Udinese",
+      "visitante": "Lazio",
+      "fechaHora": "2026-09-07T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "udinese-vs-lazio",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 3",
+        "tv": "Disney+ Premium",
+        "estadio": "Bluenergy Stadium",
+        "arbitro": "Paride Tremolada"
+      }
+    },
+    {
+      "id": "promiedos_ehdchab",
+      "local": "Venezia",
+      "visitante": "Fiorentina",
+      "fechaHora": "2026-09-11T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 2,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 10
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "venezia-vs-fiorentina",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Stadio Pierluigi Penzo",
+        "arbitro": "Francesco Fourneau"
+      }
+    },
+    {
+      "id": "promiedos_ehdchai",
+      "local": "Genoa",
+      "visitante": "Frosinone",
+      "fechaHora": "2026-09-12T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 8,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "genoa-vs-frosinone",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Stadio Comunale Luigi Ferraris",
+        "arbitro": "A. Rapuano"
+      }
+    },
+    {
+      "id": "promiedos_ehdchag",
+      "local": "Lazio",
+      "visitante": "AC Milan",
+      "fechaHora": "2026-09-12T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "lazio-vs-ac-milan",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Olimpico (Rome)",
+        "arbitro": "Matteo Marcenaro"
+      }
+    },
+    {
+      "id": "promiedos_ehdchba",
+      "local": "Atalanta",
+      "visitante": "Cagliari",
+      "fechaHora": "2026-09-12T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 3,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "atalanta-vs-cagliari",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "Disney+ Premium",
+        "estadio": "New Balance Arena",
+        "arbitro": "Marco Croce"
+      }
+    },
+    {
+      "id": "promiedos_ehdchaf",
+      "local": "Lecce",
+      "visitante": "Monza",
+      "fechaHora": "2026-09-13T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 4,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 11
+        },
+        "atajadas": {
+          "l": 9,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "lecce-vs-monza",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Ettore Giardiniero - Via del Mare",
+        "arbitro": "Valerio Crezzini"
+      }
+    },
+    {
+      "id": "promiedos_ehdchae",
+      "local": "Napoli",
+      "visitante": "Bologna",
+      "fechaHora": "2026-09-13T13:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 10,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "napoli-vs-bologna",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Diego Armando Maradona",
+        "arbitro": "Kevin Bonacina"
+      }
+    },
+    {
+      "id": "promiedos_ehdchad",
+      "local": "Sassuolo",
+      "visitante": "Juventus",
+      "fechaHora": "2026-09-13T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 6,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "sassuolo-vs-juventus",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "Disney+ Premium",
+        "estadio": "MAPEI Stadium - Città del Tricolore",
+        "arbitro": "Juan Luca Sacchi"
+      }
+    },
+    {
+      "id": "promiedos_ehdchac",
+      "local": "Torino",
+      "visitante": "AS Roma",
+      "fechaHora": "2026-09-14T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 1,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "torino-vs-as-roma",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Olimpico Grande Torino",
+        "arbitro": "F. Maresca"
+      }
+    },
+    {
+      "id": "promiedos_ehdchaj",
+      "local": "Como",
+      "visitante": "Parma",
+      "fechaHora": "2026-09-14T13:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 11,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "como-vs-parma",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Giuseppe Sinigaglia",
+        "arbitro": "Giuseppe Mucera"
+      }
+    },
+    {
+      "id": "promiedos_ehdchah",
+      "local": "Inter Milan",
+      "visitante": "Udinese",
+      "fechaHora": "2026-09-14T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 5,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 10,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 12,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "inter-milan-vs-udinese",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 4",
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Stadio Giuseppe Meazza",
+        "arbitro": "L. Pairetto"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgjf",
+      "local": "Monza",
+      "visitante": "Sassuolo",
+      "fechaHora": "2026-09-18T15:45",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 8
+        },
+        "atajadas": {
+          "l": 7,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "monza-vs-sassuolo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "U-Power Stadium",
+        "arbitro": "Daniele Perenzoni"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgjb",
+      "local": "Udinese",
+      "visitante": "Cagliari",
+      "fechaHora": "2026-09-19T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 16,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "udinese-vs-cagliari",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "Disney+ Premium",
+        "estadio": "Bluenergy Stadium",
+        "arbitro": "Gianluca Manganiello"
+      }
+    },
+    {
+      "id": "promiedos_ehdchaa",
+      "local": "Bologna",
+      "visitante": "Torino",
+      "fechaHora": "2026-09-19T10:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 3
+        },
+        "corners": {
+          "l": 1,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "bologna-vs-torino",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Renato Dall'Ara",
+        "arbitro": "M. Guida"
+      }
     }
   ],
   "bets": [],
   "capitalInicial": 0,
   "historico": {
     "fhc": "2026-11-08",
-    "h": "2026-11-08"
+    "h": "2026-11-08",
+    "bb": "2026-11-08"
   }
 }
