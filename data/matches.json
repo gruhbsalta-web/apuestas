@@ -41515,15 +41515,15 @@
       "local": "Atlético de Madrid",
       "visitante": "FC Barcelona",
       "fechaHora": "2026-11-08T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -41532,7 +41532,7 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 1,
@@ -41545,9 +41545,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "atletico-madrid-vs-barcelona",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
