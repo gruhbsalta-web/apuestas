@@ -41545,9 +41545,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "atletico-madrid-vs-barcelona",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Fecha 12",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
@@ -41739,7 +41739,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tarjetas": {
@@ -41751,12 +41751,12 @@
           "v": 8
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -41767,7 +41767,7 @@
         "gameUrlName": "fiorentina-vs-juventus",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "53'",
+        "minuto": "59'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Artemio Franchi",
