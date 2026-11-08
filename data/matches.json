@@ -41312,10 +41312,10 @@
         },
         "tirosArco": {
           "l": 7,
-          "v": 5
+          "v": 6
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 5
         }
       },
@@ -41327,7 +41327,7 @@
         "gameUrlName": "manchester-united-vs-aston-villa",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "74'",
+        "minuto": "86'",
         "ronda": "Fecha 10",
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Old Trafford",
@@ -41439,16 +41439,16 @@
           "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -41459,7 +41459,7 @@
         "gameUrlName": "villarreal-vs-getafe",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "33'",
+        "minuto": "45+1'",
         "ronda": "Fecha 12",
         "tv": "DSports",
         "estadio": "Estadio de la Cerámica",
@@ -41483,7 +41483,7 @@
           "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tirosArco": {
@@ -41503,7 +41503,7 @@
         "gameUrlName": "celta-vigo-vs-levante",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "30'",
+        "minuto": "43'",
         "ronda": "Fecha 12",
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio Abanca-Balaídos",
@@ -41704,16 +41704,16 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -41722,9 +41722,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "inter-milan-vs-como",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "54'",
         "ronda": "Fecha 11",
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
