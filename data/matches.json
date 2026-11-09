@@ -41075,7 +41075,7 @@
       "visitante": "Lanús",
       "fechaHora": "2026-11-08T19:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -41104,13 +41104,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "central-cordoba-sde-vs-lanus",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+2'",
-        "ronda": "Fecha 16",
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
-        "estadio": "Estadio Alfredo Terrera",
-        "arbitro": "Álvaro Carranza"
+        "statusShort": "Final",
+        "ronda": "Fecha 16"
       }
     },
     {
