@@ -53513,14 +53513,284 @@
         "estadio": "Stadio Ennio Tardini",
         "arbitro": "G. Ayroldi"
       }
+    },
+    {
+      "id": "promiedos_eiiieib",
+      "local": "Atlanta",
+      "visitante": "Estudiantes",
+      "fechaHora": "2026-11-14T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "atlanta-vs-estudiantes-buenos-aires",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "tv": "LPF Premium",
+        "estadio": "Estadio Don León Kolbovski",
+        "arbitro": "M. Macheroni",
+        "infoDia": "2026-11-12"
+      }
+    },
+    {
+      "id": "promiedos_eiiieic",
+      "local": "Temperley",
+      "visitante": "Ciudad De Bolivar",
+      "fechaHora": "2026-11-14T16:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "temperley-vs-ciudad-de-bolivar",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "tv": "LPF Premium",
+        "estadio": "Estadio Alfredo Martín Beranger",
+        "arbitro": "Pablo Giménez",
+        "infoDia": "2026-11-12"
+      }
+    },
+    {
+      "id": "promiedos_eiiieig",
+      "local": "Colón",
+      "visitante": "Midland",
+      "fechaHora": "2026-11-14T18:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "colon-vs-ferrocarril-midland",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "tv": "LPF Premium",
+        "estadio": "Estadio Brigadier General Estanislao López",
+        "arbitro": "Juan Pablo Loustau",
+        "infoDia": "2026-11-12"
+      }
+    },
+    {
+      "id": "promiedos_eiiieie",
+      "local": "Deportivo Madryn",
+      "visitante": "Deportivo Maipú",
+      "fechaHora": "2026-11-14T19:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "dep.-madryn-vs-deportivo-maipu",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "tv": "LPF Premium",
+        "estadio": "Estadio Abel Sastre",
+        "arbitro": "Bryan Gustavo Ferreyra",
+        "infoDia": "2026-11-12"
+      }
+    },
+    {
+      "id": "promiedos_eiiieif",
+      "local": "Gimnasia de Jujuy",
+      "visitante": "Almirante Brown",
+      "fechaHora": "2026-11-14T20:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "gimnasia-jujuy-vs-almirante-brown",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "tv": "LPF Premium",
+        "estadio": "23 de Agosto (San Salvador de Jujuy)",
+        "arbitro": "Yamil Possi",
+        "infoDia": "2026-11-12"
+      }
+    },
+    {
+      "id": "promiedos_eiggbcj",
+      "local": "Banfield",
+      "visitante": "Boca Juniors",
+      "fechaHora": "2026-11-14T19:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "gea",
+        "leagueName": "Copa Argentina",
+        "country": "Argentina",
+        "gameUrlName": "banfield-vs-boca-juniors",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "tv": "TyC Sports, TyC Sports Play",
+        "estadio": "Estadio Malvinas Argentinas",
+        "arbitro": "Nazareno Arasa",
+        "infoDia": "2026-11-12"
+      }
     }
   ],
   "bets": [],
   "capitalInicial": 0,
   "historico": {
-    "fhc": "2026-11-11",
-    "h": "2026-11-11",
-    "bb": "2026-11-11",
-    "bh": "2026-11-11"
+    "fhc": "2026-11-12",
+    "h": "2026-11-12",
+    "bb": "2026-11-12",
+    "bh": "2026-11-12"
   }
 }
