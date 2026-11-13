@@ -53556,7 +53556,7 @@
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
         "arbitro": "M. Macheroni",
-        "infoDia": "2026-11-12"
+        "infoDia": "2026-11-13"
       }
     },
     {
@@ -53601,7 +53601,7 @@
         "tv": "LPF Premium",
         "estadio": "Estadio Alfredo Martín Beranger",
         "arbitro": "Pablo Giménez",
-        "infoDia": "2026-11-12"
+        "infoDia": "2026-11-13"
       }
     },
     {
@@ -53646,7 +53646,7 @@
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
         "arbitro": "Juan Pablo Loustau",
-        "infoDia": "2026-11-12"
+        "infoDia": "2026-11-13"
       }
     },
     {
@@ -53691,7 +53691,7 @@
         "tv": "LPF Premium",
         "estadio": "Estadio Abel Sastre",
         "arbitro": "Bryan Gustavo Ferreyra",
-        "infoDia": "2026-11-12"
+        "infoDia": "2026-11-13"
       }
     },
     {
@@ -53736,7 +53736,7 @@
         "tv": "LPF Premium",
         "estadio": "23 de Agosto (San Salvador de Jujuy)",
         "arbitro": "Yamil Possi",
-        "infoDia": "2026-11-12"
+        "infoDia": "2026-11-13"
       }
     },
     {
@@ -53781,16 +53781,151 @@
         "tv": "TyC Sports, TyC Sports Play",
         "estadio": "Estadio Malvinas Argentinas",
         "arbitro": "Nazareno Arasa",
-        "infoDia": "2026-11-12"
+        "infoDia": "2026-11-13"
+      }
+    },
+    {
+      "id": "promiedos_eiiiigi",
+      "local": "Deportivo Morón",
+      "visitante": "Colegiales",
+      "fechaHora": "2026-11-15T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "deportivo-moron-vs-colegiales",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "tv": "LPF Premium",
+        "estadio": "Estadio Nuevo Francisco Urbano",
+        "arbitro": "Juan Cruz Robledo",
+        "infoDia": "2026-11-13"
+      }
+    },
+    {
+      "id": "promiedos_eiiicic",
+      "local": "Godoy Cruz",
+      "visitante": "Tristan Suárez",
+      "fechaHora": "2026-11-15T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "godoy-cruz-vs-tristan-suarez",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "tv": "LPF Premium",
+        "estadio": "Estadio Julio César Villagra",
+        "arbitro": "Maximiliano Ramírez",
+        "infoDia": "2026-11-13"
+      }
+    },
+    {
+      "id": "promiedos_eiiiijf",
+      "local": "Ferro Carril Oeste",
+      "visitante": "Gimnasia y Tiro",
+      "fechaHora": "2026-11-15T20:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "ferro-carril-oeste-vs-gimnasia-y-tiro",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "tv": "LPF Premium",
+        "estadio": "Arq. Ricardo Etcheverry (Buenos Aires)",
+        "arbitro": "Adrián Franklin",
+        "infoDia": "2026-11-13"
       }
     }
   ],
   "bets": [],
   "capitalInicial": 0,
   "historico": {
-    "fhc": "2026-11-12",
-    "h": "2026-11-12",
-    "bb": "2026-11-12",
-    "bh": "2026-11-12"
+    "fhc": "2026-11-13",
+    "h": "2026-11-13",
+    "bb": "2026-11-13",
+    "bh": "2026-11-13"
   }
 }
