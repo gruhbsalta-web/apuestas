@@ -53527,7 +53527,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "corners": {
@@ -53551,7 +53551,7 @@
         "gameUrlName": "atlanta-vs-estudiantes-buenos-aires",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "72'",
+        "minuto": "84'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
@@ -53567,23 +53567,23 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 0,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         }
       },
@@ -53595,7 +53595,7 @@
         "gameUrlName": "temperley-vs-ciudad-de-bolivar",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "30'",
+        "minuto": "42'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Alfredo Martín Beranger",
