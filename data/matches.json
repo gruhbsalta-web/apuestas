@@ -53634,7 +53634,7 @@
         "gameUrlName": "colon-vs-ferrocarril-midland",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "56'",
+        "minuto": "65'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
@@ -53650,7 +53650,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -53659,7 +53659,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -53678,8 +53678,11 @@
         "gameUrlName": "dep.-madryn-vs-deportivo-maipu",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "19'",
-        "ronda": null
+        "minuto": "27'",
+        "ronda": null,
+        "tv": "LPF Premium",
+        "estadio": "Estadio Abel Sastre",
+        "arbitro": "Bryan Gustavo Ferreyra"
       }
     },
     {
@@ -53764,7 +53767,7 @@
         "gameUrlName": "banfield-vs-boca-juniors",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "27'",
+        "minuto": "35'",
         "ronda": null,
         "tv": "TyC Sports, TyC Sports Play",
         "estadio": "Estadio Malvinas Argentinas",
