@@ -53527,19 +53527,19 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "corners": {
           "l": 0,
-          "v": 1
+          "v": 4
         },
         "tirosArco": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         }
       },
@@ -53551,7 +53551,7 @@
         "gameUrlName": "atlanta-vs-estudiantes-buenos-aires",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "31'",
+        "minuto": "43'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
