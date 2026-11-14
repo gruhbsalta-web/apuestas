@@ -53531,7 +53531,7 @@
           "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "tirosArco": {
@@ -53551,7 +53551,7 @@
         "gameUrlName": "atlanta-vs-estudiantes-buenos-aires",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "66'",
+        "minuto": "72'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
@@ -53572,7 +53572,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 0,
@@ -53595,7 +53595,7 @@
         "gameUrlName": "temperley-vs-ciudad-de-bolivar",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "24'",
+        "minuto": "30'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Alfredo Martín Beranger",
