@@ -161,7 +161,9 @@ function normalizeMatch(game, league) {
       statusShort: short,
       statusEnum: statusEnum ?? null,
       minuto,
-      ronda: nombreRonda(game.stage_round_name)
+      ronda: nombreRonda(game.stage_round_name),
+      // ganador según Promiedos (1 local, 2 visitante; incluye definiciones por penales)
+      ganador: game.winner === 1 || game.winner === 2 ? game.winner : null
     },
     _needsDetail: finPartido || enJuego,
     _goles: goles,
