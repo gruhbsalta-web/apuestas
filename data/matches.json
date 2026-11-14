@@ -53611,14 +53611,14 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "corners": {
-          "l": 2,
-          "v": 1
+          "l": 4,
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -53766,14 +53766,13 @@
         "leagueName": "Copa Argentina",
         "country": "Argentina",
         "gameUrlName": "banfield-vs-boca-juniors",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "8'",
         "ronda": null,
         "tv": "TyC Sports, TyC Sports Play",
         "estadio": "Estadio Malvinas Argentinas",
-        "arbitro": "Nazareno Arasa",
-        "infoDia": "2026-11-14"
+        "arbitro": "Nazareno Arasa"
       }
     },
     {
