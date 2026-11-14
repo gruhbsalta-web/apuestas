@@ -53646,7 +53646,7 @@
       "stats": {
         "goles": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -53661,7 +53661,7 @@
           "v": 3
         },
         "atajadas": {
-          "l": 3,
+          "l": 2,
           "v": 3
         }
       },
@@ -53673,7 +53673,7 @@
         "gameUrlName": "dep.-madryn-vs-deportivo-maipu",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "80'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
@@ -53718,7 +53718,7 @@
         "gameUrlName": "gimnasia-jujuy-vs-almirante-brown",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "28'",
+        "minuto": "41'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
@@ -53763,7 +53763,7 @@
         "gameUrlName": "banfield-vs-boca-juniors",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "76'",
+        "minuto": "89'",
         "ronda": null,
         "ganador": null,
         "tv": "TyC Sports, TyC Sports Play",
