@@ -53549,14 +53549,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "atlanta-vs-estudiantes-buenos-aires",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "1'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
-        "arbitro": "M. Macheroni",
-        "infoDia": "2026-11-14"
+        "arbitro": "M. Macheroni"
       }
     },
     {
