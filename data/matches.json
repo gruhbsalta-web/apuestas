@@ -53634,7 +53634,7 @@
         "gameUrlName": "colon-vs-ferrocarril-midland",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "83'",
+        "minuto": "90'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
@@ -53646,7 +53646,7 @@
       "local": "Deportivo Madryn",
       "visitante": "Deportivo Maipú",
       "fechaHora": "2026-11-14T19:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -53655,19 +53655,19 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 0,
           "v": 2
         },
         "tirosArco": {
-          "l": 2,
-          "v": 1
+          "l": 3,
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
-          "v": 1
+          "l": 3,
+          "v": 2
         }
       },
       "source": {
@@ -53676,7 +53676,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "dep.-madryn-vs-deportivo-maipu",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": null,
@@ -53765,7 +53765,7 @@
         "leagueName": "Copa Argentina",
         "country": "Argentina",
         "gameUrlName": "banfield-vs-boca-juniors",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": null,
