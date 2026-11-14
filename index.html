@@ -2212,10 +2212,36 @@ function cruceNacional(grupo){
   const filaPartido = m=>{
     const empezo = m.finPartido || matchStatus(m).frac > 0;
     const lado = (n, der)=> `<span class="cz-eq${der ? " der" : ""}">${der ? "" : crest(n)}<span class="cz-n">${escH(n)}</span>${der ? crest(n) : ""}</span>`;
-    const ganador = m.finPartido && m.stats.goles.l !== m.stats.goles.v ? (m.stats.goles.l > m.stats.goles.v ? m.local : m.visitante) : null;
+    const ganador = null; // en ida y vuelta, el que avanza se ve en el global
     return `<div class="cz-cruce">${lado(m.local)}${empezo ? `<span class="cz-res">${m.stats.goles.l} - ${m.stats.goles.v}</span>` : '<span class="cz-vs">vs</span>'}${lado(m.visitante, true)}</div><div class="cz-est">${estadoTxt(m, ganador)}</div>`;
   };
-  const siguientes = Object.entries(grupos).map(([r, ms])=>`<div class="cz-t">${escH(r)}</div>${ms.map(filaPartido).join("")}`).join("");
+  // Mejor ubicado en la temporada regular: misma zona por posición; entre zonas por puntos,
+  // diferencia de gol y goles a favor.
+  const fila = {};
+  [["A", A], ["B", B]].forEach(([z, fs])=>fs.forEach(f=>{ fila[f.equipo] = {z, pos: f.pos, pts: pts(f), dif: Number(f.valores.Ratio) || 0, gf: Number(String(f.valores.Goals || "0").split(":")[0]) || 0}; }));
+  const mejor = (x, y)=>{
+    const a = fila[x], b = fila[y];
+    if(!a || !b) return null;
+    if(a.z === b.z) return a.pos < b.pos ? x : y;
+    if(a.pts !== b.pts) return a.pts > b.pts ? x : y;
+    if(a.dif !== b.dif) return a.dif > b.dif ? x : y;
+    return a.gf >= b.gf ? x : y;
+  };
+  // Cuartos, semis y final del Reducido van a ida y vuelta: el ganador sale del global
+  // (si empatan, pasa el mejor ubicado; no hay penales).
+  const llaveHtml = ms=>{
+    const [x, y] = [ms[0].local, ms[0].visitante];
+    let gx = 0, gy = 0;
+    ms.forEach(m=>{ if(m.local === x){ gx += m.stats.goles.l; gy += m.stats.goles.v; } else { gx += m.stats.goles.v; gy += m.stats.goles.l; } });
+    const terminada = ms.length >= 2 && ms.every(m=>m.finPartido);
+    const pasa = terminada ? (gx > gy ? x : gy > gx ? y : mejor(x, y)) : null;
+    return ms.map(filaPartido).join("") + (terminada ? `<div class="cz-est">Global ${escH(x)} ${gx} - ${gy} ${escH(y)}${pasa ? ` · avanza <b>${escH(pasa)}</b>${gx === gy ? " (mejor ubicado)" : ""}` : ""}</div>` : "");
+  };
+  const siguientes = Object.entries(grupos).map(([r, ms])=>{
+    const llaves = {};
+    ms.forEach(m=>{ const k = [m.local, m.visitante].sort().join("|"); (llaves[k] = llaves[k] || []).push(m); });
+    return `<div class="cz-t">${escH(r)}</div>${Object.values(llaves).map(llaveHtml).join("")}`;
+  }).join("");
   return `<div class="card cz">
     <h3>Final y Reducido</h3>
     <p class="bet-sub" style="margin-top:-4px">${definido ? "Cruces definidos con la tabla final. Los resultados se actualizan solos." : "Provisorio: así quedarían los cruces con la tabla de este momento (todavía hay partidos de la última fecha sin terminar)."}</p>
@@ -2224,7 +2250,7 @@ function cruceNacional(grupo){
     <div class="cz-nota">El perdedor entra directo a cuartos del Reducido.</div>
     <div class="cz-t">Reducido · primera fase · partido único</div>
     ${octavos}
-    <div class="cz-nota">Local el mejor ubicado; si empatan, avanza el local (ventaja deportiva). Cuartos, semis y final del Reducido a ida y vuelta; en la final del Reducido, si hay empate en el global, penales.</div>
+    <div class="cz-nota">Local el mejor ubicado; si empatan, avanza el local (ventaja deportiva). Cuartos, semis y final del Reducido a ida y vuelta; si empatan en el global, avanza el mejor ubicado de la temporada regular (en el Reducido no hay penales). Solo la Final por el 1er ascenso se define por penales.</div>
     ${siguientes}
   </div>`;
 }
