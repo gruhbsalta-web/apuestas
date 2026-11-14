@@ -53576,7 +53576,7 @@
         },
         "corners": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 2,
@@ -53595,7 +53595,7 @@
         "gameUrlName": "temperley-vs-ciudad-de-bolivar",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "68'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Alfredo Martín Beranger",
