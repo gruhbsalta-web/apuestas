@@ -53611,7 +53611,7 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 3
+          "v": 4
         },
         "corners": {
           "l": 4,
@@ -53632,9 +53632,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "colon-vs-ferrocarril-midland",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
@@ -53659,7 +53659,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -53676,14 +53676,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "dep.-madryn-vs-deportivo-maipu",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "10'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Abel Sastre",
-        "arbitro": "Bryan Gustavo Ferreyra",
-        "infoDia": "2026-11-14"
+        "arbitro": "Bryan Gustavo Ferreyra"
       }
     },
     {
@@ -53748,16 +53747,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -53768,7 +53767,7 @@
         "gameUrlName": "banfield-vs-boca-juniors",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "8'",
+        "minuto": "18'",
         "ronda": null,
         "tv": "TyC Sports, TyC Sports Play",
         "estadio": "Estadio Malvinas Argentinas",
