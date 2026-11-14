@@ -53528,19 +53528,19 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -53551,7 +53551,7 @@
         "gameUrlName": "atlanta-vs-estudiantes-buenos-aires",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "84'",
+        "minuto": "90'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
@@ -53563,28 +53563,28 @@
       "local": "Temperley",
       "visitante": "Ciudad De Bolivar",
       "fechaHora": "2026-11-14T16:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 2
         },
         "corners": {
-          "l": 0,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "atajadas": {
-          "l": 2,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -53593,9 +53593,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "temperley-vs-ciudad-de-bolivar",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "42'",
+        "minuto": "45'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Alfredo Martín Beranger",
