@@ -53524,23 +53524,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 1,
           "v": 4
         },
         "tirosArco": {
-          "l": 1,
-          "v": 2
+          "l": 2,
+          "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -53549,9 +53549,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "atlanta-vs-estudiantes-buenos-aires",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "54'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
@@ -53593,14 +53593,13 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "temperley-vs-ciudad-de-bolivar",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "11'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Alfredo Martín Beranger",
-        "arbitro": "Pablo Giménez",
-        "infoDia": "2026-11-14"
+        "arbitro": "Pablo Giménez"
       }
     },
     {
