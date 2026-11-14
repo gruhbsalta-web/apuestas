@@ -53610,11 +53610,11 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tirosArco": {
@@ -53634,7 +53634,7 @@
         "gameUrlName": "colon-vs-ferrocarril-midland",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "32'",
         "ronda": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
