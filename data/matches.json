@@ -53559,7 +53559,7 @@
       "visitante": "Ciudad De Bolivar",
       "fechaHora": "2026-11-14T16:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -53589,12 +53589,7 @@
         "country": "Argentina",
         "gameUrlName": "temperley-vs-ciudad-de-bolivar",
         "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "86'",
-        "ronda": null,
-        "tv": "LPF Premium",
-        "estadio": "Estadio Alfredo Martín Beranger",
-        "arbitro": "Pablo Giménez"
+        "ronda": "Reducido - Primera Fase"
       }
     },
     {
