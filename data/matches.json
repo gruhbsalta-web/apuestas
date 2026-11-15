@@ -53778,12 +53778,12 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 3
         },
         "corners": {
           "l": 5,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 3,
@@ -53802,7 +53802,7 @@
         "gameUrlName": "deportivo-moron-vs-colegiales",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "72'",
+        "minuto": "78'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
