@@ -53817,12 +53817,12 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 3
         },
         "corners": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 5,
@@ -53841,7 +53841,7 @@
         "gameUrlName": "godoy-cruz-vs-tristan-suarez",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "50'",
+        "minuto": "56'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
