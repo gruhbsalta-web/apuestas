@@ -53800,15 +53800,14 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-moron-vs-colegiales",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
-        "arbitro": "Juan Cruz Robledo",
-        "infoDia": "2026-11-15"
+        "arbitro": "Juan Cruz Robledo"
       }
     },
     {
