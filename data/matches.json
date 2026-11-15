@@ -53845,15 +53845,14 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "godoy-cruz-vs-tristan-suarez",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "9'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Julio César Villagra",
-        "arbitro": "Maximiliano Ramírez",
-        "infoDia": "2026-11-15"
+        "arbitro": "Maximiliano Ramírez"
       }
     },
     {
