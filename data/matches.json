@@ -53642,7 +53642,7 @@
       "visitante": "Deportivo Maipú",
       "fechaHora": "2026-11-14T19:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -53671,9 +53671,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "dep.-madryn-vs-deportivo-maipu",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Susp",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
@@ -53690,7 +53690,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -53707,7 +53707,7 @@
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 0
         }
       },
       "source": {
@@ -53718,7 +53718,7 @@
         "gameUrlName": "gimnasia-jujuy-vs-almirante-brown",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "70'",
+        "minuto": "82'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
