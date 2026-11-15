@@ -53878,15 +53878,14 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "ferro-carril-oeste-vs-gimnasia-y-tiro",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "6'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
         "estadio": "Arq. Ricardo Etcheverry (Buenos Aires)",
-        "arbitro": "Adrián Franklin",
-        "infoDia": "2026-11-15"
+        "arbitro": "Adrián Franklin"
       }
     }
   ],
