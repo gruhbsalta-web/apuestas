@@ -53716,14 +53716,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-jujuy-vs-almirante-brown",
-        "statusShort": "Final",
-        "statusEnum": 3,
-        "minuto": "",
-        "ronda": null,
-        "ganador": 1,
-        "tv": "LPF Premium",
-        "estadio": "23 de Agosto (San Salvador de Jujuy)",
-        "arbitro": "Yamil Possi"
+        "statusShort": "2°",
+        "ronda": "Reducido - Primera Fase"
       }
     },
     {
