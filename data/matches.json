@@ -53771,7 +53771,7 @@
       "visitante": "Colegiales",
       "fechaHora": "2026-11-15T15:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -53800,14 +53800,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-moron-vs-colegiales",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": null,
-        "ganador": null,
-        "tv": "LPF Premium",
-        "estadio": "Estadio Nuevo Francisco Urbano",
-        "arbitro": "Juan Cruz Robledo"
+        "statusShort": "Final",
+        "ronda": "Reducido - Primera Fase"
       }
     },
     {
@@ -53828,14 +53822,14 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -53847,7 +53841,7 @@
         "gameUrlName": "godoy-cruz-vs-tristan-suarez",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "27'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
