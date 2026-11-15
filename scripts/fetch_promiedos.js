@@ -379,6 +379,32 @@ async function run() {
   const byId = new Map(keptExisting.map((m) => [m.id, m]));
   allMatches.forEach((m) => byId.set(m.id, m));
 
+  // Partidos que quedaron "en juego" pero ya no aparecen en la lista de Promiedos (por ejemplo,
+  // terminaron después de que el bucle cortó a la noche): se busca su ficha directamente.
+  const traidos = new Set(allMatches.map((m) => m.id));
+  const haceDosHoras = new Date(Date.now() - 2 * 3600 * 1000);
+  const colgados = [...byId.values()].filter((m) => !m.finPartido && !traidos.has(m.id) && m.source?.statusEnum === 2);
+  for (const m of colgados) {
+    const inicio = m.fechaHora ? new Date(`${m.fechaHora}:00-03:00`) : null;
+    if (inicio && inicio > haceDosHoras) continue;
+    try {
+      const gameId = m.id.replace(/^promiedos_/, '');
+      const data = await getJson(`${SITE}/_next/data/${buildId}/game/${encodeURIComponent(m.source.gameUrlName)}/${gameId}.json`);
+      const game = data?.pageProps?.initialData?.game;
+      if (!game) continue;
+      const league = leagues.find((l) => l.id === m.source.leagueId) || { id: m.source.leagueId, name: m.source.leagueName, country: m.source.country };
+      const nuevo = normalizeMatch(game, league);
+      nuevo.stats = statsFromStatistics(game.statistics, nuevo._goles);
+      const exacta = fichaHoraArgentina(data);
+      nuevo.fechaHora = exacta || m.fechaHora;
+      ponerInfo(nuevo, infoDeFicha(game));
+      if (!nuevo.source.ronda && m.source.ronda) nuevo.source.ronda = m.source.ronda;
+      delete nuevo._needsDetail; delete nuevo._goles; delete nuevo._gameUrlName;
+      byId.set(m.id, nuevo);
+      console.log(`Partido trabado actualizado: ${nuevo.local} - ${nuevo.visitante} (${nuevo.source.statusShort})`);
+    } catch (e) { console.warn(`No se pudo revisar el partido trabado ${m.id}:`, e.message || e); }
+  }
+
   let historico = existing.historico;
   // las cargas históricas van solo en las vueltas completas del bucle (no en el pedido manual)
   HIST_FIN = Date.now() + HIST_SEGUNDOS * 1000;

@@ -2200,6 +2200,9 @@ function cruceNacional(grupo){
   const partidoDe = (x, y)=> post.find(m=>(m.local === x && m.visitante === y) || (m.local === y && m.visitante === x));
   const eq = (f, z, der)=> `<span class="cz-eq${der ? " der" : ""}">${der ? "" : crest(f.equipo)}<span class="cz-n">${escH(f.equipo)}<small>${f.pos}º Zona ${z}${nro(f.equipo)}</small></span>${der ? crest(f.equipo) : ""}</span>`;
   const estadoTxt = (m, ganador)=>{
+    const corto = (m.source && m.source.statusShort) || "";
+    if(/susp/i.test(corto)) return '<span style="color:var(--accent)">Suspendido</span>';
+    if(/post|aplaz/i.test(corto)) return '<span style="color:var(--accent)">Postergado</span>';
     const st = matchStatus(m);
     if(m.finPartido) return ganador ? `Final · avanza <b>${escH(ganador)}</b>` : "Final";
     if(st.cls === "live" || st.cls === "ht") return `<span style="color:var(--live)">En vivo ${st.cls === "ht" ? "· entretiempo" : escH(st.label.replace(/~/, ""))}</span>`;
