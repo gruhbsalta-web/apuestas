@@ -53853,7 +53853,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -53880,7 +53880,7 @@
         "gameUrlName": "ferro-carril-oeste-vs-gimnasia-y-tiro",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "6'",
+        "minuto": "18'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
