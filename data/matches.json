@@ -53695,19 +53695,19 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 1,
-          "v": 3
+          "v": 6
         },
         "tirosArco": {
-          "l": 2,
-          "v": 2
+          "l": 4,
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
-          "v": 0
+          "l": 3,
+          "v": 2
         }
       },
       "source": {
@@ -53718,7 +53718,7 @@
         "gameUrlName": "gimnasia-jujuy-vs-almirante-brown",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "82'",
+        "minuto": "88'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
