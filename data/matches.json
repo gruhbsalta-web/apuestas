@@ -53653,15 +53653,15 @@
           "v": 2
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 4
         },
         "tirosArco": {
           "l": 6,
-          "v": 3
+          "v": 6
         },
         "atajadas": {
-          "l": 2,
+          "l": 5,
           "v": 3
         }
       },
@@ -53673,7 +53673,7 @@
         "gameUrlName": "dep.-madryn-vs-deportivo-maipu",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "80'",
+        "minuto": "88'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
@@ -53686,7 +53686,7 @@
       "local": "Gimnasia de Jujuy",
       "visitante": "Almirante Brown",
       "fechaHora": "2026-11-14T20:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -53699,14 +53699,14 @@
         },
         "corners": {
           "l": 1,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         }
       },
@@ -53716,9 +53716,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-jujuy-vs-almirante-brown",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "41'",
+        "minuto": "45'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
@@ -53732,7 +53732,7 @@
       "visitante": "Boca Juniors",
       "fechaHora": "2026-11-14T19:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -53761,11 +53761,11 @@
         "leagueName": "Copa Argentina",
         "country": "Argentina",
         "gameUrlName": "banfield-vs-boca-juniors",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null,
-        "ganador": null,
+        "ganador": 2,
         "tv": "TyC Sports, TyC Sports Play",
         "estadio": "Estadio Malvinas Argentinas",
         "arbitro": "Nazareno Arasa"
