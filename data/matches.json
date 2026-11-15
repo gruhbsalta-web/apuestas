@@ -53687,7 +53687,7 @@
       "visitante": "Almirante Brown",
       "fechaHora": "2026-11-14T20:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -53716,11 +53716,11 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-jujuy-vs-almirante-brown",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "88'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null,
-        "ganador": null,
+        "ganador": 1,
         "tv": "LPF Premium",
         "estadio": "23 de Agosto (San Salvador de Jujuy)",
         "arbitro": "Yamil Possi"
