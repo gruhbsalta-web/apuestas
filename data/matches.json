@@ -53822,7 +53822,7 @@
         },
         "corners": {
           "l": 2,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 5,
@@ -53839,9 +53839,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "godoy-cruz-vs-tristan-suarez",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "50'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
