@@ -53809,7 +53809,7 @@
       "local": "Godoy Cruz",
       "visitante": "Tristan Suárez",
       "fechaHora": "2026-11-15T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -53839,7 +53839,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "godoy-cruz-vs-tristan-suarez",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": null,
