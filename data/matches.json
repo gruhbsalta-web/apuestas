@@ -53810,7 +53810,7 @@
       "visitante": "Tristan Suárez",
       "fechaHora": "2026-11-15T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -53825,12 +53825,12 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 7,
+          "l": 8,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -53839,14 +53839,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "godoy-cruz-vs-tristan-suarez",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "86'",
-        "ronda": null,
-        "ganador": null,
-        "tv": "LPF Premium",
-        "estadio": "Estadio Julio César Villagra",
-        "arbitro": "Maximiliano Ramírez"
+        "statusShort": "Final",
+        "ronda": "Final"
       }
     },
     {
