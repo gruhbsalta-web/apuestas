@@ -53808,7 +53808,7 @@
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
         "arbitro": "Juan Cruz Robledo",
-        "infoDia": "2026-11-14"
+        "infoDia": "2026-11-15"
       }
     },
     {
@@ -53854,7 +53854,7 @@
         "tv": "LPF Premium",
         "estadio": "Estadio Julio César Villagra",
         "arbitro": "Maximiliano Ramírez",
-        "infoDia": "2026-11-14"
+        "infoDia": "2026-11-15"
       }
     },
     {
@@ -53900,16 +53900,16 @@
         "tv": "LPF Premium",
         "estadio": "Arq. Ricardo Etcheverry (Buenos Aires)",
         "arbitro": "Adrián Franklin",
-        "infoDia": "2026-11-14"
+        "infoDia": "2026-11-15"
       }
     }
   ],
   "bets": [],
   "capitalInicial": 0,
   "historico": {
-    "fhc": "2026-11-14",
-    "h": "2026-11-14",
-    "bb": "2026-11-14",
-    "bh": "2026-11-14"
+    "fhc": "2026-11-15",
+    "h": "2026-11-15",
+    "bb": "2026-11-15",
+    "bh": "2026-11-15"
   }
 }
