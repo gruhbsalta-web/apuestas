@@ -53849,7 +53849,7 @@
       "visitante": "Gimnasia y Tiro",
       "fechaHora": "2026-11-15T20:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -53878,14 +53878,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "ferro-carril-oeste-vs-gimnasia-y-tiro",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "85'",
-        "ronda": null,
-        "ganador": null,
-        "tv": "LPF Premium",
-        "estadio": "Arq. Ricardo Etcheverry (Buenos Aires)",
-        "arbitro": "Adrián Franklin"
+        "statusShort": "Final",
+        "ronda": "Reducido - Primera Fase"
       }
     }
   ],
