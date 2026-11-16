@@ -53860,7 +53860,7 @@
           "v": 3
         },
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 0
         },
         "tirosArco": {
@@ -53880,7 +53880,7 @@
         "gameUrlName": "ferro-carril-oeste-vs-gimnasia-y-tiro",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "79'",
+        "minuto": "85'",
         "ronda": null,
         "ganador": null,
         "tv": "LPF Premium",
