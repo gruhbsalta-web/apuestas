@@ -53883,49 +53883,6 @@
       }
     },
     {
-      "id": "promiedos_undefined",
-      "local": "Deportivo Madryn",
-      "visitante": "Gimnasia y Esgrima",
-      "fechaHora": "2026-11-18T00:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "ebj",
-        "leagueName": "Primera Nacional",
-        "country": "Argentina",
-        "gameUrlName": "dep.-madryn-vs-gimnasia-jujuy",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
-        "ronda": null,
-        "ganador": null,
-        "infoDia": "2026-11-16"
-      }
-    },
-    {
       "id": "promiedos_eijbhaa",
       "local": "Vélez Sarsfield",
       "visitante": "Belgrano",
@@ -53968,7 +53925,7 @@
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Jose Amalfitani",
         "arbitro": "Yael Falcón",
-        "infoDia": "2026-11-18"
+        "infoDia": "2026-11-19"
       }
     },
     {
@@ -54013,16 +53970,926 @@
         "ganador": null,
         "tv": "DSports",
         "estadio": "Estadio de San Mamés",
-        "infoDia": "2026-11-18"
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijbgjf",
+      "local": "Defensa y Justicia",
+      "visitante": "Barracas Central",
+      "fechaHora": "2026-11-21T15:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "defensa-y-justicia-vs-barracas-central",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "tv": "ESPN Premium",
+        "estadio": "Estadio Norberto Tito Tomaghello",
+        "arbitro": "Pablo Echavarría",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijbgjj",
+      "local": "Argentinos Juniors",
+      "visitante": "Independiente",
+      "fechaHora": "2026-11-21T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "argentinos-juniors-vs-independiente",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
+        "estadio": "Estadio Diego Armando Maradona",
+        "arbitro": "Jorge Ignacio Baliño",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijehae",
+      "local": "Ciudad De Bolivar",
+      "visitante": "Atlanta",
+      "fechaHora": "2026-11-21T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "estadio": "Estadio Municipal Eva Perón",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijehid",
+      "local": "Colón",
+      "visitante": "Deportivo Morón",
+      "fechaHora": "2026-11-21T17:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "colon-vs-deportivo-moron",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "estadio": "Estadio Brigadier General Estanislao López",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijfegf",
+      "local": "Gimnasia y Esgrima",
+      "visitante": "Deportivo Madryn",
+      "fechaHora": "2026-11-21T21:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "gimnasia-jujuy-vs-dep.-madryn",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "estadio": "23 de Agosto (San Salvador de Jujuy)",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehebjje",
+      "local": "Manchester City",
+      "visitante": "Fulham",
+      "fechaHora": "2026-11-21T09:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "manchester-city-vs-fulham",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Etihad Stadium",
+        "arbitro": "Thomas Bramall",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehebjjb",
+      "local": "Tottenham",
+      "visitante": "Ipswich",
+      "fechaHora": "2026-11-21T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "tottenham-vs-ipswich",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Tottenham Hotspur Stadium",
+        "arbitro": "Robert Jones",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehebjjh",
+      "local": "Coventry",
+      "visitante": "Crystal Palace",
+      "fechaHora": "2026-11-21T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "coventry-vs-crystal-palace",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Coventry Building Society Arena",
+        "arbitro": "Darren England",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehebjji",
+      "local": "Chelsea",
+      "visitante": "Leeds United",
+      "fechaHora": "2026-11-21T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "chelsea-vs-leeds-united",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Stamford Bridge",
+        "arbitro": "Michael Oliver",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehecaaa",
+      "local": "Aston Villa",
+      "visitante": "Sunderland",
+      "fechaHora": "2026-11-21T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "aston-villa-vs-sunderland",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Villa Park",
+        "arbitro": "Andrew Madley",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehecaab",
+      "local": "Bournemouth",
+      "visitante": "Nottingham Forest",
+      "fechaHora": "2026-11-21T12:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "bournemouth-vs-nottingham-forest",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Vitality Stadium",
+        "arbitro": "Adam Herczeg",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehebjjd",
+      "local": "Newcastle United",
+      "visitante": "Arsenal",
+      "fechaHora": "2026-11-21T14:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "newcastle-united-vs-arsenal",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 11",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "St. James' Park",
+        "arbitro": "Chris Kavanagh",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehfahjb",
+      "local": "Alavés",
+      "visitante": "RC Deportivo",
+      "fechaHora": "2026-11-21T10:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "alaves-vs-deportivo-la-coruna",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 13",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Estadio de Mendizorroza",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehfahie",
+      "local": "Rayo Vallecano",
+      "visitante": "Valencia CF",
+      "fechaHora": "2026-11-21T12:15",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "rayo-vallecano-vs-valencia",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 13",
+        "ganador": null,
+        "tv": "DSports",
+        "estadio": "Estadio de Vallecas",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehfahic",
+      "local": "Sevilla FC",
+      "visitante": "Real Betis",
+      "fechaHora": "2026-11-21T14:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "sevilla-vs-real-betis",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 13",
+        "ganador": null,
+        "tv": "DSports",
+        "estadio": "Estadio Ramón Sánchez Pizjuán",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehfahid",
+      "local": "Real Madrid",
+      "visitante": "Celta de Vigo",
+      "fechaHora": "2026-11-21T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "real-madrid-vs-celta-vigo",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 13",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Santiago Bernabéu",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgcg",
+      "local": "Lazio",
+      "visitante": "Lecce",
+      "fechaHora": "2026-11-21T11:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "lazio-vs-lecce",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 12",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Olimpico (Rome)",
+        "arbitro": "Matteo Marcenaro",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgci",
+      "local": "Como",
+      "visitante": "Cagliari",
+      "fechaHora": "2026-11-21T11:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "como-vs-cagliari",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 12",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Giuseppe Sinigaglia",
+        "arbitro": "A. Calzavara",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgcc",
+      "local": "Parma",
+      "visitante": "AS Roma",
+      "fechaHora": "2026-11-21T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "parma-vs-as-roma",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 12",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Ennio Tardini",
+        "arbitro": "Simone Sozza",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgcd",
+      "local": "Napoli",
+      "visitante": "Torino",
+      "fechaHora": "2026-11-21T16:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "napoli-vs-torino",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 12",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Stadio Diego Armando Maradona",
+        "arbitro": "Andrea Rapuano",
+        "infoDia": "2026-11-19"
       }
     }
   ],
   "bets": [],
   "capitalInicial": 0,
   "historico": {
-    "fhc": "2026-11-18",
-    "h": "2026-11-18",
-    "bb": "2026-11-18",
-    "bh": "2026-11-18"
+    "fhc": "2026-11-19",
+    "h": "2026-11-19",
+    "bb": "2026-11-19",
+    "bh": "2026-11-19"
   }
 }
