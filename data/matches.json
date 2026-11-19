@@ -53920,7 +53920,7 @@
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
-        "ronda": null,
+        "ronda": "Octavos de Final",
         "ganador": null,
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Jose Amalfitani",
@@ -54011,7 +54011,7 @@
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
-        "ronda": null,
+        "ronda": "Octavos de Final",
         "ganador": null,
         "tv": "ESPN Premium",
         "estadio": "Estadio Norberto Tito Tomaghello",
@@ -54057,7 +54057,7 @@
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
-        "ronda": null,
+        "ronda": "Octavos de Final",
         "ganador": null,
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Diego Armando Maradona",
@@ -54103,7 +54103,7 @@
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
-        "ronda": null,
+        "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "estadio": "Estadio Municipal Eva Perón",
         "infoDia": "2026-11-19"
@@ -54147,7 +54147,7 @@
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
-        "ronda": null,
+        "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "estadio": "Estadio Brigadier General Estanislao López",
         "infoDia": "2026-11-19"
@@ -54191,7 +54191,7 @@
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
-        "ronda": null,
+        "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "estadio": "23 de Agosto (San Salvador de Jujuy)",
         "infoDia": "2026-11-19"
@@ -54880,6 +54880,280 @@
         "tv": "Disney+ Premium",
         "estadio": "Stadio Diego Armando Maradona",
         "arbitro": "Andrea Rapuano",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijbgjg",
+      "local": "Rosario Central",
+      "visitante": "Gimnasia y Esgrima",
+      "fechaHora": "2026-11-22T16:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "rosario-central-vs-gimnasia-mendoza",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Octavos de Final",
+        "ganador": null,
+        "tv": "ESPN Premium",
+        "estadio": "Estadio Gigante de Arroyito",
+        "arbitro": "Leandro Rey Hilfer",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijbhab",
+      "local": "River Plate",
+      "visitante": "Lanús",
+      "fechaHora": "2026-11-22T19:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "river-plate-vs-lanus",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Octavos de Final",
+        "ganador": null,
+        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
+        "estadio": "Estadio Monumental",
+        "arbitro": "Pablo Dóvalo",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijbhac",
+      "local": "Instituto",
+      "visitante": "Huracán",
+      "fechaHora": "2026-11-22T22:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "instituto-ac-cordoba-vs-huracan",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Octavos de Final",
+        "ganador": null,
+        "tv": "ESPN Premium",
+        "estadio": "Estadio Mario Alberto Kempes",
+        "arbitro": "Darío Herrera",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijbgjh",
+      "local": "Gimnasia y Esgrima",
+      "visitante": "Newell's Old Boys",
+      "fechaHora": "2026-11-23T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "gimnasia-la-plata-vs-newell's-old-boys",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Octavos de Final",
+        "ganador": null,
+        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
+        "estadio": "Estadio Juan Carmelo Zerillo",
+        "arbitro": "Nicolás Ramírez",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijbgji",
+      "local": "Boca Juniors",
+      "visitante": "Independiente Rivadavia",
+      "fechaHora": "2026-11-25T21:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "boca-juniors-vs-independiente-rivadavia",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Octavos de Final",
+        "ganador": null,
+        "estadio": "Estadio Alberto José Armando",
+        "arbitro": "Luis Lobo Medina",
+        "infoDia": "2026-11-19"
+      }
+    },
+    {
+      "id": "promiedos_eijehad",
+      "local": "Gimnasia y Tiro",
+      "visitante": "Tristan Suárez",
+      "fechaHora": "2026-11-22T21:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "gimnasia-y-tiro-vs-tristan-suarez",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Reducido - Cuartos de Final",
+        "ganador": null,
+        "tv": "LPF Premium",
+        "estadio": "Estadio El Gigante del Norte",
         "infoDia": "2026-11-19"
       }
     }
