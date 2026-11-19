@@ -195,7 +195,10 @@ function isRelevantForToday(match, today) {
   const matchDate = new Date(`${match.fechaHora.slice(0, 10)}T00:00:00Z`);
   const todayDate = new Date(`${today}T00:00:00Z`);
   const diffDays = Math.round((matchDate - todayDate) / 86400000);
-  return diffDays >= 0 && diffDays <= DAYS_AHEAD;
+  // Liga Profesional y Primera Nacional: una semana adelante (en las fases finales los
+  // cruces se publican con varios días de anticipación)
+  const dias = ['hc', 'ebj'].includes(match?.source?.leagueId) ? 7 : DAYS_AHEAD;
+  return diffDays >= 0 && diffDays <= dias;
 }
 
 async function fetchLeagueGames(league, today) {
