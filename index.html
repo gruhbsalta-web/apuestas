@@ -2178,15 +2178,18 @@ function cruceNacional(grupo){
   const finRegular = nac.filter(m=>/^Fecha \d+/.test((m.source && m.source.ronda) || "")).map(m=>m.fechaHora || "").sort().pop() || "9999";
   const post = nac.filter(m=>(m.fechaHora || "") > finRegular).sort((a,b)=>(a.fechaHora || "") < (b.fechaHora || "") ? -1 : 1);
   const usados = new Set();
+  const clave = n=> (teamsData[n] && teamsData[n].id) || n;
+  const mismo = (x, y)=> x === y || clave(x) === clave(y);
+  const partidoDe = (x, y)=> post.find(m=>(mismo(m.local, x) && mismo(m.visitante, y)) || (mismo(m.local, y) && mismo(m.visitante, x)));
   // Numeración del Reducido (1 a 15): 1 = perdedor de la Final; después los 2º de cada zona
   // (el de más puntos primero), los 3º, y así hasta los 8º. Desempate: diferencia de gol y goles a favor.
   const numero = {};
   const datoDe = f=> ({pts: pts(f), dif: Number(f.valores.Ratio) || 0, gf: Number(String(f.valores.Goals || "0").split(":")[0]) || 0});
   for(let i = 1; i < 8; i++){
     const par = [A[i], B[i]].sort((f, g)=>{ const a = datoDe(f), b = datoDe(g); return b.pts - a.pts || b.dif - a.dif || b.gf - a.gf; });
-    numero[par[0].equipo] = 2*i; numero[par[1].equipo] = 2*i + 1;
+    numero[clave(par[0].equipo)] = 2*i; numero[clave(par[1].equipo)] = 2*i + 1;
   }
-  const mFinal = post.find(m=>[m.local, m.visitante].includes(A[0].equipo) && [m.local, m.visitante].includes(B[0].equipo));
+  const mFinal = partidoDe(A[0].equipo, B[0].equipo);
   const ganadorDe = m=>{
     if(!m || !m.finPartido) return null;
     const g = m.stats.goles;
@@ -2195,9 +2198,8 @@ function cruceNacional(grupo){
     return w === 1 ? m.local : w === 2 ? m.visitante : null;
   };
   const campeonFinal = ganadorDe(mFinal);
-  if(campeonFinal) numero[campeonFinal === A[0].equipo ? B[0].equipo : A[0].equipo] = 1;
-  const nro = n=> numero[n] != null ? ` · Nº ${numero[n]}` : "";
-  const partidoDe = (x, y)=> post.find(m=>(m.local === x && m.visitante === y) || (m.local === y && m.visitante === x));
+  if(campeonFinal) numero[clave(mismo(campeonFinal, A[0].equipo) ? B[0].equipo : A[0].equipo)] = 1;
+  const nro = n=> numero[clave(n)] != null ? ` · Nº ${numero[clave(n)]}` : "";
   const eq = (f, z, der)=> `<span class="cz-eq${der ? " der" : ""}">${der ? "" : crest(f.equipo)}<span class="cz-n">${escH(f.equipo)}<small>${f.pos}º Zona ${z}${nro(f.equipo)}</small></span>${der ? crest(f.equipo) : ""}</span>`;
   const estadoTxt = (m, ganador)=>{
     const corto = (m.source && m.source.statusShort) || "";
@@ -2215,11 +2217,16 @@ function cruceNacional(grupo){
     if(m){
       usados.add(m.id);
       const empezo = m.finPartido || matchStatus(m).frac > 0;
-      const gLoc = m.local === loc.equipo ? m.stats.goles.l : m.stats.goles.v, gVis = m.local === loc.equipo ? m.stats.goles.v : m.stats.goles.l;
+      const gLoc = mismo(m.local, loc.equipo) ? m.stats.goles.l : m.stats.goles.v, gVis = mismo(m.local, loc.equipo) ? m.stats.goles.v : m.stats.goles.l;
       if(empezo) centro = `<span class="cz-res">${gLoc} - ${gVis}</span>`;
       let ganador = null;
       if(m.finPartido) ganador = gLoc > gVis ? loc.equipo : gVis > gLoc ? vis.equipo : (ventaja ? loc.equipo : null);
-      if(m.finPartido && gLoc === gVis && !ventaja) ganador = ganadorDe(m);
+      if(m.finPartido && gLoc === gVis && !ventaja){ const g = ganadorDe(m); ganador = g ? (mismo(g, loc.equipo) ? loc.equipo : vis.equipo) : null; }
+      // suspendido pero uno de los dos ya figura en la fase siguiente: ese es el que avanzó
+      if(!m.finPartido && /susp/i.test((m.source && m.source.statusShort) || "")){
+        const sigue = [loc.equipo, vis.equipo].find(e=>post.some(o=>o.id !== m.id && (o.fechaHora || "") > (m.fechaHora || "") && (mismo(o.local, e) || mismo(o.visitante, e))));
+        if(sigue){ pie = `<div class="cz-est"><span style="color:var(--accent)">Suspendido</span> · avanza <b>${escH(sigue)}</b></div>`; return `<div class="cz-cruce">${eq(loc, zl)}${centro}${eq(vis, zv, true)}</div>${pie}`; }
+      }
       pie = `<div class="cz-est">${ventaja ? estadoTxt(m, ganador) : estadoTxt(m, ganador).replace("avanza", "asciende")}${m.finPartido && gLoc === gVis && !ventaja ? (ganador ? " (por penales)" : " · empate: se define por penales") : ""}</div>`;
     }
     return `<div class="cz-cruce">${eq(loc, zl)}${centro}${eq(vis, zv, true)}</div>${pie}`;
@@ -2231,10 +2238,10 @@ function cruceNacional(grupo){
   // Fases siguientes: los partidos que aparezcan después, agrupados por ronda
   const resto = post.filter(m=>!usados.has(m.id));
   const grupos = {};
-  resto.forEach(m=>{ const r = (m.source && m.source.ronda) || "Siguiente fase"; (grupos[r] = grupos[r] || []).push(m); });
+  resto.forEach(m=>{ const r = (m.source && m.source.ronda) || "Reducido · siguiente fase"; (grupos[r] = grupos[r] || []).push(m); });
   const filaPartido = m=>{
     const empezo = m.finPartido || matchStatus(m).frac > 0;
-    const lado = (n, der)=> `<span class="cz-eq${der ? " der" : ""}">${der ? "" : crest(n)}<span class="cz-n">${escH(n)}${numero[n] != null ? `<small>Nº ${numero[n]}</small>` : ""}</span>${der ? crest(n) : ""}</span>`;
+    const lado = (n, der)=> `<span class="cz-eq${der ? " der" : ""}">${der ? "" : crest(n)}<span class="cz-n">${escH(n)}${numero[clave(n)] != null ? `<small>Nº ${numero[clave(n)]}</small>` : ""}</span>${der ? crest(n) : ""}</span>`;
     const ganador = null; // en ida y vuelta, el que avanza se ve en el global
     return `<div class="cz-cruce">${lado(m.local)}${empezo ? `<span class="cz-res">${m.stats.goles.l} - ${m.stats.goles.v}</span>` : '<span class="cz-vs">vs</span>'}${lado(m.visitante, true)}</div><div class="cz-est">${estadoTxt(m, ganador)}</div>`;
   };
@@ -2243,7 +2250,7 @@ function cruceNacional(grupo){
   const fila = {};
   [["A", A], ["B", B]].forEach(([z, fs])=>fs.forEach(f=>{ fila[f.equipo] = {z, pos: f.pos, pts: pts(f), dif: Number(f.valores.Ratio) || 0, gf: Number(String(f.valores.Goals || "0").split(":")[0]) || 0}; }));
   const mejor = (x, y)=>{
-    const a = numero[x], b = numero[y];
+    const a = numero[clave(x)], b = numero[clave(y)];
     if(a == null || b == null) return null;
     return a < b ? x : y;
   };
@@ -2252,7 +2259,7 @@ function cruceNacional(grupo){
   const llaveHtml = (ms, r)=>{
     const [x, y] = [ms[0].local, ms[0].visitante];
     let gx = 0, gy = 0;
-    ms.forEach(m=>{ if(m.local === x){ gx += m.stats.goles.l; gy += m.stats.goles.v; } else { gx += m.stats.goles.v; gy += m.stats.goles.l; } });
+    ms.forEach(m=>{ if(mismo(m.local, x)){ gx += m.stats.goles.l; gy += m.stats.goles.v; } else { gx += m.stats.goles.v; gy += m.stats.goles.l; } });
     const terminada = ms.length >= 2 && ms.every(m=>m.finPartido);
     const esFinal = /final/i.test(r) && !/cuarto|semi|octavo/i.test(r);
     // en la final del Reducido el empate en el global va a penales; en el resto, avanza el mejor numerado
@@ -2262,7 +2269,7 @@ function cruceNacional(grupo){
   };
   const siguientes = Object.entries(grupos).map(([r, ms])=>{
     const llaves = {};
-    ms.forEach(m=>{ const k = [m.local, m.visitante].sort().join("|"); (llaves[k] = llaves[k] || []).push(m); });
+    ms.forEach(m=>{ const k = [clave(m.local), clave(m.visitante)].sort().join("|"); (llaves[k] = llaves[k] || []).push(m); });
     return `<div class="cz-t">${escH(r)}</div>${Object.values(llaves).map(ms=>llaveHtml(ms, r)).join("")}`;
   }).join("");
   return `<div class="card cz">
