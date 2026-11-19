@@ -2223,7 +2223,7 @@ function cruceNacional(grupo){
       if(m.finPartido) ganador = gLoc > gVis ? loc.equipo : gVis > gLoc ? vis.equipo : (ventaja ? loc.equipo : null);
       if(m.finPartido && gLoc === gVis && !ventaja){ const g = ganadorDe(m); ganador = g ? (mismo(g, loc.equipo) ? loc.equipo : vis.equipo) : null; }
       // suspendido pero uno de los dos ya figura en la fase siguiente: ese es el que avanzó
-      if(!m.finPartido && /susp/i.test((m.source && m.source.statusShort) || "")){
+      if(/susp/i.test((m.source && m.source.statusShort) || "")){
         const sigue = [loc.equipo, vis.equipo].find(e=>post.some(o=>o.id !== m.id && (o.fechaHora || "") > (m.fechaHora || "") && (mismo(o.local, e) || mismo(o.visitante, e))));
         if(sigue){ pie = `<div class="cz-est"><span style="color:var(--accent)">Suspendido</span> · avanza <b>${escH(sigue)}</b></div>`; return `<div class="cz-cruce">${eq(loc, zl)}${centro}${eq(vis, zv, true)}</div>${pie}`; }
       }
