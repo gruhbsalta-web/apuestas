@@ -214,6 +214,16 @@ async function fetchLeagueGames(league, today) {
       }
     }
     collectTeams(games, EQUIPOS);
+    // Algunos partidos (fases finales) vienen sin nombre de fecha en la lista: se toma de la
+    // página de la liga, donde la fase en curso trae su nombre (ej. "Reducido - Cuartos de Final")
+    if (games.some((g) => !g.stage_round_name) && league.url_name && BUILD_ID) {
+      try {
+        const page = await getJson(`${SITE}/_next/data/${BUILD_ID}/league/${encodeURIComponent(league.url_name)}/${league.id}.json`);
+        const nombres = {};
+        (page?.pageProps?.data?.games?.filters || []).forEach((f) => (f.games || []).forEach((g) => { nombres[g.id] = f.name; }));
+        games.forEach((g) => { if (!g.stage_round_name && nombres[g.id]) g.stage_round_name = nombres[g.id]; });
+      } catch (e) { /* sin nombre de fecha: la app lo muestra igual */ }
+    }
     const matches = games.map((game) => normalizeMatch(game, league));
     const relevant = matches.filter((m) => isRelevantForToday(m, today));
     console.log(`Liga ${league.name || league.id} (${league.id}): ${games.length} partidos en 'latest', ${relevant.length} relevantes (terminados o de hoy)`);
