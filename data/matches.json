@@ -53934,7 +53934,7 @@
       "visitante": "RCD Espanyol",
       "fechaHora": "2026-11-20T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -53942,7 +53942,7 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 9,
@@ -53963,11 +53963,11 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "athletic-bilbao-vs-espanyol",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 13",
-        "ganador": null,
+        "ganador": 2,
         "tv": "DSports",
         "estadio": "Estadio de San Mamés",
         "arbitro": "Mateo Busquets"
