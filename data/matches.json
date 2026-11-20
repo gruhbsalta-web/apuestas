@@ -53963,15 +53963,14 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "athletic-bilbao-vs-espanyol",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Fecha 13",
         "ganador": null,
         "tv": "DSports",
         "estadio": "Estadio de San Mamés",
-        "arbitro": "Mateo Busquets",
-        "infoDia": "2026-11-20"
+        "arbitro": "Mateo Busquets"
       }
     },
     {
