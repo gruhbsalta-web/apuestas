@@ -53941,20 +53941,20 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "corners": {
-          "l": 6,
+          "l": 9,
           "v": 2
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 5
+          "v": 6
         }
       },
       "source": {
@@ -53965,7 +53965,7 @@
         "gameUrlName": "athletic-bilbao-vs-espanyol",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "79'",
+        "minuto": "90+1'",
         "ronda": "Fecha 13",
         "ganador": null,
         "tv": "DSports",
