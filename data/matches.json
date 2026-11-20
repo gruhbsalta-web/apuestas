@@ -53933,7 +53933,7 @@
       "local": "Athletic Club",
       "visitante": "RCD Espanyol",
       "fechaHora": "2026-11-20T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -53945,16 +53945,16 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -53963,9 +53963,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "athletic-bilbao-vs-espanyol",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "37'",
+        "minuto": "45'",
         "ronda": "Fecha 13",
         "ganador": null,
         "tv": "DSports",
