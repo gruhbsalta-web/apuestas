@@ -23,13 +23,16 @@ const COUNTRY_WHITELIST = ['Argentina', 'Inglaterra', 'España', 'Italia', 'Inte
 // con agregar su id de Promiedos aca (y el pais en COUNTRY_BY_LEAGUE).
 // Argentina: Liga Profesional, Primera Nacional y Copa Argentina.
 // Europa (solo partidos, sin planteles): Premier League, La Liga y Serie A.
-// Internacional: Champions League.
-const LEAGUE_ID_INCLUDE = new Set(['hc', 'ebj', 'gea', 'h', 'bb', 'bh', 'fhc']);
+// Internacional: Champions League y Copa Sudamericana.
+const LEAGUE_ID_INCLUDE = new Set(['hc', 'ebj', 'gea', 'h', 'bb', 'bh', 'fhc', 'dij']);
 const COUNTRY_BY_LEAGUE = {
   hc: 'Argentina', ebj: 'Argentina', gea: 'Argentina',
   h: 'Inglaterra', bb: 'España', bh: 'Italia',
-  fhc: 'Internacional'
+  fhc: 'Internacional', dij: 'Internacional'
 };
+// Si una liga no aparece en el menú de Promiedos (pasa con algunas copas), se agrega igual
+// con su dirección conocida.
+const LIGA_FIJA = { dij: { url_name: 'conmebol-sudamericana', name: 'Copa Sudamericana' } };
 // Ligas puntuales que no queremos aunque su pais/categoria este en la
 // whitelist: reserva/amateur argentino (no estan en las listas de equipos
 // de la app) y las copas domesticas de Inglaterra/España/Italia (de las
@@ -121,6 +124,9 @@ async function resolveLeagues(buildId) {
     });
   });
 
+  Object.entries(LIGA_FIJA).forEach(([id, l]) => {
+    if (!leagues.has(id) && LEAGUE_ID_INCLUDE.has(id)) leagues.set(id, { id, url_name: l.url_name, name: l.name, country: COUNTRY_BY_LEAGUE[id] });
+  });
   return [...leagues.values()];
 }
 

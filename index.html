@@ -791,7 +791,7 @@ const PAISES = [
   { id: "España",     ligas: [ { id: "bb", nombre: "La Liga" } ]},
   { id: "Inglaterra", ligas: [ { id: "h",  nombre: "Premier League" } ]},
   { id: "Italia",     ligas: [ { id: "bh", nombre: "Serie A" } ]},
-  { id: "Internacional", ligas: [ { id: "fhc", nombre: "Champions League" } ]}
+  { id: "Internacional", ligas: [ { id: "fhc", nombre: "Champions League" }, { id: "dij", nombre: "Copa Sudamericana" } ]}
 ];
 const LIGA_INFO = {};
 PAISES.forEach(p => p.ligas.forEach(l => { LIGA_INFO[l.id] = { id: l.id, nombre: l.nombre, pais: p.id }; }));
@@ -1364,7 +1364,7 @@ function buildLigaSection(key, titulo, lista){
 }
 
 let partidosFiltroDia = "todos";
-const SOLO_SEMANA = new Set(["fhc"]); // ligas que se muestran solo la semana en que juegan
+const SOLO_SEMANA = new Set(["fhc", "dij"]); // ligas que se muestran solo la semana en que juegan
 function semanaActual(){
   const hoy = new Date(new Date().toLocaleString("en-US", {timeZone:"America/Argentina/Buenos_Aires"}));
   const lunes = new Date(hoy); lunes.setDate(hoy.getDate() - ((hoy.getDay() + 6) % 7));
