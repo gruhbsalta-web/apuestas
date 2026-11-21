@@ -54075,7 +54075,7 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 3
         },
         "tirosArco": {
@@ -54093,15 +54093,31 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN Premium",
         "estadio": "Estadio Norberto Tito Tomaghello",
         "arbitro": "Pablo Echavarría"
+      },
+      "foto2T": {
+        "minuto": "52'",
+        "enPausa": false,
+        "corners": {
+          "l": 3,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
       }
     },
     {
@@ -54568,19 +54584,19 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
-          "l": 2,
-          "v": 1
+          "l": 3,
+          "v": 2
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 1
         },
         "tirosArco": {
           "l": 3,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
           "l": 2,
@@ -54595,7 +54611,7 @@
         "gameUrlName": "newcastle-united-vs-arsenal",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "74'",
+        "minuto": "86'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -54604,15 +54620,15 @@
         "arbitro": "Chris Kavanagh"
       },
       "foto2T": {
-        "minuto": "74'",
+        "minuto": "86'",
         "enPausa": false,
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 1
         },
         "tirosArco": {
           "l": 3,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
           "l": 2,
@@ -54724,10 +54740,10 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 2
         },
         "tirosArco": {
@@ -54747,7 +54763,7 @@
         "gameUrlName": "sevilla-vs-real-betis",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "81'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54756,10 +54772,10 @@
         "arbitro": "José Sánchez"
       },
       "foto2T": {
-        "minuto": "68'",
+        "minuto": "81'",
         "enPausa": false,
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 2
         },
         "tirosArco": {
