@@ -54199,7 +54199,7 @@
           "v": 3
         },
         "corners": {
-          "l": 9,
+          "l": 10,
           "v": 1
         },
         "tirosArco": {
@@ -54219,7 +54219,7 @@
         "gameUrlName": "colon-vs-deportivo-moron",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "74'",
+        "minuto": "85'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54228,10 +54228,10 @@
         "arbitro": "Fabricio Llobet"
       },
       "foto2T": {
-        "minuto": "74'",
+        "minuto": "85'",
         "enPausa": false,
         "corners": {
-          "l": 9,
+          "l": 10,
           "v": 1
         },
         "tirosArco": {
