@@ -54072,19 +54072,19 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 0
+          "v": 2
         },
         "corners": {
           "l": 4,
           "v": 3
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -54095,7 +54095,7 @@
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "82'",
+        "minuto": "90+4'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54104,19 +54104,19 @@
         "arbitro": "Pablo Echavarría"
       },
       "foto2T": {
-        "minuto": "82'",
+        "minuto": "90+4'",
         "enPausa": false,
         "corners": {
           "l": 4,
           "v": 3
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 2
+          "v": 3
         }
       }
     },
@@ -54955,16 +54955,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -54973,15 +54973,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "napoli-vs-torino",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "10'",
         "ronda": "Fecha 12",
         "ganador": null,
+        "alargue": false,
         "tv": "Disney+ Premium",
         "estadio": "Stadio Diego Armando Maradona",
-        "arbitro": "A. Rapuano",
-        "infoDia": "2026-11-21"
+        "arbitro": "Marco Di Bello"
       }
     },
     {
