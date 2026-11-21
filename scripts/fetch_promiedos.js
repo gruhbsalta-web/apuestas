@@ -68,7 +68,7 @@ async function getJson(url) {
   return JSON.parse(text);
 }
 
-const { emptyStats, statsFromStatistics } = require('./promiedos_stats');
+const { emptyStats, statsFromStatistics, tiempoReglamentario } = require('./promiedos_stats');
 const { calibrarApi, fichaHoraArgentina } = require('./promiedos_time');
 const { collectTeams, saveTeams } = require('./teams_lib');
 const { actualizarTablas } = require('./tablas_lib');
@@ -280,10 +280,14 @@ async function enrichWithDetail(match, buildId, previo, today) {
     if (exacta) match.fechaHora = exacta; // la ficha trae hora y zona en la misma respuesta
     const statistics = data?.pageProps?.initialData?.game?.statistics;
     match.stats = statsFromStatistics(statistics, match._goles);
+    tiempoReglamentario(match, data?.pageProps?.initialData?.game, previo);
     ponerInfo(match, infoDeFicha(data?.pageProps?.initialData?.game));
   } catch (error) {
     console.warn(`No se pudieron traer estadisticas del partido ${match.id}:`, error.message || error);
     match.stats.goles = match._goles;
+    // sin ficha: se conserva lo que ya se sabía del tiempo reglamentario
+    if (previo) ['stats90', 'foto2T'].forEach((k) => { if (previo[k]) match[k] = previo[k]; });
+    if (previo?.source?.alargue != null) match.source.alargue = previo.source.alargue;
   }
   delete match._needsDetail;
   delete match._goles;
@@ -364,7 +368,10 @@ async function run() {
     const matches = await fetchLeagueGames(league, today);
     for (const match of matches) {
       const guardado = yaTerminados.get(match.id);
-      if (match.finPartido && guardado) {
+      // Definidos por penales antes de que se separara el tiempo reglamentario: se baja
+      // la ficha una vez para saber si hubo alargue (y guardar los 90')
+      const revisarAlargue = guardado && /penal/i.test(guardado.source?.statusShort || '') && guardado.source?.alargue == null;
+      if (match.finPartido && guardado && !revisarAlargue) {
         allMatches.push(Object.assign(guardado, { source: Object.assign({}, guardado.source, { ronda: match.source.ronda || guardado.source?.ronda }) }));
         reusados++;
         continue;
@@ -408,6 +415,7 @@ async function run() {
       const league = leagues.find((l) => l.id === m.source.leagueId) || { id: m.source.leagueId, name: m.source.leagueName, country: m.source.country };
       const nuevo = normalizeMatch(game, league);
       nuevo.stats = statsFromStatistics(game.statistics, nuevo._goles);
+      tiempoReglamentario(nuevo, game, m);
       const exacta = fichaHoraArgentina(data);
       nuevo.fechaHora = exacta || m.fechaHora;
       ponerInfo(nuevo, infoDeFicha(game));
@@ -418,6 +426,21 @@ async function run() {
     } catch (e) { console.warn(`No se pudo revisar el partido trabado ${m.id}:`, e.message || e); }
   }
 
+  // Definidos por penales que todavía no se revisaron (alargue sí/no y los 90'): una sola vez cada uno
+  const porRevisar = [...byId.values()].filter((m) => m.finPartido && /penal/i.test(m.source?.statusShort || '') && m.source?.alargue == null && m.source?.gameUrlName).slice(0, 25);
+  for (const m of porRevisar) {
+    try {
+      const gameId = m.id.replace(/^promiedos_/, '');
+      const data = await getJson(`${SITE}/_next/data/${buildId}/game/${encodeURIComponent(m.source.gameUrlName)}/${gameId}.json`);
+      const game = data?.pageProps?.initialData?.game;
+      if (!game) continue;
+      const nuevo = Object.assign({}, m, { source: Object.assign({}, m.source) });
+      tiempoReglamentario(nuevo, game, m);
+      byId.set(m.id, nuevo);
+      console.log(`Revisado alargue: ${m.local} - ${m.visitante}: ${nuevo.source.alargue ? 'con alargue' : 'sin alargue'}`);
+    } catch (e) { console.warn(`No se pudo revisar el alargue de ${m.id}:`, e.message || e); }
+  }
+
   let historico = existing.historico;
   // las cargas históricas van solo en las vueltas completas del bucle (no en el pedido manual)
   HIST_FIN = Date.now() + HIST_SEGUNDOS * 1000;
@@ -425,6 +448,14 @@ async function run() {
     try { historico = await completarTemporada(leagues, buildId, byId, existing, today); }
     catch (err) { console.warn('Falló el histórico de las ligas europeas:', err.message || err); }
   }
+
+  // Correcciones a mano de datos que Promiedos no publica (data/correcciones.json)
+  try {
+    const corr = JSON.parse(fs.readFileSync(path.join(path.dirname(OUTPUT_PATH), 'correcciones.json'), 'utf8'));
+    for (const m of byId.values()) {
+      if (corr[m.id]) m.correccion = corr[m.id]; else delete m.correccion;
+    }
+  } catch (e) { /* sin correcciones */ }
 
   const out = {
     ...existing,

@@ -930,7 +930,7 @@ function baseLiga(liga){
   if(fin.length < 10) fin = state.matches.filter(m=>m.finPartido && m.stats);
   const out = {};
   Object.keys(TIPO_LABEL).forEach(k=>{
-    const ls = fin.map(m=>(m.stats[k] && m.stats[k].l) || 0), vs = fin.map(m=>(m.stats[k] && m.stats[k].v) || 0);
+    const ls = fin.map(m=>(stats90De(m)[k] && stats90De(m)[k].l) || 0), vs = fin.map(m=>(stats90De(m)[k] && stats90De(m)[k].v) || 0);
     const prom = xs=> xs.length ? xs.reduce((a,b)=>a+b, 0) / xs.length : 0;
     const ml = prom(ls), mv = prom(vs);
     const res = ls.map(x=>[x, ml]).concat(vs.map(x=>[x, mv]));
@@ -948,7 +948,7 @@ function fuerza(equipo, k, antesDe, b){
   state.matches.forEach(m=>{
     if(!m.finPartido || !m.stats || (m.local !== equipo && m.visitante !== equipo)) return;
     if(antesDe && m.fechaHora && m.fechaHora >= antesDe) return;
-    const s = m.stats[k] || {}, l = s.l || 0, v = s.v || 0;
+    const s = stats90De(m)[k] || {}, l = s.l || 0, v = s.v || 0;
     n++;
     if(m.local === equipo){ f += l / (b.ml || 1); c += v / (b.mv || 1); }
     else { f += v / (b.mv || 1); c += l / (b.ml || 1); }
@@ -2375,9 +2375,40 @@ document.getElementById("btn-add-bet").addEventListener("click", ()=>{
 // -- el equipo que va ganando puede empatarlo o perderlo despues -- asi que
 // a esta apuesta no se le puede aplicar la logica de "ya es matematicamente
 // inevitable": se resuelve recien cuando el partido termina.
+// ---------- Tiempo reglamentario ----------
+// Las apuestas se resuelven con los 90' (+ agregado), nunca con el alargue. Si el partido
+// fue al alargue, el actualizador guarda m.stats90: goles y tarjetas exactos; corners,
+// tiros al arco y atajadas de la última foto antes del alargue. Si esa foto no llegó al
+// 90' (stats90.aprox), el valor es un piso y el total final (con alargue) es el techo;
+// m.correccion.cotas90 permite bajar ese techo a mano. Con piso y techo la apuesta se
+// resuelve si los dos dan lo mismo; si no, queda "sin dato del 90'".
+function fueAlargue(m){ return !!(m && m.source && m.source.alargue); }
+function rango90(m, k){
+  const fin = (m.stats && m.stats[k]) || {l:0, v:0};
+  if(!fueAlargue(m)) return {bajo: fin, alto: fin};
+  const s90 = m.stats90 || {};
+  const exacto = s90[k] && !(s90.aprox || []).includes(k);
+  if(exacto) return {bajo: s90[k], alto: s90[k]};
+  const bajo = s90[k] || {l:0, v:0};
+  const cota = (m.correccion && m.correccion.cotas90 && m.correccion.cotas90[k]) || {};
+  const alto = {};
+  ["l","v"].forEach(x=>{ alto[x] = Math.max(bajo[x]||0, Math.min(fin[x]||0, cota[x] != null ? cota[x] : Infinity)); });
+  return {bajo, alto};
+}
+// Para promedios y modelo: los 90' cuando se conocen exactos, si no lo que haya
+function stats90De(m){
+  if(!fueAlargue(m) || !m.stats90) return m.stats;
+  const out = Object.assign({}, m.stats);
+  Object.keys(m.stats).forEach(k=>{ const r = rango90(m, k); if(r.bajo === r.alto) out[k] = r.bajo; });
+  return out;
+}
+
 function evalGanadorBet(bet, m){
-  if(!m.finPartido) return {estado:"pendiente", total:"-", ganancia:0, match:m};
-  const {l, v} = m.stats.goles;
+  const alargue = fueAlargue(m);
+  if(!m.finPartido && !alargue) return {estado:"pendiente", total:"-", ganancia:0, match:m};
+  const g90 = rango90(m, "goles");
+  if(g90.bajo !== g90.alto) return {estado:"pendiente", total:"-", ganancia:0, match:m, sin90:true};
+  const {l, v} = g90.bajo;
   const actual = l > v ? "local" : v > l ? "visitante" : "empate";
   const decidido = actual === bet.pick;
   const ganancia = decidido ? (bet.monto * bet.cuota - bet.monto) : 0;
@@ -2388,19 +2419,21 @@ function evalBet(bet){
   const m = state.matches.find(x=>x.id===bet.matchId);
   if(!m) return {estado:"pendiente", total:0, ganancia:0};
   if(bet.tipo === "ganador") return evalGanadorBet(bet, m);
-  const s = m.stats[bet.tipo];
-  const total = betTotal(bet, s);
+  // en el alargue ya no suma nada: se resuelve con los 90' (piso y techo si no hay dato exacto)
+  const fin90 = m.finPartido || fueAlargue(m);
+  const r90 = rango90(m, bet.tipo);
+  const total = betTotal(bet, r90.bajo), techo = betTotal(bet, r90.alto);
 
   let decidido = null; // true = ganada, false = perdida, null = todavía puede cambiar
   if(bet.comparador === "mas"){
     if(total > bet.linea) decidido = true;
-    else if(m.finPartido) decidido = false;
+    else if(fin90 && techo <= bet.linea) decidido = false;
   } else {
     if(total >= bet.linea) decidido = false;
-    else if(m.finPartido) decidido = true;
+    else if(fin90 && techo < bet.linea) decidido = true;
   }
 
-  if(decidido === null) return {estado:"pendiente", total, ganancia:0, match:m};
+  if(decidido === null) return {estado:"pendiente", total, ganancia:0, match:m, sin90: fin90};
   const ganancia = decidido ? (bet.monto * bet.cuota - bet.monto) : 0;
   return {estado: decidido ? "G" : "P", total, ganancia, match:m};
 }
@@ -2425,6 +2458,7 @@ function renderBets(){
     let badgeCls, badgeTxt, subTxt = "", totalLabel = "Total real", totalVal = r.total;
     if(r.estado === "G"){ badgeCls="G"; badgeTxt="Ganada"; }
     else if(r.estado === "P"){ badgeCls="P"; badgeTxt="Perdida"; }
+    else if(r.sin90){ badgeCls="neutral"; badgeTxt="Sin dato del 90'"; totalLabel = "Al 90'"; subTxt = "Fue al alargue: se resuelve con los 90'"; }
     else if(bet.tipo === "ganador"){
       badgeCls = "neutral"; badgeTxt = "Pendiente"; totalLabel = "Resultado"; totalVal = "A definir";
       const pe = m ? probEstadistica(bet, m) : null;
@@ -2582,12 +2616,13 @@ function renderTerminados(){
           ${Object.keys(TIPO_LABEL).filter(k=>k !== "goles").map(k=>`
             <div class="stat-row"><span>${TIPO_LABEL[k]}</span><b>${m.stats[k].l}</b><b>${m.stats[k].v}</b></div>`).join("")}
         </div>
+        ${fueAlargue(m) ? `<div class="bet-sub">Fue al alargue: las apuestas se resuelven con los 90'${(()=>{ const g = rango90(m,"goles"); return g.bajo === g.alto ? ` (${g.bajo.l}-${g.bajo.v})` : ""; })()}. Las estadísticas de arriba incluyen el alargue.</div>` : ""}
         ${betsDelPartido.map(bet=>{
           const r = evalBet(bet);
           const condTxt = condTxtFor(bet, m);
           return `<div class="mini-bet">
             <span>${condTxt}, $${bet.monto} a ${bet.cuota}</span>
-            <span class="badge ${r.estado}">${r.estado==='G' ? `Ganada $${r.ganancia.toFixed(2)}` : "Perdida"}</span>
+            <span class="badge ${r.estado}">${r.estado==='G' ? `Ganada $${r.ganancia.toFixed(2)}` : r.estado==='P' ? "Perdida" : "Sin dato del 90'"}</span>
           </div>`;
         }).join("")}
         <div class="btn-row">
@@ -3481,6 +3516,8 @@ function mergeData(dataMatches){
     cur.finPartido = dm.finPartido;
     // todo sale de los datos automáticos (las atajadas se recalculan en cada vuelta)
     cur.stats = Object.assign({}, dm.stats);
+    if(dm.stats90) cur.stats90 = dm.stats90; else delete cur.stats90;
+    if(dm.correccion) cur.correccion = dm.correccion; else delete cur.correccion;
   });
   return nuevos;
 }

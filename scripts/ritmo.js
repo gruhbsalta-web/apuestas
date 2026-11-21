@@ -9,7 +9,7 @@ const path = require('path');
 
 const VIVO = 120;
 const ANTES = 60 * 60 * 1000;
-const DESPUES = 150 * 60 * 1000;
+const DESPUES = 180 * 60 * 1000; // alcanza para alargue y penales
 
 const ahora = Date.now();
 const dia = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Argentina/Buenos_Aires', weekday: 'short' }).format(new Date());

@@ -47,3 +47,85 @@ function statsFromStatistics(statistics, goles) {
 }
 
 module.exports = { emptyStats, statsFromStatistics };
+
+// ---------- Tiempo reglamentario (para resolver apuestas) ----------
+// Las apuestas se resuelven con los 90' (+ agregado). Si el partido va al alargue,
+// Promiedos sigue sumando goles, tarjetas y corners en sus estadísticas, así que se
+// guarda aparte match.stats90:
+// - goles y tarjetas: exactos (totales menos lo que pasó en el alargue, según el minuto a minuto)
+// - corners, tiros al arco y atajadas: Promiedos no da el minuto de cada uno; se toman
+//   de la última foto antes del alargue (match.foto2T, se guarda en cada vuelta del 2do tiempo).
+//   Si la foto no llega al 90' esos valores son un piso y van en stats90.aprox; la app
+//   usa el total final como techo.
+const minutoDe = (t) => { const m = String(t ?? '').match(/^(\d+)/); return m ? Number(m[1]) : null; };
+const minutoAlargue = (t) => !/\+/.test(String(t ?? '')) && (minutoDe(t) || 0) > 90;
+
+function etapasSinPenales(game) {
+  return (Array.isArray(game?.events) ? game.events : []).filter((st) => !st?.is_penalties_stage);
+}
+
+function huboAlargue(game, statusShort, minuto) {
+  const etapas = etapasSinPenales(game);
+  if (etapas.length > 2) return true;
+  if (minutoAlargue(minuto)) return true;
+  const sh = String(statusShort || '');
+  if (sh !== 'ET' && /alarg|suplem|extra|\bAET\b|^[12]°?\s*A\b|^[12]\s*TS/i.test(sh)) return true;
+  return etapas.some((st) => (st.rows || []).some((r) => (r.events || []).some((e) => minutoAlargue(e?.time))));
+}
+
+// Goles y tarjetas por equipo que ocurrieron en el alargue.
+function eventosAlargue(game) {
+  const scores = (Array.isArray(game?.scores) ? game.scores : []).map(Number);
+  const lista = [];
+  etapasSinPenales(game).forEach((st, i) => (st.rows || []).forEach((r) => (r.events || []).forEach((e) => {
+    lista.push({ e, et: i >= 2 || minutoAlargue(e?.time) });
+  })));
+  // gol en contra (tipo 2): puede venir con el equipo que lo hizo o el que se beneficia;
+  // se elige la lectura que cierra con el marcador
+  const leer = (invertir) => lista.filter(({ e }) => [1, 2, 3].includes(e?.type))
+    .map(({ e, et }) => ({ team: e.type === 2 && invertir ? (e.team === 1 ? 2 : 1) : e.team, et }));
+  const cierra = (gs) => [1, 2].every((t, k) => gs.filter((g) => g.team === t).length === (scores[k] || 0));
+  const goles = cierra(leer(true)) && !cierra(leer(false)) ? leer(true) : leer(false);
+  const out = { goles: { l: 0, v: 0 }, tarjetas: { l: 0, v: 0 } };
+  goles.filter((g) => g.et).forEach((g) => { out.goles[g.team === 2 ? 'v' : 'l']++; });
+  lista.filter(({ e, et }) => et && (e?.type === 4 || e?.type === 7)).forEach(({ e }) => { out.tarjetas[e.team === 2 ? 'v' : 'l']++; });
+  return out;
+}
+
+// Completa match.source.alargue, match.foto2T y match.stats90. previo = el partido guardado antes.
+function tiempoReglamentario(match, game, previo) {
+  const src = match.source || {};
+  const alargue = huboAlargue(game, src.statusShort, src.minuto);
+  src.alargue = alargue;
+  const foto = (m) => ({
+    minuto: m.source?.minuto || '',
+    enPausa: m.source?.statusShort !== '2°',
+    corners: Object.assign({}, m.stats.corners),
+    tirosArco: Object.assign({}, m.stats.tirosArco),
+    atajadas: Object.assign({}, m.stats.atajadas)
+  });
+  if (!alargue) {
+    delete match.stats90;
+    // en juego, 2do tiempo (o la pausa antes del alargue): se guarda la foto
+    if (src.statusEnum === 2 && match.finPrimerTiempo && src.statusShort !== 'ET') match.foto2T = foto(match);
+    else if (previo?.foto2T && !match.finPartido) match.foto2T = previo.foto2T;
+    return match;
+  }
+  const f = previo?.foto2T || null;
+  if (f) match.foto2T = f;
+  const et = eventosAlargue(game);
+  const menos = (a, b) => ({ l: Math.max(0, (a?.l || 0) - (b?.l || 0)), v: Math.max(0, (a?.v || 0) - (b?.v || 0)) });
+  const exacta = f && (f.enPausa || (minutoDe(f.minuto) || 0) >= 90);
+  match.stats90 = {
+    goles: menos(match.stats.goles, et.goles),
+    tarjetas: menos(match.stats.tarjetas, et.tarjetas),
+    corners: f ? f.corners : { l: 0, v: 0 },
+    tirosArco: f ? f.tirosArco : { l: 0, v: 0 },
+    atajadas: f ? f.atajadas : { l: 0, v: 0 },
+    foto: f ? f.minuto : null,
+    aprox: exacta ? [] : ['corners', 'tirosArco', 'atajadas']
+  };
+  return match;
+}
+
+module.exports.tiempoReglamentario = tiempoReglamentario;
