@@ -54479,7 +54479,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -54501,15 +54501,14 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "newcastle-united-vs-arsenal",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "25'",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "Disney+ Premium",
         "estadio": "St. James' Park",
-        "arbitro": "Chris Kavanagh",
-        "infoDia": "2026-11-21"
+        "arbitro": "Chris Kavanagh"
       }
     },
     {
@@ -54563,7 +54562,7 @@
       "visitante": "Valencia CF",
       "fechaHora": "2026-11-21T12:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -54592,11 +54591,11 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "rayo-vallecano-vs-valencia",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+4'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 13",
-        "ganador": null,
+        "ganador": 2,
         "tv": "DSports",
         "estadio": "Estadio de Vallecas",
         "arbitro": "José Luis Munuera Montero"
@@ -54615,8 +54614,8 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 2
         },
         "corners": {
           "l": 0,
@@ -54637,15 +54636,14 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "sevilla-vs-real-betis",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "21'",
         "ronda": "Fecha 13",
         "ganador": null,
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
-        "arbitro": "José Sánchez",
-        "infoDia": "2026-11-21"
+        "arbitro": "José Sánchez"
       }
     },
     {
@@ -54789,28 +54787,28 @@
       "local": "Parma",
       "visitante": "AS Roma",
       "fechaHora": "2026-11-21T14:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 1,
-          "v": 0
+          "l": 3,
+          "v": 5
         },
         "tirosArco": {
-          "l": 1,
-          "v": 0
+          "l": 4,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 4
         }
       },
       "source": {
@@ -54819,9 +54817,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "parma-vs-as-roma",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "11'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "ganador": null,
         "tv": "ESPN 2, Disney+ Premium",
