@@ -54188,14 +54188,14 @@
       "visitante": "Deportivo Morón",
       "fechaHora": "2026-11-21T17:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "corners": {
@@ -54217,31 +54217,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "colon-vs-deportivo-moron",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Reducido - Cuartos de Final",
-        "ganador": null,
-        "alargue": false,
-        "tv": "LPF Premium",
-        "estadio": "Estadio Brigadier General Estanislao López",
-        "arbitro": "Fabricio Llobet"
-      },
-      "foto2T": {
-        "minuto": "90'",
-        "enPausa": false,
-        "corners": {
-          "l": 11,
-          "v": 1
-        },
-        "tirosArco": {
-          "l": 6,
-          "v": 2
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 6
-        }
+        "statusShort": "Final",
+        "ronda": "Reducido - Cuartos de Final"
       }
     },
     {
