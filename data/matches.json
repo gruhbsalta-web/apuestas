@@ -53979,7 +53979,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -53987,12 +53987,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -54003,7 +54003,7 @@
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "11'",
+        "minuto": "15'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "tv": "ESPN Premium",
@@ -54470,7 +54470,7 @@
       "local": "Newcastle United",
       "visitante": "Arsenal",
       "fechaHora": "2026-11-21T14:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -54483,14 +54483,14 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         }
       },
@@ -54500,9 +54500,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "newcastle-united-vs-arsenal",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "43'",
+        "minuto": "45'",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "Disney+ Premium",
@@ -54605,7 +54605,7 @@
       "local": "Sevilla FC",
       "visitante": "Real Betis",
       "fechaHora": "2026-11-21T14:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -54621,12 +54621,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -54635,9 +54635,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "sevilla-vs-real-betis",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "39'",
+        "minuto": "45'",
         "ronda": "Fecha 13",
         "ganador": null,
         "tv": "DSports",
@@ -54791,7 +54791,7 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 1,
@@ -54799,14 +54799,14 @@
         },
         "corners": {
           "l": 3,
-          "v": 5
+          "v": 8
         },
         "tirosArco": {
           "l": 5,
-          "v": 3
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 4
         }
       },
@@ -54818,7 +54818,7 @@
         "gameUrlName": "parma-vs-as-roma",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "69'",
         "ronda": "Fecha 12",
         "ganador": null,
         "tv": "ESPN 2, Disney+ Premium",
