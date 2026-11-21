@@ -54118,12 +54118,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -54134,7 +54134,7 @@
         "gameUrlName": "argentinos-juniors-vs-independiente",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "26'",
+        "minuto": "32'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54153,7 +54153,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -54165,7 +54165,7 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
           "l": 0,
@@ -54180,7 +54180,7 @@
         "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "22'",
+        "minuto": "27'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54755,10 +54755,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         }
       },
@@ -54770,7 +54770,7 @@
         "gameUrlName": "real-madrid-vs-celta-vigo",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "17'",
+        "minuto": "23'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54932,7 +54932,7 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
@@ -54952,7 +54952,7 @@
         "gameUrlName": "napoli-vs-torino",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "40'",
+        "minuto": "45+1'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
