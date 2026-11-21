@@ -59059,7 +59059,7 @@
       "local": "Atlético Mineiro",
       "visitante": "Boca Juniors",
       "fechaHora": "2026-11-21T19:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -59067,7 +59067,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -59089,9 +59089,9 @@
         "leagueName": "Copa Sudamericana",
         "country": "Internacional",
         "gameUrlName": "atletico-mineiro-vs-boca-juniors",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "40'",
+        "minuto": "45'",
         "ronda": "Final",
         "ganador": null,
         "alargue": false,
