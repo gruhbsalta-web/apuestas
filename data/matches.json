@@ -54095,7 +54095,7 @@
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "64'",
+        "minuto": "70'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54104,7 +54104,7 @@
         "arbitro": "Pablo Echavarría"
       },
       "foto2T": {
-        "minuto": "64'",
+        "minuto": "70'",
         "enPausa": false,
         "corners": {
           "l": 3,
@@ -54580,7 +54580,7 @@
       "visitante": "Arsenal",
       "fechaHora": "2026-11-21T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -54588,7 +54588,7 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 6,
@@ -54609,31 +54609,15 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "newcastle-united-vs-arsenal",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+8'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
         "tv": "Disney+ Premium",
         "estadio": "St. James' Park",
         "arbitro": "Chris Kavanagh"
-      },
-      "foto2T": {
-        "minuto": "90+8'",
-        "enPausa": false,
-        "corners": {
-          "l": 6,
-          "v": 3
-        },
-        "tirosArco": {
-          "l": 3,
-          "v": 4
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 1
-        }
       }
     },
     {
@@ -54732,7 +54716,7 @@
       "visitante": "Real Betis",
       "fechaHora": "2026-11-21T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -54743,7 +54727,7 @@
           "v": 4
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 2
         },
         "tirosArco": {
@@ -54761,31 +54745,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "sevilla-vs-real-betis",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+3'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
         "arbitro": "José Sánchez"
-      },
-      "foto2T": {
-        "minuto": "90+3'",
-        "enPausa": false,
-        "corners": {
-          "l": 6,
-          "v": 2
-        },
-        "tirosArco": {
-          "l": 6,
-          "v": 3
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 5
-        }
       }
     },
     {
