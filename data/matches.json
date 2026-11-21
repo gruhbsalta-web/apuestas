@@ -54110,19 +54110,19 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "corners": {
           "l": 6,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
           "l": 3,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 2
         }
       },
@@ -54134,7 +54134,7 @@
         "gameUrlName": "argentinos-juniors-vs-independiente",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "66'",
+        "minuto": "71'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54143,18 +54143,18 @@
         "arbitro": "Jorge Ignacio Baliño"
       },
       "foto2T": {
-        "minuto": "66'",
+        "minuto": "71'",
         "enPausa": false,
         "corners": {
           "l": 6,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
           "l": 3,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 2
         }
       }
@@ -54176,7 +54176,7 @@
           "v": 1
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 2
         },
         "tirosArco": {
@@ -54196,7 +54196,7 @@
         "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "67'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54205,10 +54205,10 @@
         "arbitro": "Edgardo Daniel Zamora"
       },
       "foto2T": {
-        "minuto": "61'",
+        "minuto": "67'",
         "enPausa": false,
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 2
         },
         "tirosArco": {
@@ -54226,7 +54226,7 @@
       "local": "Colón",
       "visitante": "Deportivo Morón",
       "fechaHora": "2026-11-21T17:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -54235,19 +54235,19 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 5,
           "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -54256,7 +54256,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "colon-vs-deportivo-moron",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Reducido - Cuartos de Final",
@@ -54786,12 +54786,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
-          "v": 3
+          "l": 4,
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
-          "v": 3
+          "l": 3,
+          "v": 4
         }
       },
       "source": {
@@ -54802,7 +54802,7 @@
         "gameUrlName": "real-madrid-vs-celta-vigo",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "58'",
+        "minuto": "64'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54811,19 +54811,19 @@
         "arbitro": "Adrián Cordero"
       },
       "foto2T": {
-        "minuto": "58'",
+        "minuto": "64'",
         "enPausa": false,
         "corners": {
           "l": 7,
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
-          "v": 3
+          "l": 4,
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
-          "v": 3
+          "l": 3,
+          "v": 4
         }
       }
     },
@@ -54981,7 +54981,7 @@
         },
         "corners": {
           "l": 7,
-          "v": 2
+          "v": 4
         },
         "tirosArco": {
           "l": 8,
@@ -55000,7 +55000,7 @@
         "gameUrlName": "napoli-vs-torino",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "88'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55009,11 +55009,11 @@
         "arbitro": "Marco Di Bello"
       },
       "foto2T": {
-        "minuto": "81'",
+        "minuto": "88'",
         "enPausa": false,
         "corners": {
           "l": 7,
-          "v": 2
+          "v": 4
         },
         "tirosArco": {
           "l": 8,
