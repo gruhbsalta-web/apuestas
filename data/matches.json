@@ -54247,27 +54247,27 @@
       "visitante": "Ipswich",
       "fechaHora": "2026-11-21T12:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
           "v": 0
         },
         "tarjetas": {
-          "l": 2,
-          "v": 0
+          "l": 4,
+          "v": 1
         },
         "corners": {
-          "l": 6,
-          "v": 2
+          "l": 8,
+          "v": 6
         },
         "tirosArco": {
-          "l": 8,
-          "v": 2
+          "l": 9,
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
-          "v": 6
+          "l": 3,
+          "v": 7
         }
       },
       "source": {
@@ -54276,11 +54276,11 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "tottenham-vs-ipswich",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "58'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
-        "ganador": null,
+        "ganador": 1,
         "tv": "Disney+ Premium",
         "estadio": "Tottenham Hotspur Stadium",
         "arbitro": "Robert Jones"
@@ -54292,27 +54292,27 @@
       "visitante": "Crystal Palace",
       "fechaHora": "2026-11-21T12:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "tarjetas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         },
         "corners": {
-          "l": 1,
-          "v": 3
+          "l": 4,
+          "v": 6
         },
         "tirosArco": {
-          "l": 5,
-          "v": 4
+          "l": 7,
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
-          "v": 3
+          "l": 3,
+          "v": 4
         }
       },
       "source": {
@@ -54321,11 +54321,11 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "coventry-vs-crystal-palace",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "54'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
-        "ganador": null,
+        "ganador": 1,
         "tv": "Disney+ Premium",
         "estadio": "Coventry Building Society Arena",
         "arbitro": "Darren England"
@@ -54337,23 +54337,23 @@
       "visitante": "Leeds United",
       "fechaHora": "2026-11-21T12:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
-          "v": 2
+          "v": 4
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 3
         },
         "corners": {
-          "l": 0,
-          "v": 1
+          "l": 3,
+          "v": 2
         },
         "tirosArco": {
           "l": 3,
-          "v": 6
+          "v": 8
         },
         "atajadas": {
           "l": 4,
@@ -54366,11 +54366,11 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "chelsea-vs-leeds-united",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "55'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
-        "ganador": null,
+        "ganador": 2,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Stamford Bridge",
         "arbitro": "Michael Oliver"
@@ -54382,27 +54382,27 @@
       "visitante": "Sunderland",
       "fechaHora": "2026-11-21T12:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         },
         "corners": {
-          "l": 5,
-          "v": 1
+          "l": 7,
+          "v": 2
         },
         "tirosArco": {
-          "l": 4,
-          "v": 0
+          "l": 7,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 4
+          "l": 1,
+          "v": 7
         }
       },
       "source": {
@@ -54411,9 +54411,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "aston-villa-vs-sunderland",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "59'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "Disney+ Premium",
@@ -54427,27 +54427,27 @@
       "visitante": "Nottingham Forest",
       "fechaHora": "2026-11-21T12:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 3
         },
         "corners": {
-          "l": 4,
-          "v": 1
+          "l": 6,
+          "v": 4
         },
         "tirosArco": {
-          "l": 5,
-          "v": 0
+          "l": 7,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 3
+          "l": 1,
+          "v": 5
         }
       },
       "source": {
@@ -54456,11 +54456,11 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "bournemouth-vs-nottingham-forest",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "58'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
-        "ganador": null,
+        "ganador": 1,
         "tv": "Disney+ Premium",
         "estadio": "Vitality Stadium",
         "arbitro": "Adam Herczeg"
@@ -54570,20 +54570,20 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
-          "v": 0
-        },
-        "corners": {
-          "l": 6,
-          "v": 3
-        },
-        "tirosArco": {
-          "l": 4,
+          "l": 2,
           "v": 1
         },
+        "corners": {
+          "l": 8,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
         "atajadas": {
-          "l": 0,
-          "v": 4
+          "l": 1,
+          "v": 5
         }
       },
       "source": {
@@ -54592,9 +54592,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "rayo-vallecano-vs-valencia",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "90+4'",
         "ronda": "Fecha 13",
         "ganador": null,
         "tv": "DSports",
@@ -54801,16 +54801,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -54819,15 +54819,14 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "parma-vs-as-roma",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "11'",
         "ronda": "Fecha 12",
         "ganador": null,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Ennio Tardini",
-        "arbitro": "Simone Sozza",
-        "infoDia": "2026-11-21"
+        "arbitro": "Simone Sozza"
       }
     },
     {
