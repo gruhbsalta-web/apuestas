@@ -54107,7 +54107,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 1,
@@ -54119,10 +54119,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 1
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         }
       },
@@ -54134,7 +54134,7 @@
         "gameUrlName": "argentinos-juniors-vs-independiente",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "32'",
+        "minuto": "44'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54156,8 +54156,8 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
           "l": 1,
@@ -54180,7 +54180,7 @@
         "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "27'",
+        "minuto": "40'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54206,7 +54206,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -54224,15 +54224,15 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "colon-vs-deportivo-moron",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "6'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
+        "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
-        "arbitro": "Fabricio Llobet",
-        "infoDia": "2026-11-21"
+        "arbitro": "Fabricio Llobet"
       }
     },
     {
@@ -54750,16 +54750,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -54770,7 +54770,7 @@
         "gameUrlName": "real-madrid-vs-celta-vigo",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "23'",
+        "minuto": "35'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54920,7 +54920,7 @@
       "local": "Napoli",
       "visitante": "Torino",
       "fechaHora": "2026-11-21T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -54950,9 +54950,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "napoli-vs-torino",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+1'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
