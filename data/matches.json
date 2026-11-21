@@ -54103,7 +54103,7 @@
       "visitante": "Independiente",
       "fechaHora": "2026-11-21T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -54114,15 +54114,15 @@
           "v": 1
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 5
         },
         "tirosArco": {
           "l": 3,
-          "v": 5
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 2
         }
       },
@@ -54133,30 +54133,7 @@
         "country": "Argentina",
         "gameUrlName": "argentinos-juniors-vs-independiente",
         "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "84'",
-        "ronda": "Octavos de Final",
-        "ganador": null,
-        "alargue": false,
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
-        "estadio": "Estadio Diego Armando Maradona",
-        "arbitro": "Jorge Ignacio Baliño"
-      },
-      "foto2T": {
-        "minuto": "84'",
-        "enPausa": false,
-        "corners": {
-          "l": 6,
-          "v": 5
-        },
-        "tirosArco": {
-          "l": 3,
-          "v": 5
-        },
-        "atajadas": {
-          "l": 3,
-          "v": 2
-        }
+        "ronda": "Octavos de Final"
       }
     },
     {
@@ -54173,7 +54150,7 @@
         },
         "tarjetas": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 6,
@@ -54196,7 +54173,7 @@
         "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "79'",
+        "minuto": "90'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54205,7 +54182,7 @@
         "arbitro": "Edgardo Daniel Zamora"
       },
       "foto2T": {
-        "minuto": "79'",
+        "minuto": "90'",
         "enPausa": false,
         "corners": {
           "l": 6,
@@ -54256,15 +54233,31 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "colon-vs-deportivo-moron",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "56'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio Brigadier General Estanislao López",
         "arbitro": "Fabricio Llobet"
+      },
+      "foto2T": {
+        "minuto": "56'",
+        "enPausa": false,
+        "corners": {
+          "l": 5,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
       }
     },
     {
@@ -54774,24 +54767,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 8,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
-          "l": 4,
+          "l": 6,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -54802,7 +54795,7 @@
         "gameUrlName": "real-madrid-vs-celta-vigo",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "76'",
+        "minuto": "88'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54811,19 +54804,19 @@
         "arbitro": "Adrián Cordero"
       },
       "foto2T": {
-        "minuto": "76'",
+        "minuto": "88'",
         "enPausa": false,
         "corners": {
           "l": 8,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
-          "l": 4,
+          "l": 6,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 3
+          "v": 4
         }
       }
     },
