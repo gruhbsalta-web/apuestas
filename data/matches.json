@@ -54201,28 +54201,28 @@
       "local": "Manchester City",
       "visitante": "Fulham",
       "fechaHora": "2026-11-21T09:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 3
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 8,
+          "v": 6
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 4
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 2
         }
       },
       "source": {
@@ -54231,15 +54231,14 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "manchester-city-vs-fulham",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Etihad Stadium",
-        "arbitro": "Thomas Bramall",
-        "infoDia": "2026-11-21"
+        "arbitro": "Thomas Bramall"
       }
     },
     {
@@ -54523,28 +54522,28 @@
       "local": "Alavés",
       "visitante": "RC Deportivo",
       "fechaHora": "2026-11-21T10:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 4
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 8,
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 7,
+          "v": 1
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 5
         }
       },
       "source": {
@@ -54553,15 +54552,14 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "alaves-vs-deportivo-la-coruna",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "2°",
+        "statusEnum": 2,
+        "minuto": "89'",
         "ronda": "Fecha 13",
         "ganador": null,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio de Mendizorroza",
-        "arbitro": "Víctor García",
-        "infoDia": "2026-11-21"
+        "arbitro": "Víctor García"
       }
     },
     {
@@ -54707,11 +54705,11 @@
       "local": "Lazio",
       "visitante": "Lecce",
       "fechaHora": "2026-11-21T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -54719,16 +54717,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         }
       },
       "source": {
@@ -54737,15 +54735,14 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "lazio-vs-lecce",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "ET",
+        "statusEnum": 2,
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "ganador": null,
         "tv": "Disney+ Premium",
         "estadio": "Stadio Olimpico (Rome)",
-        "arbitro": "Matteo Marcenaro",
-        "infoDia": "2026-11-21"
+        "arbitro": "Matteo Marcenaro"
       }
     },
     {
@@ -54757,7 +54754,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -54765,11 +54762,11 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -54783,15 +54780,14 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "como-vs-cagliari",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "45+1'",
         "ronda": "Fecha 12",
         "ganador": null,
         "tv": "Disney+ Premium",
         "estadio": "Stadio Giuseppe Sinigaglia",
-        "arbitro": "A. Calzavara",
-        "infoDia": "2026-11-21"
+        "arbitro": "A. Calzavara"
       }
     },
     {
@@ -55841,6 +55837,138 @@
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "U-Power Stadium",
         "arbitro": "D. Doveri",
+        "infoDia": "2026-11-21"
+      }
+    },
+    {
+      "id": "promiedos_eijehab",
+      "local": "Atlanta",
+      "visitante": "Ciudad De Bolivar",
+      "fechaHora": "2026-11-28T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "atlanta-vs-ciudad-de-bolivar",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "estadio": "Estadio Don León Kolbovski",
+        "infoDia": "2026-11-21"
+      }
+    },
+    {
+      "id": "promiedos_eijehac",
+      "local": "Tristan Suárez",
+      "visitante": "Gimnasia y Tiro",
+      "fechaHora": "2026-11-28T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "tristan-suarez-vs-gimnasia-y-tiro",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "estadio": "Estadio 20 de Octubre",
+        "infoDia": "2026-11-21"
+      }
+    },
+    {
+      "id": "promiedos_eijfegg",
+      "local": "Deportivo Madryn",
+      "visitante": "Gimnasia y Esgrima",
+      "fechaHora": "2026-11-28T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "ebj",
+        "leagueName": "Primera Nacional",
+        "country": "Argentina",
+        "gameUrlName": "dep.-madryn-vs-gimnasia-jujuy",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "estadio": "Estadio Abel Sastre",
         "infoDia": "2026-11-21"
       }
     }
