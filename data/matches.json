@@ -54250,19 +54250,19 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
-          "l": 7,
+          "l": 8,
           "v": 2
         },
         "atajadas": {
@@ -54276,9 +54276,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "tottenham-vs-ipswich",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "58'",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "Disney+ Premium",
@@ -54304,15 +54304,15 @@
         },
         "corners": {
           "l": 1,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 4
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -54321,9 +54321,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "coventry-vs-crystal-palace",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "54'",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "Disney+ Premium",
@@ -54341,10 +54341,10 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "corners": {
@@ -54352,12 +54352,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 2,
-          "v": 4
+          "l": 3,
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
-          "v": 1
+          "l": 4,
+          "v": 2
         }
       },
       "source": {
@@ -54366,9 +54366,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "chelsea-vs-leeds-united",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "55'",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "ESPN, Disney+ Premium",
@@ -54389,20 +54389,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "corners": {
           "l": 5,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -54411,9 +54411,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "aston-villa-vs-sunderland",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "59'",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "Disney+ Premium",
@@ -54456,9 +54456,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "bournemouth-vs-nottingham-forest",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "58'",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "Disney+ Premium",
@@ -54562,24 +54562,24 @@
       "local": "Rayo Vallecano",
       "visitante": "Valencia CF",
       "fechaHora": "2026-11-21T12:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 5,
-          "v": 2
+          "l": 6,
+          "v": 3
         },
         "tirosArco": {
           "l": 4,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
           "l": 0,
@@ -54592,9 +54592,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "rayo-vallecano-vs-valencia",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "40'",
+        "minuto": "45'",
         "ronda": "Fecha 13",
         "ganador": null,
         "tv": "DSports",
