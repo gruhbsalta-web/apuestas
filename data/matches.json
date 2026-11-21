@@ -53988,10 +53988,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         }
       },
@@ -54001,15 +54001,14 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "11'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "tv": "ESPN Premium",
         "estadio": "Estadio Norberto Tito Tomaghello",
-        "arbitro": "Pablo Echavarría",
-        "infoDia": "2026-11-21"
+        "arbitro": "Pablo Echavarría"
       }
     },
     {
@@ -54476,7 +54475,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 1,
@@ -54488,7 +54487,7 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 1,
@@ -54503,7 +54502,7 @@
         "gameUrlName": "newcastle-united-vs-arsenal",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "31'",
+        "minuto": "43'",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "Disney+ Premium",
@@ -54618,15 +54617,15 @@
           "v": 2
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "tirosArco": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         }
       },
@@ -54638,7 +54637,7 @@
         "gameUrlName": "sevilla-vs-real-betis",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "27'",
+        "minuto": "39'",
         "ronda": "Fecha 13",
         "ganador": null,
         "tv": "DSports",
@@ -54791,7 +54790,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
@@ -54803,11 +54802,11 @@
           "v": 5
         },
         "tirosArco": {
-          "l": 4,
-          "v": 2
+          "l": 5,
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 4
         }
       },
@@ -54817,9 +54816,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "parma-vs-as-roma",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "57'",
         "ronda": "Fecha 12",
         "ganador": null,
         "tv": "ESPN 2, Disney+ Premium",
