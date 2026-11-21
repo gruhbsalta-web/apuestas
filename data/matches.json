@@ -542,7 +542,8 @@
         "leagueName": "Copa Argentina",
         "gameUrlName": "estudiantes-rio-cuarto-vs-san-martin-de-tucuman",
         "statusShort": "Por penales",
-        "country": "Argentina"
+        "country": "Argentina",
+        "alargue": false
       }
     },
     {
@@ -694,7 +695,8 @@
         "leagueName": "Copa Argentina",
         "gameUrlName": "gimnasia-mendoza-vs-gimnasia-y-tiro",
         "statusShort": "Por penales",
-        "country": "Argentina"
+        "country": "Argentina",
+        "alargue": false
       }
     },
     {
@@ -852,7 +854,8 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "alargue": false
       }
     },
     {
@@ -893,7 +896,8 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "alargue": false
       }
     },
     {
@@ -980,9 +984,9 @@
     },
     {
       "id": "promiedos_egjggch",
-      "local": "Gimnasia de Jujuy",
+      "local": "Gimnasia y Esgrima",
       "visitante": "Belgrano",
-      "fechaHora": "2026-05-30T16:30",
+      "fechaHora": "2026-05-30T15:30",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1016,7 +1020,12 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "TyC Sports, TyC Sports Play",
+        "estadio": "Estadio Único Madre de Ciudades",
+        "arbitro": "Daniel Alberto Zamora"
       }
     },
     {
@@ -1269,7 +1278,7 @@
       "id": "promiedos_egjbbcd",
       "local": "San Lorenzo",
       "visitante": "Deportivo Riestra",
-      "fechaHora": "2026-07-17T19:45",
+      "fechaHora": "2026-07-17T18:45",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1303,7 +1312,12 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "TyC Sports, TyC Sports Play",
+        "estadio": "Estadio Nuevo Francisco Urbano",
+        "arbitro": "Álvaro Carranza"
       }
     },
     {
@@ -1391,8 +1405,8 @@
     {
       "id": "promiedos_ehhjbde",
       "local": "Deportivo Riestra",
-      "visitante": "Gimnasia La Plata",
-      "fechaHora": "2026-08-18T18:00",
+      "visitante": "Gimnasia y Esgrima",
+      "fechaHora": "2026-08-18T17:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1426,14 +1440,19 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "TyC Sports, TyC Sports Play",
+        "estadio": "Estadio Norberto Tito Tomaghello",
+        "arbitro": "Pablo Echavarría"
       }
     },
     {
       "id": "promiedos_ehbchjj",
       "local": "Banfield",
       "visitante": "Midland",
-      "fechaHora": "2026-08-18T22:15",
+      "fechaHora": "2026-08-18T21:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1467,7 +1486,12 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "TyC Sports, TyC Sports Play",
+        "estadio": "Estadio Nuevo Francisco Urbano",
+        "arbitro": "Bruno Amiconi"
       }
     },
     {
@@ -1597,7 +1621,7 @@
       "id": "promiedos_ehcihfb",
       "local": "Platense",
       "visitante": "Instituto",
-      "fechaHora": "2026-08-27T22:15",
+      "fechaHora": "2026-08-27T21:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1631,14 +1655,19 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "TyC Sports, TyC Sports Play",
+        "estadio": "Estadio Marcelo Alberto Bielsa",
+        "arbitro": "Leandro Rey Hilfer"
       }
     },
     {
       "id": "promiedos_ehhgjea",
       "local": "Vélez Sarsfield",
       "visitante": "Boca Juniors",
-      "fechaHora": "2026-09-02T22:15",
+      "fechaHora": "2026-09-02T21:15",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1672,14 +1701,19 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "TyC Sports, TyC Sports Play",
+        "estadio": "Estadio Mario Alberto Kempes",
+        "arbitro": "Sebastían Zunino"
       }
     },
     {
       "id": "promiedos_eibjhac",
       "local": "Deportivo Riestra",
       "visitante": "Banfield",
-      "fechaHora": "2026-09-09T20:00",
+      "fechaHora": "2026-09-09T19:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1713,14 +1747,19 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "TyC Sports, TyC Sports Play",
+        "estadio": "Estadio Alfredo Martín Beranger",
+        "arbitro": "Maximiliano Ramírez"
       }
     },
     {
       "id": "promiedos_eicgejh",
       "local": "Independiente Rivadavia",
       "visitante": "Atlético Tucumán",
-      "fechaHora": "2026-09-16T20:00",
+      "fechaHora": "2026-09-16T19:00",
       "finPrimerTiempo": true,
       "finPartido": true,
       "stats": {
@@ -1754,7 +1793,12 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "TyC Sports, TyC Sports Play",
+        "estadio": "Estadio Regional de Los Andes",
+        "arbitro": "Jorge Ignacio Baliño"
       }
     },
     {
@@ -35966,7 +36010,12 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": null
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "TyC Sports, TyC Sports Play",
+        "estadio": "Estadio Padre Ernesto Martearena",
+        "arbitro": "Sebastían Zunino"
       }
     },
     {
@@ -53918,7 +53967,50 @@
         "country": "Argentina",
         "gameUrlName": "velez-sarsfield-vs-belgrano",
         "statusShort": "Por penales",
-        "ronda": "Octavos de Final"
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Octavos de Final",
+        "ganador": 1,
+        "alargue": true,
+        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
+        "estadio": "Jose Amalfitani",
+        "arbitro": "Yael Falcón"
+      },
+      "stats90": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 3
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        },
+        "foto": null,
+        "aprox": [
+          "corners",
+          "tirosArco",
+          "atajadas"
+        ]
+      },
+      "correccion": {
+        "nota": "Vélez 2-2 Belgrano (Octavos, 20/11/2026), fue al alargue. Sin foto del minuto 90 (el actualizador se cortó a los 72', cuando Belgrano tenía 3 corners). Según Gustavo, Belgrano no pasó los 4 corners en los 90'.",
+        "cotas90": {
+          "corners": {
+            "v": 4
+          }
+        }
       }
     },
     {
@@ -53971,7 +54063,7 @@
       "local": "Defensa y Justicia",
       "visitante": "Barracas Central",
       "fechaHora": "2026-11-21T15:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -53983,16 +54075,16 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -54001,11 +54093,12 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "41'",
+        "minuto": "45'",
         "ronda": "Octavos de Final",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN Premium",
         "estadio": "Estadio Norberto Tito Tomaghello",
         "arbitro": "Pablo Echavarría"
@@ -54474,24 +54567,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 3,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -54502,12 +54595,29 @@
         "gameUrlName": "newcastle-united-vs-arsenal",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "56'",
+        "minuto": "68'",
         "ronda": "Fecha 11",
         "ganador": null,
+        "alargue": false,
         "tv": "Disney+ Premium",
         "estadio": "St. James' Park",
         "arbitro": "Chris Kavanagh"
+      },
+      "foto2T": {
+        "minuto": "68'",
+        "enPausa": false,
+        "corners": {
+          "l": 3,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 1
+        }
       }
     },
     {
@@ -54617,16 +54727,16 @@
           "v": 2
         },
         "corners": {
-          "l": 1,
-          "v": 2
-        },
-        "tirosArco": {
           "l": 2,
           "v": 2
         },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
         "atajadas": {
-          "l": 1,
-          "v": 2
+          "l": 2,
+          "v": 3
         }
       },
       "source": {
@@ -54637,12 +54747,29 @@
         "gameUrlName": "sevilla-vs-real-betis",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "51'",
+        "minuto": "63'",
         "ronda": "Fecha 13",
         "ganador": null,
+        "alargue": false,
         "tv": "DSports",
         "estadio": "Estadio Ramón Sánchez Pizjuán",
         "arbitro": "José Sánchez"
+      },
+      "foto2T": {
+        "minuto": "63'",
+        "enPausa": false,
+        "corners": {
+          "l": 2,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
       }
     },
     {
@@ -54787,11 +54914,11 @@
       "visitante": "AS Roma",
       "fechaHora": "2026-11-21T14:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
-          "v": 4
+          "v": 5
         },
         "tarjetas": {
           "l": 1,
@@ -54803,7 +54930,7 @@
         },
         "tirosArco": {
           "l": 6,
-          "v": 8
+          "v": 9
         },
         "atajadas": {
           "l": 4,
@@ -54816,11 +54943,12 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "parma-vs-as-roma",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
-        "ganador": null,
+        "ganador": 2,
+        "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Stadio Ennio Tardini",
         "arbitro": "Simone Sozza"
