@@ -54102,7 +54102,7 @@
       "local": "Argentinos Juniors",
       "visitante": "Independiente",
       "fechaHora": "2026-11-21T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -54115,15 +54115,15 @@
         },
         "corners": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 1,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 1
         }
       },
       "source": {
@@ -54132,9 +54132,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "argentinos-juniors-vs-independiente",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "44'",
+        "minuto": "45'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54148,7 +54148,7 @@
       "local": "Ciudad De Bolivar",
       "visitante": "Atlanta",
       "fechaHora": "2026-11-21T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -54160,7 +54160,7 @@
           "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
@@ -54178,9 +54178,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "40'",
+        "minuto": "45'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54206,15 +54206,15 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -54226,7 +54226,7 @@
         "gameUrlName": "colon-vs-deportivo-moron",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "6'",
+        "minuto": "18'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54750,16 +54750,16 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -54770,7 +54770,7 @@
         "gameUrlName": "real-madrid-vs-celta-vigo",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "35'",
+        "minuto": "45+2'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54950,15 +54950,31 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "napoli-vs-torino",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
         "tv": "Disney+ Premium",
         "estadio": "Stadio Diego Armando Maradona",
         "arbitro": "Marco Di Bello"
+      },
+      "foto2T": {
+        "minuto": "52'",
+        "enPausa": false,
+        "corners": {
+          "l": 4,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 3
+        }
       }
     },
     {
