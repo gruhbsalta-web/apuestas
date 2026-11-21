@@ -59064,7 +59064,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -59072,11 +59072,11 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
           "l": 0,
@@ -59091,7 +59091,7 @@
         "gameUrlName": "atletico-mineiro-vs-boca-juniors",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "13'",
+        "minuto": "22'",
         "ronda": "Final",
         "ganador": null,
         "alargue": false,
