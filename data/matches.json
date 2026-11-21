@@ -54199,16 +54199,16 @@
           "v": 3
         },
         "corners": {
-          "l": 8,
+          "l": 9,
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 5
         }
       },
       "source": {
@@ -54219,7 +54219,7 @@
         "gameUrlName": "colon-vs-deportivo-moron",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "74'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54228,19 +54228,19 @@
         "arbitro": "Fabricio Llobet"
       },
       "foto2T": {
-        "minuto": "61'",
+        "minuto": "74'",
         "enPausa": false,
         "corners": {
-          "l": 8,
+          "l": 9,
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 5
         }
       }
     },
@@ -54748,7 +54748,7 @@
       "visitante": "Celta de Vigo",
       "fechaHora": "2026-11-21T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -54777,31 +54777,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-madrid-vs-celta-vigo",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+4'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 13",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Santiago Bernabéu",
         "arbitro": "Adrián Cordero"
-      },
-      "foto2T": {
-        "minuto": "90+4'",
-        "enPausa": false,
-        "corners": {
-          "l": 8,
-          "v": 3
-        },
-        "tirosArco": {
-          "l": 7,
-          "v": 4
-        },
-        "atajadas": {
-          "l": 3,
-          "v": 5
-        }
       }
     },
     {
