@@ -54203,10 +54203,10 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 0
         },
         "tirosArco": {
@@ -54226,7 +54226,7 @@
         "gameUrlName": "colon-vs-deportivo-moron",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "18'",
+        "minuto": "24'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54738,7 +54738,7 @@
       "local": "Real Madrid",
       "visitante": "Celta de Vigo",
       "fechaHora": "2026-11-21T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -54768,9 +54768,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-madrid-vs-celta-vigo",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+2'",
+        "minuto": "45'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54928,20 +54928,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
-          "v": 1
+          "l": 4,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         }
       },
       "source": {
@@ -54952,7 +54952,7 @@
         "gameUrlName": "napoli-vs-torino",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "52'",
+        "minuto": "58'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -54961,19 +54961,19 @@
         "arbitro": "Marco Di Bello"
       },
       "foto2T": {
-        "minuto": "52'",
+        "minuto": "58'",
         "enPausa": false,
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
-          "v": 1
+          "l": 4,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         }
       }
     },
