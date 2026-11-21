@@ -54488,10 +54488,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -54503,7 +54503,7 @@
         "gameUrlName": "newcastle-united-vs-arsenal",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "25'",
+        "minuto": "31'",
         "ronda": "Fecha 11",
         "ganador": null,
         "tv": "Disney+ Premium",
@@ -54619,15 +54619,15 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -54638,7 +54638,7 @@
         "gameUrlName": "sevilla-vs-real-betis",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "21'",
+        "minuto": "27'",
         "ronda": "Fecha 13",
         "ganador": null,
         "tv": "DSports",
