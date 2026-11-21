@@ -54095,7 +54095,7 @@
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "56'",
+        "minuto": "64'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54104,7 +54104,7 @@
         "arbitro": "Pablo Echavarría"
       },
       "foto2T": {
-        "minuto": "56'",
+        "minuto": "64'",
         "enPausa": false,
         "corners": {
           "l": 3,
@@ -54592,7 +54592,7 @@
         },
         "corners": {
           "l": 6,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
           "l": 3,
@@ -54611,7 +54611,7 @@
         "gameUrlName": "newcastle-united-vs-arsenal",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "89'",
+        "minuto": "90+8'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -54620,11 +54620,11 @@
         "arbitro": "Chris Kavanagh"
       },
       "foto2T": {
-        "minuto": "89'",
+        "minuto": "90+8'",
         "enPausa": false,
         "corners": {
           "l": 6,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
           "l": 3,
@@ -54735,24 +54735,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
-          "l": 3,
-          "v": 3
+          "l": 5,
+          "v": 4
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
-          "l": 4,
+          "l": 6,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -54763,7 +54763,7 @@
         "gameUrlName": "sevilla-vs-real-betis",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "84'",
+        "minuto": "90+3'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54772,19 +54772,19 @@
         "arbitro": "José Sánchez"
       },
       "foto2T": {
-        "minuto": "84'",
+        "minuto": "90+3'",
         "enPausa": false,
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
-          "l": 4,
+          "l": 6,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 4
+          "v": 5
         }
       }
     },
