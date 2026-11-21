@@ -53976,7 +53976,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 1,
@@ -53984,11 +53984,11 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "tirosArco": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
           "l": 2,
@@ -54003,7 +54003,7 @@
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "29'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "tv": "ESPN Premium",
@@ -54791,7 +54791,7 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
           "l": 1,
@@ -54803,10 +54803,10 @@
         },
         "tirosArco": {
           "l": 5,
-          "v": 5
+          "v": 7
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 4
         }
       },
@@ -54818,7 +54818,7 @@
         "gameUrlName": "parma-vs-as-roma",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "69'",
+        "minuto": "75'",
         "ronda": "Fecha 12",
         "ganador": null,
         "tv": "ESPN 2, Disney+ Premium",
