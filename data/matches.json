@@ -54095,7 +54095,7 @@
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "52'",
+        "minuto": "56'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54104,7 +54104,7 @@
         "arbitro": "Pablo Echavarría"
       },
       "foto2T": {
-        "minuto": "52'",
+        "minuto": "56'",
         "enPausa": false,
         "corners": {
           "l": 3,
@@ -54611,7 +54611,7 @@
         "gameUrlName": "newcastle-united-vs-arsenal",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "86'",
+        "minuto": "89'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -54620,7 +54620,7 @@
         "arbitro": "Chris Kavanagh"
       },
       "foto2T": {
-        "minuto": "86'",
+        "minuto": "89'",
         "enPausa": false,
         "corners": {
           "l": 6,
@@ -54747,12 +54747,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -54763,7 +54763,7 @@
         "gameUrlName": "sevilla-vs-real-betis",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "84'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54772,19 +54772,19 @@
         "arbitro": "José Sánchez"
       },
       "foto2T": {
-        "minuto": "81'",
+        "minuto": "84'",
         "enPausa": false,
         "corners": {
           "l": 5,
           "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 4
         }
       }
     },
