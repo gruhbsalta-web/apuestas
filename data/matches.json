@@ -54110,20 +54110,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -54134,7 +54134,7 @@
         "gameUrlName": "argentinos-juniors-vs-independiente",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "14'",
+        "minuto": "26'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54180,7 +54180,7 @@
         "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "10'",
+        "minuto": "22'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54743,7 +54743,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -54755,7 +54755,7 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 1,
@@ -54770,7 +54770,7 @@
         "gameUrlName": "real-madrid-vs-celta-vigo",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "17'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54933,7 +54933,7 @@
         },
         "corners": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 3,
@@ -54952,7 +54952,7 @@
         "gameUrlName": "napoli-vs-torino",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "28'",
+        "minuto": "40'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
