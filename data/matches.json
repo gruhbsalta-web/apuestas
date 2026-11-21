@@ -54107,7 +54107,7 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 2,
@@ -54119,7 +54119,7 @@
         },
         "tirosArco": {
           "l": 3,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
           "l": 3,
@@ -54134,7 +54134,7 @@
         "gameUrlName": "argentinos-juniors-vs-independiente",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "71'",
+        "minuto": "84'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54143,7 +54143,7 @@
         "arbitro": "Jorge Ignacio Baliño"
       },
       "foto2T": {
-        "minuto": "71'",
+        "minuto": "84'",
         "enPausa": false,
         "corners": {
           "l": 6,
@@ -54151,7 +54151,7 @@
         },
         "tirosArco": {
           "l": 3,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
           "l": 3,
@@ -54172,11 +54172,11 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
@@ -54196,7 +54196,7 @@
         "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "67'",
+        "minuto": "79'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54205,10 +54205,10 @@
         "arbitro": "Edgardo Daniel Zamora"
       },
       "foto2T": {
-        "minuto": "67'",
+        "minuto": "79'",
         "enPausa": false,
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
@@ -54774,15 +54774,15 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 7,
+          "l": 8,
           "v": 1
         },
         "tirosArco": {
@@ -54791,7 +54791,7 @@
         },
         "atajadas": {
           "l": 3,
-          "v": 4
+          "v": 3
         }
       },
       "source": {
@@ -54802,7 +54802,7 @@
         "gameUrlName": "real-madrid-vs-celta-vigo",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "64'",
+        "minuto": "76'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54811,10 +54811,10 @@
         "arbitro": "Adrián Cordero"
       },
       "foto2T": {
-        "minuto": "64'",
+        "minuto": "76'",
         "enPausa": false,
         "corners": {
-          "l": 7,
+          "l": 8,
           "v": 1
         },
         "tirosArco": {
@@ -54823,7 +54823,7 @@
         },
         "atajadas": {
           "l": 3,
-          "v": 4
+          "v": 3
         }
       }
     },
@@ -54969,7 +54969,7 @@
       "visitante": "Torino",
       "fechaHora": "2026-11-21T16:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -54980,16 +54980,16 @@
           "v": 1
         },
         "corners": {
-          "l": 7,
-          "v": 4
+          "l": 8,
+          "v": 5
         },
         "tirosArco": {
-          "l": 8,
+          "l": 10,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 7
+          "v": 9
         }
       },
       "source": {
@@ -54998,31 +54998,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "napoli-vs-torino",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "88'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "Disney+ Premium",
         "estadio": "Stadio Diego Armando Maradona",
         "arbitro": "Marco Di Bello"
-      },
-      "foto2T": {
-        "minuto": "88'",
-        "enPausa": false,
-        "corners": {
-          "l": 7,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 8,
-          "v": 2
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 7
-        }
       }
     },
     {
