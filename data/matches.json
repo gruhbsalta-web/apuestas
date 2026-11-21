@@ -53891,7 +53891,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
@@ -53903,7 +53903,7 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 6
         },
         "atajadas": {
@@ -53919,7 +53919,7 @@
         "gameUrlName": "velez-sarsfield-vs-belgrano",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "54'",
+        "minuto": "66'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
