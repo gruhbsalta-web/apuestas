@@ -54071,11 +54071,11 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "tirosArco": {
@@ -54095,7 +54095,7 @@
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "70'",
+        "minuto": "82'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54104,10 +54104,10 @@
         "arbitro": "Pablo Echavarría"
       },
       "foto2T": {
-        "minuto": "70'",
+        "minuto": "82'",
         "enPausa": false,
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "tirosArco": {
