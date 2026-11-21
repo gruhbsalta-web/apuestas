@@ -54114,15 +54114,15 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -54134,7 +54134,7 @@
         "gameUrlName": "argentinos-juniors-vs-independiente",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "2'",
+        "minuto": "14'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54160,8 +54160,8 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -54178,15 +54178,15 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "10'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
+        "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio Municipal Eva Perón",
-        "arbitro": "Edgardo Daniel Zamora",
-        "infoDia": "2026-11-21"
+        "arbitro": "Edgardo Daniel Zamora"
       }
     },
     {
@@ -54751,14 +54751,14 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -54768,15 +54768,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "real-madrid-vs-celta-vigo",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 13",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Santiago Bernabéu",
-        "arbitro": "Adrián Cordero",
-        "infoDia": "2026-11-21"
+        "arbitro": "Adrián Cordero"
       }
     },
     {
@@ -54932,16 +54932,16 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 2,
-          "v": 0
+          "l": 3,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 2
+          "l": 1,
+          "v": 3
         }
       },
       "source": {
@@ -54952,7 +54952,7 @@
         "gameUrlName": "napoli-vs-torino",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "16'",
+        "minuto": "28'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
