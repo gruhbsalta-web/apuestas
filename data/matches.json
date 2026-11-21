@@ -54575,7 +54575,7 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 1
         },
         "tirosArco": {
@@ -54595,7 +54595,7 @@
         "gameUrlName": "newcastle-united-vs-arsenal",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "74'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -54604,10 +54604,10 @@
         "arbitro": "Chris Kavanagh"
       },
       "foto2T": {
-        "minuto": "68'",
+        "minuto": "74'",
         "enPausa": false,
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 1
         },
         "tirosArco": {
@@ -54723,11 +54723,11 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "tirosArco": {
@@ -54747,7 +54747,7 @@
         "gameUrlName": "sevilla-vs-real-betis",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "63'",
+        "minuto": "68'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54756,10 +54756,10 @@
         "arbitro": "José Sánchez"
       },
       "foto2T": {
-        "minuto": "63'",
+        "minuto": "68'",
         "enPausa": false,
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "tirosArco": {
