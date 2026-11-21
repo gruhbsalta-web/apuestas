@@ -54132,8 +54132,15 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "argentinos-juniors-vs-independiente",
-        "statusShort": "2°",
-        "ronda": "Octavos de Final"
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Octavos de Final",
+        "ganador": 2,
+        "alargue": false,
+        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
+        "estadio": "Estadio Diego Armando Maradona",
+        "arbitro": "Jorge Ignacio Baliño"
       }
     },
     {
@@ -54142,7 +54149,7 @@
       "visitante": "Atlanta",
       "fechaHora": "2026-11-21T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -54154,7 +54161,7 @@
         },
         "corners": {
           "l": 6,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 0,
@@ -54171,31 +54178,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
-        "ronda": "Reducido - Cuartos de Final",
-        "ganador": null,
-        "alargue": false,
-        "tv": "LPF Premium",
-        "estadio": "Estadio Municipal Eva Perón",
-        "arbitro": "Edgardo Daniel Zamora"
-      },
-      "foto2T": {
-        "minuto": "90'",
-        "enPausa": false,
-        "corners": {
-          "l": 6,
-          "v": 2
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 1
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
+        "statusShort": "Final",
+        "ronda": "Reducido - Cuartos de Final"
       }
     },
     {
@@ -54212,10 +54196,10 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "corners": {
-          "l": 5,
+          "l": 8,
           "v": 1
         },
         "tirosArco": {
@@ -54235,7 +54219,7 @@
         "gameUrlName": "colon-vs-deportivo-moron",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "56'",
+        "minuto": "61'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54244,10 +54228,10 @@
         "arbitro": "Fabricio Llobet"
       },
       "foto2T": {
-        "minuto": "56'",
+        "minuto": "61'",
         "enPausa": false,
         "corners": {
-          "l": 5,
+          "l": 8,
           "v": 1
         },
         "tirosArco": {
@@ -54771,7 +54755,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "corners": {
@@ -54779,12 +54763,12 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -54795,7 +54779,7 @@
         "gameUrlName": "real-madrid-vs-celta-vigo",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "88'",
+        "minuto": "90+4'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -54804,19 +54788,19 @@
         "arbitro": "Adrián Cordero"
       },
       "foto2T": {
-        "minuto": "88'",
+        "minuto": "90+4'",
         "enPausa": false,
         "corners": {
           "l": 8,
           "v": 3
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 4
         },
         "atajadas": {
           "l": 3,
-          "v": 4
+          "v": 5
         }
       }
     },
