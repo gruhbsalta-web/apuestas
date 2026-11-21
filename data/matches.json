@@ -56036,6 +56036,3069 @@
         "estadio": "Estadio Abel Sastre",
         "infoDia": "2026-11-21"
       }
+    },
+    {
+      "id": "promiedos_egjabec",
+      "local": "Puerto Cabello",
+      "visitante": "Juventud",
+      "fechaHora": "2026-05-21T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 0
+        },
+        "corners": {
+          "l": 3,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "puerto-cabello-vs-juventud",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio Polideportivo Misael Delgado",
+        "arbitro": "D. Ulloa"
+      }
+    },
+    {
+      "id": "promiedos_egjabed",
+      "local": "Atlético Mineiro",
+      "visitante": "Cienciano",
+      "fechaHora": "2026-05-21T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 2
+        },
+        "corners": {
+          "l": 8,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "atletico-mineiro-vs-cienciano",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Arena MRV",
+        "arbitro": "C. Ortega"
+      }
+    },
+    {
+      "id": "promiedos_egjabga",
+      "local": "Racing Club",
+      "visitante": "Caracas FC",
+      "fechaHora": "2026-05-21T21:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 5,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "racing-club-vs-caracas-fc",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio Presidente Juan Domingo Perón",
+        "arbitro": "Jhon Alexander Ospina Londoño"
+      }
+    },
+    {
+      "id": "promiedos_egjabgi",
+      "local": "Blooming",
+      "visitante": "Carabobo FC",
+      "fechaHora": "2026-05-21T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 10,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "blooming-vs-carabobo-fc",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": 2,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estadio Ramón Aguilera Costas",
+        "arbitro": "Mathías De Armas"
+      }
+    },
+    {
+      "id": "promiedos_egjabdi",
+      "local": "Macara",
+      "visitante": "Alianza Atletico",
+      "fechaHora": "2026-05-21T23:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "macara-vs-alianza-atletico",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estadio Bellavista",
+        "arbitro": "Matheus Delgado Candançan"
+      }
+    },
+    {
+      "id": "promiedos_egjabhh",
+      "local": "São Paulo",
+      "visitante": "Boston River",
+      "fechaHora": "2026-05-26T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "sao-paulo-vs-boston-river",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "MorumBIS",
+        "arbitro": "Augusto Menéndez"
+      }
+    },
+    {
+      "id": "promiedos_egjabhj",
+      "local": "Millonarios",
+      "visitante": "O'Higgins",
+      "fechaHora": "2026-05-26T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 5
+        },
+        "corners": {
+          "l": 7,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "millonarios-vs-o-higgins",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 2,
+        "alargue": false,
+        "tv": "ESPN 2, ESPN 3, Disney+ Premium, DSports",
+        "estadio": "Estadio Nemesio Camacho El Campín",
+        "arbitro": "Darío Herrera"
+      }
+    },
+    {
+      "id": "promiedos_egjabij",
+      "local": "Grêmio",
+      "visitante": "Montevideo City Torque",
+      "fechaHora": "2026-05-26T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "gremio-vs-montevideo-city-torque",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": null,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Arena do Grêmio",
+        "arbitro": "Jesús Valenzuela"
+      }
+    },
+    {
+      "id": "promiedos_egjabjb",
+      "local": "Palestino",
+      "visitante": "Deportivo Riestra",
+      "fechaHora": "2026-05-26T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "palestino-vs-riestra",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN3 Sudamérica, ESPN 2, ESPN 3, Disney+ Premium",
+        "estadio": "Estadio Municipal de La Cisterna",
+        "arbitro": "Michael Espinoza"
+      }
+    },
+    {
+      "id": "promiedos_egjabic",
+      "local": "Santos",
+      "visitante": "Deportivo Cuenca",
+      "fechaHora": "2026-05-26T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 4
+        },
+        "corners": {
+          "l": 3,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "santos-vs-deportivo-cuenca",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estádio Urbano Caldeira",
+        "arbitro": "Jhon Alexander Ospina Londoño"
+      }
+    },
+    {
+      "id": "promiedos_egjabid",
+      "local": "San Lorenzo",
+      "visitante": "Recoleta FC",
+      "fechaHora": "2026-05-26T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 4
+        },
+        "corners": {
+          "l": 7,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "san-lorenzo-vs-cd-recoleta",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 2,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estadio Pedro Bidegain",
+        "arbitro": "C. Ortega"
+      }
+    },
+    {
+      "id": "promiedos_egjabhd",
+      "local": "Atlético Mineiro",
+      "visitante": "Puerto Cabello",
+      "fechaHora": "2026-05-27T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 6,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "atletico-mineiro-vs-puerto-cabello",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Arena MRV",
+        "arbitro": "Leandro Rey Hilfer"
+      }
+    },
+    {
+      "id": "promiedos_egjabhf",
+      "local": "Cienciano",
+      "visitante": "Juventud",
+      "fechaHora": "2026-05-27T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "cienciano-vs-juventud",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN3 Sudamérica, ESPN 3, Disney+ Premium, DSports",
+        "estadio": "Estadio Inca Garcilaso de la Vega",
+        "arbitro": "Yael Falcón"
+      }
+    },
+    {
+      "id": "promiedos_egjabig",
+      "local": "Racing Club",
+      "visitante": "Independiente Petrolero",
+      "fechaHora": "2026-05-27T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 9,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "racing-club-vs-independiente-petrolero",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estadio Presidente Juan Domingo Perón",
+        "arbitro": "Augusto Bergelio Aragón Bautista"
+      }
+    },
+    {
+      "id": "promiedos_egjabii",
+      "local": "Caracas FC",
+      "visitante": "Botafogo",
+      "fechaHora": "2026-05-27T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 8,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "caracas-fc-vs-botafogo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 2,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estadio Olímpico de la UCV",
+        "arbitro": "C. Betancur"
+      }
+    },
+    {
+      "id": "promiedos_egjabjc",
+      "local": "Olimpia",
+      "visitante": "Audax Italiano",
+      "fechaHora": "2026-05-27T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "olimpia-vs-audax-italiano",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN 2, ESPN 3, Disney+ Premium",
+        "estadio": "Estadio Defensores del Chaco",
+        "arbitro": "G. Tejera"
+      }
+    },
+    {
+      "id": "promiedos_egjabjd",
+      "local": "Vasco Da Gama",
+      "visitante": "Barracas Central",
+      "fechaHora": "2026-05-27T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 5
+        },
+        "corners": {
+          "l": 7,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "vasco-da-gama-vs-barracas-central",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estádio São Januário",
+        "arbitro": "Esteban Ostojich"
+      }
+    },
+    {
+      "id": "promiedos_egjabjf",
+      "local": "River Plate",
+      "visitante": "Blooming",
+      "fechaHora": "2026-05-27T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 8,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "river-plate-vs-blooming",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio Monumental",
+        "arbitro": "Wilson Requejo"
+      }
+    },
+    {
+      "id": "promiedos_egjabji",
+      "local": "Bragantino",
+      "visitante": "Carabobo FC",
+      "fechaHora": "2026-05-27T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "rb-bragantino-vs-carabobo-fc",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estadio Municipal Cicero De Souza Marques",
+        "arbitro": "Andres Jose Rojas Noguera"
+      }
+    },
+    {
+      "id": "promiedos_egjabha",
+      "local": "América de Cali",
+      "visitante": "Macara",
+      "fechaHora": "2026-05-28T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 3
+        },
+        "corners": {
+          "l": 3,
+          "v": 9
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "america-de-cali-vs-macara",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio Olímpico Pascual Guerrero",
+        "arbitro": "M. Díaz de Vivar"
+      }
+    },
+    {
+      "id": "promiedos_egjabhb",
+      "local": "Tigre",
+      "visitante": "Alianza Atletico",
+      "fechaHora": "2026-05-28T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 6
+        },
+        "corners": {
+          "l": 4,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "tigre-vs-alianza-atletico",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": "Fecha 6",
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio Jose Dellagiovanna",
+        "arbitro": "David Ojeda"
+      }
+    },
+    {
+      "id": "promiedos_ehciaac",
+      "local": "Nacional",
+      "visitante": "Tigre",
+      "fechaHora": "2026-07-21T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "nacional-vs-tigre",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": " , DSports",
+        "estadio": "Estadio Gran Parque Central",
+        "arbitro": "C. Betancur"
+      }
+    },
+    {
+      "id": "promiedos_ehciaaa",
+      "local": "Universidad Central FC",
+      "visitante": "Santos",
+      "fechaHora": "2026-07-21T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 2,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "ucv-fc-vs-santos",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "ESPN, ESPN 2, Disney+ Premium, DSports",
+        "estadio": "Estadio Olímpico de la UCV",
+        "arbitro": "Gery Anthony Vargas Carreño"
+      }
+    },
+    {
+      "id": "promiedos_ehchjjj",
+      "local": "Independiente Medellín",
+      "visitante": "Vasco Da Gama",
+      "fechaHora": "2026-07-22T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "independiente-medellin-vs-vasco-da-gama",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "alargue": false,
+        "tv": " , DSports",
+        "estadio": "Estadio Atanasio Girardot",
+        "arbitro": "Piero Maza Gomez"
+      }
+    },
+    {
+      "id": "promiedos_ehchjji",
+      "local": "Sporting Cristal",
+      "visitante": "Bragantino",
+      "fechaHora": "2026-07-22T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 4
+        },
+        "corners": {
+          "l": 5,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "sporting-cristal-vs-rb-bragantino",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN, ESPN 2, Disney+ Premium",
+        "estadio": "Estadio Nacional de Lima",
+        "arbitro": "Leandro Rey Hilfer"
+      }
+    },
+    {
+      "id": "promiedos_ehciaae",
+      "local": "Lanús",
+      "visitante": "Cienciano",
+      "fechaHora": "2026-07-22T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 2
+        },
+        "corners": {
+          "l": 7,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "lanus-vs-cienciano",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "estadio": "Estadio Ciudad de Lanús",
+        "arbitro": "Alexis Herrera"
+      }
+    },
+    {
+      "id": "promiedos_ehchjjh",
+      "local": "Bolívar",
+      "visitante": "Grêmio",
+      "fechaHora": "2026-07-23T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 10,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "bolivar-vs-gremio",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN 2, Disney+ Premium, DSports",
+        "estadio": "Estadio Hernando Siles",
+        "arbitro": "Wilson Requejo"
+      }
+    },
+    {
+      "id": "promiedos_ehciaab",
+      "local": "Boca Juniors",
+      "visitante": "O'Higgins",
+      "fechaHora": "2026-07-23T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 7,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "boca-juniors-vs-o-higgins",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio Alberto José Armando",
+        "arbitro": "Andrés Matonte"
+      }
+    },
+    {
+      "id": "promiedos_ehciaad",
+      "local": "Independiente Santa Fe",
+      "visitante": "Caracas FC",
+      "fechaHora": "2026-07-23T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 5,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "independiente-santa-fe-vs-caracas-fc",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": " , DSports",
+        "estadio": "Estadio Nemesio Camacho El Campín",
+        "arbitro": "Guillermo Enrique Guerrero Alcivar"
+      }
+    },
+    {
+      "id": "promiedos_ehciaag",
+      "local": "Tigre",
+      "visitante": "Nacional",
+      "fechaHora": "2026-07-28T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 4
+        },
+        "corners": {
+          "l": 2,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "tigre-vs-nacional",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "Disney+ Premium",
+        "estadio": "Estadio Jose Dellagiovanna",
+        "arbitro": "Flávio Rodrigues de Souza"
+      }
+    },
+    {
+      "id": "promiedos_ehciabc",
+      "local": "Santos",
+      "visitante": "Universidad Central FC",
+      "fechaHora": "2026-07-28T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 9,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "santos-vs-ucv-fc",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estádio Urbano Caldeira",
+        "arbitro": "Carlos Paul Benitez Achar"
+      }
+    },
+    {
+      "id": "promiedos_ehciabb",
+      "local": "Vasco Da Gama",
+      "visitante": "Independiente Medellín",
+      "fechaHora": "2026-07-29T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 3,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "vasco-da-gama-vs-independiente-medellin",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estádio São Januário",
+        "arbitro": "Maximiliano Ramírez"
+      }
+    },
+    {
+      "id": "promiedos_ehciaai",
+      "local": "Cienciano",
+      "visitante": "Lanús",
+      "fechaHora": "2026-07-29T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "cienciano-vs-lanus",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio Inca Garcilaso de la Vega",
+        "arbitro": "C. Betancur"
+      }
+    },
+    {
+      "id": "promiedos_ehciaba",
+      "local": "Bragantino",
+      "visitante": "Sporting Cristal",
+      "fechaHora": "2026-07-29T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 3
+        },
+        "corners": {
+          "l": 11,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "rb-bragantino-vs-sporting-cristal",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": " , DSports",
+        "estadio": "Estádio Municipal Cícero de Souza Marques",
+        "arbitro": "Esteban Ostojich"
+      }
+    },
+    {
+      "id": "promiedos_ehciaaj",
+      "local": "Grêmio",
+      "visitante": "Bolívar",
+      "fechaHora": "2026-07-30T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 5,
+          "v": 2
+        },
+        "corners": {
+          "l": 11,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 12,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 12
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "gremio-vs-bolivar",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Arena do Grêmio",
+        "arbitro": "Piero Maza Gomez"
+      }
+    },
+    {
+      "id": "promiedos_ehciaaf",
+      "local": "O'Higgins",
+      "visitante": "Boca Juniors",
+      "fechaHora": "2026-07-30T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 4
+        },
+        "corners": {
+          "l": 4,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "o-higgins-vs-boca-juniors",
+        "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": true,
+        "tv": " , DSports",
+        "estadio": "Estadio El Teniente",
+        "arbitro": "Wilmar Alexander Roldán Pérez"
+      },
+      "stats90": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        },
+        "foto": null,
+        "aprox": [
+          "corners",
+          "tirosArco",
+          "atajadas"
+        ]
+      }
+    },
+    {
+      "id": "promiedos_ehciaah",
+      "local": "Caracas FC",
+      "visitante": "Independiente Santa Fe",
+      "fechaHora": "2026-07-30T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 8,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "caracas-fc-vs-independiente-santa-fe",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio Metropolitano de Fútbol de Lara",
+        "arbitro": "Anderson Daronco"
+      }
+    },
+    {
+      "id": "promiedos_eiaafei",
+      "local": "Boca Juniors",
+      "visitante": "Recoleta FC",
+      "fechaHora": "2026-08-11T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 4
+        },
+        "corners": {
+          "l": 8,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "boca-juniors-vs-cd-recoleta",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estadio Tomás Adolfo Ducó",
+        "arbitro": "Piero Maza Gomez"
+      }
+    },
+    {
+      "id": "promiedos_eiaafad",
+      "local": "Bolívar",
+      "visitante": "São Paulo",
+      "fechaHora": "2026-08-11T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 8,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "bolivar-vs-sao-paulo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estadio Hernando Siles",
+        "arbitro": "Wilmar Alexander Roldán Pérez"
+      }
+    },
+    {
+      "id": "promiedos_ehjghji",
+      "local": "Tigre",
+      "visitante": "Montevideo City Torque",
+      "fechaHora": "2026-08-12T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 8,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "tigre-vs-montevideo-city-torque",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "ESPN 2",
+        "estadio": "Estadio Jose Dellagiovanna",
+        "arbitro": "Ramon Abatti"
+      }
+    },
+    {
+      "id": "promiedos_ehjibjg",
+      "local": "Bragantino",
+      "visitante": "Atlético Mineiro",
+      "fechaHora": "2026-08-12T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 7,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "rb-bragantino-vs-atletico-mineiro",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estádio Cícero (Bragança Paulista)",
+        "arbitro": "Leandro Rey Hilfer"
+      }
+    },
+    {
+      "id": "promiedos_ehjgicf",
+      "local": "Santos",
+      "visitante": "Macara",
+      "fechaHora": "2026-08-13T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 6
+        },
+        "corners": {
+          "l": 5,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "santos-vs-macara",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estádio Urbano Caldeira",
+        "arbitro": "K. Ortega"
+      }
+    },
+    {
+      "id": "promiedos_ehjibfj",
+      "local": "Vasco Da Gama",
+      "visitante": "Olimpia",
+      "fechaHora": "2026-08-13T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 2
+        },
+        "corners": {
+          "l": 11,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "vasco-da-gama-vs-olimpia",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "alargue": false,
+        "tv": "Disney+ Premium",
+        "estadio": "Estádio São Januário",
+        "arbitro": "Darío Herrera"
+      }
+    },
+    {
+      "id": "promiedos_ehjibje",
+      "local": "Cienciano",
+      "visitante": "Botafogo",
+      "fechaHora": "2026-08-13T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 6,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 14,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 12,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "cienciano-vs-botafogo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN 3",
+        "estadio": "Estadio Inca Garcilaso de la Vega",
+        "arbitro": "Augusto Bergelio Aragón Bautista"
+      }
+    },
+    {
+      "id": "promiedos_eiaafej",
+      "local": "Recoleta FC",
+      "visitante": "Boca Juniors",
+      "fechaHora": "2026-08-18T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 0
+        },
+        "corners": {
+          "l": 8,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 11
+        },
+        "atajadas": {
+          "l": 7,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "cd-recoleta-vs-boca-juniors",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio Defensores del Chaco",
+        "arbitro": "Andrés Matonte"
+      }
+    },
+    {
+      "id": "promiedos_eiaafae",
+      "local": "São Paulo",
+      "visitante": "Bolívar",
+      "fechaHora": "2026-08-18T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 4
+        },
+        "corners": {
+          "l": 4,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "sao-paulo-vs-bolivar",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": " , DSports",
+        "estadio": "MorumBIS",
+        "arbitro": "K. Ortega"
+      }
+    },
+    {
+      "id": "promiedos_ehjibjh",
+      "local": "Atlético Mineiro",
+      "visitante": "Bragantino",
+      "fechaHora": "2026-08-19T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 10
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 7,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "atletico-mineiro-vs-rb-bragantino",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Arena MRV",
+        "arbitro": "Maximiliano Ramírez"
+      }
+    },
+    {
+      "id": "promiedos_ehjghjj",
+      "local": "Montevideo City Torque",
+      "visitante": "Tigre",
+      "fechaHora": "2026-08-19T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "montevideo-city-torque-vs-tigre",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": " , DSports",
+        "estadio": "Estadio Centenario",
+        "arbitro": "Guillermo Enrique Guerrero Alcivar"
+      }
+    },
+    {
+      "id": "promiedos_eiaafeg",
+      "local": "Independiente Santa Fe",
+      "visitante": "River Plate",
+      "fechaHora": "2026-08-19T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 3
+        },
+        "corners": {
+          "l": 2,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "independiente-santa-fe-vs-river-plate",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio Nemesio Camacho El Campín",
+        "arbitro": "Jesús Valenzuela"
+      }
+    },
+    {
+      "id": "promiedos_ehjgicg",
+      "local": "Macara",
+      "visitante": "Santos",
+      "fechaHora": "2026-08-20T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 10,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 3
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "macara-vs-santos",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Bellavista",
+        "arbitro": "Cristián Reyes"
+      }
+    },
+    {
+      "id": "promiedos_ehjibga",
+      "local": "Olimpia",
+      "visitante": "Vasco Da Gama",
+      "fechaHora": "2026-08-20T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 4
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 4
+        },
+        "corners": {
+          "l": 7,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 9
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 6
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "olimpia-vs-vasco-da-gama",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio Defensores del Chaco",
+        "arbitro": "Esteban Ostojich"
+      }
+    },
+    {
+      "id": "promiedos_ehjibjf",
+      "local": "Botafogo",
+      "visitante": "Cienciano",
+      "fechaHora": "2026-08-20T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 4,
+          "v": 4
+        },
+        "corners": {
+          "l": 6,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 7
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "botafogo-vs-cienciano",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": " , DSports",
+        "estadio": "Estádio Olímpico Nilton Santos",
+        "arbitro": "Juan Gabriel Benítez"
+      }
+    },
+    {
+      "id": "promiedos_eiaafeh",
+      "local": "River Plate",
+      "visitante": "Independiente Santa Fe",
+      "fechaHora": "2026-08-26T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 6,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 11,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 10
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "river-plate-vs-independiente-santa-fe",
+        "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estadio Monumental",
+        "arbitro": "Esteban Ostojich"
+      }
+    },
+    {
+      "id": "promiedos_eicgfga",
+      "local": "Independiente Santa Fe",
+      "visitante": "Vasco Da Gama",
+      "fechaHora": "2026-09-08T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 4
+        },
+        "corners": {
+          "l": 5,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "independiente-santa-fe-vs-vasco-da-gama",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Estadio Nemesio Camacho El Campín",
+        "arbitro": "Darío Herrera"
+      }
+    },
+    {
+      "id": "promiedos_eibiiia",
+      "local": "Boca Juniors",
+      "visitante": "São Paulo",
+      "fechaHora": "2026-09-08T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 1
+        },
+        "corners": {
+          "l": 4,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "boca-juniors-vs-sao-paulo",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "Estadio Alberto José Armando",
+        "arbitro": "Piero Maza Gomez"
+      }
+    },
+    {
+      "id": "promiedos_eicadfe",
+      "local": "Santos",
+      "visitante": "Atlético Mineiro",
+      "fechaHora": "2026-09-09T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 6,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "santos-vs-atletico-mineiro",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estádio Urbano Caldeira",
+        "arbitro": "Alexis Herrera"
+      }
+    },
+    {
+      "id": "promiedos_eicadhi",
+      "local": "Cienciano",
+      "visitante": "Montevideo City Torque",
+      "fechaHora": "2026-09-10T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 0
+        },
+        "corners": {
+          "l": 9,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 12,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 10
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "cienciano-vs-montevideo-city-torque",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estadio Inca Garcilaso de la Vega",
+        "arbitro": "Wilton Sampaio"
+      }
+    },
+    {
+      "id": "promiedos_eicgfgj",
+      "local": "Vasco Da Gama",
+      "visitante": "Independiente Santa Fe",
+      "fechaHora": "2026-09-15T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 1
+        },
+        "corners": {
+          "l": 3,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "vasco-da-gama-vs-independiente-santa-fe",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "Estádio São Januário",
+        "arbitro": "Alexis Herrera"
+      }
+    },
+    {
+      "id": "promiedos_eibiiib",
+      "local": "São Paulo",
+      "visitante": "Boca Juniors",
+      "fechaHora": "2026-09-15T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 2,
+          "v": 1
+        },
+        "corners": {
+          "l": 4,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "sao-paulo-vs-boca-juniors",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "alargue": false,
+        "tv": "DSports",
+        "estadio": "MorumBIS",
+        "arbitro": "G. Tejera"
+      }
+    },
+    {
+      "id": "promiedos_eicadff",
+      "local": "Atlético Mineiro",
+      "visitante": "Santos",
+      "fechaHora": "2026-09-16T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 4,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 2
+        },
+        "corners": {
+          "l": 4,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "atletico-mineiro-vs-santos",
+        "statusShort": "Por penales",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium, DSports",
+        "estadio": "Arena MRV",
+        "arbitro": "Facundo Tello Figueroa"
+      }
+    },
+    {
+      "id": "promiedos_eicadhj",
+      "local": "Montevideo City Torque",
+      "visitante": "Cienciano",
+      "fechaHora": "2026-09-17T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 3,
+          "v": 8
+        },
+        "corners": {
+          "l": 6,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 4
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "montevideo-city-torque-vs-cienciano",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Estadio Centenario",
+        "arbitro": "Maximiliano Ramírez"
+      }
+    },
+    {
+      "id": "promiedos_eifgijh",
+      "local": "Boca Juniors",
+      "visitante": "Vasco Da Gama",
+      "fechaHora": "2026-10-13T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 1
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 4
+        },
+        "corners": {
+          "l": 9,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 2
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "boca-juniors-vs-vasco-da-gama",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium, DSports",
+        "estadio": "Estadio Alberto José Armando",
+        "arbitro": "Piero Maza Gomez"
+      }
+    },
+    {
+      "id": "promiedos_eifiiga",
+      "local": "Atlético Mineiro",
+      "visitante": "Montevideo City Torque",
+      "fechaHora": "2026-10-14T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 3,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 6,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 8,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "atletico-mineiro-vs-montevideo-city-torque",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium, DSports",
+        "estadio": "Arena MRV",
+        "arbitro": "C. Betancur"
+      }
+    },
+    {
+      "id": "promiedos_eifgiji",
+      "local": "Vasco Da Gama",
+      "visitante": "Boca Juniors",
+      "fechaHora": "2026-10-20T21:30",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 1,
+          "v": 3
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 2
+        },
+        "corners": {
+          "l": 5,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 1
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "vasco-da-gama-vs-boca-juniors",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 2,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium, DSports",
+        "estadio": "Estadio Jornalista Mário Filho (Maracanã)",
+        "arbitro": "Jesús Valenzuela"
+      }
+    },
+    {
+      "id": "promiedos_eifiigb",
+      "local": "Montevideo City Torque",
+      "visitante": "Atlético Mineiro",
+      "fechaHora": "2026-10-21T19:00",
+      "finPrimerTiempo": true,
+      "finPartido": true,
+      "stats": {
+        "goles": {
+          "l": 2,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 1,
+          "v": 4
+        },
+        "corners": {
+          "l": 9,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "montevideo-city-torque-vs-atletico-mineiro",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
+        "ronda": null,
+        "ganador": 1,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium, DSports",
+        "estadio": "Estadio Centenario",
+        "arbitro": "Cristián Reyes"
+      }
+    },
+    {
+      "id": "promiedos_eiiddih",
+      "local": "Atlético Mineiro",
+      "visitante": "Boca Juniors",
+      "fechaHora": "2026-11-21T19:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "dij",
+        "leagueName": "Copa Sudamericana",
+        "country": "Internacional",
+        "gameUrlName": "atletico-mineiro-vs-boca-juniors",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "13'",
+        "ronda": "Final",
+        "ganador": null,
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium, DSports",
+        "estadio": "Estadio Metropolitano Roberto Meléndez",
+        "arbitro": "Andrés Matonte"
+      }
     }
   ],
   "bets": [],
