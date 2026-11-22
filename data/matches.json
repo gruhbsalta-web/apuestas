@@ -55014,15 +55014,15 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "river-plate-vs-lanus",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "1'",
         "ronda": "Octavos de Final",
         "ganador": null,
+        "alargue": false,
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Monumental",
-        "arbitro": "Pablo Dóvalo",
-        "infoDia": "2026-11-22"
+        "arbitro": "Pablo Dóvalo"
       }
     },
     {
@@ -55444,7 +55444,7 @@
       "visitante": "Atlético de Madrid",
       "fechaHora": "2026-11-22T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -55473,31 +55473,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "getafe-vs-atletico-madrid",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+5'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 13",
-        "ganador": null,
+        "ganador": 2,
         "alargue": false,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Estadio Coliseum",
         "arbitro": "Gil Manzano"
-      },
-      "foto2T": {
-        "minuto": "90+5'",
-        "enPausa": false,
-        "corners": {
-          "l": 2,
-          "v": 7
-        },
-        "tirosArco": {
-          "l": 1,
-          "v": 10
-        },
-        "atajadas": {
-          "l": 7,
-          "v": 1
-        }
       }
     },
     {
