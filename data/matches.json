@@ -55267,7 +55267,7 @@
       "visitante": "Manchester United",
       "fechaHora": "2026-11-22T13:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 4,
@@ -55278,8 +55278,8 @@
           "v": 1
         },
         "corners": {
-          "l": 14,
-          "v": 4
+          "l": 15,
+          "v": 5
         },
         "tirosArco": {
           "l": 11,
@@ -55296,31 +55296,15 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "liverpool-vs-manchester-united",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Anfield",
         "arbitro": "Samuel Barrott"
-      },
-      "foto2T": {
-        "minuto": "90+1'",
-        "enPausa": false,
-        "corners": {
-          "l": 14,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 11,
-          "v": 3
-        },
-        "atajadas": {
-          "l": 3,
-          "v": 7
-        }
       }
     },
     {
@@ -55450,7 +55434,7 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "osasuna-vs-malaga",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Fecha 13",
@@ -55459,6 +55443,22 @@
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio El Sadar",
         "arbitro": "Ricardo De Burgos Bengoetxea"
+      },
+      "foto2T": {
+        "minuto": "45'",
+        "enPausa": false,
+        "corners": {
+          "l": 4,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -55654,24 +55654,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 4,
+          "l": 5,
           "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 3
+          "v": 4
         },
         "corners": {
           "l": 2,
-          "v": 6
+          "v": 8
         },
         "tirosArco": {
-          "l": 5,
+          "l": 7,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -55682,7 +55682,7 @@
         "gameUrlName": "ac-milan-vs-frosinone",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "73'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55691,19 +55691,19 @@
         "arbitro": "L. Pairetto"
       },
       "foto2T": {
-        "minuto": "61'",
+        "minuto": "73'",
         "enPausa": false,
         "corners": {
           "l": 2,
-          "v": 6
+          "v": 8
         },
         "tirosArco": {
-          "l": 5,
+          "l": 7,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 2
         }
       }
     },
@@ -59523,6 +59523,49 @@
         "ronda": "Fecha 5",
         "ganador": null,
         "estadio": "Red Bull Arena (Wals-Siezenheim)",
+        "infoDia": "2026-11-22"
+      }
+    },
+    {
+      "id": "promiedos_eijiief",
+      "local": "Vélez Sarsfield",
+      "visitante": "Independiente",
+      "fechaHora": "2026-11-29T11:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "velez-sarsfield-vs-independiente",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
         "infoDia": "2026-11-22"
       }
     }
