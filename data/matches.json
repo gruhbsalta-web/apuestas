@@ -55270,7 +55270,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tarjetas": {
@@ -55278,11 +55278,11 @@
           "v": 1
         },
         "corners": {
-          "l": 8,
+          "l": 9,
           "v": 4
         },
         "tirosArco": {
-          "l": 7,
+          "l": 8,
           "v": 1
         },
         "atajadas": {
@@ -55298,7 +55298,7 @@
         "gameUrlName": "liverpool-vs-manchester-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "61'",
+        "minuto": "73'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55307,14 +55307,14 @@
         "arbitro": "Samuel Barrott"
       },
       "foto2T": {
-        "minuto": "61'",
+        "minuto": "73'",
         "enPausa": false,
         "corners": {
-          "l": 8,
+          "l": 9,
           "v": 4
         },
         "tirosArco": {
-          "l": 7,
+          "l": 8,
           "v": 1
         },
         "atajadas": {
@@ -55436,12 +55436,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -55452,7 +55452,7 @@
         "gameUrlName": "osasuna-vs-malaga",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "21'",
+        "minuto": "33'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
