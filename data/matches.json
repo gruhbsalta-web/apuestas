@@ -55250,15 +55250,15 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "hull-city-vs-brighton",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 11",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "MKM Stadium",
-        "arbitro": "P. Bankes",
-        "infoDia": "2026-11-22"
+        "arbitro": "P. Bankes"
       }
     },
     {
@@ -55312,28 +55312,28 @@
       "local": "FC Barcelona",
       "visitante": "Villarreal CF",
       "fechaHora": "2026-11-22T10:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "corners": {
-          "l": 0,
+          "l": 6,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 3
         }
       },
       "source": {
@@ -55342,15 +55342,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "barcelona-vs-villarreal",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "ET",
+        "statusEnum": 2,
+        "minuto": "45'",
         "ronda": "Fecha 13",
         "ganador": null,
+        "alargue": false,
         "tv": "DSports",
         "estadio": "Spotify Camp Nou",
-        "arbitro": "Alejandro Hernández",
-        "infoDia": "2026-11-22"
+        "arbitro": "Alejandro Hernández"
       }
     },
     {
@@ -55496,11 +55496,11 @@
       "local": "Juventus",
       "visitante": "Venezia",
       "fechaHora": "2026-11-22T08:30",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 4,
           "v": 0
         },
         "tarjetas": {
@@ -55508,16 +55508,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 8,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 4
         }
       },
       "source": {
@@ -55526,15 +55526,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "juventus-vs-venezia",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 12",
-        "ganador": null,
+        "ganador": 1,
+        "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Allianz Stadium",
-        "arbitro": "Marco Croce",
-        "infoDia": "2026-11-22"
+        "arbitro": "Marco Croce"
       }
     },
     {
@@ -55572,15 +55572,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "sassuolo-vs-genoa",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 12",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "MAPEI Stadium - Città del Tricolore",
-        "arbitro": "M. Ferrieri Caputi",
-        "infoDia": "2026-11-22"
+        "arbitro": "M. Ferrieri Caputi"
       }
     },
     {
@@ -55618,15 +55618,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "bologna-vs-udinese",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "6'",
         "ronda": "Fecha 12",
         "ganador": null,
+        "alargue": false,
         "tv": "Disney+ Premium",
         "estadio": "Stadio Renato Dall'Ara",
-        "arbitro": "Livio Marinelli",
-        "infoDia": "2026-11-22"
+        "arbitro": "Livio Marinelli"
       }
     },
     {
