@@ -55278,16 +55278,16 @@
           "v": 1
         },
         "corners": {
-          "l": 6,
-          "v": 3
+          "l": 7,
+          "v": 4
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -55296,15 +55296,31 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "liverpool-vs-manchester-united",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Anfield",
         "arbitro": "Samuel Barrott"
+      },
+      "foto2T": {
+        "minuto": "49'",
+        "enPausa": false,
+        "corners": {
+          "l": 7,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 7,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 5
+        }
       }
     },
     {
@@ -55436,7 +55452,7 @@
         "gameUrlName": "osasuna-vs-malaga",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "3'",
+        "minuto": "9'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55643,11 +55659,11 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "corners": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         },
         "tirosArco": {
           "l": 1,
@@ -55666,7 +55682,7 @@
         "gameUrlName": "ac-milan-vs-frosinone",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "32'",
+        "minuto": "37'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
