@@ -54988,7 +54988,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -54997,10 +54997,10 @@
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "atajadas": {
@@ -55016,7 +55016,7 @@
         "gameUrlName": "river-plate-vs-lanus",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "13'",
+        "minuto": "25'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -59534,7 +59534,7 @@
       "id": "promiedos_eijiiff",
       "local": "Rosario Central",
       "visitante": "Barracas Central",
-      "fechaHora": "2026-11-29T11:00",
+      "fechaHora": "2026-11-29T14:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
