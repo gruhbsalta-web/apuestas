@@ -55266,7 +55266,7 @@
       "local": "Liverpool",
       "visitante": "Manchester United",
       "fechaHora": "2026-11-22T13:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -55278,8 +55278,8 @@
           "v": 1
         },
         "corners": {
-          "l": 4,
-          "v": 2
+          "l": 6,
+          "v": 3
         },
         "tirosArco": {
           "l": 6,
@@ -55296,9 +55296,9 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "liverpool-vs-manchester-united",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "39'",
+        "minuto": "45'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55359,7 +55359,7 @@
       "visitante": "Real Sociedad",
       "fechaHora": "2026-11-22T12:15",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -55388,31 +55388,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "racing-santander-vs-real-sociedad",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+5'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 13",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Campos de Sport de El Sardinero",
         "arbitro": "Manuel Orellana"
-      },
-      "foto2T": {
-        "minuto": "90+5'",
-        "enPausa": false,
-        "corners": {
-          "l": 7,
-          "v": 14
-        },
-        "tirosArco": {
-          "l": 8,
-          "v": 7
-        },
-        "atajadas": {
-          "l": 5,
-          "v": 5
-        }
       }
     },
     {
@@ -55654,7 +55638,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -55662,15 +55646,15 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -55682,7 +55666,7 @@
         "gameUrlName": "ac-milan-vs-frosinone",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "7'",
+        "minuto": "19'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
