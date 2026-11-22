@@ -54989,22 +54989,22 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
           "l": 1,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
           "l": 1,
           "v": 3
         },
         "atajadas": {
-          "l": 3,
+          "l": 2,
           "v": 0
         }
       },
@@ -55016,7 +55016,7 @@
         "gameUrlName": "river-plate-vs-lanus",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "31'",
+        "minuto": "43'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
