@@ -75,6 +75,8 @@ jobs:
             git fetch -q origin master && git reset -q --hard origin/master
             # los datos mas nuevos estan en la rama "datos" (si existe)
             if git fetch -q origin datos 2>/dev/null; then git checkout FETCH_HEAD -- data/ 2>/dev/null || true; fi
+            # los archivos que se mantienen a mano van siempre como estan en master
+            git checkout origin/master -- data/apuestas_cargar.json data/correcciones.json 2>/dev/null || true
             rm -f data/temporada_anterior.json   # descartada (no mejoraba los %)
             if [ "$(ritmo vivo)" = "true" ] && [ $((vuelta_ini - ultimo_completo)) -lt 1800 ] && [ "$UNA_VEZ" != "true" ]; then
               export RAPIDO=1
