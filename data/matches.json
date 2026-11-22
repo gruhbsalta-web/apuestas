@@ -55434,15 +55434,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "osasuna-vs-malaga",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "3'",
         "ronda": "Fecha 13",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio El Sadar",
-        "arbitro": "Ricardo De Burgos Bengoetxea",
-        "infoDia": "2026-11-22"
+        "arbitro": "Ricardo De Burgos Bengoetxea"
       }
     },
     {
@@ -55639,7 +55639,7 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -55651,7 +55651,7 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 1,
@@ -55666,7 +55666,7 @@
         "gameUrlName": "ac-milan-vs-frosinone",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "19'",
+        "minuto": "32'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
