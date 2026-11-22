@@ -54950,7 +54950,7 @@
       "stats": {
         "goles": {
           "l": 3,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -54962,10 +54962,10 @@
         },
         "tirosArco": {
           "l": 5,
-          "v": 4
+          "v": 7
         },
         "atajadas": {
-          "l": 4,
+          "l": 6,
           "v": 2
         }
       },
@@ -54977,7 +54977,7 @@
         "gameUrlName": "rosario-central-vs-gimnasia-mendoza",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "80'",
+        "minuto": "90+2'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54986,7 +54986,7 @@
         "arbitro": "Leandro Rey Hilfer"
       },
       "foto2T": {
-        "minuto": "80'",
+        "minuto": "90+2'",
         "enPausa": false,
         "corners": {
           "l": 4,
@@ -54994,10 +54994,10 @@
         },
         "tirosArco": {
           "l": 5,
-          "v": 4
+          "v": 7
         },
         "atajadas": {
-          "l": 4,
+          "l": 6,
           "v": 2
         }
       }
@@ -55466,7 +55466,7 @@
       "local": "Getafe CF",
       "visitante": "Atlético de Madrid",
       "fechaHora": "2026-11-22T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -55482,12 +55482,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 7
         },
         "atajadas": {
           "l": 5,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -55496,9 +55496,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "getafe-vs-atletico-madrid",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "40'",
+        "minuto": "45'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55726,15 +55726,31 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "atalanta-vs-inter-milan",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "New Balance Arena",
         "arbitro": "F. Maresca"
+      },
+      "foto2T": {
+        "minuto": "49'",
+        "enPausa": false,
+        "corners": {
+          "l": 2,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
       }
     },
     {
