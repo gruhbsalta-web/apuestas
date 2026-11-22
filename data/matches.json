@@ -55229,18 +55229,18 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 2
+          "v": 4
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "tirosArco": {
           "l": 3,
-          "v": 7
+          "v": 8
         },
         "atajadas": {
-          "l": 7,
+          "l": 8,
           "v": 3
         }
       },
@@ -55252,7 +55252,7 @@
         "gameUrlName": "hull-city-vs-brighton",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "77'",
+        "minuto": "89'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55261,18 +55261,18 @@
         "arbitro": "P. Bankes"
       },
       "foto2T": {
-        "minuto": "77'",
+        "minuto": "89'",
         "enPausa": false,
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "tirosArco": {
           "l": 3,
-          "v": 7
+          "v": 8
         },
         "atajadas": {
-          "l": 7,
+          "l": 8,
           "v": 3
         }
       }
@@ -55386,16 +55386,16 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
-          "v": 6
+          "l": 4,
+          "v": 7
         },
         "tirosArco": {
-          "l": 3,
-          "v": 4
+          "l": 4,
+          "v": 5
         },
         "atajadas": {
-          "l": 4,
-          "v": 1
+          "l": 5,
+          "v": 2
         }
       },
       "source": {
@@ -55406,7 +55406,7 @@
         "gameUrlName": "racing-santander-vs-real-sociedad",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "23'",
+        "minuto": "35'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55574,12 +55574,12 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 5
         },
         "atajadas": {
           "l": 3,
-          "v": 6
+          "v": 7
         }
       },
       "source": {
@@ -55590,7 +55590,7 @@
         "gameUrlName": "sassuolo-vs-genoa",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "79'",
+        "minuto": "90+1'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55599,19 +55599,19 @@
         "arbitro": "M. Ferrieri Caputi"
       },
       "foto2T": {
-        "minuto": "79'",
+        "minuto": "90+1'",
         "enPausa": false,
         "corners": {
           "l": 5,
           "v": 3
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 5
         },
         "atajadas": {
           "l": 3,
-          "v": 6
+          "v": 7
         }
       }
     },
@@ -55636,12 +55636,12 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -55652,7 +55652,7 @@
         "gameUrlName": "bologna-vs-udinese",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "78'",
+        "minuto": "90+1'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55661,19 +55661,19 @@
         "arbitro": "Livio Marinelli"
       },
       "foto2T": {
-        "minuto": "78'",
+        "minuto": "90+1'",
         "enPausa": false,
         "corners": {
           "l": 8,
           "v": 4
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       }
     },
