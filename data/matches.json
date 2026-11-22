@@ -55388,15 +55388,31 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "racing-santander-vs-real-sociedad",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Campos de Sport de El Sardinero",
         "arbitro": "Manuel Orellana"
+      },
+      "foto2T": {
+        "minuto": "47'",
+        "enPausa": false,
+        "corners": {
+          "l": 5,
+          "v": 8
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 6
+        },
+        "atajadas": {
+          "l": 5,
+          "v": 2
+        }
       }
     },
     {
