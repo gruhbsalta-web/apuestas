@@ -55278,7 +55278,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -55296,15 +55296,15 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "liverpool-vs-manchester-united",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "3'",
         "ronda": "Fecha 11",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Anfield",
-        "arbitro": "Samuel Barrott",
-        "infoDia": "2026-11-22"
+        "arbitro": "Samuel Barrott"
       }
     },
     {
@@ -55370,16 +55370,16 @@
           "v": 0
         },
         "corners": {
-          "l": 5,
-          "v": 8
+          "l": 6,
+          "v": 9
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 6
         },
         "atajadas": {
           "l": 5,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -55390,7 +55390,7 @@
         "gameUrlName": "racing-santander-vs-real-sociedad",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "47'",
+        "minuto": "59'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55399,19 +55399,19 @@
         "arbitro": "Manuel Orellana"
       },
       "foto2T": {
-        "minuto": "47'",
+        "minuto": "59'",
         "enPausa": false,
         "corners": {
-          "l": 5,
-          "v": 8
+          "l": 6,
+          "v": 9
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 6
         },
         "atajadas": {
           "l": 5,
-          "v": 2
+          "v": 3
         }
       }
     },
