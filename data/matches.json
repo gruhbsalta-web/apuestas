@@ -54230,11 +54230,11 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "corners": {
@@ -54242,12 +54242,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -54258,7 +54258,7 @@
         "gameUrlName": "gimnasia-jujuy-vs-dep.-madryn",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "65'",
+        "minuto": "77'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -54267,19 +54267,19 @@
         "arbitro": "Bruno Amiconi"
       },
       "foto2T": {
-        "minuto": "65'",
+        "minuto": "77'",
         "enPausa": false,
         "corners": {
           "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 3
+          "v": 4
         }
       }
     },
