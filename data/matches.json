@@ -54961,12 +54961,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "atajadas": {
           "l": 4,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -54977,7 +54977,7 @@
         "gameUrlName": "rosario-central-vs-gimnasia-mendoza",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "48'",
+        "minuto": "62'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54986,19 +54986,19 @@
         "arbitro": "Leandro Rey Hilfer"
       },
       "foto2T": {
-        "minuto": "48'",
+        "minuto": "62'",
         "enPausa": false,
         "corners": {
           "l": 1,
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "atajadas": {
           "l": 4,
-          "v": 0
+          "v": 1
         }
       }
     },
@@ -55471,22 +55471,22 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
-          "v": 1
+          "v": 5
         },
         "atajadas": {
-          "l": 1,
+          "l": 4,
           "v": 0
         }
       },
@@ -55498,7 +55498,7 @@
         "gameUrlName": "getafe-vs-atletico-madrid",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "8'",
+        "minuto": "22'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55700,8 +55700,8 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
@@ -55709,15 +55709,15 @@
         },
         "corners": {
           "l": 2,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
-          "l": 1,
-          "v": 1
+          "l": 3,
+          "v": 4
         },
         "atajadas": {
-          "l": 0,
-          "v": 1
+          "l": 2,
+          "v": 2
         }
       },
       "source": {
@@ -55728,7 +55728,7 @@
         "gameUrlName": "atalanta-vs-inter-milan",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "24'",
+        "minuto": "38'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
