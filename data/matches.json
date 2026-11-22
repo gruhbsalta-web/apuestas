@@ -55001,10 +55001,10 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 1
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 3,
           "v": 0
         }
       },
@@ -55016,7 +55016,7 @@
         "gameUrlName": "river-plate-vs-lanus",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "25'",
+        "minuto": "31'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
