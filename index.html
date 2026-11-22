@@ -3165,6 +3165,31 @@ function parseMoney(str){
 }
 function cuotaValida(c){ return typeof c === "number" && !isNaN(c) && c >= 1.01 && c <= 100; }
 
+// "a favor de X" -> local / visitante / combinado
+function alcanceDeMercado(marketLabel, m){
+  const favorMatch = marketLabel.match(/a favor de (.+)/i);
+  if(!favorMatch) return "combinado";
+  const fav = foldAccents(expandSinonimos(favorMatch[1].toLowerCase()));
+  const esLocal = blockMentionsTeam(fav, m.local), esVisit = blockMentionsTeam(fav, m.visitante);
+  if(esLocal && !esVisit) return "local";
+  if(esVisit && !esLocal) return "visitante";
+  // nombre distinto en cada fuente: se usa la palabra más distintiva en común
+  const tl = teamTokens(m.local), tv = teamTokens(m.visitante);
+  const enFav = t => fav.includes(t);
+  const pl = tl.filter(enFav).length / (tl.length || 1), pv = tv.filter(enFav).length / (tv.length || 1);
+  return pl > pv ? "local" : pv > pl ? "visitante" : "combinado";
+}
+// Selecciones de un "Crea tu apuesta" / combinada del mismo partido: cada una es
+// "Más de N" seguido de "Total de <mercado> a favor de <equipo>".
+function seleccionesDeBloque(block, m){
+  const re = /(M[aá]s de|Menos de)\s+(\d+(?:[.,]\d+)?)([\s\S]*?)(?=(?:M[aá]s de|Menos de)\s+\d|Cuotas?\b|Valor\b|Ganancias?\b|$)/gi;
+  return [...block.matchAll(re)].map(x=>{
+    const mk = x[3].match(/Total de ([^\n:]+)/i);
+    const tipo = mk ? detectTipoFromLabel(mk[1].trim()) : null;
+    return {matchId: m.id, tipo, comparador: /menos/i.test(x[1]) ? "menos" : "mas", alcance: mk ? alcanceDeMercado(mk[1].trim(), m) : "combinado", linea: parseNum(x[2]), _txt: mk ? mk[1].trim() : ""};
+  });
+}
+
 function parseBetsFreeText(text){
   // cada apuesta empieza en "Sencilla"; lo de antes (barra del celular, saldo) no tiene mercado y se ignora
   const blocks = text.split(/(?=Sencilla\b)/i).map(b=>b.trim()).filter(b=>b.length>10 && /(m[aá]s|menos) de|resultado final|total de/i.test(b));
@@ -3217,6 +3242,15 @@ function parseBetsFreeText(text){
     // otra, mas cerca de "Resultado Final", confirmando el pick. Se toma la
     // ultima ocurrencia antes de esa etiqueta (la mas cercana), no la primera,
     // para no confundirla con el encabezado.
+    const sels = seleccionesDeBloque(block, m);
+    if(sels.length >= 2 || /\bselecciones\b|crea tu apuesta|combinada/i.test(block)){
+      if(sels.length < 2 || /Resultado Final|\b1X2\b|Ganador del Partido/i.test(block)){ errores.push(`${label} (${m.local} vs ${m.visitante}): es una combinada pero no pude leer todas las selecciones — armala con "+ Sumar a una combinada".`); return; }
+      const sinTipo = sels.find(x=>!x.tipo);
+      if(sinTipo){ errores.push(`${label} (${m.local} vs ${m.visitante}): combinada con un mercado que no reconocí ("${sinTipo._txt || "sin leer"}") — armala con "+ Sumar a una combinada".`); return; }
+      bets.push({id:uid(), matchId:m.id, tipo:"combinada", selecciones: sels.map(({_txt, ...x})=>x), monto, cuota, ...faltantes, ...bw});
+      return;
+    }
+
     const ganadorIdx = block.search(/Resultado Final|\b1X2\b|Ganador del Partido/i);
     if(ganadorIdx !== -1){
       const antes = block.slice(0, ganadorIdx).toLowerCase();
@@ -3247,21 +3281,7 @@ function parseBetsFreeText(text){
     const tipo = detectTipoFromLabel(marketLabel);
     if(!tipo){ errores.push(`${label} (${m.local} vs ${m.visitante}): mercado "${marketLabel}" no reconocido.`); return; }
 
-    let alcance = "combinado";
-    const favorMatch = marketLabel.match(/a favor de (.+)/i);
-    if(favorMatch){
-      const fav = foldAccents(expandSinonimos(favorMatch[1].toLowerCase()));
-      const esLocal = blockMentionsTeam(fav, m.local), esVisit = blockMentionsTeam(fav, m.visitante);
-      if(esLocal && !esVisit) alcance = "local";
-      else if(esVisit && !esLocal) alcance = "visitante";
-      else {
-        // nombre distinto en cada fuente: se usa la palabra más distintiva en común
-        const tl = teamTokens(m.local), tv = teamTokens(m.visitante);
-        const enFav = t => fav.includes(t);
-        const pl = tl.filter(enFav).length / (tl.length || 1), pv = tv.filter(enFav).length / (tv.length || 1);
-        if(pl > pv) alcance = "local"; else if(pv > pl) alcance = "visitante";
-      }
-    }
+    const alcance = alcanceDeMercado(marketLabel, m);
 
     bets.push({id:uid(), matchId:m.id, tipo, comparador, alcance, linea, monto, cuota, ...faltantes, ...bw});
   });
@@ -3273,6 +3293,7 @@ function parseBetsFreeText(text){
 let pendingImport = [];
 // Firma de una apuesta para detectar la misma cargada dos veces (ej. importar dos veces la misma captura)
 function firmaContenido(b){
+  if(b.tipo === "combinada") return JSON.stringify(["comb", (b.selecciones || []).map(x=>[x.matchId, x.tipo, x.pick || "", x.comparador || "", x.alcance || "", Number(x.linea) || 0]), Number(b.monto) || 0, Number(b.cuota) || 0]);
   return JSON.stringify([b.matchId, b.tipo || "", b.pick || "", b.comparador || "", b.alcance || "", Number(b.linea) || 0, Number(b.monto) || 0, Number(b.cuota) || 0]);
 }
 function firmaBet(b){

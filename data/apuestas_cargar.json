@@ -7,12 +7,49 @@
       "matchId": "promiedos_ehebjjg",
       "tipo": "combinada",
       "selecciones": [
-        { "matchId": "promiedos_ehebjjg", "tipo": "corners", "comparador": "mas", "alcance": "local", "linea": 3.5 },
-        { "matchId": "promiedos_ehebjjg", "tipo": "corners", "comparador": "mas", "alcance": "visitante", "linea": 3.5 }
+        {
+          "matchId": "promiedos_ehebjjg",
+          "tipo": "corners",
+          "comparador": "mas",
+          "alcance": "local",
+          "linea": 3.5
+        },
+        {
+          "matchId": "promiedos_ehebjjg",
+          "tipo": "corners",
+          "comparador": "mas",
+          "alcance": "visitante",
+          "linea": 3.5
+        }
       ],
       "monto": 250,
       "cuota": 2.3,
       "cargada": "2026-11-22T11:13"
+    },
+    {
+      "id": "bw13385230384",
+      "bwId": "13385230384",
+      "matchId": "promiedos_ehfahii",
+      "tipo": "combinada",
+      "selecciones": [
+        {
+          "matchId": "promiedos_ehfahii",
+          "tipo": "corners",
+          "comparador": "mas",
+          "alcance": "visitante",
+          "linea": 4.5
+        },
+        {
+          "matchId": "promiedos_ehfahii",
+          "tipo": "corners",
+          "comparador": "mas",
+          "alcance": "local",
+          "linea": 3.5
+        }
+      ],
+      "monto": 250,
+      "cuota": 2.7,
+      "cargada": "2026-11-22T16:44"
     }
   ]
 }
