@@ -54957,7 +54957,7 @@
           "v": 1
         },
         "corners": {
-          "l": 1,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
@@ -54977,7 +54977,7 @@
         "gameUrlName": "rosario-central-vs-gimnasia-mendoza",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "68'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54986,10 +54986,10 @@
         "arbitro": "Leandro Rey Hilfer"
       },
       "foto2T": {
-        "minuto": "62'",
+        "minuto": "68'",
         "enPausa": false,
         "corners": {
-          "l": 1,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
@@ -55479,14 +55479,14 @@
         },
         "corners": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 0,
-          "v": 5
+          "v": 6
         },
         "atajadas": {
-          "l": 4,
+          "l": 5,
           "v": 0
         }
       },
@@ -55498,7 +55498,7 @@
         "gameUrlName": "getafe-vs-atletico-madrid",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "22'",
+        "minuto": "28'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55709,15 +55709,15 @@
         },
         "corners": {
           "l": 2,
-          "v": 2
+          "v": 4
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -55728,7 +55728,7 @@
         "gameUrlName": "atalanta-vs-inter-milan",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "44'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
