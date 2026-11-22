@@ -55436,7 +55436,7 @@
         "gameUrlName": "osasuna-vs-malaga",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "52'",
+        "minuto": "64'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55445,7 +55445,7 @@
         "arbitro": "Ricardo De Burgos Bengoetxea"
       },
       "foto2T": {
-        "minuto": "52'",
+        "minuto": "64'",
         "enPausa": false,
         "corners": {
           "l": 4,
@@ -55658,7 +55658,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 4
         },
         "corners": {
@@ -55682,7 +55682,7 @@
         "gameUrlName": "ac-milan-vs-frosinone",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "79'",
+        "minuto": "90+1'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55691,7 +55691,7 @@
         "arbitro": "L. Pairetto"
       },
       "foto2T": {
-        "minuto": "79'",
+        "minuto": "90+1'",
         "enPausa": false,
         "corners": {
           "l": 2,
