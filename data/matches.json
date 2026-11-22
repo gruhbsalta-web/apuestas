@@ -59060,7 +59060,7 @@
       "visitante": "Boca Juniors",
       "fechaHora": "2026-11-21T19:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -59089,31 +59089,15 @@
         "leagueName": "Copa Sudamericana",
         "country": "Internacional",
         "gameUrlName": "atletico-mineiro-vs-boca-juniors",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Final",
-        "ganador": null,
+        "ganador": 2,
         "alargue": false,
         "tv": "ESPN, Disney+ Premium, DSports",
         "estadio": "Estadio Metropolitano Roberto Meléndez",
         "arbitro": "Andrés Matonte"
-      },
-      "foto2T": {
-        "minuto": "90'",
-        "enPausa": false,
-        "corners": {
-          "l": 4,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 2,
-          "v": 7
-        },
-        "atajadas": {
-          "l": 5,
-          "v": 2
-        }
       }
     }
   ],
