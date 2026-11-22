@@ -3813,6 +3813,13 @@ async function pedirActualizacion(){
       body: JSON.stringify({ref:"master", inputs:{una_vez:"true"}})
     });
     if(r.status === 204){
+      // además deja lanzado el bucle: si no hay uno corriendo arranca; si hay, queda en
+      // cola y sigue cuando aquel termine (así no hace falta volver a forzar)
+      fetch(REPO_API, {
+        method:"POST",
+        headers:{ "Authorization":"Bearer " + llave, "Accept":"application/vnd.github+json", "X-GitHub-Api-Version":"2022-11-28", "Content-Type":"application/json" },
+        body: JSON.stringify({ref:"master", inputs:{una_vez:"false"}})
+      }).catch(()=>{});
       pedidoManual = Date.now();
       pintarSync();
       return;
