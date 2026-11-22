@@ -55480,15 +55480,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "getafe-vs-atletico-madrid",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 13",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Estadio Coliseum",
-        "arbitro": "Gil Manzano",
-        "infoDia": "2026-11-22"
+        "arbitro": "Gil Manzano"
       }
     },
     {
@@ -55685,19 +55685,19 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tirosArco": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
           "l": 0,
@@ -55712,7 +55712,7 @@
         "gameUrlName": "atalanta-vs-inter-milan",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "6'",
+        "minuto": "18'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
