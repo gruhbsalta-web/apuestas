@@ -55270,7 +55270,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 3,
+          "l": 4,
           "v": 0
         },
         "tarjetas": {
@@ -55278,15 +55278,15 @@
           "v": 1
         },
         "corners": {
-          "l": 12,
+          "l": 14,
           "v": 4
         },
         "tirosArco": {
-          "l": 10,
-          "v": 2
+          "l": 11,
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 7
         }
       },
@@ -55298,7 +55298,7 @@
         "gameUrlName": "liverpool-vs-manchester-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "79'",
+        "minuto": "90+1'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55307,18 +55307,18 @@
         "arbitro": "Samuel Barrott"
       },
       "foto2T": {
-        "minuto": "79'",
+        "minuto": "90+1'",
         "enPausa": false,
         "corners": {
-          "l": 12,
+          "l": 14,
           "v": 4
         },
         "tirosArco": {
-          "l": 10,
-          "v": 2
+          "l": 11,
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 7
         }
       }
@@ -55420,7 +55420,7 @@
       "local": "Osasuna",
       "visitante": "Málaga CF",
       "fechaHora": "2026-11-22T14:30",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -55428,7 +55428,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -55450,9 +55450,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "osasuna-vs-malaga",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "39'",
+        "minuto": "45'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55654,19 +55654,19 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tarjetas": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 2,
-          "v": 5
+          "v": 6
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 3
         },
         "atajadas": {
@@ -55682,7 +55682,7 @@
         "gameUrlName": "ac-milan-vs-frosinone",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "49'",
+        "minuto": "61'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55691,14 +55691,14 @@
         "arbitro": "L. Pairetto"
       },
       "foto2T": {
-        "minuto": "49'",
+        "minuto": "61'",
         "enPausa": false,
         "corners": {
           "l": 2,
-          "v": 5
+          "v": 6
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 3
         },
         "atajadas": {
