@@ -54256,15 +54256,31 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-jujuy-vs-dep.-madryn",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
         "tv": "LPF Premium",
         "estadio": "23 de Agosto (San Salvador de Jujuy)",
         "arbitro": "Bruno Amiconi"
+      },
+      "foto2T": {
+        "minuto": "47'",
+        "enPausa": false,
+        "corners": {
+          "l": 3,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 2
+        }
       }
     },
     {
