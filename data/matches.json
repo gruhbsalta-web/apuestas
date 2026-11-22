@@ -55278,16 +55278,16 @@
           "v": 1
         },
         "corners": {
-          "l": 9,
+          "l": 12,
           "v": 4
         },
         "tirosArco": {
-          "l": 8,
-          "v": 1
+          "l": 10,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
-          "v": 5
+          "l": 2,
+          "v": 7
         }
       },
       "source": {
@@ -55298,7 +55298,7 @@
         "gameUrlName": "liverpool-vs-manchester-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "73'",
+        "minuto": "79'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55307,19 +55307,19 @@
         "arbitro": "Samuel Barrott"
       },
       "foto2T": {
-        "minuto": "73'",
+        "minuto": "79'",
         "enPausa": false,
         "corners": {
-          "l": 9,
+          "l": 12,
           "v": 4
         },
         "tirosArco": {
-          "l": 8,
-          "v": 1
+          "l": 10,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
-          "v": 5
+          "l": 2,
+          "v": 7
         }
       }
     },
@@ -55432,7 +55432,7 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
@@ -55452,7 +55452,7 @@
         "gameUrlName": "osasuna-vs-malaga",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "33'",
+        "minuto": "39'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55654,7 +55654,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tarjetas": {
@@ -55663,15 +55663,15 @@
         },
         "corners": {
           "l": 2,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
-          "l": 2,
-          "v": 2
+          "l": 4,
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         }
       },
       "source": {
@@ -55680,15 +55680,31 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "ac-milan-vs-frosinone",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
         "tv": "Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
         "arbitro": "L. Pairetto"
+      },
+      "foto2T": {
+        "minuto": "49'",
+        "enPausa": false,
+        "corners": {
+          "l": 2,
+          "v": 5
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 1
+        }
       }
     },
     {
