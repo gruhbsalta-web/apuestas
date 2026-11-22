@@ -50,6 +50,31 @@
       "monto": 250,
       "cuota": 2.7,
       "cargada": "2026-11-22T16:44"
+    },
+    {
+      "id": "bw13385311466",
+      "bwId": "13385311466",
+      "matchId": "promiedos_eijbgjg",
+      "tipo": "combinada",
+      "selecciones": [
+        {
+          "matchId": "promiedos_eijbgjg",
+          "tipo": "corners",
+          "comparador": "mas",
+          "alcance": "visitante",
+          "linea": 2.5
+        },
+        {
+          "matchId": "promiedos_eijbgjg",
+          "tipo": "corners",
+          "comparador": "mas",
+          "alcance": "local",
+          "linea": 2.5
+        }
+      ],
+      "monto": 250,
+      "cuota": 2.14,
+      "cargada": "2026-11-22T17:08"
     }
   ]
 }
