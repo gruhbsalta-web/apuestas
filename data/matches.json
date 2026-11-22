@@ -55220,7 +55220,7 @@
       "local": "Hull City",
       "visitante": "Brighton",
       "fechaHora": "2026-11-22T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -55228,20 +55228,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         },
         "corners": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
-          "l": 2,
-          "v": 4
+          "l": 3,
+          "v": 7
         },
         "atajadas": {
-          "l": 4,
-          "v": 2
+          "l": 7,
+          "v": 3
         }
       },
       "source": {
@@ -55250,15 +55250,31 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "hull-city-vs-brighton",
-        "statusShort": "1°",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45+3'",
+        "minuto": "69'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "MKM Stadium",
         "arbitro": "P. Bankes"
+      },
+      "foto2T": {
+        "minuto": "69'",
+        "enPausa": false,
+        "corners": {
+          "l": 1,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 7
+        },
+        "atajadas": {
+          "l": 7,
+          "v": 3
+        }
       }
     },
     {
@@ -55313,7 +55329,7 @@
       "visitante": "Villarreal CF",
       "fechaHora": "2026-11-22T10:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -55321,7 +55337,7 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 5
+          "v": 6
         },
         "corners": {
           "l": 10,
@@ -55342,31 +55358,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "barcelona-vs-villarreal",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "85'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 13",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "DSports",
         "estadio": "Spotify Camp Nou",
         "arbitro": "Alejandro Hernández"
-      },
-      "foto2T": {
-        "minuto": "85'",
-        "enPausa": false,
-        "corners": {
-          "l": 10,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 9,
-          "v": 2
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 6
-        }
       }
     },
     {
@@ -55378,7 +55378,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -55386,16 +55386,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         }
       },
       "source": {
@@ -55404,15 +55404,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "racing-santander-vs-real-sociedad",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "16'",
         "ronda": "Fecha 13",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Campos de Sport de El Sardinero",
-        "arbitro": "Manuel Orellana",
-        "infoDia": "2026-11-22"
+        "arbitro": "Manuel Orellana"
       }
     },
     {
@@ -55566,20 +55566,20 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 1
+          "l": 5,
+          "v": 2
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 4
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 5
         }
       },
       "source": {
@@ -55588,15 +55588,31 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "sassuolo-vs-genoa",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "71'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "MAPEI Stadium - Città del Tricolore",
         "arbitro": "M. Ferrieri Caputi"
+      },
+      "foto2T": {
+        "minuto": "71'",
+        "enPausa": false,
+        "corners": {
+          "l": 5,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 5
+        }
       }
     },
     {
@@ -55609,23 +55625,23 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
           "v": 1
         },
-        "corners": {
-          "l": 2,
-          "v": 3
-        },
-        "tirosArco": {
+        "tarjetas": {
           "l": 1,
           "v": 2
         },
+        "corners": {
+          "l": 6,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
         "atajadas": {
           "l": 2,
-          "v": 0
+          "v": 2
         }
       },
       "source": {
@@ -55634,15 +55650,31 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "bologna-vs-udinese",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "71'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
         "tv": "Disney+ Premium",
         "estadio": "Stadio Renato Dall'Ara",
         "arbitro": "Livio Marinelli"
+      },
+      "foto2T": {
+        "minuto": "71'",
+        "enPausa": false,
+        "corners": {
+          "l": 6,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 2
+        }
       }
     },
     {
