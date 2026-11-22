@@ -54949,7 +54949,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -54961,12 +54961,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -54977,7 +54977,7 @@
         "gameUrlName": "rosario-central-vs-gimnasia-mendoza",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "2'",
+        "minuto": "8'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -55436,7 +55436,7 @@
         "gameUrlName": "osasuna-vs-malaga",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "76'",
+        "minuto": "82'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55445,7 +55445,7 @@
         "arbitro": "Ricardo De Burgos Bengoetxea"
       },
       "foto2T": {
-        "minuto": "76'",
+        "minuto": "82'",
         "enPausa": false,
         "corners": {
           "l": 4,
