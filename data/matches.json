@@ -55283,10 +55283,10 @@
         },
         "tirosArco": {
           "l": 5,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 3
         }
       },
@@ -55298,7 +55298,7 @@
         "gameUrlName": "liverpool-vs-manchester-united",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "21'",
+        "minuto": "33'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55367,19 +55367,19 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 6,
-          "v": 12
+          "v": 14
         },
         "tirosArco": {
-          "l": 7,
+          "l": 8,
           "v": 7
         },
         "atajadas": {
           "l": 5,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -55390,7 +55390,7 @@
         "gameUrlName": "racing-santander-vs-real-sociedad",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "76'",
+        "minuto": "89'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55399,19 +55399,19 @@
         "arbitro": "Manuel Orellana"
       },
       "foto2T": {
-        "minuto": "76'",
+        "minuto": "89'",
         "enPausa": false,
         "corners": {
           "l": 6,
-          "v": 12
+          "v": 14
         },
         "tirosArco": {
-          "l": 7,
+          "l": 8,
           "v": 7
         },
         "atajadas": {
           "l": 5,
-          "v": 4
+          "v": 5
         }
       }
     },
@@ -55680,15 +55680,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "ac-milan-vs-frosinone",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "2'",
         "ronda": "Fecha 12",
         "ganador": null,
+        "alargue": false,
         "tv": "Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
-        "arbitro": "L. Pairetto",
-        "infoDia": "2026-11-22"
+        "arbitro": "L. Pairetto"
       }
     },
     {
