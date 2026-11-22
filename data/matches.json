@@ -54957,7 +54957,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -54977,7 +54977,7 @@
         "gameUrlName": "rosario-central-vs-gimnasia-mendoza",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "20'",
+        "minuto": "32'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -55405,7 +55405,7 @@
       "visitante": "Málaga CF",
       "fechaHora": "2026-11-22T14:30",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -55434,31 +55434,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "osasuna-vs-malaga",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+4'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 13",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Estadio El Sadar",
         "arbitro": "Ricardo De Burgos Bengoetxea"
-      },
-      "foto2T": {
-        "minuto": "90+4'",
-        "enPausa": false,
-        "corners": {
-          "l": 4,
-          "v": 1
-        },
-        "tirosArco": {
-          "l": 2,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 1
-        }
       }
     },
     {
@@ -59514,7 +59498,7 @@
       "id": "promiedos_eijiief",
       "local": "Vélez Sarsfield",
       "visitante": "Independiente",
-      "fechaHora": "2026-11-29T11:00",
+      "fechaHora": "2026-11-29T14:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
