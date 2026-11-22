@@ -463,8 +463,14 @@ async function run() {
     }
   } catch (e) { /* sin correcciones */ }
 
+  // Apuestas que carga Claude desde acá (la app las importa una sola vez por dispositivo)
+  let apuestasCargar = [];
+  try { apuestasCargar = JSON.parse(fs.readFileSync(path.join(path.dirname(OUTPUT_PATH), 'apuestas_cargar.json'), 'utf8')).apuestas || []; }
+  catch (e) { /* sin apuestas para cargar */ }
+
   const out = {
     ...existing,
+    apuestasCargar,
     historico,
     matches: [...byId.values()]
   };

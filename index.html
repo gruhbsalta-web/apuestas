@@ -686,6 +686,8 @@
 
       <div id="prob-form" class="prob-form" hidden></div>
       <button class="primary" id="btn-add-bet">Agregar apuesta</button>
+      <button class="btn-save" id="btn-add-sel" style="margin-top:8px;width:100%">+ Sumar a una combinada</button>
+      <div id="comb-draft"></div>
       </div>
     </div>
 
@@ -882,6 +884,14 @@ function betTotal(bet, s){
 }
 
 function condTxtFor(bet, m){
+  if(bet.tipo === "combinada"){
+    const sels = bet.selecciones || [];
+    const varios = new Set(sels.map(x=>x.matchId)).size > 1;
+    return `Combinada (${sels.length}): ` + sels.map(x=>{
+      const mx = state.matches.find(y=>y.id === x.matchId);
+      return condTxtFor(x, mx) + (varios && mx ? ` [${mx.local} vs ${mx.visitante}]` : "");
+    }).join(" + ");
+  }
   if(bet.tipo === "ganador"){
     if(bet.pick === "empate") return "Ganador: Empate";
     const nombre = bet.pick === "local" ? (m ? m.local : "local") : (m ? m.visitante : "visitante");
@@ -979,6 +989,17 @@ function restaDe(k, frac){
   return s2 * (1 - frac) / 0.5;
 }
 function probEstadistica(bet, m, previo){
+  if(bet && bet.tipo === "combinada"){
+    // producto de las selecciones (se toman como independientes)
+    let p = 1, nl = Infinity, nv = Infinity;
+    for(const x of (bet.selecciones || [])){
+      const mx = state.matches.find(y=>y.id === x.matchId);
+      const r = mx ? probEstadistica(x, mx, previo) : null;
+      if(!r) return null;
+      p *= r.p; nl = Math.min(nl, r.nl ?? Infinity); nv = Math.min(nv, r.nv ?? Infinity);
+    }
+    return (bet.selecciones || []).length ? {p, nl, nv} : null;
+  }
   if(!m || !m.stats || !bet) return null;
   // previo: como se veía antes del partido (para apuestas ya definidas, cargadas antes de esto)
   if(previo) m = Object.assign({}, m, {stats: emptyStats(), finPartido: false});
@@ -1034,6 +1055,11 @@ function margenMedido(tipo){
 }
 function probCasa(bet){
   if(!(bet.cuota > 1)) return null;
+  if(bet.tipo === "combinada"){
+    // el margen de la casa se acumula en cada selección
+    const margen = Math.pow(1.09, (bet.selecciones || []).length || 1) - 1;
+    return {p: Math.min(0.99, (1/bet.cuota) / (1 + margen)), margen, como: "estimado"};
+  }
   if(bet.cuotaContra > 1 && bet.tipo !== "ganador"){
     const a = 1/bet.cuota, b = 1/bet.cuotaContra;
     return {p: a/(a+b), margen: a + b - 1, como: "exacto"};
@@ -2366,6 +2392,48 @@ document.getElementById("btn-add-bet").addEventListener("click", ()=>{
   renderAll();
 });
 
+// ---------- Combinada armada a mano: se suman selecciones y se carga con monto y cuota total ----------
+let combDraft = [];
+function seleccionDelForm(){
+  const matchId = document.getElementById("sel-match").value;
+  if(!matchId){ alert("Elegí un partido."); return null; }
+  const tipo = document.getElementById("sel-tipo").value;
+  if(tipo === "ganador") return {matchId, tipo, pick: document.getElementById("sel-alcance").value};
+  const linea = parseNum(document.getElementById("in-linea").value);
+  if(isNaN(linea)){ alert("Completá la línea."); return null; }
+  return {matchId, tipo, comparador: document.getElementById("sel-comp").value, alcance: document.getElementById("sel-alcance").value, linea};
+}
+function renderCombDraft(){
+  const box = document.getElementById("comb-draft");
+  if(!box) return;
+  if(!combDraft.length){ box.innerHTML = ""; return; }
+  box.innerHTML = `<div class="card" style="margin-top:10px;padding:12px">
+    <b>Combinada en armado (${combDraft.length})</b>
+    ${combDraft.map((x,i)=>{ const mx = state.matches.find(y=>y.id === x.matchId); return `<div class="mini-bet"><span>${escH(condTxtFor(x, mx))}${mx ? ` · ${escH(mx.local)} vs ${escH(mx.visitante)}` : ""}</span><button class="btn-del" data-del-sel="${i}">✕</button></div>`; }).join("")}
+    <div class="bet-sub">Poné en Monto y Cuota los de la combinada completa.</div>
+    <button class="primary" id="btn-add-comb" ${combDraft.length < 2 ? "disabled" : ""}>Cargar combinada</button>
+  </div>`;
+  box.querySelectorAll("[data-del-sel]").forEach(b=>b.addEventListener("click", ()=>{ combDraft.splice(Number(b.dataset.delSel), 1); renderCombDraft(); }));
+  const btn = document.getElementById("btn-add-comb");
+  if(btn) btn.addEventListener("click", ()=>{
+    const monto = parseNum(document.getElementById("in-monto").value), cuota = parseNum(document.getElementById("in-cuota").value);
+    if(isNaN(monto) || isNaN(cuota)){ alert("Completá monto y cuota de la combinada."); return; }
+    state.bets.push({id:uid(), matchId: combDraft[0].matchId, tipo:"combinada", selecciones: combDraft, monto, cuota});
+    combDraft = [];
+    save();
+    ["in-linea","in-monto","in-cuota","in-cuota2"].forEach(id=>document.getElementById(id).value = "");
+    renderCombDraft();
+    renderAll();
+  });
+}
+document.getElementById("btn-add-sel").addEventListener("click", ()=>{
+  const x = seleccionDelForm();
+  if(!x) return;
+  combDraft.push(x);
+  document.getElementById("in-linea").value = "";
+  renderCombDraft();
+});
+
 // ---------- Calcular resultado de una apuesta ----------
 // Las estadísticas (goles, tarjetas, corners, etc.) sólo pueden crecer durante el partido:
 // una apuesta "más de X" queda ganada apenas se supera X, sin esperar el final.
@@ -2415,7 +2483,21 @@ function evalGanadorBet(bet, m){
   return {estado: decidido ? "G" : "P", total: actual, ganancia, match:m};
 }
 
+// Combinada: se pierde apenas una selección se pierde; se gana cuando todas están ganadas.
+function evalCombinada(bet){
+  const sels = bet.selecciones || [];
+  const rs = sels.map(x=>evalBet(Object.assign({}, x, {monto:0, cuota:1})));
+  const m = state.matches.find(x=>x.id===bet.matchId);
+  const g = rs.filter(r=>r.estado === "G").length;
+  const total = `${g}/${sels.length}`;
+  if(rs.some(r=>r.estado === "P")) return {estado:"P", total, ganancia:0, match:m, partes:rs};
+  if(sels.length && g === sels.length) return {estado:"G", total, ganancia: bet.monto * bet.cuota - bet.monto, match:m, partes:rs};
+  return {estado:"pendiente", total, ganancia:0, match:m, partes:rs, sin90: rs.some(r=>r.sin90)};
+}
+function partidosDeBet(b){ return b.tipo === "combinada" ? [...new Set((b.selecciones || []).map(x=>x.matchId))] : [b.matchId]; }
+
 function evalBet(bet){
+  if(bet.tipo === "combinada") return evalCombinada(bet);
   const m = state.matches.find(x=>x.id===bet.matchId);
   if(!m) return {estado:"pendiente", total:0, ganancia:0};
   if(bet.tipo === "ganador") return evalGanadorBet(bet, m);
@@ -2442,8 +2524,7 @@ function evalBet(bet){
 function renderBets(){
   const wrap = document.getElementById("bets-list");
   const activas = state.bets.filter(bet=>{
-    const m = state.matches.find(x=>x.id===bet.matchId);
-    return !m || !m.finPartido;
+    return partidosDeBet(bet).some(id=>{ const m = state.matches.find(x=>x.id===id); return !m || !m.finPartido; });
   });
   if(activas.length === 0){
     wrap.innerHTML = '<div class="empty">Todavía no agregaste ninguna apuesta.</div>';
@@ -2459,6 +2540,17 @@ function renderBets(){
     if(r.estado === "G"){ badgeCls="G"; badgeTxt="Ganada"; }
     else if(r.estado === "P"){ badgeCls="P"; badgeTxt="Perdida"; }
     else if(r.sin90){ badgeCls="neutral"; badgeTxt="Sin dato del 90'"; totalLabel = "Al 90'"; subTxt = "Fue al alargue: se resuelve con los 90'"; }
+    else if(bet.tipo === "combinada"){
+      badgeCls = "neutral"; badgeTxt = "Pendiente"; totalLabel = "Selecciones ganadas";
+      const pe = probEstadistica(bet, m);
+      if(pe){ badgeCls = pe.p >= 0.7 ? "alta" : pe.p >= 0.5 ? "media" : pe.p >= 0.3 ? "mediabaja" : "baja"; badgeTxt = pctTxt(pe.p); }
+      subTxt = (bet.selecciones || []).map((x, i)=>{
+        const rx = r.partes && r.partes[i], mx = state.matches.find(y=>y.id === x.matchId);
+        const marca = rx && rx.estado === "G" ? "✅" : rx && rx.estado === "P" ? "❌" : "⏳";
+        const lleva = x.tipo !== "ganador" && rx && typeof rx.total === "number" ? ` (va ${rx.total})` : "";
+        return `${marca} ${condTxtFor(x, mx)}${lleva}`;
+      }).join("<br>");
+    }
     else if(bet.tipo === "ganador"){
       badgeCls = "neutral"; badgeTxt = "Pendiente"; totalLabel = "Resultado"; totalVal = "A definir";
       const pe = m ? probEstadistica(bet, m) : null;
@@ -2654,7 +2746,7 @@ function porTipoQuien(xs){
   const tipos = [...new Set(xs.map(x=>x.tipo))];
   const filas = tipos.map(t=>{
     const ys = xs.filter(x=>x.tipo === t), n = ys.length, prom = f=> ys.reduce((s,x)=>s + f(x), 0) / n;
-    return `<tr><td>${t === "ganador" ? "Ganador" : TIPO_LABEL[t]}</td><td>${n}</td><td>${Math.round(prom(x=>x.y)*100)}%</td><td>${Math.round(prom(x=>x.a)*100)}%</td><td>${Math.round(prom(x=>x.c)*100)}%</td></tr>`;
+    return `<tr><td>${t === "ganador" ? "Ganador" : t === "combinada" ? "Combinadas" : TIPO_LABEL[t]}</td><td>${n}</td><td>${Math.round(prom(x=>x.y)*100)}%</td><td>${Math.round(prom(x=>x.a)*100)}%</td><td>${Math.round(prom(x=>x.c)*100)}%</td></tr>`;
   }).join("");
   return `<table class="tabla-quien"><thead><tr><th>Mercado</th><th>N</th><th>Salieron</th><th>La Fija</th><th>Casa</th></tr></thead><tbody>${filas}</tbody></table>`;
 }
@@ -2663,7 +2755,7 @@ function renderQuienAcierta(decididas){
   if(!box) return;
   const xs = decididas.filter(({bet})=>bet.probCarga != null && bet.probCasa != null).map(({bet, r})=>({a: bet.probCarga, c: bet.probCasa, y: r.estado === "G" ? 1 : 0, tipo: bet.tipo, previa: !!bet.probPrevia}));
   const conContra = state.bets.filter(b=>b.cuotaContra > 1);
-  const margenes = [...new Set(state.bets.map(b=>b.tipo))].map(t=>{ const m = margenMedido(t); return m ? `${t === "ganador" ? "Ganador" : TIPO_LABEL[t]} ${Math.round(m.m*100)}% (${m.n})` : null; }).filter(Boolean);
+  const margenes = [...new Set(state.bets.map(b=>b.tipo))].map(t=>{ const m = margenMedido(t); return m ? `${t === "ganador" ? "Ganador" : t === "combinada" ? "Combinadas" : TIPO_LABEL[t]} ${Math.round(m.m*100)}% (${m.n})` : null; }).filter(Boolean);
   let cuerpo;
   if(xs.length < 5){
     cuerpo = `<div class="bet-sub">Hacen falta al menos 5 apuestas definidas (van ${xs.length}).</div>`;
@@ -2703,12 +2795,13 @@ function renderResumen(){
 
   // "ganador" no es una categoria de m.stats (TIPO_LABEL), es un mercado
   // aparte -- se suma al desglose del Resumen con su propia etiqueta.
-  const categoriasResumen = [...Object.keys(TIPO_LABEL), "ganador"];
-  const labelResumen = k => k === "ganador" ? "Ganador del partido" : TIPO_LABEL[k];
+  const categoriasResumen = [...Object.keys(TIPO_LABEL), "ganador", "combinada"];
+  const labelResumen = k => k === "ganador" ? "Ganador del partido" : k === "combinada" ? "Combinadas" : TIPO_LABEL[k];
   const porCategoria = {};
   categoriasResumen.forEach(k=> porCategoria[k] = {g:0, p:0});
   decididas.forEach(({bet, r})=>{
-    if(r.estado==="G") porCategoria[bet.tipo].g++; else porCategoria[bet.tipo].p++;
+    const cat = porCategoria[bet.tipo]; if(!cat) return;
+    if(r.estado==="G") cat.g++; else cat.p++;
   });
 
   const catWrap = document.getElementById("resumen-categorias");
@@ -3184,6 +3277,7 @@ function firmaContenido(b){
 }
 function firmaBet(b){
   if(b.bwId) return "bw:" + b.bwId;
+  if(b.tipo === "combinada") return JSON.stringify(["comb", (b.selecciones || []).map(x=>[x.matchId, x.tipo, x.pick || "", x.comparador || "", x.alcance || "", Number(x.linea) || 0]), Number(b.monto) || 0, Number(b.cuota) || 0]);
   return JSON.stringify([b.matchId, b.tipo || "", b.pick || "", b.comparador || "", b.alcance || "", Number(b.linea) || 0, Number(b.monto) || 0, Number(b.cuota) || 0]);
 }
 
@@ -3525,7 +3619,7 @@ function mergeData(dataMatches){
 // Saca de la memoria los partidos de ligas que ya no se siguen y la precarga vieja,
 // salvo que tengan apuestas asociadas.
 function limpiarPartidosViejos(){
-  const conApuesta = new Set(state.bets.map(b=>b.matchId));
+  const conApuesta = new Set(state.bets.flatMap(b=>[b.matchId, ...partidosDeBet(b)]));
   const antes = state.matches.length;
   state.matches = state.matches.filter(m=>{
     if(conApuesta.has(m.id)) return true;
@@ -3536,6 +3630,24 @@ function limpiarPartidosViejos(){
   return antes - state.matches.length;
 }
 
+// ---------- Apuestas cargadas desde el repo (data/apuestas_cargar.json, viaja dentro de matches.json) ----------
+// Cada una se importa una sola vez por dispositivo (si la borrás no vuelve).
+function importarApuestasRepo(lista){
+  if(!Array.isArray(lista)) return 0;
+  if(!Array.isArray(state.importadas)) state.importadas = [];
+  const ya = new Set(state.importadas), firmas = new Set(state.bets.map(firmaBet));
+  let n = 0;
+  lista.forEach(b=>{
+    if(!b || !b.id || ya.has(b.id)) return;
+    ya.add(b.id);
+    if(firmas.has(firmaBet(b))) return;
+    state.bets.push(JSON.parse(JSON.stringify(b)));
+    n++;
+  });
+  state.importadas = [...ya];
+  return n;
+}
+
 async function syncFromData(){
   const resp = await fetchDato('data/matches.json');
   if(!resp.ok) throw new Error('No se pudo leer data/matches.json');
@@ -3543,6 +3655,7 @@ async function syncFromData(){
   if(!Array.isArray(data.matches)) throw new Error('El archivo no tiene partidos válidos');
   const primeraVez = !localStorage.getItem(STORAGE_KEY);
   mergeData(data.matches);
+  importarApuestasRepo(data.apuestasCargar);
   limpiarPartidosViejos();
   if(primeraVez){
     state.bets = Array.isArray(data.bets) ? data.bets : state.bets;

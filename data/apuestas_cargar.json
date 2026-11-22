@@ -1,0 +1,18 @@
+{
+  "nota": "Apuestas que carga Claude. La app importa cada una una sola vez por dispositivo (por id); si la borrás en la app, no vuelve.",
+  "apuestas": [
+    {
+      "id": "bw13383594371",
+      "bwId": "13383594371",
+      "matchId": "promiedos_ehebjjg",
+      "tipo": "combinada",
+      "selecciones": [
+        { "matchId": "promiedos_ehebjjg", "tipo": "corners", "comparador": "mas", "alcance": "local", "linea": 3.5 },
+        { "matchId": "promiedos_ehebjjg", "tipo": "corners", "comparador": "mas", "alcance": "visitante", "linea": 3.5 }
+      ],
+      "monto": 250,
+      "cuota": 2.3,
+      "cargada": "2026-11-22T11:13"
+    }
+  ]
+}
