@@ -55448,10 +55448,10 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "corners": {
@@ -55460,7 +55460,7 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 9
+          "v": 10
         },
         "atajadas": {
           "l": 7,
@@ -55475,7 +55475,7 @@
         "gameUrlName": "getafe-vs-atletico-madrid",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "83'",
+        "minuto": "90+5'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55484,7 +55484,7 @@
         "arbitro": "Gil Manzano"
       },
       "foto2T": {
-        "minuto": "83'",
+        "minuto": "90+5'",
         "enPausa": false,
         "corners": {
           "l": 2,
@@ -55492,7 +55492,7 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 9
+          "v": 10
         },
         "atajadas": {
           "l": 7,
