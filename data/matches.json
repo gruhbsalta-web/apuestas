@@ -54238,7 +54238,7 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
@@ -54258,7 +54258,7 @@
         "gameUrlName": "gimnasia-jujuy-vs-dep.-madryn",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "9'",
+        "minuto": "15'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
