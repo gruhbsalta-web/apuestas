@@ -54238,16 +54238,16 @@
           "v": 2
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -54258,7 +54258,7 @@
         "gameUrlName": "gimnasia-jujuy-vs-dep.-madryn",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "44'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
