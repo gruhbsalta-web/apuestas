@@ -55358,7 +55358,7 @@
       "local": "Racing de Santander",
       "visitante": "Real Sociedad",
       "fechaHora": "2026-11-22T12:15",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -55388,9 +55388,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "racing-santander-vs-real-sociedad",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+3'",
+        "minuto": "45'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
