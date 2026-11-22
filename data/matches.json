@@ -55270,7 +55270,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -55282,7 +55282,7 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 0
         },
         "atajadas": {
@@ -55298,7 +55298,7 @@
         "gameUrlName": "liverpool-vs-manchester-united",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "9'",
+        "minuto": "21'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55362,19 +55362,19 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "corners": {
           "l": 6,
-          "v": 11
+          "v": 12
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 7
         },
         "atajadas": {
@@ -55390,7 +55390,7 @@
         "gameUrlName": "racing-santander-vs-real-sociedad",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "65'",
+        "minuto": "76'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55399,14 +55399,14 @@
         "arbitro": "Manuel Orellana"
       },
       "foto2T": {
-        "minuto": "65'",
+        "minuto": "76'",
         "enPausa": false,
         "corners": {
           "l": 6,
-          "v": 11
+          "v": 12
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 7
         },
         "atajadas": {
