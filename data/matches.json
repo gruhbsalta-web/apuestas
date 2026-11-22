@@ -59067,19 +59067,19 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "tirosArco": {
           "l": 2,
-          "v": 5
+          "v": 7
         },
         "atajadas": {
-          "l": 3,
+          "l": 5,
           "v": 2
         }
       },
@@ -59091,7 +59091,7 @@
         "gameUrlName": "atletico-mineiro-vs-boca-juniors",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "84'",
+        "minuto": "90'",
         "ronda": "Final",
         "ganador": null,
         "alargue": false,
@@ -59100,18 +59100,18 @@
         "arbitro": "Andrés Matonte"
       },
       "foto2T": {
-        "minuto": "84'",
+        "minuto": "90'",
         "enPausa": false,
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "tirosArco": {
           "l": 2,
-          "v": 5
+          "v": 7
         },
         "atajadas": {
-          "l": 3,
+          "l": 5,
           "v": 2
         }
       }
