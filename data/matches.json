@@ -54988,7 +54988,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tarjetas": {
@@ -55000,12 +55000,12 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 5,
-          "v": 4
+          "l": 7,
+          "v": 5
         },
         "atajadas": {
-          "l": 3,
-          "v": 3
+          "l": 4,
+          "v": 4
         }
       },
       "source": {
@@ -55016,7 +55016,7 @@
         "gameUrlName": "river-plate-vs-lanus",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "83'",
+        "minuto": "90+5'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -55025,19 +55025,19 @@
         "arbitro": "Pablo Dóvalo"
       },
       "foto2T": {
-        "minuto": "83'",
+        "minuto": "90+5'",
         "enPausa": false,
         "corners": {
           "l": 5,
           "v": 4
         },
         "tirosArco": {
-          "l": 5,
-          "v": 4
+          "l": 7,
+          "v": 5
         },
         "atajadas": {
-          "l": 3,
-          "v": 3
+          "l": 4,
+          "v": 4
         }
       }
     },
