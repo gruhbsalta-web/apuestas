@@ -55451,11 +55451,11 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 5
         },
         "tirosArco": {
@@ -55475,7 +55475,7 @@
         "gameUrlName": "getafe-vs-atletico-madrid",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "65'",
+        "minuto": "71'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55484,10 +55484,10 @@
         "arbitro": "Gil Manzano"
       },
       "foto2T": {
-        "minuto": "65'",
+        "minuto": "71'",
         "enPausa": false,
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 5
         },
         "tirosArco": {
@@ -55701,16 +55701,16 @@
           "v": 0
         },
         "corners": {
-          "l": 4,
-          "v": 4
+          "l": 5,
+          "v": 5
         },
         "tirosArco": {
-          "l": 8,
+          "l": 9,
           "v": 6
         },
         "atajadas": {
           "l": 2,
-          "v": 5
+          "v": 6
         }
       },
       "source": {
@@ -55721,7 +55721,7 @@
         "gameUrlName": "atalanta-vs-inter-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "87'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55730,19 +55730,19 @@
         "arbitro": "F. Maresca"
       },
       "foto2T": {
-        "minuto": "81'",
+        "minuto": "87'",
         "enPausa": false,
         "corners": {
-          "l": 4,
-          "v": 4
+          "l": 5,
+          "v": 5
         },
         "tirosArco": {
-          "l": 8,
+          "l": 9,
           "v": 6
         },
         "atajadas": {
           "l": 2,
-          "v": 5
+          "v": 6
         }
       }
     },
