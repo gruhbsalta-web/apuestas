@@ -55252,7 +55252,7 @@
         "gameUrlName": "hull-city-vs-brighton",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "15'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55321,7 +55321,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 2
+          "v": 4
         },
         "corners": {
           "l": 6,
@@ -55342,15 +55342,31 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "barcelona-vs-villarreal",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
         "tv": "DSports",
         "estadio": "Spotify Camp Nou",
         "arbitro": "Alejandro Hernández"
+      },
+      "foto2T": {
+        "minuto": "52'",
+        "enPausa": false,
+        "corners": {
+          "l": 6,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 3
+        }
       }
     },
     {
@@ -55558,12 +55574,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -55574,7 +55590,7 @@
         "gameUrlName": "sassuolo-vs-genoa",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "15'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55597,18 +55613,18 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 2,
           "v": 0
         }
       },
@@ -55620,7 +55636,7 @@
         "gameUrlName": "bologna-vs-udinese",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "6'",
+        "minuto": "16'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -59502,5 +59518,32 @@
     "h": "2026-11-22",
     "bb": "2026-11-22",
     "bh": "2026-11-22"
-  }
+  },
+  "apuestasCargar": [
+    {
+      "id": "bw13383594371",
+      "bwId": "13383594371",
+      "matchId": "promiedos_ehebjjg",
+      "tipo": "combinada",
+      "selecciones": [
+        {
+          "matchId": "promiedos_ehebjjg",
+          "tipo": "corners",
+          "comparador": "mas",
+          "alcance": "local",
+          "linea": 3.5
+        },
+        {
+          "matchId": "promiedos_ehebjjg",
+          "tipo": "corners",
+          "comparador": "mas",
+          "alcance": "visitante",
+          "linea": 3.5
+        }
+      ],
+      "monto": 250,
+      "cuota": 2.3,
+      "cargada": "2026-11-22T11:13"
+    }
+  ]
 }
