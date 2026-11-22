@@ -55274,11 +55274,11 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "corners": {
-          "l": 7,
+          "l": 8,
           "v": 4
         },
         "tirosArco": {
@@ -55298,7 +55298,7 @@
         "gameUrlName": "liverpool-vs-manchester-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "49'",
+        "minuto": "61'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55307,10 +55307,10 @@
         "arbitro": "Samuel Barrott"
       },
       "foto2T": {
-        "minuto": "49'",
+        "minuto": "61'",
         "enPausa": false,
         "corners": {
-          "l": 7,
+          "l": 8,
           "v": 4
         },
         "tirosArco": {
@@ -55424,7 +55424,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -55432,11 +55432,11 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -55452,7 +55452,7 @@
         "gameUrlName": "osasuna-vs-malaga",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "9'",
+        "minuto": "21'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55650,7 +55650,7 @@
       "local": "AC Milan",
       "visitante": "Frosinone",
       "fechaHora": "2026-11-22T14:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -55666,7 +55666,7 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "atajadas": {
@@ -55680,9 +55680,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "ac-milan-vs-frosinone",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "37'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
