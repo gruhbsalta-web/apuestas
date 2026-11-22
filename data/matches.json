@@ -55233,7 +55233,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 3,
@@ -55252,7 +55252,7 @@
         "gameUrlName": "hull-city-vs-brighton",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "69'",
+        "minuto": "71'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55261,11 +55261,11 @@
         "arbitro": "P. Bankes"
       },
       "foto2T": {
-        "minuto": "69'",
+        "minuto": "71'",
         "enPausa": false,
         "corners": {
           "l": 1,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 3,
@@ -55406,7 +55406,7 @@
         "gameUrlName": "racing-santander-vs-real-sociedad",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "16'",
+        "minuto": "18'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55574,12 +55574,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 5,
-          "v": 4
+          "l": 6,
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
-          "v": 5
+          "l": 3,
+          "v": 6
         }
       },
       "source": {
@@ -55590,7 +55590,7 @@
         "gameUrlName": "sassuolo-vs-genoa",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "71'",
+        "minuto": "73'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55599,19 +55599,19 @@
         "arbitro": "M. Ferrieri Caputi"
       },
       "foto2T": {
-        "minuto": "71'",
+        "minuto": "73'",
         "enPausa": false,
         "corners": {
           "l": 5,
           "v": 2
         },
         "tirosArco": {
-          "l": 5,
-          "v": 4
+          "l": 6,
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
-          "v": 5
+          "l": 3,
+          "v": 6
         }
       }
     },
@@ -55632,7 +55632,7 @@
           "v": 2
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 4
         },
         "tirosArco": {
@@ -55652,7 +55652,7 @@
         "gameUrlName": "bologna-vs-udinese",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "71'",
+        "minuto": "73'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55661,10 +55661,10 @@
         "arbitro": "Livio Marinelli"
       },
       "foto2T": {
-        "minuto": "71'",
+        "minuto": "73'",
         "enPausa": false,
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 4
         },
         "tirosArco": {
