@@ -54954,7 +54954,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 1,
@@ -54962,10 +54962,10 @@
         },
         "tirosArco": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 1
         }
       },
@@ -54977,7 +54977,7 @@
         "gameUrlName": "rosario-central-vs-gimnasia-mendoza",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "32'",
+        "minuto": "38'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
