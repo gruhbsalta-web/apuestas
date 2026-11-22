@@ -54957,16 +54957,16 @@
           "v": 1
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 4
         },
         "atajadas": {
           "l": 4,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -54977,7 +54977,7 @@
         "gameUrlName": "rosario-central-vs-gimnasia-mendoza",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "68'",
+        "minuto": "80'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -54986,19 +54986,19 @@
         "arbitro": "Leandro Rey Hilfer"
       },
       "foto2T": {
-        "minuto": "68'",
+        "minuto": "80'",
         "enPausa": false,
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
-          "l": 4,
+          "l": 5,
           "v": 4
         },
         "atajadas": {
           "l": 4,
-          "v": 1
+          "v": 2
         }
       }
     },
@@ -55471,11 +55471,11 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 1,
@@ -55483,7 +55483,7 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 6
+          "v": 7
         },
         "atajadas": {
           "l": 5,
@@ -55498,7 +55498,7 @@
         "gameUrlName": "getafe-vs-atletico-madrid",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "28'",
+        "minuto": "40'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55696,7 +55696,7 @@
       "local": "Atalanta",
       "visitante": "Inter Milan",
       "fechaHora": "2026-11-22T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -55726,9 +55726,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "atalanta-vs-inter-milan",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "44'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
