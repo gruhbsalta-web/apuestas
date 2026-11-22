@@ -55221,10 +55221,10 @@
       "visitante": "Brighton",
       "fechaHora": "2026-11-22T11:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "tarjetas": {
@@ -55236,7 +55236,7 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 8
         },
         "atajadas": {
@@ -55250,31 +55250,15 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "hull-city-vs-brighton",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 11",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "MKM Stadium",
         "arbitro": "P. Bankes"
-      },
-      "foto2T": {
-        "minuto": "89'",
-        "enPausa": false,
-        "corners": {
-          "l": 3,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 3,
-          "v": 8
-        },
-        "atajadas": {
-          "l": 8,
-          "v": 3
-        }
       }
     },
     {
@@ -55379,19 +55363,19 @@
       "stats": {
         "goles": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 4,
-          "v": 7
+          "l": 5,
+          "v": 8
         },
         "tirosArco": {
           "l": 4,
-          "v": 5
+          "v": 6
         },
         "atajadas": {
           "l": 5,
@@ -55406,7 +55390,7 @@
         "gameUrlName": "racing-santander-vs-real-sociedad",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "35'",
+        "minuto": "45+3'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55559,7 +55543,7 @@
       "visitante": "Genoa",
       "fechaHora": "2026-11-22T11:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -55588,31 +55572,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "sassuolo-vs-genoa",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
-        "ganador": null,
+        "ganador": 2,
         "alargue": false,
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "MAPEI Stadium - Città del Tricolore",
         "arbitro": "M. Ferrieri Caputi"
-      },
-      "foto2T": {
-        "minuto": "90+1'",
-        "enPausa": false,
-        "corners": {
-          "l": 5,
-          "v": 3
-        },
-        "tirosArco": {
-          "l": 7,
-          "v": 5
-        },
-        "atajadas": {
-          "l": 3,
-          "v": 7
-        }
       }
     },
     {
@@ -55621,7 +55589,7 @@
       "visitante": "Udinese",
       "fechaHora": "2026-11-22T11:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -55650,31 +55618,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "bologna-vs-udinese",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
         "tv": "Disney+ Premium",
         "estadio": "Stadio Renato Dall'Ara",
         "arbitro": "Livio Marinelli"
-      },
-      "foto2T": {
-        "minuto": "90+1'",
-        "enPausa": false,
-        "corners": {
-          "l": 8,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 4,
-          "v": 3
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 3
-        }
       }
     },
     {
