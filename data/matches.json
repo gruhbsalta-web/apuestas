@@ -55228,20 +55228,20 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 4
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 2
         }
       },
       "source": {
@@ -55252,7 +55252,7 @@
         "gameUrlName": "hull-city-vs-brighton",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "45+3'",
         "ronda": "Fecha 11",
         "ganador": null,
         "alargue": false,
@@ -55316,24 +55316,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 3,
           "v": 2
         },
         "tarjetas": {
-          "l": 0,
-          "v": 4
+          "l": 2,
+          "v": 5
         },
         "corners": {
-          "l": 6,
+          "l": 10,
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
+          "l": 9,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 3
+          "v": 6
         }
       },
       "source": {
@@ -55344,7 +55344,7 @@
         "gameUrlName": "barcelona-vs-villarreal",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "52'",
+        "minuto": "85'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -55353,19 +55353,19 @@
         "arbitro": "Alejandro Hernández"
       },
       "foto2T": {
-        "minuto": "52'",
+        "minuto": "85'",
         "enPausa": false,
         "corners": {
-          "l": 6,
+          "l": 10,
           "v": 0
         },
         "tirosArco": {
-          "l": 3,
+          "l": 9,
           "v": 2
         },
         "atajadas": {
           "l": 0,
-          "v": 3
+          "v": 6
         }
       }
     },
@@ -55558,12 +55558,12 @@
       "local": "Sassuolo",
       "visitante": "Genoa",
       "fechaHora": "2026-11-22T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "tarjetas": {
           "l": 0,
@@ -55571,15 +55571,15 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
-          "l": 1,
-          "v": 0
+          "l": 3,
+          "v": 4
         },
         "atajadas": {
-          "l": 0,
-          "v": 1
+          "l": 2,
+          "v": 3
         }
       },
       "source": {
@@ -55588,9 +55588,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "sassuolo-vs-genoa",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55604,11 +55604,11 @@
       "local": "Bologna",
       "visitante": "Udinese",
       "fechaHora": "2026-11-22T11:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -55616,11 +55616,11 @@
           "v": 1
         },
         "corners": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "atajadas": {
@@ -55634,9 +55634,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "bologna-vs-udinese",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "16'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
