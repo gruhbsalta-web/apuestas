@@ -54946,7 +54946,7 @@
       "visitante": "Gimnasia y Esgrima",
       "fechaHora": "2026-11-22T16:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -54962,10 +54962,10 @@
         },
         "tirosArco": {
           "l": 5,
-          "v": 7
+          "v": 8
         },
         "atajadas": {
-          "l": 6,
+          "l": 7,
           "v": 2
         }
       },
@@ -54975,31 +54975,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "rosario-central-vs-gimnasia-mendoza",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+2'",
-        "ronda": "Octavos de Final",
-        "ganador": null,
-        "alargue": false,
-        "tv": "ESPN Premium",
-        "estadio": "Estadio Gigante de Arroyito",
-        "arbitro": "Leandro Rey Hilfer"
-      },
-      "foto2T": {
-        "minuto": "90+2'",
-        "enPausa": false,
-        "corners": {
-          "l": 4,
-          "v": 1
-        },
-        "tirosArco": {
-          "l": 5,
-          "v": 7
-        },
-        "atajadas": {
-          "l": 6,
-          "v": 2
-        }
+        "statusShort": "Final",
+        "ronda": "Octavos de Final"
       }
     },
     {
@@ -55701,7 +55678,7 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
           "l": 0,
@@ -55713,7 +55690,7 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
           "l": 2,
@@ -55728,7 +55705,7 @@
         "gameUrlName": "atalanta-vs-inter-milan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "49'",
+        "minuto": "55'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -55737,7 +55714,7 @@
         "arbitro": "F. Maresca"
       },
       "foto2T": {
-        "minuto": "49'",
+        "minuto": "55'",
         "enPausa": false,
         "corners": {
           "l": 2,
@@ -55745,7 +55722,7 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
           "l": 2,
