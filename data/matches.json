@@ -55038,7 +55038,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 4,
+          "l": 6,
           "v": 1
         },
         "corners": {
@@ -55062,7 +55062,7 @@
         "gameUrlName": "instituto-ac-cordoba-vs-huracan",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "71'",
+        "minuto": "83'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -55071,7 +55071,7 @@
         "arbitro": "Darío Herrera"
       },
       "foto2T": {
-        "minuto": "71'",
+        "minuto": "83'",
         "enPausa": false,
         "corners": {
           "l": 2,
