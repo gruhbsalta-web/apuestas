@@ -54179,7 +54179,7 @@
         "country": "Argentina",
         "gameUrlName": "ciudad-de-bolivar-vs-atlanta",
         "statusShort": "Final",
-        "ronda": "Reducido - Cuartos de Final"
+        "ronda": "Reducido - Cuartos de final"
       }
     },
     {
@@ -54218,7 +54218,7 @@
         "country": "Argentina",
         "gameUrlName": "colon-vs-deportivo-moron",
         "statusShort": "Final",
-        "ronda": "Reducido - Cuartos de Final"
+        "ronda": "Reducido - Cuartos de final"
       }
     },
     {
@@ -54257,7 +54257,7 @@
         "country": "Argentina",
         "gameUrlName": "gimnasia-jujuy-vs-dep.-madryn",
         "statusShort": "Final",
-        "ronda": "Reducido - Cuartos de Final"
+        "ronda": "Reducido - Cuartos de final"
       }
     },
     {
@@ -55073,7 +55073,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 3,
+          "l": 4,
           "v": 2
         },
         "tarjetas": {
@@ -55082,10 +55082,10 @@
         },
         "corners": {
           "l": 4,
-          "v": 7
+          "v": 8
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 5
         },
         "atajadas": {
@@ -55101,7 +55101,7 @@
         "gameUrlName": "gimnasia-la-plata-vs-newell's-old-boys",
         "statusShort": "TE",
         "statusEnum": 2,
-        "minuto": "105'",
+        "minuto": "117'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": true,
@@ -55220,7 +55220,7 @@
         "country": "Argentina",
         "gameUrlName": "gimnasia-y-tiro-vs-tristan-suarez",
         "statusShort": "Final",
-        "ronda": "Reducido - Cuartos de Final"
+        "ronda": "Reducido - Cuartos de final"
       }
     },
     {
