@@ -55107,7 +55107,7 @@
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Juan Carmelo Zerillo",
         "arbitro": "Nicolás Ramírez",
-        "infoDia": "2026-11-22"
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -55150,9 +55150,10 @@
         "minuto": "",
         "ronda": "Octavos de Final",
         "ganador": null,
+        "tv": "ESPN Premium",
         "estadio": "Estadio Alberto José Armando",
         "arbitro": "Luis Lobo Medina",
-        "infoDia": "2026-11-22"
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -55740,8 +55741,9 @@
         "minuto": "",
         "ronda": null,
         "ganador": null,
+        "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
-        "infoDia": "2026-11-22"
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -55787,7 +55789,7 @@
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Gtech Community Stadium",
         "arbitro": "Craig Pawson",
-        "infoDia": "2026-11-22"
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -55832,7 +55834,8 @@
         "ganador": null,
         "tv": "DSports",
         "estadio": "Estadio Ciudad de Valencia",
-        "infoDia": "2026-11-22"
+        "arbitro": "Francisco Hernández",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -55878,7 +55881,7 @@
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "U-Power Stadium",
         "arbitro": "D. Doveri",
-        "infoDia": "2026-11-22"
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -55921,8 +55924,9 @@
         "minuto": "",
         "ronda": null,
         "ganador": null,
+        "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
-        "infoDia": "2026-11-22"
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -55966,7 +55970,7 @@
         "ronda": null,
         "ganador": null,
         "estadio": "Estadio 20 de Octubre",
-        "infoDia": "2026-11-22"
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -56009,8 +56013,9 @@
         "minuto": "",
         "ronda": null,
         "ganador": null,
+        "tv": "LPF Premium",
         "estadio": "Estadio Abel Sastre",
-        "infoDia": "2026-11-22"
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59116,8 +59121,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "Fox Sports, Disney+ Premium",
         "estadio": "T&#252;rk Telekom Arena",
-        "infoDia": "2026-11-22"
+        "arbitro": "Jan Seidel",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59160,8 +59167,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Aspmyra Stadion",
-        "infoDia": "2026-11-22"
+        "arbitro": "Halil Umut Meler",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59204,8 +59213,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stadio Giuseppe Sinigaglia",
-        "infoDia": "2026-11-22"
+        "arbitro": "Javier Alberola",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59248,8 +59259,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Stadion Feijenoord",
-        "infoDia": "2026-11-22"
+        "arbitro": "Senad Ibrišimbegović",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59292,8 +59305,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Emirates Stadium",
-        "infoDia": "2026-11-22"
+        "arbitro": "Maurizio Mariani",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59336,9 +59351,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Tehelne Pole Stadion",
-        "infoDia": "2026-11-22"
+        "arbitro": "Jérôme Brisard",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59381,8 +59397,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "ESPN, Disney+ Premium",
         "estadio": "Etihad Stadium",
-        "infoDia": "2026-11-22"
+        "arbitro": "István Kovács",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59425,8 +59443,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Santiago Bernabéu",
-        "infoDia": "2026-11-22"
+        "arbitro": "Espen Eskås",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59469,8 +59489,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "Disney+ Premium",
         "estadio": "Red Bull Arena (Wals-Siezenheim)",
-        "infoDia": "2026-11-22"
+        "arbitro": "Ivan Kružliak",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59513,7 +59535,8 @@
         "minuto": "",
         "ronda": null,
         "ganador": null,
-        "infoDia": "2026-11-22"
+        "estadio": "Jose Amalfitani",
+        "infoDia": "2026-11-23"
       }
     },
     {
@@ -59556,17 +59579,463 @@
         "minuto": "",
         "ronda": null,
         "ganador": null,
-        "infoDia": "2026-11-22"
+        "estadio": "Estadio Gigante de Arroyito",
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_undefined",
+      "local": "Instituto",
+      "visitante": "River Plate",
+      "fechaHora": "2026-11-27T00:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "instituto-ac-cordoba-vs-river-plate",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_eiciebj",
+      "local": "Slavia Praga",
+      "visitante": "Villarreal CF",
+      "fechaHora": "2026-11-25T14:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "slavia-praha-vs-villarreal",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Fortuna Arena",
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_eiciecb",
+      "local": "Sabah",
+      "visitante": "FC Barcelona",
+      "fechaHora": "2026-11-25T14:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "sabah-vs-barcelona",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Bakı Olimpiya Stadionu",
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_eiciebd",
+      "local": "Sporting CP",
+      "visitante": "Manchester United",
+      "fechaHora": "2026-11-25T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "sporting-cp-vs-manchester-united",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "estadio": "Estadio Jose Alvalade",
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_eiciebe",
+      "local": "Atlético de Madrid",
+      "visitante": "Viking",
+      "fechaHora": "2026-11-25T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "atletico-madrid-vs-viking",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Riyadh Air Metropolitano",
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_eiciebf",
+      "local": "Brujas",
+      "visitante": "Liverpool",
+      "fechaHora": "2026-11-25T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "club-brugge-vs-liverpool",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "estadio": "Jan Breydel Stadium",
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_eiciebg",
+      "local": "Lille",
+      "visitante": "Bayern Munich",
+      "fechaHora": "2026-11-25T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "lille-vs-bayern-munich",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "tv": "ESPN 3, Disney+ Premium",
+        "estadio": "Decathlon Arena - Stade Pierre-Mauroy",
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_eiciebh",
+      "local": "Shakhtar Donetsk",
+      "visitante": "Fenerbahce",
+      "fechaHora": "2026-11-25T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "shakhtar-donetsk-vs-fenerbahce-sk",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "tv": "Disney+ Premium",
+        "estadio": "Stamford Bridge",
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_eiciebi",
+      "local": "PSG",
+      "visitante": "AS Roma",
+      "fechaHora": "2026-11-25T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "psg-vs-as-roma",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Parc des Princes",
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_eicieca",
+      "local": "Inter Milan",
+      "visitante": "Stuttgart",
+      "fechaHora": "2026-11-25T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "fhc",
+        "leagueName": "Champions League",
+        "country": "Internacional",
+        "gameUrlName": "inter-milan-vs-stuttgart",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 5",
+        "ganador": null,
+        "estadio": "Stadio Giuseppe Meazza",
+        "infoDia": "2026-11-23"
       }
     }
   ],
   "bets": [],
   "capitalInicial": 0,
   "historico": {
-    "fhc": "2026-11-22",
-    "h": "2026-11-22",
-    "bb": "2026-11-22",
-    "bh": "2026-11-22"
+    "fhc": "2026-11-23",
+    "h": "2026-11-23",
+    "bb": "2026-11-23",
+    "bh": "2026-11-23"
   },
   "apuestasCargar": [
     {
