@@ -55039,14 +55039,14 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
@@ -55062,7 +55062,7 @@
         "gameUrlName": "instituto-ac-cordoba-vs-huracan",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "24'",
+        "minuto": "30'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -55179,7 +55179,7 @@
           "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "tirosArco": {
@@ -55199,7 +55199,7 @@
         "gameUrlName": "gimnasia-y-tiro-vs-tristan-suarez",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "52'",
+        "minuto": "66'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
@@ -55208,10 +55208,10 @@
         "arbitro": "Javier Alberto Delbarba"
       },
       "foto2T": {
-        "minuto": "52'",
+        "minuto": "66'",
         "enPausa": false,
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "tirosArco": {
