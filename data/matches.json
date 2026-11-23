@@ -55069,16 +55069,54 @@
       "local": "Gimnasia y Esgrima",
       "visitante": "Newell's Old Boys",
       "fechaHora": "2026-11-23T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 2
         },
         "tarjetas": {
-          "l": 0,
+          "l": 6,
+          "v": 8
+        },
+        "corners": {
+          "l": 4,
+          "v": 7
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 3,
           "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "gimnasia-la-plata-vs-newell's-old-boys",
+        "statusShort": "TE",
+        "statusEnum": 2,
+        "minuto": "105'",
+        "ronda": "Octavos de Final",
+        "ganador": null,
+        "alargue": true,
+        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
+        "estadio": "Estadio Juan Carmelo Zerillo",
+        "arbitro": "Nicolás Ramírez"
+      },
+      "stats90": {
+        "goles": {
+          "l": 2,
+          "v": 2
+        },
+        "tarjetas": {
+          "l": 6,
+          "v": 6
         },
         "corners": {
           "l": 0,
@@ -55091,23 +55129,13 @@
         "atajadas": {
           "l": 0,
           "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "country": "Argentina",
-        "gameUrlName": "gimnasia-la-plata-vs-newell's-old-boys",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
-        "ronda": "Octavos de Final",
-        "ganador": null,
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
-        "estadio": "Estadio Juan Carmelo Zerillo",
-        "arbitro": "Nicolás Ramírez",
-        "infoDia": "2026-11-23"
+        },
+        "foto": null,
+        "aprox": [
+          "corners",
+          "tirosArco",
+          "atajadas"
+        ]
       }
     },
     {
@@ -55751,28 +55779,28 @@
       "local": "Brentford",
       "visitante": "Everton",
       "fechaHora": "2026-11-23T17:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 4,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 2
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 6,
+          "v": 3
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 7,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 3
         }
       },
       "source": {
@@ -55781,15 +55809,15 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "brentford-vs-everton",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 11",
-        "ganador": null,
+        "ganador": 1,
+        "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Gtech Community Stadium",
-        "arbitro": "Craig Pawson",
-        "infoDia": "2026-11-23"
+        "arbitro": "Craig Pawson"
       }
     },
     {
@@ -55797,28 +55825,28 @@
       "local": "Levante UD",
       "visitante": "Elche CF",
       "fechaHora": "2026-11-23T17:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 0
+          "l": 4,
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 1,
+          "v": 1
         }
       },
       "source": {
@@ -55827,15 +55855,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "levante-vs-elche",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 13",
         "ganador": null,
+        "alargue": false,
         "tv": "DSports",
         "estadio": "Estadio Ciudad de Valencia",
-        "arbitro": "Francisco Hernández",
-        "infoDia": "2026-11-23"
+        "arbitro": "Francisco Hernández"
       }
     },
     {
@@ -55843,28 +55871,28 @@
       "local": "Monza",
       "visitante": "Fiorentina",
       "fechaHora": "2026-11-23T16:45",
-      "finPrimerTiempo": false,
-      "finPartido": false,
+      "finPrimerTiempo": true,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 3,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 3,
+          "v": 7
         },
         "tirosArco": {
-          "l": 0,
-          "v": 0
+          "l": 5,
+          "v": 8
         },
         "atajadas": {
-          "l": 0,
-          "v": 0
+          "l": 8,
+          "v": 2
         }
       },
       "source": {
@@ -55873,15 +55901,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "monza-vs-fiorentina",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
+        "statusShort": "Final",
+        "statusEnum": 3,
         "minuto": "",
         "ronda": "Fecha 12",
-        "ganador": null,
+        "ganador": 1,
+        "alargue": false,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "U-Power Stadium",
-        "arbitro": "D. Doveri",
-        "infoDia": "2026-11-23"
+        "arbitro": "D. Doveri"
       }
     },
     {
@@ -60025,6 +60053,50 @@
         "ronda": "Fecha 5",
         "ganador": null,
         "estadio": "Stadio Giuseppe Meazza",
+        "infoDia": "2026-11-23"
+      }
+    },
+    {
+      "id": "promiedos_eijijdi",
+      "local": "Instituto",
+      "visitante": "River Plate",
+      "fechaHora": "2026-11-29T14:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "instituto-ac-cordoba-vs-river-plate",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "estadio": "Estadio Monumental Presidente Perón",
         "infoDia": "2026-11-23"
       }
     }
