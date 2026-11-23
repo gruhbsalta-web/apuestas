@@ -55168,7 +55168,7 @@
       "visitante": "Tristan Suárez",
       "fechaHora": "2026-11-22T21:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -55176,7 +55176,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 3,
@@ -55197,31 +55197,8 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-y-tiro-vs-tristan-suarez",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "84'",
-        "ronda": "Reducido - Cuartos de Final",
-        "ganador": null,
-        "alargue": false,
-        "tv": "LPF Premium",
-        "estadio": "Estadio El Gigante del Norte",
-        "arbitro": "Javier Alberto Delbarba"
-      },
-      "foto2T": {
-        "minuto": "84'",
-        "enPausa": false,
-        "corners": {
-          "l": 3,
-          "v": 2
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
+        "statusShort": "Final",
+        "ronda": "Reducido - Cuartos de Final"
       }
     },
     {
