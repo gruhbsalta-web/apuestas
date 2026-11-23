@@ -55180,7 +55180,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -55197,15 +55197,15 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-y-tiro-vs-tristan-suarez",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "9'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
+        "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio El Gigante del Norte",
-        "arbitro": "Javier Alberto Delbarba",
-        "infoDia": "2026-11-22"
+        "arbitro": "Javier Alberto Delbarba"
       }
     },
     {
