@@ -55031,7 +55031,7 @@
       "visitante": "Huracán",
       "fechaHora": "2026-11-22T22:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -55039,7 +55039,7 @@
         },
         "tarjetas": {
           "l": 6,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 2,
@@ -55060,31 +55060,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "instituto-ac-cordoba-vs-huracan",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+5'",
-        "ronda": "Octavos de Final",
-        "ganador": null,
-        "alargue": false,
-        "tv": "ESPN Premium",
-        "estadio": "Estadio Mario Alberto Kempes",
-        "arbitro": "Darío Herrera"
-      },
-      "foto2T": {
-        "minuto": "90+5'",
-        "enPausa": false,
-        "corners": {
-          "l": 2,
-          "v": 3
-        },
-        "tirosArco": {
-          "l": 3,
-          "v": 5
-        },
-        "atajadas": {
-          "l": 4,
-          "v": 1
-        }
+        "statusShort": "Final",
+        "ronda": "Octavos de Final"
       }
     },
     {
