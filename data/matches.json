@@ -54985,7 +54985,7 @@
       "visitante": "Lanús",
       "fechaHora": "2026-11-22T19:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
@@ -55014,31 +55014,15 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "river-plate-vs-lanus",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+5'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Octavos de Final",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Monumental",
         "arbitro": "Pablo Dóvalo"
-      },
-      "foto2T": {
-        "minuto": "90+5'",
-        "enPausa": false,
-        "corners": {
-          "l": 5,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 7,
-          "v": 5
-        },
-        "atajadas": {
-          "l": 4,
-          "v": 4
-        }
       }
     },
     {
