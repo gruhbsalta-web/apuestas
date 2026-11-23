@@ -55180,7 +55180,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 0,
@@ -55199,7 +55199,7 @@
         "gameUrlName": "gimnasia-y-tiro-vs-tristan-suarez",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "9'",
+        "minuto": "15'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
