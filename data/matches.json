@@ -55034,11 +55034,11 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
@@ -55046,7 +55046,7 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -55060,15 +55060,15 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "instituto-ac-cordoba-vs-huracan",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "12'",
         "ronda": "Octavos de Final",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN Premium",
         "estadio": "Estadio Mario Alberto Kempes",
-        "arbitro": "Darío Herrera",
-        "infoDia": "2026-11-22"
+        "arbitro": "Darío Herrera"
       }
     },
     {
@@ -55197,15 +55197,31 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "gimnasia-y-tiro-vs-tristan-suarez",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "46'",
         "ronda": "Reducido - Cuartos de Final",
         "ganador": null,
         "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio El Gigante del Norte",
         "arbitro": "Javier Alberto Delbarba"
+      },
+      "foto2T": {
+        "minuto": "46'",
+        "enPausa": false,
+        "corners": {
+          "l": 0,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
       }
     },
     {
