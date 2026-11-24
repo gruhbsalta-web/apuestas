@@ -55881,7 +55881,7 @@
       "id": "promiedos_eijehab",
       "local": "Atlanta",
       "visitante": "Ciudad De Bolivar",
-      "fechaHora": "2026-11-28T14:00",
+      "fechaHora": "2026-11-27T19:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -60162,6 +60162,55 @@
       "monto": 250,
       "cuota": 2.14,
       "cargada": "2026-11-22T17:08"
+    },
+    {
+      "id": "bw13390073951",
+      "bwId": "13390073951",
+      "matchId": "promiedos_eiciece",
+      "tipo": "combinada",
+      "selecciones": [
+        {
+          "matchId": "promiedos_eiciece",
+          "tipo": "atajadas",
+          "comparador": "mas",
+          "alcance": "local",
+          "linea": 3.5
+        },
+        {
+          "matchId": "promiedos_eiciece",
+          "tipo": "atajadas",
+          "comparador": "mas",
+          "alcance": "visitante",
+          "linea": 4.5
+        }
+      ],
+      "monto": 250,
+      "cuota": 6.75,
+      "cargada": "2026-11-24T14:00"
+    },
+    {
+      "id": "bw13390067306",
+      "bwId": "13390067306",
+      "matchId": "promiedos_eiciece",
+      "tipo": "corners",
+      "comparador": "mas",
+      "alcance": "visitante",
+      "linea": 3.5,
+      "monto": 250,
+      "cuota": 2.38,
+      "cargada": "2026-11-24T13:59"
+    },
+    {
+      "id": "bw13390037891",
+      "bwId": "13390037891",
+      "matchId": "promiedos_eiciecg",
+      "tipo": "corners",
+      "comparador": "mas",
+      "alcance": "visitante",
+      "linea": 3.5,
+      "monto": 250,
+      "cuota": 2.23,
+      "cargada": "2026-11-24T13:53"
     }
   ]
 }
