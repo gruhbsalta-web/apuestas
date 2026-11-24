@@ -59173,7 +59173,7 @@
       "visitante": "AEK Atenas",
       "fechaHora": "2026-11-24T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -59188,12 +59188,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 3
         },
         "atajadas": {
           "l": 3,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -59202,31 +59202,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "como-vs-aek-athens",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "84'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "ESPN3 Sudamérica, Disney+ Premium",
         "estadio": "Stadio Giuseppe Sinigaglia",
         "arbitro": "Javier Alberola"
-      },
-      "foto2T": {
-        "minuto": "84'",
-        "enPausa": false,
-        "corners": {
-          "l": 2,
-          "v": 1
-        },
-        "tirosArco": {
-          "l": 3,
-          "v": 3
-        },
-        "atajadas": {
-          "l": 3,
-          "v": 2
-        }
       }
     },
     {
@@ -59235,27 +59219,27 @@
       "visitante": "FC Porto",
       "fechaHora": "2026-11-24T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         },
         "corners": {
           "l": 8,
           "v": 4
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 3
         },
         "atajadas": {
           "l": 2,
-          "v": 6
+          "v": 7
         }
       },
       "source": {
@@ -59264,31 +59248,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "feyenoord-vs-fc-porto",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "86'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
-        "ganador": null,
+        "ganador": 2,
         "alargue": false,
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Stadion Feijenoord",
         "arbitro": "Senad Ibrišimbegović"
-      },
-      "foto2T": {
-        "minuto": "86'",
-        "enPausa": false,
-        "corners": {
-          "l": 8,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 6,
-          "v": 3
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 6
-        }
       }
     },
     {
@@ -59297,7 +59265,7 @@
       "visitante": "Borussia Dortmund",
       "fechaHora": "2026-11-24T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 1,
@@ -59308,7 +59276,7 @@
           "v": 0
         },
         "corners": {
-          "l": 6,
+          "l": 8,
           "v": 5
         },
         "tirosArco": {
@@ -59326,31 +59294,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "arsenal-vs-borussia-dortmund",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Emirates Stadium",
         "arbitro": "Maurizio Mariani"
-      },
-      "foto2T": {
-        "minuto": "89'",
-        "enPausa": false,
-        "corners": {
-          "l": 6,
-          "v": 5
-        },
-        "tirosArco": {
-          "l": 4,
-          "v": 4
-        },
-        "atajadas": {
-          "l": 3,
-          "v": 3
-        }
       }
     },
     {
@@ -59359,7 +59311,7 @@
       "visitante": "Real Betis",
       "fechaHora": "2026-11-24T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -59388,31 +59340,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "slovan-bratislava-vs-real-betis",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
-        "ganador": null,
+        "ganador": 2,
         "alargue": false,
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Tehelne Pole Stadion",
         "arbitro": "Jérôme Brisard"
-      },
-      "foto2T": {
-        "minuto": "89'",
-        "enPausa": false,
-        "corners": {
-          "l": 1,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 2,
-          "v": 6
-        },
-        "atajadas": {
-          "l": 4,
-          "v": 2
-        }
       }
     },
     {
@@ -59421,7 +59357,7 @@
       "visitante": "Napoli",
       "fechaHora": "2026-11-24T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -59432,8 +59368,8 @@
           "v": 0
         },
         "corners": {
-          "l": 8,
-          "v": 2
+          "l": 9,
+          "v": 3
         },
         "tirosArco": {
           "l": 7,
@@ -59450,31 +59386,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "manchester-city-vs-napoli",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "88'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Etihad Stadium",
         "arbitro": "István Kovács"
-      },
-      "foto2T": {
-        "minuto": "88'",
-        "enPausa": false,
-        "corners": {
-          "l": 8,
-          "v": 2
-        },
-        "tirosArco": {
-          "l": 7,
-          "v": 3
-        },
-        "atajadas": {
-          "l": 1,
-          "v": 5
-        }
       }
     },
     {
@@ -59483,10 +59403,10 @@
       "visitante": "PSV Eindhoven",
       "fechaHora": "2026-11-24T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 4,
+          "l": 5,
           "v": 1
         },
         "tarjetas": {
@@ -59503,7 +59423,7 @@
         },
         "atajadas": {
           "l": 0,
-          "v": 5
+          "v": 4
         }
       },
       "source": {
@@ -59512,31 +59432,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "real-madrid-vs-psv-eindhoven",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Santiago Bernabéu",
         "arbitro": "Espen Eskås"
-      },
-      "foto2T": {
-        "minuto": "87'",
-        "enPausa": false,
-        "corners": {
-          "l": 4,
-          "v": 1
-        },
-        "tirosArco": {
-          "l": 9,
-          "v": 1
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 5
-        }
       }
     },
     {
@@ -59545,22 +59449,22 @@
       "visitante": "Lens",
       "fechaHora": "2026-11-24T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 4
         },
         "corners": {
-          "l": 9,
+          "l": 10,
           "v": 4
         },
         "tirosArco": {
-          "l": 6,
+          "l": 7,
           "v": 3
         },
         "atajadas": {
@@ -59574,31 +59478,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "rb-leipzig-vs-lens",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "Disney+ Premium, Flow Sports",
         "estadio": "Red Bull Arena (Wals-Siezenheim)",
         "arbitro": "Ivan Kružliak"
-      },
-      "foto2T": {
-        "minuto": "89'",
-        "enPausa": false,
-        "corners": {
-          "l": 9,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 6,
-          "v": 3
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 4
-        }
       }
     },
     {
