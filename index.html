@@ -3088,7 +3088,7 @@ function detectTipoFromLabel(label){
   if(l.includes("tarjeta")) return "tarjetas";
   if(l.includes("gol")) return "goles";
   if(l.includes("remate") || l.includes("tiro")) return "tirosArco";
-  if(l.includes("atajada")) return "atajadas";
+  if(l.includes("atajada") || l.includes("parada")) return "atajadas";
   return null;
 }
 
@@ -3184,7 +3184,8 @@ function alcanceDeMercado(marketLabel, m){
 function seleccionesDeBloque(block, m){
   const re = /(M[aá]s de|Menos de)\s+(\d+(?:[.,]\d+)?)([\s\S]*?)(?=(?:M[aá]s de|Menos de)\s+\d|Cuotas?\b|Valor\b|Ganancias?\b|$)/gi;
   return [...block.matchAll(re)].map(x=>{
-    const mk = x[3].match(/Total de ([^\n:]+)/i);
+    // "Paradas del Portero - Arsenal (Resuelta usando Opta Data)" -> atajadas del arquero de ese equipo
+    const mk = x[3].match(/Total de ([^\n:]+)/i) || (()=>{ const p = x[3].match(/Paradas del Portero\s*[-–]\s*([^(\n]+)/i); return p ? [null, "Paradas a favor de " + p[1].trim()] : null; })();
     const tipo = mk ? detectTipoFromLabel(mk[1].trim()) : null;
     return {matchId: m.id, tipo, comparador: /menos/i.test(x[1]) ? "menos" : "mas", alcance: mk ? alcanceDeMercado(mk[1].trim(), m) : "combinado", linea: parseNum(x[2]), _txt: mk ? mk[1].trim() : ""};
   });
@@ -3269,7 +3270,7 @@ function parseBetsFreeText(text){
     const comparador = /menos/i.test(compMatch[1]) ? "menos" : "mas";
     const linea = parseNum(compMatch[2]);
 
-    const marketMatch = block.match(/Total de ([^\n:]+)/i);
+    const marketMatch = block.match(/Total de ([^\n:]+)/i) || (()=>{ const p = block.match(/Paradas del Portero\s*[-–]\s*([^(\n]+)/i); return p ? [null, "Paradas a favor de " + p[1].trim()] : null; })();
     if(!marketMatch){
       // El OCR a veces pierde justo esta linea (gris, letra chica). En vez de
       // descartar la apuesta entera, queda "a revisar": en la vista previa se
