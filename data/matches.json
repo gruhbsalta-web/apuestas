@@ -55146,7 +55146,7 @@
         "tv": "ESPN Premium",
         "estadio": "Estadio Alberto José Armando",
         "arbitro": "Luis Lobo Medina",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -55736,7 +55736,7 @@
         "ganador": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -55919,7 +55919,7 @@
         "ganador": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -55962,8 +55962,9 @@
         "minuto": "",
         "ronda": null,
         "ganador": null,
+        "tv": "LPF Premium",
         "estadio": "Estadio 20 de Octubre",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -56008,7 +56009,7 @@
         "ganador": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Abel Sastre",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59117,7 +59118,7 @@
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "T&#252;rk Telekom Arena",
         "arbitro": "Jan Seidel",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59163,7 +59164,7 @@
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Aspmyra Stadion",
         "arbitro": "Halil Umut Meler",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59209,7 +59210,7 @@
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Stadio Giuseppe Sinigaglia",
         "arbitro": "Javier Alberola",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59255,7 +59256,7 @@
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Stadion Feijenoord",
         "arbitro": "Senad Ibrišimbegović",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59301,7 +59302,7 @@
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Emirates Stadium",
         "arbitro": "Maurizio Mariani",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59347,7 +59348,7 @@
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Tehelne Pole Stadion",
         "arbitro": "Jérôme Brisard",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59393,7 +59394,7 @@
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Etihad Stadium",
         "arbitro": "István Kovács",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59439,7 +59440,7 @@
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Santiago Bernabéu",
         "arbitro": "Espen Eskås",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59482,10 +59483,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "Disney+ Premium, Flow Sports",
         "estadio": "Red Bull Arena (Wals-Siezenheim)",
         "arbitro": "Ivan Kružliak",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59529,7 +59530,7 @@
         "ronda": null,
         "ganador": null,
         "estadio": "Jose Amalfitani",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59573,7 +59574,7 @@
         "ronda": null,
         "ganador": null,
         "estadio": "Estadio Gigante de Arroyito",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59659,9 +59660,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Fortuna Arena",
-        "infoDia": "2026-11-23"
+        "arbitro": "Rade Obrenovic",
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59704,9 +59706,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Bakı Olimpiya Stadionu",
-        "infoDia": "2026-11-23"
+        "arbitro": "Nick Walsh",
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59749,8 +59752,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Estadio Jose Alvalade",
-        "infoDia": "2026-11-23"
+        "arbitro": "Szymon Marciniak",
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59793,9 +59798,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
-        "infoDia": "2026-11-23"
+        "arbitro": "E. Lambrechts",
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59838,8 +59844,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Jan Breydel Stadium",
-        "infoDia": "2026-11-23"
+        "arbitro": "Alejandro Hernández",
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59884,7 +59892,8 @@
         "ganador": null,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Decathlon Arena - Stade Pierre-Mauroy",
-        "infoDia": "2026-11-23"
+        "arbitro": "M. Guida",
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59927,9 +59936,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "Disney+ Premium, Flow Sports",
         "estadio": "Stamford Bridge",
-        "infoDia": "2026-11-23"
+        "arbitro": "Michael Oliver",
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -59972,9 +59982,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
-        "tv": "ESPN 2, Disney+ Premium",
+        "tv": "ESPN, Disney+ Premium",
         "estadio": "Parc des Princes",
-        "infoDia": "2026-11-23"
+        "arbitro": "Glenn Nyberg",
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -60017,8 +60028,10 @@
         "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
+        "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
-        "infoDia": "2026-11-23"
+        "arbitro": "Francois Letexier",
+        "infoDia": "2026-11-24"
       }
     },
     {
@@ -60062,17 +60075,17 @@
         "ronda": null,
         "ganador": null,
         "estadio": "Estadio Monumental Presidente Perón",
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-24"
       }
     }
   ],
   "bets": [],
   "capitalInicial": 0,
   "historico": {
-    "fhc": "2026-11-23",
-    "h": "2026-11-23",
-    "bb": "2026-11-23",
-    "bh": "2026-11-23"
+    "fhc": "2026-11-24",
+    "h": "2026-11-24",
+    "bb": "2026-11-24",
+    "bh": "2026-11-24"
   },
   "apuestasCargar": [
     {
