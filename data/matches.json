@@ -59294,15 +59294,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "arsenal-vs-borussia-dortmund",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Emirates Stadium",
         "arbitro": "Maurizio Mariani"
+      },
+      "foto2T": {
+        "minuto": "48'",
+        "enPausa": false,
+        "corners": {
+          "l": 3,
+          "v": 4
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 2
+        }
       }
     },
     {
@@ -59340,15 +59356,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "slovan-bratislava-vs-real-betis",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Tehelne Pole Stadion",
         "arbitro": "Jérôme Brisard"
+      },
+      "foto2T": {
+        "minuto": "48'",
+        "enPausa": false,
+        "corners": {
+          "l": 1,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 4
+        },
+        "atajadas": {
+          "l": 3,
+          "v": 2
+        }
       }
     },
     {
@@ -59386,15 +59418,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "manchester-city-vs-napoli",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "46'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Etihad Stadium",
         "arbitro": "István Kovács"
+      },
+      "foto2T": {
+        "minuto": "46'",
+        "enPausa": false,
+        "corners": {
+          "l": 4,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 2
+        }
       }
     },
     {
@@ -59460,16 +59508,16 @@
           "v": 2
         },
         "corners": {
-          "l": 3,
+          "l": 4,
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 5,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 3
         }
       },
       "source": {
@@ -59478,15 +59526,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "rb-leipzig-vs-lens",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "Disney+ Premium, Flow Sports",
         "estadio": "Red Bull Arena (Wals-Siezenheim)",
         "arbitro": "Ivan Kružliak"
+      },
+      "foto2T": {
+        "minuto": "47'",
+        "enPausa": false,
+        "corners": {
+          "l": 4,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 5,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 3
+        }
       }
     },
     {
