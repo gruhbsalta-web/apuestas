@@ -59176,24 +59176,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 2,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 1,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 3,
           "v": 3
         },
         "atajadas": {
           "l": 3,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -59204,7 +59204,7 @@
         "gameUrlName": "como-vs-aek-athens",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "55'",
+        "minuto": "67'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59213,19 +59213,19 @@
         "arbitro": "Javier Alberola"
       },
       "foto2T": {
-        "minuto": "55'",
+        "minuto": "67'",
         "enPausa": false,
         "corners": {
           "l": 1,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 3,
           "v": 3
         },
         "atajadas": {
           "l": 3,
-          "v": 1
+          "v": 2
         }
       }
     },
@@ -59246,16 +59246,16 @@
           "v": 2
         },
         "corners": {
-          "l": 3,
-          "v": 2
+          "l": 4,
+          "v": 4
         },
         "tirosArco": {
-          "l": 3,
-          "v": 2
+          "l": 4,
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         }
       },
       "source": {
@@ -59266,7 +59266,7 @@
         "gameUrlName": "feyenoord-vs-fc-porto",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "56'",
+        "minuto": "68'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59275,19 +59275,19 @@
         "arbitro": "Senad Ibrišimbegović"
       },
       "foto2T": {
-        "minuto": "56'",
+        "minuto": "68'",
         "enPausa": false,
         "corners": {
-          "l": 3,
-          "v": 2
+          "l": 4,
+          "v": 4
         },
         "tirosArco": {
-          "l": 3,
-          "v": 2
+          "l": 4,
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         }
       }
     },
@@ -59308,15 +59308,15 @@
           "v": 0
         },
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 5
         },
         "tirosArco": {
           "l": 4,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 3
         }
       },
@@ -59328,7 +59328,7 @@
         "gameUrlName": "arsenal-vs-borussia-dortmund",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "60'",
+        "minuto": "72'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59337,18 +59337,18 @@
         "arbitro": "Maurizio Mariani"
       },
       "foto2T": {
-        "minuto": "60'",
+        "minuto": "72'",
         "enPausa": false,
         "corners": {
-          "l": 3,
+          "l": 5,
           "v": 5
         },
         "tirosArco": {
           "l": 4,
-          "v": 3
+          "v": 4
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 3
         }
       }
@@ -59375,10 +59375,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 5
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 2
         }
       },
@@ -59390,7 +59390,7 @@
         "gameUrlName": "slovan-bratislava-vs-real-betis",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "60'",
+        "minuto": "72'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59399,7 +59399,7 @@
         "arbitro": "Jérôme Brisard"
       },
       "foto2T": {
-        "minuto": "60'",
+        "minuto": "72'",
         "enPausa": false,
         "corners": {
           "l": 1,
@@ -59407,10 +59407,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 5
+          "v": 6
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 2
         }
       }
@@ -59424,7 +59424,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
@@ -59432,16 +59432,16 @@
           "v": 0
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -59452,7 +59452,7 @@
         "gameUrlName": "manchester-city-vs-napoli",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "58'",
+        "minuto": "70'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59461,19 +59461,19 @@
         "arbitro": "István Kovács"
       },
       "foto2T": {
-        "minuto": "58'",
+        "minuto": "70'",
         "enPausa": false,
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
-          "l": 2,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 2
+          "v": 3
         }
       }
     },
@@ -59486,7 +59486,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 3,
           "v": 1
         },
         "tarjetas": {
@@ -59494,11 +59494,11 @@
           "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 4,
+          "l": 6,
           "v": 1
         },
         "atajadas": {
@@ -59514,7 +59514,7 @@
         "gameUrlName": "real-madrid-vs-psv-eindhoven",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "57'",
+        "minuto": "69'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59523,14 +59523,14 @@
         "arbitro": "Espen Eskås"
       },
       "foto2T": {
-        "minuto": "57'",
+        "minuto": "69'",
         "enPausa": false,
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 0
         },
         "tirosArco": {
-          "l": 4,
+          "l": 6,
           "v": 1
         },
         "atajadas": {
@@ -59552,11 +59552,11 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
-          "v": 2
+          "l": 1,
+          "v": 3
         },
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 4
         },
         "tirosArco": {
@@ -59576,7 +59576,7 @@
         "gameUrlName": "rb-leipzig-vs-lens",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "59'",
+        "minuto": "71'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59585,10 +59585,10 @@
         "arbitro": "Ivan Kružliak"
       },
       "foto2T": {
-        "minuto": "59'",
+        "minuto": "71'",
         "enPausa": false,
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 4
         },
         "tirosArco": {
