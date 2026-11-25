@@ -59809,7 +59809,7 @@
       "local": "Brujas",
       "visitante": "Liverpool",
       "fechaHora": "2026-11-25T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -59839,9 +59839,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "club-brugge-vs-liverpool",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+3'",
+        "minuto": "45'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
