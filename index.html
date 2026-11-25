@@ -3167,7 +3167,7 @@ function cuotaValida(c){ return typeof c === "number" && !isNaN(c) && c >= 1.01 
 
 // "a favor de X" -> local / visitante / combinado
 function alcanceDeMercado(marketLabel, m){
-  const favorMatch = marketLabel.match(/a favor de (.+)/i);
+  const favorMatch = marketLabel.replace(/\(.*$/, "").match(/(?:a favor de|por parte de) (.+)/i);
   if(!favorMatch) return "combinado";
   const fav = foldAccents(expandSinonimos(favorMatch[1].toLowerCase()));
   const esLocal = blockMentionsTeam(fav, m.local), esVisit = blockMentionsTeam(fav, m.visitante);

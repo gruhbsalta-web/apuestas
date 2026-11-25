@@ -124,6 +124,56 @@
       "monto": 250,
       "cuota": 2.23,
       "cargada": "2026-11-24T13:53"
+    },
+    {
+      "id": "bw13394143927",
+      "bwId": "13394143927",
+      "matchId": "promiedos_eiciebe",
+      "tipo": "combinada",
+      "selecciones": [
+        {
+          "matchId": "promiedos_eiciebe",
+          "tipo": "corners",
+          "comparador": "mas",
+          "alcance": "local",
+          "linea": 8.5
+        },
+        {
+          "matchId": "promiedos_eiciebe",
+          "tipo": "tirosArco",
+          "comparador": "mas",
+          "alcance": "combinado",
+          "linea": 11.5
+        }
+      ],
+      "monto": 250,
+      "cuota": 3.35,
+      "cargada": "2026-11-25T14:12"
+    },
+    {
+      "id": "bw13394132606",
+      "bwId": "13394132606",
+      "matchId": "promiedos_eiciebg",
+      "tipo": "combinada",
+      "selecciones": [
+        {
+          "matchId": "promiedos_eiciebg",
+          "tipo": "corners",
+          "comparador": "mas",
+          "alcance": "visitante",
+          "linea": 5.5
+        },
+        {
+          "matchId": "promiedos_eiciebg",
+          "tipo": "tirosArco",
+          "comparador": "mas",
+          "alcance": "visitante",
+          "linea": 6.5
+        }
+      ],
+      "monto": 250,
+      "cuota": 2.95,
+      "cargada": "2026-11-25T14:09"
     }
   ]
 }
