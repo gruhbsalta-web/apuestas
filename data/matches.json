@@ -59722,7 +59722,7 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -59734,10 +59734,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 0
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         }
       },
@@ -59747,15 +59747,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "sporting-cp-vs-manchester-united",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Estadio Jose Alvalade",
         "arbitro": "Szymon Marciniak"
+      },
+      "foto2T": {
+        "minuto": "49'",
+        "enPausa": false,
+        "corners": {
+          "l": 1,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -59772,7 +59788,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 4,
@@ -59793,15 +59809,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "atletico-madrid-vs-viking",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "50'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
         "arbitro": "E. Lambrechts"
+      },
+      "foto2T": {
+        "minuto": "50'",
+        "enPausa": false,
+        "corners": {
+          "l": 4,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 6,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 4
+        }
       }
     },
     {
@@ -59839,15 +59871,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "club-brugge-vs-liverpool",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Jan Breydel Stadium",
         "arbitro": "Alejandro Hernández"
+      },
+      "foto2T": {
+        "minuto": "47'",
+        "enPausa": false,
+        "corners": {
+          "l": 3,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -59885,15 +59933,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "lille-vs-bayern-munich",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "51'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Decathlon Arena - Stade Pierre-Mauroy",
         "arbitro": "M. Guida"
+      },
+      "foto2T": {
+        "minuto": "51'",
+        "enPausa": false,
+        "corners": {
+          "l": 2,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 5
+        },
+        "atajadas": {
+          "l": 4,
+          "v": 2
+        }
       }
     },
     {
@@ -59931,15 +59995,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "shakhtar-donetsk-vs-fenerbahce-sk",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "48'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "Disney+ Premium, Flow Sports",
         "estadio": "Stamford Bridge",
         "arbitro": "Michael Oliver"
+      },
+      "foto2T": {
+        "minuto": "48'",
+        "enPausa": false,
+        "corners": {
+          "l": 1,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 1
+        }
       }
     },
     {
@@ -59977,15 +60057,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "psg-vs-as-roma",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Parc des Princes",
         "arbitro": "Glenn Nyberg"
+      },
+      "foto2T": {
+        "minuto": "49'",
+        "enPausa": false,
+        "corners": {
+          "l": 2,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -60002,10 +60098,10 @@
         },
         "tarjetas": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 6,
+          "l": 7,
           "v": 2
         },
         "tirosArco": {
@@ -60023,15 +60119,31 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "inter-milan-vs-stuttgart",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "49'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
         "arbitro": "Francois Letexier"
+      },
+      "foto2T": {
+        "minuto": "49'",
+        "enPausa": false,
+        "corners": {
+          "l": 7,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 2
+        }
       }
     },
     {
