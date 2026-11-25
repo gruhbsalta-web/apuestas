@@ -59725,12 +59725,12 @@
           "v": 2
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "corners": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 4,
@@ -59749,7 +59749,7 @@
         "gameUrlName": "sporting-cp-vs-manchester-united",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "89'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59758,11 +59758,11 @@
         "arbitro": "Szymon Marciniak"
       },
       "foto2T": {
-        "minuto": "81'",
+        "minuto": "89'",
         "enPausa": false,
         "corners": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 4,
@@ -59788,11 +59788,11 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 5,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 8,
@@ -59811,7 +59811,7 @@
         "gameUrlName": "atletico-madrid-vs-viking",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "82'",
+        "minuto": "90'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59820,11 +59820,11 @@
         "arbitro": "E. Lambrechts"
       },
       "foto2T": {
-        "minuto": "82'",
+        "minuto": "90'",
         "enPausa": false,
         "corners": {
           "l": 5,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 8,
@@ -59846,23 +59846,23 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 1
+          "v": 3
         },
         "tarjetas": {
           "l": 0,
           "v": 0
         },
         "corners": {
-          "l": 6,
+          "l": 8,
           "v": 3
         },
         "tirosArco": {
-          "l": 4,
-          "v": 2
+          "l": 5,
+          "v": 4
         },
         "atajadas": {
           "l": 1,
-          "v": 4
+          "v": 5
         }
       },
       "source": {
@@ -59873,7 +59873,7 @@
         "gameUrlName": "club-brugge-vs-liverpool",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "79'",
+        "minuto": "87'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59882,19 +59882,19 @@
         "arbitro": "Alejandro Hernández"
       },
       "foto2T": {
-        "minuto": "79'",
+        "minuto": "87'",
         "enPausa": false,
         "corners": {
-          "l": 6,
+          "l": 8,
           "v": 3
         },
         "tirosArco": {
-          "l": 4,
-          "v": 2
+          "l": 5,
+          "v": 4
         },
         "atajadas": {
           "l": 1,
-          "v": 4
+          "v": 5
         }
       }
     },
@@ -59935,7 +59935,7 @@
         "gameUrlName": "lille-vs-bayern-munich",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "83'",
+        "minuto": "90+1'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59944,7 +59944,7 @@
         "arbitro": "M. Guida"
       },
       "foto2T": {
-        "minuto": "83'",
+        "minuto": "90+1'",
         "enPausa": false,
         "corners": {
           "l": 3,
@@ -59978,7 +59978,7 @@
         },
         "corners": {
           "l": 3,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
           "l": 2,
@@ -59997,7 +59997,7 @@
         "gameUrlName": "shakhtar-donetsk-vs-fenerbahce-sk",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "80'",
+        "minuto": "88'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -60006,11 +60006,11 @@
         "arbitro": "Michael Oliver"
       },
       "foto2T": {
-        "minuto": "80'",
+        "minuto": "88'",
         "enPausa": false,
         "corners": {
           "l": 3,
-          "v": 4
+          "v": 5
         },
         "tirosArco": {
           "l": 2,
@@ -60039,7 +60039,7 @@
           "v": 2
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "tirosArco": {
@@ -60059,7 +60059,7 @@
         "gameUrlName": "psg-vs-as-roma",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "89'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -60068,10 +60068,10 @@
         "arbitro": "Glenn Nyberg"
       },
       "foto2T": {
-        "minuto": "81'",
+        "minuto": "89'",
         "enPausa": false,
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 4
         },
         "tirosArco": {
@@ -60101,7 +60101,7 @@
           "v": 1
         },
         "corners": {
-          "l": 9,
+          "l": 10,
           "v": 4
         },
         "tirosArco": {
@@ -60121,7 +60121,7 @@
         "gameUrlName": "inter-milan-vs-stuttgart",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "81'",
+        "minuto": "89'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -60130,10 +60130,10 @@
         "arbitro": "Francois Letexier"
       },
       "foto2T": {
-        "minuto": "81'",
+        "minuto": "89'",
         "enPausa": false,
         "corners": {
-          "l": 9,
+          "l": 10,
           "v": 4
         },
         "tirosArco": {
