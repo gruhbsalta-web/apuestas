@@ -59721,24 +59721,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -59749,7 +59749,7 @@
         "gameUrlName": "sporting-cp-vs-manchester-united",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "26'",
+        "minuto": "38'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59779,12 +59779,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 2,
+          "l": 5,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 3
         }
       },
       "source": {
@@ -59795,7 +59795,7 @@
         "gameUrlName": "atletico-madrid-vs-viking",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "25'",
+        "minuto": "37'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59821,7 +59821,7 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 3
         },
         "tirosArco": {
@@ -59841,7 +59841,7 @@
         "gameUrlName": "club-brugge-vs-liverpool",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "24'",
+        "minuto": "36'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59868,14 +59868,14 @@
         },
         "corners": {
           "l": 2,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
           "l": 1,
-          "v": 2
+          "v": 5
         },
         "atajadas": {
-          "l": 1,
+          "l": 4,
           "v": 1
         }
       },
@@ -59887,7 +59887,7 @@
         "gameUrlName": "lille-vs-bayern-munich",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "25'",
+        "minuto": "37'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59918,10 +59918,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -59933,7 +59933,7 @@
         "gameUrlName": "shakhtar-donetsk-vs-fenerbahce-sk",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "24'",
+        "minuto": "36'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59951,7 +59951,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
@@ -59959,11 +59959,11 @@
           "v": 0
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "atajadas": {
@@ -59979,7 +59979,7 @@
         "gameUrlName": "psg-vs-as-roma",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "24'",
+        "minuto": "36'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -60009,12 +60009,12 @@
           "v": 2
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -60025,7 +60025,7 @@
         "gameUrlName": "inter-milan-vs-stuttgart",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "26'",
+        "minuto": "38'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
