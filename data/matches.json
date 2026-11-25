@@ -59717,7 +59717,7 @@
       "local": "Sporting CP",
       "visitante": "Manchester United",
       "fechaHora": "2026-11-25T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -59726,7 +59726,7 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 1
+          "v": 2
         },
         "corners": {
           "l": 1,
@@ -59747,9 +59747,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "sporting-cp-vs-manchester-united",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59763,7 +59763,7 @@
       "local": "Atlético de Madrid",
       "visitante": "Viking",
       "fechaHora": "2026-11-25T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -59775,16 +59775,16 @@
           "v": 0
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 0
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -59793,9 +59793,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "atletico-madrid-vs-viking",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "37'",
+        "minuto": "45'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59841,7 +59841,7 @@
         "gameUrlName": "club-brugge-vs-liverpool",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "36'",
+        "minuto": "45+3'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59855,7 +59855,7 @@
       "local": "Lille",
       "visitante": "Bayern Munich",
       "fechaHora": "2026-11-25T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -59871,12 +59871,12 @@
           "v": 3
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 5
         },
         "atajadas": {
           "l": 4,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -59885,9 +59885,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "lille-vs-bayern-munich",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "37'",
+        "minuto": "45'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59901,7 +59901,7 @@
       "local": "Shakhtar Donetsk",
       "visitante": "Fenerbahce",
       "fechaHora": "2026-11-25T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -59914,15 +59914,15 @@
         },
         "corners": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
-          "l": 0,
-          "v": 1
+          "l": 1,
+          "v": 2
         },
         "atajadas": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 1
         }
       },
       "source": {
@@ -59931,9 +59931,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "shakhtar-donetsk-vs-fenerbahce-sk",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "36'",
+        "minuto": "45'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59947,7 +59947,7 @@
       "local": "PSG",
       "visitante": "AS Roma",
       "fechaHora": "2026-11-25T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -59956,11 +59956,11 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
           "l": 2,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
           "l": 2,
@@ -59977,9 +59977,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "psg-vs-as-roma",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "36'",
+        "minuto": "45'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
@@ -59993,7 +59993,7 @@
       "local": "Inter Milan",
       "visitante": "Stuttgart",
       "fechaHora": "2026-11-25T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -60005,7 +60005,7 @@
           "v": 0
         },
         "corners": {
-          "l": 4,
+          "l": 6,
           "v": 2
         },
         "tirosArco": {
@@ -60023,9 +60023,9 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "inter-milan-vs-stuttgart",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "38'",
+        "minuto": "45'",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
