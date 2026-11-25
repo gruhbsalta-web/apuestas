@@ -59718,7 +59718,7 @@
       "visitante": "Manchester United",
       "fechaHora": "2026-11-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -59726,7 +59726,7 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 3,
@@ -59747,31 +59747,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "sporting-cp-vs-manchester-united",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Estadio Jose Alvalade",
         "arbitro": "Szymon Marciniak"
-      },
-      "foto2T": {
-        "minuto": "89'",
-        "enPausa": false,
-        "corners": {
-          "l": 3,
-          "v": 2
-        },
-        "tirosArco": {
-          "l": 4,
-          "v": 2
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 2
-        }
       }
     },
     {
@@ -59780,7 +59764,7 @@
       "visitante": "Viking",
       "fechaHora": "2026-11-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -59791,16 +59775,16 @@
           "v": 2
         },
         "corners": {
-          "l": 5,
+          "l": 6,
           "v": 1
         },
         "tirosArco": {
-          "l": 8,
+          "l": 9,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 6
+          "v": 7
         }
       },
       "source": {
@@ -59809,31 +59793,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "atletico-madrid-vs-viking",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
         "arbitro": "E. Lambrechts"
-      },
-      "foto2T": {
-        "minuto": "90'",
-        "enPausa": false,
-        "corners": {
-          "l": 5,
-          "v": 1
-        },
-        "tirosArco": {
-          "l": 8,
-          "v": 1
-        },
-        "atajadas": {
-          "l": 1,
-          "v": 6
-        }
       }
     },
     {
@@ -59842,7 +59810,7 @@
       "visitante": "Liverpool",
       "fechaHora": "2026-11-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -59854,7 +59822,7 @@
         },
         "corners": {
           "l": 8,
-          "v": 3
+          "v": 4
         },
         "tirosArco": {
           "l": 5,
@@ -59871,31 +59839,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "club-brugge-vs-liverpool",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
-        "ganador": null,
+        "ganador": 2,
         "alargue": false,
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Jan Breydel Stadium",
         "arbitro": "Alejandro Hernández"
-      },
-      "foto2T": {
-        "minuto": "87'",
-        "enPausa": false,
-        "corners": {
-          "l": 8,
-          "v": 3
-        },
-        "tirosArco": {
-          "l": 5,
-          "v": 4
-        },
-        "atajadas": {
-          "l": 1,
-          "v": 5
-        }
       }
     },
     {
@@ -59904,7 +59856,7 @@
       "visitante": "Bayern Munich",
       "fechaHora": "2026-11-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -59933,31 +59885,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "lille-vs-bayern-munich",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90+1'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Decathlon Arena - Stade Pierre-Mauroy",
         "arbitro": "M. Guida"
-      },
-      "foto2T": {
-        "minuto": "90+1'",
-        "enPausa": false,
-        "corners": {
-          "l": 3,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 3,
-          "v": 7
-        },
-        "atajadas": {
-          "l": 6,
-          "v": 1
-        }
       }
     },
     {
@@ -59966,7 +59902,7 @@
       "visitante": "Fenerbahce",
       "fechaHora": "2026-11-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -59982,10 +59918,10 @@
         },
         "tirosArco": {
           "l": 2,
-          "v": 4
+          "v": 5
         },
         "atajadas": {
-          "l": 3,
+          "l": 4,
           "v": 2
         }
       },
@@ -59995,31 +59931,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "shakhtar-donetsk-vs-fenerbahce-sk",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "88'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
-        "ganador": null,
+        "ganador": 2,
         "alargue": false,
         "tv": "Disney+ Premium, Flow Sports",
         "estadio": "Stamford Bridge",
         "arbitro": "Michael Oliver"
-      },
-      "foto2T": {
-        "minuto": "88'",
-        "enPausa": false,
-        "corners": {
-          "l": 3,
-          "v": 5
-        },
-        "tirosArco": {
-          "l": 2,
-          "v": 4
-        },
-        "atajadas": {
-          "l": 3,
-          "v": 2
-        }
       }
     },
     {
@@ -60028,7 +59948,7 @@
       "visitante": "AS Roma",
       "fechaHora": "2026-11-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -60043,12 +59963,12 @@
           "v": 4
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 4
         },
         "atajadas": {
           "l": 2,
-          "v": 1
+          "v": 2
         }
       },
       "source": {
@@ -60057,31 +59977,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "psg-vs-as-roma",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Parc des Princes",
         "arbitro": "Glenn Nyberg"
-      },
-      "foto2T": {
-        "minuto": "89'",
-        "enPausa": false,
-        "corners": {
-          "l": 3,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 3,
-          "v": 4
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 1
-        }
       }
     },
     {
@@ -60090,7 +59994,7 @@
       "visitante": "Stuttgart",
       "fechaHora": "2026-11-25T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
@@ -60101,8 +60005,8 @@
           "v": 1
         },
         "corners": {
-          "l": 10,
-          "v": 4
+          "l": 11,
+          "v": 6
         },
         "tirosArco": {
           "l": 5,
@@ -60119,31 +60023,15 @@
         "leagueName": "Champions League",
         "country": "Internacional",
         "gameUrlName": "inter-milan-vs-stuttgart",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 5",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
         "arbitro": "Francois Letexier"
-      },
-      "foto2T": {
-        "minuto": "89'",
-        "enPausa": false,
-        "corners": {
-          "l": 10,
-          "v": 4
-        },
-        "tirosArco": {
-          "l": 5,
-          "v": 2
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 3
-        }
       }
     },
     {
