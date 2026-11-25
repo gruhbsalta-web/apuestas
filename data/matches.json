@@ -55146,7 +55146,7 @@
         "tv": "ESPN Premium",
         "estadio": "Estadio Alberto José Armando",
         "arbitro": "Luis Lobo Medina",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -55736,7 +55736,7 @@
         "ganador": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -55919,7 +55919,7 @@
         "ganador": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -55964,7 +55964,7 @@
         "ganador": null,
         "tv": "LPF Premium",
         "estadio": "Estadio 20 de Octubre",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -56009,7 +56009,7 @@
         "ganador": null,
         "tv": "LPF Premium",
         "estadio": "Estadio Abel Sastre",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -59530,7 +59530,7 @@
         "ronda": null,
         "ganador": null,
         "estadio": "Jose Amalfitani",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -59574,7 +59574,7 @@
         "ronda": null,
         "ganador": null,
         "estadio": "Estadio Gigante de Arroyito",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -59663,7 +59663,7 @@
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Fortuna Arena",
         "arbitro": "Rade Obrenovic",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -59709,7 +59709,7 @@
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Bakı Olimpiya Stadionu",
         "arbitro": "Nick Walsh",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -59755,7 +59755,7 @@
         "tv": "FOX Sports 2 Cono Sur, Disney+ Premium",
         "estadio": "Estadio Jose Alvalade",
         "arbitro": "Szymon Marciniak",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -59801,7 +59801,7 @@
         "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Riyadh Air Metropolitano",
         "arbitro": "E. Lambrechts",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -59847,7 +59847,7 @@
         "tv": "Fox Sports, Disney+ Premium",
         "estadio": "Jan Breydel Stadium",
         "arbitro": "Alejandro Hernández",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -59893,7 +59893,7 @@
         "tv": "ESPN 3, Disney+ Premium",
         "estadio": "Decathlon Arena - Stade Pierre-Mauroy",
         "arbitro": "M. Guida",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -59939,7 +59939,7 @@
         "tv": "Disney+ Premium, Flow Sports",
         "estadio": "Stamford Bridge",
         "arbitro": "Michael Oliver",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -59985,7 +59985,7 @@
         "tv": "ESPN, Disney+ Premium",
         "estadio": "Parc des Princes",
         "arbitro": "Glenn Nyberg",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -60031,7 +60031,7 @@
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Stadio Giuseppe Meazza",
         "arbitro": "Francois Letexier",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
       }
     },
     {
@@ -60075,17 +60075,153 @@
         "ronda": null,
         "ganador": null,
         "estadio": "Estadio Monumental Presidente Perón",
-        "infoDia": "2026-11-24"
+        "infoDia": "2026-11-25"
+      }
+    },
+    {
+      "id": "promiedos_ehebjid",
+      "local": "Nottingham Forest",
+      "visitante": "Chelsea",
+      "fechaHora": "2026-11-27T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "h",
+        "leagueName": "Premier League",
+        "country": "Inglaterra",
+        "gameUrlName": "nottingham-forest-vs-chelsea",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 12",
+        "ganador": null,
+        "tv": "ESPN, Disney+ Premium",
+        "estadio": "The City Ground",
+        "arbitro": "Andrew Madley",
+        "infoDia": "2026-11-25"
+      }
+    },
+    {
+      "id": "promiedos_ehfahhg",
+      "local": "Levante UD",
+      "visitante": "Racing de Santander",
+      "fechaHora": "2026-11-27T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "levante-vs-racing-santander",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 14",
+        "ganador": null,
+        "tv": "ESPN 4, Disney+ Premium",
+        "estadio": "Estadio Ciudad de Valencia",
+        "infoDia": "2026-11-25"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgbb",
+      "local": "Venezia",
+      "visitante": "Bologna",
+      "fechaHora": "2026-11-27T16:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "venezia-vs-bologna",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 13",
+        "ganador": null,
+        "tv": "ESPN 2, Disney+ Premium",
+        "estadio": "Stadio Pierluigi Penzo",
+        "infoDia": "2026-11-25"
       }
     }
   ],
   "bets": [],
   "capitalInicial": 0,
   "historico": {
-    "fhc": "2026-11-24",
-    "h": "2026-11-24",
-    "bb": "2026-11-24",
-    "bh": "2026-11-24"
+    "fhc": "2026-11-25",
+    "h": "2026-11-25",
+    "bb": "2026-11-25",
+    "bh": "2026-11-25"
   },
   "apuestasCargar": [
     {
