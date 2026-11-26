@@ -55109,27 +55109,27 @@
       "visitante": "Independiente Rivadavia",
       "fechaHora": "2026-11-25T21:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 2,
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
-          "v": 3
+          "l": 2,
+          "v": 4
         },
         "corners": {
-          "l": 8,
+          "l": 11,
           "v": 1
         },
         "tirosArco": {
-          "l": 6,
+          "l": 9,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 4
+          "v": 7
         }
       },
       "source": {
@@ -55138,31 +55138,8 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "boca-juniors-vs-independiente-rivadavia",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
-        "ronda": "Octavos de Final",
-        "ganador": null,
-        "alargue": false,
-        "tv": "ESPN Premium",
-        "estadio": "Estadio Alberto José Armando",
-        "arbitro": "Luis Lobo Medina"
-      },
-      "foto2T": {
-        "minuto": "87'",
-        "enPausa": false,
-        "corners": {
-          "l": 8,
-          "v": 1
-        },
-        "tirosArco": {
-          "l": 6,
-          "v": 2
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 4
-        }
+        "statusShort": "Final",
+        "ronda": "Octavos de Final"
       }
     },
     {
@@ -59595,8 +59572,8 @@
     },
     {
       "id": "promiedos_undefined",
-      "local": "Instituto",
-      "visitante": "River Plate",
+      "local": "Boca Juniors",
+      "visitante": "Gimnasia y Esgrima La Plata",
       "fechaHora": "2026-11-27T00:00",
       "finPrimerTiempo": false,
       "finPartido": false,
@@ -59627,13 +59604,13 @@
         "leagueId": "hc",
         "leagueName": "Liga Profesional",
         "country": "Argentina",
-        "gameUrlName": "instituto-ac-cordoba-vs-river-plate",
+        "gameUrlName": "boca-juniors-vs-gimnasia-la-plata",
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
         "ronda": null,
         "ganador": null,
-        "infoDia": "2026-11-23"
+        "infoDia": "2026-11-25"
       }
     },
     {
