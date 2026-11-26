@@ -59486,7 +59486,7 @@
       "id": "promiedos_eijiief",
       "local": "Vélez Sarsfield",
       "visitante": "Independiente",
-      "fechaHora": "2026-11-29T14:00",
+      "fechaHora": "2026-11-28T20:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -59531,7 +59531,7 @@
       "id": "promiedos_eijiiff",
       "local": "Rosario Central",
       "visitante": "Barracas Central",
-      "fechaHora": "2026-11-29T14:00",
+      "fechaHora": "2026-11-29T17:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -60033,7 +60033,7 @@
       "id": "promiedos_eijijdi",
       "local": "Instituto",
       "visitante": "River Plate",
-      "fechaHora": "2026-11-29T14:00",
+      "fechaHora": "2026-11-28T22:00",
       "finPrimerTiempo": false,
       "finPartido": false,
       "stats": {
@@ -60657,6 +60657,51 @@
         "ronda": "Fecha 13",
         "ganador": null,
         "estadio": "Stadio Giuseppe Meazza",
+        "infoDia": "2026-11-26"
+      }
+    },
+    {
+      "id": "promiedos_ejabbba",
+      "local": "Boca Juniors",
+      "visitante": "Gimnasia y Esgrima La Plata",
+      "fechaHora": "2026-11-29T20:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "hc",
+        "leagueName": "Liga Profesional",
+        "country": "Argentina",
+        "gameUrlName": "boca-juniors-vs-gimnasia-la-plata",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": null,
+        "ganador": null,
+        "estadio": "Estadio Alberto José Armando",
+        "arbitro": "Darío Herrera",
         "infoDia": "2026-11-26"
       }
     }
