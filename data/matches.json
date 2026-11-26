@@ -55120,16 +55120,16 @@
           "v": 3
         },
         "corners": {
-          "l": 6,
+          "l": 8,
           "v": 1
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -55140,7 +55140,7 @@
         "gameUrlName": "boca-juniors-vs-independiente-rivadavia",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "78'",
+        "minuto": "87'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
@@ -55149,19 +55149,19 @@
         "arbitro": "Luis Lobo Medina"
       },
       "foto2T": {
-        "minuto": "78'",
+        "minuto": "87'",
         "enPausa": false,
         "corners": {
-          "l": 6,
+          "l": 8,
           "v": 1
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 4
         }
       }
     },
