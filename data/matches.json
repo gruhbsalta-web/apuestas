@@ -55112,7 +55112,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -55124,7 +55124,7 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "atajadas": {
@@ -55140,7 +55140,7 @@
         "gameUrlName": "boca-juniors-vs-independiente-rivadavia",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "7'",
+        "minuto": "19'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
