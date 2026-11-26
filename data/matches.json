@@ -55108,7 +55108,7 @@
       "local": "Boca Juniors",
       "visitante": "Independiente Rivadavia",
       "fechaHora": "2026-11-25T21:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -55120,7 +55120,7 @@
           "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 1
         },
         "tirosArco": {
@@ -55138,9 +55138,9 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "boca-juniors-vs-independiente-rivadavia",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "45+4'",
+        "minuto": "45'",
         "ronda": "Octavos de Final",
         "ganador": null,
         "alargue": false,
