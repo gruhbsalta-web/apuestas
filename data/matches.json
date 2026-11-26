@@ -55125,10 +55125,10 @@
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -55138,15 +55138,15 @@
         "leagueName": "Liga Profesional",
         "country": "Argentina",
         "gameUrlName": "boca-juniors-vs-independiente-rivadavia",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "7'",
         "ronda": "Octavos de Final",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN Premium",
         "estadio": "Estadio Alberto José Armando",
-        "arbitro": "Luis Lobo Medina",
-        "infoDia": "2026-11-25"
+        "arbitro": "Luis Lobo Medina"
       }
     },
     {
