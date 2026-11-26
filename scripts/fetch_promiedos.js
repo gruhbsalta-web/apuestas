@@ -253,6 +253,21 @@ function ponerInfo(match, info) {
   if (info.arbitro) match.source.arbitro = info.arbitro;
 }
 
+function actualizarDesdeFicha(match, g) {
+  if (!g) return;
+  const sc = Array.isArray(g.scores) ? g.scores : null;
+  if (sc && sc.length >= 2) match._goles = { l: Number(sc[0]) || 0, v: Number(sc[1]) || 0 };
+  const en = g?.status?.enum, short = g?.status?.short_name;
+  if (en === 2 || en === 3) {
+    match.source = Object.assign({}, match.source, { statusEnum: en });
+    if (short) match.source.statusShort = short;
+    match.source.minuto = en === 2 ? (g.game_time_to_display || (g.game_time > 0 ? `${g.game_time}'` : match.source.minuto || '')) : '';
+    if (en === 3) { match.finPartido = true; match.finPrimerTiempo = true; }
+    else if (!/^1/.test(short || '')) match.finPrimerTiempo = true;
+    if (g.winner === 1 || g.winner === 2) match.source.ganador = g.winner;
+  }
+}
+
 async function enrichWithDetail(match, buildId, previo, today) {
   if (!match._needsDetail || !match._gameUrlName) {
     match.stats.goles = match._goles;
@@ -284,6 +299,9 @@ async function enrichWithDetail(match, buildId, previo, today) {
     const data = await getJson(url);
     const exacta = fichaHoraArgentina(data);
     if (exacta) match.fechaHora = exacta; // la ficha trae hora y zona en la misma respuesta
+    // La ficha está más al día que el listado de la liga (que Promiedos refresca cada
+    // varios minutos): marcador, minuto y estado se toman de acá.
+    actualizarDesdeFicha(match, data?.pageProps?.initialData?.game);
     const statistics = data?.pageProps?.initialData?.game?.statistics;
     match.stats = statsFromStatistics(statistics, match._goles);
     tiempoReglamentario(match, data?.pageProps?.initialData?.game, previo);

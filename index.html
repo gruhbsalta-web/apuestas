@@ -3677,12 +3677,13 @@ async function syncFromData(){
   if(!Array.isArray(data.matches)) throw new Error('El archivo no tiene partidos válidos');
   const primeraVez = !localStorage.getItem(STORAGE_KEY);
   mergeData(data.matches);
-  importarApuestasRepo(data.apuestasCargar);
-  limpiarPartidosViejos();
   if(primeraVez){
     state.bets = Array.isArray(data.bets) ? data.bets : state.bets;
     if(typeof data.capitalInicial === 'number') state.capitalInicial = data.capitalInicial;
   }
+  // después de la carga inicial, así en un dispositivo nuevo no se pierden
+  importarApuestasRepo(data.apuestasCargar);
+  limpiarPartidosViejos();
   save();
   return data.matches.filter(m=>LIGA_INFO[m && m.source && m.source.leagueId]).length;
 }
