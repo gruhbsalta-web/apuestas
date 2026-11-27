@@ -53969,7 +53969,7 @@
         "statusShort": "Por penales",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": "Octavos de Final",
+        "ronda": "Cuartos de Final",
         "ganador": 1,
         "alargue": true,
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
@@ -54094,7 +54094,7 @@
         "country": "Argentina",
         "gameUrlName": "defensa-y-justicia-vs-barracas-central",
         "statusShort": "Final",
-        "ronda": "Octavos de Final"
+        "ronda": "Cuartos de Final"
       }
     },
     {
@@ -54135,7 +54135,7 @@
         "statusShort": "Final",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": "Octavos de Final",
+        "ronda": "Cuartos de Final",
         "ganador": 2,
         "alargue": false,
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
@@ -54976,7 +54976,7 @@
         "country": "Argentina",
         "gameUrlName": "rosario-central-vs-gimnasia-mendoza",
         "statusShort": "Final",
-        "ronda": "Octavos de Final"
+        "ronda": "Cuartos de Final"
       }
     },
     {
@@ -55017,7 +55017,7 @@
         "statusShort": "Final",
         "statusEnum": 3,
         "minuto": "",
-        "ronda": "Octavos de Final",
+        "ronda": "Cuartos de Final",
         "ganador": 1,
         "alargue": false,
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
@@ -55061,7 +55061,7 @@
         "country": "Argentina",
         "gameUrlName": "instituto-ac-cordoba-vs-huracan",
         "statusShort": "Final",
-        "ronda": "Octavos de Final"
+        "ronda": "Cuartos de Final"
       }
     },
     {
@@ -55100,7 +55100,7 @@
         "country": "Argentina",
         "gameUrlName": "gimnasia-la-plata-vs-newell's-old-boys",
         "statusShort": "En Tiempo Extra",
-        "ronda": "Octavos de Final"
+        "ronda": "Cuartos de Final"
       }
     },
     {
@@ -55139,7 +55139,7 @@
         "country": "Argentina",
         "gameUrlName": "boca-juniors-vs-independiente-rivadavia",
         "statusShort": "Final",
-        "ronda": "Octavos de Final"
+        "ronda": "Cuartos de Final"
       }
     },
     {
