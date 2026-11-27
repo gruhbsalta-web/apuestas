@@ -60116,15 +60116,31 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "nottingham-forest-vs-chelsea",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "47'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN, Disney+ Premium, Disney+ Estándar",
         "estadio": "The City Ground",
         "arbitro": "Andrew Madley"
+      },
+      "foto2T": {
+        "minuto": "47'",
+        "enPausa": false,
+        "corners": {
+          "l": 1,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -60162,15 +60178,31 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "levante-vs-racing-santander",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "46'",
         "ronda": "Fecha 14",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio Ciudad de Valencia",
         "arbitro": "Miguel Sesma"
+      },
+      "foto2T": {
+        "minuto": "46'",
+        "enPausa": false,
+        "corners": {
+          "l": 5,
+          "v": 3
+        },
+        "tirosArco": {
+          "l": 2,
+          "v": 1
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -60187,7 +60219,7 @@
         },
         "tarjetas": {
           "l": 2,
-          "v": 2
+          "v": 3
         },
         "corners": {
           "l": 3,
@@ -60195,10 +60227,10 @@
         },
         "tirosArco": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 3
         }
       },
@@ -60210,7 +60242,7 @@
         "gameUrlName": "venezia-vs-bologna",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "50'",
+        "minuto": "60'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
@@ -60219,7 +60251,7 @@
         "arbitro": "Andrea Colombo"
       },
       "foto2T": {
-        "minuto": "50'",
+        "minuto": "60'",
         "enPausa": false,
         "corners": {
           "l": 3,
@@ -60227,10 +60259,10 @@
         },
         "tirosArco": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 3
         }
       }
