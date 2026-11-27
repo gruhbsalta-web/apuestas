@@ -60086,7 +60086,7 @@
       "local": "Nottingham Forest",
       "visitante": "Chelsea",
       "fechaHora": "2026-11-27T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -60116,7 +60116,7 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "nottingham-forest-vs-chelsea",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": "Fecha 12",
@@ -60132,7 +60132,7 @@
       "local": "Levante UD",
       "visitante": "Racing de Santander",
       "fechaHora": "2026-11-27T17:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -60162,9 +60162,9 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "levante-vs-racing-santander",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "44'",
+        "minuto": "45'",
         "ronda": "Fecha 14",
         "ganador": null,
         "alargue": false,
@@ -60208,15 +60208,31 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "venezia-vs-bologna",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "50'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 2, Disney+ Premium, Disney+ Estándar",
         "estadio": "Stadio Pierluigi Penzo",
         "arbitro": "Andrea Colombo"
+      },
+      "foto2T": {
+        "minuto": "50'",
+        "enPausa": false,
+        "corners": {
+          "l": 3,
+          "v": 2
+        },
+        "tirosArco": {
+          "l": 3,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 3
+        }
       }
     },
     {
