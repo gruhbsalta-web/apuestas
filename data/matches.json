@@ -60118,7 +60118,7 @@
         "gameUrlName": "nottingham-forest-vs-chelsea",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "35'",
+        "minuto": "45'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -60136,7 +60136,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -60144,16 +60144,16 @@
           "v": 1
         },
         "corners": {
-          "l": 4,
+          "l": 5,
           "v": 3
         },
         "tirosArco": {
-          "l": 0,
+          "l": 2,
           "v": 1
         },
         "atajadas": {
           "l": 1,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -60164,7 +60164,7 @@
         "gameUrlName": "levante-vs-racing-santander",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "34'",
+        "minuto": "44'",
         "ronda": "Fecha 14",
         "ganador": null,
         "alargue": false,
