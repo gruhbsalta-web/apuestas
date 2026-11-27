@@ -230,7 +230,10 @@ async function fetchLeagueGames(league, today) {
         games.forEach((g) => { if (!g.stage_round_name && nombres[g.id]) g.stage_round_name = nombres[g.id]; });
       } catch (e) { /* sin nombre de fecha: la app lo muestra igual */ }
     }
-    const matches = games.map((game) => normalizeMatch(game, league));
+    // Cruces de la fase siguiente que Promiedos muestra antes de crear el partido:
+    // vienen sin id y sin horario. Se ignoran hasta que tengan id (si no, aparecen
+    // como un partido falso "hoy a las 00:00").
+    const matches = games.filter((game) => game && game.id != null && game.id !== '').map((game) => normalizeMatch(game, league));
     const relevant = matches.filter((m) => isRelevantForToday(m, today));
     console.log(`Liga ${league.name || league.id} (${league.id}): ${games.length} partidos en 'latest', ${relevant.length} relevantes (terminados o de hoy)`);
     return relevant;
@@ -414,6 +417,7 @@ async function run() {
   // no son relevantes, mas partidos de ligas que ya no cubrimos. Los
   // terminados de ligas vigentes se conservan siempre.
   const keptExisting = (existing.matches || [])
+    .filter((m) => m.id && !/_(undefined|null)$/.test(m.id))
     .filter((m) => !LEAGUE_ID_EXCLUDE.has(m?.source?.leagueId))
     .filter((m) => LEAGUE_ID_INCLUDE.has(m?.source?.leagueId))
     .filter((m) => isRelevantForToday(m, today));

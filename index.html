@@ -3647,6 +3647,8 @@ function limpiarPartidosViejos(){
     if(conApuesta.has(m.id)) return true;
     if(m.source && m.source.provider === "promiedos" && !LIGA_INFO[m.source.leagueId]) return false;
     if(typeof m.id === "string" && m.id.startsWith("pre_")) return false;
+    // partidos sin id de Promiedos (cruces todavía sin crear): datos falsos
+    if(typeof m.id === "string" && /_(undefined|null)$/.test(m.id)) return false;
     return true;
   });
   return antes - state.matches.length;
