@@ -55908,7 +55908,7 @@
         "gameUrlName": "atlanta-vs-ciudad-de-bolivar",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "11'",
+        "minuto": "20'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
@@ -59576,49 +59576,6 @@
         "estadio": "Estadio Gigante de Arroyito",
         "arbitro": "Pablo Dóvalo",
         "infoDia": "2026-11-27"
-      }
-    },
-    {
-      "id": "promiedos_undefined",
-      "local": "Boca Juniors",
-      "visitante": "Gimnasia y Esgrima La Plata",
-      "fechaHora": "2026-11-27T00:00",
-      "finPrimerTiempo": false,
-      "finPartido": false,
-      "stats": {
-        "goles": {
-          "l": 0,
-          "v": 0
-        },
-        "tarjetas": {
-          "l": 0,
-          "v": 0
-        },
-        "corners": {
-          "l": 0,
-          "v": 0
-        },
-        "tirosArco": {
-          "l": 0,
-          "v": 0
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 0
-        }
-      },
-      "source": {
-        "provider": "promiedos",
-        "leagueId": "hc",
-        "leagueName": "Liga Profesional",
-        "country": "Argentina",
-        "gameUrlName": "boca-juniors-vs-gimnasia-la-plata",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
-        "ronda": null,
-        "ganador": null,
-        "infoDia": "2026-11-26"
       }
     },
     {
