@@ -60102,12 +60102,12 @@
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -60116,15 +60116,15 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "nottingham-forest-vs-chelsea",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": "Fecha 12",
         "ganador": null,
-        "tv": "ESPN, Disney+ Premium",
+        "alargue": false,
+        "tv": "ESPN, Disney+ Premium, Disney+ Estándar",
         "estadio": "The City Ground",
-        "arbitro": "Andrew Madley",
-        "infoDia": "2026-11-27"
+        "arbitro": "Andrew Madley"
       }
     },
     {
@@ -60162,15 +60162,15 @@
         "leagueName": "La Liga",
         "country": "España",
         "gameUrlName": "levante-vs-racing-santander",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "3'",
         "ronda": "Fecha 14",
         "ganador": null,
+        "alargue": false,
         "tv": "ESPN 4, Disney+ Premium",
         "estadio": "Estadio Ciudad de Valencia",
-        "arbitro": "Miguel Sesma",
-        "infoDia": "2026-11-27"
+        "arbitro": "Miguel Sesma"
       }
     },
     {
@@ -60182,24 +60182,24 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -60210,7 +60210,7 @@
         "gameUrlName": "venezia-vs-bologna",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "10'",
+        "minuto": "20'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
