@@ -60094,7 +60094,7 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 3
         },
         "corners": {
@@ -60118,7 +60118,7 @@
         "gameUrlName": "nottingham-forest-vs-chelsea",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "77'",
+        "minuto": "87'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -60127,7 +60127,7 @@
         "arbitro": "Andrew Madley"
       },
       "foto2T": {
-        "minuto": "77'",
+        "minuto": "87'",
         "enPausa": false,
         "corners": {
           "l": 1,
@@ -60153,22 +60153,22 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
           "l": 1,
           "v": 2
         },
         "corners": {
-          "l": 6,
-          "v": 4
+          "l": 7,
+          "v": 5
         },
         "tirosArco": {
           "l": 2,
-          "v": 3
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         }
       },
@@ -60180,7 +60180,7 @@
         "gameUrlName": "levante-vs-racing-santander",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "76'",
+        "minuto": "86'",
         "ronda": "Fecha 14",
         "ganador": null,
         "alargue": false,
@@ -60189,18 +60189,18 @@
         "arbitro": "Miguel Sesma"
       },
       "foto2T": {
-        "minuto": "76'",
+        "minuto": "86'",
         "enPausa": false,
         "corners": {
-          "l": 6,
-          "v": 4
+          "l": 7,
+          "v": 5
         },
         "tirosArco": {
           "l": 2,
-          "v": 3
+          "v": 5
         },
         "atajadas": {
-          "l": 2,
+          "l": 3,
           "v": 1
         }
       }
@@ -60211,7 +60211,7 @@
       "visitante": "Bologna",
       "fechaHora": "2026-11-27T16:45",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -60240,31 +60240,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "venezia-vs-bologna",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
         "tv": "ESPN 2, Disney+ Premium, Disney+ Estándar",
         "estadio": "Stadio Pierluigi Penzo",
         "arbitro": "Andrea Colombo"
-      },
-      "foto2T": {
-        "minuto": "90'",
-        "enPausa": false,
-        "corners": {
-          "l": 3,
-          "v": 6
-        },
-        "tirosArco": {
-          "l": 5,
-          "v": 6
-        },
-        "atajadas": {
-          "l": 6,
-          "v": 5
-        }
       }
     },
     {
