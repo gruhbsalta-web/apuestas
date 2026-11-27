@@ -55881,7 +55881,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 0,
@@ -55908,7 +55908,7 @@
         "gameUrlName": "atlanta-vs-ciudad-de-bolivar",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "31'",
+        "minuto": "41'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
