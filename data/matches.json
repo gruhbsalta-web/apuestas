@@ -60191,7 +60191,7 @@
         },
         "corners": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 0,
@@ -60208,15 +60208,15 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "venezia-vs-bologna",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "10'",
         "ronda": "Fecha 13",
         "ganador": null,
-        "tv": "ESPN 2, Disney+ Premium",
+        "alargue": false,
+        "tv": "ESPN 2, Disney+ Premium, Disney+ Estándar",
         "estadio": "Stadio Pierluigi Penzo",
-        "arbitro": "Andrea Colombo",
-        "infoDia": "2026-11-27"
+        "arbitro": "Andrea Colombo"
       }
     },
     {
