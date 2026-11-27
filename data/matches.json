@@ -55906,15 +55906,31 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "atlanta-vs-ciudad-de-bolivar",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "52'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
         "arbitro": "Juan Pafundi"
+      },
+      "foto2T": {
+        "minuto": "52'",
+        "enPausa": false,
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
       }
     },
     {
