@@ -55906,15 +55906,15 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "atlanta-vs-ciudad-de-bolivar",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "11'",
         "ronda": null,
         "ganador": null,
+        "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
-        "arbitro": "Juan Pafundi",
-        "infoDia": "2026-11-27"
+        "arbitro": "Juan Pafundi"
       }
     },
     {
