@@ -60087,14 +60087,14 @@
       "visitante": "Chelsea",
       "fechaHora": "2026-11-27T17:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 3,
-          "v": 1
+          "v": 2
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         },
         "corners": {
@@ -60103,10 +60103,10 @@
         },
         "tirosArco": {
           "l": 7,
-          "v": 1
+          "v": 3
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 4
         }
       },
@@ -60116,31 +60116,15 @@
         "leagueName": "Premier League",
         "country": "Inglaterra",
         "gameUrlName": "nottingham-forest-vs-chelsea",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "87'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": "Fecha 12",
-        "ganador": null,
+        "ganador": 1,
         "alargue": false,
         "tv": "ESPN, Disney+ Premium, Disney+ Estándar",
         "estadio": "The City Ground",
         "arbitro": "Andrew Madley"
-      },
-      "foto2T": {
-        "minuto": "87'",
-        "enPausa": false,
-        "corners": {
-          "l": 1,
-          "v": 2
-        },
-        "tirosArco": {
-          "l": 7,
-          "v": 1
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 4
-        }
       }
     },
     {
@@ -60153,23 +60137,23 @@
       "stats": {
         "goles": {
           "l": 1,
-          "v": 2
+          "v": 3
         },
         "tarjetas": {
-          "l": 1,
+          "l": 2,
           "v": 2
         },
         "corners": {
-          "l": 7,
+          "l": 9,
           "v": 5
         },
         "tirosArco": {
-          "l": 2,
-          "v": 5
+          "l": 3,
+          "v": 8
         },
         "atajadas": {
-          "l": 3,
-          "v": 1
+          "l": 5,
+          "v": 2
         }
       },
       "source": {
@@ -60180,7 +60164,7 @@
         "gameUrlName": "levante-vs-racing-santander",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "86'",
+        "minuto": "90+6'",
         "ronda": "Fecha 14",
         "ganador": null,
         "alargue": false,
@@ -60189,19 +60173,19 @@
         "arbitro": "Miguel Sesma"
       },
       "foto2T": {
-        "minuto": "86'",
+        "minuto": "90+6'",
         "enPausa": false,
         "corners": {
-          "l": 7,
+          "l": 9,
           "v": 5
         },
         "tirosArco": {
-          "l": 2,
-          "v": 5
+          "l": 3,
+          "v": 8
         },
         "atajadas": {
-          "l": 3,
-          "v": 1
+          "l": 5,
+          "v": 2
         }
       }
     },
