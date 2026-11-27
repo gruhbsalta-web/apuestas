@@ -60090,7 +60090,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tarjetas": {
@@ -60098,11 +60098,11 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 1,
+          "l": 2,
           "v": 0
         },
         "atajadas": {
@@ -60118,7 +60118,7 @@
         "gameUrlName": "nottingham-forest-vs-chelsea",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "15'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -60144,16 +60144,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
-          "v": 0
+          "l": 2,
+          "v": 1
         },
         "tirosArco": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 1
         }
       },
       "source": {
@@ -60164,7 +60164,7 @@
         "gameUrlName": "levante-vs-racing-santander",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "3'",
+        "minuto": "14'",
         "ronda": "Fecha 14",
         "ganador": null,
         "alargue": false,
@@ -60182,19 +60182,19 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 1,
+          "l": 0,
           "v": 0
         },
         "tarjetas": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 2
         },
         "corners": {
           "l": 1,
           "v": 1
         },
         "tirosArco": {
-          "l": 2,
+          "l": 1,
           "v": 0
         },
         "atajadas": {
@@ -60210,7 +60210,7 @@
         "gameUrlName": "venezia-vs-bologna",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "20'",
+        "minuto": "30'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
