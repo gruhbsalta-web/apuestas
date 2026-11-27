@@ -55885,10 +55885,10 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 5
         },
         "tirosArco": {
@@ -55908,7 +55908,7 @@
         "gameUrlName": "atlanta-vs-ciudad-de-bolivar",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "62'",
+        "minuto": "72'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
@@ -55917,10 +55917,10 @@
         "arbitro": "Juan Pafundi"
       },
       "foto2T": {
-        "minuto": "62'",
+        "minuto": "72'",
         "enPausa": false,
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 5
         },
         "tirosArco": {
