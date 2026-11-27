@@ -60099,7 +60099,7 @@
         },
         "corners": {
           "l": 1,
-          "v": 0
+          "v": 1
         },
         "tirosArco": {
           "l": 2,
@@ -60118,7 +60118,7 @@
         "gameUrlName": "nottingham-forest-vs-chelsea",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "25'",
+        "minuto": "35'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -60141,18 +60141,18 @@
         },
         "tarjetas": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "corners": {
-          "l": 2,
+          "l": 4,
           "v": 3
         },
         "tirosArco": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "atajadas": {
-          "l": 0,
+          "l": 1,
           "v": 0
         }
       },
@@ -60164,7 +60164,7 @@
         "gameUrlName": "levante-vs-racing-santander",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "24'",
+        "minuto": "34'",
         "ronda": "Fecha 14",
         "ganador": null,
         "alargue": false,
@@ -60178,7 +60178,7 @@
       "local": "Venezia",
       "visitante": "Bologna",
       "fechaHora": "2026-11-27T16:45",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -60190,16 +60190,16 @@
           "v": 2
         },
         "corners": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "tirosArco": {
-          "l": 2,
+          "l": 3,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 2
+          "v": 3
         }
       },
       "source": {
@@ -60208,9 +60208,9 @@
         "leagueName": "Serie A",
         "country": "Italia",
         "gameUrlName": "venezia-vs-bologna",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "40'",
+        "minuto": "45'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
