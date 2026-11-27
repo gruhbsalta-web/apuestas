@@ -60118,7 +60118,7 @@
         "gameUrlName": "nottingham-forest-vs-chelsea",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "25'",
         "ronda": "Fecha 12",
         "ganador": null,
         "alargue": false,
@@ -60145,15 +60145,15 @@
         },
         "corners": {
           "l": 2,
-          "v": 1
+          "v": 3
         },
         "tirosArco": {
-          "l": 1,
+          "l": 0,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 1
+          "v": 0
         }
       },
       "source": {
@@ -60164,7 +60164,7 @@
         "gameUrlName": "levante-vs-racing-santander",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "14'",
+        "minuto": "24'",
         "ronda": "Fecha 14",
         "ganador": null,
         "alargue": false,
@@ -60190,16 +60190,16 @@
           "v": 2
         },
         "corners": {
-          "l": 1,
-          "v": 1
+          "l": 2,
+          "v": 2
         },
         "tirosArco": {
-          "l": 1,
-          "v": 0
+          "l": 2,
+          "v": 2
         },
         "atajadas": {
-          "l": 0,
-          "v": 1
+          "l": 2,
+          "v": 2
         }
       },
       "source": {
@@ -60210,7 +60210,7 @@
         "gameUrlName": "venezia-vs-bologna",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "30'",
+        "minuto": "40'",
         "ronda": "Fecha 13",
         "ganador": null,
         "alargue": false,
