@@ -55692,7 +55692,7 @@
       "local": "Deportivo Morón",
       "visitante": "Colón",
       "fechaHora": "2026-11-27T21:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -55700,7 +55700,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "corners": {
@@ -55722,9 +55722,9 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-moron-vs-colon",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
-        "minuto": "39'",
+        "minuto": "45'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
@@ -55922,7 +55922,7 @@
       "local": "Tristan Suárez",
       "visitante": "Gimnasia y Tiro",
       "fechaHora": "2026-11-27T21:00",
-      "finPrimerTiempo": false,
+      "finPrimerTiempo": true,
       "finPartido": false,
       "stats": {
         "goles": {
@@ -55930,7 +55930,7 @@
           "v": 0
         },
         "tarjetas": {
-          "l": 0,
+          "l": 1,
           "v": 2
         },
         "corners": {
@@ -55938,12 +55938,12 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 3,
+          "l": 4,
           "v": 2
         },
         "atajadas": {
           "l": 2,
-          "v": 3
+          "v": 4
         }
       },
       "source": {
@@ -55952,7 +55952,7 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "tristan-suarez-vs-gimnasia-y-tiro",
-        "statusShort": "1°",
+        "statusShort": "ET",
         "statusEnum": 2,
         "minuto": "45'",
         "ronda": null,
