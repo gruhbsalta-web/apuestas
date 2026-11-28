@@ -55877,7 +55877,7 @@
       "visitante": "Ciudad De Bolivar",
       "fechaHora": "2026-11-27T19:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -55906,31 +55906,15 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "atlanta-vs-ciudad-de-bolivar",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "90'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null,
-        "ganador": null,
+        "ganador": 2,
         "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio Don León Kolbovski",
         "arbitro": "Juan Pafundi"
-      },
-      "foto2T": {
-        "minuto": "90'",
-        "enPausa": false,
-        "corners": {
-          "l": 4,
-          "v": 5
-        },
-        "tirosArco": {
-          "l": 1,
-          "v": 1
-        },
-        "atajadas": {
-          "l": 0,
-          "v": 1
-        }
       }
     },
     {
@@ -55968,15 +55952,15 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "tristan-suarez-vs-gimnasia-y-tiro",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "5'",
         "ronda": null,
         "ganador": null,
+        "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio 20 de Octubre",
-        "arbitro": "Juan Cruz Robledo",
-        "infoDia": "2026-11-27"
+        "arbitro": "Juan Cruz Robledo"
       }
     },
     {
@@ -59540,7 +59524,7 @@
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
-        "ronda": null,
+        "ronda": "Cuartos de Final",
         "ganador": null,
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Jose Amalfitani",
@@ -59586,7 +59570,7 @@
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
-        "ronda": null,
+        "ronda": "Cuartos de Final",
         "ganador": null,
         "tv": "ESPN Premium",
         "estadio": "Estadio Gigante de Arroyito",
@@ -60046,7 +60030,7 @@
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
-        "ronda": null,
+        "ronda": "Cuartos de Final",
         "ganador": null,
         "tv": "ESPN Premium",
         "estadio": "Estadio Monumental Presidente Perón",
@@ -60686,7 +60670,7 @@
         "statusShort": "Prog.",
         "statusEnum": 1,
         "minuto": "",
-        "ronda": null,
+        "ronda": "Cuartos de Final",
         "ganador": null,
         "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
