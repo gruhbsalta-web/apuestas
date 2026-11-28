@@ -56006,7 +56006,7 @@
         "tv": "LPF Premium",
         "estadio": "Estadio Abel Sastre",
         "arbitro": "Joaquín Gil",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -59526,10 +59526,10 @@
         "minuto": "",
         "ronda": "Cuartos de Final",
         "ganador": null,
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
+        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol), Premier Sports Player",
         "estadio": "Jose Amalfitani",
         "arbitro": "Facundo Tello Figueroa",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -59575,7 +59575,7 @@
         "tv": "ESPN Premium",
         "estadio": "Estadio Gigante de Arroyito",
         "arbitro": "Pablo Dóvalo",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60035,7 +60035,7 @@
         "tv": "ESPN Premium",
         "estadio": "Estadio Monumental Presidente Perón",
         "arbitro": "Nazareno Arasa",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60216,10 +60216,10 @@
         "minuto": "",
         "ronda": "Fecha 12",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN, Disney+ Premium, Disney+ Estándar",
         "estadio": "Old Trafford",
         "arbitro": "Robert Jones",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60262,10 +60262,10 @@
         "minuto": "",
         "ronda": "Fecha 12",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN, Disney+ Premium, Disney+ Estándar",
         "estadio": "Elland Road",
         "arbitro": "P. Tierney",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60308,10 +60308,10 @@
         "minuto": "",
         "ronda": "Fecha 12",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN 2, Disney+ Premium, Disney+ Estándar",
         "estadio": "Portman Road",
         "arbitro": "Michael Salisbury",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60354,9 +60354,10 @@
         "minuto": "",
         "ronda": "Fecha 14",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN, Disney+ Premium",
         "estadio": "Estadio La Cartuja de Sevilla",
-        "infoDia": "2026-11-27"
+        "arbitro": "Lluís Bestard",
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60399,9 +60400,10 @@
         "minuto": "",
         "ronda": "Fecha 14",
         "ganador": null,
-        "tv": "DSports",
+        "tv": "Paramount+, DSports",
         "estadio": "Estadio La Rosaleda",
-        "infoDia": "2026-11-27"
+        "arbitro": "Miguel Ortiz",
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60444,9 +60446,10 @@
         "minuto": "",
         "ronda": "Fecha 14",
         "ganador": null,
-        "tv": "DSports",
+        "tv": "Paramount+, DSports",
         "estadio": "Estadio Manuel Martínez Valero",
-        "infoDia": "2026-11-27"
+        "arbitro": "Alejandro Quintero",
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60489,9 +60492,10 @@
         "minuto": "",
         "ronda": "Fecha 14",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN, Disney+ Premium",
         "estadio": "Santiago Bernabéu",
-        "infoDia": "2026-11-27"
+        "arbitro": "César Soto",
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60534,10 +60538,10 @@
         "minuto": "",
         "ronda": "Fecha 13",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN 2, Disney+ Premium, Disney+ Estándar",
         "estadio": "Stadio Benito Stirpe",
         "arbitro": "Kevin Bonacina",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60580,10 +60584,10 @@
         "minuto": "",
         "ronda": "Fecha 13",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "Disney+ Premium, Disney+ Estándar",
         "estadio": "Stadio Olimpico Grande Torino",
         "arbitro": "Daniele Chiffi",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60626,10 +60630,10 @@
         "minuto": "",
         "ronda": "Fecha 13",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN 2, Disney+ Premium, Disney+ Estándar",
         "estadio": "Stadio Giuseppe Meazza",
         "arbitro": "G. Ayroldi",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60672,10 +60676,10 @@
         "minuto": "",
         "ronda": "Cuartos de Final",
         "ganador": null,
-        "tv": "TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
+        "tv": "ESPN, Disney+ Estándar, TNT Sports Premium, HBO MAX (Suscripción Pack fútbol)",
         "estadio": "Estadio Alberto José Armando",
         "arbitro": "Darío Herrera",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60718,10 +60722,10 @@
         "minuto": "",
         "ronda": "Fecha 12",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN, Disney+ Premium, Disney+ Estándar",
         "estadio": "Hill Dickinson Stadium",
         "arbitro": "Michael Oliver",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60764,9 +60768,10 @@
         "minuto": "",
         "ronda": "Fecha 12",
         "ganador": null,
+        "tv": "ESPN, Disney+ Premium, Disney+ Estándar",
         "estadio": "Stadium of Light",
         "arbitro": "P. Bankes",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60809,9 +60814,10 @@
         "minuto": "",
         "ronda": "Fecha 12",
         "ganador": null,
+        "tv": "Disney+ Premium, Disney+ Estándar",
         "estadio": "Craven Cottage",
         "arbitro": "Stuart Attwell",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60854,9 +60860,10 @@
         "minuto": "",
         "ronda": "Fecha 12",
         "ganador": null,
+        "tv": "ESPN, Disney+ Premium, Disney+ Estándar",
         "estadio": "Selhurst Park",
         "arbitro": "Jarred Gillett",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60899,9 +60906,10 @@
         "minuto": "",
         "ronda": "Fecha 12",
         "ganador": null,
+        "tv": "Disney+ Premium, Disney+ Estándar",
         "estadio": "American Express Community Stadium",
         "arbitro": "Simon Hooper",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60944,10 +60952,10 @@
         "minuto": "",
         "ronda": "Fecha 12",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "ESPN, Disney+ Premium, Disney+ Estándar",
         "estadio": "Emirates Stadium",
         "arbitro": "John Brooks",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -60990,9 +60998,9 @@
         "minuto": "",
         "ronda": "Fecha 14",
         "ganador": null,
-        "tv": "DSports",
+        "tv": "Paramount+, DSports",
         "estadio": "Estadio de Mestalla",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -61035,9 +61043,9 @@
         "minuto": "",
         "ronda": "Fecha 14",
         "ganador": null,
-        "tv": "DSports",
+        "tv": "Paramount+, DSports",
         "estadio": "Estadio Abanca-Riazor",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -61080,8 +61088,9 @@
         "minuto": "",
         "ronda": "Fecha 14",
         "ganador": null,
+        "tv": "Paramount+, DSports",
         "estadio": "Estadio Abanca-Balaídos",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -61124,8 +61133,9 @@
         "minuto": "",
         "ronda": "Fecha 14",
         "ganador": null,
+        "tv": "ESPN 2, Disney+ Premium",
         "estadio": "Estadio Municipal de Anoeta",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -61168,10 +61178,10 @@
         "minuto": "",
         "ronda": "Fecha 13",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "Disney+ Premium, Disney+ Estándar",
         "estadio": "Bluenergy Stadium",
         "arbitro": "Federico La Penna",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -61214,10 +61224,10 @@
         "minuto": "",
         "ronda": "Fecha 13",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "Disney+ Premium, Disney+ Estándar",
         "estadio": "MAPEI Stadium - Città del Tricolore",
         "arbitro": "M. Guida",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -61260,10 +61270,10 @@
         "minuto": "",
         "ronda": "Fecha 13",
         "ganador": null,
-        "tv": "Disney+ Premium",
+        "tv": "Disney+ Premium, Disney+ Estándar",
         "estadio": "Stadio Olimpico (Rome)",
         "arbitro": "Giuseppe Collu",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
       }
     },
     {
@@ -61306,19 +61316,157 @@
         "minuto": "",
         "ronda": "Fecha 13",
         "ganador": null,
+        "tv": "ESPN, Disney+ Premium, Disney+ Estándar",
         "estadio": "Stadio Giuseppe Sinigaglia",
         "arbitro": "Maurizio Mariani",
-        "infoDia": "2026-11-27"
+        "infoDia": "2026-11-28"
+      }
+    },
+    {
+      "id": "promiedos_ehfahhh",
+      "local": "RCD Espanyol",
+      "visitante": "Getafe CF",
+      "fechaHora": "2026-11-30T17:00",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bb",
+        "leagueName": "La Liga",
+        "country": "España",
+        "gameUrlName": "espanyol-vs-getafe",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 14",
+        "ganador": null,
+        "tv": "ESPN3 Sudamérica, Disney+ Premium",
+        "estadio": "RCDE Stadium",
+        "infoDia": "2026-11-28"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgbg",
+      "local": "Lecce",
+      "visitante": "Atalanta",
+      "fechaHora": "2026-11-30T14:30",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "lecce-vs-atalanta",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 13",
+        "ganador": null,
+        "tv": "ESPN 2, Disney+ Premium, Disney+ Estándar",
+        "estadio": "Stadio Ettore Giardiniero - Via del Mare",
+        "arbitro": "Mattia Drigo",
+        "infoDia": "2026-11-28"
+      }
+    },
+    {
+      "id": "promiedos_ehdcgca",
+      "local": "Cagliari",
+      "visitante": "AC Milan",
+      "fechaHora": "2026-11-30T16:45",
+      "finPrimerTiempo": false,
+      "finPartido": false,
+      "stats": {
+        "goles": {
+          "l": 0,
+          "v": 0
+        },
+        "tarjetas": {
+          "l": 0,
+          "v": 0
+        },
+        "corners": {
+          "l": 0,
+          "v": 0
+        },
+        "tirosArco": {
+          "l": 0,
+          "v": 0
+        },
+        "atajadas": {
+          "l": 0,
+          "v": 0
+        }
+      },
+      "source": {
+        "provider": "promiedos",
+        "leagueId": "bh",
+        "leagueName": "Serie A",
+        "country": "Italia",
+        "gameUrlName": "cagliari-vs-ac-milan",
+        "statusShort": "Prog.",
+        "statusEnum": 1,
+        "minuto": "",
+        "ronda": "Fecha 13",
+        "ganador": null,
+        "tv": "ESPN 2, Disney+ Premium, Disney+ Estándar",
+        "estadio": "Unipol Domus",
+        "arbitro": "Marco Di Bello",
+        "infoDia": "2026-11-28"
       }
     }
   ],
   "bets": [],
   "capitalInicial": 0,
   "historico": {
-    "fhc": "2026-11-27",
-    "h": "2026-11-27",
-    "bb": "2026-11-27",
-    "bh": "2026-11-27"
+    "fhc": "2026-11-28",
+    "h": "2026-11-28",
+    "bb": "2026-11-28",
+    "bh": "2026-11-28"
   },
   "apuestasCargar": [
     {
