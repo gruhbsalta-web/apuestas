@@ -55697,7 +55697,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 1,
@@ -55709,7 +55709,7 @@
         },
         "tirosArco": {
           "l": 1,
-          "v": 1
+          "v": 2
         },
         "atajadas": {
           "l": 1,
@@ -55722,15 +55722,31 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-moron-vs-colon",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "51'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
         "arbitro": "Hernán Mastrángelo"
+      },
+      "foto2T": {
+        "minuto": "51'",
+        "enPausa": false,
+        "corners": {
+          "l": 0,
+          "v": 6
+        },
+        "tirosArco": {
+          "l": 1,
+          "v": 2
+        },
+        "atajadas": {
+          "l": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -55927,7 +55943,7 @@
       "stats": {
         "goles": {
           "l": 0,
-          "v": 0
+          "v": 1
         },
         "tarjetas": {
           "l": 1,
@@ -55939,7 +55955,7 @@
         },
         "tirosArco": {
           "l": 4,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
           "l": 2,
@@ -55952,15 +55968,31 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "tristan-suarez-vs-gimnasia-y-tiro",
-        "statusShort": "ET",
+        "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "45'",
+        "minuto": "51'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio 20 de Octubre",
         "arbitro": "Juan Cruz Robledo"
+      },
+      "foto2T": {
+        "minuto": "51'",
+        "enPausa": false,
+        "corners": {
+          "l": 3,
+          "v": 1
+        },
+        "tirosArco": {
+          "l": 4,
+          "v": 3
+        },
+        "atajadas": {
+          "l": 2,
+          "v": 4
+        }
       }
     },
     {
