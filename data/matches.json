@@ -55722,15 +55722,15 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-moron-vs-colon",
-        "statusShort": "Prog.",
-        "statusEnum": 1,
-        "minuto": "",
+        "statusShort": "1°",
+        "statusEnum": 2,
+        "minuto": "9'",
         "ronda": null,
         "ganador": null,
+        "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
-        "arbitro": "Hernán Mastrángelo",
-        "infoDia": "2026-11-27"
+        "arbitro": "Hernán Mastrángelo"
       }
     },
     {
@@ -55954,7 +55954,7 @@
         "gameUrlName": "tristan-suarez-vs-gimnasia-y-tiro",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "5'",
+        "minuto": "15'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
