@@ -55693,7 +55693,7 @@
       "visitante": "Colón",
       "fechaHora": "2026-11-27T21:00",
       "finPrimerTiempo": true,
-      "finPartido": false,
+      "finPartido": true,
       "stats": {
         "goles": {
           "l": 0,
@@ -55722,31 +55722,15 @@
         "leagueName": "Primera Nacional",
         "country": "Argentina",
         "gameUrlName": "deportivo-moron-vs-colon",
-        "statusShort": "2°",
-        "statusEnum": 2,
-        "minuto": "89'",
+        "statusShort": "Final",
+        "statusEnum": 3,
+        "minuto": "",
         "ronda": null,
-        "ganador": null,
+        "ganador": 2,
         "alargue": false,
         "tv": "LPF Premium",
         "estadio": "Estadio Nuevo Francisco Urbano",
         "arbitro": "Hernán Mastrángelo"
-      },
-      "foto2T": {
-        "minuto": "89'",
-        "enPausa": false,
-        "corners": {
-          "l": 2,
-          "v": 8
-        },
-        "tirosArco": {
-          "l": 3,
-          "v": 3
-        },
-        "atajadas": {
-          "l": 2,
-          "v": 3
-        }
       }
     },
     {
@@ -55951,7 +55935,7 @@
         },
         "corners": {
           "l": 5,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 6,
@@ -55970,7 +55954,7 @@
         "gameUrlName": "tristan-suarez-vs-gimnasia-y-tiro",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "89'",
+        "minuto": "90'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
@@ -55979,11 +55963,11 @@
         "arbitro": "Juan Cruz Robledo"
       },
       "foto2T": {
-        "minuto": "89'",
+        "minuto": "90'",
         "enPausa": false,
         "corners": {
           "l": 5,
-          "v": 2
+          "v": 3
         },
         "tirosArco": {
           "l": 6,
