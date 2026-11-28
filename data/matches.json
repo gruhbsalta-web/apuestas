@@ -55700,20 +55700,20 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 2,
-          "v": 2
+          "l": 3,
+          "v": 3
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 7
         },
         "tirosArco": {
-          "l": 1,
+          "l": 3,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 3
         }
       },
       "source": {
@@ -55724,7 +55724,7 @@
         "gameUrlName": "deportivo-moron-vs-colon",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "59'",
+        "minuto": "69'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
@@ -55733,19 +55733,19 @@
         "arbitro": "Hernán Mastrángelo"
       },
       "foto2T": {
-        "minuto": "59'",
+        "minuto": "69'",
         "enPausa": false,
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 7
         },
         "tirosArco": {
-          "l": 1,
+          "l": 3,
           "v": 2
         },
         "atajadas": {
           "l": 1,
-          "v": 1
+          "v": 3
         }
       }
     },
@@ -55942,7 +55942,7 @@
       "finPartido": false,
       "stats": {
         "goles": {
-          "l": 0,
+          "l": 1,
           "v": 1
         },
         "tarjetas": {
@@ -55954,7 +55954,7 @@
           "v": 1
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 3
         },
         "atajadas": {
@@ -55970,7 +55970,7 @@
         "gameUrlName": "tristan-suarez-vs-gimnasia-y-tiro",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "59'",
+        "minuto": "69'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
@@ -55979,14 +55979,14 @@
         "arbitro": "Juan Cruz Robledo"
       },
       "foto2T": {
-        "minuto": "59'",
+        "minuto": "69'",
         "enPausa": false,
         "corners": {
           "l": 4,
           "v": 1
         },
         "tirosArco": {
-          "l": 5,
+          "l": 6,
           "v": 3
         },
         "atajadas": {
