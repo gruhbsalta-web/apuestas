@@ -55724,7 +55724,7 @@
         "gameUrlName": "deportivo-moron-vs-colon",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "9'",
+        "minuto": "19'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
@@ -55934,16 +55934,16 @@
           "v": 0
         },
         "corners": {
-          "l": 0,
+          "l": 1,
           "v": 0
         },
         "tirosArco": {
-          "l": 0,
+          "l": 3,
           "v": 0
         },
         "atajadas": {
           "l": 0,
-          "v": 0
+          "v": 3
         }
       },
       "source": {
@@ -55954,7 +55954,7 @@
         "gameUrlName": "tristan-suarez-vs-gimnasia-y-tiro",
         "statusShort": "1°",
         "statusEnum": 2,
-        "minuto": "15'",
+        "minuto": "25'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
