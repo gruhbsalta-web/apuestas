@@ -55700,19 +55700,19 @@
           "v": 1
         },
         "tarjetas": {
-          "l": 3,
-          "v": 3
+          "l": 4,
+          "v": 4
         },
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 7
         },
         "tirosArco": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         }
       },
@@ -55724,7 +55724,7 @@
         "gameUrlName": "deportivo-moron-vs-colon",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "69'",
+        "minuto": "79'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
@@ -55733,18 +55733,18 @@
         "arbitro": "Hernán Mastrángelo"
       },
       "foto2T": {
-        "minuto": "69'",
+        "minuto": "79'",
         "enPausa": false,
         "corners": {
-          "l": 1,
+          "l": 2,
           "v": 7
         },
         "tirosArco": {
           "l": 3,
-          "v": 2
+          "v": 3
         },
         "atajadas": {
-          "l": 1,
+          "l": 2,
           "v": 3
         }
       }
@@ -55951,7 +55951,7 @@
         },
         "corners": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 6,
@@ -55970,7 +55970,7 @@
         "gameUrlName": "tristan-suarez-vs-gimnasia-y-tiro",
         "statusShort": "2°",
         "statusEnum": 2,
-        "minuto": "69'",
+        "minuto": "79'",
         "ronda": null,
         "ganador": null,
         "alargue": false,
@@ -55979,11 +55979,11 @@
         "arbitro": "Juan Cruz Robledo"
       },
       "foto2T": {
-        "minuto": "69'",
+        "minuto": "79'",
         "enPausa": false,
         "corners": {
           "l": 4,
-          "v": 1
+          "v": 2
         },
         "tirosArco": {
           "l": 6,
